@@ -6,7 +6,7 @@
 >
 > Обновления и разборы — в Telegram [@cc_consultant](https://t.me/cc_consultant).
 >
-> 📚 **[Полный каталог →](./catalog/README.md)** — 3000+ записей: все известные MCP-серверы, скиллы, субагенты, плагины и проекты экосистемы из публичных awesome-lists. Главный README — куратный, каталог — для поиска по объёму.
+> 📚 **[Полный каталог →](./catalog/README.md)** — 1411+ записей: все известные MCP-серверы (827), скиллы (162), субагенты (160), плагины, hooks и проекты экосистемы из 11 публичных awesome-lists. Главный README — куратный, каталог — для поиска по объёму.
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
@@ -60,6 +60,8 @@ claude
 ## Скиллы
 
 Skills — переиспользуемые наборы инструкций, которые Claude подгружает по триггеру. См. [официальный гайд](https://docs.claude.com/en/docs/claude-code/skills).
+
+> 📂 Полный каталог скиллов: **[162 записей →](./catalog/skills.md)**
 
 ### Официальные (от Anthropic)
 
@@ -116,6 +118,8 @@ Skills — переиспользуемые наборы инструкций, �
 
 Sub-agent — отдельный экземпляр Claude со своим контекстом, который выполняет подзадачу и возвращает один итоговый ответ. Полезно для read-only исследования и параллельных задач. См. [официальную доку](https://docs.claude.com/en/docs/claude-code/sub-agents).
 
+> 📂 Полный каталог субагентов: **[160 записей →](./catalog/subagents.md)**
+
 - [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) — 19k⭐, 131+ субагентов разбитых по категориям: языки программирования, инфраструктура, тестирование, оркестрация. Ставится одной командой через плагин-маркетплейс.
 - [rohitg00/awesome-claude-code-toolkit](https://github.com/rohitg00/awesome-claude-code-toolkit) — комплексный toolkit: 135 агентов + 35 скиллов.
 - [rahulvrane/awesome-claude-agents](https://github.com/rahulvrane/awesome-claude-agents) — коллекция specialized агентов.
@@ -123,6 +127,8 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 ## Plugins
 
 [Claude Code Plugins](https://docs.claude.com/en/docs/claude-code/plugins) — packaging для скиллов, агентов, hooks и MCP-серверов. Один плагин = один артефакт, который ставится через `/plugin marketplace`.
+
+> 📂 Полный каталог плагинов: **[16 записей →](./catalog/plugins.md)**
 
 ### Подборки
 
@@ -132,6 +138,8 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 ## Hooks
 
 Hooks — shell-команды (или HTTP/MCP/prompt-агенты), которые запускаются на события жизненного цикла. См. [hooks reference](https://docs.claude.com/en/docs/claude-code/hooks).
+
+> 📂 Полный каталог связанных проектов: **[8 записей →](./catalog/hooks.md)** (нишевая категория — большая часть hooks живёт внутри плагинов и репозиториев индивидуальных пользователей).
 
 ### Локальные примеры
 
@@ -159,6 +167,8 @@ Hooks — shell-команды (или HTTP/MCP/prompt-агенты), котор
 ## MCP-серверы
 
 [Model Context Protocol](https://modelcontextprotocol.io/) — стандарт для подключения внешних tools к LLM. Все MCP-серверы работают и в Claude Code, и в Claude Desktop / Cursor.
+
+> 📂 Полный каталог MCP-серверов: **[827 записей →](./catalog/mcp-servers.md)** — самая большая категория, взято из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
 
 ### Официальные и базовые
 
@@ -195,6 +205,8 @@ Hooks — shell-команды (или HTTP/MCP/prompt-агенты), котор
 
 Каждый шаблон закрывает пять блоков: стек, команды, структура, правила/анти-паттерны, чек-лист перед PR.
 
+> 📂 Полный каталог CLAUDE.md шаблонов и opinionated setup-ов: **[10 записей →](./catalog/templates.md)**
+
 ### Известные сборники
 
 - [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) — один CLAUDE.md, собранный из практик Andrej Karpathy.
@@ -221,6 +233,8 @@ Hooks — shell-команды (или HTTP/MCP/prompt-агенты), котор
 - [Claude API Skills best practices](https://platform.claude.com/docs/ru/agents-and-tools/agent-skills/best-practices) — официальный документ на русском.
 
 ## Гайды и статьи на русском
+
+> 📂 Полный список RU-статей и YouTube-курсов: **[12 записей →](./catalog/ru-content.md)**
 
 Статьи на Habr (2026):
 
