@@ -63,6 +63,45 @@ Skills — переиспользуемые наборы инструкций, �
 
 > 📂 Полный каталог скиллов: **[162 записей →](./catalog/skills.md)**
 
+### 🏆 Топ скиллов (по install-count из [skills.sh](https://skills.sh))
+
+Самые установленные в community — ранжированы по реальной телеметрии маркетплейса skills.sh, не по звёздам на GitHub. Ставится одной командой: `npx skills add <owner/repo@skill>`.
+
+| Скилл | Что делает | Установок |
+|---|---|---:|
+| [anthropics/skills@frontend-design](https://skills.sh/anthropics/skills/frontend-design) | Заставляет Claude не делать «AI slop»-дизайн. Работает с React + Tailwind. | **405K** |
+| [vercel-labs/agent-skills@vercel-react-best-practices](https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices) | React/Next.js perf-практики от Vercel Engineering. | **395K** |
+| [vercel-labs/agent-skills@web-design-guidelines](https://skills.sh/vercel-labs/agent-skills/web-design-guidelines) | Web Interface Guidelines — review UI на соответствие. | **316K** |
+| [microsoft/azure-skills@azure-deploy](https://skills.sh/microsoft/azure-skills/azure-deploy) | Деплой в Azure из Claude Code. | **312K** |
+| [obra/superpowers@brainstorming](https://skills.sh/obra/superpowers/brainstorming) | Структурированный брейншторм до начала работы. Часть [obra/superpowers](https://github.com/obra/superpowers). | **155K** |
+| [xixu-me/skills@github-actions-docs](https://skills.sh/xixu-me/skills/github-actions-docs) | GitHub Actions: синтаксис, триггеры, runners, OIDC, troubleshooting. | **131K** |
+| [larksuite/cli@lark-workflow-meeting-summary](https://skills.sh/larksuite/cli/lark-workflow-meeting-summary) | Авто-резюме встреч в Lark. | **122K** |
+| [vercel-labs/agent-skills@vercel-react-native-skills](https://skills.sh/vercel-labs/agent-skills/vercel-react-native-skills) | React Native best practices. | **116K** |
+| [mattpocock/skills@tdd](https://skills.sh/mattpocock/skills/tdd) | TDD-цикл (red-green-refactor) с дисциплиной. От Matt Pocock. | **96K** |
+| [arvindrk/extract-design-system@extract-design-system](https://skills.sh/arvindrk/extract-design-system/extract-design-system) | Извлечение design-system из существующего сайта. | **93K** |
+| [obra/superpowers@systematic-debugging](https://skills.sh/obra/superpowers/systematic-debugging) | Системный debugging — гипотезы, изоляция, root cause. | **94K** |
+| [obra/superpowers@requesting-code-review](https://skills.sh/obra/superpowers/requesting-code-review) | Запросить ревью у саб-агента перед коммитом. | **82K** |
+| [mattpocock/skills@grill-with-docs](https://skills.sh/mattpocock/skills/grill-with-docs) | «Допрашивай» документацию — find-grep по docs. | **79K** |
+| [obra/superpowers@subagent-driven-development](https://skills.sh/obra/superpowers/subagent-driven-development) | Делегирование независимых задач саб-агентам. | **70K** |
+| [anthropics/skills@webapp-testing](https://skills.sh/anthropics/skills/webapp-testing) | Тестирование веб-приложений через Playwright. | **68K** |
+| [obra/superpowers@verification-before-completion](https://skills.sh/obra/superpowers/verification-before-completion) | Проверить что задача реально сделана, до отчёта «готово». | **68K** |
+| [obra/superpowers@receiving-code-review](https://skills.sh/obra/superpowers/receiving-code-review) | Как принимать review-feedback с технической строгостью. | **65K** |
+| [pbakaus/impeccable@frontend-design](https://skills.sh/pbakaus/impeccable/frontend-design) | Premium frontend design (Paul Bakaus). | **53K** |
+| [leonxlnx/taste-skill@design-taste-frontend](https://skills.sh/leonxlnx/taste-skill/design-taste-frontend) | Senior UI/UX engineer — переопределяет дефолтные LLM-биасы. | **53K** |
+| [anthropics/skills@mcp-builder](https://skills.sh/anthropics/skills/mcp-builder) | Пошаговое создание MCP-серверов. | **53K** |
+| [vercel-labs/agent-skills@deploy-to-vercel](https://skills.sh/vercel-labs/agent-skills/deploy-to-vercel) | Деплой на Vercel. | **50K** |
+| [get-convex/agent-skills@convex-performance-audit](https://skills.sh/get-convex/agent-skills/convex-performance-audit) | Performance-аудит Convex-приложений. | **45K** |
+| [google-labs-code/stitch-skills@react:components](https://skills.sh/google-labs-code/stitch-skills/react:components) | React-компоненты по описанию (Google Stitch). | **44K** |
+| [wshobson/agents@typescript-advanced-types](https://skills.sh/wshobson/agents/typescript-advanced-types) | Advanced TypeScript patterns. | **41K** |
+| [google-labs-code/stitch-skills@enhance-prompt](https://skills.sh/google-labs-code/stitch-skills/enhance-prompt) | Улучшение промпта перед отправкой модели. | **39K** |
+| [github/awesome-copilot@git-commit](https://skills.sh/github/awesome-copilot/git-commit) | Conventional commit-сообщения. | **30K** |
+| [wshobson/agents@python-performance-optimization](https://skills.sh/wshobson/agents/python-performance-optimization) | Python perf: profiling, оптимизация. | **22K** |
+| [firebase/agent-skills@firestore-security-rules-auditor](https://skills.sh/firebase/agent-skills/firestore-security-rules-auditor) | Аудит Firestore security rules. | **20K** |
+
+> **Совет практика:** ставь сразу `obra/superpowers` целиком — это самая полная коллекция (TDD, debugging, planning, brainstorming, code-review). Для конкретного стэка добавь stack-specific (Vercel React, Convex, Firebase, Supabase, Azure, Stripe).
+>
+> Источник: [skills.sh leaderboard](https://skills.sh) — install-count актуален на момент последнего пересмотра README, числа быстро растут.
+
 ### Официальные (от Anthropic)
 
 Полный набор: [anthropics/skills](https://github.com/anthropics/skills).
