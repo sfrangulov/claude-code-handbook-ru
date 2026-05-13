@@ -428,7 +428,7 @@ Hooks — shell-команды (или HTTP/MCP/prompt-агенты), котор
 
 #### 🗄️ Базы данных
 
-- [Aiven-Open/mcp-aiven](https://github.com/Aiven-Open/mcp-aiven) — 🐍 ☁️ 🎖️ - Navigate your [Aiven projects](https://go.aiven.io/mcp-server) и interact с the PostgreSQL®, Apache Kafka®, ClickHouse® и OpenSearch® сервисы
+- [Aiven-Open/mcp-aiven](https://github.com/Aiven-Open/mcp-aiven) — 🐍 ☁️ 🎖️ - Navigate your [Aiven projects](https://go.aiven.io/mcp-server) и взаимодействие с the PostgreSQL®, Apache Kafka®, ClickHouse® и OpenSearch® сервисы
 - [alexanderzuev/supabase-mcp-server](https://github.com/alexander-zuev/supabase-mcp-server) — Supabase MCP Server с поддержка SQL query execution и базы данных exploration tools
 - [aliyun/alibabacloud-tablestore-mcp-server](https://github.com/aliyun/alibabacloud-tablestore-mcp-server) — ☕ 🐍 ☁️ - MCP сервис для Tablestore, features include adding документы, semantic поиск для документы на базе vectors и scalars, RAG-friendly, и serverless
 - [amineelkouhen/mcp-cockroachdb](https://github.com/amineelkouhen/mcp-cockroachdb) — 🐍 ☁️ - A Model Context Protocol server для управление, monitoring, и запросы к data in [CockroachDB](https://cockroachlabs.com)
@@ -444,7 +444,7 @@ Hooks — shell-команды (или HTTP/MCP/prompt-агенты), котор
 - *…ещё 14 в каталоге →* [catalog/mcp-servers.md](./catalog/mcp-servers.md)
 #### 💻 Developer tools
 
-- [masondelan/selvedge](https://github.com/masondelan/selvedge) — Change tracking для AI-era codebases. AI-агенты call it к log structured change events (entity + diff + reasoning) before the session ends,
+- [masondelan/selvedge](https://github.com/masondelan/selvedge) — Отслеживание изменений для AI-era кодовых баз. AI-агенты вызывают его для логирования структурированных событий изменений (entity + diff + reasoning) до того как the session ends,
 - [sapph1re/mcp-billing-gateway-sdk](https://github.com/sapph1re/mcp-billing-gateway-sdk) — 📇 ☁️ - Billing infrastructure для MCP-сервер операторы. добавление Stripe подписки, per-call credits, tiered p
 - [agenticempire/axint](https://github.com/agenticempire/axint) — Apple-native execution layer для AI-агенты. Compiles TypeScript к validated Swift — App Intents, SwiftUI views, WidgetKit widgets, и full
 - [drhalto/agentmako](https://github.com/drhalto/agentmako) — Local-first codebase intelligence engine. Gives coding agents structured context packets, indexed code/schema facts, и diagnostics через MCP
@@ -452,9 +452,9 @@ Hooks — shell-команды (или HTTP/MCP/prompt-агенты), котор
 - *…ещё 35 в каталоге →* [catalog/mcp-servers.md](./catalog/mcp-servers.md)
 #### ☁️ Облачные платформы
 
-- [4everland/4everland-hosting-mcp](https://github.com/4everland/4everland-hosting-mcp) — 🎖️ 📇 🏠 🍎 🐧 - An MCP-сервер для 4EVERLAND хостинг для мгновенный деплой of AI-сгенерированного кода к децентрализованные storage-сети like Greenfield, IPFS, и Arweave
-- [aashari/mcp-server-aws-sso](https://github.com/aashari/mcp-server-aws-sso) — 📇 ☁️ 🏠 - AWS Single Sign-On (SSO) интеграция для AI systems к безопасно interact с AWS resources by initiating SSO login, listing accounts/roles, и executing AWS CLI commands через temporary credentials
-- [alexbakers/mcp-ipfs](https://github.com/alexbakers/mcp-ipfs) — 📇 ☁️ - upload и manipulation of IPFS storage
+- [4everland/4everland-hosting-mcp](https://github.com/4everland/4everland-hosting-mcp) — 🎖️ 📇 🏠 🍎 🐧 - MCP-сервер для 4EVERLAND хостинг для мгновенный деплой of AI-сгенерированного кода к децентрализованные storage-сети like Greenfield, IPFS, и Arweave
+- [aashari/mcp-server-aws-sso](https://github.com/aashari/mcp-server-aws-sso)
+- [alexbakers/mcp-ipfs](https://github.com/alexbakers/mcp-ipfs)
 - [aparajithn/agent-деплой-dashboard-mcp](https://github.com/aparajithn/agent-деплой-dashboard-mcp) — 🐍 ☁️ - Unified деплой dashboard MCP-сервер across Vercel, Render, Railway, и Fly.io. 9 tools для деплой stat
 - [arnstarn/mcp-server-spotinst](https://github.com/arnstarn/mcp-server-spotinst) — 🐍 ☁️ - MCP-сервер для Spot.io (Spotinst) API с 23 tools для управление Ocean clusters, VNGs, Elastigroups, costs, right
 - *…ещё 20 в каталоге →* [catalog/mcp-servers.md](./catalog/mcp-servers.md)
@@ -462,9 +462,9 @@ Hooks — shell-команды (или HTTP/MCP/prompt-агенты), котор
 
 - [34892002/bilibili-mcp-js](https://github.com/34892002/bilibili-mcp-js) — MCP-сервер, который поддерживает поиск для Bilibili контент. Provides LangChain интеграция examples и test scripts
 - [achiya-автоматизация/safari-mcp](https://github.com/achiya-автоматизация/safari-mcp) — Native Safari браузерная автоматизация для AI-агенты с 80+ tools. No Chrome dependency, optimized для Apple Silicon с 60% less CPU
-- [agent-infra/mcp-server-browser](https://github.com/bytedance/UI-TARS-desktop/tree/main/packages/agent-infra/mcp-servers/browser) — Браузерная автоматизация capabilities через Puppeteer, both support local и remote browser connection
+- [agent-infra/mcp-server-browser](https://github.com/bytedance/UI-TARS-desktop/tree/main/packages/agent-infra/mcp-servers/browser) — Браузерная автоматизация capabilities через Puppeteer, both support local и удалённый browser connection
 - [aparajithn/agent-scraper-mcp](https://github.com/aparajithn/agent-scraper-mcp) — 🐍 ☁️ - веб-скрейпинг MCP-сервер для AI-агенты. 6 tools: clean контент extraction, structured scraping с CSS selectors, full-pag
-- [apireno/DOMShell](https://github.com/apireno/DOMShell) — Browse the web через filesystem commands (ls, cd, grep, click). 38 MCP tools map Chrome's Accessibility Tree к a virtual filesystem через a Chrome Extension
+- [apireno/DOMShell](https://github.com/apireno/DOMShell)
 - *…ещё 15 в каталоге →* [catalog/mcp-servers.md](./catalog/mcp-servers.md)
 #### 🔍 Поиск и извлечение данных
 
@@ -476,9 +476,9 @@ Hooks — shell-команды (или HTTP/MCP/prompt-агенты), котор
 - *…ещё 20 в каталоге →* [catalog/mcp-servers.md](./catalog/mcp-servers.md)
 #### 💬 Коммуникации (Slack, Discord, email)
 
-- [AbdelStark/nostr-mcp](https://github.com/AbdelStark/nostr-mcp) — ☁️ - A Nostr MCP-сервер, который позволяет к interact с Nostr, для posting notes, и др.
-- [adhikasp/mcp-twikit](https://github.com/adhikasp/mcp-twikit) — 🐍 ☁️ - Interact с Twitter поиск и timeline
-- [agentmail-toolkit/mcp](https://github.com/agentmail-to/agentmail-toolkit/tree/main/mcp) — MCP-сервер для create inbox на fly к отправка, получение и действия on email. We не AI-агенты для email, но email для AI Agents
+- [AbdelStark/nostr-mcp](https://github.com/AbdelStark/nostr-mcp)
+- [adhikasp/mcp-twikit](https://github.com/adhikasp/mcp-twikit) — 🐍 ☁️ - взаимодействие с Twitter поиск и timeline
+- [agentmail-toolkit/mcp](https://github.com/agentmail-to/agentmail-toolkit/tree/main/mcp)
 - [bababoi-bibilabu/agent-mq](https://github.com/bababoi-bibilabu/agent-mq) — 📇 ☁️ 🏠 - Message queue для AI coding assistants. Let AI-агенты (Claude Code, Cursor, Codex) send messages к each other across sessions и machin
 - [Beltran12138/wecom-docs-mcp-server](https://github.com/Beltran12138/wecom-docs-mcp-server) — WeCom (Enterprise WeChat) документ операции через MCP: create, read, и edit docs и Smart
 - *…ещё 20 в каталоге →* [catalog/mcp-servers.md](./catalog/mcp-servers.md)
@@ -494,41 +494,41 @@ Hooks — shell-команды (или HTTP/MCP/prompt-агенты), котор
 
 - [alexfleetcommander/agent-trust-stack-mcp](https://github.com/alexfleetcommander/agent-trust-stack-mcp) — 🐍 📇 ☁️ 🏠 🍎 🪟 🐧 - Cryptographic provenance, bilateral blind reputation scoring, и tamper-evident loggi
 - [123Ergo/unphurl-mcp](https://github.com/123Ergo/unphurl-mcp) — 📇 ☁️ - URL intelligence для AI-агенты. 13 tools для security signals и data quality: redirect behaviour, brand impersonation detection, domain age, SSL v
-- [13bm/GhidraMCP](https://github.com/13bm/GhidraMCP) — MCP-сервер для integrating Ghidra с AI assistants. This plugin enables binary analysis, предоставляющий tools для function inspection, decompilation, memory exploration, и import/export analysis через the Model Context Protocol
-- [82ch/MCP-Dandan](https://github.com/82ch/MCP-Dandan) — Real-time security-фреймворк для MCP servers that обнаруживает и блокирует malicious AI-агенты behavior by analyzing tool call patterns и intent across multiple threat detection engines
+- [13bm/GhidraMCP](https://github.com/13bm/GhidraMCP) — MCP-сервер для интеграции Ghidra с AI assistants. плагин для бинарного анализа, с инструментами для функций inspection, decompilation, memory exploration, и import/export analysis через the Model Context Protocol
+- [82ch/MCP-Dandan](https://github.com/82ch/MCP-Dandan) — Real-time security-фреймворк для MCP-серверов который обнаруживает и блокирует вредоносное поведение AI-агентов анализом tool call patterns и intent across multiple threat detection engines
 - [MARUCIE/authbox](https://github.com/MARUCIE/authbox) — 📇 🏎️ 🏠 🍎 🪟 🐧 - Zero-knowledge password manager с MCP credential gateway. BIP-39 seed phrase recovery, deterministic passwords, policy-gated AI-агенты доступ к (scope,
 - *…ещё 25 в каталоге →* [catalog/mcp-servers.md](./catalog/mcp-servers.md)
 #### 🧠 Знания и память
 
-- [aidesignblueprint/интеграции](https://github.com/aidesignblueprint/интеграции) — 🐍 ☁️ - Read-only doctrine доступ к для Agentic AI Blueprint — the industry standard reference для safe, observab
-- [andreas-roennestad/openhive-mcp](https://github.com/andreas-roennestad/openhive-mcp) — 📇 ☁️ - Shared база знаний where AI-агенты поиск и post problem-solution pairs. Agents query before solving, post after resol
+- [aidesignblueprint/интеграции](https://github.com/aidesignblueprint/интеграции) — 🐍 ☁️ - read-only доктринальный доступ к Agentic AI Blueprint — индустриальный стандартный референс для safe, observab
+- [andreas-roennestad/openhive-mcp](https://github.com/andreas-roennestad/openhive-mcp) — 📇 ☁️ - Shared база знаний where AI-агенты поиск и post problem-solution pairs. Agents query до того как solving, post after resol
 - [Auctalis/nocturnusai](https://github.com/Auctalis/nocturnusai) — Deterministic reasoning engine для AI-агенты context compression. Extracts structured facts с logical inference, proof chains, и truth
 - [0xshellming/mcp-summarizer](https://github.com/0xshellming/mcp-summarizer) — 📕 ☁️ - AI Summarization MCP Server, поддержка multiple контент types: Plain text, веб-страницы, PDF документы, EPUB books, HTML контент
 - [20alexl/claude-engram](https://github.com/20alexl/claude-engram) — Persistent memory и session intelligence для Claude Code. Auto-tracks mistakes, decisions, и context через hooks. Mines session histo
 - *…ещё 20 в каталоге →* [catalog/mcp-servers.md](./catalog/mcp-servers.md)
 #### 🔗 Агрегаторы и hub-MCP
 
-- [1mcp/agent](https://github.com/1mcp-app/agent) — 📇 ☁️ 🏠 🍎 🪟 🐧 - A единый Model Context Protocol server implementation that агрегирует multiple MCP servers into one
+- [1mcp/agent](https://github.com/1mcp-app/agent) — 📇 ☁️ 🏠 🍎 🪟 🐧 - единый Model Context Protocol сервер that агрегирует multiple MCP-серверов into one
 - [8randonpickart5/alderpost-mcp](https://github.com/8randonpickart5/alderpost-mcp) — 📇 ☁️ - 8 bundled intelligence endpoints (security, company, threat, compliance, sales, sports, property, health) через x402 micropaymen
-- [tadas-github/a2asearch-mcp](https://github.com/tadas-github/a2asearch-mcp) — 📇 ☁️ - MCP-сервер для поиск 4,800+ MCP servers, AI-агенты, CLI tools и agent skills. Install: `npx -y a2asearch-mcp`. Ask Cl
-- [Aganium/agenium](https://github.com/Aganium/agenium) — 📇 ☁️ 🍎 🪟 🐧 - Bridge any MCP-сервер для the agent:// network — DNS-like identity, discovery, и trust для AI-агенты. Makes your tools discoverable и callable by other agents через `agent://` URIs с mTLS, trust scores, и capability поиск
-- [elisymlabs/elisym](https://github.com/elisymlabs/elisym) — 📇 ☁️ 🍎 🪟 🐧 - AI-агенты discovery и marketplace on Nostr с Solana payments (SOL, USDC). NIP-89 discovery, NIP-90 jobs, NIP-44 v2 encryption, on-chain
+- [tadas-github/a2asearch-mcp](https://github.com/tadas-github/a2asearch-mcp) — 📇 ☁️ - MCP-сервер для поиск 4,800+ MCP-серверов, AI-агенты, CLI tools и agent skills. Install: `npx -y a2asearch-mcp`. Ask Cl
+- [Aganium/agenium](https://github.com/Aganium/agenium) — 📇 ☁️ 🍎 🪟 🐧 - мост для любого MCP-сервера к сети agent:// — DNS-like identity, discovery и trust для AI-агентов. Makes your tools discoverable и callable by other agents через `agent://` URIs с mTLS, trust scores, и capability поиск
+- [elisymlabs/elisym](https://github.com/elisymlabs/elisym)
 - *…ещё 15 в каталоге →* [catalog/mcp-servers.md](./catalog/mcp-servers.md)
 #### 🤖 Coding-агенты
 
 - [agent-blueprint/mcp-server](https://github.com/agent-blueprint/mcp-server) — 📇 ☁️ - 8 MCP tools для exploring и downloading AI-агенты blueprints. List blueprints, get summaries, download full Agent Skil
-- [agentic-mcp-tools/owlex](https://github.com/agentic-mcp-tools/owlex) — AI council server: query CLI agents (Claude Code, Codex, Gemini, и OpenCode) in parallel с deliberation rounds
+- [agentic-mcp-tools/owlex](https://github.com/agentic-mcp-tools/owlex)
 - [alpadalar/netops-mcp](https://github.com/alpadalar/netops-mcp) — Comprehensive DevOps и networking MCP-сервер, предоставляющий standardized доступ к к essential infrastructure tools. Features network monitoring, system diagnostics, автоматизация workflow-процессы, и infrastructure management с AI-powered operational insights
 - [askbudi/roundtable](https://github.com/askbudi/roundtable) — Zero-configuration MCP-сервер, который unifies multiple AI coding assistants (Claude Code, Cursor, Codex) through intelligent auto-discovery и standardized интерфейс. Essential infrastructure для autonomous agent development и multi-AI collaboration workflow-процессы
 - [automateyournetwork/pyATS_MCP](https://github.com/automateyournetwork/pyATS_MCP) — Cisco pyATS server для structured, model-driven interaction с network devices
 - *…ещё 15 в каталоге →* [catalog/mcp-servers.md](./catalog/mcp-servers.md)
 #### ▶️ Выполнение кода и sandbox
 
-- [alfonsograziano/node-code-sandbox-mcp](https://github.com/alfonsograziano/node-code-sandbox-mcp) — 📇 🏠 – A Node.js MCP-сервер, который spins up isolated Docker-based sandboxes для executing JavaScript snippets с on-the-fly npm dependency installation и clean teardown
-- [alvii147/piston-mcp](https://github.com/alvii147/piston-mcp) — 🐍 ☁️ 🐧 🍎 🪟 - MCP-сервер, который lets LLMs execute code through the Piston remote выполнение кода engine, с a zero-config `uv` setup и a ready-to-use Claude Desktop config example
-- [asif-nvc/e2b-sandbox-mcp](https://github.com/asif-nvc/e2b-sandbox-mcp) — 📇 ☁️ 🍎 🪟 🐧 - Connect Claude Code с E2B cloud sandboxes — 29 tools для создание isolated Linux VMs, cloning repos, running command
+- [alfonsograziano/node-code-sandbox-mcp](https://github.com/alfonsograziano/node-code-sandbox-mcp)
+- [alvii147/piston-mcp](https://github.com/alvii147/piston-mcp)
+- [asif-nvc/e2b-sandbox-mcp](https://github.com/asif-nvc/e2b-sandbox-mcp) — 📇 ☁️ 🍎 🪟 🐧 - Connect Claude Code с E2B cloud sandboxes — 29 tools для создание изолированный Linux VMs, cloning repos, running command
 - [ckanthony/openapi-mcp](https://github.com/ckanthony/openapi-mcp) — 🏎️ ☁️ - OpenAPI-MCP: Dockerized MCP-сервер для allow your AI-агенты к доступ к any API с existing API docs
-- [dagger/container-use](https://github.com/dagger/container-use) — 🏎️ 🏠 🐧 🍎 🪟 - Containerized environments для coding agents. Multiple agents can work independently, isolated in fresh containers и git branches. No conflicts, many experiments. Full execution history, terminal доступ к к agent environments, git workflow. Any agent/model/infra stack
+- [dagger/container-use](https://github.com/dagger/container-use) — 🏎️ 🏠 🐧 🍎 🪟 - Containerized environments для coding agents. Multiple agents can work independently, изолированный in fresh containers и git branches. No conflicts, many experiments. Full execution history, terminal доступ к к agent environments, git workflow. Any agent/model/infra stack
 - *…ещё 7 в каталоге →* [catalog/mcp-servers.md](./catalog/mcp-servers.md)
 #### 📅 Рабочие инструменты
 
@@ -536,7 +536,7 @@ Hooks — shell-команды (или HTTP/MCP/prompt-агенты), котор
 - [Agentled/mcp-server](https://github.com/Agentled/mcp-server) — 📇 ☁️ - AI-native workflow orchestration с long-term memory, 100+ интеграции, и unified credits. 32 MCP tools для building и running intell
 - [6figr-com/jobgpt-mcp-server](https://github.com/6figr-com/jobgpt-mcp-server) — 📇 ☁️ 🏠 🍎 🪟 🐧 - MCP-сервер для [JobGPT](https://6figr.com/jobgpt) — поиск jobs, auto-apply, generate tailored resumes, track app
 - [backloghq/backlog](https://github.com/backloghq/backlog) — Persistent, cross-session task management для Claude Code. 24 MCP tools, 7 skills, и agent coordination с event-sourced storage и per-
-- [bivex/kanboard-mcp](https://github.com/bivex/kanboard-mcp) — 🏎️ ☁️ 🏠 - A Model Context Protocol (MCP) server written in Go that empowers AI-агенты и Large Language Models (LLMs) to бесшовно interact с Kanboard. It transforms естественный язык commands into Kanboard API calls, для intelligent автоматизация project, task, и user management, streaml
+- [bivex/kanboard-mcp](https://github.com/bivex/kanboard-mcp) — 🏎️ ☁️ 🏠 - MCP-сервер written in Go that empowers AI-агенты и Large Language Models (LLMs) to бесшовно взаимодействие с Kanboard. It transforms естественный язык команды into Kanboard API calls, для intelligent автоматизация project, task, и user management, streaml
 - *…ещё 15 в каталоге →* [catalog/mcp-servers.md](./catalog/mcp-servers.md)
 #### 📂 Файловые системы
 
@@ -548,8 +548,8 @@ Hooks — shell-команды (или HTTP/MCP/prompt-агенты), котор
 - *…ещё 10 в каталоге →* [catalog/mcp-servers.md](./catalog/mcp-servers.md)
 #### ⌨️ CLI и shell
 
-- [danmartuszewski/hop](https://github.com/danmartuszewski/hop) — 🏎️ 🖥️ - Fast SSH connection manager с TUI dashboard и MCP-сервер для discovering, поиск, и executing commands on remote hosts
-- [nvms/tui-mcp](https://github.com/nvms/tui-mcp) — What Chrome DevTools MCP is для browser, tui-mcp is для terminal. Launch, screenshot, и interact с any TUI app
+- [danmartuszewski/hop](https://github.com/danmartuszewski/hop) — 🏎️ 🖥️ - Fast SSH connection manager с TUI dashboard и MCP-сервер для discovering, поиск, и executing команды on удалённый hosts
+- [nvms/tui-mcp](https://github.com/nvms/tui-mcp) — What Chrome DevTools MCP is для browser, tui-mcp is для terminal. Launch, screenshot, и взаимодействие с any TUI app
 - [raychao-oao/pty-mcp](https://github.com/raychao-oao/pty-mcp) — 🏎️ 🏠 🍎 🐧 - Interactive PTY sessions для AI-агенты — local shells, SSH с persistent sessions (ai-tmux daemon для attach/detach), и serial ports. Single Go
 - [ferodrigop/forge](https://github.com/ferodrigop/forge) — Terminal MCP-сервер для AI coding agents с persistent PTY sessions, ring-buffer incremental reads, headless xterm screen capture, multi-agent orchestration, a
 - [WhenLabs-org/when](https://github.com/WhenLabs-org/when) — Developer toolkit: auto-detect stack для AI context files, catch port conflicts, validate.env schemas, spot docs drift, audit dependency lic
@@ -557,7 +557,7 @@ Hooks — shell-команды (или HTTP/MCP/prompt-агенты), котор
 #### 🖥️ OS-автоматизация
 
 - [sbuysse/gnome-desktop-mcp](https://github.com/sbuysse/gnome-desktop-mcp) — GNOME desktop автоматизация для AI-агенты. 30 tools через D-Bus: screenshots, window management, mouse/keyboard injection, clipboard,
-- [dimpagk92/cellar](https://github.com/dimpagk92/cellar) — Hybrid computer-use runtime. Fuses accessibility tree + Chrome DevTools Protocol + vision into structured context с per-element confidence. 4
+- [dimpagk92/cellar](https://github.com/dimpagk92/cellar)
 
 #### 🎥 Мультимедиа
 
@@ -569,7 +569,7 @@ Hooks — shell-команды (или HTTP/MCP/prompt-агенты), котор
 - *…ещё 10 в каталоге →* [catalog/mcp-servers.md](./catalog/mcp-servers.md)
 #### 🧮 Data science
 
-- [abhiphile/fermat-mcp](https://github.com/abhiphile/fermat-mcp) — Ultimate math engine unifying SymPy, NumPy & Matplotlib in one powerful server. Perfect для developers & researchers needing symbolic algebra, numerical computing, и data visualization
+- [abhiphile/fermat-mcp](https://github.com/abhiphile/fermat-mcp) — Ultimate math engine объединяющий SymPy, NumPy и Matplotlib in one powerful server. Perfect для developers & researchers needing symbolic algebra, numerical computing, и data visualization
 - [arrismo/kaggle-mcp](https://github.com/arrismo/kaggle-mcp) — 🐍 ☁️ - Connects к Kaggle, ability к download и analyze datasets
 - [avisangle/calculator-server](https://github.com/avisangle/calculator-server) — 🏎️ 🏠 - A comprehensive Go-based MCP-сервер для mathematical computations, implementing 13 mathematical tools across basic arithmetic, advanced functions, statistical analysis, unit conversions, и financial calculations
 - [bradleylab/stella-mcp](https://github.com/bradleylab/stella-mcp) — Create, read, validate, и save Stella system dynamics models (.stmx files in XMILE format) для scientific simulation и modeling
@@ -586,8 +586,8 @@ Hooks — shell-команды (или HTTP/MCP/prompt-агенты), котор
 #### 📚 RAG-платформы
 
 - [gogabrielordonez/mcp-ragchat](https://github.com/gogabrielordonez/mcp-ragchat) — Add RAG-powered AI chat к any website с one command. Local vector store, multi-provider LLM (OpenAI/Anthropic/Gemini), self-contained chat server и embeddable widget
-- [poll-the-people/customgpt-mcp](https://github.com/Poll-The-People/customgpt-mcp) — 🐍 🏠 ☁️ - An MCP-сервер для доступ к all of CustomGPT.ai's anti-hallucination RAG-as-a-service API endpoints
-- [vectara/vectara-mcp](https://github.com/vectara/vectara-mcp) — 🐍 🏠 ☁️ - An MCP-сервер для доступ к Vectara's trusted RAG-as-a-service платформа
+- [poll-the-people/customgpt-mcp](https://github.com/Poll-The-People/customgpt-mcp) — 🐍 🏠 ☁️ - MCP-сервер для доступ к all of CustomGPT.ai's anti-hallucination RAG-as-a-service API endpoints
+- [vectara/vectara-mcp](https://github.com/vectara/vectara-mcp) — 🐍 🏠 ☁️ - MCP-сервер для доступ к Vectara's trusted RAG-as-a-service платформа
 
 #### 🎯 Маркетинг
 
@@ -600,7 +600,7 @@ Hooks — shell-команды (или HTTP/MCP/prompt-агенты), котор
 #### 📋 Product management
 
 - [daiji-sshr/redmine-mcp-stateless](https://github.com/daiji-sshr/redmine-mcp-stateless) — Stateless Redmine MCP-сервер. Credentials are passed per-request через HTTP headers и never stored o
-- [dkships/pm-copilot](https://github.com/dkships/pm-copilot) — 📇 ☁️ - Triangulates HelpScout support tickets и ProductLift feature requests к generate prioritized product plans. Scores themes by convergence (same signal in both sources = 2x boost), scrubs PII, и accepts business metrics из other MCP servers через `kpi_context` для composable prioritization
+- [dkships/pm-copilot](https://github.com/dkships/pm-copilot) — 📇 ☁️ - Triangulates HelpScout support tickets и ProductLift feature requests к generate prioritized product plans. Scores themes by convergence (same signal in both sources = 2x boost), scrubs PII, и accepts business metrics из other MCP-серверов через `kpi_context` для composable prioritization
 - [Lukaris/framedeck-mcp](https://github.com/Lukaris/framedeck-mcp) — 📇 ☁️ 🏠 🍎 🪟 🐧 - [Framedeck](https://framedeck.app) is a Kanban контент production manager для YouTube, Instagram, TikTok и Podcast creators.
 - [TylerIlunga/procore-mcp-server](https://github.com/TylerIlunga/procore-mcp-server) — 📇 ☁️ 🍎 🪟 🐧 - MCP-сервер с доступом к the full Procore REST API (2,636 endpoints) для construction управление проектами. включает 7 discovery и execution tools covering projects, RFIs, submittals, daily logs, budgets, и др.Single-user OAuth с auto-refresh
 - [spranab/saga-mcp](https://github.com/spranab/saga-mcp) — Jira-like трекер проектов для AI-агенты с полная иерархия (Projects > Epics > Tasks > Subtasks), task dependencies с auto-block/unblock, thread
@@ -625,9 +625,9 @@ Hooks — shell-команды (или HTTP/MCP/prompt-агенты), котор
 
 - [aikts/yandex-tracker-mcp](https://github.com/aikts/yandex-tracker-mcp) — 🐍 ☁️ 🏠 - MCP-сервер для Yandex Tracker. Provides tools для поиск и retrieving information about issues, queues, users
 - [Berckan/bugherd-mcp](https://github.com/Berckan/bugherd-mcp) — 📇 ☁️ - MCP-сервер для BugHerd bug tracking. List projects, view tasks с filtering by status/priority/tags, get task details, и read comments
-- [effytech/freshdesk-mcp](https://github.com/effytech/freshdesk_mcp) — 🐍 ☁️ - MCP-сервер, который integrates с Freshdesk, для AI models к interact с Freshdesk modules и perform various support операции
+- [effytech/freshdesk-mcp](https://github.com/effytech/freshdesk_mcp) — 🐍 ☁️ - MCP-сервер, который integrates с Freshdesk, для AI models к взаимодействие с Freshdesk modules и perform various support операции
 - [incentivai/quickchat-ai-mcp](https://github.com/incentivai/quickchat-ai-mcp) — 🐍 🏠 ☁️ - Launch your conversational Quickchat AI-агенты as an MCP к give AI apps real-time доступ к к its база знаний и conversational capabilities
-- [nguyenvanduocit/jira-mcp](https://github.com/nguyenvanduocit/jira-mcp) — 🏎️ ☁️ - A Go-based MCP connector для Jira that enables AI assistants like Claude к interact с Atlassian Jira. This tool предоставляет a seamless интерфейс для AI models к perform common Jira операции включая issue management, sprint planning, и workflow transitions
+- [nguyenvanduocit/jira-mcp](https://github.com/nguyenvanduocit/jira-mcp)
 - *…ещё 3 в каталоге →* [catalog/mcp-servers.md](./catalog/mcp-servers.md)
 #### 🛒 E-commerce
 
@@ -658,7 +658,7 @@ Hooks — shell-команды (или HTTP/MCP/prompt-агенты), котор
 - [campertunity/mcp-server](https://github.com/campertunity/mcp-server) — 🎖️ 📇 🏠 - Search campgrounds around the world on campertunity, check availability, и provide booking links
 - [cobanov/teslamate-mcp](https://github.com/cobanov/teslamate-mcp) — Model Context Protocol (MCP) server that предоставляет доступ к к your TeslaMate базы данных, allowing AI assistants к query Tesla vehicle data и analytics
 - [haomingkoo/japan-seasons-mcp](https://github.com/haomingkoo/japan-seasons-mcp) — 📇 ☁️ - live-данные по Японии seasonal travel — cherry blossom forecasts, autumn leaves, flower spots, fruit picking & festivals. 1,700+ GPS-ta
-- [lodordev/mcp-teslamate-fleet](https://github.com/lodordev/mcp-teslamate-fleet) — Combined TeslaMate analytics + Fleet API commands — 29 tools для vehicle telemetry, driving history, energy analytics, и remote cont
+- [lodordev/mcp-teslamate-fleet](https://github.com/lodordev/mcp-teslamate-fleet) — Combined TeslaMate analytics + Fleet API команды — 29 tools для vehicle telemetry, driving history, energy analytics, и удалённый cont
 - *…ещё 5 в каталоге →* [catalog/mcp-servers.md](./catalog/mcp-servers.md)
 ## Шаблоны CLAUDE.md
 
@@ -791,7 +791,7 @@ Hooks — shell-команды (или HTTP/MCP/prompt-агенты), котор
 ### Habr — практические гайды (2025-2026)
 
 - [Claude Code в 2026: гайд для тех, кто еще пишет код руками](https://habr.com/ru/articles/987382/) — Подробный гайд по AI Coding Agents, рекомендации по тарифам и CLI.
-- [Год с Claude Code: как собрать рабочую конфигурацию с первого запуска](https://habr.com/ru/companies/alpinadigital/articles/1032134/) — Как устроены rules, skills, agents, commands, MCP и hooks, как всё связывается через routing.md.
+- [Год с Claude Code: как собрать рабочую конфигурацию с первого запуска](https://habr.com/ru/companies/alpinadigital/articles/1032134/) — Как устроены rules, skills, agents, команды, MCP и hooks, как всё связывается через routing.md.
 - [Claude Code: практический гайд по настройке, автоматизации и работе с контекстом](https://habr.com/ru/articles/987094/) — Полный сетап с навыками, хуками, сабагентами и MCP. От автора, который работает с Claude Code ежедневно.
 - [Полное руководство по добавлению серверов MCP в Claude Code](https://habr.com/ru/articles/938626/) — Методы настройки MCP, решения распространённых ошибок, рекомендации по проверенным серверам.
 - [44 настройки Claude Code, о которых вы не знали](https://habr.com/ru/articles/987826/) — Ранжированные от «must have» до «забей». Включает конфигурацию workflow с MCP, lazy-loading инструментов.
