@@ -1,4 +1,4 @@
-# CLAUDE.md шаблоны и opinionated setup-ы
+# CLAUDE.md шаблоны и opinionated-сетапы
 
 `CLAUDE.md` в корне репозитория автоматически подгружается в контекст. См. [memory docs](https://docs.claude.com/en/docs/claude-code/memory).
 

@@ -2,7 +2,7 @@
 
 Каталог плагинов Claude Code из [маркетплейса](https://docs.claude.com/en/docs/claude-code/plugins).
 
-Плагин — это packaging для скиллов, агентов, hooks и MCP-серверов в одном артефакте. Ставится через `/plugin marketplace add <repo>`.
+Плагин — упаковка скиллов, субагентов, hooks и MCP-серверов в один артефакт. Ставится через `/plugin marketplace add <repo>`.
 
 **Записей:** 16.
 
