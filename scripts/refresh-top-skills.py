@@ -12,7 +12,7 @@ Refresh the 🏆 top-skills table in README.md from skills.sh marketplace.
 3. Дедуплицирует по slug `owner/repo@skill`.
 4. Сохраняет top-N по убыванию install-count.
 5. Подставляет описания «зачем и когда» из встроенного словаря (если в README они уже были — сохраняем; для новых нужно дописать вручную).
-6. Перезаписывает блок между `### 🏆 Топ скиллов` и `### Официальные`.
+6. Перезаписывает блок между `### Топ-15 скиллов (skills.sh)` и `### Официальные от Anthropic`.
 
 Требует: установленный npx (Node.js), доступ в интернет.
 """
@@ -39,7 +39,7 @@ SEARCH_QUERIES = [
 MIN_INSTALLS = 20_000
 
 # Сколько максимум в таблице
-MAX_ROWS = 30
+MAX_ROWS = 15
 
 # Известные описания «зачем и когда» (расширяй когда появляются новые скиллы)
 # Если скилл здесь не упомянут — таблица возьмёт пустое описание и человек дописывает руками.
@@ -135,11 +135,9 @@ def fetch_all():
 
 def render_table(items):
     lines = [
-        "### 🏆 Топ скиллов (по install-count из [skills.sh](https://skills.sh))",
+        "### Топ-15 скиллов (skills.sh)",
         "",
-        "Самые установленные скиллы в community — ранжированы по реальной телеметрии маркетплейса skills.sh, не по звёздам на GitHub. Ставится одной командой: `npx skills add <owner/repo@skill>`.",
-        "",
-        "Третья колонка — мой ответ на «когда это реально нужно», не пересказ официального описания.",
+        "Ранжированы по install-count из [skills.sh](https://skills.sh) — реальной телеметрии маркетплейса, не звёздам. Описания в третьей колонке — мой ответ на «когда это реально нужно», не пересказ официального README. Установка одной командой: `npx skills add <owner/repo@skill>`.",
         "",
         "| Скилл | Зачем и когда юзать | Установок |",
         "|---|---|---:|",
@@ -151,9 +149,9 @@ def render_table(items):
         lines.append(f"| [{slug}]({it['url']}) | {desc} | **{count}** |")
     lines += [
         "",
-        "> **Совет практика:** ставь `obra/superpowers` целиком сразу — это самая полная коллекция soft-скиллов. Для конкретного стэка добавь stack-specific. Не ставь всё подряд — каждый скилл занимает ~3-5K токенов в context bootstrap.",
+        "**Источник:** [skills.sh leaderboard](https://skills.sh) — числа быстро растут, актуальны на момент последнего пересмотра. Автообновление: `python scripts/refresh-top-skills.py --write`.",
         "",
-        "> Источник: [skills.sh leaderboard](https://skills.sh) — install-count актуален на момент последнего пересмотра README, числа быстро растут. Автообновление таблицы: `python scripts/refresh-top-skills.py --write`.",
+        "**Совет практика:** ставь `obra/superpowers` целиком сразу — это самая полная коллекция soft-скиллов (TDD, debugging, planning, brainstorming, code-review). Пять из топ-15 — оттуда. Для конкретного стека добавь stack-specific (Vercel React, Convex, Firebase, Supabase, Azure). Не ставь всё подряд — каждый скилл занимает 3-5K токенов в context bootstrap.",
         "",
     ]
     return "\n".join(lines)
@@ -162,11 +160,11 @@ def render_table(items):
 def replace_in_readme(new_table: str):
     text = README.read_text()
     pattern = re.compile(
-        r"### 🏆 Топ скиллов \(по install-count.+?(?=\n### Официальные)",
+        r"### Топ-15 скиллов \(skills\.sh\).+?(?=\n### Официальные от Anthropic)",
         re.S,
     )
     if not pattern.search(text):
-        raise SystemExit("error: section markers not found in README.md")
+        raise SystemExit("error: section markers not found in README.md (expected '### Топ-15 скиллов (skills.sh)' ... '### Официальные от Anthropic')")
     new_text = pattern.sub(new_table.rstrip() + "\n\n", text)
     README.write_text(new_text)
 
