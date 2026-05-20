@@ -32,16 +32,23 @@
 # 1. Сам Claude Code
 npm install -g @anthropic-ai/claude-code
 
-# 2. Самая полная коллекция soft-скиллов от obra (TDD, brainstorming, debugging,
-#    code-review, planning). Пять из топ-15 на skills.sh — оттуда.
+# 2. Маркетплейс soft-скиллов от obra. `marketplace add` только регистрирует
+#    источник — собственно скиллы появятся после `/plugin install` (см. ниже).
 claude plugin marketplace add obra/superpowers-marketplace
 
-# 3. Три must-have MCP-сервера. Больше 5-7 не подключай —
+# 3. Два MCP-сервера ежедневного использования. Больше 5-7 не подключай —
 #    каждый MCP-сервер расходует 1-3K токенов контекста на discovery.
-claude mcp add github      # @modelcontextprotocol/server-github
-claude mcp add postgres    # @modelcontextprotocol/server-postgres
-claude mcp add filesystem  # @modelcontextprotocol/server-filesystem
+claude mcp add github      # @modelcontextprotocol/server-github (issues, PR)
+claude mcp add postgres    # @modelcontextprotocol/server-postgres (read-only прод)
 ```
+
+Затем запусти `claude` в любом репозитории и поставь плагин слэш-командой:
+
+```
+/plugin install superpowers@superpowers-marketplace
+```
+
+Это 24 скилла (TDD, brainstorming, debugging, systematic-debugging, code-review, planning, parallel-agents, subagent-driven-development). Пять из них — в [топ-15 на skills.sh](#топ-15-скиллов-skillssh).
 
 **Куда смотреть в первую очередь:**
 
