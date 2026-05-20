@@ -6,7 +6,7 @@
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
-**Полный сырой каталог (1400+ записей по типам)** — в [catalog/](./catalog/README.md). Здесь — куратная выжимка.
+**Полный сырой каталог (1400+ записей по типам)** — в [catalog/](./catalog/README.md). Здесь — кураторская подборка.
 
 ---
 
@@ -73,8 +73,8 @@ Skills — переиспользуемые наборы инструкций, �
 | [obra/superpowers@brainstorming](https://skills.sh/obra/superpowers/brainstorming) | Структурированный брейншторм с гипотезами и матрицей вариантов **до** начала кода. Включай когда задача расплывчатая («сделай auth»). | **155K** |
 | [xixu-me/skills@github-actions-docs](https://skills.sh/xixu-me/skills/github-actions-docs) | Свежая официальная дока GitHub Actions: синтаксис, runners, OIDC, troubleshooting. Когда пишешь workflow и не хочешь искать в десяти вкладках. | **131K** |
 | [vercel-labs/agent-skills@vercel-react-native-skills](https://skills.sh/vercel-labs/agent-skills/vercel-react-native-skills) | React Native по гайду Vercel: снимает с агента половину типичных багов в RN-проектах. | **116K** |
-| [mattpocock/skills@tdd](https://skills.sh/mattpocock/skills/tdd) | TDD-цикл (red-green-refactor) с дисциплиной — не даёт агенту писать код вперёд тестов. От Matt Pocock. | **96K** |
-| [obra/superpowers@systematic-debugging](https://skills.sh/obra/superpowers/systematic-debugging) | Дисциплина отладки: гипотезы → изоляция → root cause. Прерывает цикл «угадывания на код-граниях». | **94K** |
+| [mattpocock/skills@tdd](https://skills.sh/mattpocock/skills/tdd) | TDD-цикл (red-green-refactor) с дисциплиной — не даёт агенту писать код раньше тестов. От Matt Pocock. | **96K** |
+| [obra/superpowers@systematic-debugging](https://skills.sh/obra/superpowers/systematic-debugging) | Дисциплина отладки: гипотезы → изоляция → root cause. Прерывает цикл бесконечных правок наугад. | **94K** |
 | [arvindrk/extract-design-system@extract-design-system](https://skills.sh/arvindrk/extract-design-system/extract-design-system) | Скан существующего сайта → структурированный design-system (токены, паттерны, типографика). Для редизайна или нового проекта на базе старого. | **93K** |
 | [obra/superpowers@requesting-code-review](https://skills.sh/obra/superpowers/requesting-code-review) | Запросить ревью у саб-агента **перед** коммитом. Эффективно когда работаешь автономно без живого ревьюера. | **82K** |
 | [mattpocock/skills@grill-with-docs](https://skills.sh/mattpocock/skills/grill-with-docs) | «Допрашивай» документацию через find/grep — заменяет догадки точными цитатами. Особенно ценно для библиотек, где знание Claude устарело. | **79K** |
@@ -196,7 +196,7 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 
 ## Hooks
 
-Hooks — shell-команды (или HTTP / MCP / prompt-агенты), которые запускаются на события жизненного цикла сессии. См. [hooks reference](https://docs.claude.com/en/docs/claude-code/hooks).
+Hooks — shell-команды (или HTTP / MCP / prompt-агенты), которые запускаются по событиям жизненного цикла сессии. См. [hooks reference](https://docs.claude.com/en/docs/claude-code/hooks).
 
 > 📂 Связанные проекты: **[8 записей →](./catalog/hooks.md)**. Большая часть hooks живёт внутри плагинов — см. раздел [Plugins](#plugins) выше.
 
@@ -204,7 +204,7 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 
 - [examples/hooks/](./examples/hooks/README.md) — Три рабочих hook'а с bash-скриптами и инструкциями куда положить:
   - **pre-commit-secrets.sh** — детектор секретов в staged-diff. Спасает от утечки API-ключей, когда агент коммитит без проверки.
-  - **ntfy.sh** — push-уведомления через ntfy.sh на события `Notification` и `Stop`.
+  - **ntfy.sh** — push-уведомления через ntfy.sh по событиям `Notification` и `Stop`.
   - **audit.sh** — JSONL-аудит каждого PostToolUse для разбора инцидентов.
 
 ### Community-проекты
@@ -221,7 +221,7 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 
 **Качество:** автоформат на PostToolUse Edit / Write (`prettier --write`, `ruff format`), `tsc --noEmit` на изменённых файлах, `eslint --fix`, `terraform fmt -recursive`.
 
-**Workflow:** push в ntfy / Pushover / Telegram на события Notification и Stop, учёт стоимости в CSV из события Stop, `direnv reload` на CwdChanged, авто-коммит на Stop с conventional-сообщениями.
+**Workflow:** push в ntfy / Pushover / Telegram по событиям Notification и Stop, учёт стоимости в CSV из события Stop, `direnv reload` по CwdChanged, авто-коммит по Stop с conventional-сообщениями.
 
 **Архитектурные:** запрет редактирования `package.json` или lockfile без явного разрешения, pre-edit grep на использование функции, которую собираемся удалить, проверка структуры нового файла (`src/` / `tests/` / `docs/`).
 
@@ -315,7 +315,7 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 - [Claude Code: практический гайд по настройке, автоматизации и контексту](https://habr.com/ru/articles/987094/) — Полный сетап со скиллами, hooks, субагентами и MCP. От практика.
 - [Полное руководство по добавлению MCP-серверов](https://habr.com/ru/articles/938626/) — Методы настройки, решения частых ошибок, проверенные серверы.
 - [44 настройки Claude Code, о которых вы не знали](https://habr.com/ru/articles/987826/) — Ранжированы от «must have» до «забей».
-- [10 настроек Claude Code, до которых большинство не доходит](https://habr.com/ru/articles/1028988/) — Недо-используемые возможности.
+- [10 настроек Claude Code, до которых большинство не доходит](https://habr.com/ru/articles/1028988/) — Малоиспользуемые возможности.
 - [Что вы не знали о Claude Code: архитектура и практики](https://habr.com/ru/articles/1012412/) — Внутренняя архитектура агента.
 - [Айсберг Claude Code (YooMoney)](https://habr.com/ru/companies/yoomoney/articles/1015548/) — 30+ возможностей от новичка до автоматизации.
 - [Изоляция контекста через субагенты](https://habr.com/ru/articles/974448/) — Архитектурный паттерн для долгих задач.
