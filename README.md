@@ -33,7 +33,7 @@
 npm install -g @anthropic-ai/claude-code
 
 # 2. Маркетплейс soft-скиллов от obra. `marketplace add` только регистрирует
-#    источник — собственно скиллы появятся после `/plugin install` (см. ниже).
+#    источник; сам плагин ставится отдельной слэш-командой (шаг 4 ниже).
 claude plugin marketplace add obra/superpowers-marketplace
 
 # 3. Два MCP-сервера ежедневного использования. Больше 5-7 не подключай —
@@ -42,7 +42,7 @@ claude mcp add github      # @modelcontextprotocol/server-github (issues, PR)
 claude mcp add postgres    # @modelcontextprotocol/server-postgres (read-only прод)
 ```
 
-Затем запусти `claude` в любом репозитории и поставь плагин слэш-командой:
+**4.** Запусти `claude` в любом репозитории и поставь плагин слэш-командой:
 
 ```
 /plugin install superpowers@superpowers-marketplace
