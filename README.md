@@ -1,12 +1,10 @@
-# Claude Code Handbook на русском
+# Claude Code Handbook на русском [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> Курируемый справочник для тех, кто использует [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) в работе. Только то, что я реально применяю в клиентских проектах либо что массово проверено сообществом по install-count.
-
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+> [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) — CLI-агент Anthropic для разработки в терминале с поддержкой MCP, hooks и автономных субагентов.
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
-**Полный сырой каталог (1400+ записей по типам)** — в [catalog/](./catalog/README.md). Здесь — курируемая подборка.
+**Полный сырой каталог (1400+ записей по типам)** — в [catalog/](./catalog/README.md). Здесь — курируемая подборка: только то, что я реально применяю в клиентских проектах либо что массово проверено сообществом по install-count.
 
 ---
 
