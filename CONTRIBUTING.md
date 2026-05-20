@@ -24,6 +24,7 @@
    ```
    - [Название](url) — одна строка о том, для чего это нужно.
    ```
+   Разделитель — em-dash (`—`) с пробелами, не ASCII hyphen. Осознанное отклонение от sindresorhus/awesome-lint: русская типографика важнее lint-conformance, в meta-list мы не пушим. См. [docs/research/awesome-lists-best-practices.md](./docs/research/awesome-lists-best-practices.md) §2.1.
 3. Сохраняйте алфавитный порядок внутри подсекции, где это применимо.
 4. Откройте PR с описанием: что добавили и почему это полезно.
 
@@ -41,6 +42,7 @@
 - Без маркетинга («лучший», «революционный», «must-have»).
 - Конкретика: что инструмент делает, а не как он «упрощает работу».
 - Полезно добавлять «когда брать»/«когда не брать» — это и отличает кураторский справочник от автогенерированного индекса.
+- **Описание не начинается с имени самого ресурса.** `[ESLint] — ESLint is a linter…` — нет; `[ESLint] — линтер JavaScript-кода с настраиваемыми правилами.` — да. Имя уже в ссылке, повторение тратит слова. Это же правило кодифицировано в awesome-lint как [`no-repeat-item-in-description`](https://github.com/sindresorhus/awesome-lint/blob/main/rules/no-repeat-item-in-description.js).
 
 **Хорошо:** `[pre-commit-claude](url) — запускает Claude как pre-commit hook для проверки diff на безопасность. Когда брать: проекты с высокими требованиями к secrets-hygiene.`
 
