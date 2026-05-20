@@ -1,12 +1,12 @@
 # Claude Code Handbook на русском
 
-> Кураторский справочник для тех, кто использует [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) в работе. Только то, что я реально применяю в клиентских проектах либо что массово проверено сообществом по install-count.
+> Курируемый справочник для тех, кто использует [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) в работе. Только то, что я реально применяю в клиентских проектах либо что массово проверено сообществом по install-count.
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
-**Полный сырой каталог (1400+ записей по типам)** — в [catalog/](./catalog/README.md). Здесь — кураторская подборка.
+**Полный сырой каталог (1400+ записей по типам)** — в [catalog/](./catalog/README.md). Здесь — курируемая подборка.
 
 ---
 
@@ -62,12 +62,12 @@ Skills — переиспользуемые наборы инструкций, �
 
 ### Топ-15 скиллов (skills.sh)
 
-Ранжированы по install-count из [skills.sh](https://skills.sh) — реальной телеметрии маркетплейса, не звёздам. Описания в третьей колонке — мой ответ на «когда это реально нужно», не пересказ официального README. Установка одной командой: `npx skills add <owner/repo@skill>`.
+Ранжированы по install-count из [skills.sh](https://skills.sh) — реальной телеметрии маркетплейса, не звёздам. Описания в третьей колонке — мой ответ на «когда это реально нужно», а не пересказ официального README. Установка одной командой: `npx skills add <owner/repo@skill>`.
 
 | Скилл | Зачем и когда юзать | Установок |
 |---|---|---:|
-| [anthropics/skills@frontend-design](https://skills.sh/anthropics/skills/frontend-design) | Принудительно перестроить дизайн под bold-решения, а не дефолтные «AI slop»-карточки. Триггерь когда видишь, что вышло generic. React + Tailwind. | **405K** |
-| [vercel-labs/agent-skills@vercel-react-best-practices](https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices) | React/Next.js — производительность по гайду Vercel: правильные границы клиент vs RSC, кэширование, оптимизация размера бандла. Подключай в любом Next.js-проекте. | **395K** |
+| [anthropics/skills@frontend-design](https://skills.sh/anthropics/skills/frontend-design) | Перестраивает дизайн в пользу bold-решений вместо дефолтных «AI slop»-карточек. Триггерь когда видишь, что вышло generic. React + Tailwind. | **405K** |
+| [vercel-labs/agent-skills@vercel-react-best-practices](https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices) | React/Next.js — производительность по гайду Vercel: правильные границы между клиентом и RSC, кэширование, оптимизация размера бандла. Подключай в любом Next.js-проекте. | **395K** |
 | [vercel-labs/agent-skills@web-design-guidelines](https://skills.sh/vercel-labs/agent-skills/web-design-guidelines) | Чек-лист соответствия Web Interface Guidelines: a11y, hit-targets, focus rings. Запускай как ревью UI до коммита. | **316K** |
 | [microsoft/azure-skills@azure-deploy](https://skills.sh/microsoft/azure-skills/azure-deploy) | Деплой в Azure: ARM/Bicep, App Service, Container Apps. Ставь только если работаешь в Azure-стеке — иначе мёртвый груз в контексте. | **312K** |
 | [obra/superpowers@brainstorming](https://skills.sh/obra/superpowers/brainstorming) | Структурированный брейншторм с гипотезами и матрицей вариантов **до** начала кода. Включай когда задача расплывчатая («сделай auth»). | **155K** |
@@ -76,15 +76,15 @@ Skills — переиспользуемые наборы инструкций, �
 | [mattpocock/skills@tdd](https://skills.sh/mattpocock/skills/tdd) | TDD-цикл (red-green-refactor) с дисциплиной — не даёт агенту писать код раньше тестов. От Matt Pocock. | **96K** |
 | [obra/superpowers@systematic-debugging](https://skills.sh/obra/superpowers/systematic-debugging) | Дисциплина отладки: гипотезы → изоляция → root cause. Прерывает цикл бесконечных правок наугад. | **94K** |
 | [arvindrk/extract-design-system@extract-design-system](https://skills.sh/arvindrk/extract-design-system/extract-design-system) | Скан существующего сайта → структурированный design-system (токены, паттерны, типографика). Для редизайна или нового проекта на базе старого. | **93K** |
-| [obra/superpowers@requesting-code-review](https://skills.sh/obra/superpowers/requesting-code-review) | Запросить ревью у саб-агента **перед** коммитом. Эффективно когда работаешь автономно без живого ревьюера. | **82K** |
+| [obra/superpowers@requesting-code-review](https://skills.sh/obra/superpowers/requesting-code-review) | Запросить ревью у субагента **перед** коммитом. Эффективно когда работаешь автономно без живого ревьюера. | **82K** |
 | [mattpocock/skills@grill-with-docs](https://skills.sh/mattpocock/skills/grill-with-docs) | «Допрашивай» документацию через find/grep — заменяет догадки точными цитатами. Особенно ценно для библиотек, где знание Claude устарело. | **79K** |
-| [obra/superpowers@subagent-driven-development](https://skills.sh/obra/superpowers/subagent-driven-development) | Делегирование независимых задач саб-агентам параллельно (feature + tests, frontend + backend). | **70K** |
+| [obra/superpowers@subagent-driven-development](https://skills.sh/obra/superpowers/subagent-driven-development) | Делегирование независимых задач субагентам параллельно (feature + tests, frontend + backend). | **70K** |
 | [anthropics/skills@webapp-testing](https://skills.sh/anthropics/skills/webapp-testing) | Тестирование веб-приложений через Playwright. Заменяет «руками протыкать в браузере» на автоматизацию. | **68K** |
 | [obra/superpowers@verification-before-completion](https://skills.sh/obra/superpowers/verification-before-completion) | Проверить что задача реально сделана (запустить тесты, открыть страницу), до отчёта «готово». Антидот к false-positive отчётам. | **68K** |
 
-**Источник:** [skills.sh leaderboard](https://skills.sh) — числа быстро растут, актуальны на момент последнего пересмотра. Автообновление: `python scripts/refresh-top-skills.py --write`.
+**Источник:** [skills.sh leaderboard](https://skills.sh) — числа быстро растут, актуальны на момент последнего обновления. Автообновление: `python scripts/refresh-top-skills.py --write`.
 
-**Совет практика:** ставь `obra/superpowers` целиком сразу — самая полная коллекция soft-скиллов (TDD, отладка, планирование, брейншторм, код-ревью). Пять из топ-15 — оттуда. Дальше добавь скиллы под свой стек (Vercel React, Convex, Firebase, Supabase, Azure). Не ставь всё подряд — каждый скилл занимает 3–5K токенов в bootstrap-контексте.
+**Совет практика:** ставь `obra/superpowers` целиком сразу — самая полная коллекция soft-скиллов (TDD, отладка, планирование, брейншторм, код-ревью). Пять из топ-15 — оттуда. Дальше добавь скиллы под свой стек (Vercel React, Convex, Firebase, Supabase, Azure). Не ставь всё подряд — каждый скилл съедает 3–5K токенов на bootstrap.
 
 ### Официальные от Anthropic
 
@@ -196,7 +196,7 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 
 ## Hooks
 
-Hooks — shell-команды (или HTTP / MCP / prompt-агенты), которые запускаются по событиям жизненного цикла сессии. См. [hooks reference](https://docs.claude.com/en/docs/claude-code/hooks).
+Hooks — shell-команды (или HTTP / MCP / prompt-агенты), которые запускаются по событиям сессии. См. [hooks reference](https://docs.claude.com/en/docs/claude-code/hooks).
 
 > 📂 Связанные проекты: **[8 записей →](./catalog/hooks.md)**. Большая часть hooks живёт внутри плагинов — см. раздел [Plugins](#plugins) выше.
 
@@ -217,11 +217,11 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 
 ### Сценарии применения
 
-**Безопасность:** pre-commit на секреты, запрет `git push --force` в `main` / `production`, `permissionDecision: "ask"` для команд со словом `production` или `prod-*`, JSONL-аудит каждого PostToolUse, блокировка `curl` и `wget` вне белого списка доменов.
+**Безопасность:** pre-commit на секреты, запрет `git push --force` в `main` / `production`, `permissionDecision: "ask"` для команд со словом `production` или `prod-*`, JSONL-аудит каждого PostToolUse, блокировка `curl` и `wget` к доменам не из белого списка.
 
 **Качество:** автоформат на PostToolUse Edit / Write (`prettier --write`, `ruff format`), `tsc --noEmit` на изменённых файлах, `eslint --fix`, `terraform fmt -recursive`.
 
-**Workflow:** push в ntfy / Pushover / Telegram по событиям Notification и Stop, учёт стоимости в CSV из события Stop, `direnv reload` по CwdChanged, авто-коммит по Stop с conventional-сообщениями.
+**Workflow:** push в ntfy / Pushover / Telegram по событиям Notification и Stop, учёт стоимости в CSV по событию Stop, `direnv reload` по CwdChanged, авто-коммит по Stop с conventional-сообщениями.
 
 **Архитектурные:** запрет редактирования `package.json` или lockfile без явного разрешения, pre-edit grep на использование функции, которую собираемся удалить, проверка структуры нового файла (`src/` / `tests/` / `docs/`).
 
@@ -233,7 +233,7 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 
 > 📂 Полный каталог: **[827 записей по 30 категориям →](./catalog/mcp-servers.md)** — взято из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
 
-> **Правило практика:** пять хорошо подобранных MCP лучше двадцати. Каждый сервер расходует токены контекста на discovery — будь придирчив. С 19 включёнными серверами 200K-контекст превращается в 70K ещё до старта работы.
+> **Правило практика:** пять хорошо подобранных MCP-серверов лучше двадцати. Каждый сервер расходует токены контекста на discovery — будь придирчив. С 19 включёнными серверами 200K-контекст превращается в 70K ещё до старта работы.
 
 ### Официальные
 
@@ -256,11 +256,11 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 - **PostgreSQL** — [modelcontextprotocol/servers/postgres](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres). Read-only по умолчанию, для дебага запросов и схемы продакшен-БД.
 - **Filesystem** — [modelcontextprotocol/servers/filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem). Чтение файлов вне рабочей директории (например, общая база знаний или соседний проект).
 - **Playwright** — [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp). Для тестов UI и скрейпинга. Альтернатива — Browserbase для облачных браузеров.
-- **Context7** — [upstash/context7](https://github.com/upstash/context7). Свежая документация популярных библиотек — Claude перестаёт галлюцинировать API устаревших версий.
+- **Context7** — [upstash/context7](https://github.com/upstash/context7). Свежая документация популярных библиотек — Claude перестаёт выдумывать API устаревших версий.
 - **Linear** — [linear/linear-mcp](https://github.com/linear/linear-mcp). Если ведёшь задачи в Linear — агент сам читает спеки и комментирует issues.
 - **Sequential thinking** — [modelcontextprotocol/servers/sequentialthinking](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking). Структурированное пошаговое мышление для сложных задач.
 
-Полная развёртка по 30 категориям (базы данных, version control, dev-инструменты, облака, браузеры, поиск, коммуникации, мониторинг, безопасность, базы знаний, агрегаторы, sandbox-окружения, рабочие инструменты, файловые системы, OS, мультимедиа, data science, RAG, маркетинг, продукт, customer data, соцсети, поддержка, e-commerce, fintech, визуализация, путешествия) — в **[catalog/mcp-servers.md](./catalog/mcp-servers.md)**.
+Полная разбивка по 30 категориям — базы данных, version control, dev-инструменты, облака, браузеры, поиск, коммуникации, мониторинг, безопасность, базы знаний, агрегаторы, sandbox-окружения, рабочие инструменты, файловые системы, OS, мультимедиа, data science, RAG, маркетинг, продукт, customer data, соцсети, поддержка, e-commerce, fintech, визуализация, путешествия — в **[catalog/mcp-servers.md](./catalog/mcp-servers.md)**.
 
 ---
 
@@ -282,7 +282,7 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 
 - [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) — `CLAUDE.md`, собранный из практик Andrej Karpathy. 128k⭐.
 - [garrytan/gstack](https://github.com/garrytan/gstack) — Сетап Garry Tan: 23 opinionated-инструмента. 95k⭐.
-- [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) — Комплексная оптимизация harness'а: скиллы, инстинкты, память. 181k⭐.
+- [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) — Комплексная оптимизация harness'а: скиллы, повадки, память. 181k⭐.
 
 ### Под конкретный стек
 
@@ -319,7 +319,7 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 - [Что вы не знали о Claude Code: архитектура и практики](https://habr.com/ru/articles/1012412/) — Внутренняя архитектура агента.
 - [Айсберг Claude Code (YooMoney)](https://habr.com/ru/companies/yoomoney/articles/1015548/) — 30+ возможностей от новичка до автоматизации.
 - [Изоляция контекста через субагенты](https://habr.com/ru/articles/974448/) — Архитектурный паттерн для долгих задач.
-- [3000+ часов в Claude Code](https://habr.com/ru/articles/1017110/) — Личный опыт автора, упакованный в три плагина.
+- [3000+ часов в Claude Code](https://habr.com/ru/articles/1017110/) — Личный опыт автора, оформленный в виде трёх плагинов.
 - [Statusline для Claude Code с мониторингом VPS](https://habr.com/ru/articles/1013414/) — Кастомизация statusline.
 - [Разработка с Obsidian + Claude](https://habr.com/ru/articles/1030316/) — Workflow связки Claude и базы знаний.
 - [Как использовать Claude Code: советы опытного разработчика (OTUS)](https://habr.com/ru/companies/otus/articles/929624/) — Корпоративный блог.
@@ -374,7 +374,7 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 
 - [Managed plugin marketplaces](https://docs.claude.com/en/docs/claude-code/plugins#managed) — Только проверенные скиллы из собственного маркетплейса организации.
 - [Permission policies](https://docs.claude.com/en/docs/claude-code/permissions#policy) — Список разрешённых Bash-команд на уровне организации.
-- [Hooks reference](https://docs.claude.com/en/docs/claude-code/hooks) — Схема всех событий — для аудита и блокировок.
+- [Hooks reference](https://docs.claude.com/en/docs/claude-code/hooks) — Схема всех событий — для аудита и блокировки.
 - [examples/hooks/audit.sh](./examples/hooks/scripts/audit.sh) — JSONL-аудит каждого PostToolUse для compliance.
 
 ---
