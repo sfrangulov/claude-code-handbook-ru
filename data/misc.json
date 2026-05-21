@@ -1,0 +1,49 @@
+{
+  "prompting": [
+    { "name": "Anthropic Prompting Guide", "url": "https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview", "desc": "Официальный гайд." },
+    { "name": "Anthropic Cookbook", "url": "https://github.com/anthropics/anthropic-cookbook", "desc": "Примеры паттернов с кодом." },
+    { "name": "Claude API Skills best practices", "url": "https://platform.claude.com/docs/ru/agents-and-tools/agent-skills/best-practices", "desc": "Официальный документ на русском." },
+    { "name": "dair-ai/Prompt-Engineering-Guide", "url": "https://github.com/dair-ai/Prompt-Engineering-Guide", "desc": "Академический гайд, 50k+⭐." },
+    { "name": "f/awesome-chatgpt-prompts", "url": "https://github.com/f/awesome-chatgpt-prompts", "desc": "Готовые промпты, применимы и к Claude." },
+    { "name": "PatrickJS/awesome-cursorrules", "url": "https://github.com/PatrickJS/awesome-cursorrules", "desc": "`.cursorrules` для разных стеков, многие переносимы в CLAUDE.md." }
+  ],
+  "channels": [
+    { "name": "@cc_consultant (Telegram, RU)", "url": "https://t.me/cc_consultant", "desc": "Этот handbook и ежедневные разборы." },
+    { "name": "Anthropic Discord", "url": "https://www.anthropic.com/discord", "desc": "Каналы `#claude-code`, `#skills-and-tools`, `#show-and-tell`." },
+    { "name": "r/ClaudeAI", "url": "https://www.reddit.com/r/ClaudeAI/", "desc": "Reddit-сообщество." },
+    { "name": "r/Anthropic", "url": "https://www.reddit.com/r/Anthropic/", "desc": "Официальный сабреддит." }
+  ],
+  "podcasts": [
+    { "name": "Latent Space (swyx)", "url": "https://www.latent.space/", "desc": "AI-инженерия, регулярные выпуски про Claude Code и MCP." },
+    { "name": "The Cognitive Revolution", "url": "https://www.cognitiverevolution.ai/", "desc": "Nathan Labenz, AI-индустрия и тренды." },
+    { "name": "Practical AI (Changelog)", "url": "https://changelog.com/practicalai", "desc": "Практические кейсы AI." },
+    { "name": "Anthropic (YouTube)", "url": "https://www.youtube.com/@anthropic-ai", "desc": "Релизы и техдемки." },
+    { "name": "Matt Pocock", "url": "https://www.youtube.com/@mattpocockuk", "desc": "TypeScript и AI-инструменты." },
+    { "name": "ThePrimeagen", "url": "https://www.youtube.com/@ThePrimeagen", "desc": "AI-workflow с критическим взглядом." }
+  ],
+  "twitter": [
+    { "name": "@AnthropicAI", "url": "https://twitter.com/AnthropicAI", "desc": "Официальный аккаунт." },
+    { "name": "@alexalbert__", "url": "https://twitter.com/alexalbert__", "desc": "Alex Albert, DevRel в Anthropic." },
+    { "name": "@swyx", "url": "https://twitter.com/swyx", "desc": "AI-инженерия, Latent Space." },
+    { "name": "@simonw", "url": "https://twitter.com/simonw", "desc": "Simon Willison, разборы LLM-инструментов." },
+    { "name": "@mattpocockuk", "url": "https://twitter.com/mattpocockuk", "desc": "Matt Pocock, TDD-скиллы." },
+    { "name": "@obra", "url": "https://twitter.com/obra", "desc": "Jesse Vincent, автор `obra/superpowers`." }
+  ],
+  "competitors": [
+    { "name": "Cursor", "url": "https://cursor.com/", "desc": "IDE-first, отдельный редактор на базе VS Code, сильный автокомплит." },
+    { "name": "GitHub Copilot", "url": "https://github.com/features/copilot", "desc": "Встроен в IDE, фокус на автокомплите и чате." },
+    { "name": "Aider", "url": "https://aider.chat/", "desc": "CLI-first, open-source, мульти-модельный." },
+    { "name": "Cline", "url": "https://github.com/cline/cline", "desc": "Расширение для VS Code с агентным режимом." },
+    { "name": "Continue", "url": "https://www.continue.dev/", "desc": "Open-source автокомплит и чат в IDE." },
+    { "name": "OpenAI Codex CLI", "url": "https://github.com/openai/codex", "desc": "Официальный CLI-агент OpenAI." },
+    { "name": "Google Gemini CLI", "url": "https://github.com/google-gemini/gemini-cli", "desc": "CLI-агент от Google." },
+    { "name": "Windsurf (Codeium)", "url": "https://codeium.com/windsurf", "desc": "IDE-агент от Codeium." }
+  ],
+  "utilities": [
+    { "name": "Anthropic Console", "url": "https://console.anthropic.com/", "desc": "Playground, библиотека промптов, выдача API-ключей." },
+    { "name": "Anthropic Workbench", "url": "https://console.anthropic.com/workbench", "desc": "UI для экспериментов с промптами." },
+    { "name": "Anthropic Status", "url": "https://status.anthropic.com/", "desc": "Статус сервисов." },
+    { "name": "Claude release notes", "url": "https://docs.claude.com/en/release-notes/claude-code", "desc": "Официальный changelog." },
+    { "name": "Skills.sh", "url": "https://skills.sh/", "desc": "Маркетплейс скиллов с количеством установок." }
+  ]
+}

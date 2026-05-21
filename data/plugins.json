@@ -1,0 +1,17 @@
+{
+  "marketplaces": [
+    { "name": "obra/superpowers-marketplace", "url": "https://github.com/obra/superpowers-marketplace", "desc": "Маркетплейс с 20+ soft-скиллами и плагинами от Jesse Vincent. Главный must-have: `claude plugin marketplace add obra/superpowers-marketplace`." },
+    { "name": "ccplugins/awesome-claude-code-plugins", "url": "https://github.com/ccplugins/awesome-claude-code-plugins", "desc": "50+ плагинов по 13 категориям (качество кода, git, devops, дизайн, бизнес). 782⭐. Установка: `claude plugin marketplace add ccplugins/awesome-claude-code-plugins`." },
+    { "name": "VoltAgent/awesome-claude-code-subagents", "url": "https://github.com/VoltAgent/awesome-claude-code-subagents", "desc": "144 субагента, оформленные как плагин-маркетплейс." },
+    { "name": "anthropics/claude-plugins-official", "url": "https://github.com/anthropics/claude-plugins-official", "desc": "Официальные плагины Anthropic." }
+  ],
+  "singles": [
+    { "name": "brennercruvinel/CCPlugins", "url": "https://github.com/brennercruvinel/CCPlugins", "desc": "Сборка самых ходовых slash-команд автора." },
+    { "name": "ApurvBazari/claude-plugins", "url": "https://github.com/ApurvBazari/claude-plugins", "desc": "Уведомления о событиях через ntfy / Pushover / Telegram." },
+    { "name": "browserbase/claude-code-plugin", "url": "https://github.com/browserbase/claude-code-plugin", "desc": "Browserbase: облачные браузеры для тестирования и скрейпинга." },
+    { "name": "0xdesign/design-plugin", "url": "https://github.com/0xdesign/design-plugin", "desc": "Дизайн-ориентированная обвязка для UI-задач." },
+    { "name": "jeremylongshore/claude-code-plugins-plus-skills", "url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills", "desc": "Связка плагинов и скиллов в одном репозитории." },
+    { "name": "TT-Wang/cortex-plugin", "url": "https://github.com/TT-Wang/cortex-plugin", "desc": "Структурированное мышление и планирование задач." },
+    { "name": "Rich627/whatsapp-claude-plugin", "url": "https://github.com/Rich627/whatsapp-claude-plugin", "desc": "Интеграция с WhatsApp." }
+  ]
+}

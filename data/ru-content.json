@@ -1,0 +1,49 @@
+{
+  "habr": [
+    { "name": "Claude Code в 2026: гайд для тех, кто еще пишет код руками", "url": "https://habr.com/ru/articles/987382/", "desc": "Подробный гайд по AI Coding Agents, рекомендации по тарифам и CLI." },
+    { "name": "Год с Claude Code: рабочая конфигурация с первого запуска", "url": "https://habr.com/ru/companies/alpinadigital/articles/1032134/", "desc": "Как устроены rules, skills, agents, команды, MCP и hooks; как всё связывается через `routing.md`." },
+    { "name": "Claude Code: практический гайд по настройке, автоматизации и контексту", "url": "https://habr.com/ru/articles/987094/", "desc": "Полный сетап со скиллами, hooks, субагентами и MCP. От практика." },
+    { "name": "Полное руководство по добавлению MCP-серверов", "url": "https://habr.com/ru/articles/938626/", "desc": "Методы настройки, решения частых ошибок, проверенные серверы." },
+    { "name": "44 настройки Claude Code, о которых вы не знали", "url": "https://habr.com/ru/articles/987826/", "desc": "Ранжированы от «must have» до «забей»." },
+    { "name": "10 настроек Claude Code, до которых большинство не доходит", "url": "https://habr.com/ru/articles/1028988/", "desc": "Малоиспользуемые возможности." },
+    { "name": "Что вы не знали о Claude Code: архитектура и практики", "url": "https://habr.com/ru/articles/1012412/", "desc": "Внутренняя архитектура агента." },
+    { "name": "Айсберг Claude Code (YooMoney)", "url": "https://habr.com/ru/companies/yoomoney/articles/1015548/", "desc": "30+ возможностей от новичка до автоматизации." },
+    { "name": "Изоляция контекста через субагенты", "url": "https://habr.com/ru/articles/974448/", "desc": "Архитектурный паттерн для долгих задач." },
+    { "name": "3000+ часов в Claude Code", "url": "https://habr.com/ru/articles/1017110/", "desc": "Личный опыт автора, оформленный в виде трёх плагинов." },
+    { "name": "Statusline для Claude Code с мониторингом VPS", "url": "https://habr.com/ru/articles/1013414/", "desc": "Кастомизация statusline." },
+    { "name": "Разработка с Obsidian + Claude", "url": "https://habr.com/ru/articles/1030316/", "desc": "Workflow связки Claude и базы знаний." },
+    { "name": "Как использовать Claude Code: советы опытного разработчика (OTUS)", "url": "https://habr.com/ru/companies/otus/articles/929624/", "desc": "Корпоративный блог." },
+    { "name": "Claude Code — полный гайд для новичков с нуля", "url": "https://habr.com/ru/articles/1033416/", "desc": "Функции, настройка, best-practices." },
+    { "name": "Claude Code: маршрут обучения и ресурсы 2026", "url": "https://habr.com/ru/articles/983214/", "desc": "Учебная карта." },
+    { "name": "Claude Code для тех, кто не пишет код", "url": "https://habr.com/ru/articles/1017668/", "desc": "Для продуктовых и менеджеров." },
+    { "name": "Code с Claude 2026: что Anthropic показали разработчикам", "url": "https://habr.com/ru/articles/1032588/", "desc": "Отчёт со второй конференции Anthropic (6 мая 2026)." },
+    { "name": "Claude Code бесплатно: ИИ бесплатно в 2026", "url": "https://habr.com/ru/articles/1018234/", "desc": "Про утечку source maps и форк OpenClaude." }
+  ],
+  "vc": [
+    { "name": "Кодинг с ИИ-агентом в терминале (vc.ru)", "url": "https://vc.ru/ai/2920853-ii-agenty-v-terminalye", "desc": "Как Claude Code и аналоги работают изнутри." },
+    { "name": "Три парадигмы ИИ-агентов в 2026: Claude Code / OpenClaw / Hermes", "url": "https://vc.ru/ai/2911692-iskusstvennyj-intellekt-dlja-biznesa", "desc": "Opus 4.7, бюджеты задач, контекст 1M токенов." },
+    { "name": "Anthropic ограничила OpenClaw в Claude-подписках", "url": "https://vc.ru/ai/2878137-anthropic-ogranichila-openclaw-v-claude", "desc": "Инцидент с отключением сторонних агентов." },
+    { "name": "Anthropic: 10 агентов для финансового сектора", "url": "https://vc.ru/id300496/2913405-anthropic-predstavila-ii-agentov-dlya-finansovogo-sektora", "desc": "Финансовые AI-агенты." },
+    { "name": "Anthropic признал, что два месяца поставлял дефектный Claude Code", "url": "https://vc.ru/ai/2885740-anthropic-priznal-defekty-v-claude-code", "desc": "Incident report." },
+    { "name": "Тарифы Claude 2026: гайд по планам, ценам API и доступу из России", "url": "https://vc.ru/ai/2757771-tarify-claude-2026-gayd-po-planam-i-dostupu-iz-rossii", "desc": "Pricing." },
+    { "name": "Как зарегистрироваться в Claude AI из России в 2026", "url": "https://vc.ru/ai/2878925-registratsiya-v-claude-ai-iz-rossii", "desc": "Регистрация." }
+  ],
+  "dtf": [
+    { "name": "Как использовать Claude в России в 2026: полный гайд", "url": "https://dtf.ru/howto/4796716-kak-zaregistrirovatsya-i-ispolzovat-claude-v-rossii", "desc": "Регистрация и работа с Claude из России." },
+    { "name": "AI-кодинг с Claude Code: три способа создания лендинга", "url": "https://dtf.ru/howto/4727219-ai-koding-s-claude-code-sozdanie-lendinga-i-ego-detali", "desc": "Влияние контекста на результат." },
+    { "name": "Claude AI: возможности и готовые промпты", "url": "https://dtf.ru/howto/5013694-claude-ai-vozmozhnosti-nevroseti", "desc": "Сценарии и шаблоны." }
+  ],
+  "youtube": [
+    { "name": "Claude Code: ПОЛНЫЙ КУРС 2026 (4+ часа)", "url": "https://www.youtube.com/watch?v=e6JOw0PliRw", "desc": "Длинный курс с практикой." },
+    { "name": "Claude Code: ПОЛНЫЙ ГАЙД 2026 (2+ часа)", "url": "https://www.youtube.com/watch?v=kFpX1FftH70", "desc": "Структурированный курс." },
+    { "name": "Claude Code: настройка, MCP и Subagent Driven разработка", "url": "https://www.youtube.com/watch?v=_4ZcgpvDliA", "desc": "Фокус на MCP и субагентах." },
+    { "name": "Claude Code: всё за 2 часа", "url": "https://www.youtube.com/watch?v=dn3CuC-2NiI", "desc": "Альтернативный обзор." },
+    { "name": "Я потратил на Claude Code 1000 часов. Вайб-кодинг", "url": "https://www.youtube.com/watch?v=sx6ZSbc51gY", "desc": "Личный опыт автора." },
+    { "name": "Claude на МАКСИМУМ — гайд за 11 минут", "url": "https://www.youtube.com/watch?v=erdJvTR0hcU", "desc": "Компактный обзор." },
+    { "name": "Создавай ИИ-агентов с Claude Code — все функции за 22 минуты", "url": "https://www.youtube.com/watch?v=iwyHt30Ty0c", "desc": "MCP, субагенты, скиллы, hooks, permissions." },
+    { "name": "Claude Code или Codex? Честный тест", "url": "https://www.youtube.com/watch?v=OethkCDGwuM", "desc": "Сравнение на реальном продукте." },
+    { "name": "Claude Code для дизайнеров", "url": "https://www.youtube.com/watch?v=OiXq8xhJ-wg", "desc": "UX/UI-фокус." },
+    { "name": "Claude станет в 10 раз умнее, если подключишь это", "url": "https://www.youtube.com/watch?v=eTrUEZ9E9aI", "desc": "MCP-инструменты для усиления." },
+    { "name": "Регистрация в Claude AI в России", "url": "https://www.youtube.com/watch?v=2ypCr-Gz-t0", "desc": "Практический гайд." }
+  ]
+}

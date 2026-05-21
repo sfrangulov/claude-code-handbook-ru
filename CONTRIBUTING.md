@@ -19,14 +19,31 @@
 
 ## Как добавить
 
+`README.md` — генерируемый артефакт. Источник правды:
+
+- `data/*.json` — все списки и таблицы (skills, subagents, plugins, hooks, MCP, templates, ru-content, security, misc, skills-top).
+- `README.template.md` — статичная проза, заголовки, Quickstart, маркеры вставки данных.
+
+Шаги:
+
 1. Форкните репозиторий.
-2. Добавьте одну строку в нужный раздел `README.md`:
+2. Откройте подходящий файл в `data/` и добавьте одну запись:
+   ```json
+   { "name": "Название", "url": "https://...", "desc": "Одна строка о том, для чего это нужно." }
    ```
-   - [Название](url) — одна строка о том, для чего это нужно.
-   ```
-   Разделитель — em-dash (`—`) с пробелами, не ASCII hyphen. Осознанное отклонение от sindresorhus/awesome-lint: русская типографика важнее lint-conformance, в meta-list мы не пушим. См. [docs/research/awesome-lists-best-practices.md](./docs/research/awesome-lists-best-practices.md) §2.1.
-3. Сохраняйте алфавитный порядок внутри подсекции, где это применимо.
-4. Откройте PR с описанием: что добавили и почему это полезно.
+   Разделитель в итоговом markdown — em-dash (`—`) с пробелами, его подставляет генератор. Осознанное отклонение от sindresorhus/awesome-lint: русская типографика важнее lint-conformance, в meta-list мы не пушим. См. [docs/research/awesome-lists-best-practices.md](./docs/research/awesome-lists-best-practices.md) §2.1.
+3. Запустите `node scripts/build-readme.mjs` — он перегенерирует `README.md` из template + data.
+4. Закоммитьте оба файла (`data/<секция>.json` и `README.md`).
+5. Сохраняйте алфавитный порядок внутри подсекции, где это применимо.
+6. Откройте PR с описанием: что добавили и почему это полезно.
+
+CI-гейт: `node scripts/build-readme.mjs --check` — падает с exit=1, если `README.md` разошёлся с template/data.
+
+Обновление топ-15 скиллов по install-count из skills.sh:
+```bash
+node scripts/refresh-top-skills.mjs --write   # обновляет data/skills-top.json
+node scripts/build-readme.mjs                  # перегенерирует README.md
+```
 
 ## URL-слаги — английские, всегда
 

@@ -1,0 +1,21 @@
+{
+  "local": [
+    {
+      "name": "examples/hooks/",
+      "url": "./examples/hooks/README.md",
+      "desc": "Три рабочих hook'а с bash-скриптами и инструкциями куда положить:",
+      "children": [
+        { "name": "pre-commit-secrets.sh", "bold": true, "desc": "детектор секретов в staged-diff. Спасает от утечки API-ключей, когда агент коммитит без проверки." },
+        { "name": "ntfy.sh", "bold": true, "desc": "push-уведомления через ntfy.sh по событиям `Notification` и `Stop`." },
+        { "name": "audit.sh", "bold": true, "desc": "JSONL-аудит каждого PostToolUse для разбора инцидентов." }
+      ]
+    }
+  ],
+  "community": [
+    { "name": "carapace-sh/claude-code-hooks", "url": "https://github.com/carapace-sh/claude-code-hooks", "desc": "TypeScript SDK для написания hooks с типизацией." },
+    { "name": "decoder3000/claude-hooks-toolkit", "url": "https://github.com/decoder3000/claude-hooks-toolkit", "desc": "Готовые hooks: форматирование, линт, security-проверка, аудит." },
+    { "name": "snyk/claude-code-pre-commit", "url": "https://github.com/snyk/claude-code-pre-commit", "desc": "Security-скан Snyk на pre-commit." },
+    { "name": "johnlindquist/ccmgr", "url": "https://github.com/johnlindquist/ccmgr", "desc": "Менеджер для конфигов hooks." },
+    { "name": "Setting up Claude Code hooks (Anthropic blog)", "url": "https://www.anthropic.com/news/claude-code-hooks", "desc": "Официальный анонс с примерами." }
+  ]
+}

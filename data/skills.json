@@ -1,0 +1,39 @@
+{
+  "official": [
+    { "name": "anthropics/skills/docx", "url": "https://github.com/anthropics/skills/tree/main/skills/docx", "desc": "Word-документы с tracked changes и комментариями." },
+    { "name": "anthropics/skills/pdf", "url": "https://github.com/anthropics/skills/tree/main/skills/pdf", "desc": "Извлечение текста и таблиц, merge/split, заполнение форм." },
+    { "name": "anthropics/skills/pptx", "url": "https://github.com/anthropics/skills/tree/main/skills/pptx", "desc": "PowerPoint: layouts, шаблоны, графики, авто-генерация слайдов." },
+    { "name": "anthropics/skills/xlsx", "url": "https://github.com/anthropics/skills/tree/main/skills/xlsx", "desc": "Excel: формулы, форматирование, анализ." },
+    { "name": "anthropics/skills/frontend-design", "url": "https://github.com/anthropics/skills/blob/main/skills/frontend-design", "desc": "Bold-дизайн без «AI slop». React + Tailwind." },
+    { "name": "anthropics/skills/web-artifacts-builder", "url": "https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder", "desc": "HTML-артефакты на React + Tailwind + shadcn/ui." },
+    { "name": "anthropics/skills/mcp-builder", "url": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder", "desc": "Пошаговое создание MCP-серверов." },
+    { "name": "anthropics/skills/webapp-testing", "url": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing", "desc": "Тестирование веб-приложений через Playwright." },
+    { "name": "anthropics/skills/skill-creator", "url": "https://github.com/anthropics/skills/tree/main/skills/skill-creator", "desc": "Интерактивное создание собственных скиллов через Q&A." }
+  ],
+  "communityCollections": [
+    { "name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "desc": "20+ боевых скиллов: TDD, debugging, brainstorming, написание планов. Самая популярная коллекция. Установка: `claude plugin marketplace add obra/superpowers-marketplace`." },
+    { "name": "obra/superpowers-lab", "url": "https://github.com/obra/superpowers-lab", "desc": "Экспериментальные скиллы из той же серии." },
+    { "name": "trailofbits/skills", "url": "https://github.com/trailofbits/skills", "desc": "Security-скиллы от Trail of Bits: статический анализ через CodeQL/Semgrep, аудит кода, поиск уязвимостей." },
+    { "name": "vercel-labs/agent-skills", "url": "https://github.com/vercel-labs/agent-skills", "desc": "Vercel Engineering: производительность React, web-guidelines, React Native, деплой на Vercel." },
+    { "name": "supabase/agent-skills", "url": "https://github.com/supabase/agent-skills", "desc": "Скиллы для Supabase и PostgreSQL." },
+    { "name": "firebase/agent-skills", "url": "https://github.com/firebase/agent-skills", "desc": "Firebase и Firestore, аудит security-rules." },
+    { "name": "microsoft/azure-skills", "url": "https://github.com/microsoft/azure-skills", "desc": "Деплой в Azure и best-practices от Microsoft." },
+    { "name": "get-convex/agent-skills", "url": "https://github.com/get-convex/agent-skills", "desc": "Convex — реактивный бэкенд." },
+    { "name": "expo/skills", "url": "https://github.com/expo/skills", "desc": "Expo. 25K+ установок." },
+    { "name": "shadcn/ui skills", "url": "https://ui.shadcn.com/docs/skills", "desc": "Контекст по компонентам shadcn и принудительное применение паттернов." },
+    { "name": "travisvn/awesome-claude-skills", "url": "https://github.com/travisvn/awesome-claude-skills", "desc": "12k⭐, актуальный куратор скиллов." },
+    { "name": "karanb192/awesome-claude-skills", "url": "https://github.com/karanb192/awesome-claude-skills", "desc": "50+ проверенных скиллов с разбивкой по типам." }
+  ],
+  "specialized": [
+    { "name": "conorluddy/ios-simulator-skill", "url": "https://github.com/conorluddy/ios-simulator-skill", "desc": "Сборка iOS-приложений, навигация по симулятору, тесты." },
+    { "name": "lackeyjb/playwright-skill", "url": "https://github.com/lackeyjb/playwright-skill", "desc": "Браузерная автоматизация через Playwright." },
+    { "name": "chrisvoncsefalvay/claude-d3js-skill", "url": "https://github.com/chrisvoncsefalvay/claude-d3js-skill", "desc": "Визуализации в d3.js." },
+    { "name": "K-Dense-AI/claude-scientific-skills", "url": "https://github.com/K-Dense-AI/claude-scientific-skills", "desc": "Научные базы данных и библиотеки." },
+    { "name": "jthack/ffuf_claude_skill", "url": "https://github.com/jthack/ffuf_claude_skill", "desc": "Fuzzing через `ffuf` при пентесте." },
+    { "name": "yusufkaraaslan/Skill_Seekers", "url": "https://github.com/yusufkaraaslan/Skill_Seekers", "desc": "Превращает сайт документации в Claude Skill." },
+    { "name": "alonw0/web-asset-generator", "url": "https://github.com/alonw0/web-asset-generator", "desc": "Favicon, app-иконки, OG-картинки." }
+  ],
+  "local": [
+    { "name": "examples/skills/review-staged-changes/", "url": "./examples/skills/review-staged-changes/SKILL.md", "desc": "Проверка staged-изменений перед коммитом." }
+  ]
+}

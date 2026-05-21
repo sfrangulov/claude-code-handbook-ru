@@ -1,3 +1,9 @@
+<!--
+README.md is generated from this template + data/*.json.
+Edit this file or data/*.json, then run: node scripts/build-readme.mjs
+CI gate: node scripts/build-readme.mjs --check
+-->
+
 # Claude Code Handbook на русском [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) — CLI-агент Anthropic для разработки в терминале с поддержкой MCP, hooks и автономных субагентов.
@@ -87,7 +93,7 @@ Skills — переиспользуемые наборы инструкций, �
 | [anthropics/skills@webapp-testing](https://skills.sh/anthropics/skills/webapp-testing) | Тестирование веб-приложений через Playwright. Заменяет «руками протыкать в браузере» на автоматизацию. | **68K** |
 | [obra/superpowers@verification-before-completion](https://skills.sh/obra/superpowers/verification-before-completion) | Проверить что задача реально сделана (запустить тесты, открыть страницу), до отчёта «готово». Антидот к false-positive отчётам. | **68K** |
 
-**Источник:** [skills.sh leaderboard](https://skills.sh) — числа быстро растут, актуальны на момент последнего обновления. Автообновление: `python scripts/refresh-top-skills.py --write`.
+**Источник:** [skills.sh leaderboard](https://skills.sh) — числа быстро растут, актуальны на момент последнего обновления. Автообновление: `node scripts/refresh-top-skills.mjs --write && node scripts/build-readme.mjs`.
 
 **Совет практика:** ставь `obra/superpowers` целиком сразу — самая полная коллекция soft-скиллов (TDD, отладка, планирование, брейншторм, код-ревью). Пять из топ-15 — оттуда. Дальше добавь скиллы под свой стек (Vercel React, Convex, Firebase, Supabase, Azure). Не ставь всё подряд — каждый скилл съедает 3–5K токенов на bootstrap.
 

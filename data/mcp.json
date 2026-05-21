@@ -1,0 +1,27 @@
+{
+  "official": [
+    { "name": "modelcontextprotocol/servers", "url": "https://github.com/modelcontextprotocol/servers", "desc": "Официальный набор от Anthropic: `filesystem`, `git`, `postgres`, `slack`, `memory`, `sequentialthinking`." },
+    { "name": "github/github-mcp-server", "url": "https://github.com/github/github-mcp-server", "desc": "Официальный GitHub MCP. Превращает Claude из «генератора кода» в участника процесса issues/PR." },
+    { "name": "MCP registry", "url": "https://github.com/modelcontextprotocol/registry", "desc": "Официальный каталог серверов с поиском." },
+    { "name": "modelcontextprotocol.io", "url": "https://modelcontextprotocol.io/", "desc": "Документация протокола." }
+  ],
+  "curators": [
+    { "name": "punkpeye/awesome-mcp-servers", "url": "https://github.com/punkpeye/awesome-mcp-servers", "desc": "Самый большой каталог MCP-серверов с категориями." },
+    { "name": "MCP Servers Hub (mcp.so)", "url": "https://mcp.so/", "desc": "Каталог с поиском и live-демо." },
+    { "name": "Glama AI MCP servers", "url": "https://glama.ai/mcp/servers", "desc": "Альтернативный каталог." },
+    { "name": "Pulse MCP", "url": "https://www.pulsemcp.com/", "desc": "Каталог серверов и use-case'ов." },
+    { "name": "Best Claude Code MCP Servers 2026 (Nimbalyst)", "url": "https://nimbalyst.com/blog/best-claude-code-mcp-servers/", "desc": "Ранжированный обзор под Claude Code." }
+  ],
+  "topDaily": {
+    "_comment": "Эти пункты в README не bullet-list, а bold-имя + ссылка на проект внутри предложения. Renderer 'bold-list'.",
+    "items": [
+      { "name": "GitHub", "link": { "text": "github/github-mcp-server", "url": "https://github.com/github/github-mcp-server" }, "desc": "Без него Claude видит только локальный репозиторий. С ним — читает чужие issues, комментирует PR, открывает черновики PR." },
+      { "name": "PostgreSQL", "link": { "text": "modelcontextprotocol/servers/postgres", "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres" }, "desc": "Read-only по умолчанию, для дебага запросов и схемы продакшен-БД." },
+      { "name": "Filesystem", "link": { "text": "modelcontextprotocol/servers/filesystem", "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem" }, "desc": "Чтение файлов вне рабочей директории (например, общая база знаний или соседний проект)." },
+      { "name": "Playwright", "link": { "text": "microsoft/playwright-mcp", "url": "https://github.com/microsoft/playwright-mcp" }, "desc": "Для тестов UI и скрейпинга. Альтернатива — Browserbase для облачных браузеров." },
+      { "name": "Context7", "link": { "text": "upstash/context7", "url": "https://github.com/upstash/context7" }, "desc": "Свежая документация популярных библиотек — Claude перестаёт выдумывать API устаревших версий." },
+      { "name": "Linear", "link": { "text": "linear/linear-mcp", "url": "https://github.com/linear/linear-mcp" }, "desc": "Если ведёшь задачи в Linear — агент сам читает спеки и комментирует issues." },
+      { "name": "Sequential thinking", "link": { "text": "modelcontextprotocol/servers/sequentialthinking", "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking" }, "desc": "Структурированное пошаговое мышление для сложных задач." }
+    ]
+  }
+}
