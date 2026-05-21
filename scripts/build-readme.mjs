@@ -6,10 +6,16 @@
 //   node scripts/build-readme.mjs --check   # CI gate: fail if any output is stale
 //
 // Marker syntax in template files:
-//   <!-- @list:<ref> -->        bullet list of {name, url, desc?, children?, bold?}
-//   <!-- @bold-list:<ref> -->   "- **name** — [linkText](linkUrl). desc"
-//   <!-- @table:<ref> -->       markdown table (renderer dispatched by ref)
-//   <!-- @count:<ref> -->       integer count of array length
+//   <!-- @list:<ref> -->                  bullet list of {name, url, desc?, children?, bold?}
+//   <!-- @bold-list:<ref> -->             "- **name** — [linkText](linkUrl). desc"
+//   <!-- @table:<ref> -->                 markdown table (renderer dispatched by ref)
+//   <!-- @count:<ref> -->                 integer count of array length
+//   <!-- @count-ru:<ref>[|f1|f2|f3] -->   count + pluralized Russian noun.
+//                                         Default forms: запись|записи|записей.
+//   <!-- @sum-count:<dir-or-file> -->     sum of all entry arrays under
+//                                         data/<dir>/ (every .json) or in
+//                                         data/<file>.json. Integer.
+//   <!-- @sum-count-ru:<x>[|f1|f2|f3] --> same + pluralized noun.
 //
 // <ref> is `dir/file.dotted.path` (slash separates directory from file,
 // dots navigate JSON keys). Examples:
@@ -127,21 +133,94 @@ const TABLES = {
   },
 };
 
-const MARKER_RE = /<!--\s*@(list|bold-list|table|count):([A-Za-z0-9_/.-]+)\s*-->/g;
+const DEFAULT_RU_FORMS = ['запись', 'записи', 'записей'];
+
+function pluralizeRu(n, forms) {
+  const [one, few, many] = forms;
+  const mod10 = n % 10;
+  const mod100 = n % 100;
+  if (mod100 >= 11 && mod100 <= 14) return many;
+  if (mod10 === 1) return one;
+  if (mod10 >= 2 && mod10 <= 4) return few;
+  return many;
+}
+
+function sumArrayLengths(value) {
+  if (Array.isArray(value)) return value.length;
+  if (value && typeof value === 'object') {
+    let sum = 0;
+    for (const [k, v] of Object.entries(value)) {
+      if (k.startsWith('_')) continue;
+      sum += sumArrayLengths(v);
+    }
+    return sum;
+  }
+  return 0;
+}
+
+async function resolveSumCount(arg) {
+  // arg can be `<dir>` (data/<dir>/*.json) or `<dir>/<file>` (data/<dir>/<file>.json)
+  // Try file first; if not found, treat as directory.
+  const filePath = join(DATA_DIR, `${arg}.json`);
+  try {
+    const raw = await readFile(filePath, 'utf8');
+    return sumArrayLengths(JSON.parse(raw));
+  } catch (err) {
+    if (err.code !== 'ENOENT') throw err;
+  }
+  const dirPath = join(DATA_DIR, arg);
+  const entries = await readdir(dirPath);
+  let total = 0;
+  for (const entry of entries) {
+    if (!entry.endsWith('.json')) continue;
+    const raw = await readFile(join(dirPath, entry), 'utf8');
+    total += sumArrayLengths(JSON.parse(raw));
+  }
+  return total;
+}
+
+function parseFormsArg(value) {
+  // "ref|sing|few|many" or "ref"
+  const [ref, ...forms] = value.split('|');
+  if (forms.length === 0) return { ref, forms: DEFAULT_RU_FORMS };
+  if (forms.length !== 3) {
+    throw new Error(`expected 3 forms (sing|few|many), got ${forms.length} in "${value}"`);
+  }
+  return { ref, forms };
+}
+
+const MARKER_RE = /<!--\s*@(list|bold-list|table|count-ru|count|sum-count-ru|sum-count):([^\s>]+?)\s*-->/g;
 
 async function buildOne(templatePath) {
   const template = await readFile(templatePath, 'utf8');
   const tasks = [];
   for (const m of template.matchAll(MARKER_RE)) {
-    tasks.push({ whole: m[0], kind: m[1], ref: m[2], index: m.index });
+    tasks.push({ whole: m[0], kind: m[1], value: m[2], index: m.index });
   }
   const results = await Promise.all(
-    tasks.map(async ({ kind, ref }) => {
-      const data = await resolveRef(ref);
+    tasks.map(async ({ kind, value }) => {
+      if (kind === 'sum-count') {
+        return String(await resolveSumCount(value));
+      }
+      if (kind === 'sum-count-ru') {
+        const { ref, forms } = parseFormsArg(value);
+        const n = await resolveSumCount(ref);
+        return `${n} ${pluralizeRu(n, forms)}`;
+      }
       if (kind === 'count') {
-        const items = asItems(data, ref);
+        const data = await resolveRef(value);
+        const items = asItems(data, value);
         return String(items.length);
       }
+      if (kind === 'count-ru') {
+        const { ref, forms } = parseFormsArg(value);
+        const data = await resolveRef(ref);
+        const items = asItems(data, ref);
+        const n = items.length;
+        return `${n} ${pluralizeRu(n, forms)}`;
+      }
+      const ref = value;
+      const data = await resolveRef(ref);
       const items = asItems(data, ref);
       if (kind === 'list') return renderList(items);
       if (kind === 'bold-list') return renderBoldList(items);

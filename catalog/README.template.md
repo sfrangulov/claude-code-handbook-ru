@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 **Здесь — широта.** Кураторские рекомендации (то, что я реально применяю в работе) — в [главном README](../README.md).
 
-**Всего записей: 1411.**
+**Всего записей: <!-- @sum-count:catalog -->.**
 
 ## Разделы
 
@@ -22,7 +22,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 | [Hooks](./hooks.md) | связанные проекты и идеи | <!-- @count:catalog/hooks.items --> |
 | [CLAUDE.md шаблоны и opinionated-сетапы](./templates.md) | авторские конфиги | <!-- @count:catalog/templates.items --> |
 | [Экосистема](./ecosystem.md) | утилиты, фреймворки, CLI-обёртки, статус-лайны | <!-- @count:catalog/ecosystem.items --> |
-| [Русскоязычный контент](./ru-content.md) | Habr и YouTube | 12 |
+| [Русскоязычный контент](./ru-content.md) | Habr и YouTube | <!-- @sum-count:catalog/ru-content --> |
 
 ## Чем отличается от главного README
 

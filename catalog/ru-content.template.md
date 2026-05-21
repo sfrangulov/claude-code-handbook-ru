@@ -7,7 +7,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Статьи на Habr и курсы на YouTube про Claude Code и AI-агентов на русском.
 
-**Записей:** 12.
+**Записей:** <!-- @sum-count:catalog/ru-content -->.
 
 📌 Раздел открыт для PR. Критерий — материал на русском про практику Claude Code или близкие темы (Claude Desktop, MCP, AI-агенты в проде), не агрегатор новостей.
 

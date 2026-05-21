@@ -10,7 +10,7 @@ CI gate: node scripts/build-readme.mjs --check
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
-**Полный сырой каталог (1400+ записей по типам)** — в [catalog/](./catalog/README.md). Здесь — курируемая подборка: только то, что я реально применяю в клиентских проектах либо что массово проверено сообществом по install-count.
+**Полный сырой каталог (<!-- @sum-count-ru:catalog --> по типам)** — в [catalog/](./catalog/README.md). Здесь — курируемая подборка: только то, что я реально применяю в клиентских проектах либо что массово проверено сообществом по install-count.
 
 ---
 
@@ -61,7 +61,7 @@ claude mcp add postgres    # @modelcontextprotocol/server-postgres (read-only п
 1. [Топ-15 скиллов по install-count](#топ-15-скиллов-skillssh) — то, что 100K+ людей реально установили.
 2. [Hooks](#hooks) — поставь хотя бы `pre-commit-secrets` сразу: спасает от утечки API-ключей через git-коммит, который агент может сделать за 30 секунд.
 3. [Шаблоны CLAUDE.md](#claudemd-шаблоны) — три production-шаблона: Next.js, Python/FastAPI, Terraform.
-4. [Гайды на русском](#гайды-и-контент-на-русском) — 19 статей с Habr + 11 YouTube-курсов + DTF.
+4. [Гайды на русском](#гайды-и-контент-на-русском) — <!-- @count-ru:ru-content.habr|статья|статьи|статей --> с Habr + <!-- @count-ru:ru-content.youtube|YouTube-курс|YouTube-курса|YouTube-курсов --> + DTF.
 
 ---
 
@@ -69,7 +69,7 @@ claude mcp add postgres    # @modelcontextprotocol/server-postgres (read-only п
 
 Skills — переиспользуемые наборы инструкций, которые Claude подгружает по триггеру. Один скилл = одна задача (TDD-цикл, code-review, performance-аудит). См. [официальный гайд](https://docs.claude.com/en/docs/claude-code/skills).
 
-> 📂 Полный каталог: **[162 записи →](./catalog/skills.md)**
+> 📂 Полный каталог: **[<!-- @count-ru:catalog/skills.items --> →](./catalog/skills.md)**
 
 ### Топ-15 скиллов (skills.sh)
 
@@ -105,7 +105,7 @@ Skills — переиспользуемые наборы инструкций, �
 
 Sub-agent — отдельный экземпляр Claude со своим контекстом, который выполняет подзадачу и возвращает один итоговый ответ. Полезно для read-only исследования и параллельных задач. См. [официальную доку](https://docs.claude.com/en/docs/claude-code/sub-agents).
 
-> 📂 Полный каталог: **[160 записей →](./catalog/subagents.md)**
+> 📂 Полный каталог: **[<!-- @count-ru:catalog/subagents.items --> →](./catalog/subagents.md)**
 
 ### Production-коллекции
 
@@ -123,7 +123,7 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 
 Плагин — упаковка скиллов, субагентов, hooks и MCP-серверов в один артефакт. Один плагин = один `/plugin install <name>`. См. [официальный гайд](https://docs.claude.com/en/docs/claude-code/plugins).
 
-> 📂 Полный каталог: **[16 записей →](./catalog/plugins.md)**
+> 📂 Полный каталог: **[<!-- @count-ru:catalog/plugins.items --> →](./catalog/plugins.md)**
 
 ### Главные маркетплейсы
 
@@ -139,7 +139,7 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 
 Hooks — shell-команды (или HTTP / MCP / prompt-агенты), которые запускаются по событиям сессии. См. [hooks reference](https://docs.claude.com/en/docs/claude-code/hooks).
 
-> 📂 Связанные проекты: **[8 записей →](./catalog/hooks.md)**. Большая часть hooks живёт внутри плагинов — см. раздел [Plugins](#plugins) выше.
+> 📂 Связанные проекты: **[<!-- @count-ru:catalog/hooks.items --> →](./catalog/hooks.md)**. Большая часть hooks живёт внутри плагинов — см. раздел [Plugins](#plugins) выше.
 
 ### Готовые hooks в этом репо
 
@@ -165,7 +165,7 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 
 [Model Context Protocol](https://modelcontextprotocol.io/) — стандарт подключения внешних инструментов к LLM. Все MCP-серверы работают и в Claude Code, и в Claude Desktop, и в Cursor.
 
-> 📂 Полный каталог: **[827 записей по 30 категориям →](./catalog/mcp-servers.md)** — взято из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
+> 📂 Полный каталог: **[<!-- @count-ru:catalog/mcp-servers.items --> →](./catalog/mcp-servers.md)** — взято из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
 
 > **Правило практика:** пять хорошо подобранных MCP-серверов лучше двадцати. Каждый сервер расходует токены контекста на discovery — будь придирчив. С 19 включёнными серверами 200K-контекст превращается в 70K ещё до старта работы.
 
@@ -189,7 +189,7 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 
 `CLAUDE.md` в корне репозитория автоматически подгружается в контекст. См. [memory docs](https://docs.claude.com/en/docs/claude-code/memory).
 
-> 📂 Полный каталог: **[10 записей →](./catalog/templates.md)**
+> 📂 Полный каталог: **[<!-- @count-ru:catalog/templates.items --> →](./catalog/templates.md)**
 
 ### Шаблоны в этом репо
 
@@ -213,7 +213,7 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 
 ## Гайды и контент на русском
 
-> 📂 Полный список: **[12 записей →](./catalog/ru-content.md)**
+> 📂 Полный список: **[<!-- @sum-count-ru:catalog/ru-content --> →](./catalog/ru-content.md)**
 
 ### Habr — практические гайды
 
