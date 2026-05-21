@@ -1,0 +1,868 @@
+{
+  "items": [
+    {
+      "name": "20alexl/claude-engram",
+      "url": "https://github.com/20alexl/claude-engram"
+    },
+    {
+      "name": "aby-claude-watcher",
+      "url": "https://github.com/aby-agency/aby-claude-watcher"
+    },
+    {
+      "name": "ai-marketing-claude",
+      "url": "https://github.com/zubair-trabzada/ai-marketing-claude"
+    },
+    {
+      "name": "Anthropic's article",
+      "url": "https://www.anthropic.com/engineering/claude-think-tool"
+    },
+    {
+      "name": "anthropic-proxy",
+      "url": "https://github.com/maxnowack/anthropic-proxy"
+    },
+    {
+      "name": "Auto Mode Engineering",
+      "url": "https://www.anthropic.com/engineering/claude-code-auto-mode"
+    },
+    {
+      "name": "Auto-claude-code-research-in-sleep",
+      "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep"
+    },
+    {
+      "name": "awesome-claude",
+      "url": "https://github.com/alvinunreal/awesome-claude"
+    },
+    {
+      "name": "awesome-claude-code (hesreallyhim)",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code"
+    },
+    {
+      "name": "awesome-claude-design",
+      "url": "https://github.com/rohitg00/awesome-claude-design"
+    },
+    {
+      "name": "Bring Your AI",
+      "url": "https://bringyour.ai/claude-code-to-codex"
+    },
+    {
+      "name": "Claude Code AWS Gateway",
+      "url": "https://github.com/antkawam/claude-code-aws-gateway"
+    },
+    {
+      "name": "Claude Code Best Practices",
+      "url": "https://www.anthropic.com/engineering/claude-code-best-practices"
+    },
+    {
+      "name": "Claude Code Guide",
+      "url": "https://claudecodeguide.dev"
+    },
+    {
+      "name": "Claude Code integration",
+      "url": "https://hindsight.vectorize.io/integrations"
+    },
+    {
+      "name": "Claude Code Official Docs",
+      "url": "https://docs.anthropic.com/en/docs/claude-code"
+    },
+    {
+      "name": "Claude Code Tamagotchi",
+      "url": "https://github.com/Ido-Levi/claude-code-tamagotchi"
+    },
+    {
+      "name": "Claude Command Center",
+      "url": "https://github.com/tuning-labs-oss/claude-command-center"
+    },
+    {
+      "name": "Claude in a Box",
+      "url": "https://github.com/juancgarza/claude-in-a-box"
+    },
+    {
+      "name": "Claude Session Visualizer",
+      "url": "https://github.com/anaypaul/claude-session-visualizer"
+    },
+    {
+      "name": "claude-ads",
+      "url": "https://github.com/AgriciDaniel/claude-ads"
+    },
+    {
+      "name": "Claude-Autopilot",
+      "url": "https://github.com/benbasha/Claude-Autopilot"
+    },
+    {
+      "name": "claude-balancer",
+      "url": "https://github.com/snipeship/claude-balancer"
+    },
+    {
+      "name": "claude-blocker",
+      "url": "https://github.com/T3-Content/claude-blocker"
+    },
+    {
+      "name": "claude-blog",
+      "url": "https://github.com/AgriciDaniel/claude-blog"
+    },
+    {
+      "name": "claude-canvas",
+      "url": "https://github.com/dvdsgl/claude-canvas"
+    },
+    {
+      "name": "claude-channel-instagram",
+      "url": "https://github.com/riasistemas/claude-channel-instagram"
+    },
+    {
+      "name": "claude-channel-whatsapp",
+      "url": "https://github.com/riasistemas/claude-channel-whatsapp"
+    },
+    {
+      "name": "claude-cmd",
+      "url": "https://github.com/kiliczsh/claude-cmd"
+    },
+    {
+      "name": "claude-code",
+      "url": "https://github.com/laravel/claude-code"
+    },
+    {
+      "name": "claude-code",
+      "url": "https://github.com/anthropics/claude-code"
+    },
+    {
+      "name": "claude-code-action",
+      "url": "https://github.com/anthropics/claude-code-action"
+    },
+    {
+      "name": "claude-code-api-rs",
+      "url": "https://github.com/ZhangHanDong/claude-code-api-rs"
+    },
+    {
+      "name": "claude-code-auto-memory",
+      "url": "https://github.com/severity1/claude-code-auto-memory"
+    },
+    {
+      "name": "claude-code-base-action",
+      "url": "https://github.com/anthropics/claude-code-base-action"
+    },
+    {
+      "name": "claude-code-best-practice",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice"
+    },
+    {
+      "name": "claude-code-blueprint",
+      "url": "https://github.com/faizkhairi/claude-code-blueprint"
+    },
+    {
+      "name": "claude-code-boost",
+      "url": "https://github.com/yifanzz/claude-code-boost"
+    },
+    {
+      "name": "claude-code-chat",
+      "url": "https://github.com/andrepimenta/claude-code-chat"
+    },
+    {
+      "name": "Claude-code-ChatInWindows",
+      "url": "https://github.com/LKbaba/Claude-code-ChatInWindows"
+    },
+    {
+      "name": "claude-code-cheat-sheet",
+      "url": "https://cc.storyfox.cz"
+    },
+    {
+      "name": "claude-code-container",
+      "url": "https://github.com/tintinweb/claude-code-container"
+    },
+    {
+      "name": "claude-code-containers",
+      "url": "https://github.com/ghostwriternr/claude-code-containers"
+    },
+    {
+      "name": "claude-code-costs",
+      "url": "https://github.com/philipp-spiess/claude-code-costs"
+    },
+    {
+      "name": "Claude-Code-Development-Kit",
+      "url": "https://github.com/peterkrueck/Claude-Code-Development-Kit"
+    },
+    {
+      "name": "claude-code-guide",
+      "url": "https://github.com/zebbern/claude-code-guide"
+    },
+    {
+      "name": "claude-code-heavy",
+      "url": "https://github.com/gtrusler/claude-code-heavy"
+    },
+    {
+      "name": "claude-code-ide.el",
+      "url": "https://github.com/manzaltu/claude-code-ide.el"
+    },
+    {
+      "name": "claude-code-is-programmable",
+      "url": "https://github.com/disler/claude-code-is-programmable"
+    },
+    {
+      "name": "claude-code-kickstart",
+      "url": "https://github.com/ypollak2/claude-code-kickstart"
+    },
+    {
+      "name": "claude-code-kimi-groq",
+      "url": "https://github.com/fakerybakery/claude-code-kimi-groq"
+    },
+    {
+      "name": "claude-code-leaderboard",
+      "url": "https://github.com/grp06/claude-code-leaderboard"
+    },
+    {
+      "name": "claude-code-log",
+      "url": "https://github.com/daaain/claude-code-log"
+    },
+    {
+      "name": "claude-code-mcp",
+      "url": "https://github.com/steipete/claude-code-mcp"
+    },
+    {
+      "name": "claude-code-mcpinstall",
+      "url": "https://github.com/undeadpickle/claude-code-mcpinstall"
+    },
+    {
+      "name": "claude-code-memory-guide",
+      "url": "https://github.com/Acteq1391gp/claude-code-memory-guide"
+    },
+    {
+      "name": "claude-code-nexus",
+      "url": "https://github.com/KroMiose/claude-code-nexus"
+    },
+    {
+      "name": "claude-code-notifier",
+      "url": "https://github.com/saiso/claude-code-notifier"
+    },
+    {
+      "name": "claude-code-open",
+      "url": "https://github.com/Davincible/claude-code-open"
+    },
+    {
+      "name": "claude-code-otel",
+      "url": "https://github.com/ColeMurray/claude-code-otel"
+    },
+    {
+      "name": "claude-code-personal-assistant",
+      "url": "https://github.com/c0dezli/claude-code-personal-assistant"
+    },
+    {
+      "name": "claude-code-power-stack",
+      "url": "https://github.com/bluzername/claude-code-power-stack"
+    },
+    {
+      "name": "claude-code-prompt-improver",
+      "url": "https://github.com/severity1/claude-code-prompt-improver"
+    },
+    {
+      "name": "claude-code-proxy",
+      "url": "https://github.com/1rgs/claude-code-proxy"
+    },
+    {
+      "name": "claude-code-proxy",
+      "url": "https://github.com/fuergaosi233/claude-code-proxy"
+    },
+    {
+      "name": "claude-code-proxy",
+      "url": "https://github.com/seifghazi/claude-code-proxy"
+    },
+    {
+      "name": "Claude-Code-Remote",
+      "url": "https://github.com/JessyTsui/Claude-Code-Remote"
+    },
+    {
+      "name": "claude-code-requirements-builder",
+      "url": "https://github.com/rizethereum/claude-code-requirements-builder"
+    },
+    {
+      "name": "claude-code-router",
+      "url": "https://github.com/musistudio/claude-code-router"
+    },
+    {
+      "name": "claude-code-safety-net",
+      "url": "https://github.com/kenryu42/claude-code-safety-net"
+    },
+    {
+      "name": "claude-code-sandbox",
+      "url": "https://github.com/textcortex/claude-code-sandbox"
+    },
+    {
+      "name": "claude-code-sdk-python",
+      "url": "https://github.com/anthropics/claude-code-sdk-python"
+    },
+    {
+      "name": "claude-code-sdk-ts",
+      "url": "https://github.com/instantlyeasy/claude-code-sdk-ts"
+    },
+    {
+      "name": "claude-code-security-review",
+      "url": "https://github.com/anthropics/claude-code-security-review"
+    },
+    {
+      "name": "claude-code-sessions",
+      "url": "https://github.com/apappascs/claude-code-sessions"
+    },
+    {
+      "name": "claude-code-settings",
+      "url": "https://github.com/feiskyer/claude-code-settings"
+    },
+    {
+      "name": "claude-code-spec-workflow",
+      "url": "https://github.com/Pimzino/claude-code-spec-workflow"
+    },
+    {
+      "name": "claude-code-specs-generator",
+      "url": "https://github.com/kellemar/claude-code-specs-generator"
+    },
+    {
+      "name": "claude-code-studio",
+      "url": "https://github.com/arnaldo-delisio/claude-code-studio"
+    },
+    {
+      "name": "claude-code-system-prompt",
+      "url": "https://github.com/matthew-lim-matthew-lim/claude-code-system-prompt"
+    },
+    {
+      "name": "claude-code-system-prompts",
+      "url": "https://github.com/Piebald-AI/claude-code-system-prompts"
+    },
+    {
+      "name": "claude-code-test-runner",
+      "url": "https://github.com/firstloophq/claude-code-test-runner"
+    },
+    {
+      "name": "claude-code-thinking-patch",
+      "url": "https://github.com/aleks-apostle/claude-code-thinking-patch"
+    },
+    {
+      "name": "claude-code-tips",
+      "url": "https://github.com/ykdojo/claude-code-tips"
+    },
+    {
+      "name": "claude-code-transcripts",
+      "url": "https://github.com/simonw/claude-code-transcripts"
+    },
+    {
+      "name": "claude-code-ui",
+      "url": "https://github.com/KyleAMathews/claude-code-ui"
+    },
+    {
+      "name": "claude-code-usage-bar",
+      "url": "https://github.com/leeguooooo/claude-code-usage-bar"
+    },
+    {
+      "name": "Claude-Code-Usage-Monitor",
+      "url": "https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor"
+    },
+    {
+      "name": "claude-code-viewer",
+      "url": "https://github.com/d-kimuson/claude-code-viewer"
+    },
+    {
+      "name": "claude-code-voice",
+      "url": "https://github.com/mckaywrigley/claude-code-voice"
+    },
+    {
+      "name": "Claude-Code-Web-GUI",
+      "url": "https://github.com/binggg/Claude-Code-Web-GUI"
+    },
+    {
+      "name": "claude-code-webui",
+      "url": "https://github.com/sugyan/claude-code-webui"
+    },
+    {
+      "name": "Claude-Code-Workflow",
+      "url": "https://github.com/catlog22/Claude-Code-Workflow"
+    },
+    {
+      "name": "claude-code.el",
+      "url": "https://github.com/stevemolitor/claude-code.el"
+    },
+    {
+      "name": "claude-code.nvim",
+      "url": "https://github.com/greggh/claude-code.nvim"
+    },
+    {
+      "name": "claude-cognitive",
+      "url": "https://github.com/GMaN1911/claude-cognitive"
+    },
+    {
+      "name": "Claude-Command-Suite",
+      "url": "https://github.com/qdhenry/Claude-Command-Suite"
+    },
+    {
+      "name": "claude-commands",
+      "url": "https://github.com/badlogic/claude-commands"
+    },
+    {
+      "name": "claude-config-editor",
+      "url": "https://github.com/gagarinyury/claude-config-editor"
+    },
+    {
+      "name": "claude-context",
+      "url": "https://github.com/zilliztech/claude-context"
+    },
+    {
+      "name": "claude-context-local",
+      "url": "https://github.com/FarhanAliRaza/claude-context-local"
+    },
+    {
+      "name": "claude-context-mode",
+      "url": "https://github.com/mksglu/claude-context-mode"
+    },
+    {
+      "name": "claude-cost-optimizer",
+      "url": "https://github.com/Sagargupta16/claude-cost-optimizer"
+    },
+    {
+      "name": "claude-cs",
+      "url": "https://github.com/nbashaw/claude-cs"
+    },
+    {
+      "name": "claude-cybersecurity",
+      "url": "https://github.com/AgriciDaniel/claude-cybersecurity"
+    },
+    {
+      "name": "claude-dashboard",
+      "url": "https://github.com/uppinote20/claude-dashboard"
+    },
+    {
+      "name": "claude-deep-research",
+      "url": "https://www.google.com/search?q=https://github.com/disler/claude-deep-research"
+    },
+    {
+      "name": "claude-delegator",
+      "url": "https://github.com/jarrodwatts/claude-delegator"
+    },
+    {
+      "name": "claude-design-engineer",
+      "url": "https://github.com/Dammyjay93/claude-design-engineer"
+    },
+    {
+      "name": "Claude-Flow",
+      "url": "https://github.com/ruvnet/claude-flow"
+    },
+    {
+      "name": "claude-forge",
+      "url": "https://github.com/sangrokjung/claude-forge"
+    },
+    {
+      "name": "claude-gemini-bridge",
+      "url": "https://github.com/tkaufmann/claude-gemini-bridge"
+    },
+    {
+      "name": "claude-handoff",
+      "url": "https://github.com/REMvisual/claude-handoff"
+    },
+    {
+      "name": "claude-historian",
+      "url": "https://github.com/Vvkmnn/claude-historian"
+    },
+    {
+      "name": "claude-hub",
+      "url": "https://github.com/claude-did-this/claude-hub"
+    },
+    {
+      "name": "claude-hud",
+      "url": "https://github.com/jarrodwatts/claude-hud"
+    },
+    {
+      "name": "claude-island",
+      "url": "https://github.com/farouqaldori/claude-island"
+    },
+    {
+      "name": "claude-kit",
+      "url": "https://github.com/luiseiman/claude-kit"
+    },
+    {
+      "name": "claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem"
+    },
+    {
+      "name": "claude-memory-bridge",
+      "url": "https://github.com/LewenW/claude-memory-bridge"
+    },
+    {
+      "name": "claude-memory-compiler",
+      "url": "https://github.com/coleam00/claude-memory-compiler"
+    },
+    {
+      "name": "claude-modular",
+      "url": "https://github.com/oxygen-fragment/claude-modular"
+    },
+    {
+      "name": "Claude-Monitor",
+      "url": "https://github.com/RISCfuture/Claude-Monitor"
+    },
+    {
+      "name": "claude-notifications-go",
+      "url": "https://github.com/777genius/claude-notifications-go"
+    },
+    {
+      "name": "claude-obsidian",
+      "url": "https://github.com/AgriciDaniel/claude-obsidian"
+    },
+    {
+      "name": "claude-on-rails",
+      "url": "https://github.com/obie/claude-on-rails"
+    },
+    {
+      "name": "claude-ops",
+      "url": "https://github.com/Lifecycle-Innovations-Limited/claude-ops"
+    },
+    {
+      "name": "claude-overlay",
+      "url": "https://github.com/mzmmoazam/claude-overlay"
+    },
+    {
+      "name": "claude-powerline",
+      "url": "https://github.com/Owloops/claude-powerline"
+    },
+    {
+      "name": "claude-prune",
+      "url": "https://github.com/DannyAziz/claude-prune"
+    },
+    {
+      "name": "claude-rank",
+      "url": "https://github.com/Houseofmvps/claude-rank"
+    },
+    {
+      "name": "claude-recap",
+      "url": "https://github.com/hatawong/claude-recap"
+    },
+    {
+      "name": "claude-replay",
+      "url": "https://github.com/es617/claude-replay"
+    },
+    {
+      "name": "claude-review-loop",
+      "url": "https://github.com/hamelsmu/claude-review-loop"
+    },
+    {
+      "name": "claude-run",
+      "url": "https://github.com/kamranahmedse/claude-run"
+    },
+    {
+      "name": "claude-scaffold",
+      "url": "https://github.com/pyramidheadshark/claude-scaffold"
+    },
+    {
+      "name": "claude-select",
+      "url": "https://github.com/aeitroc/claude-select"
+    },
+    {
+      "name": "claude-self-reflect",
+      "url": "https://github.com/ramakay/claude-self-reflect"
+    },
+    {
+      "name": "claude-seo",
+      "url": "https://github.com/AgriciDaniel/claude-seo"
+    },
+    {
+      "name": "claude-sessions",
+      "url": "https://github.com/iannuttall/claude-sessions"
+    },
+    {
+      "name": "claude-simone",
+      "url": "https://github.com/Helmi/claude-simone"
+    },
+    {
+      "name": "claude-skins",
+      "url": "https://github.com/basicScandal/claude-skins"
+    },
+    {
+      "name": "claude-snapshot",
+      "url": "https://github.com/adhenawer/claude-snapshot"
+    },
+    {
+      "name": "claude-sounds",
+      "url": "https://github.com/culminationAI/claude-sounds"
+    },
+    {
+      "name": "claude-squad",
+      "url": "https://github.com/smtg-ai/claude-squad"
+    },
+    {
+      "name": "claude-starter-kit",
+      "url": "https://github.com/awrshift/claude-starter-kit"
+    },
+    {
+      "name": "claude-statusline",
+      "url": "https://github.com/luongnv89/claude-statusline"
+    },
+    {
+      "name": "claude-subconscious",
+      "url": "https://github.com/letta-ai/claude-subconscious"
+    },
+    {
+      "name": "claude-supermemory",
+      "url": "https://github.com/supermemoryai/claude-supermemory"
+    },
+    {
+      "name": "claude-swarm",
+      "url": "https://github.com/parruda/claude-swarm"
+    },
+    {
+      "name": "claude-tabletop",
+      "url": "https://github.com/cjcsecurity/claude-tabletop"
+    },
+    {
+      "name": "claude-task-viewer",
+      "url": "https://github.com/L1AD/claude-task-viewer"
+    },
+    {
+      "name": "claude-time",
+      "url": "https://github.com/nexusbuildsai/claude-time"
+    },
+    {
+      "name": "claude-token-efficient",
+      "url": "https://github.com/drona23/claude-token-efficient"
+    },
+    {
+      "name": "claude-token-lens",
+      "url": "https://github.com/wassimbensalem/claude-token-lens"
+    },
+    {
+      "name": "claude-usage",
+      "url": "https://github.com/phuryn/claude-usage"
+    },
+    {
+      "name": "claude-user-memory",
+      "url": "https://github.com/irenicj/claude-user-memory"
+    },
+    {
+      "name": "claude-workflow-v2",
+      "url": "https://github.com/CloudAI-X/claude-workflow-v2"
+    },
+    {
+      "name": "claude-workspace-snapshot",
+      "url": "https://github.com/REMvisual/claude-workspace-snapshot"
+    },
+    {
+      "name": "claude_code-gemini-mcp",
+      "url": "https://github.com/RaiAnsar/claude_code-gemini-mcp"
+    },
+    {
+      "name": "claudebase",
+      "url": "https://github.com/rohithzr/claudebase"
+    },
+    {
+      "name": "claudebox",
+      "url": "https://github.com/RchGrav/claudebox"
+    },
+    {
+      "name": "Claudeception",
+      "url": "https://github.com/blader/Claudeception"
+    },
+    {
+      "name": "ClaudeCode Launchpad CLI",
+      "url": "https://github.com/noambrand/kivun-terminal"
+    },
+    {
+      "name": "claudecode-best-practices",
+      "url": "https://github.com/rosmur/claudecode-best-practices"
+    },
+    {
+      "name": "ClaudeCode-DevPlanBuilder",
+      "url": "https://github.com/mmorris35/ClaudeCode-DevPlanBuilder"
+    },
+    {
+      "name": "claudecode-macmenu",
+      "url": "https://github.com/PiXeL16/claudecode-macmenu"
+    },
+    {
+      "name": "claudecode.nvim",
+      "url": "https://github.com/coder/claudecode.nvim"
+    },
+    {
+      "name": "ClaudeCodeNavi/claudecodenavi-mcp",
+      "url": "https://github.com/saikiyusuke/claudecodenavi-mcp"
+    },
+    {
+      "name": "ClaudeCodeStatusLine",
+      "url": "https://github.com/daniel3303/ClaudeCodeStatusLine"
+    },
+    {
+      "name": "ClaudeForge",
+      "url": "https://github.com/alirezarezvani/ClaudeForge"
+    },
+    {
+      "name": "ClaudeNightsWatch",
+      "url": "https://github.com/aniketkarne/ClaudeNightsWatch"
+    },
+    {
+      "name": "ClaudeUsageBar",
+      "url": "https://github.com/Artzainnn/ClaudeUsageBar"
+    },
+    {
+      "name": "claw-army/claude-node",
+      "url": "https://github.com/claw-army/claude-node"
+    },
+    {
+      "name": "CloudCLI",
+      "url": "https://github.com/siteboon/claudecodeui"
+    },
+    {
+      "name": "Common Workflows",
+      "url": "https://docs.anthropic.com/en/docs/claude-code/common-workflows"
+    },
+    {
+      "name": "Computer Use from CLI",
+      "url": "https://code.claude.com/docs/en/computer-use"
+    },
+    {
+      "name": "Context Engineering Guide",
+      "url": "https://www.anthropic.com/research/long-running-Claude"
+    },
+    {
+      "name": "Continuous Claude",
+      "url": "https://github.com/AnandChowdhary/continuous-claude"
+    },
+    {
+      "name": "Continuous-Claude-v2",
+      "url": "https://github.com/parcadei/Continuous-Claude-v2"
+    },
+    {
+      "name": "craft-statusline",
+      "url": "https://github.com/derjochenmeyer/claude-code-craft-statusline"
+    },
+    {
+      "name": "deepclaude",
+      "url": "https://github.com/aattaran/deepclaude"
+    },
+    {
+      "name": "Dispatch & Remote Control",
+      "url": "https://claude.com/blog/dispatch-and-computer-use"
+    },
+    {
+      "name": "dna-claude-analysis",
+      "url": "https://github.com/shmlkv/dna-claude-analysis"
+    },
+    {
+      "name": "docker-claude-code",
+      "url": "https://github.com/gw0/docker-claude-code"
+    },
+    {
+      "name": "dotclaude",
+      "url": "https://github.com/FradSer/dotclaude"
+    },
+    {
+      "name": "eyaltoledano/claude-task-master",
+      "url": "https://github.com/eyaltoledano/claude-task-master"
+    },
+    {
+      "name": "gemini-claude-bridge",
+      "url": "https://github.com/weijiafu14/gemini-claude-bridge"
+    },
+    {
+      "name": "gemini-for-claude-code",
+      "url": "https://github.com/coffeegrind123/gemini-for-claude-code"
+    },
+    {
+      "name": "geo-seo-claude",
+      "url": "https://github.com/zubair-trabzada/geo-seo-claude"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/mshadmanrahman/claudecode-guide"
+    },
+    {
+      "name": "How I use Claude Code",
+      "url": "https://bagerbach.com/blog/how-i-use-claude-code"
+    },
+    {
+      "name": "idle-timing",
+      "url": "https://github.com/clankercode/claude-inject-idle-time"
+    },
+    {
+      "name": "jasonjmcghee/claude-debugs-for-you",
+      "url": "https://github.com/jasonjmcghee/claude-debugs-for-you"
+    },
+    {
+      "name": "leesgit/claude-session-continuity-mcp",
+      "url": "https://github.com/leesgit/claude-session-continuity-mcp"
+    },
+    {
+      "name": "LukeLamb/claude-terminal-mcp",
+      "url": "https://github.com/LukeLamb/claude-terminal-mcp"
+    },
+    {
+      "name": "mobile-spine",
+      "url": "https://github.com/bentleypark/claude-code-mobile-spine"
+    },
+    {
+      "name": "myclaude",
+      "url": "https://github.com/stellarlinkco/myclaude"
+    },
+    {
+      "name": "n8n-nodes-claudecode",
+      "url": "https://github.com/holt-web-ai/n8n-nodes-claudecode"
+    },
+    {
+      "name": "oh-my-claudecode",
+      "url": "https://github.com/Yeachan-Heo/oh-my-claudecode"
+    },
+    {
+      "name": "optimaquantum/claude-critical-rules-mcp",
+      "url": "https://github.com/optimaquantum/claude-critical-rules-mcp"
+    },
+    {
+      "name": "ralph-claude-code",
+      "url": "https://github.com/DmitrySolana/ralph-claude-code"
+    },
+    {
+      "name": "run-claude-docker",
+      "url": "https://github.com/icanhasjonas/run-claude-docker"
+    },
+    {
+      "name": "Settings > Capabilities",
+      "url": "https://claude.ai/settings/capabilities"
+    },
+    {
+      "name": "spec-based-claude-code",
+      "url": "https://github.com/papaoloba/spec-based-claude-code"
+    },
+    {
+      "name": "spyrae/claude-concilium",
+      "url": "https://github.com/spyrae/claude-concilium"
+    },
+    {
+      "name": "SuperClaude",
+      "url": "https://github.com/SuperClaude-Org/SuperClaude_Framework"
+    },
+    {
+      "name": "SuperClaude",
+      "url": "https://github.com/NomenAK/SuperClaude"
+    },
+    {
+      "name": "SuperClaude",
+      "url": "https://github.com/gwendall/superclaude"
+    },
+    {
+      "name": "The Claude Protocol",
+      "url": "https://github.com/AvivK5498/The-Claude-Protocol"
+    },
+    {
+      "name": "vasylenko/claude-desktop-extension-bear-notes",
+      "url": "https://github.com/vasylenko/claude-desktop-extension-bear-notes"
+    },
+    {
+      "name": "veelenga/claude-mermaid",
+      "url": "https://github.com/veelenga/claude-mermaid"
+    },
+    {
+      "name": "visual-claude",
+      "url": "https://github.com/thetronjohnson/visual-claude"
+    },
+    {
+      "name": "win-claude-code",
+      "url": "https://github.com/somersby10ml/win-claude-code"
+    },
+    {
+      "name": "Wolfe-Jam/claude-faf-mcp",
+      "url": "https://github.com/Wolfe-Jam/claude-faf-mcp"
+    },
+    {
+      "name": "ybouhjira/claude-code-tts",
+      "url": "https://github.com/ybouhjira/claude-code-tts"
+    }
+  ]
+}

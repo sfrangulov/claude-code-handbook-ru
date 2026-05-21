@@ -1,3 +1,8 @@
+<!--
+Generated from this template + data/catalog/*.json by scripts/build-readme.mjs.
+Edit the template or the JSON data, then run: node scripts/build-readme.mjs
+-->
+
 # Экосистема Claude Code
 
 Репозитории и проекты, упомянутые в публичных awesome-lists, не подошедшие в узкие категории выше. Здесь — утилиты, CLI-обёртки, фреймворки, статус-лайны, экспериментальные стартеры, демо-проекты.

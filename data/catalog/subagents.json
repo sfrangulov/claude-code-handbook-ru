@@ -1,0 +1,644 @@
+{
+  "items": [
+    {
+      "name": "0xfurai/claude-code-subagents",
+      "url": "https://github.com/0xfurai/claude-code-subagents"
+    },
+    {
+      "name": "1mcp/agent",
+      "url": "https://github.com/1mcp-app/agent"
+    },
+    {
+      "name": "49 Subagents Running 2.5 Hours",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1m8u4cx/wonderful_world_of_claude_code_subagents_running"
+    },
+    {
+      "name": "7 Best CLI AI Coding Agents (Open Source)",
+      "url": "https://www.scriptbyai.com/best-cli-ai-coding-agents"
+    },
+    {
+      "name": "@czagents/cnb",
+      "url": "https://github.com/martinhavel/cz-agents-mcp"
+    },
+    {
+      "name": "Agent Interviews",
+      "url": "https://agentinterviews.com"
+    },
+    {
+      "name": "Agent Sessions",
+      "url": "https://github.com/jazzyalex/agent-sessions"
+    },
+    {
+      "name": "Agent Teams Explained",
+      "url": "https://www.turingcollege.com/blog/claude-agent-teams-explained"
+    },
+    {
+      "name": "agent-dotfiles",
+      "url": "https://github.com/saqibameen/agent-dotfiles"
+    },
+    {
+      "name": "agent-flow",
+      "url": "https://github.com/patoles/agent-flow"
+    },
+    {
+      "name": "Agent-Fusion",
+      "url": "https://github.com/krokozyab/Agent-Fusion"
+    },
+    {
+      "name": "agent-hanju/char-index-mcp",
+      "url": "https://github.com/agent-hanju/char-index-mcp"
+    },
+    {
+      "name": "agent-of-empires",
+      "url": "https://github.com/njbrake/agent-of-empires"
+    },
+    {
+      "name": "agent-rules",
+      "url": "https://github.com/steipete/agent-rules"
+    },
+    {
+      "name": "agent-shadow-brain",
+      "url": "https://github.com/theihtisham/agent-shadow-brain"
+    },
+    {
+      "name": "agent-skills",
+      "url": "https://github.com/vercel-labs/agent-skills"
+    },
+    {
+      "name": "agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills"
+    },
+    {
+      "name": "agent-skills",
+      "url": "https://github.com/WordPress/agent-skills"
+    },
+    {
+      "name": "Agent-Skills-for-Context-Engineering",
+      "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    {
+      "name": "agent-sprite-forge",
+      "url": "https://github.com/0x0funky/agent-sprite-forge"
+    },
+    {
+      "name": "agent-toolkit",
+      "url": "https://github.com/softaworks/agent-toolkit"
+    },
+    {
+      "name": "agent1st.io/ads",
+      "url": "https://agent1st.io/ads"
+    },
+    {
+      "name": "agentapi",
+      "url": "https://github.com/coder/agentapi"
+    },
+    {
+      "name": "AgentCheck",
+      "url": "https://github.com/devlyai/AgentCheck"
+    },
+    {
+      "name": "agentdeals.dev",
+      "url": "https://agentdeals.dev"
+    },
+    {
+      "name": "agentfetch.dev",
+      "url": "https://www.agentfetch.dev"
+    },
+    {
+      "name": "agentgraph-co/agentgraph",
+      "url": "https://github.com/agentgraph-co/agentgraph"
+    },
+    {
+      "name": "AgentHotspot",
+      "url": "https://github.com/AgentHotspot/agenthotspot-mcp"
+    },
+    {
+      "name": "agenticdecks/deckrun-mcp",
+      "url": "https://github.com/agenticdecks/deckrun-mcp"
+    },
+    {
+      "name": "agenticempire/axint",
+      "url": "https://github.com/agenticempire/axint"
+    },
+    {
+      "name": "agentkit-seo",
+      "url": "https://github.com/agentkit-seo/agentkit-seo"
+    },
+    {
+      "name": "AgentLint",
+      "url": "https://github.com/0xmariowu/AgentLint"
+    },
+    {
+      "name": "agentlux/agentlux-mcp",
+      "url": "https://github.com/agentlux/agentlux-mcp"
+    },
+    {
+      "name": "AgentModule/mcp",
+      "url": "https://github.com/AgentModule/mcp"
+    },
+    {
+      "name": "AgenTopology",
+      "url": "https://github.com/agentopology/agentopology"
+    },
+    {
+      "name": "AgentQL",
+      "url": "https://agentql.com"
+    },
+    {
+      "name": "AgentR Universal MCP SDK",
+      "url": "https://github.com/universal-mcp/universal-mcp"
+    },
+    {
+      "name": "agents",
+      "url": "https://github.com/contains-studio/agents"
+    },
+    {
+      "name": "agents-cli",
+      "url": "https://github.com/google/agents-cli"
+    },
+    {
+      "name": "AgentsInFlow",
+      "url": "https://github.com/hhammoud/AgentsInFlow"
+    },
+    {
+      "name": "agentsys",
+      "url": "https://github.com/agent-sh/agentsys"
+    },
+    {
+      "name": "agenttrace",
+      "url": "https://github.com/luoyuctl/agenttrace"
+    },
+    {
+      "name": "agentward-ai/agentward",
+      "url": "https://github.com/agentward-ai/agentward"
+    },
+    {
+      "name": "aitytech/agentkits-memory",
+      "url": "https://github.com/aitytech/agentkits-memory"
+    },
+    {
+      "name": "alexfleetcommander/agent-trust-stack-mcp",
+      "url": "https://github.com/alexfleetcommander/agent-trust-stack-mcp"
+    },
+    {
+      "name": "Anthropic Sub-Agents Docs",
+      "url": "https://docs.anthropic.com/en/docs/claude-code/sub-agents"
+    },
+    {
+      "name": "aparajithn/agent-deploy-dashboard-mcp",
+      "url": "https://github.com/aparajithn/agent-deploy-dashboard-mcp"
+    },
+    {
+      "name": "aparajithn/agent-scraper-mcp",
+      "url": "https://github.com/aparajithn/agent-scraper-mcp"
+    },
+    {
+      "name": "aparajithn/agent-utils-mcp",
+      "url": "https://github.com/aparajithn/agent-utils-mcp"
+    },
+    {
+      "name": "Apify Agent Skills",
+      "url": "https://github.com/apify/agent-skills"
+    },
+    {
+      "name": "arthurpanhku/Arthor-Agent",
+      "url": "https://github.com/arthurpanhku/Arthor-Agent"
+    },
+    {
+      "name": "awesome-ai-agents",
+      "url": "https://github.com/e2b-dev/awesome-ai-agents"
+    },
+    {
+      "name": "aws-agent-skills",
+      "url": "https://github.com/itsmostafa/aws-agent-skills"
+    },
+    {
+      "name": "bababoi-bibilabu/agent-mq",
+      "url": "https://github.com/bababoi-bibilabu/agent-mq"
+    },
+    {
+      "name": "back1ply/agent-skill-loader",
+      "url": "https://github.com/back1ply/agent-skill-loader"
+    },
+    {
+      "name": "baryhuang/claude-code-by-agents",
+      "url": "https://github.com/baryhuang/claude-code-by-agents"
+    },
+    {
+      "name": "bch1212/agentfetch-mcp",
+      "url": "https://github.com/bch1212/agentfetch-mcp"
+    },
+    {
+      "name": "benswel/qr-agent-core",
+      "url": "https://github.com/benswel/qr-agent-core"
+    },
+    {
+      "name": "blackwell-systems/agent-lsp",
+      "url": "https://github.com/blackwell-systems/agent-lsp"
+    },
+    {
+      "name": "building-multiagent-systems",
+      "url": "https://github.com/2389-research/building-multiagent-systems"
+    },
+    {
+      "name": "can4hou6joeng4/boss-agent-cli",
+      "url": "https://github.com/can4hou6joeng4/boss-agent-cli"
+    },
+    {
+      "name": "cc-agents-md",
+      "url": "https://github.com/GeiserX/cc-agents-md"
+    },
+    {
+      "name": "charles-adedotun/claude-code-sub-agents",
+      "url": "https://github.com/charles-adedotun/claude-code-sub-agents"
+    },
+    {
+      "name": "Citedy/citedy-seo-agent",
+      "url": "https://github.com/Citedy/citedy-seo-agent"
+    },
+    {
+      "name": "Claude Code's Custom Agent Framework Changes Everything",
+      "url": "https://dev.to/therealmrmumba/claude-codes-custom-agent-framework-changes-everything-4o4m"
+    },
+    {
+      "name": "Claude Code: Subagent Deep Dive",
+      "url": "https://cuong.io/blog/2025/06/24-claude-code-subagent-deep-dive"
+    },
+    {
+      "name": "claude-agent-server",
+      "url": "https://github.com/forayconsulting/gemini_cli_skill"
+    },
+    {
+      "name": "claude-agentic-coding-playbook",
+      "url": "https://github.com/john-wilmes/claude-agentic-coding-playbook"
+    },
+    {
+      "name": "claude-agents",
+      "url": "https://github.com/tddworks/claude-agents"
+    },
+    {
+      "name": "claude-code-agents",
+      "url": "https://github.com/vizra-ai/claude-code-agents"
+    },
+    {
+      "name": "claude-code-hooks-multi-agent-observability",
+      "url": "https://github.com/disler/claude-code-hooks-multi-agent-observability"
+    },
+    {
+      "name": "claude-code-sub-agents",
+      "url": "https://github.com/lst97/claude-code-sub-agents"
+    },
+    {
+      "name": "claude-code-subagents",
+      "url": "https://github.com/NicholasSpisak/claude-code-subagents"
+    },
+    {
+      "name": "claude-code-unified-agents",
+      "url": "https://github.com/stretchcloud/claude-code-unified-agents"
+    },
+    {
+      "name": "ClaudeCodeAgents",
+      "url": "https://github.com/darcyegb/ClaudeCodeAgents"
+    },
+    {
+      "name": "codeburn",
+      "url": "https://github.com/AgentSeal/codeburn"
+    },
+    {
+      "name": "Context Engineering 101",
+      "url": "https://newsletter.victordibia.com/p/context-engineering-101-how-agents"
+    },
+    {
+      "name": "Contributors",
+      "url": "https://contrib.rocks/image?repo=voltagent/awesome-claude-code-subagents&max=500&columns=20&anon=1"
+    },
+    {
+      "name": "davepoon/claude-code-subagents-collection",
+      "url": "https://github.com/davepoon/claude-code-subagents-collection"
+    },
+    {
+      "name": "debian-packaging-agent-skill",
+      "url": "https://github.com/cosgroveb/debian-packaging-agent-skill"
+    },
+    {
+      "name": "demwick/polymarket-agent-mcp",
+      "url": "https://github.com/demwick/polymarket-agent-mcp"
+    },
+    {
+      "name": "DevOps Agent",
+      "url": "https://github.com/fullstackcrew-alpha/skill-devops-agent"
+    },
+    {
+      "name": "Dicklesworthstone/claude_code_agent_farm",
+      "url": "https://github.com/Dicklesworthstone/claude_code_agent_farm"
+    },
+    {
+      "name": "dodo-agent-plugin",
+      "url": "https://github.com/dodopayments/dodo-agent-plugin"
+    },
+    {
+      "name": "doggychip/agentforge",
+      "url": "https://github.com/doggychip/agentforge"
+    },
+    {
+      "name": "drhalto/agentmako",
+      "url": "https://github.com/drhalto/agentmako"
+    },
+    {
+      "name": "ebbfijsf/agent-reader",
+      "url": "https://github.com/ebbfijsf/agent-reader"
+    },
+    {
+      "name": "edge-claw/mood-booster-agent",
+      "url": "https://github.com/edge-claw/mood-booster-agent"
+    },
+    {
+      "name": "edobusy/agenthold",
+      "url": "https://github.com/edobusy/agenthold"
+    },
+    {
+      "name": "ejcho623/agent-breadcrumbs",
+      "url": "https://github.com/ejcho623/agent-breadcrumbs"
+    },
+    {
+      "name": "Equipping Agents with Skills",
+      "url": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills"
+    },
+    {
+      "name": "escapeboy/agent-fleet-o",
+      "url": "https://github.com/escapeboy/agent-fleet-o"
+    },
+    {
+      "name": "ESP32-AI-Agent-Skill",
+      "url": "https://github.com/ezrover/ESP32-AI-Agent-Skill"
+    },
+    {
+      "name": "espadaw/Agent47",
+      "url": "https://github.com/espadaw/Agent47"
+    },
+    {
+      "name": "ferdousbhai/investor-agent",
+      "url": "https://github.com/ferdousbhai/investor-agent"
+    },
+    {
+      "name": "ferdousbhai/tasty-agent",
+      "url": "https://github.com/ferdousbhai/tasty-agent"
+    },
+    {
+      "name": "flashbacker",
+      "url": "https://github.com/agentsea/flashbacker"
+    },
+    {
+      "name": "Flutter Agent Skills",
+      "url": "https://github.com/flutter/skills"
+    },
+    {
+      "name": "g1itchbot8888-del/agent-memory",
+      "url": "https://github.com/g1itchbot8888-del/agent-memory"
+    },
+    {
+      "name": "gabrielmaialva33/winx-code-agent",
+      "url": "https://github.com/gabrielmaialva33/winx-code-agent"
+    },
+    {
+      "name": "gate4agent",
+      "url": "https://github.com/ZENG3LD/gate4agent"
+    },
+    {
+      "name": "gemy411/multi-research-agents",
+      "url": "https://github.com/gemy411/multi-agents-research"
+    },
+    {
+      "name": "Google Agent Skills",
+      "url": "https://github.com/google/skills"
+    },
+    {
+      "name": "gregm711/agent-domain-service-mcp",
+      "url": "https://github.com/gregm711/agent-domain-service-mcp"
+    },
+    {
+      "name": "healthcare-agents",
+      "url": "https://github.com/ajhcs/healthcare-agents"
+    },
+    {
+      "name": "hesreallyhim/awesome-claude-code-agents",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code-agents"
+    },
+    {
+      "name": "hifriendbot/agentwallet-mcp",
+      "url": "https://github.com/hifriendbot/agentwallet-mcp"
+    },
+    {
+      "name": "iannuttall/claude-agents",
+      "url": "https://github.com/iannuttall/claude-agents"
+    },
+    {
+      "name": "infinite-agentic-loop",
+      "url": "https://github.com/disler/infinite-agentic-loop"
+    },
+    {
+      "name": "jacobsd32-cpu/djd-agent-score-mcp",
+      "url": "https://github.com/jacobsd32-cpu/djd-agent-score-mcp"
+    },
+    {
+      "name": "JoeyBrar/agentseal-mcp",
+      "url": "https://github.com/JoeyBrar/agentseal-mcp"
+    },
+    {
+      "name": "knewstimek/agent-tool",
+      "url": "https://github.com/knewstimek/agent-tool"
+    },
+    {
+      "name": "KOVY/agentforge-trust-mcp",
+      "url": "https://github.com/KOVY/agentforge-trust-mcp"
+    },
+    {
+      "name": "malamutemayhem/unclick-agent-native-endpoints",
+      "url": "https://github.com/malamutemayhem/unclick-agent-native-endpoints"
+    },
+    {
+      "name": "Mastering Claude Code: The Sub-agent Pattern",
+      "url": "https://enting.org/mastering-claude-code-sub-agent"
+    },
+    {
+      "name": "msaad00/agent-bom",
+      "url": "https://github.com/msaad00/agent-bom"
+    },
+    {
+      "name": "Multi-Agent Orchestra",
+      "url": "https://addyosmani.com/blog/code-agent-orchestra"
+    },
+    {
+      "name": "Multi-Agent Orchestration System",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1l11fo2/how_i_built_a_multiagent_orchestration_system"
+    },
+    {
+      "name": "multi-agent-squad",
+      "url": "https://github.com/bijutharakan/multi-agent-squad"
+    },
+    {
+      "name": "MyAgentHubs/aimemo",
+      "url": "https://github.com/MyAgentHubs/aimemo"
+    },
+    {
+      "name": "neptun2000/heor-agent-mcp",
+      "url": "https://github.com/neptun2000/heor-agent-mcp"
+    },
+    {
+      "name": "Neverlow512/agent-droid-bridge",
+      "url": "https://github.com/Neverlow512/agent-droid-bridge"
+    },
+    {
+      "name": "nexus-agents",
+      "url": "https://github.com/williamzujkowski/nexus-agents"
+    },
+    {
+      "name": "nirecom/agents",
+      "url": "https://github.com/nirecom/agents"
+    },
+    {
+      "name": "Nolas-Shadow/agent1st-ads-mcp",
+      "url": "https://github.com/Nolas-Shadow/agent1st-ads-mcp"
+    },
+    {
+      "name": "ntriq-gh/ntriq-agentshop",
+      "url": "https://github.com/ntriq-gh/ntriq-agentshop"
+    },
+    {
+      "name": "open an issue",
+      "url": "https://github.com/VoltAgent/awesome-claude-code-subagents/issues"
+    },
+    {
+      "name": "OpenAgents",
+      "url": "https://github.com/OpenAgentsInc/openagents"
+    },
+    {
+      "name": "operative_sh/web-eval-agent",
+      "url": "https://github.com/Operative-Sh/web-eval-agent"
+    },
+    {
+      "name": "oxgeneral/agentnet",
+      "url": "https://github.com/oxgeneral/agentnet"
+    },
+    {
+      "name": "rhein1/agoragentic-integrations",
+      "url": "https://github.com/rhein1/agoragentic-integrations"
+    },
+    {
+      "name": "rinadelph/Agent-MCP",
+      "url": "https://github.com/rinadelph/Agent-MCP"
+    },
+    {
+      "name": "rkocosmergon/cosmergon-agent",
+      "url": "https://github.com/rkocosmergon/cosmergon-agent"
+    },
+    {
+      "name": "robhunter/agentdeals",
+      "url": "https://github.com/robhunter/agentdeals"
+    },
+    {
+      "name": "SciAgent-Skills",
+      "url": "https://github.com/jaechang-hits/SciAgent-Skills"
+    },
+    {
+      "name": "scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
+    },
+    {
+      "name": "search engine for agent & mcp",
+      "url": "http://www.deepnlp.org/search/agent"
+    },
+    {
+      "name": "sgx-labs/statelessagent",
+      "url": "https://github.com/sgx-labs/statelessagent"
+    },
+    {
+      "name": "skylv-agent-evaluator",
+      "url": "https://github.com/SKY-lv/agent-evaluator"
+    },
+    {
+      "name": "skylv-browser-automation-agent",
+      "url": "https://github.com/SKY-lv/browser-automation-agent"
+    },
+    {
+      "name": "skylv-self-healing-agent",
+      "url": "https://github.com/SKY-lv/self-healing-agent"
+    },
+    {
+      "name": "Specialized AI Agents",
+      "url": "https://github.com/Dimillian/Claude"
+    },
+    {
+      "name": "sub-agents.directory",
+      "url": "https://github.com/ayush-that/sub-agents.directory"
+    },
+    {
+      "name": "subagents.cc",
+      "url": "https://www.subagents.cc"
+    },
+    {
+      "name": "SwiftUI-Agent-Skill",
+      "url": "https://github.com/twostraws/SwiftUI-Agent-Skill"
+    },
+    {
+      "name": "The Agent Times",
+      "url": "https://theagenttimes.com"
+    },
+    {
+      "name": "Thezenmonster/agentmem",
+      "url": "https://github.com/Thezenmonster/agentmem"
+    },
+    {
+      "name": "thinkchainai/agentinterviews_mcp",
+      "url": "https://github.com/thinkchainai/agentinterviews_mcp"
+    },
+    {
+      "name": "Tinybird Multi-Agent Analytics",
+      "url": "https://www.tinybird.co/blog-posts/multi-agent-claude-code-tinybird-code"
+    },
+    {
+      "name": "tinyfish-io/agentql-mcp",
+      "url": "https://github.com/tinyfish-io/agentql-mcp"
+    },
+    {
+      "name": "Trade-Agent/trade-agent-mcp",
+      "url": "https://github.com/Trade-Agent/trade-agent-mcp.git"
+    },
+    {
+      "name": "vijaythecoder/awesome-claude-agents",
+      "url": "https://github.com/vijaythecoder/awesome-claude-agents"
+    },
+    {
+      "name": "vinaybhosle/agentstamp",
+      "url": "https://github.com/vinaybhosle/agentstamp"
+    },
+    {
+      "name": "Vincentwei1021/agent-toolbox",
+      "url": "https://github.com/Vincentwei1021/agent-toolbox"
+    },
+    {
+      "name": "webaesbyamin/agent-receipts",
+      "url": "https://github.com/webaesbyamin/agent-receipts"
+    },
+    {
+      "name": "webdevtodayjason/sub-agents",
+      "url": "https://github.com/webdevtodayjason/sub-agents"
+    },
+    {
+      "name": "wshobson/agents",
+      "url": "https://github.com/wshobson/agents"
+    },
+    {
+      "name": "Xcode-Build-Optimization-Agent-Skill",
+      "url": "https://github.com/AvdLee/Xcode-Build-Optimization-Agent-Skill"
+    },
+    {
+      "name": "zhsama/claude-sub-agent",
+      "url": "https://github.com/zhsama/claude-sub-agent"
+    },
+    {
+      "name": "zzhang82/Agent-Memory-Bridge",
+      "url": "https://github.com/zzhang82/Agent-Memory-Bridge"
+    }
+  ]
+}

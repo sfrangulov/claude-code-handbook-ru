@@ -1,0 +1,3312 @@
+{
+  "items": [
+    {
+      "name": "0xshellming/mcp-summarizer",
+      "url": "https://github.com/0xshellming/mcp-summarizer"
+    },
+    {
+      "name": "34892002/bilibili-mcp-js",
+      "url": "https://github.com/34892002/bilibili-mcp-js"
+    },
+    {
+      "name": "6figr-com/jobgpt-mcp-server",
+      "url": "https://github.com/6figr-com/jobgpt-mcp-server"
+    },
+    {
+      "name": "82ch/MCP-Dandan",
+      "url": "https://github.com/82ch/MCP-Dandan"
+    },
+    {
+      "name": "8enSmith/mcp-open-library",
+      "url": "https://github.com/8enSmith/mcp-open-library"
+    },
+    {
+      "name": "@asterpay/mcp-server",
+      "url": "https://github.com/timolein74/asterpay-mcp-server"
+    },
+    {
+      "name": "@openpulsechain/mcp-server",
+      "url": "https://github.com/openpulsechain/public/tree/main/mcp-server"
+    },
+    {
+      "name": "a-25/ios-mcp-code-quality-server",
+      "url": "https://github.com/a-25/ios-mcp-code-quality-server"
+    },
+    {
+      "name": "aarsiv-groups/shipi-mcp-server",
+      "url": "https://github.com/aarsiv-groups/shipi-mcp-server"
+    },
+    {
+      "name": "aashari/mcp-server-atlassian-bitbucket",
+      "url": "https://github.com/aashari/mcp-server-atlassian-bitbucket"
+    },
+    {
+      "name": "aashari/mcp-server-atlassian-confluence",
+      "url": "https://github.com/aashari/mcp-server-atlassian-confluence"
+    },
+    {
+      "name": "aashari/mcp-server-atlassian-jira",
+      "url": "https://github.com/aashari/mcp-server-atlassian-jira"
+    },
+    {
+      "name": "aashari/mcp-server-aws-sso",
+      "url": "https://github.com/aashari/mcp-server-aws-sso"
+    },
+    {
+      "name": "abhiemj/manim-mcp-server",
+      "url": "https://github.com/abhiemj/manim-mcp-server"
+    },
+    {
+      "name": "ac3xx/mcp-servers-kagi",
+      "url": "https://github.com/ac3xx/mcp-servers-kagi"
+    },
+    {
+      "name": "adancurusul/serial-mcp-server",
+      "url": "https://github.com/adancurusul/serial-mcp-server"
+    },
+    {
+      "name": "adhikasp/mcp-git-ingest",
+      "url": "https://github.com/adhikasp/mcp-git-ingest"
+    },
+    {
+      "name": "adhikasp/mcp-twikit",
+      "url": "https://github.com/adhikasp/mcp-twikit"
+    },
+    {
+      "name": "AdsMCP/tiktok-ads-mcp-server",
+      "url": "https://github.com/AdsMCP/tiktok-ads-mcp-server"
+    },
+    {
+      "name": "agent-blueprint/mcp-server",
+      "url": "https://github.com/agent-blueprint/mcp-server"
+    },
+    {
+      "name": "agent-infra/mcp-server-browser",
+      "url": "https://github.com/bytedance/UI-TARS-desktop/tree/main/packages/agent-infra/mcp-servers/browser"
+    },
+    {
+      "name": "AgentBase1/mcp-server",
+      "url": "https://github.com/AgentBase1/mcp-server"
+    },
+    {
+      "name": "agentic-mcp-tools/memora",
+      "url": "https://github.com/agentic-mcp-tools/memora"
+    },
+    {
+      "name": "agentic-mcp-tools/owlex",
+      "url": "https://github.com/agentic-mcp-tools/owlex"
+    },
+    {
+      "name": "Agentled/mcp-server",
+      "url": "https://github.com/Agentled/mcp-server"
+    },
+    {
+      "name": "Agnuxo1/benchclaw-integrations",
+      "url": "https://github.com/Agnuxo1/benchclaw-integrations/tree/main/mcp-server"
+    },
+    {
+      "name": "AiAgentKarl/solana-mcp-server",
+      "url": "https://github.com/AiAgentKarl/solana-mcp-server"
+    },
+    {
+      "name": "airis-mcp-gateway",
+      "url": "https://github.com/agiletec-inc/airis-mcp-gateway"
+    },
+    {
+      "name": "Aiven projects",
+      "url": "https://go.aiven.io/mcp-server"
+    },
+    {
+      "name": "Aiven-Open/mcp-aiven",
+      "url": "https://github.com/Aiven-Open/mcp-aiven"
+    },
+    {
+      "name": "akramIOT/MCP_AI_SOC_Sher",
+      "url": "https://github.com/akramIOT/MCP_AI_SOC_Sher"
+    },
+    {
+      "name": "akseyh/bear-mcp-server",
+      "url": "https://github.com/akseyh/bear-mcp-server"
+    },
+    {
+      "name": "aktsmm/skill-ninja-mcp-server",
+      "url": "https://github.com/aktsmm/skill-ninja-mcp-server"
+    },
+    {
+      "name": "alchemy/alchemy-mcp-server",
+      "url": "https://github.com/alchemyplatform/alchemy-mcp-server"
+    },
+    {
+      "name": "alex-gon/thegamecrafter-mcp-server",
+      "url": "https://github.com/alex-gon/thegamecrafter-mcp-server"
+    },
+    {
+      "name": "alexanderzuev/supabase-mcp-server",
+      "url": "https://github.com/alexander-zuev/supabase-mcp-server"
+    },
+    {
+      "name": "alexbakers/mcp-ipfs",
+      "url": "https://github.com/alexbakers/mcp-ipfs"
+    },
+    {
+      "name": "alexei-led/aws-mcp-server",
+      "url": "https://github.com/alexei-led/aws-mcp-server"
+    },
+    {
+      "name": "alexei-led/k8s-mcp-server",
+      "url": "https://github.com/alexei-led/k8s-mcp-server"
+    },
+    {
+      "name": "aliafsahnoudeh/shahnameh-mcp-server",
+      "url": "https://github.com/aliafsahnoudeh/shahnameh-mcp-server"
+    },
+    {
+      "name": "aliafsahnoudeh/wildfire-mcp-server",
+      "url": "https://github.com/aliafsahnoudeh/wildfire-mcp-server"
+    },
+    {
+      "name": "aliyun/alibaba-cloud-ops-mcp-server",
+      "url": "https://github.com/aliyun/alibaba-cloud-ops-mcp-server"
+    },
+    {
+      "name": "aliyun/alibabacloud-tablestore-mcp-server",
+      "url": "https://github.com/aliyun/alibabacloud-tablestore-mcp-server"
+    },
+    {
+      "name": "allenporter/mcp-server-home-assistant",
+      "url": "https://github.com/allenporter/mcp-server-home-assistant"
+    },
+    {
+      "name": "Amazon Bedrock Nova Canvas",
+      "url": "https://github.com/zxkane/mcp-server-amazon-bedrock"
+    },
+    {
+      "name": "amidabuddha/unichat-mcp-server",
+      "url": "https://github.com/amidabuddha/unichat-mcp-server"
+    },
+    {
+      "name": "amineelkouhen/mcp-cockroachdb",
+      "url": "https://github.com/amineelkouhen/mcp-cockroachdb"
+    },
+    {
+      "name": "anaisbetts/mcp-installer",
+      "url": "https://github.com/anaisbetts/mcp-installer"
+    },
+    {
+      "name": "anaisbetts/mcp-youtube",
+      "url": "https://github.com/anaisbetts/mcp-youtube"
+    },
+    {
+      "name": "andybrandt/mcp-simple-arxiv",
+      "url": "https://github.com/andybrandt/mcp-simple-arxiv"
+    },
+    {
+      "name": "andybrandt/mcp-simple-openai-assistant",
+      "url": "https://github.com/andybrandt/mcp-simple-openai-assistant"
+    },
+    {
+      "name": "andybrandt/mcp-simple-pubmed",
+      "url": "https://github.com/andybrandt/mcp-simple-pubmed"
+    },
+    {
+      "name": "andybrandt/mcp-simple-timeserver",
+      "url": "https://github.com/andybrandt/mcp-simple-timeserver"
+    },
+    {
+      "name": "anjor/coinmarket-mcp-server",
+      "url": "https://github.com/anjor/coinmarket-mcp-server"
+    },
+    {
+      "name": "anki-mcp/anki-mcp-desktop",
+      "url": "https://github.com/anki-mcp/anki-mcp-desktop"
+    },
+    {
+      "name": "ankitmalik84/notion-mcp-server",
+      "url": "https://github.com/ankitmalik84/Agentic_Longterm_Memory/tree/main/src/notion_mcp_server"
+    },
+    {
+      "name": "antonio-mello-ai/mcp-pfsense",
+      "url": "https://github.com/antonio-mello-ai/mcp-pfsense"
+    },
+    {
+      "name": "antonio-mello-ai/mcp-proxmox",
+      "url": "https://github.com/antonio-mello-ai/mcp-proxmox"
+    },
+    {
+      "name": "AntonioTF5/soul-mcp-server",
+      "url": "https://github.com/AntonioTF5/soul-mcp-server"
+    },
+    {
+      "name": "antv/mcp-server-chart",
+      "url": "https://github.com/antvis/mcp-server-chart"
+    },
+    {
+      "name": "apiarya/wemo-mcp-server",
+      "url": "https://github.com/apiarya/wemo-mcp-server"
+    },
+    {
+      "name": "apify/actors-mcp-server",
+      "url": "https://github.com/apify/actors-mcp-server"
+    },
+    {
+      "name": "apify/mcp-server-rag-web-browser",
+      "url": "https://github.com/apify/mcp-server-rag-web-browser"
+    },
+    {
+      "name": "apinetwork/piapi-mcp-server",
+      "url": "https://github.com/apinetwork/piapi-mcp-server"
+    },
+    {
+      "name": "arcadia-finance/mcp-server",
+      "url": "https://github.com/arcadia-finance/mcp-server"
+    },
+    {
+      "name": "ariadng/metatrader-mcp-server",
+      "url": "https://github.com/ariadng/metatrader-mcp-server"
+    },
+    {
+      "name": "arikusi/deepseek-mcp-server",
+      "url": "https://github.com/arikusi/deepseek-mcp-server"
+    },
+    {
+      "name": "ark-forge/mcp-eu-ai-act",
+      "url": "https://github.com/ark-forge/mcp-eu-ai-act"
+    },
+    {
+      "name": "arnstarn/mcp-server-spotinst",
+      "url": "https://github.com/arnstarn/mcp-server-spotinst"
+    },
+    {
+      "name": "arpitbatra123/mcp-googletasks",
+      "url": "https://github.com/arpitbatra123/mcp-googletasks"
+    },
+    {
+      "name": "atlasprzetargow/mcp-server",
+      "url": "https://github.com/atlasprzetargow/mcp-server"
+    },
+    {
+      "name": "atomicchonk/roadrecon_mcp_server",
+      "url": "https://github.com/atomicchonk/roadrecon_mcp_server"
+    },
+    {
+      "name": "atomno-labs/mcp-cbr-rates",
+      "url": "https://github.com/atomno-labs/mcp-cbr-rates"
+    },
+    {
+      "name": "atomno-labs/mcp-egrul",
+      "url": "https://github.com/atomno-labs/mcp-egrul"
+    },
+    {
+      "name": "atomno-labs/mcp-fns-check",
+      "url": "https://github.com/atomno-labs/mcp-fns-check"
+    },
+    {
+      "name": "attalla1/photopea-mcp-server",
+      "url": "https://github.com/attalla1/photopea-mcp-server"
+    },
+    {
+      "name": "augmnt/augments-mcp-server",
+      "url": "https://github.com/augmnt/augments-mcp-server"
+    },
+    {
+      "name": "automatalabs/mcp-server-playwright",
+      "url": "https://github.com/Automata-Labs-team/MCP-Server-Playwright"
+    },
+    {
+      "name": "automation-ai-labs/mcp-link",
+      "url": "https://github.com/automation-ai-labs/mcp-link"
+    },
+    {
+      "name": "avisangle/jenkins-mcp-server",
+      "url": "https://github.com/avisangle/jenkins-mcp-server"
+    },
+    {
+      "name": "Awesome Crypto MCP Servers by badkk",
+      "url": "https://github.com/badkk/awesome-crypto-mcp-servers"
+    },
+    {
+      "name": "Awesome MCP Servers by punkpeye",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers"
+    },
+    {
+      "name": "Awesome MCP Servers by wong2",
+      "url": "https://github.com/wong2/awesome-mcp-servers"
+    },
+    {
+      "name": "Awesome Remote MCP Servers by JAW9C",
+      "url": "https://github.com/jaw9c/awesome-remote-mcp-servers"
+    },
+    {
+      "name": "awesome-mcp-clients",
+      "url": "https://github.com/punkpeye/awesome-mcp-clients"
+    },
+    {
+      "name": "awesome-mcp-servers",
+      "url": "https://github.com/appcypher/awesome-mcp-servers"
+    },
+    {
+      "name": "awwaiid/mcp-server-taskwarrior",
+      "url": "https://github.com/awwaiid/mcp-server-taskwarrior"
+    },
+    {
+      "name": "axliupore/mcp-code-runner",
+      "url": "https://github.com/axliupore/mcp-code-runner"
+    },
+    {
+      "name": "aybelatchane/mcp-server-terminal",
+      "url": "https://github.com/aybelatchane/mcp-server-terminal"
+    },
+    {
+      "name": "azeth-protocol/mcp-server",
+      "url": "https://github.com/azeth-protocol/mcp-server"
+    },
+    {
+      "name": "bamwor-dev/bamwor-mcp-server",
+      "url": "https://github.com/bamwor-dev/bamwor-mcp-server"
+    },
+    {
+      "name": "bart6114/my-bear-mcp-server",
+      "url": "https://github.com/bart6114/my-bear-mcp-server"
+    },
+    {
+      "name": "behrensd/mcp-firewall",
+      "url": "https://github.com/behrensd/mcp-firewall"
+    },
+    {
+      "name": "BelleKou/mcp-viral-transformer",
+      "url": "https://github.com/BelleKou/mcp-viral-transformer"
+    },
+    {
+      "name": "Beltran12138/wecom-docs-mcp-server",
+      "url": "https://github.com/Beltran12138/wecom-docs-mcp-server"
+    },
+    {
+      "name": "benborla29/mcp-server-mysql",
+      "url": "https://github.com/benborla/mcp-server-mysql"
+    },
+    {
+      "name": "Bigsy/Clojars-MCP-Server",
+      "url": "https://github.com/Bigsy/Clojars-MCP-Server"
+    },
+    {
+      "name": "billster45/mcp-chatgpt-responses",
+      "url": "https://github.com/billster45/mcp-chatgpt-responses"
+    },
+    {
+      "name": "bintocher/mcp-superset",
+      "url": "https://github.com/bintocher/mcp-superset"
+    },
+    {
+      "name": "bitbonsai/mcp-obsidian",
+      "url": "https://github.com/bitbonsai/mcp-obsidian"
+    },
+    {
+      "name": "blazickjp/arxiv-mcp-server",
+      "url": "https://github.com/blazickjp/arxiv-mcp-server"
+    },
+    {
+      "name": "blurrah/mcp-graphql",
+      "url": "https://github.com/blurrah/mcp-graphql"
+    },
+    {
+      "name": "bogdan01m/zapcap-mcp-server",
+      "url": "https://github.com/bogdan01m/zapcap-mcp-server"
+    },
+    {
+      "name": "box/mcp-server-box-remote",
+      "url": "https://github.com/box/mcp-server-box-remote"
+    },
+    {
+      "name": "BrainGrid MCP",
+      "url": "https://docs.braingrid.ai/mcp-server/installation"
+    },
+    {
+      "name": "briandconnelly/mcp-server-ipinfo",
+      "url": "https://github.com/briandconnelly/mcp-server-ipinfo"
+    },
+    {
+      "name": "brianxiadong/ones-wiki-mcp-server",
+      "url": "https://github.com/brianxiadong/ones-wiki-mcp-server"
+    },
+    {
+      "name": "bright8192/esxi-mcp-server",
+      "url": "https://github.com/bright8192/esxi-mcp-server"
+    },
+    {
+      "name": "browserbase/mcp-server-browserbase",
+      "url": "https://github.com/browserbase/mcp-server-browserbase"
+    },
+    {
+      "name": "brutalzinn/simple-mcp-selenium",
+      "url": "https://github.com/brutalzinn/simple-mcp-selenium"
+    },
+    {
+      "name": "buildkite/buildkite-mcp-server",
+      "url": "https://github.com/buildkite/buildkite-mcp-server"
+    },
+    {
+      "name": "bulatko/vk-mcp-server",
+      "url": "https://github.com/bulatko/vk-mcp-server"
+    },
+    {
+      "name": "BurtTheCoder/mcp-dnstwist",
+      "url": "https://github.com/BurtTheCoder/mcp-dnstwist"
+    },
+    {
+      "name": "BurtTheCoder/mcp-maigret",
+      "url": "https://github.com/BurtTheCoder/mcp-maigret"
+    },
+    {
+      "name": "BurtTheCoder/mcp-shodan",
+      "url": "https://github.com/BurtTheCoder/mcp-shodan"
+    },
+    {
+      "name": "BurtTheCoder/mcp-virustotal",
+      "url": "https://github.com/BurtTheCoder/mcp-virustotal"
+    },
+    {
+      "name": "C# MCP SDK",
+      "url": "https://github.com/modelcontextprotocol/csharp-sdk"
+    },
+    {
+      "name": "c4pt0r/mcp-server-tidb",
+      "url": "https://github.com/c4pt0r/mcp-server-tidb"
+    },
+    {
+      "name": "cablate/mcp-google-map",
+      "url": "https://github.com/cablate/mcp-google-map"
+    },
+    {
+      "name": "Cactusinhand/mcp_server_notify",
+      "url": "https://github.com/Cactusinhand/mcp_server_notify"
+    },
+    {
+      "name": "cahthuranag/mcp-server",
+      "url": "https://github.com/cahthuranag/mcp-server"
+    },
+    {
+      "name": "campertunity/mcp-server",
+      "url": "https://github.com/campertunity/mcp-server"
+    },
+    {
+      "name": "carlosahumada89/govrider-mcp-server",
+      "url": "https://github.com/carlosahumada89/govrider-mcp-server"
+    },
+    {
+      "name": "carsol/monarch-mcp-server",
+      "url": "https://github.com/carsol/monarch-mcp-server"
+    },
+    {
+      "name": "Castaldo-Solutions/mcp-vtenext",
+      "url": "https://github.com/Castaldo-Solutions/mcp-vtenext"
+    },
+    {
+      "name": "chargebee/mcp",
+      "url": "https://github.com/chargebee/agentkit/tree/main/modelcontextprotocol"
+    },
+    {
+      "name": "chasesaurabh/mcp-page-capture",
+      "url": "https://github.com/chasesaurabh/mcp-page-capture"
+    },
+    {
+      "name": "chatmcp/mcp-server-chatsum",
+      "url": "https://github.com/chatmcp/mcp-server-chatsum"
+    },
+    {
+      "name": "chopmob-cloud/AlgoVoi-Platform-Adapters",
+      "url": "https://github.com/chopmob-cloud/AlgoVoi-Platform-Adapters/tree/master/mcp-server"
+    },
+    {
+      "name": "chrbailey/promptspeak-mcp-server",
+      "url": "https://github.com/chrbailey/promptspeak-mcp-server"
+    },
+    {
+      "name": "chrisbusbin-pixel/propfirmdealfinder-mcp-server",
+      "url": "https://github.com/chrisbusbin-pixel/propfirmdealfinder-mcp-server"
+    },
+    {
+      "name": "chrishayuk/mcp-cli",
+      "url": "https://github.com/chrishayuk/mcp-cli"
+    },
+    {
+      "name": "christulino/todoist-v1-mcp-server",
+      "url": "https://github.com/christulino/todoist-v1-mcp-server"
+    },
+    {
+      "name": "Cifero74/mcp-apple-music",
+      "url": "https://github.com/Cifero74/mcp-apple-music"
+    },
+    {
+      "name": "CircleCI/mcp-server-circleci",
+      "url": "https://github.com/CircleCI-Public/mcp-server-circleci"
+    },
+    {
+      "name": "cjo4m06/mcp-shrimp-task-manager",
+      "url": "https://github.com/cjo4m06/mcp-shrimp-task-manager"
+    },
+    {
+      "name": "ckreiling/mcp-server-docker",
+      "url": "https://github.com/ckreiling/mcp-server-docker"
+    },
+    {
+      "name": "claude-gemini-mcp-slim",
+      "url": "https://github.com/cmdaltctr/claude-gemini-mcp-slim"
+    },
+    {
+      "name": "ClickHouse/mcp-clickhouse",
+      "url": "https://github.com/ClickHouse/mcp-clickhouse"
+    },
+    {
+      "name": "clicks-protocol/mcp-server",
+      "url": "https://github.com/clicks-protocol/clicks-protocol/tree/main/mcp-server"
+    },
+    {
+      "name": "clirank-mcp-server",
+      "url": "https://github.com/alexanderclapp/clirank-mcp-server"
+    },
+    {
+      "name": "clouatre-labs/math-mcp-learning-server",
+      "url": "https://github.com/clouatre-labs/math-mcp-learning-server"
+    },
+    {
+      "name": "cloudbet/sports-mcp-server",
+      "url": "https://github.com/cloudbet/sports-mcp-server"
+    },
+    {
+      "name": "cloudflare/mcp-server-cloudflare",
+      "url": "https://github.com/cloudflare/mcp-server-cloudflare"
+    },
+    {
+      "name": "cnghockey/sats4ai-mcp-server",
+      "url": "https://github.com/cnghockey/sats4ai-mcp-server"
+    },
+    {
+      "name": "co-browser/attestable-mcp-server",
+      "url": "https://github.com/co-browser/attestable-mcp-server"
+    },
+    {
+      "name": "co-browser/browser-use-mcp-server",
+      "url": "https://github.com/co-browser/browser-use-mcp-server"
+    },
+    {
+      "name": "CodeLogicIncEngineering/codelogic-mcp-server",
+      "url": "https://github.com/CodeLogicIncEngineering/codelogic-mcp-server"
+    },
+    {
+      "name": "CoderGamester/mcp-unity",
+      "url": "https://github.com/CoderGamester/mcp-unity"
+    },
+    {
+      "name": "codeurali/mcp-dataverse",
+      "url": "https://github.com/codeurali/mcp-dataverse"
+    },
+    {
+      "name": "competlab/competlab-mcp-server",
+      "url": "https://github.com/competlab/competlab-mcp-server"
+    },
+    {
+      "name": "ConfigCat/mcp-server",
+      "url": "https://github.com/configcat/mcp-server"
+    },
+    {
+      "name": "confluentinc/mcp-confluent",
+      "url": "https://github.com/confluentinc/mcp-confluent"
+    },
+    {
+      "name": "conorbronsdon/gws-mcp-server",
+      "url": "https://github.com/conorbronsdon/gws-mcp-server"
+    },
+    {
+      "name": "contextstream/mcp-server",
+      "url": "https://www.npmjs.com/package/@contextstream/mcp-server"
+    },
+    {
+      "name": "Couchbase-Ecosystem/mcp-server-couchbase",
+      "url": "https://github.com/Couchbase-Ecosystem/mcp-server-couchbase"
+    },
+    {
+      "name": "cqfn/aibolit-mcp-server",
+      "url": "https://github.com/cqfn/aibolit-mcp-server"
+    },
+    {
+      "name": "cr7258/elasticsearch-mcp-server",
+      "url": "https://github.com/cr7258/elasticsearch-mcp-server"
+    },
+    {
+      "name": "cswkim/discogs-mcp-server",
+      "url": "https://github.com/cswkim/discogs-mcp-server"
+    },
+    {
+      "name": "cuthongthai-vn/vimo-mcp-server",
+      "url": "https://github.com/cuthongthai-vn/vimo-mcp-server"
+    },
+    {
+      "name": "Cyberweasel777/botindex-mcp-server",
+      "url": "https://github.com/Cyberweasel777/botindex-mcp-server"
+    },
+    {
+      "name": "cyclops-ui/mcp-cyclops",
+      "url": "https://github.com/cyclops-ui/mcp-cyclops"
+    },
+    {
+      "name": "daiji-sshr/redmine-mcp-stateless",
+      "url": "https://github.com/daiji-sshr/redmine-mcp-stateless"
+    },
+    {
+      "name": "damientilman/mailchimp-mcp-server",
+      "url": "https://github.com/damientilman/mailchimp-mcp-server"
+    },
+    {
+      "name": "Dan8Oren/mcp-apple-notes",
+      "url": "https://github.com/Dan8Oren/mcp-apple-notes"
+    },
+    {
+      "name": "DareDev256/fcpxml-mcp-server",
+      "url": "https://github.com/DareDev256/fcpxml-mcp-server"
+    },
+    {
+      "name": "Data-Everything/mcp-server-templates",
+      "url": "https://github.com/Data-Everything/mcp-server-templates"
+    },
+    {
+      "name": "datalayer/jupyter-mcp-server",
+      "url": "https://github.com/datalayer/jupyter-mcp-server"
+    },
+    {
+      "name": "Dataring-engineering/mcp-server-trino",
+      "url": "https://github.com/Dataring-engineering/mcp-server-trino"
+    },
+    {
+      "name": "davewind/mysql-mcp-server",
+      "url": "https://github.com/dave-wind/mysql-mcp-server"
+    },
+    {
+      "name": "davidlin2k/pox-mcp-server",
+      "url": "https://github.com/davidlin2k/pox-mcp-server"
+    },
+    {
+      "name": "deadletterq/mcp-opennutrition",
+      "url": "https://github.com/deadletterq/mcp-opennutrition"
+    },
+    {
+      "name": "dealx/mcp-server",
+      "url": "https://github.com/DealExpress/mcp-server"
+    },
+    {
+      "name": "Declan142/calcnook-mcp-server",
+      "url": "https://github.com/Declan142/calcnook-mcp-server"
+    },
+    {
+      "name": "delano/postman-mcp-server",
+      "url": "https://github.com/delano/postman-mcp-server"
+    },
+    {
+      "name": "designcomputer/mysql_mcp_server",
+      "url": "https://github.com/designcomputer/mysql_mcp_server"
+    },
+    {
+      "name": "devflowinc/trieve",
+      "url": "https://github.com/devflowinc/trieve/tree/main/clients/mcp-server"
+    },
+    {
+      "name": "devilcoder01/weather-mcp-server",
+      "url": "https://github.com/devilcoder01/weather-mcp-server"
+    },
+    {
+      "name": "discava/mcp-server",
+      "url": "https://github.com/discava/mcp-server"
+    },
+    {
+      "name": "djalal/quran-mcp-server",
+      "url": "https://github.com/djalal/quran-mcp-server"
+    },
+    {
+      "name": "doctorm333/promptpilot-mcp-server",
+      "url": "https://github.com/doctorm333/promptpilot-mcp-server"
+    },
+    {
+      "name": "doggybee/mcp-server-ccxt",
+      "url": "https://github.com/doggybee/mcp-server-ccxt"
+    },
+    {
+      "name": "doggybee/mcp-server-leetcode",
+      "url": "https://github.com/doggybee/mcp-server-leetcode"
+    },
+    {
+      "name": "DollhouseMCP/mcp-server",
+      "url": "https://github.com/DollhouseMCP/mcp-server"
+    },
+    {
+      "name": "domdomegg/airtable-mcp-server",
+      "url": "https://github.com/domdomegg/airtable-mcp-server"
+    },
+    {
+      "name": "doobidoo/MCP-Context-Provider",
+      "url": "https://github.com/doobidoo/MCP-Context-Provider"
+    },
+    {
+      "name": "doobidoo/mcp-memory-service",
+      "url": "https://github.com/doobidoo/mcp-memory-service"
+    },
+    {
+      "name": "douglasborthwick-crypto/mcp-server-insumer",
+      "url": "https://github.com/douglasborthwick-crypto/mcp-server-insumer"
+    },
+    {
+      "name": "dragogargo/mcp-sysmon",
+      "url": "https://github.com/dragogargo/mcp-sysmon"
+    },
+    {
+      "name": "drakonkat/wizzy-mcp-tmdb",
+      "url": "https://github.com/drakonkat/wizzy-mcp-tmdb"
+    },
+    {
+      "name": "Dumpling-AI/mcp-server-dumplingai",
+      "url": "https://github.com/Dumpling-AI/mcp-server-dumplingai"
+    },
+    {
+      "name": "echojobsio/jdl-mcp-server",
+      "url": "https://github.com/echojobsio/jdl-mcp-server"
+    },
+    {
+      "name": "edgedelta/edgedelta-mcp-server",
+      "url": "https://github.com/edgedelta/edgedelta-mcp-server"
+    },
+    {
+      "name": "edwinbernadus/nocodb-mcp-server",
+      "url": "https://github.com/edwinbernadus/nocodb-mcp-server"
+    },
+    {
+      "name": "eirikb/any-cli-mcp-server",
+      "url": "https://github.com/eirikb/any-cli-mcp-server"
+    },
+    {
+      "name": "elevy99927/devops-mcp-webui",
+      "url": "https://github.com/elevy99927/devops-mcp-webui"
+    },
+    {
+      "name": "elvismdev/mem0-mcp-selfhosted",
+      "url": "https://github.com/elvismdev/mem0-mcp-selfhosted"
+    },
+    {
+      "name": "Embassy-of-the-Free-Mind/sourcelibrary-v2",
+      "url": "https://github.com/Embassy-of-the-Free-Mind/sourcelibrary-v2/tree/main/mcp-server"
+    },
+    {
+      "name": "embeddedlayers/mcp-analytics",
+      "url": "https://github.com/embeddedlayers/mcp-analytics"
+    },
+    {
+      "name": "emicklei/mcp-log-proxy",
+      "url": "https://github.com/emicklei/mcp-log-proxy"
+    },
+    {
+      "name": "ergut/mcp-bigquery-server",
+      "url": "https://github.com/ergut/mcp-bigquery-server"
+    },
+    {
+      "name": "erikhoward/adls-mcp-server",
+      "url": "https://github.com/erikhoward/adls-mcp-server"
+    },
+    {
+      "name": "erithwik/mcp-hn",
+      "url": "https://github.com/erithwik/mcp-hn"
+    },
+    {
+      "name": "Erodenn/godot-mcp-runtime",
+      "url": "https://github.com/Erodenn/godot-mcp-runtime"
+    },
+    {
+      "name": "esignaturescom/mcp-server-esignatures",
+      "url": "https://github.com/esignaturescom/mcp-server-esignatures"
+    },
+    {
+      "name": "etsd-tech/mcp-pointer",
+      "url": "https://github.com/etsd-tech/mcp-pointer"
+    },
+    {
+      "name": "evalstate/mcp-hfspace",
+      "url": "https://github.com/evalstate/mcp-hfspace"
+    },
+    {
+      "name": "evalstate/mcp-miro",
+      "url": "https://github.com/evalstate/mcp-miro"
+    },
+    {
+      "name": "exa-labs/exa-mcp-server",
+      "url": "https://github.com/exa-labs/exa-mcp-server"
+    },
+    {
+      "name": "executeautomation/playwright-mcp-server",
+      "url": "https://github.com/executeautomation/mcp-playwright"
+    },
+    {
+      "name": "exoticknight/mcp-file-merger",
+      "url": "https://github.com/exoticknight/mcp-file-merger"
+    },
+    {
+      "name": "ExpertVagabond/solana-mcp-server",
+      "url": "https://github.com/ExpertVagabond/solana-mcp-server"
+    },
+    {
+      "name": "f4ww4z/mcp-mysql-server",
+      "url": "https://github.com/f4ww4z/mcp-mysql-server"
+    },
+    {
+      "name": "FastAlertNow/mcp-server",
+      "url": "https://github.com/FastAlertNow/mcp-server"
+    },
+    {
+      "name": "fasuizu-br/brainiall-mcp-server",
+      "url": "https://github.com/fasuizu-br/brainiall-mcp-server"
+    },
+    {
+      "name": "fernsugi/x402-api-server",
+      "url": "https://github.com/fernsugi/x402-api-server/tree/main/mcp-server"
+    },
+    {
+      "name": "ferrants/memvid-mcp-server",
+      "url": "https://github.com/ferrants/memvid-mcp-server"
+    },
+    {
+      "name": "finmap-org/mcp-server",
+      "url": "https://github.com/finmap-org/mcp-server"
+    },
+    {
+      "name": "fireproof-storage/mcp-database-server",
+      "url": "https://github.com/fireproof-storage/mcp-database-server"
+    },
+    {
+      "name": "flipt-io/mcp-server-flipt",
+      "url": "https://github.com/flipt-io/mcp-server-flipt"
+    },
+    {
+      "name": "flowcore/mcp-flowcore-platform",
+      "url": "https://github.com/flowcore-io/mcp-flowcore-platform"
+    },
+    {
+      "name": "flux159/mcp-server-kubernetes",
+      "url": "https://github.com/Flux159/mcp-server-kubernetes"
+    },
+    {
+      "name": "Foobara MCP Connector",
+      "url": "https://github.com/foobara/mcp-connector"
+    },
+    {
+      "name": "fr0gger/MCP_Security",
+      "url": "https://github.com/fr0gger/MCP_Security"
+    },
+    {
+      "name": "fradser/mcp-server-apple-reminders",
+      "url": "https://github.com/FradSer/mcp-server-apple-reminders"
+    },
+    {
+      "name": "freema/mcp-design-system-extractor",
+      "url": "https://github.com/freema/mcp-design-system-extractor"
+    },
+    {
+      "name": "freema/mcp-gsheets",
+      "url": "https://github.com/freema/mcp-gsheets"
+    },
+    {
+      "name": "FreePeak/db-mcp-server",
+      "url": "https://github.com/FreePeak/db-mcp-server"
+    },
+    {
+      "name": "g0t4/mcp-server-commands",
+      "url": "https://github.com/g0t4/mcp-server-commands"
+    },
+    {
+      "name": "gbrigandi/mcp-server-cortex",
+      "url": "https://github.com/gbrigandi/mcp-server-cortex"
+    },
+    {
+      "name": "gbrigandi/mcp-server-thehive",
+      "url": "https://github.com/gbrigandi/mcp-server-thehive"
+    },
+    {
+      "name": "gbrigandi/mcp-server-wazuh",
+      "url": "https://github.com/gbrigandi/mcp-server-wazuh"
+    },
+    {
+      "name": "get-convex/convex-backend",
+      "url": "https://stack.convex.dev/convex-mcp-server"
+    },
+    {
+      "name": "getalai/alai-mcp-server",
+      "url": "https://github.com/getalai/alai-mcp-server"
+    },
+    {
+      "name": "getalby/nwc-mcp-server",
+      "url": "https://github.com/getalby/nwc-mcp-server"
+    },
+    {
+      "name": "gigamori/mcp-run-sql-connectorx",
+      "url": "https://github.com/gigamori/mcp-run-sql-connectorx"
+    },
+    {
+      "name": "girste/mcp-cybersec-watchdog",
+      "url": "https://github.com/girste/mcp-cybersec-watchdog"
+    },
+    {
+      "name": "githejie/mcp-server-calculator",
+      "url": "https://github.com/githejie/mcp-server-calculator"
+    },
+    {
+      "name": "github/github-mcp-server",
+      "url": "https://github.com/github/github-mcp-server"
+    },
+    {
+      "name": "gitopia/gitopia-mcp-server",
+      "url": "https://github.com/gitopia/gitopia-mcp-server"
+    },
+    {
+      "name": "GittyBurstein/mermaid-mcp-server",
+      "url": "https://github.com/GittyBurstein/mermaid-mcp-server"
+    },
+    {
+      "name": "giuseppe-coco/Google-Workspace-MCP-Server",
+      "url": "https://github.com/giuseppe-coco/Google-Workspace-MCP-Server"
+    },
+    {
+      "name": "gjenkins20/unofficial-fortimonitor-mcp-server",
+      "url": "https://github.com/gjenkins20/unofficial-fortimonitor-mcp-server"
+    },
+    {
+      "name": "gjenkins20/webmin-mcp-server",
+      "url": "https://github.com/gjenkins20/webmin-mcp-server"
+    },
+    {
+      "name": "glaksmono/finbud-data-mcp",
+      "url": "https://github.com/glaksmono/finbud-data-mcp/tree/main/packages/mcp-server"
+    },
+    {
+      "name": "glama",
+      "url": "https://glama.ai/mcp/servers/@loglux/auth-mcp-gateway"
+    },
+    {
+      "name": "glenngillen/mcpmcp-server",
+      "url": "https://github.com/glenngillen/mcpmcp-server"
+    },
+    {
+      "name": "Go MCP SDK",
+      "url": "https://github.com/modelcontextprotocol/go-sdk"
+    },
+    {
+      "name": "gogabrielordonez/mcp-ragchat",
+      "url": "https://github.com/gogabrielordonez/mcp-ragchat"
+    },
+    {
+      "name": "gomarble-ai/facebook-ads-mcp-server",
+      "url": "https://github.com/gomarble-ai/facebook-ads-mcp-server"
+    },
+    {
+      "name": "gomarble-ai/google-ads-mcp-server",
+      "url": "https://github.com/gomarble-ai/google-ads-mcp-server"
+    },
+    {
+      "name": "gosodax/builders-sodax-mcp-server",
+      "url": "https://github.com/gosodax/builders-sodax-mcp-server"
+    },
+    {
+      "name": "gotoolkits/DifyWorkflow",
+      "url": "https://github.com/gotoolkits/mcp-difyworkflow-server"
+    },
+    {
+      "name": "gotoolkits/wecombot",
+      "url": "https://github.com/gotoolkits/mcp-wecombot-server.git"
+    },
+    {
+      "name": "Govcraft/rust-docs-mcp-server",
+      "url": "https://github.com/Govcraft/rust-docs-mcp-server"
+    },
+    {
+      "name": "gpu-bridge/mcp-server",
+      "url": "https://github.com/gpu-bridge/mcp-server"
+    },
+    {
+      "name": "grafana/mcp-grafana",
+      "url": "https://github.com/grafana/mcp-grafana"
+    },
+    {
+      "name": "graphlit-mcp-server",
+      "url": "https://github.com/graphlit/graphlit-mcp-server"
+    },
+    {
+      "name": "GreptimeTeam/greptimedb-mcp-server",
+      "url": "https://github.com/GreptimeTeam/greptimedb-mcp-server"
+    },
+    {
+      "name": "gridinsoft/mcp-inspector",
+      "url": "https://github.com/gridinsoft/mcp-inspector"
+    },
+    {
+      "name": "growilabs/growi-mcp-server",
+      "url": "https://github.com/growilabs/growi-mcp-server"
+    },
+    {
+      "name": "guimatheus92/mcp-video-analyzer",
+      "url": "https://github.com/guimatheus92/mcp-video-analyzer"
+    },
+    {
+      "name": "HagaiHen/facebook-mcp-server",
+      "url": "https://github.com/HagaiHen/facebook-mcp-server"
+    },
+    {
+      "name": "Haiku-Trading/haiku-mcp-server",
+      "url": "https://github.com/Haiku-Trading/haiku-mcp-server"
+    },
+    {
+      "name": "HainanZhao/mcp-gitlab-jira",
+      "url": "https://github.com/HainanZhao/mcp-gitlab-jira"
+    },
+    {
+      "name": "hampsterx/claude-mcp-bridge",
+      "url": "https://github.com/hampsterx/claude-mcp-bridge"
+    },
+    {
+      "name": "hannesrudolph/imessage-query-fastmcp-mcp-server",
+      "url": "https://github.com/hannesrudolph/imessage-query-fastmcp-mcp-server"
+    },
+    {
+      "name": "hannesrudolph/mcp-ragdocs",
+      "url": "https://github.com/hannesrudolph/mcp-ragdocs"
+    },
+    {
+      "name": "hannesrudolph/sqlite-explorer-fastmcp-mcp-server",
+      "url": "https://github.com/hannesrudolph/sqlite-explorer-fastmcp-mcp-server"
+    },
+    {
+      "name": "HanSur94/matlab-mcp-server-python",
+      "url": "https://github.com/HanSur94/matlab-mcp-server-python"
+    },
+    {
+      "name": "hardik-id/azure-resource-graph-mcp-server",
+      "url": "https://github.com/hardik-id/azure-resource-graph-mcp-server"
+    },
+    {
+      "name": "haris-musa/excel-mcp-server",
+      "url": "https://github.com/haris-musa/excel-mcp-server"
+    },
+    {
+      "name": "HaroldFinchIFT/vuln-nist-mcp-server",
+      "url": "https://github.com/HaroldFinchIFT/vuln-nist-mcp-server"
+    },
+    {
+      "name": "hashgraph-online/hashnet-mcp-js",
+      "url": "https://github.com/hashgraph-online/hashnet-mcp-js"
+    },
+    {
+      "name": "hashicorp/terraform-mcp-server",
+      "url": "https://github.com/hashicorp/terraform-mcp-server"
+    },
+    {
+      "name": "hbg/mcp-paperswithcode",
+      "url": "https://github.com/hbg/mcp-paperswithcode"
+    },
+    {
+      "name": "hechtcarmel/jetbrains-debugger-mcp-plugin",
+      "url": "https://github.com/hechtcarmel/jetbrains-debugger-mcp-plugin"
+    },
+    {
+      "name": "hechtcarmel/jetbrains-index-mcp-plugin",
+      "url": "https://github.com/hechtcarmel/jetbrains-index-mcp-plugin"
+    },
+    {
+      "name": "hellokaton/unsplash-mcp-server",
+      "url": "https://github.com/hellokaton/unsplash-mcp-server"
+    },
+    {
+      "name": "henilcalagiya/mcp-apple-notes",
+      "url": "https://github.com/henilcalagiya/mcp-apple-notes"
+    },
+    {
+      "name": "HenryHaoson/Yuque-MCP-Server",
+      "url": "https://github.com/HenryHaoson/Yuque-MCP-Server"
+    },
+    {
+      "name": "heurist-network/heurist-mesh-mcp-server",
+      "url": "https://github.com/heurist-network/heurist-mesh-mcp-server"
+    },
+    {
+      "name": "hieutran/entraid-mcp-server",
+      "url": "https://github.com/hieuttmmo/entraid-mcp-server"
+    },
+    {
+      "name": "Higress MCP Server Hosting",
+      "url": "https://github.com/alibaba/higress/tree/main/plugins/wasm-go/mcp-servers"
+    },
+    {
+      "name": "higress-group/higress-ops-mcp-server",
+      "url": "https://github.com/higress-group/higress-ops-mcp-server"
+    },
+    {
+      "name": "hiromitsusasaki/raindrop-io-mcp-server",
+      "url": "https://github.com/hiromitsusasaki/raindrop-io-mcp-server"
+    },
+    {
+      "name": "hkaanengin/opendota-mcp-server",
+      "url": "https://github.com/hkaanengin/opendota-mcp-server"
+    },
+    {
+      "name": "hloiseaufcms/mcp-gopls",
+      "url": "https://github.com/hloiseaufcms/mcp-gopls"
+    },
+    {
+      "name": "hmk/attio-mcp-server",
+      "url": "https://github.com/hmk/attio-mcp-server"
+    },
+    {
+      "name": "hmk/box-mcp-server",
+      "url": "https://github.com/hmk/box-mcp-server"
+    },
+    {
+      "name": "HubLensOfficial/mcp-server",
+      "url": "https://github.com/HubLensOfficial/mcp-server"
+    },
+    {
+      "name": "Hug0x0/mcp-reunion",
+      "url": "https://github.com/Hug0x0/mcp-reunion"
+    },
+    {
+      "name": "HuggingAGI/mcp-baostock-server",
+      "url": "https://github.com/HuggingAGI/mcp-baostock-server"
+    },
+    {
+      "name": "HumanSignal/label-studio-mcp-server",
+      "url": "https://github.com/HumanSignal/label-studio-mcp-server"
+    },
+    {
+      "name": "hustcc/mcp-echarts",
+      "url": "https://github.com/hustcc/mcp-echarts"
+    },
+    {
+      "name": "hustcc/mcp-mermaid",
+      "url": "https://github.com/hustcc/mcp-mermaid"
+    },
+    {
+      "name": "hydrolix/mcp-hydrolix",
+      "url": "https://github.com/hydrolix/mcp-hydrolix"
+    },
+    {
+      "name": "hypescale/storyblok-mcp-server",
+      "url": "https://github.com/hypescale/storyblok-mcp-server"
+    },
+    {
+      "name": "iamredmh/volta-mcp-server",
+      "url": "https://github.com/iamredmh/volta-mcp-server"
+    },
+    {
+      "name": "ianaleck/harvest-mcp-server",
+      "url": "https://github.com/ianaleck/harvest-mcp-server"
+    },
+    {
+      "name": "iaptic/mcp-server-iaptic",
+      "url": "https://github.com/iaptic/mcp-server-iaptic"
+    },
+    {
+      "name": "idapixl/algora-mcp-server",
+      "url": "https://github.com/idapixl/algora-mcp-server"
+    },
+    {
+      "name": "idoru/influxdb-mcp-server",
+      "url": "https://github.com/idoru/influxdb-mcp-server"
+    },
+    {
+      "name": "IgorGanapolsky/mcp-memory-gateway",
+      "url": "https://github.com/IgorGanapolsky/mcp-memory-gateway"
+    },
+    {
+      "name": "Ihor-Sokoliuk/MCP-SearXNG",
+      "url": "https://github.com/ihor-sokoliuk/mcp-searxng"
+    },
+    {
+      "name": "IlyaGulya/gradle-mcp-server",
+      "url": "https://github.com/IlyaGulya/gradle-mcp-server"
+    },
+    {
+      "name": "imatza-rh/mcp-zuul",
+      "url": "https://github.com/imatza-rh/mcp-zuul"
+    },
+    {
+      "name": "imprvhub/mcp-browser-agent",
+      "url": "https://github.com/imprvhub/mcp-browser-agent"
+    },
+    {
+      "name": "imprvhub/mcp-claude-hackernews",
+      "url": "https://github.com/imprvhub/mcp-claude-hackernews"
+    },
+    {
+      "name": "imprvhub/mcp-claude-spotify",
+      "url": "https://github.com/imprvhub/mcp-claude-spotify"
+    },
+    {
+      "name": "imprvhub/mcp-domain-availability",
+      "url": "https://github.com/imprvhub/mcp-domain-availability"
+    },
+    {
+      "name": "imprvhub/mcp-rss-aggregator",
+      "url": "https://github.com/imprvhub/mcp-rss-aggregator"
+    },
+    {
+      "name": "imprvhub/mcp-status-observer",
+      "url": "https://github.com/imprvhub/mcp-status-observer"
+    },
+    {
+      "name": "imran-siddique/agentos-mcp-server",
+      "url": "https://github.com/imran-siddique/agent-os/tree/master/extensions/mcp-server"
+    },
+    {
+      "name": "incu6us/loki-mcp-server",
+      "url": "https://github.com/incu6us/loki-mcp-server"
+    },
+    {
+      "name": "InditexTech/mcp-server-simulator-ios-idb",
+      "url": "https://github.com/InditexTech/mcp-server-simulator-ios-idb"
+    },
+    {
+      "name": "InditexTech/mcp-teams-server",
+      "url": "https://github.com/InditexTech/mcp-teams-server"
+    },
+    {
+      "name": "InfluxData/influxdb3_mcp_server",
+      "url": "https://github.com/influxdata/influxdb3_mcp_server"
+    },
+    {
+      "name": "InhiblabCore/mcp-image-compression",
+      "url": "https://github.com/InhiblabCore/mcp-image-compression"
+    },
+    {
+      "name": "inspektor-gadget/ig-mcp-server",
+      "url": "https://github.com/inspektor-gadget/ig-mcp-server"
+    },
+    {
+      "name": "integromat/make-mcp-server",
+      "url": "https://github.com/integromat/make-mcp-server"
+    },
+    {
+      "name": "inventer-dev/mcp-internet-speed-test",
+      "url": "https://github.com/inventer-dev/mcp-internet-speed-test"
+    },
+    {
+      "name": "IO-Aerospace-software-community/mcp-server",
+      "url": "https://github.com/IO-Aerospace-software-engineering/mcp-server"
+    },
+    {
+      "name": "ip2location/mcp-ip2location-io",
+      "url": "https://github.com/ip2location/mcp-ip2location-io"
+    },
+    {
+      "name": "ip2whois/mcp-ip2whois",
+      "url": "https://github.com/ip2whois/mcp-ip2whois"
+    },
+    {
+      "name": "ipfind/ipfind-mcp-server",
+      "url": "https://github.com/ipfind/ipfind-mcp-server"
+    },
+    {
+      "name": "ipfred/aiwen-mcp-server-geoip",
+      "url": "https://github.com/ipfred/aiwen-mcp-server-geoip"
+    },
+    {
+      "name": "iplocate/mcp-server-iplocate",
+      "url": "https://github.com/iplocate/mcp-server-iplocate"
+    },
+    {
+      "name": "iris-eval/mcp-server",
+      "url": "https://github.com/iris-eval/mcp-server"
+    },
+    {
+      "name": "isaacphi/mcp-gdrive",
+      "url": "https://github.com/isaacphi/mcp-gdrive"
+    },
+    {
+      "name": "isaacphi/mcp-language-server",
+      "url": "https://github.com/isaacphi/mcp-language-server"
+    },
+    {
+      "name": "isaacwasserman/mcp-snowflake-server",
+      "url": "https://github.com/isaacwasserman/mcp-snowflake-server"
+    },
+    {
+      "name": "isaacwasserman/mcp-vegalite-server",
+      "url": "https://github.com/isaacwasserman/mcp-vegalite-server"
+    },
+    {
+      "name": "isdaniel/mcp_weather_server",
+      "url": "https://github.com/isdaniel/mcp_weather_server"
+    },
+    {
+      "name": "iunera/druid-mcp-server",
+      "url": "https://github.com/iunera/druid-mcp-server"
+    },
+    {
+      "name": "ivnvxd/mcp-server-odoo",
+      "url": "https://github.com/ivnvxd/mcp-server-odoo"
+    },
+    {
+      "name": "j0hanz/filesystem-context-mcp-server",
+      "url": "https://github.com/j0hanz/filesystem-context-mcp-server"
+    },
+    {
+      "name": "j4c0bs/mcp-server-sql-analyzer",
+      "url": "https://github.com/j4c0bs/mcp-server-sql-analyzer"
+    },
+    {
+      "name": "jackrain19743/hou-tea-mcp-server",
+      "url": "https://github.com/jackrain19743/hou-tea-mcp-server"
+    },
+    {
+      "name": "jagan-shanmugam/climatiq-mcp-server",
+      "url": "https://github.com/jagan-shanmugam/climatiq-mcp-server"
+    },
+    {
+      "name": "jagan-shanmugam/mattermost-mcp-host",
+      "url": "https://github.com/jagan-shanmugam/mattermost-mcp-host"
+    },
+    {
+      "name": "jaipandya/producthunt-mcp-server",
+      "url": "https://github.com/jaipandya/producthunt-mcp-server"
+    },
+    {
+      "name": "JamesANZ/system-prompts-mcp-server",
+      "url": "https://github.com/JamesANZ/system-prompts-mcp-server"
+    },
+    {
+      "name": "janswist/mcp-dexscreener",
+      "url": "https://github.com/janswist/mcp-dexscreener"
+    },
+    {
+      "name": "jaspertvdm/mcp-server-gemini-bridge",
+      "url": "https://github.com/jaspertvdm/mcp-server-gemini-bridge"
+    },
+    {
+      "name": "jaspertvdm/mcp-server-ollama-bridge",
+      "url": "https://github.com/jaspertvdm/mcp-server-ollama-bridge"
+    },
+    {
+      "name": "jaspertvdm/mcp-server-openai-bridge",
+      "url": "https://github.com/jaspertvdm/mcp-server-openai-bridge"
+    },
+    {
+      "name": "jaspertvdm/mcp-server-rabel",
+      "url": "https://github.com/jaspertvdm/mcp-server-rabel"
+    },
+    {
+      "name": "Java MCP SDK",
+      "url": "https://github.com/modelcontextprotocol/java-sdk"
+    },
+    {
+      "name": "JaviMaligno/mcp-server-bitbucket",
+      "url": "https://github.com/JaviMaligno/mcp-server-bitbucket"
+    },
+    {
+      "name": "jiayao/mcp-chess",
+      "url": "https://github.com/jiayao/mcp-chess"
+    },
+    {
+      "name": "jinzcdev/leetcode-mcp-server",
+      "url": "https://github.com/jinzcdev/leetcode-mcp-server"
+    },
+    {
+      "name": "jinzcdev/markmap-mcp-server",
+      "url": "https://github.com/jinzcdev/markmap-mcp-server"
+    },
+    {
+      "name": "jmrplens/gitlab-mcp-server",
+      "url": "https://github.com/jmrplens/gitlab-mcp-server"
+    },
+    {
+      "name": "joepangallo/mcp-server-agentpay",
+      "url": "https://github.com/joepangallo/mcp-server-agentpay"
+    },
+    {
+      "name": "jordandalton/doordash-mcp-server",
+      "url": "https://github.com/JordanDalton/DoorDash-MCP-Server"
+    },
+    {
+      "name": "JordiNei/mcp-databricks-server",
+      "url": "https://github.com/JordiNeil/mcp-databricks-server"
+    },
+    {
+      "name": "jorgenclaw/nostr-mcp-server",
+      "url": "https://github.com/jorgenclaw/nostr-mcp-server"
+    },
+    {
+      "name": "joshuarileydev/app-store-connect-mcp-server",
+      "url": "https://github.com/JoshuaRileyDev/app-store-connect-mcp-server"
+    },
+    {
+      "name": "joshuarileydev/simulator-mcp-server",
+      "url": "https://github.com/JoshuaRileyDev/simulator-mcp-server"
+    },
+    {
+      "name": "jovezhong/mcp-timeplus",
+      "url": "https://github.com/jovezhong/mcp-timeplus"
+    },
+    {
+      "name": "jparkerweb/mcp-sqlite",
+      "url": "https://github.com/jparkerweb/mcp-sqlite"
+    },
+    {
+      "name": "Jpisnice/shadcn-ui-mcp-server",
+      "url": "https://github.com/Jpisnice/shadcn-ui-mcp-server"
+    },
+    {
+      "name": "jsdelivr/globalping-mcp-server",
+      "url": "https://github.com/jsdelivr/globalping-mcp-server"
+    },
+    {
+      "name": "jtalk22/slack-mcp-server",
+      "url": "https://github.com/jtalk22/slack-mcp-server"
+    },
+    {
+      "name": "juehang/vscode-mcp-server",
+      "url": "https://github.com/juehang/vscode-mcp-server"
+    },
+    {
+      "name": "junipr-labs/mcp-server",
+      "url": "https://github.com/junipr-labs/mcp-server"
+    },
+    {
+      "name": "just-every/mcp-read-website-fast",
+      "url": "https://github.com/just-every/mcp-read-website-fast"
+    },
+    {
+      "name": "just-every/mcp-screenshot-website-fast",
+      "url": "https://github.com/just-every/mcp-screenshot-website-fast"
+    },
+    {
+      "name": "jyjune/mcp_vms",
+      "url": "https://github.com/jyjune/mcp_vms"
+    },
+    {
+      "name": "k-jarzyna/mcp-miro",
+      "url": "https://github.com/k-jarzyna/mcp-miro"
+    },
+    {
+      "name": "kadykov/mcp-openapi-schema-explorer",
+      "url": "https://github.com/kadykov/mcp-openapi-schema-explorer"
+    },
+    {
+      "name": "kaiyuanxiaobing/atomgit-mcp-server",
+      "url": "https://github.com/kaiyuanxiaobing/atomgit-mcp-server"
+    },
+    {
+      "name": "kaliaboi/mcp-zotero",
+      "url": "https://github.com/kaliaboi/mcp-zotero"
+    },
+    {
+      "name": "kambriso/fritzbox-mcp-server",
+      "url": "https://github.com/kambriso/fritzbox-mcp-server"
+    },
+    {
+      "name": "Kapeli/dash-mcp-server",
+      "url": "https://github.com/Kapeli/dash-mcp-server"
+    },
+    {
+      "name": "karanb192/reddit-mcp-buddy",
+      "url": "https://github.com/karanb192/reddit-mcp-buddy"
+    },
+    {
+      "name": "KashiwaByte/vikingdb-mcp-server",
+      "url": "https://github.com/KashiwaByte/vikingdb-mcp-server"
+    },
+    {
+      "name": "keboola/keboola-mcp-server",
+      "url": "https://github.com/keboola/keboola-mcp-server"
+    },
+    {
+      "name": "keepgoing-dev/mcp-server",
+      "url": "https://github.com/keepgoing-dev/mcp-server"
+    },
+    {
+      "name": "kehvinbehvin/json-mcp-filter",
+      "url": "https://github.com/kehvinbehvin/json-mcp-filter"
+    },
+    {
+      "name": "keiver/image-tiler-mcp-server",
+      "url": "https://github.com/keiver/image-tiler-mcp-server"
+    },
+    {
+      "name": "kelvin6365/plane-mcp-server",
+      "url": "https://github.com/kelvin6365/plane-mcp-server"
+    },
+    {
+      "name": "kenliao94/mcp-server-rabbitmq",
+      "url": "https://github.com/kenliao94/mcp-server-rabbitmq"
+    },
+    {
+      "name": "kestra-io/mcp-server-python",
+      "url": "https://github.com/kestra-io/mcp-server-python"
+    },
+    {
+      "name": "khan2a/telephony-mcp-server",
+      "url": "https://github.com/khan2a/telephony-mcp-server"
+    },
+    {
+      "name": "khaoss85/mcp-orchestro",
+      "url": "https://github.com/khaoss85/mcp-orchestro"
+    },
+    {
+      "name": "kiliczsh/mcp-mongo-server",
+      "url": "https://github.com/kiliczsh/mcp-mongo-server"
+    },
+    {
+      "name": "kimtaeyoon83/mcp-server-youtube-transcript",
+      "url": "https://github.com/kimtaeyoon83/mcp-server-youtube-transcript"
+    },
+    {
+      "name": "kimtth/mcp-aoai-web-browsing",
+      "url": "https://github.com/kimtth/mcp-aoai-web-browsing"
+    },
+    {
+      "name": "kimtth/mcp-remote-call-ping-pong",
+      "url": "https://github.com/kimtth/mcp-remote-call-ping-pong"
+    },
+    {
+      "name": "kindrat86/mcp-deal-flow-signal",
+      "url": "https://github.com/kindrat86/mcp-deal-flow-signal"
+    },
+    {
+      "name": "kiwamizamurai/mcp-kibela-server",
+      "url": "https://github.com/kiwamizamurai/mcp-kibela-server"
+    },
+    {
+      "name": "kj455/mcp-kibela",
+      "url": "https://github.com/kj455/mcp-kibela"
+    },
+    {
+      "name": "Klavis-AI/YouTube",
+      "url": "https://github.com/Klavis-AI/klavis/tree/main/mcp_servers/youtube"
+    },
+    {
+      "name": "klever-io/mcp-klever-vm",
+      "url": "https://github.com/klever-io/mcp-klever-vm"
+    },
+    {
+      "name": "knowledgepa3/gia-mcp-server",
+      "url": "https://github.com/knowledgepa3/gia-mcp-server"
+    },
+    {
+      "name": "korotovsky/slack-mcp-server",
+      "url": "https://github.com/korotovsky/slack-mcp-server"
+    },
+    {
+      "name": "Kotlin MCP SDK",
+      "url": "https://github.com/modelcontextprotocol/kotlin-sdk"
+    },
+    {
+      "name": "KryptosAI/mcp-observatory",
+      "url": "https://github.com/KryptosAI/mcp-observatory"
+    },
+    {
+      "name": "KS-GEN-AI/confluence-mcp-server",
+      "url": "https://github.com/KS-GEN-AI/confluence-mcp-server"
+    },
+    {
+      "name": "KS-GEN-AI/jira-mcp-server",
+      "url": "https://github.com/KS-GEN-AI/jira-mcp-server"
+    },
+    {
+      "name": "kshern/mcp-tavily",
+      "url": "https://github.com/kshern/mcp-tavily.git"
+    },
+    {
+      "name": "ktanaka101/mcp-server-duckdb",
+      "url": "https://github.com/ktanaka101/mcp-server-duckdb"
+    },
+    {
+      "name": "kukapay/cryptopanic-mcp-server",
+      "url": "https://github.com/kukapay/cryptopanic-mcp-server"
+    },
+    {
+      "name": "kunallunia/twitter-mcp",
+      "url": "https://github.com/LuniaKunal/mcp-twitter"
+    },
+    {
+      "name": "KuvopLLC/better-bear",
+      "url": "https://github.com/KuvopLLC/better-bear/tree/main/mcp-server"
+    },
+    {
+      "name": "KyrieTangSheng/mcp-server-nationalparks",
+      "url": "https://github.com/KyrieTangSheng/mcp-server-nationalparks"
+    },
+    {
+      "name": "KyuRish/fiverr-mcp-server",
+      "url": "https://github.com/KyuRish/fiverr-mcp-server"
+    },
+    {
+      "name": "KyuRish/mcp-dashboards",
+      "url": "https://github.com/KyuRish/mcp-dashboards"
+    },
+    {
+      "name": "KyuRish/trading212-mcp-server",
+      "url": "https://github.com/KyuRish/trading212-mcp-server"
+    },
+    {
+      "name": "Kzino/vorim-mcp-server",
+      "url": "https://github.com/Kzino/vorim-mcp-server"
+    },
+    {
+      "name": "labeveryday/nba_mcp_server",
+      "url": "https://github.com/labeveryday/nba_mcp_server"
+    },
+    {
+      "name": "LadislavSopko/mcp-ai-server-visual-studio",
+      "url": "https://github.com/LadislavSopko/mcp-ai-server-visual-studio"
+    },
+    {
+      "name": "lamemind/mcp-server-multiverse",
+      "url": "https://github.com/lamemind/mcp-server-multiverse"
+    },
+    {
+      "name": "lanchuske/local-mcp",
+      "url": "https://github.com/lanchuske/local-mcp-releases"
+    },
+    {
+      "name": "langfuse/mcp-server-langfuse",
+      "url": "https://github.com/langfuse/mcp-server-langfuse"
+    },
+    {
+      "name": "LarryWalkerDEV/mcp-immostage",
+      "url": "https://github.com/LarryWalkerDEV/mcp-immostage"
+    },
+    {
+      "name": "last9/last9-mcp-server",
+      "url": "https://github.com/last9/last9-mcp-server"
+    },
+    {
+      "name": "latex-mcp-server",
+      "url": "https://github.com/Yeok-c/latex-mcp-server"
+    },
+    {
+      "name": "Leximo-AI/leximo-ai-call-assistant-mcp-server",
+      "url": "https://github.com/Leximo-AI/leximo-ai-call-assistant-mcp-server"
+    },
+    {
+      "name": "line/line-bot-mcp-server",
+      "url": "https://github.com/line/line-bot-mcp-server"
+    },
+    {
+      "name": "linuxsuren/atest-mcp-server",
+      "url": "https://github.com/LinuxSuRen/atest-mcp-server"
+    },
+    {
+      "name": "lisamaraventano-spine/mcp-server",
+      "url": "https://github.com/lisamaraventano-spine/mcp-server"
+    },
+    {
+      "name": "liveblocks/liveblocks-mcp-server",
+      "url": "https://github.com/liveblocks/liveblocks-mcp-server"
+    },
+    {
+      "name": "lnbits/LNbits-MCP-Server",
+      "url": "https://github.com/lnbits/LNbits-MCP-Server"
+    },
+    {
+      "name": "localstack/localstack-mcp-server",
+      "url": "https://github.com/localstack/localstack-mcp-server"
+    },
+    {
+      "name": "lodordev/mcp-romm",
+      "url": "https://github.com/lodordev/mcp-romm"
+    },
+    {
+      "name": "lodordev/mcp-tautulli",
+      "url": "https://github.com/lodordev/mcp-tautulli"
+    },
+    {
+      "name": "lodordev/mcp-teslamate-fleet",
+      "url": "https://github.com/lodordev/mcp-teslamate-fleet"
+    },
+    {
+      "name": "log-logn/langfuse-mcp-java",
+      "url": "https://github.com/Log-LogN/langfuse-mcp-java"
+    },
+    {
+      "name": "loglux/whatsapp-mcp-stream",
+      "url": "https://github.com/loglux/whatsapp-mcp-stream"
+    },
+    {
+      "name": "lpigeon/ros-mcp-server",
+      "url": "https://github.com/lpigeon/ros-mcp-server"
+    },
+    {
+      "name": "lpigeon/unitree-go2-mcp-server",
+      "url": "https://github.com/lpigeon/unitree-go2-mcp-server"
+    },
+    {
+      "name": "LucasHild/mcp-server-bigquery",
+      "url": "https://github.com/LucasHild/mcp-server-bigquery"
+    },
+    {
+      "name": "lucygoodchild/mcp-national-rail",
+      "url": "https://github.com/lucygoodchild/mcp-national-rail"
+    },
+    {
+      "name": "magarcia/mcp-server-giphy",
+      "url": "https://github.com/magarcia/mcp-server-giphy"
+    },
+    {
+      "name": "MailboxValidator/mcp-mailboxvalidator",
+      "url": "https://github.com/MailboxValidator/mcp-mailboxvalidator"
+    },
+    {
+      "name": "mamertofabian/mcp-everything-search",
+      "url": "https://github.com/mamertofabian/mcp-everything-search"
+    },
+    {
+      "name": "manusa/Kubernetes MCP Server",
+      "url": "https://github.com/manusa/kubernetes-mcp-server"
+    },
+    {
+      "name": "marcelmarais/Spotify",
+      "url": "https://github.com/marcelmarais/spotify-mcp-server"
+    },
+    {
+      "name": "marin1321/mcp-devtools",
+      "url": "https://github.com/marin1321/mcp-devtools"
+    },
+    {
+      "name": "mark3labs/mcp-filesystem-server",
+      "url": "https://github.com/mark3labs/mcp-filesystem-server"
+    },
+    {
+      "name": "marketplaceadpros/amazon-ads-mcp-server",
+      "url": "https://github.com/MarketplaceAdPros/amazon-ads-mcp-server"
+    },
+    {
+      "name": "Markgatcha/universal-mcp-toolkit",
+      "url": "https://github.com/Markgatcha/universal-mcp-toolkit"
+    },
+    {
+      "name": "markmircea/Selenix-MCP-Server",
+      "url": "https://github.com/markmircea/Selenix-MCP-Server"
+    },
+    {
+      "name": "MarkusPfundstein/mcp-gsuite",
+      "url": "https://github.com/MarkusPfundstein/mcp-gsuite"
+    },
+    {
+      "name": "MarkusPfundstein/mcp-obsidian",
+      "url": "https://github.com/MarkusPfundstein/mcp-obsidian"
+    },
+    {
+      "name": "martingeidobler/android-mcp-server",
+      "url": "https://github.com/martingeidobler/android-mcp-server"
+    },
+    {
+      "name": "matbel91765/gis-mcp-server",
+      "url": "https://github.com/matbel91765/gis-mcp-server"
+    },
+    {
+      "name": "mattjoyce/mcp-persona-sessions",
+      "url": "https://github.com/mattjoyce/mcp-persona-sessions"
+    },
+    {
+      "name": "mavdol/capsule/mcp-server",
+      "url": "https://github.com/mavdol/capsule/tree/main/integrations/mcp-server"
+    },
+    {
+      "name": "maxim-saplin/mcp_safe_local_python_executor",
+      "url": "https://github.com/maxim-saplin/mcp_safe_local_python_executor"
+    },
+    {
+      "name": "MCP CLI Client",
+      "url": "https://github.com/vincent-pli/mcp-cli-host"
+    },
+    {
+      "name": "MCP Declarative Java SDK",
+      "url": "https://github.com/codeboyzhou/mcp-declarative-java-sdk"
+    },
+    {
+      "name": "MCP Hunt",
+      "url": "https://mcp-hunt.com"
+    },
+    {
+      "name": "MCP Linker",
+      "url": "https://github.com/milisp/mcp-linker"
+    },
+    {
+      "name": "MCP Marketplace Web Plugin",
+      "url": "https://github.com/AI-Agent-Hub/mcp-marketplace"
+    },
+    {
+      "name": "MCP Plexus",
+      "url": "https://github.com/Super-I-Tech/mcp_plexus"
+    },
+    {
+      "name": "MCP Router",
+      "url": "https://mcp-router.net"
+    },
+    {
+      "name": "MCP Router",
+      "url": "https://github.com/mcp-router/mcp-router"
+    },
+    {
+      "name": "MCP Servers Hub",
+      "url": "https://github.com/apappascs/mcp-servers-hub"
+    },
+    {
+      "name": "MCP Servers Search",
+      "url": "https://github.com/atonomus/mcp-servers-search"
+    },
+    {
+      "name": "MCP-Agent",
+      "url": "https://github.com/lastmile-ai/mcp-agent"
+    },
+    {
+      "name": "mcp-cli",
+      "url": "https://github.com/wong2/mcp-cli"
+    },
+    {
+      "name": "mcp-dockmaster",
+      "url": "https://mcp-dockmaster.com"
+    },
+    {
+      "name": "MCP-Framework",
+      "url": "https://mcp-framework.com"
+    },
+    {
+      "name": "mcp-get",
+      "url": "https://mcp-get.com"
+    },
+    {
+      "name": "mcp-guardian",
+      "url": "https://github.com/eqtylab/mcp-guardian"
+    },
+    {
+      "name": "mcp-manager",
+      "url": "https://github.com/zueai/mcp-manager"
+    },
+    {
+      "name": "mcp_excalidraw",
+      "url": "https://github.com/yctimlin/mcp_excalidraw"
+    },
+    {
+      "name": "mcp_sse (Elixir)",
+      "url": "https://github.com/kEND/mcp_sse"
+    },
+    {
+      "name": "mcpdotdirect/evm-mcp-server",
+      "url": "https://github.com/mcpdotdirect/evm-mcp-server"
+    },
+    {
+      "name": "mcpdotdirect/starknet-mcp-server",
+      "url": "https://github.com/mcpdotdirect/starknet-mcp-server"
+    },
+    {
+      "name": "MCPProxy",
+      "url": "https://github.com/smart-mcp-proxy/mcpproxy-go"
+    },
+    {
+      "name": "MCPWatch",
+      "url": "https://github.com/kapilduraphe/mcp-watch"
+    },
+    {
+      "name": "megberts/mcp-websitepublisher-ai",
+      "url": "https://github.com/megberts/mcp-websitepublisher-ai"
+    },
+    {
+      "name": "memgraph/mcp-memgraph",
+      "url": "https://github.com/memgraph/ai-toolkit/tree/main/integrations/mcp-memgraph"
+    },
+    {
+      "name": "metoro-io/metoro-mcp-server",
+      "url": "https://github.com/metoro-io/metoro-mcp-server"
+    },
+    {
+      "name": "metrxbots/mcp-server",
+      "url": "https://github.com/metrxbots/mcp-server"
+    },
+    {
+      "name": "Michael2150/flamerobin-mcp-server",
+      "url": "https://github.com/Michael2150/flamerobin-mcp-server"
+    },
+    {
+      "name": "MikeRecognex/mcp-codebase-index",
+      "url": "https://github.com/MikeRecognex/mcp-codebase-index"
+    },
+    {
+      "name": "MikkoParkkola/mcp-gateway",
+      "url": "https://github.com/MikkoParkkola/mcp-gateway"
+    },
+    {
+      "name": "MindscapeHQ/server-raygun",
+      "url": "https://github.com/MindscapeHQ/mcp-server-raygun"
+    },
+    {
+      "name": "minhyeoky/mcp-server-ledger",
+      "url": "https://github.com/minhyeoky/mcp-server-ledger"
+    },
+    {
+      "name": "MladenSU/cli-mcp-server",
+      "url": "https://github.com/MladenSU/cli-mcp-server"
+    },
+    {
+      "name": "mmorris35/devplan-mcp-server",
+      "url": "https://github.com/mmorris35/devplan-mcp-server"
+    },
+    {
+      "name": "mockherodev/mcp-server",
+      "url": "https://github.com/dinosaur24/mockhero/tree/main/packages/mcp-server"
+    },
+    {
+      "name": "Model Context Protocol",
+      "url": "https://modelcontextprotocol.io"
+    },
+    {
+      "name": "modelcontextprotocol.io",
+      "url": "https://modelcontextprotocol.io/introduction"
+    },
+    {
+      "name": "modelcontextprotocol/server-everything",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/everything"
+    },
+    {
+      "name": "MoltyCel/moltrust-mcp-server",
+      "url": "https://github.com/MoltyCel/moltrust-mcp-server"
+    },
+    {
+      "name": "montumodi/mongodb-atlas-mcp-server",
+      "url": "https://github.com/montumodi/mongodb-atlas-mcp-server"
+    },
+    {
+      "name": "moro3k/mcp-altegio",
+      "url": "https://github.com/moro3k/mcp-altegio"
+    },
+    {
+      "name": "mpeirone/zabbix-mcp-server",
+      "url": "https://github.com/mpeirone/zabbix-mcp-server"
+    },
+    {
+      "name": "mrostamii/rancher-mcp-server",
+      "url": "https://github.com/mrostamii/rancher-mcp-server"
+    },
+    {
+      "name": "muhannad-hash/mcp-shield",
+      "url": "https://github.com/muhannad-hash/mcp-shield"
+    },
+    {
+      "name": "multimail-dev/mcp-server",
+      "url": "https://github.com/multimail-dev/mcp-server"
+    },
+    {
+      "name": "mumez/pharo-smalltalk-interop-mcp-server",
+      "url": "https://github.com/mumez/pharo-smalltalk-interop-mcp-server"
+    },
+    {
+      "name": "muvon/mcp-binance-futures",
+      "url": "https://github.com/muvon/mcp-binance-futures"
+    },
+    {
+      "name": "MyMedi-AI/mymedi-ai-mcp-server",
+      "url": "https://github.com/MyMedi-AI/mymedi-ai-mcp-server"
+    },
+    {
+      "name": "mzxrai/mcp-openai",
+      "url": "https://github.com/mzxrai/mcp-openai"
+    },
+    {
+      "name": "mzxrai/mcp-webresearch",
+      "url": "https://github.com/mzxrai/mcp-webresearch"
+    },
+    {
+      "name": "NakaokaRei/swift-mcp-gui",
+      "url": "https://github.com/NakaokaRei/swift-mcp-gui.git"
+    },
+    {
+      "name": "nanana-app/mcp-server-nano-banana",
+      "url": "https://github.com/nanana-app/mcp-server-nano-banana"
+    },
+    {
+      "name": "ndthanhdev/mcp-browser-kit",
+      "url": "https://github.com/ndthanhdev/mcp-browser-kit"
+    },
+    {
+      "name": "Nebula-Block-Data/nebulablock-mcp-server",
+      "url": "https://github.com/Nebula-Block-Data/nebulablock-mcp-server"
+    },
+    {
+      "name": "neo4j-contrib/mcp-neo4j",
+      "url": "https://github.com/neo4j-contrib/mcp-neo4j"
+    },
+    {
+      "name": "neondatabase/mcp-server-neon",
+      "url": "https://github.com/neondatabase/mcp-server-neon"
+    },
+    {
+      "name": "nesquikm/mcp-rubber-duck",
+      "url": "https://github.com/nesquikm/mcp-rubber-duck"
+    },
+    {
+      "name": "Next.js MCP Server Template",
+      "url": "https://github.com/vercel-labs/mcp-for-next.js"
+    },
+    {
+      "name": "nexusforge-tools/mcp-eu-finance",
+      "url": "https://github.com/nexusforge-tools/mcp-eu-finance"
+    },
+    {
+      "name": "nickclyde/duckduckgo-mcp-server",
+      "url": "https://github.com/nickclyde/duckduckgo-mcp-server"
+    },
+    {
+      "name": "nickpending/mcp-recon",
+      "url": "https://github.com/nickpending/mcp-recon"
+    },
+    {
+      "name": "nikicat/mcp-wallet-signer",
+      "url": "https://github.com/nikicat/mcp-wallet-signer"
+    },
+    {
+      "name": "niledatabase/nile-mcp-server",
+      "url": "https://github.com/niledatabase/nile-mcp-server"
+    },
+    {
+      "name": "nkapila6/mcp-local-rag",
+      "url": "https://github.com/nkapila6/mcp-local-rag"
+    },
+    {
+      "name": "npm",
+      "url": "https://www.npmjs.com/package/clirank-mcp-server"
+    },
+    {
+      "name": "nullpath-labs/mcp-client",
+      "url": "https://github.com/nullpath-labs/mcp-client"
+    },
+    {
+      "name": "NyxToolsDev/dicom-hl7-mcp-server",
+      "url": "https://github.com/NyxToolsDev/dicom-hl7-mcp-server"
+    },
+    {
+      "name": "OctagonAI/octagon-mcp-server",
+      "url": "https://github.com/OctagonAI/octagon-mcp-server"
+    },
+    {
+      "name": "ofershap/mcp-server-cloudflare",
+      "url": "https://github.com/ofershap/mcp-server-cloudflare"
+    },
+    {
+      "name": "ofershap/mcp-server-devutils",
+      "url": "https://github.com/ofershap/mcp-server-devutils"
+    },
+    {
+      "name": "ofershap/mcp-server-dns",
+      "url": "https://github.com/ofershap/mcp-server-dns"
+    },
+    {
+      "name": "ofershap/mcp-server-docker",
+      "url": "https://github.com/ofershap/mcp-server-docker"
+    },
+    {
+      "name": "ofershap/mcp-server-github-actions",
+      "url": "https://github.com/ofershap/mcp-server-github-actions"
+    },
+    {
+      "name": "ofershap/mcp-server-github-gist",
+      "url": "https://github.com/ofershap/mcp-server-github-gist"
+    },
+    {
+      "name": "ofershap/mcp-server-markdown",
+      "url": "https://github.com/ofershap/mcp-server-markdown"
+    },
+    {
+      "name": "ofershap/mcp-server-npm-plus",
+      "url": "https://github.com/ofershap/mcp-server-npm-plus"
+    },
+    {
+      "name": "ofershap/mcp-server-s3",
+      "url": "https://github.com/ofershap/mcp-server-s3"
+    },
+    {
+      "name": "ofershap/mcp-server-scraper",
+      "url": "https://github.com/ofershap/mcp-server-scraper"
+    },
+    {
+      "name": "ofershap/mcp-server-sqlite",
+      "url": "https://github.com/ofershap/mcp-server-sqlite"
+    },
+    {
+      "name": "official server",
+      "url": "https://github.com/brave/brave-search-mcp-server"
+    },
+    {
+      "name": "offorte/offorte-mcp-server",
+      "url": "https://github.com/offorte/offorte-mcp-server"
+    },
+    {
+      "name": "OFODevelopment/cerebrochain-mcp-server",
+      "url": "https://github.com/OFODevelopment/cerebrochain-mcp-server"
+    },
+    {
+      "name": "olalonde/mcp-human",
+      "url": "https://github.com/olalonde/mcp-human"
+    },
+    {
+      "name": "olgasafonova/gleif-mcp-server",
+      "url": "https://github.com/olgasafonova/gleif-mcp-server"
+    },
+    {
+      "name": "olgasafonova/mediawiki-mcp-server",
+      "url": "https://github.com/olgasafonova/mediawiki-mcp-server"
+    },
+    {
+      "name": "olgasafonova/productplan-mcp-server",
+      "url": "https://github.com/olgasafonova/productplan-mcp-server"
+    },
+    {
+      "name": "olostep/olostep-mcp-server",
+      "url": "https://github.com/olostep/olostep-mcp-server"
+    },
+    {
+      "name": "Oluwatunmise-olat/mcp-server-logs-sieve",
+      "url": "https://github.com/Oluwatunmise-olat/mcp-server-logs-sieve"
+    },
+    {
+      "name": "omni-fun-mcp-server",
+      "url": "https://github.com/0xzcov/omni-fun-mcp-server"
+    },
+    {
+      "name": "ooples/mcp-console-automation",
+      "url": "https://github.com/ooples/mcp-console-automation"
+    },
+    {
+      "name": "Open-Sourced MCP Servers Directory",
+      "url": "https://github.com/chatmcp/mcp-directory"
+    },
+    {
+      "name": "openbnb-org/mcp-server-airbnb",
+      "url": "https://github.com/openbnb-org/mcp-server-airbnb"
+    },
+    {
+      "name": "openlink/mcp-server-jdbc",
+      "url": "https://github.com/OpenLinkSoftware/mcp-jdbc-server"
+    },
+    {
+      "name": "openlink/mcp-server-odbc",
+      "url": "https://github.com/OpenLinkSoftware/mcp-odbc-server"
+    },
+    {
+      "name": "openlink/mcp-server-sqlalchemy",
+      "url": "https://github.com/OpenLinkSoftware/mcp-sqlalchemy-server"
+    },
+    {
+      "name": "openMF/mcp-mifosx",
+      "url": "https://github.com/openMF/mcp-mifosx"
+    },
+    {
+      "name": "openMF/mcp-mifosx-self-service",
+      "url": "https://github.com/openMF/mcp-mifosx-self-service"
+    },
+    {
+      "name": "openstack-kr/python-openstackmcp-server",
+      "url": "https://github.com/openstack-kr/python-openstackmcp-server"
+    },
+    {
+      "name": "osulivan/skill4agent-mcp-server",
+      "url": "https://github.com/osulivan/skill4agent-mcp-server"
+    },
+    {
+      "name": "OthmaneBlial/term_mcp_deepseek",
+      "url": "https://github.com/OthmaneBlial/term_mcp_deepseek"
+    },
+    {
+      "name": "overpod/mcp-telegram",
+      "url": "https://github.com/overpod/mcp-telegram"
+    },
+    {
+      "name": "OverQuotaAI/chatterboxio-mcp-server",
+      "url": "https://github.com/OverQuotaAI/chatterboxio-mcp-server"
+    },
+    {
+      "name": "ovlabs/mcp-server-originalvoices",
+      "url": "https://github.com/ovlabs/mcp-server-originalvoices"
+    },
+    {
+      "name": "pab1it0/adx-mcp-server",
+      "url": "https://github.com/pab1it0/adx-mcp-server"
+    },
+    {
+      "name": "pab1it0/prometheus-mcp-server",
+      "url": "https://github.com/pab1it0/prometheus-mcp-server"
+    },
+    {
+      "name": "paladini/devutils-mcp-server",
+      "url": "https://github.com/paladini/devutils-mcp-server"
+    },
+    {
+      "name": "paladini/mcp-me",
+      "url": "https://github.com/paladini/mcp-me"
+    },
+    {
+      "name": "Pantheon-Security/chrome-mcp-secure",
+      "url": "https://github.com/Pantheon-Security/chrome-mcp-secure"
+    },
+    {
+      "name": "Pantheon-Security/notebooklm-mcp-secure",
+      "url": "https://github.com/Pantheon-Security/notebooklm-mcp-secure"
+    },
+    {
+      "name": "panther-labs/mcp-panther",
+      "url": "https://github.com/panther-labs/mcp-panther"
+    },
+    {
+      "name": "paracetamol951/caisse-enregistreuse-mcp-server",
+      "url": "https://github.com/paracetamol951/caisse-enregistreuse-mcp-server"
+    },
+    {
+      "name": "pastorsimon1798/mcp-video",
+      "url": "https://github.com/pastorsimon1798/mcp-video"
+    },
+    {
+      "name": "payclaw/mcp-server",
+      "url": "https://github.com/payclaw/mcp-server"
+    },
+    {
+      "name": "Pearch-ai/mcp_pearch",
+      "url": "https://github.com/Pearch-ai/mcp_pearch"
+    },
+    {
+      "name": "peek-travel/mcp-intro",
+      "url": "https://github.com/peek-travel/mcp-intro"
+    },
+    {
+      "name": "philrox/ris-mcp-ts",
+      "url": "https://github.com/philrox/ris-mcp-ts"
+    },
+    {
+      "name": "PhononX/cv-mcp-server",
+      "url": "https://github.com/PhononX/cv-mcp-server"
+    },
+    {
+      "name": "PHP MCP SDK",
+      "url": "https://github.com/modelcontextprotocol/php-sdk"
+    },
+    {
+      "name": "PhungXuanAnh/selenium-mcp-server",
+      "url": "https://github.com/PhungXuanAnh/selenium-mcp-server"
+    },
+    {
+      "name": "pibblokto/cert-manager-mcp-server",
+      "url": "https://github.com/pibblokto/cert-manager-mcp-server"
+    },
+    {
+      "name": "pierrebrunelle/mcp-server-openai",
+      "url": "https://github.com/pierrebrunelle/mcp-server-openai"
+    },
+    {
+      "name": "pilat/mcp-datalink",
+      "url": "https://github.com/pilat/mcp-datalink"
+    },
+    {
+      "name": "PipedreamHQ/pipedream",
+      "url": "https://github.com/PipedreamHQ/pipedream/tree/master/modelcontextprotocol"
+    },
+    {
+      "name": "pkotecha-eng/aria-mcp-server",
+      "url": "https://github.com/pkotecha-eng/aria-mcp-server"
+    },
+    {
+      "name": "polygon-io/mcp_polygon)",
+      "url": "https://github.com/polygon-io/mcp_polygon"
+    },
+    {
+      "name": "pomazanbohdan/memory-mcp-1file",
+      "url": "https://github.com/pomazanbohdan/memory-mcp-1file"
+    },
+    {
+      "name": "PostcardBot/mcp-server",
+      "url": "https://github.com/PostcardBot/mcp-server"
+    },
+    {
+      "name": "pragmar/mcp-server-webcrawl",
+      "url": "https://github.com/pragmar/mcp-server-webcrawl"
+    },
+    {
+      "name": "pramod/kaggle",
+      "url": "https://github.com/KrishnaPramodParupudi/kaggle-mcp-server"
+    },
+    {
+      "name": "profullstack/mcp-server",
+      "url": "https://github.com/profullstack/mcp-server"
+    },
+    {
+      "name": "Programmatic MCP Prototype",
+      "url": "https://github.com/domdomegg/programmatic-mcp-prototype"
+    },
+    {
+      "name": "PSPDFKit/nutrient-document-engine-mcp-server",
+      "url": "https://github.com/PSPDFKit/nutrient-document-engine-mcp-server"
+    },
+    {
+      "name": "PSPDFKit/nutrient-dws-mcp-server",
+      "url": "https://github.com/PSPDFKit/nutrient-dws-mcp-server"
+    },
+    {
+      "name": "pullkitsan/mobsf-mcp-server",
+      "url": "https://github.com/pullkitsan/mobsf-mcp-server"
+    },
+    {
+      "name": "PV-Bhat/vibe-check-mcp-server",
+      "url": "https://github.com/PV-Bhat/vibe-check-mcp-server"
+    },
+    {
+      "name": "pwh-pwh/coin-mcp-server",
+      "url": "https://github.com/pwh-pwh/coin-mcp-server"
+    },
+    {
+      "name": "Pypi",
+      "url": "https://pypi.org/project/mcp-marketplace"
+    },
+    {
+      "name": "Python MCP SDK",
+      "url": "https://github.com/modelcontextprotocol/python-sdk"
+    },
+    {
+      "name": "pythonanywhere/pythonanywhere-mcp-server",
+      "url": "https://github.com/pythonanywhere/pythonanywhere-mcp-server"
+    },
+    {
+      "name": "qainsights/jmeter-mcp-server",
+      "url": "https://github.com/QAInsights/jmeter-mcp-server"
+    },
+    {
+      "name": "qainsights/k6-mcp-server",
+      "url": "https://github.com/QAInsights/k6-mcp-server"
+    },
+    {
+      "name": "qainsights/locust-mcp-server",
+      "url": "https://github.com/QAInsights/locust-mcp-server"
+    },
+    {
+      "name": "qdrant/mcp-server-qdrant",
+      "url": "https://github.com/qdrant/mcp-server-qdrant"
+    },
+    {
+      "name": "qianniuspace/mcp-security-audit",
+      "url": "https://github.com/qianniuspace/mcp-security-audit"
+    },
+    {
+      "name": "qiniu/qiniu-mcp-server",
+      "url": "https://github.com/qiniu/qiniu-mcp-server"
+    },
+    {
+      "name": "qr-maker-io/mcp-server",
+      "url": "https://github.com/qr-maker-io/mcp-server"
+    },
+    {
+      "name": "QuantConnect/mcp-server",
+      "url": "https://github.com/QuantConnect/mcp-server"
+    },
+    {
+      "name": "quarkiverse/mcp-server-jdbc",
+      "url": "https://github.com/quarkiverse/quarkus-mcp-servers/tree/main/jdbc"
+    },
+    {
+      "name": "Quarkus MCP Server SDK",
+      "url": "https://github.com/quarkiverse/quarkus-mcp-server"
+    },
+    {
+      "name": "QuentinCody/braintree-mcp-server",
+      "url": "https://github.com/QuentinCody/braintree-mcp-server"
+    },
+    {
+      "name": "QuentinCody/catalysishub-mcp-server",
+      "url": "https://github.com/QuentinCody/catalysishub-mcp-server"
+    },
+    {
+      "name": "QuentinCody/github-graphql-mcp-server",
+      "url": "https://github.com/QuentinCody/github-graphql-mcp-server"
+    },
+    {
+      "name": "QuentinCody/shopify-storefront-mcp-server",
+      "url": "https://github.com/QuentinCody/shopify-storefront-mcp-server"
+    },
+    {
+      "name": "r-huijts/ns-mcp-server",
+      "url": "https://github.com/r-huijts/ns-mcp-server"
+    },
+    {
+      "name": "r-huijts/xcode-mcp-server",
+      "url": "https://github.com/r-huijts/xcode-mcp-server"
+    },
+    {
+      "name": "r33drichards/mcp-js",
+      "url": "https://github.com/r33drichards/mcp-js"
+    },
+    {
+      "name": "rad-security/mcp-server",
+      "url": "https://github.com/rad-security/mcp-server"
+    },
+    {
+      "name": "rafapra3008/cervellaswarm",
+      "url": "https://github.com/rafapra3008/cervellaswarm/tree/main/packages/mcp-server"
+    },
+    {
+      "name": "ragieai/mcp-server",
+      "url": "https://github.com/ragieai/ragie-mcp-server"
+    },
+    {
+      "name": "raveenb/fal-mcp-server",
+      "url": "https://github.com/raveenb/fal-mcp-server"
+    },
+    {
+      "name": "rchanllc/joltsms-mcp-server",
+      "url": "https://github.com/rchanllc/joltsms-mcp-server"
+    },
+    {
+      "name": "reading-plus-ai/mcp-server-data-exploration",
+      "url": "https://github.com/reading-plus-ai/mcp-server-data-exploration"
+    },
+    {
+      "name": "reading-plus-ai/mcp-server-deep-research",
+      "url": "https://github.com/reading-plus-ai/mcp-server-deep-research"
+    },
+    {
+      "name": "realcrabcut/crabcut-mcp-server",
+      "url": "https://github.com/realcrabcut/crabcut-mcp-server"
+    },
+    {
+      "name": "realwigu/mcp-doctor",
+      "url": "https://github.com/realwigu/mcp-doctor"
+    },
+    {
+      "name": "ReAPI-com/mcp-openapi",
+      "url": "https://github.com/ReAPI-com/mcp-openapi"
+    },
+    {
+      "name": "recursechat/mcp-server-apple-shortcuts",
+      "url": "https://github.com/recursechat/mcp-server-apple-shortcuts"
+    },
+    {
+      "name": "redis/mcp-redis",
+      "url": "https://github.com/redis/mcp-redis"
+    },
+    {
+      "name": "redis/mcp-redis-cloud",
+      "url": "https://github.com/redis/mcp-redis-cloud"
+    },
+    {
+      "name": "reza-gholizade/k8s-mcp-server",
+      "url": "https://github.com/reza-gholizade/k8s-mcp-server"
+    },
+    {
+      "name": "ricocf/mcp-wolframalpha",
+      "url": "https://github.com/ricocf/mcp-wolframalpha"
+    },
+    {
+      "name": "RipperMercs/tensorfeed",
+      "url": "https://github.com/RipperMercs/tensorfeed/tree/main/mcp-server"
+    },
+    {
+      "name": "rogertheunissenmerge-oss/mcp-server",
+      "url": "https://github.com/rogertheunissenmerge-oss/mcp-server"
+    },
+    {
+      "name": "RohanMuppa/brightspace-mcp-server",
+      "url": "https://github.com/RohanMuppa/brightspace-mcp-server"
+    },
+    {
+      "name": "rohitg00/kubectl-mcp-server",
+      "url": "https://github.com/rohitg00/kubectl-mcp-server"
+    },
+    {
+      "name": "RomThpt/xrpl-mcp-server",
+      "url": "https://github.com/RomThpt/mcp-xrpl"
+    },
+    {
+      "name": "Rootly-AI-Labs/Rootly-MCP-server",
+      "url": "https://github.com/Rootly-AI-Labs/Rootly-MCP-server"
+    },
+    {
+      "name": "roychri/mcp-server-asana",
+      "url": "https://github.com/roychri/mcp-server-asana"
+    },
+    {
+      "name": "rps321321/obsidian-mcp-pro",
+      "url": "https://github.com/rps321321/obsidian-mcp-pro"
+    },
+    {
+      "name": "Ruby MCP SDK",
+      "url": "https://github.com/modelcontextprotocol/ruby-sdk"
+    },
+    {
+      "name": "runekaagaard/mcp-alchemy",
+      "url": "https://github.com/runekaagaard/mcp-alchemy"
+    },
+    {
+      "name": "runyourempire/4DA",
+      "url": "https://github.com/runyourempire/4DA/tree/main/mcp-4da-server"
+    },
+    {
+      "name": "rupinder2/mcp-orchestrator",
+      "url": "https://github.com/rupinder2/mcp-orchestrator"
+    },
+    {
+      "name": "rusiaaman/wcgw",
+      "url": "https://github.com/rusiaaman/wcgw/blob/main/src/wcgw/client/mcp_server/Readme.md"
+    },
+    {
+      "name": "Rust MCP SDK",
+      "url": "https://github.com/modelcontextprotocol/rust-sdk"
+    },
+    {
+      "name": "SaintDoresh/Crypto-Trader-MCP-ClaudeDesktop",
+      "url": "https://github.com/SaintDoresh/Crypto-Trader-MCP-ClaudeDesktop.git"
+    },
+    {
+      "name": "SaintDoresh/Weather-MCP-ClaudeDesktop",
+      "url": "https://github.com/SaintDoresh/Weather-MCP-ClaudeDesktop.git"
+    },
+    {
+      "name": "SaintDoresh/YFinance-Trader-MCP-ClaudeDesktop",
+      "url": "https://github.com/SaintDoresh/YFinance-Trader-MCP-ClaudeDesktop.git"
+    },
+    {
+      "name": "sammcj/mcp-package-version",
+      "url": "https://github.com/sammcj/mcp-package-version"
+    },
+    {
+      "name": "sanyambassi/ciphertrust-manager-mcp-server",
+      "url": "https://github.com/sanyambassi/ciphertrust-manager-mcp-server"
+    },
+    {
+      "name": "sanyambassi/thales-cdsp-cakm-mcp-server",
+      "url": "https://github.com/sanyambassi/thales-cdsp-cakm-mcp-server"
+    },
+    {
+      "name": "sanyambassi/thales-cdsp-crdp-mcp-server",
+      "url": "https://github.com/sanyambassi/thales-cdsp-crdp-mcp-server"
+    },
+    {
+      "name": "sapientpants/sonarqube-mcp-server",
+      "url": "https://github.com/sapientpants/sonarqube-mcp-server"
+    },
+    {
+      "name": "sapph1re/mcp-billing-gateway-sdk",
+      "url": "https://github.com/sapph1re/mcp-billing-gateway-sdk"
+    },
+    {
+      "name": "saurav61091/mcp-openapi",
+      "url": "https://github.com/saurav61091/mcp-openapi"
+    },
+    {
+      "name": "sbroenne/mcp-server-excel",
+      "url": "https://github.com/sbroenne/mcp-server-excel"
+    },
+    {
+      "name": "schemacrawler/SchemaCrawler-MCP-Server-Usage",
+      "url": "https://github.com/schemacrawler/SchemaCrawler-MCP-Server-Usage"
+    },
+    {
+      "name": "scrapeless-ai/scrapeless-mcp-server",
+      "url": "https://github.com/scrapeless-ai/scrapeless-mcp-server"
+    },
+    {
+      "name": "SDGLBL/mcp-claude-code",
+      "url": "https://github.com/SDGLBL/mcp-claude-code"
+    },
+    {
+      "name": "Search MCP Server",
+      "url": "https://github.com/krzysztofkucmierz/search-mcp-server"
+    },
+    {
+      "name": "SearchAtlas",
+      "url": "https://github.com/Search-Atlas-Group/searchatlas-mcp-server"
+    },
+    {
+      "name": "searchcraft-inc/searchcraft-mcp-server",
+      "url": "https://github.com/searchcraft-inc/searchcraft-mcp-server"
+    },
+    {
+      "name": "SecretiveShell/MCP-searxng",
+      "url": "https://github.com/SecretiveShell/MCP-searxng"
+    },
+    {
+      "name": "SecretiveShell/MCP-timeserver",
+      "url": "https://github.com/SecretiveShell/MCP-timeserver"
+    },
+    {
+      "name": "SecretiveShell/MCP-wolfram-alpha",
+      "url": "https://github.com/SecretiveShell/MCP-wolfram-alpha"
+    },
+    {
+      "name": "seekrays/mcp-monitor",
+      "url": "https://github.com/seekrays/mcp-monitor"
+    },
+    {
+      "name": "sergehuber/inoyu-mcp-unomi-server",
+      "url": "https://github.com/sergehuber/inoyu-mcp-unomi-server"
+    },
+    {
+      "name": "serkan-ozal/driflyte-mcp-server",
+      "url": "https://github.com/serkan-ozal/driflyte-mcp-server"
+    },
+    {
+      "name": "servers-archived",
+      "url": "https://github.com/modelcontextprotocol/servers-archived"
+    },
+    {
+      "name": "sh-patterson/fec-mcp-server",
+      "url": "https://github.com/sh-patterson/fec-mcp-server"
+    },
+    {
+      "name": "shareseer/shareseer-mcp-server",
+      "url": "https://github.com/shareseer/shareseer-mcp-server"
+    },
+    {
+      "name": "shellsage-ai/mcp-server-boilerplate",
+      "url": "https://github.com/shellsage-ai/mcp-server-boilerplate"
+    },
+    {
+      "name": "shensi8312/blogburst-mcp-server",
+      "url": "https://github.com/shensi8312/blogburst-mcp-server"
+    },
+    {
+      "name": "shibley/apistatuscheck-mcp-server",
+      "url": "https://github.com/shibley/apistatuscheck-mcp-server"
+    },
+    {
+      "name": "shinpr/mcp-local-rag",
+      "url": "https://github.com/shinpr/mcp-local-rag"
+    },
+    {
+      "name": "ShipItAndPray/mcp-compress",
+      "url": "https://github.com/ShipItAndPray/mcp-compress"
+    },
+    {
+      "name": "ShipItAndPray/mcp-market-data",
+      "url": "https://github.com/ShipItAndPray/mcp-market-data"
+    },
+    {
+      "name": "ShipItAndPray/mcp-memory",
+      "url": "https://github.com/ShipItAndPray/mcp-memory"
+    },
+    {
+      "name": "ShipItAndPray/mcp-turboquant",
+      "url": "https://github.com/ShipItAndPray/mcp-turboquant"
+    },
+    {
+      "name": "shopsavvy/shopsavvy-mcp-server",
+      "url": "https://github.com/shopsavvy/shopsavvy-mcp-server"
+    },
+    {
+      "name": "ShrimpTaskManager",
+      "url": "https://cjo4m06.github.io/mcp-shrimp-task-manager"
+    },
+    {
+      "name": "shuji-bonji/xcomet-mcp-server",
+      "url": "https://github.com/shuji-bonji/xcomet-mcp-server"
+    },
+    {
+      "name": "silenceper/mcp-k8s",
+      "url": "https://github.com/silenceper/mcp-k8s"
+    },
+    {
+      "name": "sirmews/mcp-pinecone",
+      "url": "https://github.com/sirmews/mcp-pinecone"
+    },
+    {
+      "name": "skedgo/tripgo-mcp-server",
+      "url": "https://github.com/skedgo/tripgo-mcp-server"
+    },
+    {
+      "name": "slouchd/cyberchef-api-mcp-server",
+      "url": "https://github.com/slouchd/cyberchef-api-mcp-server"
+    },
+    {
+      "name": "smith-and-web/obsidian-mcp-server",
+      "url": "https://github.com/smith-and-web/obsidian-mcp-server"
+    },
+    {
+      "name": "snaggle-ai/openapi-mcp-server",
+      "url": "https://github.com/snaggle-ai/openapi-mcp-server"
+    },
+    {
+      "name": "softeria/ms-365-mcp-server",
+      "url": "https://github.com/softeria/ms-365-mcp-server"
+    },
+    {
+      "name": "sonirico/mcp-shell",
+      "url": "https://github.com/sonirico/mcp-shell"
+    },
+    {
+      "name": "sonirico/mcp-stockfish",
+      "url": "https://github.com/sonirico/mcp-stockfish"
+    },
+    {
+      "name": "sooperset/mcp-atlassian",
+      "url": "https://github.com/sooperset/mcp-atlassian"
+    },
+    {
+      "name": "spre-sre/lumino-mcp-server",
+      "url": "https://github.com/spre-sre/lumino-mcp-server"
+    },
+    {
+      "name": "Spring AI MCP Client",
+      "url": "https://docs.spring.io/spring-ai/reference/api/mcp/mcp-client-boot-starter-docs.html"
+    },
+    {
+      "name": "Spring AI MCP Server",
+      "url": "https://docs.spring.io/spring-ai/reference/api/mcp/mcp-server-boot-starter-docs.html"
+    },
+    {
+      "name": "srinath1510/alltrails-mcp-server",
+      "url": "https://github.com/srinath1510/alltrails-mcp-server"
+    },
+    {
+      "name": "ssatama/rescuedogs-mcp-server",
+      "url": "https://github.com/ssatama/rescuedogs-mcp-server"
+    },
+    {
+      "name": "stadiamaps/stadiamaps-mcp-server-ts",
+      "url": "https://github.com/stadiamaps/stadiamaps-mcp-server-ts"
+    },
+    {
+      "name": "stape-io/google-tag-manager-mcp-server",
+      "url": "https://github.com/stape-io/google-tag-manager-mcp-server"
+    },
+    {
+      "name": "stape-io/stape-mcp-server",
+      "url": "https://github.com/stape-io/stape-mcp-server"
+    },
+    {
+      "name": "Startvest-LLC/idealift-mcp-server",
+      "url": "https://github.com/Startvest-LLC/idealift-mcp-server"
+    },
+    {
+      "name": "stefan-xyz/mcp-server-runescape",
+      "url": "https://github.com/stefan-xyz/mcp-server-runescape"
+    },
+    {
+      "name": "StripFeed/mcp-server",
+      "url": "https://github.com/StripFeed/mcp-server"
+    },
+    {
+      "name": "strowk/mcp-k8s-go",
+      "url": "https://github.com/strowk/mcp-k8s-go"
+    },
+    {
+      "name": "suekou/mcp-notion-server",
+      "url": "https://github.com/suekou/mcp-notion-server"
+    },
+    {
+      "name": "SunflowersLwtech/mcp_creator_growth",
+      "url": "https://github.com/SunflowersLwtech/mcp_creator_growth"
+    },
+    {
+      "name": "SupplyMaven-SCR/supplymaven-mcp-server",
+      "url": "https://github.com/SupplyMaven-SCR/supplymaven-mcp-server"
+    },
+    {
+      "name": "Sweeppea-Development-Lab/sweeppea-mcp-info",
+      "url": "https://github.com/Sweeppea-Development-Lab/sweeppea-mcp-info"
+    },
+    {
+      "name": "Swift MCP SDK",
+      "url": "https://github.com/modelcontextprotocol/swift-sdk"
+    },
+    {
+      "name": "sxhxliang/mcp-access-point",
+      "url": "https://github.com/sxhxliang/mcp-access-point"
+    },
+    {
+      "name": "Synter-Media-AI/mcp-server",
+      "url": "https://github.com/Synter-Media-AI/mcp-server"
+    },
+    {
+      "name": "tacticlaunch/mcp-linear",
+      "url": "https://github.com/tacticlaunch/mcp-linear"
+    },
+    {
+      "name": "tanigami/mcp-server-perplexity",
+      "url": "https://github.com/tanigami/mcp-server-perplexity"
+    },
+    {
+      "name": "TANTIOPE/datadog-mcp-server",
+      "url": "https://github.com/TANTIOPE/datadog-mcp-server"
+    },
+    {
+      "name": "tasopen/mcp-alphabanana",
+      "url": "https://github.com/tasopen/mcp-alphabanana"
+    },
+    {
+      "name": "TCSoftInc/testcollab-mcp-server",
+      "url": "https://github.com/TCSoftInc/testcollab-mcp-server"
+    },
+    {
+      "name": "Template MCP Server",
+      "url": "https://github.com/mcpdotdirect/template-mcp-server"
+    },
+    {
+      "name": "the MCP Registry",
+      "url": "https://registry.modelcontextprotocol.io"
+    },
+    {
+      "name": "The State of MCP in 2025",
+      "url": "https://glama.ai/blog/2025-12-07-the-state-of-mcp-in-2025"
+    },
+    {
+      "name": "the-momentum/apple-health-mcp-server",
+      "url": "https://github.com/the-momentum/apple-health-mcp-server"
+    },
+    {
+      "name": "the-momentum/fhir-mcp-server",
+      "url": "https://github.com/the-momentum/fhir-mcp-server"
+    },
+    {
+      "name": "the0807/GeekNews-MCP-Server",
+      "url": "https://github.com/the0807/GeekNews-MCP-Server"
+    },
+    {
+      "name": "the402ai/mcp-server",
+      "url": "https://github.com/the402ai/mcp-server"
+    },
+    {
+      "name": "theagenttimes/tat-mcp-server",
+      "url": "https://github.com/theagenttimes/tat-mcp-server"
+    },
+    {
+      "name": "TheoBrigitte/mcp-time",
+      "url": "https://github.com/TheoBrigitte/mcp-time"
+    },
+    {
+      "name": "Thezenmonster/agentscore-mcp-server",
+      "url": "https://github.com/Thezenmonster/agentscore-mcp-server"
+    },
+    {
+      "name": "ThinkneoAI/mcp-server",
+      "url": "https://github.com/ThinkneoAI/mcp-server"
+    },
+    {
+      "name": "ThomasMarches/substrate-mcp-rs",
+      "url": "https://github.com/ThomasMarches/substrate-mcp-rs"
+    },
+    {
+      "name": "thunderboltsid/mcp-nutanix",
+      "url": "https://github.com/thunderboltsid/mcp-nutanix"
+    },
+    {
+      "name": "tianqitang1/enrichr-mcp-server",
+      "url": "https://github.com/tianqitang1/enrichr-mcp-server"
+    },
+    {
+      "name": "Tiberriver256/mcp-server-azure-devops",
+      "url": "https://github.com/Tiberriver256/mcp-server-azure-devops"
+    },
+    {
+      "name": "tiianhk/MaxMSP-MCP-Server",
+      "url": "https://github.com/tiianhk/MaxMSP-MCP-Server"
+    },
+    {
+      "name": "timkulbaev/mcp-linkedin",
+      "url": "https://github.com/timkulbaev/mcp-linkedin"
+    },
+    {
+      "name": "TimLukaHorstmann/mcp-weather",
+      "url": "https://github.com/TimLukaHorstmann/mcp-weather"
+    },
+    {
+      "name": "timmx7/acheron-mcp-server",
+      "url": "https://github.com/timmx7/acheron-mcp-server"
+    },
+    {
+      "name": "tinybirdco/mcp-tinybird",
+      "url": "https://github.com/tinybirdco/mcp-tinybird"
+    },
+    {
+      "name": "tipdotmd/tip-md-x402-mcp-server",
+      "url": "https://github.com/tipdotmd/tip-md-x402-mcp-server"
+    },
+    {
+      "name": "tjclaude88/mcp-bling",
+      "url": "https://github.com/tjclaude88/mcp-bling"
+    },
+    {
+      "name": "tom28881/mcp-jira-server",
+      "url": "https://github.com/tom28881/mcp-jira-server"
+    },
+    {
+      "name": "Tomatio13/mcp-server-tavily",
+      "url": "https://github.com/Tomatio13/mcp-server-tavily"
+    },
+    {
+      "name": "tomba-io/tomba-mcp-server",
+      "url": "https://github.com/tomba-io/tomba-mcp-server"
+    },
+    {
+      "name": "tomekkorbak/oura-mcp-server",
+      "url": "https://github.com/tomekkorbak/oura-mcp-server"
+    },
+    {
+      "name": "tomholford/mcp-tic-tac-toe",
+      "url": "https://github.com/tomholford/mcp-tic-tac-toe"
+    },
+    {
+      "name": "toolstem/toolstem-mcp-server",
+      "url": "https://github.com/toolstem/toolstem-mcp-server"
+    },
+    {
+      "name": "toolstem/toolstem-sec-mcp-server",
+      "url": "https://github.com/toolstem/toolstem-sec-mcp-server"
+    },
+    {
+      "name": "tooluse-labs/perfetto-mcp-rs",
+      "url": "https://github.com/tooluse-labs/perfetto-mcp-rs"
+    },
+    {
+      "name": "tosin2013/mcp-adr-analysis-server",
+      "url": "https://github.com/tosin2013/mcp-adr-analysis-server"
+    },
+    {
+      "name": "tqiqbal/mcp-confluence-server",
+      "url": "https://github.com/tqiqbal/mcp-confluence-server"
+    },
+    {
+      "name": "traceloop/opentelemetry-mcp-server",
+      "url": "https://github.com/traceloop/opentelemetry-mcp-server.git"
+    },
+    {
+      "name": "trackerfitness729-jpg/sitelauncher-mcp-server",
+      "url": "https://github.com/trackerfitness729-jpg/sitelauncher-mcp-server"
+    },
+    {
+      "name": "trackmage/trackmage-mcp-server",
+      "url": "https://github.com/trackmage/trackmage-mcp-server"
+    },
+    {
+      "name": "tradercjz/dolphindb-mcp-server",
+      "url": "https://github.com/tradercjz/dolphindb-mcp-server"
+    },
+    {
+      "name": "transcribe-app/mcp-transcribe",
+      "url": "https://github.com/transcribe-app/mcp-transcribe"
+    },
+    {
+      "name": "transloadit/node-sdk",
+      "url": "https://github.com/transloadit/node-sdk/tree/main/packages/mcp-server"
+    },
+    {
+      "name": "tuannvm/mcp-trino",
+      "url": "https://github.com/tuannvm/mcp-trino"
+    },
+    {
+      "name": "tumf/mcp-shell-server",
+      "url": "https://github.com/tumf/mcp-shell-server"
+    },
+    {
+      "name": "tumf/mcp-text-editor",
+      "url": "https://github.com/tumf/mcp-text-editor"
+    },
+    {
+      "name": "Turbo-Puffin/measure-mcp-server",
+      "url": "https://github.com/Turbo-Puffin/measure-mcp-server"
+    },
+    {
+      "name": "tverney/mcp-agent-memory",
+      "url": "https://github.com/tverney/mcp-agent-memory"
+    },
+    {
+      "name": "twtrubiks/odoo19-mcp-server",
+      "url": "https://github.com/twtrubiks/odoo19-mcp-server"
+    },
+    {
+      "name": "TylerIlunga/procore-mcp-server",
+      "url": "https://github.com/TylerIlunga/procore-mcp-server"
+    },
+    {
+      "name": "TypeScript MCP SDK",
+      "url": "https://github.com/modelcontextprotocol/typescript-sdk"
+    },
+    {
+      "name": "UnitVectorY-Labs/mcp-graphql-forge",
+      "url": "https://github.com/UnitVectorY-Labs/mcp-graphql-forge"
+    },
+    {
+      "name": "universalamateur/reclaim-mcp-server",
+      "url": "https://github.com/universalamateur/reclaim-mcp-server"
+    },
+    {
+      "name": "UnMarkdown/mcp-server",
+      "url": "https://github.com/UnMarkdown/mcp-server"
+    },
+    {
+      "name": "urlbox/urlbox-mcp-server",
+      "url": "https://github.com/urlbox/urlbox-mcp-server"
+    },
+    {
+      "name": "US Business Data MCP",
+      "url": "https://github.com/avabuildsdata/mcp-us-business-data"
+    },
+    {
+      "name": "User0856/snaprender-mcp",
+      "url": "https://github.com/User0856/snaprender-integrations/tree/main/mcp-server"
+    },
+    {
+      "name": "utapyngo/sentry-mcp-rs",
+      "url": "https://github.com/utapyngo/sentry-mcp-rs"
+    },
+    {
+      "name": "utensils/mcp-nixos",
+      "url": "https://github.com/utensils/mcp-nixos"
+    },
+    {
+      "name": "vasayxtx/mcp-prompt-engine",
+      "url": "https://github.com/vasayxtx/mcp-prompt-engine"
+    },
+    {
+      "name": "vaulted-fyi/vaulted-mcp-server",
+      "url": "https://github.com/vaulted-fyi/vaulted-mcp-server"
+    },
+    {
+      "name": "vectorize-io/vectorize-mcp-server",
+      "url": "https://github.com/vectorize-io/vectorize-mcp-server"
+    },
+    {
+      "name": "Vercel MCP Adapter",
+      "url": "https://github.com/vercel/mcp-adapter"
+    },
+    {
+      "name": "VeriTeknik/pluggedin-mcp-proxy",
+      "url": "https://github.com/VeriTeknik/pluggedin-mcp-proxy"
+    },
+    {
+      "name": "VictoriaMetrics-Community/mcp-victorialogs",
+      "url": "https://github.com/VictoriaMetrics-Community/mcp-victorialogs"
+    },
+    {
+      "name": "VictoriaMetrics-Community/mcp-victoriametrics",
+      "url": "https://github.com/VictoriaMetrics-Community/mcp-victoriametrics"
+    },
+    {
+      "name": "vikramgorla/mcp-swiss",
+      "url": "https://github.com/vikramgorla/mcp-swiss"
+    },
+    {
+      "name": "vinkius-labs/mcp-fusion",
+      "url": "https://github.com/vinkius-labs/mcp-fusion"
+    },
+    {
+      "name": "ViperJuice/mcp-gateway",
+      "url": "https://github.com/ViperJuice/mcp-gateway"
+    },
+    {
+      "name": "virtualsms-io/mcp-server",
+      "url": "https://github.com/virtualsms-io/mcp-server"
+    },
+    {
+      "name": "vitorpavinato/ncbi-mcp-server",
+      "url": "https://github.com/vitorpavinato/ncbi-mcp-server"
+    },
+    {
+      "name": "vivekvells/mcp-pandoc",
+      "url": "https://github.com/vivekVells/mcp-pandoc"
+    },
+    {
+      "name": "vkhanhqui/figma-mcp-go",
+      "url": "https://github.com/vkhanhqui/figma-mcp-go"
+    },
+    {
+      "name": "VmLia/books-mcp-server",
+      "url": "https://github.com/VmLia/books-mcp-server"
+    },
+    {
+      "name": "voidly-mcp-server",
+      "url": "https://github.com/voidly-ai/mcp-server"
+    },
+    {
+      "name": "W3Ship/w3ledger-mcp-server",
+      "url": "https://github.com/baskcart/w3ledger-mcp-server"
+    },
+    {
+      "name": "W3Ship/w3ship-mcp-server",
+      "url": "https://github.com/baskcart/w3ship-mcp-server"
+    },
+    {
+      "name": "wazionapps/mcp-server",
+      "url": "https://github.com/wazionapps/mcp-server"
+    },
+    {
+      "name": "weaviate/mcp-server-weaviate",
+      "url": "https://github.com/weaviate/mcp-server-weaviate"
+    },
+    {
+      "name": "webcoderz/MCP-Geo",
+      "url": "https://github.com/webcoderz/MCP-Geo"
+    },
+    {
+      "name": "Webrix MCP Gateway",
+      "url": "https://github.com/webrix-ai/secure-mcp-gateway"
+    },
+    {
+      "name": "webscraping-ai/webscraping-ai-mcp-server",
+      "url": "https://github.com/webscraping-ai/webscraping-ai-mcp-server"
+    },
+    {
+      "name": "wenb1n-dev/mysql_mcp_server_pro",
+      "url": "https://github.com/wenb1n-dev/mysql_mcp_server_pro"
+    },
+    {
+      "name": "wenhuwang/mcp-k8s-eye",
+      "url": "https://github.com/wenhuwang/mcp-k8s-eye"
+    },
+    {
+      "name": "willvelida/mcp-afl-server",
+      "url": "https://github.com/willvelida/mcp-afl-server"
+    },
+    {
+      "name": "WiseVision/mcp_server_ros_2",
+      "url": "https://github.com/wise-vision/mcp_server_ros_2"
+    },
+    {
+      "name": "wishfinity/wishfinity-mcp-plusw",
+      "url": "https://github.com/wishfinity/wishfinity-mcp-plusw"
+    },
+    {
+      "name": "Wooonster/hocr_mcp_server",
+      "url": "https://github.com/Wooonster/hocr_mcp_server"
+    },
+    {
+      "name": "wooxogh/adr-mcp-setup",
+      "url": "https://github.com/wooxogh/adr-mcp-setup"
+    },
+    {
+      "name": "wso2/fhir-mcp-server",
+      "url": "https://github.com/wso2/fhir-mcp-server"
+    },
+    {
+      "name": "Wuye-AI/mcp-server-wuye-ai",
+      "url": "https://github.com/wuye-ai/mcp-server-wuye-ai"
+    },
+    {
+      "name": "x51xxx/codex-mcp-tool",
+      "url": "https://github.com/x51xxx/codex-mcp-tool"
+    },
+    {
+      "name": "x51xxx/copilot-mcp-server",
+      "url": "https://github.com/x51xxx/copilot-mcp-server"
+    },
+    {
+      "name": "XeroAPI/xero-mcp-server",
+      "url": "https://github.com/XeroAPI/xero-mcp-server"
+    },
+    {
+      "name": "xexr/mcp-libsql",
+      "url": "https://github.com/Xexr/mcp-libsql"
+    },
+    {
+      "name": "XGenerationLab/xiyan_mcp_server",
+      "url": "https://github.com/XGenerationLab/xiyan_mcp_server"
+    },
+    {
+      "name": "xing5/mcp-google-sheets",
+      "url": "https://github.com/xing5/mcp-google-sheets"
+    },
+    {
+      "name": "XixianLiang/HarmonyOS-mcp-server",
+      "url": "https://github.com/XixianLiang/HarmonyOS-mcp-server"
+    },
+    {
+      "name": "Xuanwo/mcp-server-opendal",
+      "url": "https://github.com/Xuanwo/mcp-server-opendal"
+    },
+    {
+      "name": "xzq.xu/jvm-mcp-server",
+      "url": "https://github.com/xzq-xu/jvm-mcp-server"
+    },
+    {
+      "name": "yamanoku/baseline-mcp-server",
+      "url": "https://github.com/yamanoku/baseline-mcp-server"
+    },
+    {
+      "name": "yangkyeongmo@/mcp-server-apache-airflow",
+      "url": "https://github.com/yangkyeongmo/mcp-server-apache-airflow"
+    },
+    {
+      "name": "YCloud-Developers/ycloud-whatsapp-mcp-server",
+      "url": "https://github.com/YCloud-Developers/ycloud-whatsapp-mcp-server"
+    },
+    {
+      "name": "yepcode/mcp-server-js",
+      "url": "https://github.com/yepcode/mcp-server-js"
+    },
+    {
+      "name": "yikakia/godoc-mcp-server",
+      "url": "https://github.com/yikakia/godoc-mcp-server"
+    },
+    {
+      "name": "yincongcyincong/VictoriaMetrics-mcp-server",
+      "url": "https://github.com/yincongcyincong/VictoriaMetrics-mcp-server"
+    },
+    {
+      "name": "yoryocoruxo-ai/rendoc-mcp-server",
+      "url": "https://github.com/yoryocoruxo-ai/rendoc-mcp-server"
+    },
+    {
+      "name": "youichi-uda/godot-mcp-pro",
+      "url": "https://github.com/youichi-uda/godot-mcp-pro"
+    },
+    {
+      "name": "YuChenSSR/mindmap-mcp-server",
+      "url": "https://github.com/YuChenSSR/mindmap-mcp-server"
+    },
+    {
+      "name": "yWorks/mcp-typescribe",
+      "url": "https://github.com/yWorks/mcp-typescribe"
+    },
+    {
+      "name": "Zacccck/Claude-MCP-Read-Email-Attachments",
+      "url": "https://github.com/Zacccck/Claude-MCP-Read-Email-Attachments"
+    },
+    {
+      "name": "zaizaizhao/mcp-swagger-server",
+      "url": "https://github.com/zaizaizhao/mcp-swagger-server"
+    },
+    {
+      "name": "zen-mcp-server",
+      "url": "https://github.com/BeehiveInnovations/zen-mcp-server"
+    },
+    {
+      "name": "Zencoder",
+      "url": "https://github.com/zencoderai/slack-mcp-server"
+    },
+    {
+      "name": "zenml-io/mcp-zenml",
+      "url": "https://github.com/zenml-io/mcp-zenml"
+    },
+    {
+      "name": "ZeparHyfar/mcp-datetime",
+      "url": "https://github.com/ZeparHyfar/mcp-datetime"
+    },
+    {
+      "name": "Zhwt/go-mcp-mysql",
+      "url": "https://github.com/Zhwt/go-mcp-mysql"
+    },
+    {
+      "name": "zilliztech/mcp-server-milvus",
+      "url": "https://github.com/zilliztech/mcp-server-milvus"
+    },
+    {
+      "name": "zinja-coder/apktool-mcp-server",
+      "url": "https://github.com/zinja-coder/apktool-mcp-server"
+    },
+    {
+      "name": "zlinzzzz/finData-mcp-server",
+      "url": "https://github.com/zlinzzzz/finData-mcp-server"
+    },
+    {
+      "name": "zoomeye-ai/mcp_zoomeye",
+      "url": "https://github.com/zoomeye-ai/mcp_zoomeye"
+    },
+    {
+      "name": "ztuskes/garmin-documentation-mcp-server",
+      "url": "https://github.com/ztuskes/garmin-documentation-mcp-server"
+    },
+    {
+      "name": "ztxtxwd/open-feishu-mcp-server",
+      "url": "https://github.com/ztxtxwd/open-feishu-mcp-server"
+    }
+  ]
+}

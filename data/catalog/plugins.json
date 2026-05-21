@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "name": "ashlr-plugin",
+      "url": "https://github.com/ashlrai/ashlr-plugin"
+    },
+    {
+      "name": "Blog post about its development",
+      "url": "https://blog.fsck.com/2025/10/23/naming-claude-plugins"
+    },
+    {
+      "name": "CCPlugins",
+      "url": "https://github.com/brennercruvinel/CCPlugins"
+    },
+    {
+      "name": "claude-code-plugin",
+      "url": "https://github.com/browserbase/claude-code-plugin"
+    },
+    {
+      "name": "claude-code-plugins-plus-skills",
+      "url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills"
+    },
+    {
+      "name": "claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official"
+    },
+    {
+      "name": "claude-plugins.riasistemas.com.br/instagram",
+      "url": "https://claude-plugins.riasistemas.com.br/instagram"
+    },
+    {
+      "name": "claude-plugins.riasistemas.com.br/whatsapp",
+      "url": "https://claude-plugins.riasistemas.com.br/whatsapp"
+    },
+    {
+      "name": "design-plugin",
+      "url": "https://github.com/0xdesign/design-plugin"
+    },
+    {
+      "name": "notify",
+      "url": "https://github.com/ApurvBazari/claude-plugins"
+    },
+    {
+      "name": "plugins-for-claude-natives",
+      "url": "https://github.com/team-attention/plugins-for-claude-natives"
+    },
+    {
+      "name": "production-grade",
+      "url": "https://github.com/nagisanzenin/claude-code-production-grade-plugin"
+    },
+    {
+      "name": "repo-visuals",
+      "url": "https://github.com/livlign/claude-skills/tree/main/plugins/repo-visuals"
+    },
+    {
+      "name": "thefroject-plugins",
+      "url": "https://github.com/bjorn-ingmanson/thefroject-plugins"
+    },
+    {
+      "name": "TT-Wang/cortex-plugin",
+      "url": "https://github.com/TT-Wang/cortex-plugin"
+    },
+    {
+      "name": "whatsapp-claude-plugin",
+      "url": "https://github.com/Rich627/whatsapp-claude-plugin"
+    }
+  ]
+}

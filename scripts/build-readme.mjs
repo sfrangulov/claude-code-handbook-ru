@@ -1,44 +1,55 @@
 #!/usr/bin/env node
-// Build README.md from README.template.md + data/*.json.
+// Build README.md and catalog/*.md from .template.md siblings + data/*.json.
 //
 // Usage:
-//   node scripts/build-readme.mjs           # regenerate README.md
-//   node scripts/build-readme.mjs --check   # CI gate: fail if README.md is stale
+//   node scripts/build-readme.mjs           # regenerate every <X>.md from <X>.template.md
+//   node scripts/build-readme.mjs --check   # CI gate: fail if any output is stale
 //
-// Marker syntax in README.template.md:
-//   <!-- @list:file.path.to.key -->        bullet list of {name, url, desc, children?, bold?}
-//   <!-- @bold-list:file.path -->          "- **name** — [linkText](linkUrl). desc"
-//   <!-- @table:file.path -->              markdown table (renderer dispatched by ref)
+// Marker syntax in template files:
+//   <!-- @list:<ref> -->        bullet list of {name, url, desc?, children?, bold?}
+//   <!-- @bold-list:<ref> -->   "- **name** — [linkText](linkUrl). desc"
+//   <!-- @table:<ref> -->       markdown table (renderer dispatched by ref)
+//   <!-- @count:<ref> -->       integer count of array length
 //
-// Path resolution: first dot-segment = data/<file>.json, rest navigates nested keys.
-// If the resolved value is an object with `items` array, that array is used.
+// <ref> is `dir/file.dotted.path` (slash separates directory from file,
+// dots navigate JSON keys). Examples:
+//   skills.official              -> data/skills.json -> .official
+//   catalog/skills.items         -> data/catalog/skills.json -> .items
+// If the resolved value is { items: [...] }, the array is auto-extracted.
 
 import { readFile, writeFile, readdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { dirname, join } from 'node:path';
+import { dirname, join, relative } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const REPO = join(__dirname, '..');
+const REPO = dirname(__dirname);
 const DATA_DIR = join(REPO, 'data');
-const TEMPLATE = join(REPO, 'README.template.md');
-const OUTPUT = join(REPO, 'README.md');
 
 const dataCache = new Map();
 
-async function loadData(file) {
-  if (!dataCache.has(file)) {
-    const raw = await readFile(join(DATA_DIR, `${file}.json`), 'utf8');
-    dataCache.set(file, JSON.parse(raw));
+function refToFilePath(ref) {
+  // ref like "catalog/skills.items" or "skills.official" or "skills-top"
+  const slashIdx = ref.lastIndexOf('/');
+  const dir = slashIdx === -1 ? '' : ref.slice(0, slashIdx);
+  const tail = slashIdx === -1 ? ref : ref.slice(slashIdx + 1);
+  const [file, ...path] = tail.split('.');
+  return { rel: join(dir, `${file}.json`), path };
+}
+
+async function loadData(relPath) {
+  if (!dataCache.has(relPath)) {
+    const raw = await readFile(join(DATA_DIR, relPath), 'utf8');
+    dataCache.set(relPath, JSON.parse(raw));
   }
-  return dataCache.get(file);
+  return dataCache.get(relPath);
 }
 
 async function resolveRef(ref) {
-  const [file, ...path] = ref.split('.');
-  const data = await loadData(file);
+  const { rel, path } = refToFilePath(ref);
+  const data = await loadData(rel);
   let cur = data;
   for (const key of path) {
-    if (cur == null) throw new Error(`ref ${ref}: key ${key} missing`);
+    if (cur == null) throw new Error(`ref ${ref}: missing key ${key}`);
     cur = cur[key];
   }
   if (cur === undefined) throw new Error(`ref ${ref} not found`);
@@ -116,34 +127,35 @@ const TABLES = {
   },
 };
 
-const MARKER_RE = /<!--\s*@(list|bold-list|table):([A-Za-z0-9_.-]+)\s*-->/g;
+const MARKER_RE = /<!--\s*@(list|bold-list|table|count):([A-Za-z0-9_/.-]+)\s*-->/g;
 
-async function build() {
-  const template = await readFile(TEMPLATE, 'utf8');
+async function buildOne(templatePath) {
+  const template = await readFile(templatePath, 'utf8');
   const tasks = [];
   for (const m of template.matchAll(MARKER_RE)) {
     tasks.push({ whole: m[0], kind: m[1], ref: m[2], index: m.index });
   }
-
   const results = await Promise.all(
     tasks.map(async ({ kind, ref }) => {
       const data = await resolveRef(ref);
-      if (kind === 'list') return renderList(asItems(data, ref));
-      if (kind === 'bold-list') return renderBoldList(asItems(data, ref));
+      if (kind === 'count') {
+        const items = asItems(data, ref);
+        return String(items.length);
+      }
+      const items = asItems(data, ref);
+      if (kind === 'list') return renderList(items);
+      if (kind === 'bold-list') return renderBoldList(items);
       if (kind === 'table') {
         const renderer = TABLES[ref];
         if (!renderer) throw new Error(`no table renderer for "${ref}"`);
-        return renderer(asItems(data, ref));
+        return renderer(items);
       }
       throw new Error(`unknown kind: ${kind}`);
     }),
   );
-
-  // Splice in order (descending index to keep offsets stable)
   const ordered = tasks
     .map((t, i) => ({ ...t, rendered: results[i] }))
     .sort((a, b) => b.index - a.index);
-
   let output = template;
   for (const t of ordered) {
     output = output.slice(0, t.index) + t.rendered + output.slice(t.index + t.whole.length);
@@ -151,33 +163,60 @@ async function build() {
   return output;
 }
 
-async function listDataFiles() {
-  return (await readdir(DATA_DIR)).filter((f) => f.endsWith('.json')).sort();
+async function findTemplates() {
+  // README.template.md + catalog/*.template.md
+  const out = [];
+  const rootEntries = await readdir(REPO);
+  for (const e of rootEntries) {
+    if (e.endsWith('.template.md')) out.push(join(REPO, e));
+  }
+  try {
+    const catalogEntries = await readdir(join(REPO, 'catalog'));
+    for (const e of catalogEntries) {
+      if (e.endsWith('.template.md')) out.push(join(REPO, 'catalog', e));
+    }
+  } catch {}
+  return out;
+}
+
+function outputPathFor(templatePath) {
+  return templatePath.replace(/\.template\.md$/, '.md');
 }
 
 async function main() {
   const args = new Set(process.argv.slice(2));
   const check = args.has('--check');
 
-  const output = await build();
-
-  if (check) {
-    const existing = await readFile(OUTPUT, 'utf8').catch(() => '');
-    if (existing !== output) {
-      console.error('README.md is out of sync with README.template.md + data/.');
-      console.error('Run: node scripts/build-readme.mjs');
-      process.exit(1);
-    }
-    console.log('README.md ✓ up to date');
-    return;
+  const templates = await findTemplates();
+  if (!templates.length) {
+    process.stderr.write('no *.template.md files found\n');
+    process.exit(1);
   }
 
-  await writeFile(OUTPUT, output);
-  const files = await listDataFiles();
-  console.log(`Wrote README.md (sources: README.template.md + ${files.length} data files)`);
+  let stale = 0;
+  for (const tpl of templates) {
+    const output = await buildOne(tpl);
+    const outPath = outputPathFor(tpl);
+    if (check) {
+      const existing = await readFile(outPath, 'utf8').catch(() => '');
+      if (existing !== output) {
+        process.stderr.write(`✗ ${relative(REPO, outPath)} is out of sync with ${relative(REPO, tpl)}\n`);
+        stale++;
+      } else {
+        process.stdout.write(`✓ ${relative(REPO, outPath)}\n`);
+      }
+    } else {
+      await writeFile(outPath, output);
+      process.stdout.write(`wrote ${relative(REPO, outPath)} (from ${relative(REPO, tpl)})\n`);
+    }
+  }
+  if (check && stale) {
+    process.stderr.write(`\n${stale} file(s) out of sync. Run: node scripts/build-readme.mjs\n`);
+    process.exit(1);
+  }
 }
 
 main().catch((err) => {
-  console.error(err.stack || err.message);
+  process.stderr.write((err.stack || err.message) + '\n');
   process.exit(1);
 });

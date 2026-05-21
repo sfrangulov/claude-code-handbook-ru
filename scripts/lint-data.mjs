@@ -74,15 +74,32 @@ function walkArrays(prefix, value, errs) {
   }
 }
 
+async function loadAllFiles() {
+  const out = [];
+  for (const f of (await readdir(DATA_DIR)).filter((x) => x.endsWith('.json'))) {
+    out.push({
+      prefix: f.replace(/\.json$/, ''),
+      data: JSON.parse(await readFile(join(DATA_DIR, f), 'utf8')),
+    });
+  }
+  try {
+    for (const f of (await readdir(join(DATA_DIR, 'catalog'))).filter((x) => x.endsWith('.json'))) {
+      out.push({
+        prefix: `catalog/${f.replace(/\.json$/, '')}`,
+        data: JSON.parse(await readFile(join(DATA_DIR, 'catalog', f), 'utf8')),
+      });
+    }
+  } catch {}
+  return out.sort((a, b) => a.prefix.localeCompare(b.prefix));
+}
+
 async function main() {
   const warnOnly = process.argv.includes('--warn');
-  const files = (await readdir(DATA_DIR)).filter((f) => f.endsWith('.json')).sort();
+  const files = await loadAllFiles();
   const errors = [];
 
-  for (const fname of files) {
-    const prefix = fname.replace(/\.json$/, '');
-    const data = JSON.parse(await readFile(join(DATA_DIR, fname), 'utf8'));
-    walkArrays(prefix, data, errors);
+  for (const f of files) {
+    walkArrays(f.prefix, f.data, errors);
   }
 
   if (errors.length) {

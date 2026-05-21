@@ -1,0 +1,54 @@
+{
+  "habr": [
+    {
+      "name": "Claude Code в 2026: гайд для тех, кто еще пишет код руками",
+      "url": "https://habr.com/ru/articles/987382/"
+    },
+    {
+      "name": "Code with Claude 2026: что Anthropic показали разработчикам",
+      "url": "https://habr.com/ru/articles/1032588/"
+    },
+    {
+      "name": "Claude Code — полный гайд и обучение для новичков с нуля",
+      "url": "https://habr.com/ru/articles/1033416/"
+    },
+    {
+      "name": "Claude Code: маршрут обучения и полезные ресурсы (2026)",
+      "url": "https://habr.com/ru/articles/983214/"
+    },
+    {
+      "name": "Claude Code для тех, кто не пишет код: полный разбор",
+      "url": "https://habr.com/ru/articles/1017668/"
+    },
+    {
+      "name": "Claude Code бесплатно: как использовать ИИ бесплатно в 2026",
+      "url": "https://habr.com/ru/articles/1018234/"
+    },
+    {
+      "name": "Claude AI: что умеет нейросеть Anthropic в 2026",
+      "url": "https://habr.com/ru/amp/publications/1027572/"
+    },
+    {
+      "name": "Claude: как пользоваться нейросетью в России в 2026",
+      "url": "https://habr.com/ru/companies/bothub/articles/1023070/"
+    }
+  ],
+  "youtube": [
+    {
+      "name": "Claude Code: ПОЛНЫЙ КУРС 2026 (4+ ЧАСА)",
+      "url": "https://www.youtube.com/watch?v=e6JOw0PliRw"
+    },
+    {
+      "name": "Claude Code: Полный гайд 2026 — настройка, MCP и Subagent Driven разработка",
+      "url": "https://www.youtube.com/watch?v=_4ZcgpvDliA"
+    },
+    {
+      "name": "Claude Code: ПОЛНЫЙ ГАЙД 2026 (2+ часовой курс)",
+      "url": "https://www.youtube.com/watch?v=kFpX1FftH70"
+    },
+    {
+      "name": "Создавай ИИ-агентов с Claude Code — ВСЕ функции за 22 минуты",
+      "url": "https://www.youtube.com/watch?v=iwyHt30Ty0c"
+    }
+  ]
+}

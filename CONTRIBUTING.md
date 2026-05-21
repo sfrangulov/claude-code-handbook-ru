@@ -19,18 +19,24 @@
 
 ## Как добавить
 
-`README.md` — генерируемый артефакт. Источник правды:
+`README.md` и `catalog/*.md` — генерируемые артефакты. Источник правды:
 
-- `data/*.json` — все списки и таблицы (skills, subagents, plugins, hooks, MCP, templates, ru-content, security, misc, skills-top).
-- `README.template.md` — статичная проза, заголовки, Quickstart, маркеры вставки данных.
+- `data/*.json` — кураторские списки и таблицы для главного README (skills, subagents, plugins, hooks, MCP, templates, ru-content, security, misc, skills-top).
+- `data/catalog/*.json` — широкий каталог (8 файлов, 1400+ записей формата `{name, url}` без описаний).
+- `README.template.md` и `catalog/*.template.md` — статичная проза, заголовки, маркеры вставки данных.
 
 Шаги:
 
 1. Форкните репозиторий.
-2. Откройте подходящий файл в `data/` и добавьте одну запись:
-   ```json
-   { "name": "Название", "url": "https://...", "desc": "Одна строка о том, для чего это нужно." }
-   ```
+2. Откройте подходящий файл и добавьте запись:
+   - в `data/<секция>.json` для кураторской позиции (с `desc`):
+     ```json
+     { "name": "Название", "url": "https://...", "desc": "Одна строка о том, для чего это нужно." }
+     ```
+   - в `data/catalog/<секция>.json` для широкого каталога (только `name` и `url`):
+     ```json
+     { "name": "Название", "url": "https://..." }
+     ```
    Разделитель в итоговом markdown — em-dash (`—`) с пробелами, его подставляет генератор. Осознанное отклонение от sindresorhus/awesome-lint: русская типографика важнее lint-conformance, в meta-list мы не пушим. См. [docs/research/awesome-lists-best-practices.md](./docs/research/awesome-lists-best-practices.md) §2.1.
 3. Запустите `node scripts/build-readme.mjs` — он перегенерирует `README.md` из template + data.
 4. Закоммитьте оба файла (`data/<секция>.json` и `README.md`).

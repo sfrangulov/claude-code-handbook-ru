@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "name": "cc-safe-setup",
+      "url": "https://github.com/yurukusa/cc-safe-setup"
+    },
+    {
+      "name": "claude-code-configs",
+      "url": "https://github.com/Matt-Dionis/claude-code-configs"
+    },
+    {
+      "name": "claude-code-templates",
+      "url": "https://github.com/davila7/claude-code-templates"
+    },
+    {
+      "name": "claude-setup",
+      "url": "https://github.com/AizenvoltPrime/claude-setup"
+    },
+    {
+      "name": "laravel-claude-code-setup",
+      "url": "https://github.com/laraben/laravel-claude-code-setup"
+    },
+    {
+      "name": "OpenZeppelin Wizard templates",
+      "url": "https://wizard.openzeppelin.com"
+    },
+    {
+      "name": "systemprompt-template",
+      "url": "https://github.com/systempromptio/systemprompt-template"
+    },
+    {
+      "name": "TemplateClaw",
+      "url": "https://github.com/jeromwolf/templateclaw"
+    },
+    {
+      "name": "The CLAUDE.md Bible",
+      "url": "https://echochime3.gumroad.com/l/claudemd-bible"
+    },
+    {
+      "name": "YuliiaKovalova/dotnet-template-mcp",
+      "url": "https://github.com/YuliiaKovalova/dotnet-template-mcp"
+    }
+  ]
+}

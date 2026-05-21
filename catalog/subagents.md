@@ -1,3 +1,8 @@
+<!--
+Generated from this template + data/catalog/*.json by scripts/build-readme.mjs.
+Edit the template or the JSON data, then run: node scripts/build-readme.mjs
+-->
+
 # Sub-agents
 
 Каталог субагентов Claude Code. См. [официальную доку](https://docs.claude.com/en/docs/claude-code/sub-agents).

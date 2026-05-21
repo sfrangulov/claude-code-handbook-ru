@@ -1,9 +1,10 @@
-name: Auto-regenerate README on main
+name: Auto-regenerate docs on main
 
-# Safety net: if a PR is merged with stale README.md (contributor forgot to
-# run build-readme.mjs locally and bypassed the PR --check gate), regenerate
-# and commit back as github-actions[bot]. Path filter excludes README.md
-# changes, so the bot commit does not re-trigger this workflow.
+# Safety net: if a PR is merged with stale generated *.md (contributor forgot
+# to run build-readme.mjs locally and bypassed the PR --check gate),
+# regenerate every README.md + catalog/*.md and commit back as
+# github-actions[bot]. Path filter excludes generated *.md so the bot commit
+# does not re-trigger this workflow.
 #
 # Security note: workflow does not interpolate any untrusted event payload
 # into run: commands. Only repo-controlled files and built-in env vars used.
@@ -14,6 +15,7 @@ on:
     paths:
       - 'data/**'
       - 'README.template.md'
+      - 'catalog/**.template.md'
       - 'scripts/build-readme.mjs'
       - '.github/workflows/readme-auto-regen.yml'
   workflow_dispatch:
@@ -35,17 +37,17 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Regenerate README.md
+      - name: Regenerate docs from templates
         run: node scripts/build-readme.mjs
 
-      - name: Commit and push if README changed
+      - name: Commit and push if any generated *.md changed
         run: |
-          if git diff --quiet README.md; then
-            echo "README.md is already in sync."
+          if git diff --quiet README.md catalog/; then
+            echo "All generated docs are already in sync."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git commit -m "chore(readme): auto-regenerate from data/template"
+          git add README.md catalog/*.md
+          git commit -m "chore(docs): auto-regenerate from data/templates"
           git push

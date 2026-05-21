@@ -1,3 +1,8 @@
+<!--
+Generated from this template + data/catalog/*.json by scripts/build-readme.mjs.
+Edit the template or the JSON data, then run: node scripts/build-readme.mjs
+-->
+
 # Русскоязычный контент
 
 Статьи на Habr и курсы на YouTube про Claude Code и AI-агентов на русском.

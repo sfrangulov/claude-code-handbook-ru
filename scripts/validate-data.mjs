@@ -1,14 +1,11 @@
 #!/usr/bin/env node
-// Validate every entry in data/*.json conforms to its expected shape.
+// Validate every entry in data/*.json and data/catalog/*.json conforms to its
+// expected shape.
 //
 // Usage:
 //   node scripts/validate-data.mjs
 //
 // Exits 0 if everything is valid, 1 with a per-file error report otherwise.
-//
-// Schemas are inlined per file path — the matching ref is the dotted path
-// build-readme.mjs uses (e.g. "skills.official", "subagents.voltagentCategories.items").
-// Adding a new section: add an entry to PATH_SCHEMAS below.
 
 import { readFile, readdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
@@ -45,7 +42,6 @@ function checkPlainEntry(entry, path, errs) {
 }
 
 function checkChildEntry(entry, path, errs) {
-  // { name, bold: true, desc }
   if (!isString(entry.name)) errs.push(`${path}: missing or empty "name"`);
   if (entry.bold !== true) errs.push(`${path}: child entries must set "bold": true`);
   if (!isString(entry.desc)) errs.push(`${path}: missing or empty "desc"`);
@@ -56,7 +52,6 @@ function checkChildEntry(entry, path, errs) {
 }
 
 function checkBoldLinkEntry(entry, path, errs) {
-  // { name, link: { text, url }, desc }
   if (!isString(entry.name)) errs.push(`${path}: missing or empty "name"`);
   if (!entry.link || typeof entry.link !== 'object') {
     errs.push(`${path}: missing "link" object`);
@@ -72,7 +67,6 @@ function checkBoldLinkEntry(entry, path, errs) {
 }
 
 function checkSkillsTopEntry(entry, path, errs) {
-  // { slug, url, desc, count: number }
   if (!isString(entry.slug)) errs.push(`${path}: missing "slug"`);
   if (entry.slug && !/^[\w.-]+\/[\w.-]+@[\w.-]+$/.test(entry.slug)) {
     errs.push(`${path}: slug must look like "owner/repo@skill" (got ${entry.slug})`);
@@ -105,10 +99,20 @@ function checkVoltAgentCategory(entry, path, errs) {
   }
 }
 
+function checkCompactEntry(entry, path, errs) {
+  // Catalog entries: just { name, url } — no description.
+  if (!isString(entry.name)) errs.push(`${path}: missing or empty "name"`);
+  if (!isUrlLike(entry.url)) errs.push(`${path}: "url" must be http(s)://… or ./… (got ${JSON.stringify(entry.url)})`);
+  const allowed = new Set(['name', 'url']);
+  for (const k of Object.keys(entry)) {
+    if (!allowed.has(k)) errs.push(`${path}: unexpected key "${k}" (catalog entries are name+url only)`);
+  }
+}
+
 // ----- per-ref dispatch -----------------------------------------------------
 
 const PATH_SCHEMAS = {
-  // file:dotted.path → validator for each entry
+  // README data (data/*.json)
   'skills.official': checkPlainEntry,
   'skills.communityCollections': checkPlainEntry,
   'skills.specialized': checkPlainEntry,
@@ -139,6 +143,17 @@ const PATH_SCHEMAS = {
   'misc.competitors': checkPlainEntry,
   'misc.utilities': checkPlainEntry,
   'skills-top.items': checkSkillsTopEntry,
+
+  // Catalog data (data/catalog/*.json) — compact { name, url } only
+  'catalog/skills.items': checkCompactEntry,
+  'catalog/subagents.items': checkCompactEntry,
+  'catalog/plugins.items': checkCompactEntry,
+  'catalog/hooks.items': checkCompactEntry,
+  'catalog/templates.items': checkCompactEntry,
+  'catalog/mcp-servers.items': checkCompactEntry,
+  'catalog/ecosystem.items': checkCompactEntry,
+  'catalog/ru-content.habr': checkCompactEntry,
+  'catalog/ru-content.youtube': checkCompactEntry,
 };
 
 function resolveByPath(obj, parts) {
@@ -150,44 +165,55 @@ function resolveByPath(obj, parts) {
   return cur;
 }
 
-async function loadFile(name) {
-  const raw = await readFile(join(DATA_DIR, name), 'utf8');
-  return JSON.parse(raw);
-}
-
-function findEntryArrays(file, data, prefix, out) {
-  // walk known schema paths under this file's prefix
-  for (const ref of Object.keys(PATH_SCHEMAS)) {
-    const [f, ...path] = ref.split('.');
-    if (f !== prefix) continue;
-    const value = resolveByPath(data, path);
-    if (value === undefined) {
-      out.errors.push(`${file}: schema expects path "${ref}" but it's missing`);
-      continue;
-    }
-    if (!Array.isArray(value)) {
-      out.errors.push(`${file}:${path.join('.')} expected array, got ${typeof value}`);
-      continue;
-    }
-    out.arrays.push({ ref, value, validator: PATH_SCHEMAS[ref] });
+async function loadJsonFiles() {
+  // Returns array of { fileRelToData, prefix, data } for data/*.json + data/catalog/*.json.
+  const out = [];
+  const rootFiles = (await readdir(DATA_DIR)).filter((f) => f.endsWith('.json'));
+  for (const f of rootFiles) {
+    out.push({
+      rel: f,
+      prefix: f.replace(/\.json$/, ''),
+      data: JSON.parse(await readFile(join(DATA_DIR, f), 'utf8')),
+    });
   }
+  try {
+    const catFiles = (await readdir(join(DATA_DIR, 'catalog'))).filter((f) => f.endsWith('.json'));
+    for (const f of catFiles) {
+      out.push({
+        rel: `catalog/${f}`,
+        prefix: `catalog/${f.replace(/\.json$/, '')}`,
+        data: JSON.parse(await readFile(join(DATA_DIR, 'catalog', f), 'utf8')),
+      });
+    }
+  } catch {}
+  return out;
 }
 
 async function main() {
-  const files = (await readdir(DATA_DIR)).filter((f) => f.endsWith('.json')).sort();
+  const files = await loadJsonFiles();
+  files.sort((a, b) => a.rel.localeCompare(b.rel));
   const errors = [];
   let total = 0;
 
-  for (const fname of files) {
-    const prefix = fname.replace(/\.json$/, '');
-    const data = await loadFile(fname);
-    const local = { errors: [], arrays: [] };
-    findEntryArrays(fname, data, prefix, local);
-    errors.push(...local.errors);
-    for (const arr of local.arrays) {
-      arr.value.forEach((entry, i) => {
+  for (const f of files) {
+    for (const ref of Object.keys(PATH_SCHEMAS)) {
+      // ref like "catalog/skills.items" or "subagents.productionCollections.items".
+      // File prefix is everything up to the first dot AFTER any slash.
+      if (!ref.startsWith(f.prefix + '.')) continue;
+      const pathParts = ref.slice(f.prefix.length + 1).split('.');
+      const value = resolveByPath(f.data, pathParts);
+      if (value === undefined) {
+        errors.push(`${f.rel}: schema expects "${ref}" but it's missing`);
+        continue;
+      }
+      if (!Array.isArray(value)) {
+        errors.push(`${f.rel}:${pathParts.join('.')} expected array, got ${typeof value}`);
+        continue;
+      }
+      const validator = PATH_SCHEMAS[ref];
+      value.forEach((entry, i) => {
         total++;
-        arr.validator(entry, `${arr.ref}[${i}]`, errors);
+        validator(entry, `${ref}[${i}]`, errors);
       });
     }
   }

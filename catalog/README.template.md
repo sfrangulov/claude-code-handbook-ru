@@ -15,13 +15,13 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 | Раздел | Описание | Записей |
 |---|---|---:|
-| [MCP-серверы](./mcp-servers.md) | все известные серверы из публичных awesome-lists | 827 |
-| [Скиллы](./skills.md) | скиллы под конкретные задачи | 162 |
-| [Sub-agents](./subagents.md) | специализированные субагенты | 160 |
-| [Плагины](./plugins.md) | упаковка скиллов, субагентов и MCP в один артефакт | 16 |
-| [Hooks](./hooks.md) | связанные проекты и идеи | 8 |
-| [CLAUDE.md шаблоны и opinionated-сетапы](./templates.md) | авторские конфиги | 10 |
-| [Экосистема](./ecosystem.md) | утилиты, фреймворки, CLI-обёртки, статус-лайны | 216 |
+| [MCP-серверы](./mcp-servers.md) | все известные серверы из публичных awesome-lists | <!-- @count:catalog/mcp-servers.items --> |
+| [Скиллы](./skills.md) | скиллы под конкретные задачи | <!-- @count:catalog/skills.items --> |
+| [Sub-agents](./subagents.md) | специализированные субагенты | <!-- @count:catalog/subagents.items --> |
+| [Плагины](./plugins.md) | упаковка скиллов, субагентов и MCP в один артефакт | <!-- @count:catalog/plugins.items --> |
+| [Hooks](./hooks.md) | связанные проекты и идеи | <!-- @count:catalog/hooks.items --> |
+| [CLAUDE.md шаблоны и opinionated-сетапы](./templates.md) | авторские конфиги | <!-- @count:catalog/templates.items --> |
+| [Экосистема](./ecosystem.md) | утилиты, фреймворки, CLI-обёртки, статус-лайны | <!-- @count:catalog/ecosystem.items --> |
 | [Русскоязычный контент](./ru-content.md) | Habr и YouTube | 12 |
 
 ## Чем отличается от главного README

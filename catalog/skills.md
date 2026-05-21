@@ -1,3 +1,8 @@
+<!--
+Generated from this template + data/catalog/*.json by scripts/build-readme.mjs.
+Edit the template or the JSON data, then run: node scripts/build-readme.mjs
+-->
+
 # Скиллы
 
 Каталог скиллов для Claude Code из всех известных кураторов. См. [официальный гайд](https://docs.claude.com/en/docs/claude-code/skills).

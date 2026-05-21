@@ -1,0 +1,652 @@
+{
+  "items": [
+    {
+      "name": "academic-research-skills",
+      "url": "https://github.com/Imbad0202/academic-research-skills"
+    },
+    {
+      "name": "add-skill",
+      "url": "https://github.com/vercel-labs/add-skill"
+    },
+    {
+      "name": "advertising-skills",
+      "url": "https://github.com/realkimbarrett/advertising-skills"
+    },
+    {
+      "name": "AI-research-SKILLs",
+      "url": "https://github.com/Orchestra-Research/AI-research-SKILLs"
+    },
+    {
+      "name": "AI-research-SKILLs",
+      "url": "https://github.com/sanyuan0704/code-review-expert"
+    },
+    {
+      "name": "andrej-karpathy-skills",
+      "url": "https://github.com/forrestchang/andrej-karpathy-skills"
+    },
+    {
+      "name": "android-reverse-engineering-skill",
+      "url": "https://github.com/SimoneAvogadro/android-reverse-engineering-skill"
+    },
+    {
+      "name": "antfu's skills",
+      "url": "https://github.com/antfu/skills"
+    },
+    {
+      "name": "Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+    },
+    {
+      "name": "antigravity-awesome-skills",
+      "url": "https://github.com/sickn33/antigravity-awesome-skills"
+    },
+    {
+      "name": "app-onboarding-questionnaire",
+      "url": "https://github.com/adamlyttleapps/claude-skill-app-onboarding-questionnaire"
+    },
+    {
+      "name": "awesome-claude-skills (Composio)",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+    },
+    {
+      "name": "awesome-dfir-skills",
+      "url": "https://github.com/tsale/awesome-dfir-skills"
+    },
+    {
+      "name": "blader",
+      "url": "https://github.com/blader/claude-code-continuous-learning-skill"
+    },
+    {
+      "name": "BlogBurst",
+      "url": "https://github.com/shensi8312/blogburst-claude-skill"
+    },
+    {
+      "name": "Browserbase Skills",
+      "url": "https://github.com/browserbase/skills"
+    },
+    {
+      "name": "buyer-eval",
+      "url": "https://github.com/salespeak-ai/buyer-eval-skill"
+    },
+    {
+      "name": "callstackincubator",
+      "url": "https://github.com/callstackincubator/agent-skills"
+    },
+    {
+      "name": "checkra1neth/xbird",
+      "url": "https://github.com/checkra1neth/xbird-skill"
+    },
+    {
+      "name": "chrome-cdp-skill",
+      "url": "https://github.com/pasky/chrome-cdp-skill"
+    },
+    {
+      "name": "Claude Code Skills 中文精选集",
+      "url": "https://claude-skills.bt199.com"
+    },
+    {
+      "name": "Claude Cookbooks - Skills",
+      "url": "https://github.com/anthropics/claude-cookbooks/tree/main/skills"
+    },
+    {
+      "name": "Claude Skills Announcement",
+      "url": "https://www.anthropic.com/news/skills"
+    },
+    {
+      "name": "claude-code-marketing-skills",
+      "url": "https://github.com/cognyai/claude-code-marketing-skills"
+    },
+    {
+      "name": "claude-code-skills",
+      "url": "https://github.com/whawkinsiv/claude-code-skills"
+    },
+    {
+      "name": "claude-code-voice-skill",
+      "url": "https://github.com/abracadabra50/claude-code-voice-skill"
+    },
+    {
+      "name": "claude-d3js-skill",
+      "url": "https://github.com/chrisvoncsefalvay/claude-d3js-skill"
+    },
+    {
+      "name": "claude-office-skills",
+      "url": "https://github.com/tfriedel/claude-office-skills"
+    },
+    {
+      "name": "claude-scientific-skills",
+      "url": "https://github.com/K-Dense-AI/claude-scientific-skills"
+    },
+    {
+      "name": "claude-skill-homeassistant",
+      "url": "https://github.com/komal-SkyNET/claude-skill-homeassistant"
+    },
+    {
+      "name": "claude-skills",
+      "url": "https://github.com/alirezarezvani/claude-skills"
+    },
+    {
+      "name": "claude-skills",
+      "url": "https://github.com/ckorhonen/claude-skills"
+    },
+    {
+      "name": "claude-skills",
+      "url": "https://github.com/Jeffallan/claude-skills"
+    },
+    {
+      "name": "claude-skills-supercharged",
+      "url": "https://github.com/jefflester/claude-skills-supercharged"
+    },
+    {
+      "name": "Claude-to-IM-skill",
+      "url": "https://github.com/op7418/Claude-to-IM-skill"
+    },
+    {
+      "name": "claudeskills.info",
+      "url": "https://claudeskills.info"
+    },
+    {
+      "name": "cloudflare-skill",
+      "url": "https://github.com/dmmulroy/cloudflare-skill"
+    },
+    {
+      "name": "CN Content Matrix",
+      "url": "https://github.com/fullstackcrew-alpha/skill-cn-content-matrix"
+    },
+    {
+      "name": "colony",
+      "url": "https://github.com/TheColonyCC/colony-usk-skill"
+    },
+    {
+      "name": "Cost Optimizer",
+      "url": "https://github.com/fullstackcrew-alpha/skill-cost-optimizer"
+    },
+    {
+      "name": "Coware",
+      "url": "https://github.com/shitianfang/coware-skills"
+    },
+    {
+      "name": "CSV Data Summarizer",
+      "url": "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill"
+    },
+    {
+      "name": "ctf-skills",
+      "url": "https://github.com/ljagiello/ctf-skills"
+    },
+    {
+      "name": "deep-dive",
+      "url": "https://github.com/kimsb2429/deep-dive-skill"
+    },
+    {
+      "name": "diagram-design",
+      "url": "https://github.com/supabase/agent-skills"
+    },
+    {
+      "name": "Dimillian Skills",
+      "url": "https://github.com/Dimillian/Skills"
+    },
+    {
+      "name": "docx",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/docx"
+    },
+    {
+      "name": "Emdash Skills",
+      "url": "https://github.com/megabytespace/claude-skills"
+    },
+    {
+      "name": "ensue-skill",
+      "url": "https://github.com/mutable-state-inc/ensue-skill"
+    },
+    {
+      "name": "excalidraw-diagram-skill",
+      "url": "https://github.com/coleam00/excalidraw-diagram-skill"
+    },
+    {
+      "name": "Expo Skills",
+      "url": "https://github.com/expo/skills"
+    },
+    {
+      "name": "faf-skills",
+      "url": "https://github.com/Wolfe-Jam/faf-skills"
+    },
+    {
+      "name": "ffuf-web-fuzzing",
+      "url": "https://github.com/jthack/ffuf_claude_skill"
+    },
+    {
+      "name": "Firecrawl Skills",
+      "url": "https://docs.firecrawl.dev/sdks/cli"
+    },
+    {
+      "name": "garden-skills",
+      "url": "https://github.com/ConardLi/garden-skills"
+    },
+    {
+      "name": "Gear Foundation Skills",
+      "url": "https://github.com/gear-foundation/vara-skills"
+    },
+    {
+      "name": "gemini-skills",
+      "url": "https://github.com/google-gemini/gemini-skills"
+    },
+    {
+      "name": "Generative-Media-Skills",
+      "url": "https://github.com/SamurAIGPT/Generative-Media-Skills"
+    },
+    {
+      "name": "GLM-skills",
+      "url": "https://github.com/zai-org/GLM-skills"
+    },
+    {
+      "name": "google-ai-mode-skill",
+      "url": "https://github.com/PleasePrompto/google-ai-mode-skill"
+    },
+    {
+      "name": "gpt_image_2_skill",
+      "url": "https://github.com/wuyoscar/gpt_image_2_skill"
+    },
+    {
+      "name": "gsap-skills",
+      "url": "https://github.com/greensock/gsap-skills"
+    },
+    {
+      "name": "GUCCI-atlasv/skillssafe-mcp",
+      "url": "https://github.com/GUCCI-atlasv/skillssafe-mcp"
+    },
+    {
+      "name": "guizang-ppt-skill",
+      "url": "https://github.com/op7418/guizang-ppt-skill"
+    },
+    {
+      "name": "happy-claude-skills",
+      "url": "https://github.com/iamzhihuix/happy-claude-skills"
+    },
+    {
+      "name": "hone-skills",
+      "url": "https://github.com/ckorhonen/hone-skills"
+    },
+    {
+      "name": "How to Create Your First Claude Skill",
+      "url": "https://skywork.ai/blog/ai-agent/how-to-create-claude-skill-step-by-step-guide"
+    },
+    {
+      "name": "How to Use Skills in Claude Code",
+      "url": "https://skywork.ai/blog/how-to-use-skills-in-claude-code-install-path-project-scoping-testing"
+    },
+    {
+      "name": "huggingface skills",
+      "url": "https://github.com/huggingface/skills"
+    },
+    {
+      "name": "huggingface skills",
+      "url": "https://github.com/numman-ali/openskills"
+    },
+    {
+      "name": "humanizer-skill",
+      "url": "https://github.com/Aboudjem/humanizer-skill"
+    },
+    {
+      "name": "ios-simulator-skill",
+      "url": "https://github.com/conorluddy/ios-simulator-skill"
+    },
+    {
+      "name": "iterationlayer/skills",
+      "url": "https://github.com/iterationlayer/skills"
+    },
+    {
+      "name": "j4rk0r/claude-skills",
+      "url": "https://github.com/j4rk0r/claude-skills"
+    },
+    {
+      "name": "K-Dense-AI/claude-skills-mcp",
+      "url": "https://github.com/K-Dense-AI/claude-skills-mcp"
+    },
+    {
+      "name": "Kami",
+      "url": "https://github.com/ericosiu/ai-marketing-skills"
+    },
+    {
+      "name": "Karpathy Guidelines",
+      "url": "https://github.com/swarmclawai/andrej-karpathy-skills"
+    },
+    {
+      "name": "Landing",
+      "url": "https://sky-lv.github.io/awesome-openclaw-skills"
+    },
+    {
+      "name": "last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill"
+    },
+    {
+      "name": "linkedin-skills",
+      "url": "https://github.com/sergebulaev/linkedin-skills"
+    },
+    {
+      "name": "logo-generator-skill",
+      "url": "https://github.com/op7418/logo-generator-skill"
+    },
+    {
+      "name": "loki-mode",
+      "url": "https://github.com/asklokesh/claudeskill-loki-mode"
+    },
+    {
+      "name": "manage-skills",
+      "url": "https://github.com/umutbozdag/agent-skills-manager/tree/main/skills/manage-skills"
+    },
+    {
+      "name": "manim_skill",
+      "url": "https://github.com/adithya-s-k/manim_skill"
+    },
+    {
+      "name": "Manus Skills",
+      "url": "https://manus.im/blog/manus-skills"
+    },
+    {
+      "name": "Markdown to EPUB",
+      "url": "https://github.com/smerchek/claude-epub-skill"
+    },
+    {
+      "name": "markdown-viewer skills",
+      "url": "https://github.com/markdown-viewer/skills"
+    },
+    {
+      "name": "marketingskills",
+      "url": "https://github.com/coreyhaines31/marketingskills"
+    },
+    {
+      "name": "mattpocock skills",
+      "url": "https://github.com/mattpocock/skills"
+    },
+    {
+      "name": "md2wechat",
+      "url": "https://github.com/geekjourneyx/md2wechat-skill"
+    },
+    {
+      "name": "MiniMax-AI/skills",
+      "url": "https://github.com/MiniMax-AI/skills"
+    },
+    {
+      "name": "n8n-skills",
+      "url": "https://github.com/czlonkowski/n8n-skills"
+    },
+    {
+      "name": "nano-banana-pro-prompts-recommend-skill",
+      "url": "https://github.com/YouMind-OpenLab/nano-banana-pro-prompts-recommend-skill"
+    },
+    {
+      "name": "nano-image-generator-skill",
+      "url": "https://github.com/lxfater/nano-image-generator-skill"
+    },
+    {
+      "name": "next-skills",
+      "url": "https://github.com/vercel-labs/next-skills"
+    },
+    {
+      "name": "notebooklm-skill",
+      "url": "https://github.com/PleasePrompto/notebooklm-skill"
+    },
+    {
+      "name": "nothing-design-skill",
+      "url": "https://github.com/dominikmartn/nothing-design-skill"
+    },
+    {
+      "name": "nuxt-skills",
+      "url": "https://github.com/onmax/nuxt-skills"
+    },
+    {
+      "name": "obsidian-skills",
+      "url": "https://github.com/kepano/obsidian-skills"
+    },
+    {
+      "name": "omni-skills-forge",
+      "url": "https://github.com/theihtisham/omni-skills-forge"
+    },
+    {
+      "name": "Overnight Worker",
+      "url": "https://github.com/fullstackcrew-alpha/skill-overnight-worker"
+    },
+    {
+      "name": "paul-graham-skills",
+      "url": "https://github.com/WinterDDo/paul-graham-skills"
+    },
+    {
+      "name": "Pika-Skills",
+      "url": "https://github.com/Pika-Labs/Pika-Skills"
+    },
+    {
+      "name": "planmysaas",
+      "url": "https://github.com/creationskiro/planmysaas-claude-skill"
+    },
+    {
+      "name": "playwright-skill",
+      "url": "https://github.com/lackeyjb/playwright-skill"
+    },
+    {
+      "name": "Pretty-mermaid-skills",
+      "url": "https://github.com/imxv/Pretty-mermaid-skills"
+    },
+    {
+      "name": "Product Manager Skills",
+      "url": "https://github.com/Digidai/product-manager-skills"
+    },
+    {
+      "name": "Product-Manager-Skills",
+      "url": "https://github.com/deanpeters/Product-Manager-Skills"
+    },
+    {
+      "name": "pskill9/hn-server",
+      "url": "https://github.com/pskill9/hn-server"
+    },
+    {
+      "name": "pskill9/web-search",
+      "url": "https://github.com/pskill9/web-search"
+    },
+    {
+      "name": "pskill9/website-downloader",
+      "url": "https://github.com/pskill9/website-downloader"
+    },
+    {
+      "name": "qmd-skill",
+      "url": "https://github.com/levineam/qmd-skill"
+    },
+    {
+      "name": "qovery-deploy",
+      "url": "https://github.com/Qovery/qovery-skills"
+    },
+    {
+      "name": "Reepl - LinkedIn Content Creation",
+      "url": "https://github.com/reepl-io/skills"
+    },
+    {
+      "name": "remotion-dev/skills",
+      "url": "https://www.remotion.dev/docs/ai/skills"
+    },
+    {
+      "name": "rust-skills",
+      "url": "https://github.com/actionbook/rust-skills"
+    },
+    {
+      "name": "sanyuan-skills",
+      "url": "https://github.com/sanyuan0704/sanyuan-skills"
+    },
+    {
+      "name": "second-brain-skills",
+      "url": "https://github.com/coleam00/second-brain-skills"
+    },
+    {
+      "name": "seedance-prompt-skill",
+      "url": "https://github.com/songguoxs/seedance-prompt-skill"
+    },
+    {
+      "name": "seo-geo-claude-skills",
+      "url": "https://github.com/aaron-he-zhu/seo-geo-claude-skills"
+    },
+    {
+      "name": "shadcn/ui",
+      "url": "https://ui.shadcn.com/docs/skills"
+    },
+    {
+      "name": "sim-xia/skill-cortex-server",
+      "url": "https://github.com/Sim-xia/skill-cortex-server"
+    },
+    {
+      "name": "Simon Willison: Claude Skills are awesome, maybe a bigger deal than MCP",
+      "url": "https://simonwillison.net/2025/Oct/16/claude-skills"
+    },
+    {
+      "name": "skill-builder",
+      "url": "https://github.com/Scottpedia0/skill-builder"
+    },
+    {
+      "name": "skill-codex",
+      "url": "https://github.com/skills-directory/skill-codex"
+    },
+    {
+      "name": "skill-threat-modeling",
+      "url": "https://github.com/fr33d3m0n/skill-threat-modeling"
+    },
+    {
+      "name": "SkillForge",
+      "url": "https://github.com/tripleyak/SkillForge"
+    },
+    {
+      "name": "SkillKit",
+      "url": "https://agenstskills.com"
+    },
+    {
+      "name": "SkillNav",
+      "url": "https://github.com/skillnav-dev/skillnav-skill"
+    },
+    {
+      "name": "skills",
+      "url": "https://github.com/microsoft/skills"
+    },
+    {
+      "name": "Skills Explained",
+      "url": "https://claude.com/blog/skills-explained"
+    },
+    {
+      "name": "Skills vs MCP vs Plugins",
+      "url": "https://www.morphllm.com/context-engineering"
+    },
+    {
+      "name": "skills-janitor",
+      "url": "https://github.com/khendzel/skills-janitor"
+    },
+    {
+      "name": "slavingia/skills",
+      "url": "https://github.com/slavingia/skills"
+    },
+    {
+      "name": "Smart PR Review",
+      "url": "https://github.com/fullstackcrew-alpha/skill-smart-pr-review"
+    },
+    {
+      "name": "solana-dev-skill",
+      "url": "https://github.com/solana-foundation/solana-dev-skill"
+    },
+    {
+      "name": "solid-skills",
+      "url": "https://github.com/ramziddin/solid-skills"
+    },
+    {
+      "name": "stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills"
+    },
+    {
+      "name": "superpowers-skills",
+      "url": "https://github.com/obra/superpowers-skills"
+    },
+    {
+      "name": "SuperSEO Skills",
+      "url": "https://github.com/inhouseseo/superseo-skills"
+    },
+    {
+      "name": "swe-skills",
+      "url": "https://github.com/ckorhonen/swe-skills"
+    },
+    {
+      "name": "synalinks-skills",
+      "url": "https://github.com/numman-ali/n-skills"
+    },
+    {
+      "name": "tapestry",
+      "url": "https://github.com/michalparkola/tapestry-skills-for-claude-code"
+    },
+    {
+      "name": "taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill"
+    },
+    {
+      "name": "terraform-skill",
+      "url": "https://github.com/antonbabenko/terraform-skill"
+    },
+    {
+      "name": "threat-hunting-with-sigma-rules",
+      "url": "https://github.com/jthack/threat-hunting-with-sigma-rules-skill"
+    },
+    {
+      "name": "threejs-skills",
+      "url": "https://github.com/CloudAI-X/threejs-skills"
+    },
+    {
+      "name": "Trail of Bits Security Skills",
+      "url": "https://github.com/trailofbits/skills"
+    },
+    {
+      "name": "ui-skills",
+      "url": "https://github.com/ibelick/ui-skills"
+    },
+    {
+      "name": "ui-ux-pro-max-skill",
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
+    },
+    {
+      "name": "Vibe-Skills",
+      "url": "https://github.com/foryourhealth111-pixel/Vibe-Skills"
+    },
+    {
+      "name": "VibeSec-Skill",
+      "url": "https://github.com/BehiSecc/VibeSec-Skill"
+    },
+    {
+      "name": "vue-skills",
+      "url": "https://github.com/vuejs-ai/skills"
+    },
+    {
+      "name": "vue-skills",
+      "url": "https://github.com/hyf0/vue-skills"
+    },
+    {
+      "name": "Weaponizing Claude Code Skills",
+      "url": "https://medium.com/@yossifqassim/weaponizing-claude-code-skills-from-5-5-to-remote-shell-a14af2d109c9"
+    },
+    {
+      "name": "web-quality-skills",
+      "url": "https://github.com/addyosmani/web-quality-skills"
+    },
+    {
+      "name": "webgpu-claude-skill",
+      "url": "https://github.com/dgreenheck/webgpu-claude-skill"
+    },
+    {
+      "name": "x-article-publisher-skill",
+      "url": "https://github.com/wshuyi/x-article-publisher-skill"
+    },
+    {
+      "name": "x-research-skill",
+      "url": "https://github.com/rohunvora/x-research-skill"
+    },
+    {
+      "name": "XVARY Stock Research",
+      "url": "https://github.com/xvary-research/claude-code-stock-analysis-skill"
+    },
+    {
+      "name": "Youtube-clipper-skill",
+      "url": "https://github.com/op7418/Youtube-clipper-skill"
+    },
+    {
+      "name": "yusufkaraaslan/Skill_Seekers",
+      "url": "https://github.com/yusufkaraaslan/Skill_Seekers"
+    }
+  ]
+}

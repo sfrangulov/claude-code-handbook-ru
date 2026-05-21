@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "name": "alimo7amed93/webhook-tester-mcp",
+      "url": "https://github.com/alimo7amed93/webhook-tester-mcp"
+    },
+    {
+      "name": "claude-code-hooks",
+      "url": "https://github.com/yurukusa/claude-code-hooks"
+    },
+    {
+      "name": "claude-code-hooks",
+      "url": "https://github.com/Payshak/claude-code-hooks"
+    },
+    {
+      "name": "claude-code-hooks",
+      "url": "https://github.com/karanb192/claude-code-hooks"
+    },
+    {
+      "name": "claude-code-typescript-hooks",
+      "url": "https://github.com/bartolli/claude-code-typescript-hooks"
+    },
+    {
+      "name": "claude-hooks-mastery",
+      "url": "https://github.com/disler/claude-code-hooks-mastery"
+    },
+    {
+      "name": "rins_hooks",
+      "url": "https://github.com/rinadelph/rins_hooks"
+    },
+    {
+      "name": "smart-approve.py",
+      "url": "https://github.com/liberzon/claude-hooks"
+    }
+  ]
+}
