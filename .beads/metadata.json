@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "claude_code_handbook_ru",
+  "project_id": "85500260-6af7-4bea-b00f-06bf551bf15f"
+}
