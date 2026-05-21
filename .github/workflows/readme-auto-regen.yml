@@ -1,0 +1,51 @@
+name: Auto-regenerate README on main
+
+# Safety net: if a PR is merged with stale README.md (contributor forgot to
+# run build-readme.mjs locally and bypassed the PR --check gate), regenerate
+# and commit back as github-actions[bot]. Path filter excludes README.md
+# changes, so the bot commit does not re-trigger this workflow.
+#
+# Security note: workflow does not interpolate any untrusted event payload
+# into run: commands. Only repo-controlled files and built-in env vars used.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'README.template.md'
+      - 'scripts/build-readme.mjs'
+      - '.github/workflows/readme-auto-regen.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: readme-auto-regen
+  cancel-in-progress: false
+
+jobs:
+  regen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Regenerate README.md
+        run: node scripts/build-readme.mjs
+
+      - name: Commit and push if README changed
+        run: |
+          if git diff --quiet README.md; then
+            echo "README.md is already in sync."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore(readme): auto-regenerate from data/template"
+          git push

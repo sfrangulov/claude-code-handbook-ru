@@ -188,7 +188,7 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 
 ### Главные маркетплейсы
 
-- [obra/superpowers-marketplace](https://github.com/obra/superpowers-marketplace) — Маркетплейс с 20+ soft-скиллами и плагинами от Jesse Vincent. Главный must-have: `claude plugin marketplace add obra/superpowers-marketplace`.
+- [obra/superpowers-marketplace](https://github.com/obra/superpowers-marketplace) — Маркетплейс с 20+ soft-скиллами и плагинами от Jesse Vincent. Базовая установка: `claude plugin marketplace add obra/superpowers-marketplace`.
 - [ccplugins/awesome-claude-code-plugins](https://github.com/ccplugins/awesome-claude-code-plugins) — 50+ плагинов по 13 категориям (качество кода, git, devops, дизайн, бизнес). 782⭐. Установка: `claude plugin marketplace add ccplugins/awesome-claude-code-plugins`.
 - [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) — 144 субагента, оформленные как плагин-маркетплейс.
 - [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) — Официальные плагины Anthropic.
@@ -449,10 +449,21 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 
 ## Как добавить ресурс
 
-1. Открой PR с одной строкой в подходящем разделе.
-2. Формат: `- [Название](url) — одна строка о том, для чего полезно.`
-3. URL-слаги в ссылках на скиллы/плагины/MCP **остаются английскими** (как в источнике). Только описание на русском. Перевод слагов ломает реальные ссылки на skills.sh и GitHub.
-4. Перед PR убедись:
+README.md — генерируемый файл. Источник правды: `data/*.json` (списки) и `README.template.md` (статичная проза, заголовки, маркеры).
+
+1. Открой подходящий файл в [`data/`](./data/) и добавь запись:
+   ```json
+   { "name": "Название", "url": "https://...", "desc": "Одна строка о том, для чего полезно." }
+   ```
+2. Прогони локально три гейта (то же, что упадёт на PR):
+   ```bash
+   node scripts/validate-data.mjs        # форма записи: name/url/desc
+   node scripts/lint-data.mjs            # стиль desc: no-self-name, без маркетинга
+   node scripts/build-readme.mjs         # перегенерация README.md (`--check` — только проверка)
+   ```
+3. URL-слаги в ссылках на скиллы/плагины/MCP **остаются английскими** (как в источнике). Только `desc` на русском. Перевод слагов ломает реальные ссылки на skills.sh и GitHub.
+4. Закоммить и `data/<section>.json`, и регенерированный `README.md`.
+5. Перед PR убедись:
    - ресурс работает с актуальной версией Claude Code;
    - нет дубликата в списке;
    - ссылка публичная (GitHub / docs / статья);

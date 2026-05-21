@@ -37,9 +37,18 @@
 5. Сохраняйте алфавитный порядок внутри подсекции, где это применимо.
 6. Откройте PR с описанием: что добавили и почему это полезно.
 
-CI-гейт: `node scripts/build-readme.mjs --check` — падает с exit=1, если `README.md` разошёлся с template/data.
+CI-гейты на PR (последовательно, до первой ошибки):
 
-Обновление топ-15 скиллов по install-count из skills.sh:
+```bash
+node scripts/validate-data.mjs   # форма каждой записи: name/url/desc, типы
+node scripts/lint-data.mjs       # стиль desc: no-self-name, без маркетинга
+node scripts/build-readme.mjs --check  # README.md == template + data
+```
+
+Прогони их локально перед PR — то же самое запустит [`.github/workflows/readme-gen.yml`](./.github/workflows/readme-gen.yml). Если рассинхронизация попадёт в main мимо PR-гейта, [`readme-auto-regen.yml`](./.github/workflows/readme-auto-regen.yml) перегенерит README ботом.
+
+Топ-15 скиллов обновляется автоматически: cron-workflow [`refresh-skills-top.yml`](./.github/workflows/refresh-skills-top.yml) раз в неделю опрашивает skills.sh и открывает PR при изменениях. Вручную:
+
 ```bash
 node scripts/refresh-top-skills.mjs --write   # обновляет data/skills-top.json
 node scripts/build-readme.mjs                  # перегенерирует README.md

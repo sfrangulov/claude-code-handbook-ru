@@ -1,4 +1,12 @@
-name: README generation gate
+name: Data + README PR gate
+
+# Runs on PRs that touch data/, README.template.md, README.md, or generator
+# scripts. Three gates, in order — earliest failure shows up first:
+#   1. validate-data: structural shape of every entry
+#   2. lint-data:     style rules (no marketing, no self-name, single line)
+#   3. build-readme --check: regenerated README must equal the committed one
+#
+# Security note: no untrusted event input is interpolated into run: commands.
 
 on:
   pull_request:
@@ -7,6 +15,8 @@ on:
       - 'README.template.md'
       - 'README.md'
       - 'scripts/build-readme.mjs'
+      - 'scripts/validate-data.mjs'
+      - 'scripts/lint-data.mjs'
       - '.github/workflows/readme-gen.yml'
   workflow_dispatch:
 
@@ -19,10 +29,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
+
+      - name: Validate data shape
+        run: node scripts/validate-data.mjs
+
+      - name: Lint descriptions
+        run: node scripts/lint-data.mjs
 
       - name: Verify README.md is in sync with template + data
         run: node scripts/build-readme.mjs --check

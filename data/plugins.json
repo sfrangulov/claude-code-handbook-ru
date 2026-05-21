@@ -1,6 +1,6 @@
 {
   "marketplaces": [
-    { "name": "obra/superpowers-marketplace", "url": "https://github.com/obra/superpowers-marketplace", "desc": "Маркетплейс с 20+ soft-скиллами и плагинами от Jesse Vincent. Главный must-have: `claude plugin marketplace add obra/superpowers-marketplace`." },
+    { "name": "obra/superpowers-marketplace", "url": "https://github.com/obra/superpowers-marketplace", "desc": "Маркетплейс с 20+ soft-скиллами и плагинами от Jesse Vincent. Базовая установка: `claude plugin marketplace add obra/superpowers-marketplace`." },
     { "name": "ccplugins/awesome-claude-code-plugins", "url": "https://github.com/ccplugins/awesome-claude-code-plugins", "desc": "50+ плагинов по 13 категориям (качество кода, git, devops, дизайн, бизнес). 782⭐. Установка: `claude plugin marketplace add ccplugins/awesome-claude-code-plugins`." },
     { "name": "VoltAgent/awesome-claude-code-subagents", "url": "https://github.com/VoltAgent/awesome-claude-code-subagents", "desc": "144 субагента, оформленные как плагин-маркетплейс." },
     { "name": "anthropics/claude-plugins-official", "url": "https://github.com/anthropics/claude-plugins-official", "desc": "Официальные плагины Anthropic." }
