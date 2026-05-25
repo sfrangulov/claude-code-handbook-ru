@@ -16,16 +16,29 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      /* Палитра секций (header background → light tint) */
-      --keyboard-h: #2563EB; --keyboard-bg: #EFF6FF;
-      --slash-h:    #7C3AED; --slash-bg:    #F5F3FF;
-      --mcp-h:      #0891B2; --mcp-bg:      #ECFEFF;
-      --memory-h:   #D97706; --memory-bg:   #FFFBEB;
-      --workflows-h:#DC2626; --workflows-bg:#FEF2F2;
-      --config-h:   #C2410C; --config-bg:   #FFF7ED;
-      --skills-h:   #059669; --skills-bg:   #ECFDF5;
-      --cli-h:      #475569; --cli-bg:      #F8FAFC;
-      --footer-bg:  #1F2937; --footer-tx:   #F9FAFB;
+      /* OKLCH-палитра секций: bg L=0.97 C=0.022, header L=0.46 C=0.11 на
+         той же hue. Низкая хрома против garish-эффекта Tailwind defaults;
+         8 hues разнесены по кругу для перцептивной различимости. Bg тонко
+         tintirovan под секцию — видно, что не серый, но не кричит. */
+      --keyboard-h:  oklch(0.46 0.13 240);  --keyboard-bg:  oklch(0.975 0.020 240);
+      --slash-h:     oklch(0.46 0.14 295);  --slash-bg:     oklch(0.975 0.020 295);
+      --mcp-h:       oklch(0.50 0.11 200);  --mcp-bg:       oklch(0.975 0.020 200);
+      --memory-h:    oklch(0.55 0.13 75);   --memory-bg:    oklch(0.975 0.025 80);
+      --workflows-h: oklch(0.52 0.16 25);   --workflows-bg: oklch(0.975 0.020 25);
+      --config-h:    oklch(0.55 0.15 50);   --config-bg:    oklch(0.975 0.025 50);
+      --skills-h:    oklch(0.48 0.12 155);  --skills-bg:    oklch(0.975 0.020 155);
+      --cli-h:       oklch(0.40 0.030 240); --cli-bg:       oklch(0.975 0.005 240);
+
+      /* Нейтрали — не чистый #000/#fff, со слабым синим уклоном (chroma 0.01-0.015). */
+      --ink:         oklch(0.21 0.015 240);  /* основной текст */
+      --ink-soft:    oklch(0.34 0.012 240);  /* sub-headers, second-tier */
+      --ink-mute:    oklch(0.45 0.010 240);  /* desc-текст */
+      --rule:        oklch(0.88 0.005 240);  /* divider */
+      --footer-bg:   oklch(0.22 0.020 240);
+      --footer-tx:   oklch(0.92 0.010 240);
+      --footer-mute: oklch(0.72 0.010 240);
+      --accent-link: oklch(0.75 0.10 240);
+      --accent-warn: oklch(0.60 0.20 25);    /* NEW бэйдж */
 
       --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
       --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Monaco, Consolas, monospace;
@@ -36,8 +49,8 @@
       font-family: var(--font-sans);
       font-size: 0.9rem;
       line-height: 1.16;
-      color: #1F2937;
-      background: #fff;
+      color: var(--ink);
+      background: oklch(0.995 0.003 240); /* off-white с лёгким cool-уклоном */
       padding: 5mm;
     }
 
@@ -49,27 +62,33 @@
     .header {
       display: flex; justify-content: space-between; align-items: flex-end;
       margin-bottom: 2mm; padding-bottom: 1mm;
-      border-bottom: 1px solid #E5E7EB;
+      border-bottom: 1px solid var(--rule);
     }
-    .header h1 { font-size: 1.35rem; font-weight: 700; color: #111827; letter-spacing: -0.01em; }
-    .header h1 .sub { font-weight: 400; color: #6B7280; font-size: 0.85rem; margin-left: 1mm; }
-    .header-meta { font-size: 0.72rem; color: #6B7280; text-align: right; line-height: 1.3; }
-    .header-meta .v { color: #111827; font-weight: 600; }
-    .header-meta a { color: #2563EB; text-decoration: none; }
+    .header h1 { font-size: 1.35rem; font-weight: 700; color: var(--ink); letter-spacing: -0.01em; }
+    .header h1 .sub { font-weight: 400; color: var(--ink-mute); font-size: 0.85rem; margin-left: 1mm; }
+    .header-meta { font-size: 0.72rem; color: var(--ink-mute); text-align: right; line-height: 1.3; }
+    .header-meta .v { color: var(--ink); font-weight: 600; }
+    .header-meta a { color: oklch(0.50 0.13 240); text-decoration: none; }
     .header-meta a:hover { text-decoration: underline; }
 
     /* === MAIN GRID — CSS Grid с явной раскладкой по 3 колонкам ===
        Manual placement: контролируем, какая секция в какой колонке. CSS
        multi-column авто-балансировка приводила к переполнению на page 2
        из-за wrapping длинных описаний. Раскладка ниже сбалансирована по
-       вертикальной высоте при реальной отрисовке. */
+       вертикальной высоте при реальной отрисовке.
+
+       min-height + grid-template-rows: 1fr + .col flex-column +
+       last-child flex-grow: 1 — все колонки одной высоты до футера,
+       последняя секция в каждой колонке растягивается без dead-space. */
     .main-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
       gap: 0 3mm;
-      align-items: start;
+      min-height: 256mm;
     }
     .col { display: flex; flex-direction: column; gap: 1.5mm; }
+    .col > .section:last-child { flex: 1 1 auto; }
 
     /* === SECTION ===
        Без overflow: hidden — иначе секция станет BFC, не сможет
@@ -105,11 +124,11 @@
       font-weight: 700;
       font-style: italic;
       font-size: 0.74rem;
-      color: #374151;
+      color: var(--ink-soft);
       margin-top: 1mm;
       margin-bottom: 0.3mm;
       padding-bottom: 0.2mm;
-      border-bottom: 1px dotted rgba(0,0,0,0.18);
+      border-bottom: 1px dotted oklch(0.80 0.008 240);
       break-after: avoid;
       page-break-after: avoid;
     }
@@ -128,7 +147,7 @@
       font-family: var(--font-mono);
       font-size: 0.76rem;
       font-weight: 600;
-      color: #111827;
+      color: var(--ink);
       white-space: nowrap;
       flex-shrink: 0;
       /* JetBrains Mono схлопывает '--' в '–' через calt — выключаем. */
@@ -136,45 +155,54 @@
     }
     .desc {
       font-size: 0.76rem;
-      color: #4B5563;
+      color: var(--ink-mute);
       flex: 1;
       min-width: 0;
-      overflow-wrap: break-word;
-      word-break: break-word;
+      /* word-break: break-word ломал слова в середине ("bypass" → "byp/ass").
+         overflow-wrap: anywhere переносит только если слово реально не влезает
+         целиком, остаётся приоритет переноса по пробелам/wbr-якорям. */
+      overflow-wrap: anywhere;
     }
+    /* В <wbr> мы вставляем "разрешённые точки переноса" в длинных compound-
+       строках типа "default/acceptEdits/plan/dontAsk/bypass". */
+    .desc wbr { display: inline; }
 
     /* === KEYCAP (для клавиш) === */
     .keycap {
       display: inline-block;
-      background: linear-gradient(180deg, #FAFAFA 0%, #E5E7EB 100%);
-      border: 1px solid #D1D5DB;
+      background: linear-gradient(180deg, oklch(0.985 0.003 240) 0%, oklch(0.92 0.005 240) 100%);
+      border: 1px solid oklch(0.84 0.008 240);
       border-radius: 2px;
       padding: 0.1mm 1.1mm;
       font-family: var(--font-mono);
       font-size: 0.72rem;
       font-weight: 600;
-      color: #374151;
-      box-shadow: 0 1px 1px rgba(0,0,0,0.08), inset 0 -1px 0 rgba(0,0,0,0.05);
+      color: var(--ink-soft);
+      box-shadow: 0 1px 1px oklch(0 0 0 / 0.06), inset 0 -1px 0 oklch(0 0 0 / 0.04);
       margin-right: 0.25mm;
       line-height: 1.1;
       white-space: nowrap;
     }
 
-    /* === NEW БЭЙДЖ === */
+    /* === NEW БЭЙДЖ ===
+       display: inline (не inline-block!) — между inline-block и предыдущим
+       inline-словом всегда есть break opportunity (даже без whitespace),
+       и бэйдж осиротеет на новой строке. inline-element не создаёт break.
+       NBSP через ::before — создаёт визуальный gap слева от 'NEW' внутри
+       самого бэйджа, и одновременно склеивает с предыдущим словом. */
     .badge-new {
-      display: inline-block;
-      background: #EF4444;
-      color: white;
+      display: inline;
+      background: var(--accent-warn);
+      color: oklch(0.99 0 0);
       font-size: 0.52rem;
       font-weight: 700;
       padding: 0.15mm 1mm;
       border-radius: 2px;
-      margin-left: 1mm;
-      vertical-align: middle;
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      line-height: 1.35;
     }
+    /* gap слева создаётся &nbsp; в HTML перед бэйджем — он за пределами
+       красного фона и не разрывает строку (NBSP блокирует wrap). */
 
     /* === ЦВЕТА СЕКЦИЙ === */
     .s-keyboard   { background: var(--keyboard-bg); }   .s-keyboard   .section-header { background: var(--keyboard-h); }
@@ -197,9 +225,9 @@
     }
     .footer-attrib {
       display: flex; justify-content: space-between; flex-wrap: wrap;
-      gap: 0.5mm 3mm; color: #D1D5DB; line-height: 1.35;
+      gap: 0.5mm 3mm; color: var(--footer-mute); line-height: 1.35;
     }
-    .footer-attrib a { color: #93C5FD; text-decoration: none; }
+    .footer-attrib a { color: var(--accent-link); text-decoration: none; }
     .footer-attrib a:hover { text-decoration: underline; }
 
     /* === ПЕЧАТЬ === */
@@ -213,12 +241,12 @@
     .print-hint {
       max-width: 200mm; margin: 0 auto 3mm;
       padding: 1.5mm 3mm;
-      background: #FEF3C7; border: 1px solid #F59E0B;
-      border-radius: 3px; font-size: 0.75rem; color: #78350F;
+      background: oklch(0.97 0.04 85); border: 1px solid oklch(0.75 0.12 80);
+      border-radius: 3px; font-size: 0.75rem; color: oklch(0.40 0.10 70);
     }
     .print-hint kbd {
       font-family: var(--font-mono); font-size: 0.72rem;
-      background: #FFF; border: 1px solid #D97706; border-radius: 2px;
+      background: oklch(0.99 0 0); border: 1px solid oklch(0.65 0.13 70); border-radius: 2px;
       padding: 0 1mm;
     }
   </style>
@@ -275,7 +303,7 @@
           <div class="row"><span class="key">!</span><span class="desc">прямой bash</span></div>
           <div class="row"><span class="key">@</span><span class="desc">упомянуть файл (с автодополнением)</span></div>
 
-          <div class="sub-header">Session picker</div>
+          <div class="sub-header">Выбор сессии</div>
           <div class="row"><span class="key"><span class="keycap">↑</span><span class="keycap">↓</span></span><span class="desc">навигация</span></div>
           <div class="row"><span class="key"><span class="keycap">←</span><span class="keycap">→</span></span><span class="desc">развернуть/свернуть</span></div>
           <div class="row"><span class="key">P</span><span class="desc">preview сессии</span></div>
@@ -309,7 +337,7 @@
           <div class="row"><span class="key">/vim</span><span class="desc">vim-режим ввода</span></div>
           <div class="row"><span class="key">/theme</span><span class="desc">сменить цветовую тему</span></div>
           <div class="row"><span class="key">/permissions</span><span class="desc">просмотр/правка permissions</span></div>
-          <div class="row"><span class="key">/effort [level]</span><span class="desc">low/med/high/max/auto<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">/effort [level]</span><span class="desc">low/med/high/max/auto&nbsp;<span class="badge-new">NEW</span></span></div>
           <div class="row"><span class="key">/color [c]</span><span class="desc">цвет промпт-бара</span></div>
           <div class="row"><span class="key">/keybindings</span><span class="desc">переназначить хоткеи</span></div>
           <div class="row"><span class="key">/terminal-setup</span><span class="desc">настроить терминал под CC</span></div>
@@ -335,7 +363,7 @@
           <div class="row"><span class="key">/stats</span><span class="desc">статистика использования</span></div>
           <div class="row"><span class="key">/insights</span><span class="desc">анализ прошлых сессий</span></div>
           <div class="row"><span class="key">/desktop</span><span class="desc">продолжить в Desktop-приложении</span></div>
-          <div class="row"><span class="key">/remote-control</span><span class="desc">мост в claude.ai/code (alias /rc)<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">/remote-control</span><span class="desc">мост в claude.ai/code (alias /rc)&nbsp;<span class="badge-new">NEW</span></span></div>
           <div class="row"><span class="key">/usage</span><span class="desc">лимиты плана и rate-status</span></div>
           <div class="row"><span class="key">/schedule</span><span class="desc">cloud scheduled tasks</span></div>
           <div class="row"><span class="key">/security-review</span><span class="desc">security-аудит изменений</span></div>
@@ -367,7 +395,7 @@
           <div class="row"><span class="key">/mcp</span><span class="desc">интерактивный UI</span></div>
           <div class="row"><span class="key">claude mcp list</span><span class="desc">список серверов</span></div>
           <div class="row"><span class="key">claude mcp serve</span><span class="desc">CC сам как MCP-сервер</span></div>
-          <div class="row"><span class="key">Elicitation</span><span class="desc">сервер запрашивает ввод по ходу задачи<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">Elicitation</span><span class="desc">сервер запрашивает ввод по ходу задачи&nbsp;<span class="badge-new">NEW</span></span></div>
         </div>
       </div>
 
@@ -403,12 +431,12 @@
           <div class="row"><span class="key"><span class="keycap">⌥</span><span class="keycap">T</span></span><span class="desc">thinking on/off</span></div>
           <div class="row"><span class="key">"ultrathink"</span><span class="desc">max effort на ход</span></div>
           <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">O</span></span><span class="desc">показать thinking (verbose)</span></div>
-          <div class="row"><span class="key">/effort</span><span class="desc">○ low · ◐ med · ● high<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">/effort</span><span class="desc">○ low · ◐ med · ● high&nbsp;<span class="badge-new">NEW</span></span></div>
 
           <div class="sub-header">Git worktrees</div>
           <div class="row"><span class="key">--worktree name</span><span class="desc">изолированная ветка на фичу</span></div>
           <div class="row"><span class="key">isolation: worktree</span><span class="desc">агент в своём worktree</span></div>
-          <div class="row"><span class="key">sparsePaths</span><span class="desc">checkout только нужных каталогов<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">sparsePaths</span><span class="desc">checkout только нужных каталогов&nbsp;<span class="badge-new">NEW</span></span></div>
           <div class="row"><span class="key">/batch</span><span class="desc">авто-создаёт worktrees под параллелизм</span></div>
 
           <div class="sub-header">Голос</div>
@@ -460,7 +488,7 @@
           <div class="sub-header">Ключевые настройки</div>
           <div class="row"><span class="key">modelOverrides</span><span class="desc">маппинг model-picker → кастомные id</span></div>
           <div class="row"><span class="key">autoMemoryDirectory</span><span class="desc">свой каталог авто-памяти</span></div>
-          <div class="row"><span class="key">worktree.sparsePaths</span><span class="desc">список sparse-checkout dirs<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">worktree.sparsePaths</span><span class="desc">список sparse-checkout каталогов&nbsp;<span class="badge-new">NEW</span></span></div>
 
           <div class="sub-header">Ключевые env-vars</div>
           <div class="row"><span class="key">ANTHROPIC_API_KEY</span><span class="desc">API-ключ</span></div>
@@ -487,11 +515,11 @@
           <div class="row"><span class="key">.claude/skills/&lt;n&gt;/</span><span class="desc">проектные</span></div>
           <div class="row"><span class="key">~/.claude/skills/&lt;n&gt;/</span><span class="desc">личные</span></div>
 
-          <div class="sub-header">Frontmatter skill</div>
+          <div class="sub-header">Frontmatter скилла</div>
           <div class="row"><span class="key">description</span><span class="desc">триггер автозапуска</span></div>
           <div class="row"><span class="key">allowed-tools</span><span class="desc">обойти permission-промпт</span></div>
           <div class="row"><span class="key">model</span><span class="desc">переопределить модель</span></div>
-          <div class="row"><span class="key">effort</span><span class="desc">переопределить effort<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">effort</span><span class="desc">переопределить effort&nbsp;<span class="badge-new">NEW</span></span></div>
           <div class="row"><span class="key">context: fork</span><span class="desc">запустить в subagent</span></div>
           <div class="row"><span class="key">$ARGUMENTS</span><span class="desc">пользовательский ввод</span></div>
           <div class="row"><span class="key">${CLAUDE_SKILL_DIR}</span><span class="desc">каталог самого skill</span></div>
@@ -503,13 +531,13 @@
           <div class="row"><span class="key">General</span><span class="desc">все инструменты, сложные задачи</span></div>
           <div class="row"><span class="key">Bash</span><span class="desc">терминал в отдельном контексте</span></div>
 
-          <div class="sub-header">Frontmatter agent</div>
-          <div class="row"><span class="key">permissionMode</span><span class="desc">default/acceptEdits/plan/dontAsk/bypass</span></div>
+          <div class="sub-header">Frontmatter агента</div>
+          <div class="row"><span class="key">permissionMode</span><span class="desc">default<wbr>/acceptEdits<wbr>/plan<wbr>/dontAsk<wbr>/bypass</span></div>
           <div class="row"><span class="key">isolation: worktree</span><span class="desc">в своём worktree</span></div>
           <div class="row"><span class="key">memory: user|project</span><span class="desc">персистентная память</span></div>
           <div class="row"><span class="key">background: true</span><span class="desc">фоновая задача</span></div>
           <div class="row"><span class="key">maxTurns</span><span class="desc">лимит agentic-ходов</span></div>
-          <div class="row"><span class="key">SendMessage</span><span class="desc">resume агента (заменил resume)<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">SendMessage</span><span class="desc">resume агента (заменил resume)&nbsp;<span class="badge-new">NEW</span></span></div>
         </div>
       </div>
 
@@ -521,8 +549,8 @@
           <div class="row"><span class="key">claude</span><span class="desc">интерактивно</span></div>
           <div class="row"><span class="key">claude "q"</span><span class="desc">с готовым промптом</span></div>
           <div class="row"><span class="key">claude -p "q"</span><span class="desc">headless</span></div>
-          <div class="row"><span class="key">claude -c</span><span class="desc">continue last</span></div>
-          <div class="row"><span class="key">claude -r "n"</span><span class="desc">resume by name</span></div>
+          <div class="row"><span class="key">claude -c</span><span class="desc">продолжить последнюю сессию</span></div>
+          <div class="row"><span class="key">claude -r "n"</span><span class="desc">возобновить по имени</span></div>
           <div class="row"><span class="key">claude update</span><span class="desc">обновить CLI</span></div>
 
           <div class="sub-header">Ключевые флаги</div>
@@ -538,8 +566,8 @@
           <div class="row"><span class="key">--max-budget-usd</span><span class="desc">кэп по стоимости</span></div>
           <div class="row"><span class="key">--console</span><span class="desc">auth через Anthropic Console</span></div>
           <div class="row"><span class="key">--verbose</span><span class="desc">verbose-вывод</span></div>
-          <div class="row"><span class="key">--bare</span><span class="desc">minimal headless (без hooks/LSP)<span class="badge-new">NEW</span></span></div>
-          <div class="row"><span class="key">--channels</span><span class="desc">permission relay / MCP push<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">--bare</span><span class="desc">minimal headless (без hooks/LSP)&nbsp;<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">--channels</span><span class="desc">permission relay / MCP push&nbsp;<span class="badge-new">NEW</span></span></div>
           <div class="row"><span class="key">--remote</span><span class="desc">web-сессия через claude.ai</span></div>
           <div class="row"><span class="key">--effort</span><span class="desc">low/med/high/max</span></div>
           <div class="row"><span class="key">--permission-mode</span><span class="desc">plan/default/…</span></div>
