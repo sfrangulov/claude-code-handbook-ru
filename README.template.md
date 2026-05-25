@@ -175,7 +175,7 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 
 > 📚 Канонический EN-репо для всего раздела ниже: [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — 54.8k⭐, ежедневные апдейты под версии Claude Code, hot-features, Boris Cherny tips, cross-model паттерны.
 >
-> 🇷🇺 **Переводы тематических батчей советов** от Boris Cherny (создатель Claude Code) и Thariq (Anthropic): **[docs/tips-ru.md →](./docs/tips-ru.md)** — добавляются по мере перевода.
+> 🇷🇺 **Переводы тематических батчей советов** от Boris Cherny (создатель Claude Code) и Thariq (Anthropic): **[docs/tips-ru.md →](./docs/tips-ru.md)** — 8 батчей за январь–апрель 2026 в хронологическом порядке.
 
 ### Spec → Plan → Ship методологии
 
@@ -291,7 +291,7 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 
 ### В этом репо
 
-- **[docs/tips-ru.md](./docs/tips-ru.md)** — переводы тематических батчей советов от Boris Cherny (создатель Claude Code) и Thariq (Anthropic). Партии добавляются по мере перевода. Сейчас доступно: Boris 6 tips по Opus 4.7 (16 апреля 2026) + Thariq Session Management и 1M-контекст (16 апреля 2026).
+- **[docs/tips-ru.md](./docs/tips-ru.md)** — переводы тематических батчей советов от Boris Cherny (создатель Claude Code) и Thariq (Anthropic). 8 батчей с января по апрель 2026: Boris × 6 (13/10/12/2/15/6 советов) + Thariq × 2 (Skills, Session Management). Все 75 советов в хронологическом порядке, newest-first.
 
 ### Habr — практические гайды
 
