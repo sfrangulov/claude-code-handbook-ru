@@ -242,6 +242,8 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 Готовые opinionated-методологии под Claude Code: полные циклы **Research → Plan → Execute → Review → Ship**, упакованные в плагины или skill-коллекции. В отличие от skills (атомарных — одна задача) и orchestration (запуск нескольких сессий), это **полные многошаговые workflow под цикл фичи** одной сессией.
 
 > 📚 Канонический EN-репо для всего раздела ниже: [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — 54.8k⭐, ежедневные апдейты под версии Claude Code, hot-features, Boris Cherny tips, cross-model паттерны.
+>
+> 🇷🇺 **Переводы тематических батчей советов** от Boris Cherny (создатель Claude Code) и Thariq (Anthropic): **[docs/tips-ru.md →](./docs/tips-ru.md)** — добавляются по мере перевода.
 
 ### Spec → Plan → Ship методологии
 
