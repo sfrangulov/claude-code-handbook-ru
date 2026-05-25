@@ -1,0 +1,39 @@
+# Claude Code Handbook на русском
+
+> Курируемая подборка ресурсов для Claude Code (CLI-агент Anthropic): skills, sub-agents, plugins, hooks, MCP-серверы, CLAUDE.md шаблоны и русскоязычные гайды. Полный сырой каталог — 1411 записей по типам; верхний слой в README — то, что реально применяется в клиентских проектах либо массово проверено сообществом по install-count.
+
+Поддерживается @sfrangulov; ежедневные разборы релизов в Telegram-канале @cc_consultant.
+Формат файла — спецификация https://llmstxt.org.
+
+## Каталог по типам
+
+- [Skills (162 записи)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/skills.md): переиспользуемые наборы инструкций — Claude подгружает их по триггеру
+- [Sub-agents (160 записей)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/subagents.md): параллельные экземпляры Claude со своим контекстом
+- [Plugins (16 записей)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/plugins.md): упаковка скиллов / субагентов / MCP / hooks в один артефакт
+- [Hooks (8 записей)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/hooks.md): shell-команды на события сессии (формат, безопасность, нотификации)
+- [MCP-серверы (827 записей)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/mcp-servers.md): подключение внешних инструментов по Model Context Protocol
+- [Русскоязычный контент (12 записей)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/ru-content.md): Habr, vc.ru, DTF, YouTube
+- [Экосистема (216 записей)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/ecosystem.md): соседние инструменты, конкуренты, утилиты
+
+## Точки входа
+
+- [README](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md): курируемый верхний слой с разделами Skills / Sub-agents / Plugins / Hooks / MCP / Templates
+- [Quickstart за 10 минут](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#quickstart-за-10-минут): минимальный setup (claude + superpowers + 2 MCP)
+- [Топ-15 скиллов по install-count (skills.sh)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#топ-15-скиллов-skillssh): то, что 100K+ людей реально установили
+- [Топ MCP под Claude Code](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#mcp-серверы): ежедневный сетап на 5-7 серверов
+- [Шаблоны CLAUDE.md](https://github.com/sfrangulov/claude-code-handbook-ru/tree/main/examples): production-конфиги под Next.js, Python/FastAPI, Terraform
+- [Полный каталог 1411 записей](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/README.md): сырая выгрузка по всем типам без курирования
+
+## Безопасность и enterprise
+
+- [Раздел в README](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#безопасность-и-enterprise): hardening для команд, prompt-injection, secrets-scanner, аудит, MDM/SSO
+- [Hooks: сценарии безопасности](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#hooks): pre-commit на секреты, запрет force-push в main, whitelist доменов для curl
+- [Skills от Trail of Bits](https://github.com/trailofbits/skills): security-скиллы — статический анализ через CodeQL/Semgrep, аудит кода, поиск уязвимостей
+
+## Optional
+
+- [Telegram-канал @cc_consultant](https://t.me/cc_consultant): ежедневные разборы и обзоры релизов Claude Code
+- [Контакт @sfrangulov](https://t.me/sfrangulov): связь, консультации, аудит внедрения
+- [CONTRIBUTING](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/CONTRIBUTING.md): как добавить ресурс — три гейта (validate-data, lint-data, build-readme)
+- [Полный текст одним файлом](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/llms-full.txt): README + все catalog/*.md конкатенацией для подгрузки в LLM-контекст
+- [Лицензия CC0](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/LICENSE): список и тексты можно свободно использовать, копировать, адаптировать

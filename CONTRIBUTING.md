@@ -38,8 +38,8 @@
      { "name": "Название", "url": "https://..." }
      ```
    Разделитель в итоговом markdown — em-dash (`—`) с пробелами, его подставляет генератор. Осознанное отклонение от sindresorhus/awesome-lint: русская типографика важнее lint-conformance, в meta-list мы не пушим. См. [docs/research/awesome-lists-best-practices.md](./docs/research/awesome-lists-best-practices.md) §2.1.
-3. Запустите `node scripts/build-readme.mjs` — он перегенерирует `README.md` из template + data.
-4. Закоммитьте оба файла (`data/<секция>.json` и `README.md`).
+3. Запустите `node scripts/build-readme.mjs` — он перегенерирует `README.md`, соответствующий `catalog/*.md` и `llms.txt` + `llms-full.txt` (последние два — для LLM/агентов, по спецификации llmstxt.org) из template + data.
+4. Закоммитьте `data/<секция>.json` и все обновлённые сгенерённые файлы, которые изменились в diff'е.
 5. Сохраняйте алфавитный порядок внутри подсекции, где это применимо.
 6. Откройте PR с описанием: что добавили и почему это полезно.
 
@@ -48,7 +48,7 @@ CI-гейты на PR (последовательно, до первой оши�
 ```bash
 node scripts/validate-data.mjs   # форма каждой записи: name/url/desc, типы
 node scripts/lint-data.mjs       # стиль desc: no-self-name, без маркетинга
-node scripts/build-readme.mjs --check  # README.md == template + data
+node scripts/build-readme.mjs --check  # README.md + catalog/*.md + llms.txt + llms-full.txt == template + data
 ```
 
 Прогони их локально перед PR — то же самое запустит [`.github/workflows/readme-gen.yml`](./.github/workflows/readme-gen.yml). Если рассинхронизация попадёт в main мимо PR-гейта, [`readme-auto-regen.yml`](./.github/workflows/readme-auto-regen.yml) перегенерит README ботом.

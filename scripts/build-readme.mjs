@@ -242,24 +242,76 @@ async function buildOne(templatePath) {
   return output;
 }
 
+const TEMPLATE_RE = /\.template\.(md|txt)$/;
+
 async function findTemplates() {
-  // README.template.md + catalog/*.template.md
+  // *.template.{md,txt} at repo root and in catalog/.
   const out = [];
   const rootEntries = await readdir(REPO);
   for (const e of rootEntries) {
-    if (e.endsWith('.template.md')) out.push(join(REPO, e));
+    if (TEMPLATE_RE.test(e)) out.push(join(REPO, e));
   }
   try {
     const catalogEntries = await readdir(join(REPO, 'catalog'));
     for (const e of catalogEntries) {
-      if (e.endsWith('.template.md')) out.push(join(REPO, 'catalog', e));
+      if (TEMPLATE_RE.test(e)) out.push(join(REPO, 'catalog', e));
     }
   } catch {}
   return out;
 }
 
 function outputPathFor(templatePath) {
-  return templatePath.replace(/\.template\.md$/, '.md');
+  return templatePath.replace(/\.template\.(md|txt)$/, '.$1');
+}
+
+function buildLlmsFull(builtByPath) {
+  // Concatenate README.md + catalog/*.md (templates already rendered).
+  // Order: README, catalog/README, then catalog/*.md sorted.
+  const readmePath = join(REPO, 'README.md');
+  const catalogReadme = join(REPO, 'catalog', 'README.md');
+  const catalogDir = join(REPO, 'catalog') + '/';
+
+  const order = [];
+  if (builtByPath.has(readmePath)) order.push(readmePath);
+  if (builtByPath.has(catalogReadme)) order.push(catalogReadme);
+  const others = [...builtByPath.keys()]
+    .filter((p) => p.startsWith(catalogDir) && p !== catalogReadme && p.endsWith('.md'))
+    .sort();
+  for (const p of others) order.push(p);
+
+  const sep = '='.repeat(72);
+  const header = [
+    '# Claude Code Handbook на русском — full text',
+    '',
+    '> Все материалы handbook одним файлом для подгрузки в LLM-контекст.',
+    '> Источник: https://github.com/sfrangulov/claude-code-handbook-ru',
+    '> Точка правды для каждой секции — соответствующий .md в репо.',
+    '',
+  ].join('\n');
+
+  const sections = order.map((p) => {
+    const rel = relative(REPO, p);
+    return `${sep}\n# ${rel}\n${sep}\n\n${builtByPath.get(p)}`;
+  });
+
+  return `${header}\n${sections.join('\n\n')}\n`;
+}
+
+async function writeOrCheck(outPath, output, tpl, check) {
+  if (check) {
+    const existing = await readFile(outPath, 'utf8').catch(() => '');
+    if (existing !== output) {
+      const from = tpl ? `with ${relative(REPO, tpl)}` : '(generated from README + catalog/*.md)';
+      process.stderr.write(`✗ ${relative(REPO, outPath)} is out of sync ${from}\n`);
+      return 1;
+    }
+    process.stdout.write(`✓ ${relative(REPO, outPath)}\n`);
+    return 0;
+  }
+  await writeFile(outPath, output);
+  const from = tpl ? `(from ${relative(REPO, tpl)})` : '(from README + catalog/*.md)';
+  process.stdout.write(`wrote ${relative(REPO, outPath)} ${from}\n`);
+  return 0;
 }
 
 async function main() {
@@ -268,27 +320,23 @@ async function main() {
 
   const templates = await findTemplates();
   if (!templates.length) {
-    process.stderr.write('no *.template.md files found\n');
+    process.stderr.write('no *.template.{md,txt} files found\n');
     process.exit(1);
   }
 
   let stale = 0;
+  const builtByPath = new Map();
   for (const tpl of templates) {
     const output = await buildOne(tpl);
     const outPath = outputPathFor(tpl);
-    if (check) {
-      const existing = await readFile(outPath, 'utf8').catch(() => '');
-      if (existing !== output) {
-        process.stderr.write(`✗ ${relative(REPO, outPath)} is out of sync with ${relative(REPO, tpl)}\n`);
-        stale++;
-      } else {
-        process.stdout.write(`✓ ${relative(REPO, outPath)}\n`);
-      }
-    } else {
-      await writeFile(outPath, output);
-      process.stdout.write(`wrote ${relative(REPO, outPath)} (from ${relative(REPO, tpl)})\n`);
-    }
+    builtByPath.set(outPath, output);
+    stale += await writeOrCheck(outPath, output, tpl, check);
   }
+
+  // llms-full.txt: concatenation of just-built README.md + catalog/*.md.
+  const fullPath = join(REPO, 'llms-full.txt');
+  stale += await writeOrCheck(fullPath, buildLlmsFull(builtByPath), null, check);
+
   if (check && stale) {
     process.stderr.write(`\n${stale} file(s) out of sync. Run: node scripts/build-readme.mjs\n`);
     process.exit(1);
