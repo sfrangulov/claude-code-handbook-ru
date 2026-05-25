@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Code — шпаргалка (1 страница)</title>
+  <meta name="description" content="Однострочная шпаргалка по Claude Code на русском: горячие клавиши, слэш-команды, MCP, память, workflows, конфиг, skills, agents, CLI-флаги. A4 landscape, печатается в PDF.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌨️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Inter и JetBrains Mono с явной кириллической подгруппой — гарантирует
+       нормальную 'к' в headless Chrome (системный fallback ловит Greenlandic 'ĸ'). -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&subset=cyrillic&display=swap" rel="stylesheet">
+  <style>
+    /* === RESET === */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      /* Палитра секций (header background → light tint) */
+      --keyboard-h: #2563EB; --keyboard-bg: #EFF6FF;
+      --slash-h:    #7C3AED; --slash-bg:    #F5F3FF;
+      --mcp-h:      #0891B2; --mcp-bg:      #ECFEFF;
+      --memory-h:   #D97706; --memory-bg:   #FFFBEB;
+      --workflows-h:#DC2626; --workflows-bg:#FEF2F2;
+      --config-h:   #C2410C; --config-bg:   #FFF7ED;
+      --skills-h:   #059669; --skills-bg:   #ECFDF5;
+      --cli-h:      #475569; --cli-bg:      #F8FAFC;
+      --footer-bg:  #1F2937; --footer-tx:   #F9FAFB;
+
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Monaco, Consolas, monospace;
+    }
+
+    html { font-size: 11px; }
+    body {
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      line-height: 1.16;
+      color: #1F2937;
+      background: #fff;
+      padding: 5mm;
+    }
+
+    @page { size: A4 portrait; margin: 5mm; }
+
+    .page { width: 100%; max-width: 200mm; margin: 0 auto; }
+
+    /* === HEADER === */
+    .header {
+      display: flex; justify-content: space-between; align-items: flex-end;
+      margin-bottom: 2mm; padding-bottom: 1mm;
+      border-bottom: 1px solid #E5E7EB;
+    }
+    .header h1 { font-size: 1.35rem; font-weight: 700; color: #111827; letter-spacing: -0.01em; }
+    .header h1 .sub { font-weight: 400; color: #6B7280; font-size: 0.85rem; margin-left: 1mm; }
+    .header-meta { font-size: 0.72rem; color: #6B7280; text-align: right; line-height: 1.3; }
+    .header-meta .v { color: #111827; font-weight: 600; }
+    .header-meta a { color: #2563EB; text-decoration: none; }
+    .header-meta a:hover { text-decoration: underline; }
+
+    /* === MAIN GRID — CSS Grid с явной раскладкой по 3 колонкам ===
+       Manual placement: контролируем, какая секция в какой колонке. CSS
+       multi-column авто-балансировка приводила к переполнению на page 2
+       из-за wrapping длинных описаний. Раскладка ниже сбалансирована по
+       вертикальной высоте при реальной отрисовке. */
+    .main-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0 3mm;
+      align-items: start;
+    }
+    .col { display: flex; flex-direction: column; gap: 1.5mm; }
+
+    /* === SECTION ===
+       Без overflow: hidden — иначе секция станет BFC, не сможет
+       фрагментироваться через column boundary и баланс сломается.
+       box-decoration-break: clone красит фон каждому фрагменту отдельно. */
+    .section {
+      border-radius: 3px;
+      display: block;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      width: 100%;
+    }
+    .section-header {
+      padding: 0.9mm 2mm;
+      color: white;
+      font-weight: 700;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      display: flex; align-items: center; gap: 1mm;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+    .section-content {
+      padding: 1.2mm 2.2mm;
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+
+    .sub-header {
+      font-weight: 700;
+      font-style: italic;
+      font-size: 0.74rem;
+      color: #374151;
+      margin-top: 1mm;
+      margin-bottom: 0.3mm;
+      padding-bottom: 0.2mm;
+      border-bottom: 1px dotted rgba(0,0,0,0.18);
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+    .sub-header:first-child { margin-top: 0; }
+
+    /* === KEY-VALUE ROWS === */
+    .row {
+      display: flex;
+      gap: 1.2mm;
+      padding: 0.15mm 0;
+      line-height: 1.18;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .key {
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      font-weight: 600;
+      color: #111827;
+      white-space: nowrap;
+      flex-shrink: 0;
+      /* JetBrains Mono схлопывает '--' в '–' через calt — выключаем. */
+      font-feature-settings: "calt" 0, "liga" 0;
+    }
+    .desc {
+      font-size: 0.76rem;
+      color: #4B5563;
+      flex: 1;
+      min-width: 0;
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+
+    /* === KEYCAP (для клавиш) === */
+    .keycap {
+      display: inline-block;
+      background: linear-gradient(180deg, #FAFAFA 0%, #E5E7EB 100%);
+      border: 1px solid #D1D5DB;
+      border-radius: 2px;
+      padding: 0.1mm 1.1mm;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #374151;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.08), inset 0 -1px 0 rgba(0,0,0,0.05);
+      margin-right: 0.25mm;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+
+    /* === NEW БЭЙДЖ === */
+    .badge-new {
+      display: inline-block;
+      background: #EF4444;
+      color: white;
+      font-size: 0.52rem;
+      font-weight: 700;
+      padding: 0.15mm 1mm;
+      border-radius: 2px;
+      margin-left: 1mm;
+      vertical-align: middle;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      line-height: 1.35;
+    }
+
+    /* === ЦВЕТА СЕКЦИЙ === */
+    .s-keyboard   { background: var(--keyboard-bg); }   .s-keyboard   .section-header { background: var(--keyboard-h); }
+    .s-slash      { background: var(--slash-bg); }      .s-slash      .section-header { background: var(--slash-h); }
+    .s-mcp        { background: var(--mcp-bg); }        .s-mcp        .section-header { background: var(--mcp-h); }
+    .s-memory     { background: var(--memory-bg); }     .s-memory     .section-header { background: var(--memory-h); }
+    .s-workflows  { background: var(--workflows-bg); }  .s-workflows  .section-header { background: var(--workflows-h); }
+    .s-config     { background: var(--config-bg); }     .s-config     .section-header { background: var(--config-h); }
+    .s-skills     { background: var(--skills-bg); }     .s-skills     .section-header { background: var(--skills-h); }
+    .s-cli        { background: var(--cli-bg); }        .s-cli        .section-header { background: var(--cli-h); }
+
+    /* === FOOTER BAND === */
+    .footer {
+      background: var(--footer-bg);
+      color: var(--footer-tx);
+      border-radius: 3px;
+      padding: 1.2mm 2.5mm;
+      margin-top: 1.5mm;
+      font-size: 0.7rem;
+    }
+    .footer-attrib {
+      display: flex; justify-content: space-between; flex-wrap: wrap;
+      gap: 0.5mm 3mm; color: #D1D5DB; line-height: 1.35;
+    }
+    .footer-attrib a { color: #93C5FD; text-decoration: none; }
+    .footer-attrib a:hover { text-decoration: underline; }
+
+    /* === ПЕЧАТЬ === */
+    @media print {
+      body { padding: 0; background: #fff; }
+      .no-print { display: none !important; }
+      .section, .row, .sub-header { break-inside: avoid; }
+    }
+
+    /* === ЭКРАННЫЙ HINT === */
+    .print-hint {
+      max-width: 200mm; margin: 0 auto 3mm;
+      padding: 1.5mm 3mm;
+      background: #FEF3C7; border: 1px solid #F59E0B;
+      border-radius: 3px; font-size: 0.75rem; color: #78350F;
+    }
+    .print-hint kbd {
+      font-family: var(--font-mono); font-size: 0.72rem;
+      background: #FFF; border: 1px solid #D97706; border-radius: 2px;
+      padding: 0 1mm;
+    }
+  </style>
+</head>
+<body>
+  <div class="print-hint no-print">
+    📄 Печать в PDF: <kbd>⌘</kbd>+<kbd>P</kbd> (macOS) или <kbd>Ctrl</kbd>+<kbd>P</kbd> (Linux/Win) → Save as PDF, формат A4 landscape, без полей.
+  </div>
+
+  <div class="page">
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Claude Code — шпаргалка<span class="sub">CLI-агент Anthropic, всё на одну страницу</span></h1>
+      <div class="header-meta">
+        <span class="v">соответствует Claude Code 2.1.x</span><br>
+        обновлено: 2026-05-25 · <a href="https://github.com/sfrangulov/claude-code-handbook-ru">handbook-ru</a>
+      </div>
+    </div>
+
+    <!-- MAIN GRID — 3 explicit columns -->
+    <div class="main-grid">
+
+    <!-- ============ COL 1: KEYBOARD + SLASH ============ -->
+    <div class="col">
+
+      <!-- 1. KEYBOARD SHORTCUTS -->
+      <div class="section s-keyboard">
+        <div class="section-header">⌨️ Горячие клавиши</div>
+        <div class="section-content">
+          <div class="sub-header">Общее управление</div>
+          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">C</span></span><span class="desc">отменить ввод/генерацию</span></div>
+          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">D</span></span><span class="desc">выйти из сессии</span></div>
+          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">L</span></span><span class="desc">очистить экран</span></div>
+          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">O</span></span><span class="desc">verbose-вывод (вкл/выкл)</span></div>
+          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">R</span></span><span class="desc">обратный поиск по истории</span></div>
+          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">G</span></span><span class="desc">открыть промпт в редакторе</span></div>
+          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">B</span></span><span class="desc">отправить задачу в фон</span></div>
+          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">T</span></span><span class="desc">список фоновых задач</span></div>
+          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">V</span></span><span class="desc">вставить изображение</span></div>
+          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">F</span> ×2</span><span class="desc">убить фоновых агентов</span></div>
+          <div class="row"><span class="key"><span class="keycap">Esc</span><span class="keycap">Esc</span></span><span class="desc">откат последнего шага (rewind)</span></div>
+
+          <div class="sub-header">Переключение режима</div>
+          <div class="row"><span class="key"><span class="keycap">⇧</span><span class="keycap">Tab</span></span><span class="desc">цикл permission mode</span></div>
+          <div class="row"><span class="key"><span class="keycap">⌥</span><span class="keycap">P</span></span><span class="desc">сменить модель</span></div>
+          <div class="row"><span class="key"><span class="keycap">⌥</span><span class="keycap">T</span></span><span class="desc">thinking on/off</span></div>
+
+          <div class="sub-header">Ввод</div>
+          <div class="row"><span class="key">\<span class="keycap">Enter</span></span><span class="desc">новая строка (быстро)</span></div>
+          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">J</span></span><span class="desc">новая строка (control-seq)</span></div>
+
+          <div class="sub-header">Префиксы</div>
+          <div class="row"><span class="key">/</span><span class="desc">слэш-команда</span></div>
+          <div class="row"><span class="key">!</span><span class="desc">прямой bash</span></div>
+          <div class="row"><span class="key">@</span><span class="desc">упомянуть файл (с автодополнением)</span></div>
+
+          <div class="sub-header">Session picker</div>
+          <div class="row"><span class="key"><span class="keycap">↑</span><span class="keycap">↓</span></span><span class="desc">навигация</span></div>
+          <div class="row"><span class="key"><span class="keycap">←</span><span class="keycap">→</span></span><span class="desc">развернуть/свернуть</span></div>
+          <div class="row"><span class="key">P</span><span class="desc">preview сессии</span></div>
+          <div class="row"><span class="key">R</span><span class="desc">переименовать</span></div>
+          <div class="row"><span class="key">/</span><span class="desc">поиск</span></div>
+          <div class="row"><span class="key">A</span><span class="desc">все проекты</span></div>
+          <div class="row"><span class="key">B</span><span class="desc">текущая ветка</span></div>
+        </div>
+      </div>
+
+      <!-- 2. SLASH COMMANDS -->
+      <div class="section s-slash">
+        <div class="section-header">⚡ Слэш-команды</div>
+        <div class="section-content">
+          <div class="sub-header">Сессия</div>
+          <div class="row"><span class="key">/clear</span><span class="desc">сбросить разговор</span></div>
+          <div class="row"><span class="key">/compact [focus]</span><span class="desc">сжать контекст (с акцентом)</span></div>
+          <div class="row"><span class="key">/resume</span><span class="desc">возобновить сессию</span></div>
+          <div class="row"><span class="key">/rename [name]</span><span class="desc">назвать текущую сессию</span></div>
+          <div class="row"><span class="key">/branch [name]</span><span class="desc">ответвить разговор (alias /fork)</span></div>
+          <div class="row"><span class="key">/cost</span><span class="desc">расход токенов</span></div>
+          <div class="row"><span class="key">/context</span><span class="desc">визуализация контекста (grid)</span></div>
+          <div class="row"><span class="key">/diff</span><span class="desc">интерактивный diff-viewer</span></div>
+          <div class="row"><span class="key">/copy</span><span class="desc">копировать последний ответ</span></div>
+          <div class="row"><span class="key">/export</span><span class="desc">экспорт разговора</span></div>
+
+          <div class="sub-header">Конфиг</div>
+          <div class="row"><span class="key">/config</span><span class="desc">открыть settings</span></div>
+          <div class="row"><span class="key">/model [name]</span><span class="desc">сменить модель (←→ effort)</span></div>
+          <div class="row"><span class="key">/fast [on|off]</span><span class="desc">fast-mode для Opus</span></div>
+          <div class="row"><span class="key">/vim</span><span class="desc">vim-режим ввода</span></div>
+          <div class="row"><span class="key">/theme</span><span class="desc">сменить цветовую тему</span></div>
+          <div class="row"><span class="key">/permissions</span><span class="desc">просмотр/правка permissions</span></div>
+          <div class="row"><span class="key">/effort [level]</span><span class="desc">low/med/high/max/auto<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">/color [c]</span><span class="desc">цвет промпт-бара</span></div>
+          <div class="row"><span class="key">/keybindings</span><span class="desc">переназначить хоткеи</span></div>
+          <div class="row"><span class="key">/terminal-setup</span><span class="desc">настроить терминал под CC</span></div>
+
+          <div class="sub-header">Инструменты</div>
+          <div class="row"><span class="key">/init</span><span class="desc">создать CLAUDE.md</span></div>
+          <div class="row"><span class="key">/memory</span><span class="desc">редактировать CLAUDE.md-файлы</span></div>
+          <div class="row"><span class="key">/mcp</span><span class="desc">управление MCP-серверами</span></div>
+          <div class="row"><span class="key">/hooks</span><span class="desc">управление hooks</span></div>
+          <div class="row"><span class="key">/skills</span><span class="desc">список доступных skills</span></div>
+          <div class="row"><span class="key">/agents</span><span class="desc">управление субагентами</span></div>
+          <div class="row"><span class="key">/chrome</span><span class="desc">интеграция с Chrome</span></div>
+          <div class="row"><span class="key">/reload-plugins</span><span class="desc">hot-reload плагинов</span></div>
+          <div class="row"><span class="key">/add-dir &lt;path&gt;</span><span class="desc">добавить рабочий каталог</span></div>
+
+          <div class="sub-header">Специальные</div>
+          <div class="row"><span class="key">/btw &lt;q&gt;</span><span class="desc">побочный вопрос без расхода контекста</span></div>
+          <div class="row"><span class="key">/plan [desc]</span><span class="desc">plan mode (с авто-стартом)</span></div>
+          <div class="row"><span class="key">/loop [int]</span><span class="desc">регулярная задача (cron-like)</span></div>
+          <div class="row"><span class="key">/voice</span><span class="desc">push-to-talk голос (20 языков)</span></div>
+          <div class="row"><span class="key">/doctor</span><span class="desc">диагностика установки</span></div>
+          <div class="row"><span class="key">/pr-comments [PR]</span><span class="desc">подтянуть комментарии PR с GitHub</span></div>
+          <div class="row"><span class="key">/stats</span><span class="desc">статистика использования</span></div>
+          <div class="row"><span class="key">/insights</span><span class="desc">анализ прошлых сессий</span></div>
+          <div class="row"><span class="key">/desktop</span><span class="desc">продолжить в Desktop-приложении</span></div>
+          <div class="row"><span class="key">/remote-control</span><span class="desc">мост в claude.ai/code (alias /rc)<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">/usage</span><span class="desc">лимиты плана и rate-status</span></div>
+          <div class="row"><span class="key">/schedule</span><span class="desc">cloud scheduled tasks</span></div>
+          <div class="row"><span class="key">/security-review</span><span class="desc">security-аудит изменений</span></div>
+          <div class="row"><span class="key">/help</span><span class="desc">помощь и список команд</span></div>
+          <div class="row"><span class="key">/release-notes</span><span class="desc">changelog Claude Code</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ============ COL 2: MCP + MEMORY + WORKFLOWS ============ -->
+    <div class="col">
+
+      <!-- 3. MCP SERVERS -->
+      <div class="section s-mcp">
+        <div class="section-header">🔌 MCP-серверы</div>
+        <div class="section-content">
+          <div class="sub-header">Подключение</div>
+          <div class="row"><span class="key">--transport http</span><span class="desc">remote HTTP (рекомендуется)</span></div>
+          <div class="row"><span class="key">--transport stdio</span><span class="desc">локальный процесс</span></div>
+          <div class="row"><span class="key">--transport sse</span><span class="desc">remote SSE</span></div>
+
+          <div class="sub-header">Scope</div>
+          <div class="row"><span class="key">local</span><span class="desc">.claude.json (для проекта)</span></div>
+          <div class="row"><span class="key">project</span><span class="desc">.mcp.json (под VCS, шарится)</span></div>
+          <div class="row"><span class="key">user</span><span class="desc">~/.claude.json (глобально)</span></div>
+
+          <div class="sub-header">Управление</div>
+          <div class="row"><span class="key">/mcp</span><span class="desc">интерактивный UI</span></div>
+          <div class="row"><span class="key">claude mcp list</span><span class="desc">список серверов</span></div>
+          <div class="row"><span class="key">claude mcp serve</span><span class="desc">CC сам как MCP-сервер</span></div>
+          <div class="row"><span class="key">Elicitation</span><span class="desc">сервер запрашивает ввод по ходу задачи<span class="badge-new">NEW</span></span></div>
+        </div>
+      </div>
+
+      <!-- 4. MEMORY & FILES -->
+      <div class="section s-memory">
+        <div class="section-header">📁 Память и файлы</div>
+        <div class="section-content">
+          <div class="sub-header">CLAUDE.md (где живёт)</div>
+          <div class="row"><span class="key">./CLAUDE.md</span><span class="desc">проектный (под VCS, команда)</span></div>
+          <div class="row"><span class="key">~/.claude/CLAUDE.md</span><span class="desc">личный (на всех проектах)</span></div>
+          <div class="row"><span class="key">/etc/claude-code/</span><span class="desc">managed (org-wide MDM)</span></div>
+
+          <div class="sub-header">Правила и импорт</div>
+          <div class="row"><span class="key">.claude/rules/*.md</span><span class="desc">правила проекта</span></div>
+          <div class="row"><span class="key">~/.claude/rules/*.md</span><span class="desc">пользовательские правила</span></div>
+          <div class="row"><span class="key">paths: frontmatter</span><span class="desc">правила, привязанные к путям</span></div>
+          <div class="row"><span class="key">@path/to/file</span><span class="desc">импорт файла в CLAUDE.md</span></div>
+
+          <div class="sub-header">Авто-память</div>
+          <div class="row"><span class="key">~/.claude/projects/&lt;p&gt;/memory/</span><span class="desc">MEMORY.md + темы, авто-загружается</span></div>
+        </div>
+      </div>
+
+      <!-- 5. WORKFLOWS & TIPS -->
+      <div class="section s-workflows">
+        <div class="section-header">🧠 Workflows и приёмы</div>
+        <div class="section-content">
+          <div class="sub-header">Plan mode</div>
+          <div class="row"><span class="key"><span class="keycap">⇧</span><span class="keycap">Tab</span></span><span class="desc">Normal → Auto-Accept → Plan</span></div>
+          <div class="row"><span class="key">--permission-mode plan</span><span class="desc">сразу в plan</span></div>
+
+          <div class="sub-header">Thinking и effort</div>
+          <div class="row"><span class="key"><span class="keycap">⌥</span><span class="keycap">T</span></span><span class="desc">thinking on/off</span></div>
+          <div class="row"><span class="key">"ultrathink"</span><span class="desc">max effort на ход</span></div>
+          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">O</span></span><span class="desc">показать thinking (verbose)</span></div>
+          <div class="row"><span class="key">/effort</span><span class="desc">○ low · ◐ med · ● high<span class="badge-new">NEW</span></span></div>
+
+          <div class="sub-header">Git worktrees</div>
+          <div class="row"><span class="key">--worktree name</span><span class="desc">изолированная ветка на фичу</span></div>
+          <div class="row"><span class="key">isolation: worktree</span><span class="desc">агент в своём worktree</span></div>
+          <div class="row"><span class="key">sparsePaths</span><span class="desc">checkout только нужных каталогов<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">/batch</span><span class="desc">авто-создаёт worktrees под параллелизм</span></div>
+
+          <div class="sub-header">Голос</div>
+          <div class="row"><span class="key">/voice</span><span class="desc">push-to-talk on</span></div>
+          <div class="row"><span class="key"><span class="keycap">Space</span></span><span class="desc">hold — запись, release — отправка</span></div>
+          <div class="row"><span class="key">20 языков</span><span class="desc">EN, RU, ES, FR, DE, CZ, PL…</span></div>
+
+          <div class="sub-header">Контекст</div>
+          <div class="row"><span class="key">/context</span><span class="desc">расход + советы по оптимизации</span></div>
+          <div class="row"><span class="key">/compact [focus]</span><span class="desc">сжать с акцентом</span></div>
+          <div class="row"><span class="key">auto-compact</span><span class="desc">срабатывает ~95% от лимита</span></div>
+          <div class="row"><span class="key">1M context</span><span class="desc">Opus 4.6+ (Max/Team/Enterprise)</span></div>
+          <div class="row"><span class="key">CLAUDE.md</span><span class="desc">переживает compact!</span></div>
+
+          <div class="sub-header">Сессионные хитрости</div>
+          <div class="row"><span class="key">claude -c</span><span class="desc">продолжить последнюю сессию</span></div>
+          <div class="row"><span class="key">claude -r "name"</span><span class="desc">resume по имени</span></div>
+          <div class="row"><span class="key">/btw q</span><span class="desc">побочный вопрос, контекст не тратится</span></div>
+
+          <div class="sub-header">SDK / headless</div>
+          <div class="row"><span class="key">claude -p "q"</span><span class="desc">не-интерактивный запуск</span></div>
+          <div class="row"><span class="key">--output-format json</span><span class="desc">структурированный вывод</span></div>
+          <div class="row"><span class="key">--max-budget-usd 5</span><span class="desc">кэп по стоимости</span></div>
+          <div class="row"><span class="key">cat f | claude -p</span><span class="desc">pipe-вход</span></div>
+
+          <div class="sub-header">Расписание и remote</div>
+          <div class="row"><span class="key">/loop 5m msg</span><span class="desc">регулярная задача</span></div>
+          <div class="row"><span class="key">/rc</span><span class="desc">remote control</span></div>
+          <div class="row"><span class="key">--remote</span><span class="desc">сессия через claude.ai</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ============ COL 3: CONFIG + SKILLS + CLI ============ -->
+    <div class="col">
+
+      <!-- 6. CONFIG & ENV -->
+      <div class="section s-config">
+        <div class="section-header">⚙️ Конфиг и env</div>
+        <div class="section-content">
+          <div class="sub-header">Файлы настроек</div>
+          <div class="row"><span class="key">~/.claude/settings.json</span><span class="desc">пользовательские</span></div>
+          <div class="row"><span class="key">.claude/settings.json</span><span class="desc">проект (под VCS)</span></div>
+          <div class="row"><span class="key">.claude/settings.local.json</span><span class="desc">локально, не в VCS</span></div>
+          <div class="row"><span class="key">~/.claude.json</span><span class="desc">OAuth, MCP, state</span></div>
+          <div class="row"><span class="key">.mcp.json</span><span class="desc">MCP-серверы проекта</span></div>
+
+          <div class="sub-header">Ключевые настройки</div>
+          <div class="row"><span class="key">modelOverrides</span><span class="desc">маппинг model-picker → кастомные id</span></div>
+          <div class="row"><span class="key">autoMemoryDirectory</span><span class="desc">свой каталог авто-памяти</span></div>
+          <div class="row"><span class="key">worktree.sparsePaths</span><span class="desc">список sparse-checkout dirs<span class="badge-new">NEW</span></span></div>
+
+          <div class="sub-header">Ключевые env-vars</div>
+          <div class="row"><span class="key">ANTHROPIC_API_KEY</span><span class="desc">API-ключ</span></div>
+          <div class="row"><span class="key">ANTHROPIC_MODEL</span><span class="desc">модель по умолчанию</span></div>
+          <div class="row"><span class="key">CLAUDE_CODE_EFFORT_LEVEL</span><span class="desc">low/med/high</span></div>
+          <div class="row"><span class="key">MAX_THINKING_TOKENS</span><span class="desc">0 = выкл</span></div>
+          <div class="row"><span class="key">CLAUDECODE</span><span class="desc">=1, для детекта CC из shell</span></div>
+          <div class="row"><span class="key">IS_DEMO</span><span class="desc">demo-режим (прячет email/org)</span></div>
+        </div>
+      </div>
+
+      <!-- 7. SKILLS & AGENTS -->
+      <div class="section s-skills">
+        <div class="section-header">🔧 Skills и agents</div>
+        <div class="section-content">
+          <div class="sub-header">Встроенные skills</div>
+          <div class="row"><span class="key">/simplify</span><span class="desc">code-review (3 параллельных агента)</span></div>
+          <div class="row"><span class="key">/batch</span><span class="desc">массовые правки (5-30 worktrees)</span></div>
+          <div class="row"><span class="key">/debug [desc]</span><span class="desc">отладка по debug-логу</span></div>
+          <div class="row"><span class="key">/loop [int]</span><span class="desc">регулярная задача</span></div>
+          <div class="row"><span class="key">/claude-api</span><span class="desc">загрузить API + SDK reference</span></div>
+
+          <div class="sub-header">Где лежат свои skills</div>
+          <div class="row"><span class="key">.claude/skills/&lt;n&gt;/</span><span class="desc">проектные</span></div>
+          <div class="row"><span class="key">~/.claude/skills/&lt;n&gt;/</span><span class="desc">личные</span></div>
+
+          <div class="sub-header">Frontmatter skill</div>
+          <div class="row"><span class="key">description</span><span class="desc">триггер автозапуска</span></div>
+          <div class="row"><span class="key">allowed-tools</span><span class="desc">обойти permission-промпт</span></div>
+          <div class="row"><span class="key">model</span><span class="desc">переопределить модель</span></div>
+          <div class="row"><span class="key">effort</span><span class="desc">переопределить effort<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">context: fork</span><span class="desc">запустить в subagent</span></div>
+          <div class="row"><span class="key">$ARGUMENTS</span><span class="desc">пользовательский ввод</span></div>
+          <div class="row"><span class="key">${CLAUDE_SKILL_DIR}</span><span class="desc">каталог самого skill</span></div>
+          <div class="row"><span class="key">!`cmd`</span><span class="desc">динамическая инъекция в контекст</span></div>
+
+          <div class="sub-header">Встроенные agents</div>
+          <div class="row"><span class="key">Explore</span><span class="desc">быстрый read-only (Haiku)</span></div>
+          <div class="row"><span class="key">Plan</span><span class="desc">research для plan mode</span></div>
+          <div class="row"><span class="key">General</span><span class="desc">все инструменты, сложные задачи</span></div>
+          <div class="row"><span class="key">Bash</span><span class="desc">терминал в отдельном контексте</span></div>
+
+          <div class="sub-header">Frontmatter agent</div>
+          <div class="row"><span class="key">permissionMode</span><span class="desc">default/acceptEdits/plan/dontAsk/bypass</span></div>
+          <div class="row"><span class="key">isolation: worktree</span><span class="desc">в своём worktree</span></div>
+          <div class="row"><span class="key">memory: user|project</span><span class="desc">персистентная память</span></div>
+          <div class="row"><span class="key">background: true</span><span class="desc">фоновая задача</span></div>
+          <div class="row"><span class="key">maxTurns</span><span class="desc">лимит agentic-ходов</span></div>
+          <div class="row"><span class="key">SendMessage</span><span class="desc">resume агента (заменил resume)<span class="badge-new">NEW</span></span></div>
+        </div>
+      </div>
+
+      <!-- 8. CLI & FLAGS -->
+      <div class="section s-cli">
+        <div class="section-header">🖥 CLI и флаги</div>
+        <div class="section-content">
+          <div class="sub-header">Команды</div>
+          <div class="row"><span class="key">claude</span><span class="desc">интерактивно</span></div>
+          <div class="row"><span class="key">claude "q"</span><span class="desc">с готовым промптом</span></div>
+          <div class="row"><span class="key">claude -p "q"</span><span class="desc">headless</span></div>
+          <div class="row"><span class="key">claude -c</span><span class="desc">continue last</span></div>
+          <div class="row"><span class="key">claude -r "n"</span><span class="desc">resume by name</span></div>
+          <div class="row"><span class="key">claude update</span><span class="desc">обновить CLI</span></div>
+
+          <div class="sub-header">Ключевые флаги</div>
+          <div class="row"><span class="key">--model</span><span class="desc">задать модель</span></div>
+          <div class="row"><span class="key">-w</span><span class="desc">git worktree</span></div>
+          <div class="row"><span class="key">-n / --name</span><span class="desc">имя сессии</span></div>
+          <div class="row"><span class="key">--add-dir</span><span class="desc">добавить каталог</span></div>
+          <div class="row"><span class="key">--agent</span><span class="desc">запустить агента</span></div>
+          <div class="row"><span class="key">--allowedTools</span><span class="desc">пред-одобрить tools</span></div>
+          <div class="row"><span class="key">--output-format</span><span class="desc">json / stream</span></div>
+          <div class="row"><span class="key">--json-schema</span><span class="desc">структурированный вывод</span></div>
+          <div class="row"><span class="key">--max-turns</span><span class="desc">лимит agentic-ходов</span></div>
+          <div class="row"><span class="key">--max-budget-usd</span><span class="desc">кэп по стоимости</span></div>
+          <div class="row"><span class="key">--console</span><span class="desc">auth через Anthropic Console</span></div>
+          <div class="row"><span class="key">--verbose</span><span class="desc">verbose-вывод</span></div>
+          <div class="row"><span class="key">--bare</span><span class="desc">minimal headless (без hooks/LSP)<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">--channels</span><span class="desc">permission relay / MCP push<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">--remote</span><span class="desc">web-сессия через claude.ai</span></div>
+          <div class="row"><span class="key">--effort</span><span class="desc">low/med/high/max</span></div>
+          <div class="row"><span class="key">--permission-mode</span><span class="desc">plan/default/…</span></div>
+          <div class="row"><span class="key">--dangerously-skip-permissions</span><span class="desc">пропустить все промпты ⚠️</span></div>
+          <div class="row"><span class="key">--chrome</span><span class="desc">интеграция Chrome</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+
+    <!-- FOOTER (один tonky band с attribution; permission modes и env-vars
+         уже перечислены в секциях Slash/Config — дублировать нет смысла). -->
+    <footer class="footer">
+      <div class="footer-attrib">
+        <span>
+          Структура и идея — <a href="https://cc.storyfox.cz/">cc.storyfox.cz</a> (Martin Baláž, <a href="https://x.com/phasE89">@phasE89</a>).
+          Вёрстка и текст — handbook-ru, <a href="https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/LICENSE">CC0</a>.
+        </span>
+        <span>
+          <a href="https://github.com/sfrangulov/claude-code-handbook-ru">github.com/sfrangulov/claude-code-handbook-ru</a> · <a href="https://t.me/cc_consultant">@cc_consultant</a>
+        </span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

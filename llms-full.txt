@@ -68,10 +68,11 @@ claude mcp add postgres    # @modelcontextprotocol/server-postgres (read-only п
 
 **Куда смотреть в первую очередь:**
 
-1. [Топ-15 скиллов по install-count](#топ-15-скиллов-skillssh) — то, что 100K+ людей реально установили.
-2. [Hooks](#hooks) — поставь хотя бы `pre-commit-secrets` сразу: спасает от утечки API-ключей через git-коммит, который агент может сделать за 30 секунд.
-3. [Шаблоны CLAUDE.md](#claudemd-шаблоны) — три production-шаблона: Next.js, Python/FastAPI, Terraform.
-4. [Гайды на русском](#гайды-и-контент-на-русском) — 18 статей с Habr + 11 YouTube-курсов + DTF.
+1. [Шпаргалка на одну страницу](./cheatsheet/) — печатный PDF под рукой: горячие клавиши, слэш-команды, MCP, память, workflows, CLI-флаги. A4 portrait, 3 колонки. Скачать готовый [cheatsheet.pdf](./cheatsheet/cheatsheet.pdf) или открыть [index.html](./cheatsheet/index.html) и `⌘P`.
+2. [Топ-15 скиллов по install-count](#топ-15-скиллов-skillssh) — то, что 100K+ людей реально установили.
+3. [Hooks](#hooks) — поставь хотя бы `pre-commit-secrets` сразу: спасает от утечки API-ключей через git-коммит, который агент может сделать за 30 секунд.
+4. [Шаблоны CLAUDE.md](#claudemd-шаблоны) — три production-шаблона: Next.js, Python/FastAPI, Terraform.
+5. [Гайды на русском](#гайды-и-контент-на-русском) — 18 статей с Habr + 11 YouTube-курсов + DTF.
 
 ---
 
