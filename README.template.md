@@ -289,6 +289,10 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 
 > 📂 Полный список: **[<!-- @sum-count-ru:catalog/ru-content --> →](./catalog/ru-content.md)**
 
+### В этом репо
+
+- **[docs/tips-ru.md](./docs/tips-ru.md)** — переводы тематических батчей советов от Boris Cherny (создатель Claude Code) и Thariq (Anthropic). Партии добавляются по мере перевода. Сейчас доступно: Boris 6 tips по Opus 4.7 (16 апреля 2026) + Thariq Session Management и 1M-контекст (16 апреля 2026).
+
 ### Habr — практические гайды
 
 <!-- @list:ru-content.habr -->
