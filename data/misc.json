@@ -44,7 +44,23 @@
     { "name": "Anthropic Workbench", "url": "https://console.anthropic.com/workbench", "desc": "UI для экспериментов с промптами." },
     { "name": "Anthropic Status", "url": "https://status.anthropic.com/", "desc": "Статус сервисов." },
     { "name": "Claude release notes", "url": "https://docs.claude.com/en/release-notes/claude-code", "desc": "Официальный changelog." },
-    { "name": "Skills.sh", "url": "https://skills.sh/", "desc": "Маркетплейс скиллов с количеством установок." }
+    { "name": "Skills.sh", "url": "https://skills.sh/", "desc": "Маркетплейс скиллов с количеством установок." },
+    { "name": "shanraisshan/claude-code-best-practice", "url": "https://github.com/shanraisshan/claude-code-best-practice", "desc": "EN-канон best practices с ежедневными апдейтами под версии Claude Code. Покрывает все hot-features, Boris Cherny tips, cross-model паттерны." }
+  ],
+  "workflowMethodologies": [
+    { "name": "github/spec-kit", "url": "https://github.com/github/spec-kit", "desc": "Spec-Driven Development от GitHub. 106k⭐. /speckit.specify → clarify → plan → tasks → analyze → implement." },
+    { "name": "affaan-m/everything-claude-code", "url": "https://github.com/affaan-m/everything-claude-code", "desc": "Крупнейшая коллекция: 48 агентов + 143 команды + 230 скиллов. 192k⭐, harness-performance optimization под Claude." },
+    { "name": "garrytan/gstack", "url": "https://github.com/garrytan/gstack", "desc": "Сетап Garry Tan (Y Combinator): 23 инструмента в ролях CEO, Designer, Eng Manager, Release Manager, QA. 102k⭐." },
+    { "name": "gsd-build/get-shit-done", "url": "https://github.com/gsd-build/get-shit-done", "desc": "Meta-prompting и context-engineering от TÂCHES. Пять фаз: discuss → plan → execute → verify → ship." },
+    { "name": "Fission-AI/OpenSpec", "url": "https://github.com/Fission-AI/OpenSpec", "desc": "Spec-driven development под AI coding assistants. /opsx:propose → apply → archive." },
+    { "name": "bmad-code-org/BMAD-METHOD", "url": "https://github.com/bmad-code-org/BMAD-METHOD", "desc": "Breakthrough Method for Agile AI-Driven Development. Product brief → PRD → architecture → epics → sprint planning → dev → review." },
+    { "name": "EveryInc/compound-engineering-plugin", "url": "https://github.com/EveryInc/compound-engineering-plugin", "desc": "Официальный Compound Engineering plugin от Every Inc. /ce-ideate → brainstorm → plan → work → review → debug → optimize." }
+  ],
+  "crossModel": [
+    { "name": "musistudio/claude-code-router", "url": "https://github.com/musistudio/claude-code-router", "desc": "Router: подменяет API-endpoint Claude на OpenRouter, DeepSeek, Ollama, Gemini, Kimi, Qwen, Groq. Per-task model selection." },
+    { "name": "router-for-me/CLIProxyAPI", "url": "https://github.com/router-for-me/CLIProxyAPI", "desc": "Обёртка для Gemini CLI, Codex, Claude Code, Antigravity как OpenAI/Gemini/Claude/Codex-совместимого API." },
+    { "name": "openai/codex-plugin-cc", "url": "https://github.com/openai/codex-plugin-cc", "desc": "Официальный OpenAI-plugin: /codex:review, /codex:adversarial-review, /codex:rescue внутри Claude Code. Codex/GPT-5 как QA-партнёр." },
+    { "name": "BeehiveInnovations/pal-mcp-server", "url": "https://github.com/BeehiveInnovations/pal-mcp-server", "desc": "Multi-model MCP-сервер (бывш. zen-mcp): Gemini, OpenAI, Azure, Grok, Ollama, OpenRouter как Claude tools. 50+ моделей." }
   ],
   "orchestrationBackground": [
     { "name": "steveyegge/gastown", "url": "https://github.com/steveyegge/gastown", "desc": "Multi-agent workspace manager от Steve Yegge. Персистентный трекинг работы, true background, рассчитан на сложные multi-agent сценарии." },

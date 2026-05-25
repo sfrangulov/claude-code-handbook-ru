@@ -22,6 +22,7 @@ CI gate: node scripts/build-readme.mjs --check
 - [Skills](#skills) — переиспользуемые наборы инструкций
 - [Sub-agents](#sub-agents) — параллельные агенты со своим контекстом
 - [Оркестрация](#оркестрация-и-параллельные-агенты) — внешние тулы для нескольких Claude разом
+- [Workflow-методологии](#workflow-методологии) — opinionated циклы spec → plan → ship
 - [Plugins](#plugins) — упаковка скиллов / субагентов / MCP / hooks в один артефакт
 - [Hooks](#hooks) — shell-команды, привязанные к событиям сессии
 - [MCP-серверы](#mcp-серверы) — подключение внешних инструментов через Model Context Protocol
@@ -165,6 +166,28 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 <!-- @list:misc.orchestrationLoop -->
 
 **Канонический источник** — [andyrewlee/awesome-agent-orchestrators](https://github.com/andyrewlee/awesome-agent-orchestrators) с 4 категориями и сотней тулов. Наш отбор: ≥3k⭐ + явная поддержка Claude Code (исключение — bernstein: 0.5k⭐, но уникальная audit-grade ниша).
+
+---
+
+## Workflow-методологии
+
+Готовые opinionated-методологии под Claude Code: полные циклы **Research → Plan → Execute → Review → Ship**, упакованные в плагины или skill-коллекции. В отличие от skills (атомарных — одна задача) и orchestration (запуск нескольких сессий), это **полные многошаговые workflow под цикл фичи** одной сессией.
+
+> 📚 Канонический EN-репо для всего раздела ниже: [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — 54.8k⭐, ежедневные апдейты под версии Claude Code, hot-features, Boris Cherny tips, cross-model паттерны.
+
+### Spec → Plan → Ship методологии
+
+<!-- @list:misc.workflowMethodologies -->
+
+### Cross-model: связка Claude с Codex / Gemini / GPT
+
+Три механизма интеграции Claude Code с другими моделями (Codex, Gemini, GPT, Kimi, DeepSeek, локальные):
+
+- **Plugin** — CLI другой модели запускается внутри Claude Code как слэш-команда (`/codex:review`).
+- **MCP** — Claude Code вызывает другую модель как tool через Model Context Protocol.
+- **Router** — API-endpoint Claude подменяется на любого OpenAI-совместимого провайдера.
+
+<!-- @list:misc.crossModel -->
 
 ---
 

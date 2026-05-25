@@ -23,6 +23,7 @@
 - [Топ-15 скиллов по install-count (skills.sh)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#топ-15-скиллов-skillssh): то, что 100K+ людей реально установили
 - [Топ MCP под Claude Code](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#mcp-серверы): ежедневный сетап на 5-7 серверов
 - [Оркестрация и параллельные агенты](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#оркестрация-и-параллельные-агенты): внешние тулы для нескольких Claude разом — background runners, parallel GUI/kanban, autonomous loops
+- [Workflow-методологии](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#workflow-методологии): opinionated циклы spec → plan → ship (Spec Kit, BMAD, gstack, OpenSpec, GSD, Compound Engineering) + cross-model связка Claude с Codex/Gemini/GPT
 - [Шаблоны CLAUDE.md](https://github.com/sfrangulov/claude-code-handbook-ru/tree/main/examples): production-конфиги под Next.js, Python/FastAPI, Terraform
 - [Полный каталог 1411 записей](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/README.md): сырая выгрузка по всем типам без курирования
 

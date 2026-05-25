@@ -32,6 +32,7 @@ CI gate: node scripts/build-readme.mjs --check
 - [Skills](#skills) — переиспользуемые наборы инструкций
 - [Sub-agents](#sub-agents) — параллельные агенты со своим контекстом
 - [Оркестрация](#оркестрация-и-параллельные-агенты) — внешние тулы для нескольких Claude разом
+- [Workflow-методологии](#workflow-методологии) — opinionated циклы spec → plan → ship
 - [Plugins](#plugins) — упаковка скиллов / субагентов / MCP / hooks в один артефакт
 - [Hooks](#hooks) — shell-команды, привязанные к событиям сессии
 - [MCP-серверы](#mcp-серверы) — подключение внешних инструментов через Model Context Protocol
@@ -243,6 +244,37 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 - [humanlayer/humanlayer](https://github.com/humanlayer/humanlayer) — Фреймворк для сложных задач в больших кодовых базах: human-in-loop approval-чекпоинты на критичных шагах.
 
 **Канонический источник** — [andyrewlee/awesome-agent-orchestrators](https://github.com/andyrewlee/awesome-agent-orchestrators) с 4 категориями и сотней тулов. Наш отбор: ≥3k⭐ + явная поддержка Claude Code (исключение — bernstein: 0.5k⭐, но уникальная audit-grade ниша).
+
+---
+
+## Workflow-методологии
+
+Готовые opinionated-методологии под Claude Code: полные циклы **Research → Plan → Execute → Review → Ship**, упакованные в плагины или skill-коллекции. В отличие от skills (атомарных — одна задача) и orchestration (запуск нескольких сессий), это **полные многошаговые workflow под цикл фичи** одной сессией.
+
+> 📚 Канонический EN-репо для всего раздела ниже: [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — 54.8k⭐, ежедневные апдейты под версии Claude Code, hot-features, Boris Cherny tips, cross-model паттерны.
+
+### Spec → Plan → Ship методологии
+
+- [github/spec-kit](https://github.com/github/spec-kit) — Spec-Driven Development от GitHub. 106k⭐. /speckit.specify → clarify → plan → tasks → analyze → implement.
+- [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) — Крупнейшая коллекция: 48 агентов + 143 команды + 230 скиллов. 192k⭐, harness-performance optimization под Claude.
+- [garrytan/gstack](https://github.com/garrytan/gstack) — Сетап Garry Tan (Y Combinator): 23 инструмента в ролях CEO, Designer, Eng Manager, Release Manager, QA. 102k⭐.
+- [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) — Meta-prompting и context-engineering от TÂCHES. Пять фаз: discuss → plan → execute → verify → ship.
+- [Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) — Spec-driven development под AI coding assistants. /opsx:propose → apply → archive.
+- [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) — Breakthrough Method for Agile AI-Driven Development. Product brief → PRD → architecture → epics → sprint planning → dev → review.
+- [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) — Официальный Compound Engineering plugin от Every Inc. /ce-ideate → brainstorm → plan → work → review → debug → optimize.
+
+### Cross-model: связка Claude с Codex / Gemini / GPT
+
+Три механизма интеграции Claude Code с другими моделями (Codex, Gemini, GPT, Kimi, DeepSeek, локальные):
+
+- **Plugin** — CLI другой модели запускается внутри Claude Code как слэш-команда (`/codex:review`).
+- **MCP** — Claude Code вызывает другую модель как tool через Model Context Protocol.
+- **Router** — API-endpoint Claude подменяется на любого OpenAI-совместимого провайдера.
+
+- [musistudio/claude-code-router](https://github.com/musistudio/claude-code-router) — Router: подменяет API-endpoint Claude на OpenRouter, DeepSeek, Ollama, Gemini, Kimi, Qwen, Groq. Per-task model selection.
+- [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) — Обёртка для Gemini CLI, Codex, Claude Code, Antigravity как OpenAI/Gemini/Claude/Codex-совместимого API.
+- [openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc) — Официальный OpenAI-plugin: /codex:review, /codex:adversarial-review, /codex:rescue внутри Claude Code. Codex/GPT-5 как QA-партнёр.
+- [BeehiveInnovations/pal-mcp-server](https://github.com/BeehiveInnovations/pal-mcp-server) — Multi-model MCP-сервер (бывш. zen-mcp): Gemini, OpenAI, Azure, Grok, Ollama, OpenRouter как Claude tools. 50+ моделей.
 
 ---
 
@@ -510,6 +542,7 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 - [Anthropic Status](https://status.anthropic.com/) — Статус сервисов.
 - [Claude release notes](https://docs.claude.com/en/release-notes/claude-code) — Официальный changelog.
 - [Skills.sh](https://skills.sh/) — Маркетплейс скиллов с количеством установок.
+- [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — EN-канон best practices с ежедневными апдейтами под версии Claude Code. Покрывает все hot-features, Boris Cherny tips, cross-model паттерны.
 
 ---
 
