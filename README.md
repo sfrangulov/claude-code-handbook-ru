@@ -21,6 +21,7 @@ CI gate: node scripts/build-readme.mjs --check
 - [Quickstart](#quickstart-за-10-минут)
 - [Skills](#skills) — переиспользуемые наборы инструкций
 - [Sub-agents](#sub-agents) — параллельные агенты со своим контекстом
+- [Оркестрация](#оркестрация-и-параллельные-агенты) — внешние тулы для нескольких Claude разом
 - [Plugins](#plugins) — упаковка скиллов / субагентов / MCP / hooks в один артефакт
 - [Hooks](#hooks) — shell-команды, привязанные к событиям сессии
 - [MCP-серверы](#mcp-серверы) — подключение внешних инструментов через Model Context Protocol
@@ -180,6 +181,58 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 | [💼 Business & product (12)](https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/08-business-product) | PM, scrum-master, technical-writer, UX-researcher, sales-engineer | Не-кодовые задачи: PRD, roadmap, работа с клиентами |
 | [🎭 Meta & orchestration (11)](https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/09-meta-orchestration) | agent-organizer, context-manager, multi-agent-coordinator, workflow-orchestrator | Координация нескольких субагентов параллельно |
 | [🔬 Research & analysis (8)](https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/10-research-analysis) | competitive-analyst, market-researcher, search-specialist, trend-analyst | Discovery-фаза продукта или анализ конкурентов |
+
+---
+
+## Оркестрация и параллельные агенты
+
+Когда одного Claude мало: внешние тулы для запуска нескольких агентов параллельно, autonomous-циклов «запустил-и-ушёл» и kanban/GUI поверх Claude Code. Sub-agents (выше) — встроенная фича Claude в рамках одной сессии. Этот раздел — про **внешние оркестраторы**, которые запускают несколько независимых сессий Claude (или Claude + Codex + Gemini) и координируют их через worktrees, kanban или audit-log.
+
+Три семьи паттернов:
+
+- **Background runners** — настоящие фоновые процессы. Агент работает без терминала, тесты-гейты, авто-коммиты. Под «забыл и ушёл».
+- **Parallel GUI / kanban** — desktop или TUI-доска с множеством параллельных сессий в git worktrees. Под визуальный контроль и сравнение подходов.
+- **Autonomous loops (Ralph-pattern)** — цикл «работай пока не готово» с intelligent exit detection. Под однотипные многошаговые задачи.
+
+> **Правило практика:** одного оркестратора достаточно. Не комбинируй — все три семьи конфликтуют за worktrees, лимиты API и runtime. Выбери по таблице ниже.
+
+### Сравнение под соло-разработчика
+
+Звёзды и категории — на 2026-05-25, GitHub API. Сложность — субъективная оценка времени до первого полезного запуска.
+
+| Тулза | ⭐ | «Забыл и ушёл» | Сложность | Под кого |
+|---|---:|---|---|---|
+| [steveyegge/gastown](https://github.com/steveyegge/gastown) | 15.6k | ✅ настоящий | Высокая | Overkill для одиночки, под сложные multi-agent сценарии |
+| [chernistry/bernstein](https://github.com/chernistry/bernstein) | 0.5k | ✅ настоящий | Средняя | Соло-разработчик с требованием audit-grade лога |
+| [ruvnet/claude-flow](https://github.com/ruvnet/claude-flow) | 55k | ✅ swarm | Высокая | Команды и enterprise, не для одиночки |
+| [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) | 26.5k | ❌ полу-ручное | Низкая | Простая параллельность через kanban-доску |
+| [smtg-ai/claude-squad](https://github.com/smtg-ai/claude-squad) | 7.6k | ❌ ручное | Низкая | Несколько Claude-сессий в TUI |
+| [stravu/crystal (Nimbalyst)](https://github.com/stravu/crystal) | 3.1k | ❌ полу-ручное | Низкая | Desktop GUI для сравнения подходов |
+| [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | 19.4k | ❌ ручное | Низкая | macOS-юзеру с табами и push-нотификациями |
+| [generalaction/emdash](https://github.com/generalaction/emdash) | 4.6k | ❌ полу-ручное | Низкая | Open-source альтернатива vibe-kanban |
+| [frankbria/ralph-claude-code](https://github.com/frankbria/ralph-claude-code) | 9.2k | ⚠️ примитивный | Низкая | Эксперименты с Ralph-loop |
+| [humanlayer/humanlayer](https://github.com/humanlayer/humanlayer) | 10.9k | ⚠️ approval-gated | Средняя | Сложные кодовые базы с обязательными человеческими чекпоинтами |
+
+### Background runners — «забыл и ушёл»
+
+- [steveyegge/gastown](https://github.com/steveyegge/gastown) — Multi-agent workspace manager от Steve Yegge. Персистентный трекинг работы, true background, рассчитан на сложные multi-agent сценарии.
+- [chernistry/bernstein](https://github.com/chernistry/bernstein) — Детерминистский оркестратор с HMAC-chained audit-log. Spawn'ит параллельные агенты, верифицирует тестами, авто-коммитит. Zero LLM tokens на координацию.
+- [ruvnet/claude-flow](https://github.com/ruvnet/claude-flow) — Multi-agent swarm-платформа с RAG, self-learning intelligence, native Claude Code integration. 55k⭐ — фактический индустриальный стандарт под swarms.
+
+### Parallel GUI / kanban
+
+- [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) — Kanban-доска для управления параллельными coding agents. 26.5k⭐, самый популярный GUI под Claude Code и Codex.
+- [smtg-ai/claude-squad](https://github.com/smtg-ai/claude-squad) — TUI-менеджер параллельных терминальных Claude/Codex/Amp/OpenCode-сессий. Каждая в своём worktree.
+- [stravu/crystal (теперь Nimbalyst)](https://github.com/stravu/crystal) — Desktop-приложение для параллельных Claude и Codex сессий в worktrees. Diff-viewer, сравнение подходов в одном окне.
+- [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) — Ghostty-based macOS-терминал с вертикальными табами и push-нотификациями для coding agents.
+- [generalaction/emdash](https://github.com/generalaction/emdash) — Open-source agentic IDE (YC W26) для параллельных coding agents любого провайдера.
+
+### Autonomous loops и approval-gated
+
+- [frankbria/ralph-claude-code](https://github.com/frankbria/ralph-claude-code) — Autonomous-цикл «работай пока не готово» с intelligent exit detection. Канонический Ralph-pattern (Geoffrey Huntley) под Claude Code.
+- [humanlayer/humanlayer](https://github.com/humanlayer/humanlayer) — Фреймворк для сложных задач в больших кодовых базах: human-in-loop approval-чекпоинты на критичных шагах.
+
+**Канонический источник** — [andyrewlee/awesome-agent-orchestrators](https://github.com/andyrewlee/awesome-agent-orchestrators) с 4 категориями и сотней тулов. Наш отбор: ≥3k⭐ + явная поддержка Claude Code (исключение — bernstein: 0.5k⭐, но уникальная audit-grade ниша).
 
 ---
 

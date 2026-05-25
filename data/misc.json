@@ -45,5 +45,21 @@
     { "name": "Anthropic Status", "url": "https://status.anthropic.com/", "desc": "Статус сервисов." },
     { "name": "Claude release notes", "url": "https://docs.claude.com/en/release-notes/claude-code", "desc": "Официальный changelog." },
     { "name": "Skills.sh", "url": "https://skills.sh/", "desc": "Маркетплейс скиллов с количеством установок." }
+  ],
+  "orchestrationBackground": [
+    { "name": "steveyegge/gastown", "url": "https://github.com/steveyegge/gastown", "desc": "Multi-agent workspace manager от Steve Yegge. Персистентный трекинг работы, true background, рассчитан на сложные multi-agent сценарии." },
+    { "name": "chernistry/bernstein", "url": "https://github.com/chernistry/bernstein", "desc": "Детерминистский оркестратор с HMAC-chained audit-log. Spawn'ит параллельные агенты, верифицирует тестами, авто-коммитит. Zero LLM tokens на координацию." },
+    { "name": "ruvnet/claude-flow", "url": "https://github.com/ruvnet/claude-flow", "desc": "Multi-agent swarm-платформа с RAG, self-learning intelligence, native Claude Code integration. 55k⭐ — фактический индустриальный стандарт под swarms." }
+  ],
+  "orchestrationGui": [
+    { "name": "BloopAI/vibe-kanban", "url": "https://github.com/BloopAI/vibe-kanban", "desc": "Kanban-доска для управления параллельными coding agents. 26.5k⭐, самый популярный GUI под Claude Code и Codex." },
+    { "name": "smtg-ai/claude-squad", "url": "https://github.com/smtg-ai/claude-squad", "desc": "TUI-менеджер параллельных терминальных Claude/Codex/Amp/OpenCode-сессий. Каждая в своём worktree." },
+    { "name": "stravu/crystal (теперь Nimbalyst)", "url": "https://github.com/stravu/crystal", "desc": "Desktop-приложение для параллельных Claude и Codex сессий в worktrees. Diff-viewer, сравнение подходов в одном окне." },
+    { "name": "manaflow-ai/cmux", "url": "https://github.com/manaflow-ai/cmux", "desc": "Ghostty-based macOS-терминал с вертикальными табами и push-нотификациями для coding agents." },
+    { "name": "generalaction/emdash", "url": "https://github.com/generalaction/emdash", "desc": "Open-source agentic IDE (YC W26) для параллельных coding agents любого провайдера." }
+  ],
+  "orchestrationLoop": [
+    { "name": "frankbria/ralph-claude-code", "url": "https://github.com/frankbria/ralph-claude-code", "desc": "Autonomous-цикл «работай пока не готово» с intelligent exit detection. Канонический Ralph-pattern (Geoffrey Huntley) под Claude Code." },
+    { "name": "humanlayer/humanlayer", "url": "https://github.com/humanlayer/humanlayer", "desc": "Фреймворк для сложных задач в больших кодовых базах: human-in-loop approval-чекпоинты на критичных шагах." }
   ]
 }

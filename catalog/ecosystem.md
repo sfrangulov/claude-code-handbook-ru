@@ -218,7 +218,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [n8n-nodes-claudecode](https://github.com/holt-web-ai/n8n-nodes-claudecode)
 - [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)
 - [optimaquantum/claude-critical-rules-mcp](https://github.com/optimaquantum/claude-critical-rules-mcp)
-- [ralph-claude-code](https://github.com/DmitrySolana/ralph-claude-code)
+- [ralph-claude-code](https://github.com/frankbria/ralph-claude-code)
 - [run-claude-docker](https://github.com/icanhasjonas/run-claude-docker)
 - [Settings > Capabilities](https://claude.ai/settings/capabilities)
 - [spec-based-claude-code](https://github.com/papaoloba/spec-based-claude-code)
