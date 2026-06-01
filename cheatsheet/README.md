@@ -1,6 +1,6 @@
 # Claude Code — шпаргалка (1 страница)
 
-Печатная reference-карточка по Claude Code на русском: горячие клавиши, слэш-команды, MCP, память, workflows, конфиг, skills/agents, CLI-флаги. A4 portrait, 3 колонки, всё на одну страницу.
+Печатная reference-карточка по Claude Code на русском: горячие клавиши, слэш-команды, MCP, память, приёмы, оркестрация (multi-agent), конфиг, skills/agents, CLI-флаги. A4 portrait, 3 колонки, всё на одну страницу.
 
 ## Артефакты
 
@@ -33,13 +33,21 @@ xdg-open cheatsheet/index.html     # Linux
 |---|---|---|
 | ⌨️ Горячие клавиши | 🔌 MCP-серверы | ⚙️ Конфиг и env |
 | ⚡ Слэш-команды | 📁 Память и файлы | 🔧 Skills и agents |
-|  | 🧠 Workflows и приёмы | 🖥 CLI и флаги |
+|  | 🧠 Приёмы и режимы | 🖥 CLI и флаги |
+|  | 🧩 Оркестрация (multi-agent) |  |
 
 Footer внизу: атрибуция + ссылки.
 
+Секция «🧩 Оркестрация» покрывает multi-agent-слой Claude Code (mid-2026): dynamic
+workflows (`/workflows`), agent teams (`CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS`),
+agent view (`claude agents`), routines (`/schedule`), ultracode (`/effort ultracode`),
+hooks-события (`TeammateIdle`/`TaskCompleted`) и практическое правило «когда fan-out
+оправдан, а когда выигрывает solo». Бэйджи статуса: `preview` (research preview),
+`exp` (experimental) — отличаются от оранжевого `NEW` (новизна, не зрелость).
+
 ## Поддержание актуальности
 
-Текущая версия в шапке: «соответствует Claude Code 2.1.x». При апдейтах Claude Code:
+Текущая версия в шапке: «соответствует Claude Code 2.1.159». При апдейтах Claude Code:
 
 1. Сверить новые слэш-команды и флаги с [changelog](https://code.claude.com/docs/en/changelog).
 2. Добавить новые строки в соответствующую секцию `index.html`. NEW-бэйдж — `<span class="badge-new">NEW</span>`.

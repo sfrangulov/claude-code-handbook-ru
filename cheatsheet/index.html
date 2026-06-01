@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Claude Code — шпаргалка (1 страница)</title>
-  <meta name="description" content="Однострочная шпаргалка по Claude Code на русском: горячие клавиши, слэш-команды, MCP, память, workflows, конфиг, skills, agents, CLI-флаги. A4 landscape, печатается в PDF.">
+  <meta name="description" content="Однострочная шпаргалка по Claude Code на русском: горячие клавиши, слэш-команды, MCP, память, приёмы, оркестрация, конфиг, skills, agents, CLI-флаги. A4 portrait, печатается в PDF.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌨️</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +27,7 @@
       --workflows-h: oklch(0.52 0.16 25);   --workflows-bg: oklch(0.975 0.020 25);
       --config-h:    oklch(0.55 0.15 50);   --config-bg:    oklch(0.975 0.025 50);
       --skills-h:    oklch(0.48 0.12 155);  --skills-bg:    oklch(0.975 0.020 155);
+      --orch-h:      oklch(0.48 0.15 330);  --orch-bg:      oklch(0.975 0.022 330);
       --cli-h:       oklch(0.40 0.030 240); --cli-bg:       oklch(0.975 0.005 240);
 
       /* Нейтрали — не чистый #000/#fff, со слабым синим уклоном (chroma 0.01-0.015). */
@@ -204,6 +205,27 @@
     /* gap слева создаётся &nbsp; в HTML перед бэйджем — он за пределами
        красного фона и не разрывает строку (NBSP блокирует wrap). */
 
+    /* === STATUS-БЭЙДЖИ (preview / exp) ===
+       Контурные, не сплошные — отличаются от оранжевого NEW: NEW = «новинка»,
+       а эти про зрелость фичи (research-preview / experimental). display: inline
+       по той же причине, что и .badge-new — не осиротеть на новой строке. */
+    .badge-prev, .badge-exp {
+      display: inline;
+      font-size: 0.5rem;
+      font-weight: 700;
+      padding: 0.1mm 0.9mm;
+      border-radius: 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      border: 1px solid;
+    }
+    .badge-prev { color: oklch(0.50 0.10 240); border-color: oklch(0.72 0.08 240); background: oklch(0.985 0.012 240); }
+    .badge-exp  { color: oklch(0.52 0.17 35);  border-color: oklch(0.72 0.14 35);  background: oklch(0.985 0.015 35); }
+
+    /* ✓/✗ для правила fan-out vs solo — в .key-слоте row'а */
+    .ok { color: oklch(0.52 0.14 150); font-weight: 700; }
+    .no { color: oklch(0.55 0.20 25);  font-weight: 700; }
+
     /* === ЦВЕТА СЕКЦИЙ === */
     .s-keyboard   { background: var(--keyboard-bg); }   .s-keyboard   .section-header { background: var(--keyboard-h); }
     .s-slash      { background: var(--slash-bg); }      .s-slash      .section-header { background: var(--slash-h); }
@@ -212,6 +234,7 @@
     .s-workflows  { background: var(--workflows-bg); }  .s-workflows  .section-header { background: var(--workflows-h); }
     .s-config     { background: var(--config-bg); }     .s-config     .section-header { background: var(--config-h); }
     .s-skills     { background: var(--skills-bg); }     .s-skills     .section-header { background: var(--skills-h); }
+    .s-orch       { background: var(--orch-bg); }       .s-orch       .section-header { background: var(--orch-h); }
     .s-cli        { background: var(--cli-bg); }        .s-cli        .section-header { background: var(--cli-h); }
 
     /* === FOOTER BAND === */
@@ -253,7 +276,7 @@
 </head>
 <body>
   <div class="print-hint no-print">
-    📄 Печать в PDF: <kbd>⌘</kbd>+<kbd>P</kbd> (macOS) или <kbd>Ctrl</kbd>+<kbd>P</kbd> (Linux/Win) → Save as PDF, формат A4 landscape, без полей.
+    📄 Печать в PDF: <kbd>⌘</kbd>+<kbd>P</kbd> (macOS) или <kbd>Ctrl</kbd>+<kbd>P</kbd> (Linux/Win) → Save as PDF, формат A4 portrait, без полей.
   </div>
 
   <div class="page">
@@ -261,8 +284,8 @@
     <div class="header">
       <h1>Claude Code — шпаргалка<span class="sub">CLI-агент Anthropic, всё на одну страницу</span></h1>
       <div class="header-meta">
-        <span class="v">соответствует Claude Code 2.1.x</span><br>
-        обновлено: 2026-05-25 · <a href="https://github.com/sfrangulov/claude-code-handbook-ru">handbook-ru</a>
+        <span class="v">соответствует Claude Code 2.1.159</span><br>
+        обновлено: 2026-06-01 · <a href="https://github.com/sfrangulov/claude-code-handbook-ru">handbook-ru</a>
       </div>
     </div>
 
@@ -337,7 +360,7 @@
           <div class="row"><span class="key">/vim</span><span class="desc">vim-режим ввода</span></div>
           <div class="row"><span class="key">/theme</span><span class="desc">сменить цветовую тему</span></div>
           <div class="row"><span class="key">/permissions</span><span class="desc">просмотр/правка permissions</span></div>
-          <div class="row"><span class="key">/effort [level]</span><span class="desc">low/med/high/max/auto&nbsp;<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">/effort [level]</span><span class="desc">low·medium·high·xhigh·max&nbsp;<span class="badge-new">NEW</span></span></div>
           <div class="row"><span class="key">/color [c]</span><span class="desc">цвет промпт-бара</span></div>
           <div class="row"><span class="key">/keybindings</span><span class="desc">переназначить хоткеи</span></div>
           <div class="row"><span class="key">/terminal-setup</span><span class="desc">настроить терминал под CC</span></div>
@@ -419,9 +442,9 @@
         </div>
       </div>
 
-      <!-- 5. WORKFLOWS & TIPS -->
+      <!-- 5. WORKING TECHNIQUES & MODES -->
       <div class="section s-workflows">
-        <div class="section-header">🧠 Workflows и приёмы</div>
+        <div class="section-header">🧠 Приёмы и режимы</div>
         <div class="section-content">
           <div class="sub-header">Plan mode</div>
           <div class="row"><span class="key"><span class="keycap">⇧</span><span class="keycap">Tab</span></span><span class="desc">Normal → Auto-Accept → Plan</span></div>
@@ -431,7 +454,7 @@
           <div class="row"><span class="key"><span class="keycap">⌥</span><span class="keycap">T</span></span><span class="desc">thinking on/off</span></div>
           <div class="row"><span class="key">"ultrathink"</span><span class="desc">max effort на ход</span></div>
           <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">O</span></span><span class="desc">показать thinking (verbose)</span></div>
-          <div class="row"><span class="key">/effort</span><span class="desc">○ low · ◐ med · ● high&nbsp;<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">/effort</span><span class="desc">low·medium·high·xhigh·max (⌃→ в /model)</span></div>
 
           <div class="sub-header">Git worktrees</div>
           <div class="row"><span class="key">--worktree name</span><span class="desc">изолированная ветка на фичу</span></div>
@@ -439,33 +462,44 @@
           <div class="row"><span class="key">sparsePaths</span><span class="desc">checkout только нужных каталогов&nbsp;<span class="badge-new">NEW</span></span></div>
           <div class="row"><span class="key">/batch</span><span class="desc">авто-создаёт worktrees под параллелизм</span></div>
 
-          <div class="sub-header">Голос</div>
-          <div class="row"><span class="key">/voice</span><span class="desc">push-to-talk on</span></div>
-          <div class="row"><span class="key"><span class="keycap">Space</span></span><span class="desc">hold — запись, release — отправка</span></div>
-          <div class="row"><span class="key">20 языков</span><span class="desc">EN, RU, ES, FR, DE, CZ, PL…</span></div>
-
           <div class="sub-header">Контекст</div>
           <div class="row"><span class="key">/context</span><span class="desc">расход + советы по оптимизации</span></div>
           <div class="row"><span class="key">/compact [focus]</span><span class="desc">сжать с акцентом</span></div>
           <div class="row"><span class="key">auto-compact</span><span class="desc">срабатывает ~95% от лимита</span></div>
           <div class="row"><span class="key">1M context</span><span class="desc">Opus 4.6+ (Max/Team/Enterprise)</span></div>
           <div class="row"><span class="key">CLAUDE.md</span><span class="desc">переживает compact!</span></div>
+        </div>
+      </div>
 
-          <div class="sub-header">Сессионные хитрости</div>
-          <div class="row"><span class="key">claude -c</span><span class="desc">продолжить последнюю сессию</span></div>
-          <div class="row"><span class="key">claude -r "name"</span><span class="desc">resume по имени</span></div>
-          <div class="row"><span class="key">/btw q</span><span class="desc">побочный вопрос, контекст не тратится</span></div>
+      <!-- 6. ORCHESTRATION (multi-agent) -->
+      <div class="section s-orch">
+        <div class="section-header">🧩 Оркестрация (multi-agent)</div>
+        <div class="section-content">
+          <div class="sub-header">Примитивы</div>
+          <div class="row"><span class="key">/workflows</span><span class="desc">JS-скрипт оркеструет 10–100s агентов в фоне&nbsp;<span class="badge-prev">preview</span></span></div>
+          <div class="row"><span class="key">claude agents</span><span class="desc">экран всех фоновых сессий&nbsp;<span class="badge-prev">preview</span></span></div>
+          <div class="row"><span class="key">Agent / subagent</span><span class="desc">read-only, свой контекст, без вложенности</span></div>
+          <div class="row"><span class="key">agent teams</span><span class="desc">тиммейты общаются напрямую (env CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1)&nbsp;<span class="badge-exp">exp</span></span></div>
 
-          <div class="sub-header">SDK / headless</div>
-          <div class="row"><span class="key">claude -p "q"</span><span class="desc">не-интерактивный запуск</span></div>
-          <div class="row"><span class="key">--output-format json</span><span class="desc">структурированный вывод</span></div>
-          <div class="row"><span class="key">--max-budget-usd 5</span><span class="desc">кэп по стоимости</span></div>
-          <div class="row"><span class="key">cat f | claude -p</span><span class="desc">pipe-вход</span></div>
+          <div class="sub-header">Ultracode</div>
+          <div class="row"><span class="key">/effort ultracode</span><span class="desc">xhigh + авто-workflow на каждую задачу&nbsp;<span class="badge-prev">preview</span></span></div>
+          <div class="row"><span class="key">требует</span><span class="desc">xhigh-модель + workflows в /config; на сессию</span></div>
+          <div class="row"><span class="key">/effort high</span><span class="desc">вернуться к рутине</span></div>
 
-          <div class="sub-header">Расписание и remote</div>
-          <div class="row"><span class="key">/loop 5m msg</span><span class="desc">регулярная задача</span></div>
-          <div class="row"><span class="key">/rc</span><span class="desc">remote control</span></div>
-          <div class="row"><span class="key">--remote</span><span class="desc">сессия через claude.ai</span></div>
+          <div class="sub-header">Расписание и cloud</div>
+          <div class="row"><span class="key">/loop 5m msg</span><span class="desc">повторяющийся промпт в живой сессии</span></div>
+          <div class="row"><span class="key">/schedule</span><span class="desc">routines: cloud-cron / API / GitHub-события&nbsp;<span class="badge-prev">preview</span></span></div>
+          <div class="row"><span class="key">--remote · /rc</span><span class="desc">сессия через claude.ai</span></div>
+
+          <div class="sub-header">Hooks-события оркестрации</div>
+          <div class="row"><span class="key">TeammateIdle</span><span class="desc">тиммейт простаивает</span></div>
+          <div class="row"><span class="key">TaskCompleted</span><span class="desc">гейт завершённой фоновой задачи</span></div>
+
+          <div class="sub-header">Когда fan-out оправдан (~15× токенов)</div>
+          <div class="row"><span class="key"><span class="ok">✓</span></span><span class="desc">breadth-first: поиск, аудит, миграции</span></div>
+          <div class="row"><span class="key"><span class="ok">✓</span></span><span class="desc">не влезает в один контекст</span></div>
+          <div class="row"><span class="key"><span class="ok">✓</span></span><span class="desc">есть verifier/selector на выходе</span></div>
+          <div class="row"><span class="key"><span class="no">✗</span></span><span class="desc">sequential / shared / write-heavy → solo</span></div>
         </div>
       </div>
 
@@ -493,7 +527,7 @@
           <div class="sub-header">Ключевые env-vars</div>
           <div class="row"><span class="key">ANTHROPIC_API_KEY</span><span class="desc">API-ключ</span></div>
           <div class="row"><span class="key">ANTHROPIC_MODEL</span><span class="desc">модель по умолчанию</span></div>
-          <div class="row"><span class="key">CLAUDE_CODE_EFFORT_LEVEL</span><span class="desc">low/med/high</span></div>
+          <div class="row"><span class="key">CLAUDE_CODE_EFFORT_LEVEL</span><span class="desc">low…xhigh/max (CLAUDE_EFFORT — текущий)</span></div>
           <div class="row"><span class="key">MAX_THINKING_TOKENS</span><span class="desc">0 = выкл</span></div>
           <div class="row"><span class="key">CLAUDECODE</span><span class="desc">=1, для детекта CC из shell</span></div>
           <div class="row"><span class="key">IS_DEMO</span><span class="desc">demo-режим (прячет email/org)</span></div>
@@ -569,7 +603,7 @@
           <div class="row"><span class="key">--bare</span><span class="desc">minimal headless (без hooks/LSP)&nbsp;<span class="badge-new">NEW</span></span></div>
           <div class="row"><span class="key">--channels</span><span class="desc">permission relay / MCP push&nbsp;<span class="badge-new">NEW</span></span></div>
           <div class="row"><span class="key">--remote</span><span class="desc">web-сессия через claude.ai</span></div>
-          <div class="row"><span class="key">--effort</span><span class="desc">low/med/high/max</span></div>
+          <div class="row"><span class="key">--effort</span><span class="desc">low·medium·high·xhigh·max</span></div>
           <div class="row"><span class="key">--permission-mode</span><span class="desc">plan/default/…</span></div>
           <div class="row"><span class="key">--dangerously-skip-permissions</span><span class="desc">пропустить все промпты ⚠️</span></div>
           <div class="row"><span class="key">--chrome</span><span class="desc">интеграция Chrome</span></div>
