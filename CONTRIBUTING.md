@@ -37,7 +37,7 @@
      ```json
      { "name": "Название", "url": "https://..." }
      ```
-   Разделитель в итоговом markdown — em-dash (`—`) с пробелами, его подставляет генератор. Осознанное отклонение от sindresorhus/awesome-lint: русская типографика важнее lint-conformance, в meta-list мы не пушим. См. [docs/research/awesome-lists-best-practices.md](./docs/research/awesome-lists-best-practices.md) §2.1.
+   Разделитель в итоговом markdown — em-dash (`—`) с пробелами, его подставляет генератор. Осознанное отклонение от sindresorhus/awesome-lint: русская типографика важнее lint-conformance, в meta-list мы не пушим.
 3. Запустите `node scripts/build-readme.mjs` — он перегенерирует `README.md`, соответствующий `catalog/*.md` и `llms.txt` + `llms-full.txt` (последние два — для LLM/агентов, по спецификации llmstxt.org) из template + data.
 4. Закоммитьте `data/<секция>.json` и все обновлённые сгенерённые файлы, которые изменились в diff'е.
 5. Сохраняйте алфавитный порядок внутри подсекции, где это применимо.
