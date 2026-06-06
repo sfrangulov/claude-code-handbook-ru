@@ -41,7 +41,7 @@ Footer внизу: атрибуция + ссылки.
 Секция «🧩 Оркестрация» покрывает multi-agent-слой Claude Code (mid-2026): dynamic
 workflows (`/workflows`), agent teams (`CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS`),
 agent view (`claude agents`), routines (`/schedule`), ultracode (`/effort ultracode`),
-hooks-события (`TeammateIdle`/`TaskCompleted`) и практическое правило «когда fan-out
+hook-события (`TeammateIdle`/`TaskCompleted`) и практическое правило «когда fan-out
 оправдан, а когда выигрывает solo». Бэйджи статуса: `preview` (research preview),
 `exp` (experimental) — отличаются от оранжевого `NEW` (новизна, не зрелость).
 

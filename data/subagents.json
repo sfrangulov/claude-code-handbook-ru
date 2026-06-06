@@ -28,7 +28,7 @@
         "category": "Language specialists",
         "count": 30,
         "categoryUrl": "https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/02-language-specialists",
-        "inside": "python-pro, java-architect, rust-engineer, golang-pro, php-pro, typescript-pro и 24 ещё",
+        "inside": "python-pro, java-architect, rust-engineer, golang-pro, php-pro, typescript-pro и ещё 24",
         "when": "Изолируют контекст, когда основной агент уходит в read-heavy работу по одному языку"
       },
       {

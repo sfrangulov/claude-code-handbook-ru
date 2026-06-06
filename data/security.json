@@ -2,7 +2,7 @@
   "main": [
     { "name": "Security best practices", "url": "https://docs.claude.com/en/docs/claude-code/security", "desc": "Официальный гайд." },
     { "name": "Permissions / IAM", "url": "https://docs.claude.com/en/docs/claude-code/iam", "desc": "Настройка прав, `allowManagedHooksOnly` для enterprise." },
-    { "name": "anthropics/defending-code-reference-harness", "url": "https://github.com/anthropics/defending-code-reference-harness", "desc": "Референс-харнесс Anthropic: скиллы threat-model / vuln-scan / triage / patch + автономный pipeline в песочнице. Сопровождается разбором «Using LLMs to secure source code»." },
+    { "name": "anthropics/defending-code-reference-harness", "url": "https://github.com/anthropics/defending-code-reference-harness", "desc": "Эталонный харнесс Anthropic: скиллы threat-model / vuln-scan / triage / patch + автономный pipeline в песочнице. Сопровождается разбором «Using LLMs to secure source code»." },
     { "name": "trailofbits/skills", "url": "https://github.com/trailofbits/skills", "desc": "Security-скиллы Trail of Bits: CodeQL / Semgrep, аудит кода." },
     { "name": "firebase/agent-skills@firestore-security-rules-auditor", "url": "https://skills.sh/firebase/agent-skills/firestore-security-rules-auditor", "desc": "Аудит security-rules Firestore перед прод-релизом. 20K+ установок." },
     { "name": "snyk/claude-code-pre-commit", "url": "https://github.com/snyk/claude-code-pre-commit", "desc": "Security-скан Snyk на pre-commit." },

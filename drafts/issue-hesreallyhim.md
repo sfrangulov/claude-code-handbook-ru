@@ -96,7 +96,7 @@ All five checkboxes get checked:
 
 ## Альтернативный путь — recommend-resource
 
-Если предыдущий enhancement-issue не пройдёт или его попросят переоформить — можно подать как обычный ресурс под категорией **Workflows & Knowledge Guides** или **Tooling**.
+Если предыдущий enhancement-issue не пройдёт или его попросят переоформить — можно подать как обычный ресурс в категории **Workflows & Knowledge Guides** или **Tooling**.
 
 ### Поля формы (recommend-resource):
 

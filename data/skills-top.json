@@ -4,7 +4,7 @@
     {
       "slug": "anthropics/skills@frontend-design",
       "url": "https://skills.sh/anthropics/skills/frontend-design",
-      "desc": "Перестраивает дизайн в пользу bold-решений вместо дефолтных «AI slop»-карточек. Триггерь когда видишь, что вышло generic. React + Tailwind.",
+      "desc": "Перестраивает дизайн в пользу bold-решений вместо дефолтных «AI slop»-карточек. Триггерь, когда видишь, что вышло generic. React + Tailwind.",
       "count": 405000
     },
     {
@@ -28,7 +28,7 @@
     {
       "slug": "obra/superpowers@brainstorming",
       "url": "https://skills.sh/obra/superpowers/brainstorming",
-      "desc": "Структурированный брейншторм с гипотезами и матрицей вариантов **до** начала кода. Включай когда задача расплывчатая («сделай auth»).",
+      "desc": "Структурированный брейншторм с гипотезами и матрицей вариантов **до** начала кода. Включай, когда задача расплывчатая («сделай auth»).",
       "count": 155000
     },
     {
@@ -64,7 +64,7 @@
     {
       "slug": "obra/superpowers@requesting-code-review",
       "url": "https://skills.sh/obra/superpowers/requesting-code-review",
-      "desc": "Запросить ревью у субагента **перед** коммитом. Эффективно когда работаешь автономно без живого ревьюера.",
+      "desc": "Запросить ревью у субагента **перед** коммитом. Эффективно, когда работаешь автономно без живого ревьюера.",
       "count": 82000
     },
     {
@@ -88,7 +88,7 @@
     {
       "slug": "obra/superpowers@verification-before-completion",
       "url": "https://skills.sh/obra/superpowers/verification-before-completion",
-      "desc": "Проверить что задача реально сделана (запустить тесты, открыть страницу), до отчёта «готово». Антидот к false-positive отчётам.",
+      "desc": "Проверить, что задача реально сделана (запустить тесты, открыть страницу), до отчёта «готово». Защита от false-positive отчётов.",
       "count": 68000
     }
   ]

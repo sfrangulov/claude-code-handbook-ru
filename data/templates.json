@@ -7,10 +7,10 @@
   "collections": [
     { "name": "multica-ai/andrej-karpathy-skills", "url": "https://github.com/multica-ai/andrej-karpathy-skills", "desc": "`CLAUDE.md`, собранный из практик Andrej Karpathy. 128k⭐." },
     { "name": "garrytan/gstack", "url": "https://github.com/garrytan/gstack", "desc": "Сетап Garry Tan: 23 opinionated-инструмента. 95k⭐." },
-    { "name": "affaan-m/everything-claude-code", "url": "https://github.com/affaan-m/everything-claude-code", "desc": "Комплексная оптимизация harness'а: скиллы, повадки, память. 181k⭐." }
+    { "name": "affaan-m/everything-claude-code", "url": "https://github.com/affaan-m/everything-claude-code", "desc": "Полная оптимизация harness'а: скиллы, повадки, память. 181k⭐." }
   ],
   "stacks": [
-    { "name": "vercel-labs/agent-skills", "url": "https://github.com/vercel-labs/agent-skills", "desc": "Best-practices Next.js, де-факто канонический шаблон от Vercel." },
+    { "name": "vercel-labs/agent-skills", "url": "https://github.com/vercel-labs/agent-skills", "desc": "Best-practices Next.js, де-факто эталонный шаблон от Vercel." },
     { "name": "supabase/agent-skills", "url": "https://github.com/supabase/agent-skills", "desc": "Supabase и PostgreSQL." },
     { "name": "callstackincubator/agent-skills", "url": "https://github.com/callstackincubator/agent-skills", "desc": "Шаблоны React Native." },
     { "name": "shadcn/ui skills", "url": "https://ui.shadcn.com/docs/skills", "desc": "Компоненты shadcn с принудительным применением паттернов." },

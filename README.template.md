@@ -198,7 +198,7 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 
 <!-- @list:misc.orchestrationLoop -->
 
-**Канонический источник** — [andyrewlee/awesome-agent-orchestrators](https://github.com/andyrewlee/awesome-agent-orchestrators) с 4 категориями и сотней тулов. Наш отбор: ≥3k⭐ + явная поддержка Claude Code (исключение — bernstein: 0.5k⭐, но уникальная audit-grade ниша).
+**Главный источник** — [andyrewlee/awesome-agent-orchestrators](https://github.com/andyrewlee/awesome-agent-orchestrators) с 4 категориями и сотней тулов. Наш отбор: ≥3k⭐ + явная поддержка Claude Code (исключение — bernstein: 0.5k⭐, но уникальная audit-grade ниша).
 
 ---
 
@@ -206,7 +206,7 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 
 Готовые opinionated-методологии под Claude Code: полные циклы **Research → Plan → Execute → Review → Ship**, упакованные в плагины или skill-коллекции. В отличие от skills (атомарных — одна задача) и orchestration (запуск нескольких сессий), это **полные многошаговые workflow под цикл фичи** одной сессией.
 
-> 📚 Канонический EN-репо для всего раздела ниже: [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — 54.8k⭐, ежедневные апдейты под версии Claude Code, hot-features, Boris Cherny tips, cross-model паттерны.
+> 📚 Основной EN-репо для всего раздела ниже: [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — 54.8k⭐, ежедневные апдейты под версии Claude Code, hot-features, Boris Cherny tips, cross-model паттерны.
 >
 > 🇷🇺 **Переводы тематических батчей советов** от Boris Cherny (создатель Claude Code) и Thariq (Anthropic): **[docs/tips-ru.md →](./docs/tips-ru.md)** — 8 батчей за январь–апрель 2026 в хронологическом порядке.
 

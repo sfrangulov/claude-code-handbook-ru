@@ -115,21 +115,21 @@ Skills — переиспользуемые наборы инструкций, �
 
 | Скилл | Зачем и когда юзать | Установок |
 |---|---|---:|
-| [anthropics/skills@frontend-design](https://skills.sh/anthropics/skills/frontend-design) | Перестраивает дизайн в пользу bold-решений вместо дефолтных «AI slop»-карточек. Триггерь когда видишь, что вышло generic. React + Tailwind. | **405K** |
+| [anthropics/skills@frontend-design](https://skills.sh/anthropics/skills/frontend-design) | Перестраивает дизайн в пользу bold-решений вместо дефолтных «AI slop»-карточек. Триггерь, когда видишь, что вышло generic. React + Tailwind. | **405K** |
 | [vercel-labs/agent-skills@vercel-react-best-practices](https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices) | React/Next.js — производительность по гайду Vercel: правильные границы между клиентом и RSC, кэширование, оптимизация размера бандла. Подключай в любом Next.js-проекте. | **395K** |
 | [vercel-labs/agent-skills@web-design-guidelines](https://skills.sh/vercel-labs/agent-skills/web-design-guidelines) | Чек-лист соответствия Web Interface Guidelines: a11y, hit-targets, focus rings. Запускай как ревью UI до коммита. | **316K** |
 | [microsoft/azure-skills@azure-deploy](https://skills.sh/microsoft/azure-skills/azure-deploy) | Деплой в Azure: ARM/Bicep, App Service, Container Apps. Ставь только если работаешь в Azure-стеке — иначе мёртвый груз в контексте. | **312K** |
-| [obra/superpowers@brainstorming](https://skills.sh/obra/superpowers/brainstorming) | Структурированный брейншторм с гипотезами и матрицей вариантов **до** начала кода. Включай когда задача расплывчатая («сделай auth»). | **155K** |
+| [obra/superpowers@brainstorming](https://skills.sh/obra/superpowers/brainstorming) | Структурированный брейншторм с гипотезами и матрицей вариантов **до** начала кода. Включай, когда задача расплывчатая («сделай auth»). | **155K** |
 | [xixu-me/skills@github-actions-docs](https://skills.sh/xixu-me/skills/github-actions-docs) | Свежая официальная дока GitHub Actions: синтаксис, runners, OIDC, troubleshooting. Когда пишешь workflow и не хочешь искать в десяти вкладках. | **131K** |
 | [vercel-labs/agent-skills@vercel-react-native-skills](https://skills.sh/vercel-labs/agent-skills/vercel-react-native-skills) | React Native по гайду Vercel: снимает с агента половину типичных багов в RN-проектах. | **116K** |
 | [mattpocock/skills@tdd](https://skills.sh/mattpocock/skills/tdd) | TDD-цикл (red-green-refactor) с дисциплиной — не даёт агенту писать код раньше тестов. От Matt Pocock. | **96K** |
 | [obra/superpowers@systematic-debugging](https://skills.sh/obra/superpowers/systematic-debugging) | Дисциплина отладки: гипотезы → изоляция → root cause. Прерывает цикл бесконечных правок наугад. | **94K** |
 | [arvindrk/extract-design-system@extract-design-system](https://skills.sh/arvindrk/extract-design-system/extract-design-system) | Скан существующего сайта → структурированный design-system (токены, паттерны, типографика). Для редизайна или нового проекта на базе старого. | **93K** |
-| [obra/superpowers@requesting-code-review](https://skills.sh/obra/superpowers/requesting-code-review) | Запросить ревью у субагента **перед** коммитом. Эффективно когда работаешь автономно без живого ревьюера. | **82K** |
+| [obra/superpowers@requesting-code-review](https://skills.sh/obra/superpowers/requesting-code-review) | Запросить ревью у субагента **перед** коммитом. Эффективно, когда работаешь автономно без живого ревьюера. | **82K** |
 | [mattpocock/skills@grill-with-docs](https://skills.sh/mattpocock/skills/grill-with-docs) | «Допрашивай» документацию через find/grep — заменяет догадки точными цитатами. Особенно ценно для библиотек, где знание Claude устарело. | **79K** |
 | [obra/superpowers@subagent-driven-development](https://skills.sh/obra/superpowers/subagent-driven-development) | Делегирование независимых задач субагентам параллельно (feature + tests, frontend + backend). | **70K** |
 | [anthropics/skills@webapp-testing](https://skills.sh/anthropics/skills/webapp-testing) | Тестирование веб-приложений через Playwright. Заменяет «руками протыкать в браузере» на автоматизацию. | **68K** |
-| [obra/superpowers@verification-before-completion](https://skills.sh/obra/superpowers/verification-before-completion) | Проверить что задача реально сделана (запустить тесты, открыть страницу), до отчёта «готово». Антидот к false-positive отчётам. | **68K** |
+| [obra/superpowers@verification-before-completion](https://skills.sh/obra/superpowers/verification-before-completion) | Проверить, что задача реально сделана (запустить тесты, открыть страницу), до отчёта «готово». Защита от false-positive отчётов. | **68K** |
 
 **Источник:** [skills.sh leaderboard](https://skills.sh) — числа быстро растут, актуальны на момент последнего обновления. Автообновление: `node scripts/refresh-top-skills.mjs --write && node scripts/build-readme.mjs`.
 
@@ -206,7 +206,7 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 | Категория | Внутри | Когда брать |
 |---|---|---|
 | [🛠️ Core development (11)](https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/01-core-development) | API-дизайнер, frontend/backend/fullstack, mobile, GraphQL-архитектор, WebSocket-инженер | Когда делегируешь узкие задачи («спроектируй GraphQL-схему») |
-| [🔤 Language specialists (30)](https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/02-language-specialists) | python-pro, java-architect, rust-engineer, golang-pro, php-pro, typescript-pro и 24 ещё | Изолируют контекст, когда основной агент уходит в read-heavy работу по одному языку |
+| [🔤 Language specialists (30)](https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/02-language-specialists) | python-pro, java-architect, rust-engineer, golang-pro, php-pro, typescript-pro и ещё 24 | Изолируют контекст, когда основной агент уходит в read-heavy работу по одному языку |
 | [☁️ Infrastructure (16)](https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/03-infrastructure) | cloud-architect, devops, kubernetes, terraform, SRE, security-engineer | Для DevOps-задач, особенно если есть Terraform или K8s |
 | [✅ Quality & security (16)](https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/04-quality-security) | code-reviewer, debugger, penetration-tester, performance-engineer, a11y-tester | Перед PR — `code-reviewer` как блокирующий шаг |
 | [🧠 Data & AI (13)](https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/05-data-ai) | ML/MLOps, data-scientist, llm-architect, prompt-engineer, NLP, postgres-pro | Для data-инфры или ML-pipelines |
@@ -251,7 +251,7 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 
 - [steveyegge/gastown](https://github.com/steveyegge/gastown) — Multi-agent workspace manager от Steve Yegge. Персистентный трекинг работы, true background, рассчитан на сложные multi-agent сценарии.
 - [chernistry/bernstein](https://github.com/chernistry/bernstein) — Детерминистский оркестратор с HMAC-chained audit-log. Spawn'ит параллельные агенты, верифицирует тестами, авто-коммитит. Zero LLM tokens на координацию.
-- [ruvnet/claude-flow](https://github.com/ruvnet/claude-flow) — Multi-agent swarm-платформа с RAG, self-learning intelligence, native Claude Code integration. 55k⭐ — фактический индустриальный стандарт под swarms.
+- [ruvnet/claude-flow](https://github.com/ruvnet/claude-flow) — Multi-agent swarm-платформа с RAG, self-learning intelligence, native Claude Code integration. 55k⭐ — де-факто стандарт под swarms.
 
 ### Parallel GUI / kanban
 
@@ -263,10 +263,10 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 
 ### Autonomous loops и approval-gated
 
-- [frankbria/ralph-claude-code](https://github.com/frankbria/ralph-claude-code) — Autonomous-цикл «работай пока не готово» с intelligent exit detection. Канонический Ralph-pattern (Geoffrey Huntley) под Claude Code.
+- [frankbria/ralph-claude-code](https://github.com/frankbria/ralph-claude-code) — Autonomous-цикл «работай пока не готово» с intelligent exit detection. Эталонный Ralph-pattern (Geoffrey Huntley) под Claude Code.
 - [humanlayer/humanlayer](https://github.com/humanlayer/humanlayer) — Фреймворк для сложных задач в больших кодовых базах: human-in-loop approval-чекпоинты на критичных шагах.
 
-**Канонический источник** — [andyrewlee/awesome-agent-orchestrators](https://github.com/andyrewlee/awesome-agent-orchestrators) с 4 категориями и сотней тулов. Наш отбор: ≥3k⭐ + явная поддержка Claude Code (исключение — bernstein: 0.5k⭐, но уникальная audit-grade ниша).
+**Главный источник** — [andyrewlee/awesome-agent-orchestrators](https://github.com/andyrewlee/awesome-agent-orchestrators) с 4 категориями и сотней тулов. Наш отбор: ≥3k⭐ + явная поддержка Claude Code (исключение — bernstein: 0.5k⭐, но уникальная audit-grade ниша).
 
 ---
 
@@ -274,7 +274,7 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 
 Готовые opinionated-методологии под Claude Code: полные циклы **Research → Plan → Execute → Review → Ship**, упакованные в плагины или skill-коллекции. В отличие от skills (атомарных — одна задача) и orchestration (запуск нескольких сессий), это **полные многошаговые workflow под цикл фичи** одной сессией.
 
-> 📚 Канонический EN-репо для всего раздела ниже: [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — 54.8k⭐, ежедневные апдейты под версии Claude Code, hot-features, Boris Cherny tips, cross-model паттерны.
+> 📚 Основной EN-репо для всего раздела ниже: [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — 54.8k⭐, ежедневные апдейты под версии Claude Code, hot-features, Boris Cherny tips, cross-model паттерны.
 >
 > 🇷🇺 **Переводы тематических батчей советов** от Boris Cherny (создатель Claude Code) и Thariq (Anthropic): **[docs/tips-ru.md →](./docs/tips-ru.md)** — 8 батчей за январь–апрель 2026 в хронологическом порядке.
 
@@ -336,7 +336,7 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 
 ### Готовые hooks в этом репо
 
-- [examples/hooks/](./examples/hooks/README.md) — Три рабочих hook'а с bash-скриптами и инструкциями куда положить:
+- [examples/hooks/](./examples/hooks/README.md) — Три рабочих hook'а с bash-скриптами и инструкциями, куда положить:
   - **pre-commit-secrets.sh** — детектор секретов в staged-diff. Спасает от утечки API-ключей, когда агент коммитит без проверки.
   - **ntfy.sh** — push-уведомления через ntfy.sh по событиям `Notification` и `Stop`.
   - **audit.sh** — JSONL-аудит каждого PostToolUse для разбора инцидентов.
@@ -416,11 +416,11 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 
 - [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) — `CLAUDE.md`, собранный из практик Andrej Karpathy. 128k⭐.
 - [garrytan/gstack](https://github.com/garrytan/gstack) — Сетап Garry Tan: 23 opinionated-инструмента. 95k⭐.
-- [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) — Комплексная оптимизация harness'а: скиллы, повадки, память. 181k⭐.
+- [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) — Полная оптимизация harness'а: скиллы, повадки, память. 181k⭐.
 
 ### Под конкретный стек
 
-- [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) — Best-practices Next.js, де-факто канонический шаблон от Vercel.
+- [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) — Best-practices Next.js, де-факто эталонный шаблон от Vercel.
 - [supabase/agent-skills](https://github.com/supabase/agent-skills) — Supabase и PostgreSQL.
 - [callstackincubator/agent-skills](https://github.com/callstackincubator/agent-skills) — Шаблоны React Native.
 - [shadcn/ui skills](https://ui.shadcn.com/docs/skills) — Компоненты shadcn с принудительным применением паттернов.
@@ -503,7 +503,7 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 
 - [Security best practices](https://docs.claude.com/en/docs/claude-code/security) — Официальный гайд.
 - [Permissions / IAM](https://docs.claude.com/en/docs/claude-code/iam) — Настройка прав, `allowManagedHooksOnly` для enterprise.
-- [anthropics/defending-code-reference-harness](https://github.com/anthropics/defending-code-reference-harness) — Референс-харнесс Anthropic: скиллы threat-model / vuln-scan / triage / patch + автономный pipeline в песочнице. Сопровождается разбором «Using LLMs to secure source code».
+- [anthropics/defending-code-reference-harness](https://github.com/anthropics/defending-code-reference-harness) — Эталонный харнесс Anthropic: скиллы threat-model / vuln-scan / triage / patch + автономный pipeline в песочнице. Сопровождается разбором «Using LLMs to secure source code».
 - [trailofbits/skills](https://github.com/trailofbits/skills) — Security-скиллы Trail of Bits: CodeQL / Semgrep, аудит кода.
 - [firebase/agent-skills@firestore-security-rules-auditor](https://skills.sh/firebase/agent-skills/firestore-security-rules-auditor) — Аудит security-rules Firestore перед прод-релизом. 20K+ установок.
 - [snyk/claude-code-pre-commit](https://github.com/snyk/claude-code-pre-commit) — Security-скан Snyk на pre-commit.
@@ -527,7 +527,7 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 - [Claude API Skills best practices](https://platform.claude.com/docs/ru/agents-and-tools/agent-skills/best-practices) — Официальный документ на русском.
 - [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) — Академический гайд, 50k+⭐.
 - [f/awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts) — Готовые промпты, применимы и к Claude.
-- [PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) — `.cursorrules` для разных стеков, многие переносимы в CLAUDE.md.
+- [PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) — `.cursorrules` для разных стеков, многие подходят и для CLAUDE.md.
 
 ### Каналы и сообщества
 
@@ -572,7 +572,7 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 - [Anthropic Status](https://status.anthropic.com/) — Статус сервисов.
 - [Claude release notes](https://docs.claude.com/en/release-notes/claude-code) — Официальный changelog.
 - [Skills.sh](https://skills.sh/) — Маркетплейс скиллов с количеством установок.
-- [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — EN-канон best practices с ежедневными апдейтами под версии Claude Code. Покрывает все hot-features, Boris Cherny tips, cross-model паттерны.
+- [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — Эталонный EN-сборник best practices с ежедневными апдейтами под версии Claude Code. Покрывает все hot-features, Boris Cherny tips, cross-model паттерны.
 
 ---
 

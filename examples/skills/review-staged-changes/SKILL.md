@@ -43,7 +43,7 @@ description: Use when the user wants a review of currently staged git changes be
 
 **Конвенции проекта (MEDIUM priority):**
 - Проверить против `CLAUDE.md`, если есть в репозитории.
-- Отладочные логи оставленные в коде.
+- Отладочные логи, оставленные в коде.
 - TODO/FIXME без issue ID.
 - Закомментированный код вместо удалённого.
 

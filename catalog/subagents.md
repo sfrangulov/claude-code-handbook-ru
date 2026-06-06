@@ -11,7 +11,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 **Записей:** 160.
 
-📌 Куратная подборка — в [главном README](../README.md#sub-agents). Здесь — широкая выборка для поиска и SEO.
+📌 Курируемая подборка — в [главном README](../README.md#sub-agents). Здесь — широкая выборка для поиска и SEO.
 
 [← Индекс каталога](./README.md)
 

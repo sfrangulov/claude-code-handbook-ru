@@ -5,7 +5,7 @@
     { "name": "Claude API Skills best practices", "url": "https://platform.claude.com/docs/ru/agents-and-tools/agent-skills/best-practices", "desc": "Официальный документ на русском." },
     { "name": "dair-ai/Prompt-Engineering-Guide", "url": "https://github.com/dair-ai/Prompt-Engineering-Guide", "desc": "Академический гайд, 50k+⭐." },
     { "name": "f/awesome-chatgpt-prompts", "url": "https://github.com/f/awesome-chatgpt-prompts", "desc": "Готовые промпты, применимы и к Claude." },
-    { "name": "PatrickJS/awesome-cursorrules", "url": "https://github.com/PatrickJS/awesome-cursorrules", "desc": "`.cursorrules` для разных стеков, многие переносимы в CLAUDE.md." }
+    { "name": "PatrickJS/awesome-cursorrules", "url": "https://github.com/PatrickJS/awesome-cursorrules", "desc": "`.cursorrules` для разных стеков, многие подходят и для CLAUDE.md." }
   ],
   "channels": [
     { "name": "@cc_consultant (Telegram, RU)", "url": "https://t.me/cc_consultant", "desc": "Этот handbook и ежедневные разборы." },
@@ -45,7 +45,7 @@
     { "name": "Anthropic Status", "url": "https://status.anthropic.com/", "desc": "Статус сервисов." },
     { "name": "Claude release notes", "url": "https://docs.claude.com/en/release-notes/claude-code", "desc": "Официальный changelog." },
     { "name": "Skills.sh", "url": "https://skills.sh/", "desc": "Маркетплейс скиллов с количеством установок." },
-    { "name": "shanraisshan/claude-code-best-practice", "url": "https://github.com/shanraisshan/claude-code-best-practice", "desc": "EN-канон best practices с ежедневными апдейтами под версии Claude Code. Покрывает все hot-features, Boris Cherny tips, cross-model паттерны." }
+    { "name": "shanraisshan/claude-code-best-practice", "url": "https://github.com/shanraisshan/claude-code-best-practice", "desc": "Эталонный EN-сборник best practices с ежедневными апдейтами под версии Claude Code. Покрывает все hot-features, Boris Cherny tips, cross-model паттерны." }
   ],
   "workflowMethodologies": [
     { "name": "github/spec-kit", "url": "https://github.com/github/spec-kit", "desc": "Spec-Driven Development от GitHub. 106k⭐. /speckit.specify → clarify → plan → tasks → analyze → implement." },
@@ -65,7 +65,7 @@
   "orchestrationBackground": [
     { "name": "steveyegge/gastown", "url": "https://github.com/steveyegge/gastown", "desc": "Multi-agent workspace manager от Steve Yegge. Персистентный трекинг работы, true background, рассчитан на сложные multi-agent сценарии." },
     { "name": "chernistry/bernstein", "url": "https://github.com/chernistry/bernstein", "desc": "Детерминистский оркестратор с HMAC-chained audit-log. Spawn'ит параллельные агенты, верифицирует тестами, авто-коммитит. Zero LLM tokens на координацию." },
-    { "name": "ruvnet/claude-flow", "url": "https://github.com/ruvnet/claude-flow", "desc": "Multi-agent swarm-платформа с RAG, self-learning intelligence, native Claude Code integration. 55k⭐ — фактический индустриальный стандарт под swarms." }
+    { "name": "ruvnet/claude-flow", "url": "https://github.com/ruvnet/claude-flow", "desc": "Multi-agent swarm-платформа с RAG, self-learning intelligence, native Claude Code integration. 55k⭐ — де-факто стандарт под swarms." }
   ],
   "orchestrationGui": [
     { "name": "BloopAI/vibe-kanban", "url": "https://github.com/BloopAI/vibe-kanban", "desc": "Kanban-доска для управления параллельными coding agents. 26.5k⭐, самый популярный GUI под Claude Code и Codex." },
@@ -75,7 +75,7 @@
     { "name": "generalaction/emdash", "url": "https://github.com/generalaction/emdash", "desc": "Open-source agentic IDE (YC W26) для параллельных coding agents любого провайдера." }
   ],
   "orchestrationLoop": [
-    { "name": "frankbria/ralph-claude-code", "url": "https://github.com/frankbria/ralph-claude-code", "desc": "Autonomous-цикл «работай пока не готово» с intelligent exit detection. Канонический Ralph-pattern (Geoffrey Huntley) под Claude Code." },
+    { "name": "frankbria/ralph-claude-code", "url": "https://github.com/frankbria/ralph-claude-code", "desc": "Autonomous-цикл «работай пока не готово» с intelligent exit detection. Эталонный Ralph-pattern (Geoffrey Huntley) под Claude Code." },
     { "name": "humanlayer/humanlayer", "url": "https://github.com/humanlayer/humanlayer", "desc": "Фреймворк для сложных задач в больших кодовых базах: human-in-loop approval-чекпоинты на критичных шагах." }
   ]
 }

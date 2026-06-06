@@ -3,7 +3,7 @@
     {
       "name": "examples/hooks/",
       "url": "./examples/hooks/README.md",
-      "desc": "Три рабочих hook'а с bash-скриптами и инструкциями куда положить:",
+      "desc": "Три рабочих hook'а с bash-скриптами и инструкциями, куда положить:",
       "children": [
         { "name": "pre-commit-secrets.sh", "bold": true, "desc": "детектор секретов в staged-diff. Спасает от утечки API-ключей, когда агент коммитит без проверки." },
         { "name": "ntfy.sh", "bold": true, "desc": "push-уведомления через ntfy.sh по событиям `Notification` и `Stop`." },
