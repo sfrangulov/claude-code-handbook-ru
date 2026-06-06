@@ -20,6 +20,7 @@
 - [README](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md): курируемый верхний слой с разделами Skills / Sub-agents / Plugins / Hooks / MCP / Templates
 - [Шпаргалка на одну страницу (HTML + PDF)](https://github.com/sfrangulov/claude-code-handbook-ru/tree/main/cheatsheet): печатная reference-карточка A4 portrait — горячие клавиши, слэш-команды, MCP, память, workflows, CLI-флаги
 - [Quickstart за 10 минут](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#quickstart-за-10-минут): минимальный setup (claude + superpowers + 2 MCP)
+- [Harness (обвязка)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#harness-обвязка): концепт «обвязка важнее модели» + автономный pipeline recon → verify → triage → patch на базе anthropics/defending-code-reference-harness
 - [Топ-15 скиллов по install-count (skills.sh)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#топ-15-скиллов-skillssh): то, что 100K+ людей реально установили
 - [Топ MCP под Claude Code](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#mcp-серверы): ежедневный сетап на 5-7 серверов
 - [Оркестрация и параллельные агенты](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#оркестрация-и-параллельные-агенты): внешние тулы для нескольких Claude разом — background runners, parallel GUI/kanban, autonomous loops

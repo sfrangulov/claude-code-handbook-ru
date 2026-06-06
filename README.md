@@ -19,6 +19,7 @@ CI gate: node scripts/build-readme.mjs --check
 ## Содержание
 
 - [Quickstart](#quickstart-за-10-минут)
+- [Harness (обвязка)](#harness-обвязка) — концепт «обвязка важнее модели» + автономный pipeline
 - [Skills](#skills) — переиспользуемые наборы инструкций
 - [Sub-agents](#sub-agents) — параллельные агенты со своим контекстом
 - [Оркестрация](#оркестрация-и-параллельные-агенты) — внешние тулы для нескольких Claude разом
@@ -67,6 +68,38 @@ claude mcp add postgres    # @modelcontextprotocol/server-postgres (read-only п
 3. [Hooks](#hooks) — поставь хотя бы `pre-commit-secrets` сразу: спасает от утечки API-ключей через git-коммит, который агент может сделать за 30 секунд.
 4. [Шаблоны CLAUDE.md](#claudemd-шаблоны) — три production-шаблона: Next.js, Python/FastAPI, Terraform.
 5. [Гайды на русском](#гайды-и-контент-на-русском) — 18 статей с Habr + 11 YouTube-курсов + DTF.
+
+---
+
+## Harness (обвязка)
+
+Сдвиг 2026 года: результат всё меньше зависит от самой модели и всё больше — от **harness'а**, обвязки вокруг неё. Скиллы, субагенты, hooks, MCP, `CLAUDE.md` и песочница вместе превращают «умную модель» в воспроизводимый автономный процесс. Узкое место уехало: найти кандидата (баг, рефактор, фичу) стало дёшево и параллелится — дорого стало **проверить, отсортировать и внести правку**. Anthropic формулирует это на материале безопасности прямо: «discovery is now straightforward to parallelize, and the bottleneck has shifted to verification, triage, and patching».
+
+> 📐 Канонический референс — [anthropics/defending-code-reference-harness](https://github.com/anthropics/defending-code-reference-harness): скиллы `/threat-model`, `/vuln-scan`, `/triage`, `/patch` плюс автономный pipeline в песочнице, который можно `/customize` под свой стек. Разбор с практиками — [«Using LLMs to secure source code»](https://claude.com/blog/using-llms-to-secure-source-code) (копия в репо: [`docs/blog-post.md`](https://github.com/anthropics/defending-code-reference-harness/blob/main/docs/blog-post.md)). Репозиторий про безопасность, но **архитектура harness'а переносится на любую автономную задачу**.
+
+### Из чего собран harness
+
+Не один инструмент, а слой компонентов — каждый уже разобран в этом справочнике. Зонтичный взгляд, без дублирования страниц:
+
+- **[Skills](#skills)** — атомарные процедуры. Один скилл = один шаг pipeline (scan, triage, patch).
+- **[Sub-agents](#sub-agents)** — изоляция контекста: под каждый шаг свой агент со своим окном.
+- **[Hooks](#hooks)** — enforcement через код, а не через просьбу в промпте: что нельзя — блокирует hook.
+- **[MCP-серверы](#mcp-серверы)** — инструменты и доступ к данным. Плюс дисциплина контекст-бюджета: 5 серверов лучше 20.
+- **[CLAUDE.md шаблоны](#claudemd-шаблоны)** — правила, память и scope: что модель читает до старта (threat model, конвенции, границы доверия).
+- **[Оркестрация](#оркестрация-и-параллельные-агенты)** — запуск pipeline целиком: фоновые runner'ы, parallel-агенты, autonomous-циклы.
+
+### Паттерн автономного pipeline
+
+Anthropic свёл практику команд в петлю **threat model → sandbox → discovery → verification → triage → patch**. Первые два шага — настройка раз на проект, остальные четыре гоняешь по коду повторно. Принципы переносимы за пределы безопасности:
+
+1. **Partition → parallel, а не тупой fan-out.** Сначала recon делит пространство (8 парсеров, N эндпоинтов), потом параллельные агенты берут разные участки — иначе все сходятся на одних мелких багах. «Просто слали больше агентов» → «tons of issues, most of them duplicates».
+2. **Recall и precision — на разных шагах.** Discovery ищет максимум (даже маловероятное), verification отсекает неподтверждённое. Один агент, делающий оба сразу, начинает самоцензуру и выкидывает настоящие находки.
+3. **Независимый adversarial verifier.** Проверяющий — в свежем контейнере, без общей истории и ФС с искателем, иначе соглашается вместо проверки. Промпт: считай находку ложной, ищи, почему она неверна. Одного мало — гоняй несколько (разные модели/углы), бери majority vote, спорное отдавай отдельному judge.
+4. **Enforcement песочницей и кодом, не промптом.** «Сказали модели, что сети нет, — а она нашла путь в GitHub». Ограничения держит изоляция (gVisor/microVM, egress только к API, никаких `~/.aws`/`~/.ssh`/`.env`), а не строчка в инструкции.
+5. **Верификация фактом, не словом.** True positive — только когда агент собрал PoC и воспроизвёл его на стенде. Severity — после того как модель выписала рубрику (reachability, attacker control, preconditions, auth, blast radius), а не «SQL injection → critical» с потолка.
+6. **Minimal-patch + ladder of checks.** Сначала тест, падающий на старом коде (да, это TDD). Патч проверяется лесенкой от дешёвого к дорогому: **build → PoC больше не срабатывает → старые тесты зелёные → re-attack свежим агентом**. Чинить корень, а не call-site; правка минимальная, без рефактора и drive-by-уборки — иначе «дыру закрыли, но порвали связь с сервисом».
+
+> 🔁 Каждый проход улучшает следующий: верифицированные находки и патчи возвращаются в threat model и в контекст следующего скана. Готовый GitHub Action с Claude-ревьюером на каждый PR — [anthropics/claude-code-security-review](https://github.com/anthropics/claude-code-security-review).
 
 ---
 
@@ -470,6 +503,7 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 
 - [Security best practices](https://docs.claude.com/en/docs/claude-code/security) — Официальный гайд.
 - [Permissions / IAM](https://docs.claude.com/en/docs/claude-code/iam) — Настройка прав, `allowManagedHooksOnly` для enterprise.
+- [anthropics/defending-code-reference-harness](https://github.com/anthropics/defending-code-reference-harness) — Референс-харнесс Anthropic: скиллы threat-model / vuln-scan / triage / patch + автономный pipeline в песочнице. Сопровождается разбором «Using LLMs to secure source code».
 - [trailofbits/skills](https://github.com/trailofbits/skills) — Security-скиллы Trail of Bits: CodeQL / Semgrep, аудит кода.
 - [firebase/agent-skills@firestore-security-rules-auditor](https://skills.sh/firebase/agent-skills/firestore-security-rules-auditor) — Аудит security-rules Firestore перед прод-релизом. 20K+ установок.
 - [snyk/claude-code-pre-commit](https://github.com/snyk/claude-code-pre-commit) — Security-скан Snyk на pre-commit.
