@@ -83,17 +83,17 @@ claude mcp add postgres    # @modelcontextprotocol/server-postgres (read-only п
 
 ## Harness (обвязка)
 
-Сдвиг 2026 года: результат всё меньше зависит от самой модели и всё больше — от **harness'а**, обвязки вокруг неё. Скиллы, субагенты, hooks, MCP, `CLAUDE.md` и песочница вместе превращают «умную модель» в воспроизводимый автономный процесс. Узкое место уехало: найти кандидата (баг, рефактор, фичу) стало дёшево и параллелится — дорого стало **проверить, отсортировать и внести правку**. Anthropic формулирует это на материале безопасности прямо: «discovery is now straightforward to parallelize, and the bottleneck has shifted to verification, triage, and patching».
+Сдвиг 2026 года: результат всё меньше зависит от самой модели и всё больше — от **harness'а**, обвязки вокруг неё. Скиллы, субагенты, hooks, MCP, `CLAUDE.md` и песочница вместе превращают «умную модель» в воспроизводимый автономный процесс. Узкое место уехало: найти кандидата (баг, фичу) стало дёшево и параллелится; дорого теперь **проверить, отсортировать и внести правку**. Anthropic формулирует это на материале безопасности прямо: «discovery is now straightforward to parallelize, and the bottleneck has shifted to verification, triage, and patching».
 
 > 📐 Канонический референс — [anthropics/defending-code-reference-harness](https://github.com/anthropics/defending-code-reference-harness): скиллы `/threat-model`, `/vuln-scan`, `/triage`, `/patch` плюс автономный pipeline в песочнице, который можно `/customize` под свой стек. Разбор с практиками — [«Using LLMs to secure source code»](https://claude.com/blog/using-llms-to-secure-source-code) (копия в репо: [`docs/blog-post.md`](https://github.com/anthropics/defending-code-reference-harness/blob/main/docs/blog-post.md)). Репозиторий про безопасность, но **архитектура harness'а переносится на любую автономную задачу**.
 
 ### Из чего собран harness
 
-Не один инструмент, а слой компонентов — каждый уже разобран в этом справочнике. Зонтичный взгляд, без дублирования страниц:
+Это слой компонентов, каждый из которых уже разобран в справочнике. Зонтичный взгляд, без дублирования страниц:
 
 - **[Skills](#skills)** — атомарные процедуры. Один скилл = один шаг pipeline (scan, triage, patch).
 - **[Sub-agents](#sub-agents)** — изоляция контекста: под каждый шаг свой агент со своим окном.
-- **[Hooks](#hooks)** — enforcement через код, а не через просьбу в промпте: что нельзя — блокирует hook.
+- **[Hooks](#hooks)** — жёсткие ограничения исполняются кодом: запретное действие блокирует hook на событии.
 - **[MCP-серверы](#mcp-серверы)** — инструменты и доступ к данным. Плюс дисциплина контекст-бюджета: 5 серверов лучше 20.
 - **[CLAUDE.md шаблоны](#claudemd-шаблоны)** — правила, память и scope: что модель читает до старта (threat model, конвенции, границы доверия).
 - **[Оркестрация](#оркестрация-и-параллельные-агенты)** — запуск pipeline целиком: фоновые runner'ы, parallel-агенты, autonomous-циклы.
