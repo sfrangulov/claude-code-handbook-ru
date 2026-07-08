@@ -17,5 +17,11 @@
     { "name": "snyk/claude-code-pre-commit", "url": "https://github.com/snyk/claude-code-pre-commit", "desc": "Security-скан Snyk на pre-commit." },
     { "name": "johnlindquist/ccmgr", "url": "https://github.com/johnlindquist/ccmgr", "desc": "Менеджер для конфигов hooks." },
     { "name": "Setting up Claude Code hooks (Anthropic blog)", "url": "https://www.anthropic.com/news/claude-code-hooks", "desc": "Официальный анонс с примерами." }
+  ],
+  "observability": [
+    { "name": "disler/claude-code-hooks-multi-agent-observability", "url": "https://github.com/disler/claude-code-hooks-multi-agent-observability", "desc": "Real-time дашборд hook-событий сразу по нескольким параллельным агентам. 1.5k⭐." },
+    { "name": "hoangsonww/Claude-Code-Agent-Monitor", "url": "https://github.com/hoangsonww/Claude-Code-Agent-Monitor", "desc": "Self-hosted дашборд активности агента через hooks: сессии, tool-usage, оркестрация субагентов, kanban-статусы." },
+    { "name": "simple10/agents-observe", "url": "https://github.com/simple10/agents-observe", "desc": "Real-time observability сессий Claude Code и мульти-агентов, с фильтрацией и replay." },
+    { "name": "ColeMurray/claude-code-otel", "url": "https://github.com/ColeMurray/claude-code-otel", "desc": "Dockerized-стек OpenTelemetry → Grafana для мониторинга расхода, производительности и стоимости." }
   ]
 }

@@ -12,6 +12,7 @@
     { "name": "0xdesign/design-plugin", "url": "https://github.com/0xdesign/design-plugin", "desc": "Дизайн-ориентированная обвязка для UI-задач." },
     { "name": "jeremylongshore/claude-code-plugins-plus-skills", "url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills", "desc": "Связка плагинов и скиллов в одном репозитории." },
     { "name": "TT-Wang/cortex-plugin", "url": "https://github.com/TT-Wang/cortex-plugin", "desc": "Структурированное мышление и планирование задач." },
-    { "name": "Rich627/whatsapp-claude-plugin", "url": "https://github.com/Rich627/whatsapp-claude-plugin", "desc": "Интеграция с WhatsApp." }
+    { "name": "Rich627/whatsapp-claude-plugin", "url": "https://github.com/Rich627/whatsapp-claude-plugin", "desc": "Интеграция с WhatsApp." },
+    { "name": "iurykrieger/claude-bedrock", "url": "https://github.com/iurykrieger/claude-bedrock", "desc": "Автоматизация «второго мозга» в Obsidian: сущности, загрузка, сжатие и синхронизация vault через скиллы Claude Code." }
   ]
 }

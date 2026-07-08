@@ -28,6 +28,8 @@ CI gate: node scripts/build-readme.mjs --check
 - [Hooks](#hooks) — shell-команды, привязанные к событиям сессии
 - [MCP-серверы](#mcp-серверы) — подключение внешних инструментов через Model Context Protocol
 - [CLAUDE.md шаблоны](#claudemd-шаблоны) — готовые конфиги под стек
+- [Status Lines](#status-lines) — статуслайн: лимиты, контекст и стоимость в строке под промптом
+- [Мониторинг расхода и стоимости](#мониторинг-расхода-и-стоимости) — трекеры токенов, квоты и трат
 - [Гайды и контент на русском](#гайды-и-контент-на-русском)
 - [Прочие ресурсы](#прочие-ресурсы) — каналы, подкасты, аналоги
 - [Безопасность и enterprise](#безопасность-и-enterprise)
@@ -173,6 +175,8 @@ Skills — переиспользуемые наборы инструкций, �
 - [jthack/ffuf_claude_skill](https://github.com/jthack/ffuf_claude_skill) — Fuzzing через `ffuf` при пентесте.
 - [yusufkaraaslan/Skill_Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) — Превращает сайт документации в Claude Skill.
 - [alonw0/web-asset-generator](https://github.com/alonw0/web-asset-generator) — Favicon, app-иконки, OG-картинки.
+- [SawyerHood/dev-browser](https://github.com/SawyerHood/dev-browser) — Даёт агенту браузер: сам открывает страницу и проверяет свою работу глазами. Альтернатива Playwright MCP. 6.4k⭐.
+- [bitjaru/styleseed](https://github.com/bitjaru/styleseed) — Дизайн-движок: учит агента дизайнерскому вкусу — 74 правила в markdown, 7 бренд-скинов и именованная motion-система. Слэш-скиллы `/ss-*`.
 
 ### Локальные примеры
 
@@ -325,6 +329,7 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 - [jeremylongshore/claude-code-plugins-plus-skills](https://github.com/jeremylongshore/claude-code-plugins-plus-skills) — Связка плагинов и скиллов в одном репозитории.
 - [TT-Wang/cortex-plugin](https://github.com/TT-Wang/cortex-plugin) — Структурированное мышление и планирование задач.
 - [Rich627/whatsapp-claude-plugin](https://github.com/Rich627/whatsapp-claude-plugin) — Интеграция с WhatsApp.
+- [iurykrieger/claude-bedrock](https://github.com/iurykrieger/claude-bedrock) — Автоматизация «второго мозга» в Obsidian: сущности, загрузка, сжатие и синхронизация vault через скиллы Claude Code.
 
 ---
 
@@ -348,6 +353,15 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 - [snyk/claude-code-pre-commit](https://github.com/snyk/claude-code-pre-commit) — Security-скан Snyk на pre-commit.
 - [johnlindquist/ccmgr](https://github.com/johnlindquist/ccmgr) — Менеджер для конфигов hooks.
 - [Setting up Claude Code hooks (Anthropic blog)](https://www.anthropic.com/news/claude-code-hooks) — Официальный анонс с примерами.
+
+### Observability — дашборды поверх hooks
+
+Hooks дают поток событий сессии; эти проекты собирают его в живую картину: что делает агент, сколько субагентов работает параллельно, куда уходят токены. Годится и на разбор инцидента постфактум, и на наблюдение за автономным прогоном вживую.
+
+- [disler/claude-code-hooks-multi-agent-observability](https://github.com/disler/claude-code-hooks-multi-agent-observability) — Real-time дашборд hook-событий сразу по нескольким параллельным агентам. 1.5k⭐.
+- [hoangsonww/Claude-Code-Agent-Monitor](https://github.com/hoangsonww/Claude-Code-Agent-Monitor) — Self-hosted дашборд активности агента через hooks: сессии, tool-usage, оркестрация субагентов, kanban-статусы.
+- [simple10/agents-observe](https://github.com/simple10/agents-observe) — Real-time observability сессий Claude Code и мульти-агентов, с фильтрацией и replay.
+- [ColeMurray/claude-code-otel](https://github.com/ColeMurray/claude-code-otel) — Dockerized-стек OpenTelemetry → Grafana для мониторинга расхода, производительности и стоимости.
 
 ### Сценарии применения
 
@@ -435,6 +449,30 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 - [Anthropic engineering: Claude Code best practices](https://www.anthropic.com/engineering/claude-code-best-practices) — Официальный пост.
 - [Год с Claude Code (alpinadigital, Habr)](https://habr.com/ru/companies/alpinadigital/articles/1032134/) — Год опыта в конфигурации.
 - [Claude Code: практический гайд (Habr)](https://habr.com/ru/articles/987094/) — Сетап на русском.
+
+---
+
+## Status Lines
+
+Статуслайн — строка под промптом Claude Code, куда выводятся лимиты, окно контекста, модель, git и стоимость сессии. Ниша молодая и репозитории небольшие, но пара строк конфига убирает постоянные `/context` и `/cost`. См. [официальную доку](https://docs.claude.com/en/docs/claude-code/statusline).
+
+- [leeguooooo/claude-code-usage-bar](https://github.com/leeguooooo/claude-code-usage-bar) — Статуслайн с лимитами 5h/7d, обратным отсчётом до сброса, моделью, окном контекста и возрастом prompt-cache. 3 стиля × 9 тем, daemon-режим. 302⭐.
+- [briansmith80/claude-code-status-bar](https://github.com/briansmith80/claude-code-status-bar) — Настраиваемый статуслайн на чистом bash без зависимостей: лимиты с маркерами pacing, окно контекста, git, стоимость сессии, 8 тем.
+- [educlopez/ccvitals](https://github.com/educlopez/ccvitals) — Минималистичный статуслайн на чистом bash — не блокирует ввод: квота, окно контекста, git-статус.
+- [kumamaki/Claude-Code-Personalities](https://github.com/kumamaki/Claude-Code-Personalities) — Kaomoji-лица в статуслайне реагируют в реальном времени на то, чем занят агент, вплоть до эскалации «раздражения».
+
+---
+
+## Мониторинг расхода и стоимости
+
+Трекеры токенов, квоты и денег: от статуслайна с тратой за день до отдельного дашборда со шкалами rate-limit и прогнозом до сброса. Пригодится на Pro/Max, чтобы не упереться в 5-часовой лимит посреди задачи. См. [про стоимость](https://docs.claude.com/en/docs/claude-code/costs).
+
+- [mag123c/toktrack](https://github.com/mag123c/toktrack) — Быстрый трекер токенов и стоимости для Claude Code и других LLM. 174⭐.
+- [zihenghe04/CCDash](https://github.com/zihenghe04/CCDash) — Единая панель расхода токенов, квоты и стоимости по Claude Code, claude.ai и API в одном окне.
+- [backstabslash/goccc](https://github.com/backstabslash/goccc) — Калькулятор стоимости и статуслайн на Go, single binary: разбивка по модели, дню, проекту и ветке.
+- [Ventuss-OvO/cc-costline](https://github.com/Ventuss-OvO/cc-costline) — Статуслайн, показывающий трату за 7 и 30 дней.
+- [fabioconcina/claumon](https://github.com/fabioconcina/claumon) — Дашборд для Pro/Max: живые шкалы rate-limit, калиброванные прогнозы расхода, стоимость сессий, просмотр памяти. Один бинарник, zero config.
+- [EricAndrechek/Pacer](https://github.com/EricAndrechek/Pacer) — Нативное macOS-приложение для учёта токенов, стоимости и pacing по rate-limit, с разбивкой по проектам.
 
 ---
 

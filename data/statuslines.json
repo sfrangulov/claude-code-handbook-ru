@@ -1,0 +1,8 @@
+{
+  "items": [
+    { "name": "leeguooooo/claude-code-usage-bar", "url": "https://github.com/leeguooooo/claude-code-usage-bar", "desc": "Статуслайн с лимитами 5h/7d, обратным отсчётом до сброса, моделью, окном контекста и возрастом prompt-cache. 3 стиля × 9 тем, daemon-режим. 302⭐." },
+    { "name": "briansmith80/claude-code-status-bar", "url": "https://github.com/briansmith80/claude-code-status-bar", "desc": "Настраиваемый статуслайн на чистом bash без зависимостей: лимиты с маркерами pacing, окно контекста, git, стоимость сессии, 8 тем." },
+    { "name": "educlopez/ccvitals", "url": "https://github.com/educlopez/ccvitals", "desc": "Минималистичный статуслайн на чистом bash — не блокирует ввод: квота, окно контекста, git-статус." },
+    { "name": "kumamaki/Claude-Code-Personalities", "url": "https://github.com/kumamaki/Claude-Code-Personalities", "desc": "Kaomoji-лица в статуслайне реагируют в реальном времени на то, чем занят агент, вплоть до эскалации «раздражения»." }
+  ]
+}
