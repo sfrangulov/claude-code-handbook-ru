@@ -465,12 +465,12 @@ Hooks дают поток событий сессии; эти проекты с�
 
 ## Мониторинг расхода и стоимости
 
-Трекеры токенов, квоты и денег: от статуслайна с тратой за день до отдельного дашборда со шкалами rate-limit и прогнозом до сброса. Пригодится на Pro/Max, чтобы не упереться в 5-часовой лимит посреди задачи. См. [про стоимость](https://docs.claude.com/en/docs/claude-code/costs).
+Трекеры токенов, квоты и денег: от статуслайна с тратами за день до отдельного дашборда со шкалами rate-limit и прогнозом до сброса. Пригодится на Pro/Max, чтобы не упереться в 5-часовой лимит посреди задачи. См. [про стоимость](https://docs.claude.com/en/docs/claude-code/costs).
 
 - [mag123c/toktrack](https://github.com/mag123c/toktrack) — Быстрый трекер токенов и стоимости для Claude Code и других LLM. 174⭐.
 - [zihenghe04/CCDash](https://github.com/zihenghe04/CCDash) — Единая панель расхода токенов, квоты и стоимости по Claude Code, claude.ai и API в одном окне.
 - [backstabslash/goccc](https://github.com/backstabslash/goccc) — Калькулятор стоимости и статуслайн на Go, single binary: разбивка по модели, дню, проекту и ветке.
-- [Ventuss-OvO/cc-costline](https://github.com/Ventuss-OvO/cc-costline) — Статуслайн, показывающий трату за 7 и 30 дней.
+- [Ventuss-OvO/cc-costline](https://github.com/Ventuss-OvO/cc-costline) — Статуслайн с тратами за 7 и 30 дней.
 - [fabioconcina/claumon](https://github.com/fabioconcina/claumon) — Дашборд для Pro/Max: живые шкалы rate-limit, калиброванные прогнозы расхода, стоимость сессий, просмотр памяти. Один бинарник, zero config.
 - [EricAndrechek/Pacer](https://github.com/EricAndrechek/Pacer) — Нативное macOS-приложение для учёта токенов, стоимости и pacing по rate-limit, с разбивкой по проектам.
 

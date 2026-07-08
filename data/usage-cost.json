@@ -3,7 +3,7 @@
     { "name": "mag123c/toktrack", "url": "https://github.com/mag123c/toktrack", "desc": "Быстрый трекер токенов и стоимости для Claude Code и других LLM. 174⭐." },
     { "name": "zihenghe04/CCDash", "url": "https://github.com/zihenghe04/CCDash", "desc": "Единая панель расхода токенов, квоты и стоимости по Claude Code, claude.ai и API в одном окне." },
     { "name": "backstabslash/goccc", "url": "https://github.com/backstabslash/goccc", "desc": "Калькулятор стоимости и статуслайн на Go, single binary: разбивка по модели, дню, проекту и ветке." },
-    { "name": "Ventuss-OvO/cc-costline", "url": "https://github.com/Ventuss-OvO/cc-costline", "desc": "Статуслайн, показывающий трату за 7 и 30 дней." },
+    { "name": "Ventuss-OvO/cc-costline", "url": "https://github.com/Ventuss-OvO/cc-costline", "desc": "Статуслайн с тратами за 7 и 30 дней." },
     { "name": "fabioconcina/claumon", "url": "https://github.com/fabioconcina/claumon", "desc": "Дашборд для Pro/Max: живые шкалы rate-limit, калиброванные прогнозы расхода, стоимость сессий, просмотр памяти. Один бинарник, zero config." },
     { "name": "EricAndrechek/Pacer", "url": "https://github.com/EricAndrechek/Pacer", "desc": "Нативное macOS-приложение для учёта токенов, стоимости и pacing по rate-limit, с разбивкой по проектам." }
   ]
