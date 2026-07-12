@@ -5,91 +5,91 @@
       "slug": "anthropics/skills@frontend-design",
       "url": "https://skills.sh/anthropics/skills/frontend-design",
       "desc": "Перестраивает дизайн в пользу bold-решений вместо дефолтных «AI slop»-карточек. Триггерь, когда видишь, что вышло generic. React + Tailwind.",
-      "count": 405000
+      "count": 653600
     },
     {
       "slug": "vercel-labs/agent-skills@vercel-react-best-practices",
       "url": "https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
       "desc": "React/Next.js — производительность по гайду Vercel: правильные границы между клиентом и RSC, кэширование, оптимизация размера бандла. Подключай в любом Next.js-проекте.",
-      "count": 395000
+      "count": 544700
     },
     {
       "slug": "vercel-labs/agent-skills@web-design-guidelines",
       "url": "https://skills.sh/vercel-labs/agent-skills/web-design-guidelines",
       "desc": "Чек-лист соответствия Web Interface Guidelines: a11y, hit-targets, focus rings. Запускай как ревью UI до коммита.",
-      "count": 316000
+      "count": 457000
     },
     {
       "slug": "microsoft/azure-skills@azure-deploy",
       "url": "https://skills.sh/microsoft/azure-skills/azure-deploy",
       "desc": "Деплой в Azure: ARM/Bicep, App Service, Container Apps. Ставь только если работаешь в Azure-стеке — иначе мёртвый груз в контексте.",
-      "count": 312000
-    },
-    {
-      "slug": "obra/superpowers@brainstorming",
-      "url": "https://skills.sh/obra/superpowers/brainstorming",
-      "desc": "Структурированный брейншторм с гипотезами и матрицей вариантов **до** начала кода. Включай, когда задача расплывчатая («сделай auth»).",
-      "count": 155000
-    },
-    {
-      "slug": "xixu-me/skills@github-actions-docs",
-      "url": "https://skills.sh/xixu-me/skills/github-actions-docs",
-      "desc": "Свежая официальная дока GitHub Actions: синтаксис, runners, OIDC, troubleshooting. Когда пишешь workflow и не хочешь искать в десяти вкладках.",
-      "count": 131000
-    },
-    {
-      "slug": "vercel-labs/agent-skills@vercel-react-native-skills",
-      "url": "https://skills.sh/vercel-labs/agent-skills/vercel-react-native-skills",
-      "desc": "React Native по гайду Vercel: снимает с агента половину типичных багов в RN-проектах.",
-      "count": 116000
-    },
-    {
-      "slug": "mattpocock/skills@tdd",
-      "url": "https://skills.sh/mattpocock/skills/tdd",
-      "desc": "TDD-цикл (red-green-refactor) с дисциплиной — не даёт агенту писать код раньше тестов. От Matt Pocock.",
-      "count": 96000
-    },
-    {
-      "slug": "obra/superpowers@systematic-debugging",
-      "url": "https://skills.sh/obra/superpowers/systematic-debugging",
-      "desc": "Дисциплина отладки: гипотезы → изоляция → root cause. Прерывает цикл бесконечных правок наугад.",
-      "count": 94000
-    },
-    {
-      "slug": "arvindrk/extract-design-system@extract-design-system",
-      "url": "https://skills.sh/arvindrk/extract-design-system/extract-design-system",
-      "desc": "Скан существующего сайта → структурированный design-system (токены, паттерны, типографика). Для редизайна или нового проекта на базе старого.",
-      "count": 93000
-    },
-    {
-      "slug": "obra/superpowers@requesting-code-review",
-      "url": "https://skills.sh/obra/superpowers/requesting-code-review",
-      "desc": "Запросить ревью у субагента **перед** коммитом. Эффективно, когда работаешь автономно без живого ревьюера.",
-      "count": 82000
+      "count": 444200
     },
     {
       "slug": "mattpocock/skills@grill-with-docs",
       "url": "https://skills.sh/mattpocock/skills/grill-with-docs",
       "desc": "«Допрашивай» документацию через find/grep — заменяет догадки точными цитатами. Особенно ценно для библиотек, где знание Claude устарело.",
-      "count": 79000
+      "count": 440700
+    },
+    {
+      "slug": "mattpocock/skills@tdd",
+      "url": "https://skills.sh/mattpocock/skills/tdd",
+      "desc": "TDD-цикл (red-green-refactor) с дисциплиной — не даёт агенту писать код раньше тестов. От Matt Pocock.",
+      "count": 415700
+    },
+    {
+      "slug": "larksuite/cli@lark-workflow-meeting-summary",
+      "url": "https://skills.sh/larksuite/cli/lark-workflow-meeting-summary",
+      "desc": "_(новый в топе, допиши описание в data/skills-top.json)_",
+      "count": 339000
+    },
+    {
+      "slug": "larksuite/cli@lark-workflow-standup-report",
+      "url": "https://skills.sh/larksuite/cli/lark-workflow-standup-report",
+      "desc": "_(новый в топе, допиши описание в data/skills-top.json)_",
+      "count": 338500
+    },
+    {
+      "slug": "obra/superpowers@brainstorming",
+      "url": "https://skills.sh/obra/superpowers/brainstorming",
+      "desc": "Структурированный брейншторм с гипотезами и матрицей вариантов **до** начала кода. Включай, когда задача расплывчатая («сделай auth»).",
+      "count": 273000
+    },
+    {
+      "slug": "leonxlnx/taste-skill@design-taste-frontend",
+      "url": "https://skills.sh/leonxlnx/taste-skill/design-taste-frontend",
+      "desc": "_(новый в топе, допиши описание в data/skills-top.json)_",
+      "count": 247000
+    },
+    {
+      "slug": "leonxlnx/taste-skill@high-end-visual-design",
+      "url": "https://skills.sh/leonxlnx/taste-skill/high-end-visual-design",
+      "desc": "_(новый в топе, допиши описание в data/skills-top.json)_",
+      "count": 194000
+    },
+    {
+      "slug": "obra/superpowers@systematic-debugging",
+      "url": "https://skills.sh/obra/superpowers/systematic-debugging",
+      "desc": "Дисциплина отладки: гипотезы → изоляция → root cause. Прерывает цикл бесконечных правок наугад.",
+      "count": 182700
+    },
+    {
+      "slug": "obra/superpowers@requesting-code-review",
+      "url": "https://skills.sh/obra/superpowers/requesting-code-review",
+      "desc": "Запросить ревью у субагента **перед** коммитом. Эффективно, когда работаешь автономно без живого ревьюера.",
+      "count": 163700
+    },
+    {
+      "slug": "vercel-labs/agent-skills@vercel-react-native-skills",
+      "url": "https://skills.sh/vercel-labs/agent-skills/vercel-react-native-skills",
+      "desc": "React Native по гайду Vercel: снимает с агента половину типичных багов в RN-проектах.",
+      "count": 163700
     },
     {
       "slug": "obra/superpowers@subagent-driven-development",
       "url": "https://skills.sh/obra/superpowers/subagent-driven-development",
       "desc": "Делегирование независимых задач субагентам параллельно (feature + tests, frontend + backend).",
-      "count": 70000
-    },
-    {
-      "slug": "anthropics/skills@webapp-testing",
-      "url": "https://skills.sh/anthropics/skills/webapp-testing",
-      "desc": "Тестирование веб-приложений через Playwright. Заменяет «руками протыкать в браузере» на автоматизацию.",
-      "count": 68000
-    },
-    {
-      "slug": "obra/superpowers@verification-before-completion",
-      "url": "https://skills.sh/obra/superpowers/verification-before-completion",
-      "desc": "Проверить, что задача реально сделана (запустить тесты, открыть страницу), до отчёта «готово». Защита от false-positive отчётов.",
-      "count": 68000
+      "count": 142800
     }
   ]
 }
