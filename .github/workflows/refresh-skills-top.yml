@@ -22,11 +22,11 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: Pull fresh install counts from skills.sh
         run: node scripts/refresh-top-skills.mjs --write
@@ -40,7 +40,7 @@ jobs:
           node scripts/lint-data.mjs --warn
 
       - name: Open PR if anything changed
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           commit-message: 'chore(skills): refresh top-15 from skills.sh'
           title: 'chore(skills): refresh top-15 from skills.sh'

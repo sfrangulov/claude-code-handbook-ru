@@ -37,6 +37,17 @@ const SEARCH_QUERIES = [
 const MIN_INSTALLS = 20_000;
 const MAX_ROWS = 15;
 
+// Skills excluded from the curated top list regardless of install-count.
+// Matched by prefix of the `owner/repo@skill` slug. larksuite/* — Lark-workflow
+// skills (meeting-summary, standup-report): high installs but too narrow for a
+// general Claude Code handbook. The filter runs before the top-N cut, so the
+// list always backfills to MAX_ROWS with allowed skills.
+const DENYLIST_PREFIXES = ['larksuite/'];
+
+function isDenied(slug) {
+  return DENYLIST_PREFIXES.some((p) => slug.startsWith(p));
+}
+
 const STRIP_ANSI = /\x1b\[[0-9;]*m/g;
 const ROW_RE = /^\s*(\S+\/[^@\s]+@\S+)\s+([\d.]+[KM])\s+installs/;
 
@@ -81,7 +92,7 @@ async function fetchAll() {
     }
   }
   return [...seen.values()]
-    .filter((x) => x.count >= MIN_INSTALLS)
+    .filter((x) => x.count >= MIN_INSTALLS && !isDenied(x.slug))
     .sort((a, b) => b.count - a.count)
     .slice(0, MAX_ROWS);
 }
