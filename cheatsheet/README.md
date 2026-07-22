@@ -47,7 +47,7 @@ hook-события (`TeammateIdle`/`TaskCompleted`) и практическое
 
 ## Поддержание актуальности
 
-Текущая версия в шапке: «соответствует Claude Code 2.1.159». При апдейтах Claude Code:
+Текущая версия в шапке: «соответствует Claude Code 2.1.217». При апдейтах Claude Code:
 
 1. Сверить новые слэш-команды и флаги с [changelog](https://code.claude.com/docs/en/changelog).
 2. Добавить новые строки в соответствующую секцию `index.html`. NEW-бэйдж — `<span class="badge-new">NEW</span>`.
