@@ -821,6 +821,10 @@
       "url": "https://claude.ai/settings/capabilities"
     },
     {
+      "name": "skill-graveyard",
+      "url": "https://github.com/sfrangulov/skill-graveyard"
+    },
+    {
       "name": "spec-based-claude-code",
       "url": "https://github.com/papaoloba/spec-based-claude-code"
     },

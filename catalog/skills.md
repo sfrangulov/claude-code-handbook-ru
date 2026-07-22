@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Скилл подгружается автоматически, когда задача попадает под его описание — поэтому имеет смысл накопить несколько узкоспециализированных, а не один универсальный.
 
-**Записей:** 163.
+**Записей:** 164.
 
 📌 Курируемая подборка — в [главном README](../README.md#skills). Здесь — широкая выборка для поиска и SEO.
 
@@ -138,6 +138,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [second-brain-skills](https://github.com/coleam00/second-brain-skills)
 - [seedance-prompt-skill](https://github.com/songguoxs/seedance-prompt-skill)
 - [seo-geo-claude-skills](https://github.com/aaron-he-zhu/seo-geo-claude-skills)
+- [sfrangulov/skills](https://github.com/sfrangulov/skills)
 - [shadcn/ui](https://ui.shadcn.com/docs/skills)
 - [sim-xia/skill-cortex-server](https://github.com/Sim-xia/skill-cortex-server)
 - [Simon Willison: Claude Skills are awesome, maybe a bigger deal than MCP](https://simonwillison.net/2025/Oct/16/claude-skills)

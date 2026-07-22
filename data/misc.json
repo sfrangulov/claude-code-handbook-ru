@@ -46,6 +46,7 @@
     { "name": "Anthropic Status", "url": "https://status.anthropic.com/", "desc": "Статус сервисов." },
     { "name": "Claude release notes", "url": "https://docs.claude.com/en/release-notes/claude-code", "desc": "Официальный changelog." },
     { "name": "Skills.sh", "url": "https://skills.sh/", "desc": "Маркетплейс скиллов с количеством установок." },
+    { "name": "sfrangulov/skill-graveyard", "url": "https://github.com/sfrangulov/skill-graveyard", "desc": "Аудит установленных скиллов по локальным логам сессий: active / dead / missing / hallucinated. `npx skill-graveyard`, без сети и телеметрии; в монорепо — mcp-graveyard и memory-graveyard. От мейнтейнера этого handbook." },
     { "name": "shanraisshan/claude-code-best-practice", "url": "https://github.com/shanraisshan/claude-code-best-practice", "desc": "Эталонный EN-сборник best practices с ежедневными апдейтами под версии Claude Code. Покрывает все hot-features, Boris Cherny tips, cross-model паттерны." }
   ],
   "workflowMethodologies": [

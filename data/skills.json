@@ -22,6 +22,7 @@
     { "name": "get-convex/agent-skills", "url": "https://github.com/get-convex/agent-skills", "desc": "Convex — реактивный бэкенд." },
     { "name": "expo/skills", "url": "https://github.com/expo/skills", "desc": "Expo. 25K+ установок." },
     { "name": "shadcn/ui skills", "url": "https://ui.shadcn.com/docs/skills", "desc": "Контекст по компонентам shadcn и принудительное применение паттернов." },
+    { "name": "sfrangulov/skills", "url": "https://github.com/sfrangulov/skills", "desc": "Коллекция мейнтейнера этого handbook: consulting-фреймворк на 8 шагов (EN и RU), выбор следующего OSS-продукта, demo-video-pipeline (Playwright + Remotion + ElevenLabs), research-pipeline с верификацией источников." },
     { "name": "travisvn/awesome-claude-skills", "url": "https://github.com/travisvn/awesome-claude-skills", "desc": "12k⭐, актуальный куратор скиллов." },
     { "name": "karanb192/awesome-claude-skills", "url": "https://github.com/karanb192/awesome-claude-skills", "desc": "50+ проверенных скиллов с разбивкой по типам." }
   ],

@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Качество смешанное — это широкая выборка, не отбор. Используй для поиска нишевых решений по теме.
 
-**Записей:** 217.
+**Записей:** 218.
 
 📌 Курируемая подборка — в [главном README](../README.md). Здесь — широкая выборка для поиска и SEO.
 
@@ -222,6 +222,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [ralph-claude-code](https://github.com/frankbria/ralph-claude-code)
 - [run-claude-docker](https://github.com/icanhasjonas/run-claude-docker)
 - [Settings > Capabilities](https://claude.ai/settings/capabilities)
+- [skill-graveyard](https://github.com/sfrangulov/skill-graveyard)
 - [spec-based-claude-code](https://github.com/papaoloba/spec-based-claude-code)
 - [spyrae/claude-concilium](https://github.com/spyrae/claude-concilium)
 - [SuperClaude](https://github.com/SuperClaude-Org/SuperClaude_Framework)

@@ -10,7 +10,7 @@ CI gate: node scripts/build-readme.mjs --check
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
-**Полный сырой каталог (1413 записей по типам)** — в [catalog/](./catalog/README.md). Здесь — курируемая подборка: только то, что я реально применяю в клиентских проектах либо что массово проверено сообществом по install-count.
+**Полный сырой каталог (1415 записей по типам)** — в [catalog/](./catalog/README.md). Здесь — курируемая подборка: только то, что я реально применяю в клиентских проектах либо что массово проверено сообществом по install-count.
 
 > 📄 **[Шпаргалка на 1 страницу A4 →](./cheatsheet/)** Все горячие клавиши, слэш-команды, MCP, память, workflows, skills/agents и CLI-флаги на одном листе. Скачать [готовый PDF](./cheatsheet/cheatsheet.pdf) или открыть [index.html](./cheatsheet/index.html) → `⌘P`.
 
@@ -110,7 +110,7 @@ Anthropic свёл практику команд в петлю **threat model �
 
 Skills — переиспользуемые наборы инструкций, которые Claude подгружает по триггеру. Один скилл = одна задача (TDD-цикл, code-review, performance-аудит). См. [официальный гайд](https://docs.claude.com/en/docs/claude-code/skills).
 
-> 📂 Полный каталог: **[163 записи →](./catalog/skills.md)**
+> 📂 Полный каталог: **[164 записи →](./catalog/skills.md)**
 
 ### Топ-15 скиллов (skills.sh)
 
@@ -165,6 +165,7 @@ Skills — переиспользуемые наборы инструкций, �
 - [get-convex/agent-skills](https://github.com/get-convex/agent-skills) — Convex — реактивный бэкенд.
 - [expo/skills](https://github.com/expo/skills) — Expo. 25K+ установок.
 - [shadcn/ui skills](https://ui.shadcn.com/docs/skills) — Контекст по компонентам shadcn и принудительное применение паттернов.
+- [sfrangulov/skills](https://github.com/sfrangulov/skills) — Коллекция мейнтейнера этого handbook: consulting-фреймворк на 8 шагов (EN и RU), выбор следующего OSS-продукта, demo-video-pipeline (Playwright + Remotion + ElevenLabs), research-pipeline с верификацией источников.
 - [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) — 12k⭐, актуальный куратор скиллов.
 - [karanb192/awesome-claude-skills](https://github.com/karanb192/awesome-claude-skills) — 50+ проверенных скиллов с разбивкой по типам.
 
@@ -409,7 +410,7 @@ Hooks дают поток событий сессии; эти проекты с�
 
 > 📂 Полный каталог: **[827 записей →](./catalog/mcp-servers.md)** — взято из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
 
-> **Правило практика:** пять хорошо подобранных MCP-серверов лучше двадцати. Каждый сервер расходует токены контекста на discovery — будь придирчив. С 19 включёнными серверами 200K-контекст превращается в 70K ещё до старта работы.
+> **Правило практика:** пять хорошо подобранных MCP-серверов лучше двадцати. Каждый сервер расходует токены контекста на discovery — будь придирчив. С 19 включёнными серверами 200K-контекст превращается в 70K ещё до старта работы. Какие из подключённых серверов реально вызываются, покажет [`npx mcp-graveyard`](https://github.com/sfrangulov/skill-graveyard/tree/main/packages/mcp-graveyard) — аудит по локальным логам сессий, без сети и телеметрии.
 
 ### Официальные
 
@@ -639,6 +640,7 @@ Hooks дают поток событий сессии; эти проекты с�
 - [Anthropic Status](https://status.anthropic.com/) — Статус сервисов.
 - [Claude release notes](https://docs.claude.com/en/release-notes/claude-code) — Официальный changelog.
 - [Skills.sh](https://skills.sh/) — Маркетплейс скиллов с количеством установок.
+- [sfrangulov/skill-graveyard](https://github.com/sfrangulov/skill-graveyard) — Аудит установленных скиллов по локальным логам сессий: active / dead / missing / hallucinated. `npx skill-graveyard`, без сети и телеметрии; в монорепо — mcp-graveyard и memory-graveyard. От мейнтейнера этого handbook.
 - [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — Эталонный EN-сборник best practices с ежедневными апдейтами под версии Claude Code. Покрывает все hot-features, Boris Cherny tips, cross-model паттерны.
 
 ---
