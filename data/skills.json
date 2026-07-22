@@ -8,7 +8,8 @@
     { "name": "anthropics/skills/web-artifacts-builder", "url": "https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder", "desc": "HTML-артефакты на React + Tailwind + shadcn/ui." },
     { "name": "anthropics/skills/mcp-builder", "url": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder", "desc": "Пошаговое создание MCP-серверов." },
     { "name": "anthropics/skills/webapp-testing", "url": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing", "desc": "Тестирование веб-приложений через Playwright." },
-    { "name": "anthropics/skills/skill-creator", "url": "https://github.com/anthropics/skills/tree/main/skills/skill-creator", "desc": "Интерактивное создание собственных скиллов через Q&A." }
+    { "name": "anthropics/skills/skill-creator", "url": "https://github.com/anthropics/skills/tree/main/skills/skill-creator", "desc": "Интерактивное создание собственных скиллов через Q&A." },
+    { "name": "anthropics/cwc-workshops/eval-audit-and-sweep", "url": "https://github.com/anthropics/cwc-workshops/tree/main/rightmodel/.claude/skills/eval-audit-and-sweep", "desc": "Двухфазный playbook из воркшопа Picking the Right Model: аудит evals по чеклисту надёжности (дизайн задач, harness, метрики, LLM-судья), затем sweep по сетке модель × thinking × effort с ценой и скоростью на ячейку. Подходит для любого eval-фреймворка." }
   ],
   "communityCollections": [
     { "name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "desc": "20+ боевых скиллов: TDD, debugging, brainstorming, написание планов. Самая популярная коллекция. Установка: `claude plugin marketplace add obra/superpowers-marketplace`." },

@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Скилл подгружается автоматически, когда задача попадает под его описание — поэтому имеет смысл накопить несколько узкоспециализированных, а не один универсальный.
 
-**Записей:** 162.
+**Записей:** 163.
 
 📌 Курируемая подборка — в [главном README](../README.md#skills). Здесь — широкая выборка для поиска и SEO.
 
@@ -66,6 +66,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [docx](https://github.com/anthropics/skills/tree/main/skills/docx)
 - [Emdash Skills](https://github.com/megabytespace/claude-skills)
 - [ensue-skill](https://github.com/mutable-state-inc/ensue-skill)
+- [eval-audit-and-sweep](https://github.com/anthropics/cwc-workshops/tree/main/rightmodel/.claude/skills/eval-audit-and-sweep)
 - [excalidraw-diagram-skill](https://github.com/coleam00/excalidraw-diagram-skill)
 - [Expo Skills](https://github.com/expo/skills)
 - [faf-skills](https://github.com/Wolfe-Jam/faf-skills)

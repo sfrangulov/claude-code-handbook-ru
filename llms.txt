@@ -1,13 +1,13 @@
 # Claude Code Handbook на русском
 
-> Курируемая подборка ресурсов для Claude Code (CLI-агент Anthropic): skills, sub-agents, plugins, hooks, MCP-серверы, CLAUDE.md шаблоны и русскоязычные гайды. Полный сырой каталог — 1412 записей по типам; верхний слой в README — то, что реально применяется в клиентских проектах либо массово проверено сообществом по install-count.
+> Курируемая подборка ресурсов для Claude Code (CLI-агент Anthropic): skills, sub-agents, plugins, hooks, MCP-серверы, CLAUDE.md шаблоны и русскоязычные гайды. Полный сырой каталог — 1413 записей по типам; верхний слой в README — то, что реально применяется в клиентских проектах либо массово проверено сообществом по install-count.
 
 Поддерживается @sfrangulov; ежедневные разборы релизов в Telegram-канале @cc_consultant.
 Формат файла — спецификация https://llmstxt.org.
 
 ## Каталог по типам
 
-- [Skills (162 записи)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/skills.md): переиспользуемые наборы инструкций — Claude подгружает их по триггеру
+- [Skills (163 записи)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/skills.md): переиспользуемые наборы инструкций — Claude подгружает их по триггеру
 - [Sub-agents (160 записей)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/subagents.md): параллельные экземпляры Claude со своим контекстом
 - [Plugins (16 записей)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/plugins.md): упаковка скиллов / субагентов / MCP / hooks в один артефакт
 - [Hooks (8 записей)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/hooks.md): shell-команды на события сессии (формат, безопасность, нотификации)

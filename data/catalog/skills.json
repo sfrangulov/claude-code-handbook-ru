@@ -197,6 +197,10 @@
       "url": "https://github.com/mutable-state-inc/ensue-skill"
     },
     {
+      "name": "eval-audit-and-sweep",
+      "url": "https://github.com/anthropics/cwc-workshops/tree/main/rightmodel/.claude/skills/eval-audit-and-sweep"
+    },
+    {
       "name": "excalidraw-diagram-skill",
       "url": "https://github.com/coleam00/excalidraw-diagram-skill"
     },
