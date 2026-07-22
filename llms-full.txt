@@ -34,6 +34,7 @@ CI gate: node scripts/build-readme.mjs --check
 - [Sub-agents](#sub-agents) — параллельные агенты со своим контекстом
 - [Оркестрация](#оркестрация-и-параллельные-агенты) — внешние тулы для нескольких Claude разом
 - [Workflow-методологии](#workflow-методологии) — opinionated циклы spec → plan → ship
+- [Evals](#evals) — измерение качества агентов и промптов
 - [Plugins](#plugins) — упаковка скиллов / субагентов / MCP / hooks в один артефакт
 - [Hooks](#hooks) — shell-команды, привязанные к событиям сессии
 - [MCP-серверы](#mcp-серверы) — подключение внешних инструментов через Model Context Protocol
@@ -315,6 +316,32 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 - [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) — Обёртка для Gemini CLI, Codex, Claude Code, Antigravity как OpenAI/Gemini/Claude/Codex-совместимого API.
 - [openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc) — Официальный OpenAI-plugin: /codex:review, /codex:adversarial-review, /codex:rescue внутри Claude Code. Codex/GPT-5 как QA-партнёр.
 - [BeehiveInnovations/pal-mcp-server](https://github.com/BeehiveInnovations/pal-mcp-server) — Multi-model MCP-сервер (бывш. zen-mcp): Gemini, OpenAI, Azure, Grok, Ollama, OpenRouter как Claude tools. 50+ моделей.
+
+---
+
+## Evals
+
+Evals — регрессионные тесты для агентного workflow: golden-набор задач, грейдер и прогон при каждом изменении промпта, скилла или модели. Без них изменение оценивается на глаз по одному прогону, и поломки всплывают уже у пользователей.
+
+Два паттерна из материалов Anthropic:
+
+- **Двухслойный грейдер.** Дешёвые программные проверки (парсинг артефакта, подсчёт метрик) отсеивают грубые провалы, LLM-судья оценивает качество там, где кода недостаточно. Каждая версия промпта измеряется по всему набору задач.
+- **Сначала аудит, потом sweep.** Прогон по сетке моделей поверх сломанных evals даёт цифры, которым нельзя верить. Скилл [eval-audit-and-sweep](https://github.com/anthropics/cwc-workshops/tree/main/rightmodel/.claude/skills/eval-audit-and-sweep) из раздела [Skills](#skills) закрывает обе фазы: чеклист-аудит, затем sweep модель × thinking × effort с ценой и скоростью на ячейку.
+
+### Официальные материалы
+
+- [Define success criteria (Claude Docs)](https://docs.claude.com/en/docs/test-and-evaluate/define-success) — Критерии успеха до написания промпта: измеримые метрики и пороги вместо «работает вроде нормально».
+- [Create strong empirical evaluations (Claude Docs)](https://docs.claude.com/en/docs/test-and-evaluate/develop-tests) — Официальный гайд по построению evals: дизайн задач, типы грейдеров — код, LLM-судья, человек.
+- [Evaluation tool (Anthropic Console)](https://docs.claude.com/en/docs/test-and-evaluate/eval-tool) — Прогон промпта по набору тест-кейсов в Console и сравнение версий бок о бок, без кода.
+- [cwc-workshops/eval-driven-agent-development](https://github.com/anthropics/cwc-workshops/tree/main/eval-driven-agent-development) — Учебный пример от Anthropic: PPTX-агент, шесть версий промпта, набор из 10 задач и двухслойный грейдер — программные метрики по XML плюс LLM-судья по отрендеренным слайдам.
+
+### Инструменты
+
+- [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) — Декларативные конфиги для тестов промптов, агентов и RAG: сравнение моделей, red teaming, CI/CD. 23k⭐.
+- [UKGovernmentBEIS/inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai) — Фреймворк evals от британского AISI: композиция из solvers и scorers, sandbox для агентных задач, просмотр логов.
+- [confident-ai/deepeval](https://github.com/confident-ai/deepeval) — Тесты для LLM-приложений в стиле pytest: готовые метрики (G-Eval, hallucination, RAG), CI-интеграция. 17k⭐.
+- [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) — Observability и evals: трейсинг на OpenTelemetry, датасеты, эксперименты, LLM-судьи. Self-hosted.
+- [sierra-research/tau2-bench](https://github.com/sierra-research/tau2-bench) — Бенчмарк tool-агентов от Sierra: диалог с симулятором пользователя в доменах airline, retail, telecom. Учебный полигон воркшопа Picking the Right Model.
 
 ---
 

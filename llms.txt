@@ -25,8 +25,9 @@
 - [Топ MCP под Claude Code](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#mcp-серверы): ежедневный сетап на 5-7 серверов
 - [Оркестрация и параллельные агенты](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#оркестрация-и-параллельные-агенты): внешние тулы для нескольких Claude разом — background runners, parallel GUI/kanban, autonomous loops
 - [Workflow-методологии](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#workflow-методологии): opinionated циклы spec → plan → ship (Spec Kit, BMAD, gstack, OpenSpec, GSD, Compound Engineering) + cross-model связка Claude с Codex/Gemini/GPT
+- [Evals](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#evals): регрессионные тесты для агентных workflow — гайды Anthropic, двухслойный грейдер, promptfoo / inspect_ai / deepeval / phoenix / tau2-bench
 - [Шаблоны CLAUDE.md](https://github.com/sfrangulov/claude-code-handbook-ru/tree/main/examples): production-конфиги под Next.js, Python/FastAPI, Terraform
-- [Полный каталог 1411 записей](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/README.md): сырая выгрузка по всем типам без курирования
+- [Полный каталог: 1413 записей](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/README.md): сырая выгрузка по всем типам без курирования
 
 ## Безопасность и enterprise
 

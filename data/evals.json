@@ -1,0 +1,15 @@
+{
+  "official": [
+    { "name": "Define success criteria (Claude Docs)", "url": "https://docs.claude.com/en/docs/test-and-evaluate/define-success", "desc": "Критерии успеха до написания промпта: измеримые метрики и пороги вместо «работает вроде нормально»." },
+    { "name": "Create strong empirical evaluations (Claude Docs)", "url": "https://docs.claude.com/en/docs/test-and-evaluate/develop-tests", "desc": "Официальный гайд по построению evals: дизайн задач, типы грейдеров — код, LLM-судья, человек." },
+    { "name": "Evaluation tool (Anthropic Console)", "url": "https://docs.claude.com/en/docs/test-and-evaluate/eval-tool", "desc": "Прогон промпта по набору тест-кейсов в Console и сравнение версий бок о бок, без кода." },
+    { "name": "cwc-workshops/eval-driven-agent-development", "url": "https://github.com/anthropics/cwc-workshops/tree/main/eval-driven-agent-development", "desc": "Учебный пример от Anthropic: PPTX-агент, шесть версий промпта, набор из 10 задач и двухслойный грейдер — программные метрики по XML плюс LLM-судья по отрендеренным слайдам." }
+  ],
+  "tools": [
+    { "name": "promptfoo/promptfoo", "url": "https://github.com/promptfoo/promptfoo", "desc": "Декларативные конфиги для тестов промптов, агентов и RAG: сравнение моделей, red teaming, CI/CD. 23k⭐." },
+    { "name": "UKGovernmentBEIS/inspect_ai", "url": "https://github.com/UKGovernmentBEIS/inspect_ai", "desc": "Фреймворк evals от британского AISI: композиция из solvers и scorers, sandbox для агентных задач, просмотр логов." },
+    { "name": "confident-ai/deepeval", "url": "https://github.com/confident-ai/deepeval", "desc": "Тесты для LLM-приложений в стиле pytest: готовые метрики (G-Eval, hallucination, RAG), CI-интеграция. 17k⭐." },
+    { "name": "Arize-ai/phoenix", "url": "https://github.com/Arize-ai/phoenix", "desc": "Observability и evals: трейсинг на OpenTelemetry, датасеты, эксперименты, LLM-судьи. Self-hosted." },
+    { "name": "sierra-research/tau2-bench", "url": "https://github.com/sierra-research/tau2-bench", "desc": "Бенчмарк tool-агентов от Sierra: диалог с симулятором пользователя в доменах airline, retail, telecom. Учебный полигон воркшопа Picking the Right Model." }
+  ]
+}
