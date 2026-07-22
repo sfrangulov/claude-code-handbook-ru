@@ -21,6 +21,10 @@
       "url": "https://github.com/maxnowack/anthropic-proxy"
     },
     {
+      "name": "anthropics/cwc-workshops",
+      "url": "https://github.com/anthropics/cwc-workshops"
+    },
+    {
       "name": "Auto Mode Engineering",
       "url": "https://www.anthropic.com/engineering/claude-code-auto-mode"
     },

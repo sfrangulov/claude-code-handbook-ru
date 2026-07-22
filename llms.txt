@@ -1,6 +1,6 @@
 # Claude Code Handbook на русском
 
-> Курируемая подборка ресурсов для Claude Code (CLI-агент Anthropic): skills, sub-agents, plugins, hooks, MCP-серверы, CLAUDE.md шаблоны и русскоязычные гайды. Полный сырой каталог — 1411 записей по типам; верхний слой в README — то, что реально применяется в клиентских проектах либо массово проверено сообществом по install-count.
+> Курируемая подборка ресурсов для Claude Code (CLI-агент Anthropic): skills, sub-agents, plugins, hooks, MCP-серверы, CLAUDE.md шаблоны и русскоязычные гайды. Полный сырой каталог — 1412 записей по типам; верхний слой в README — то, что реально применяется в клиентских проектах либо массово проверено сообществом по install-count.
 
 Поддерживается @sfrangulov; ежедневные разборы релизов в Telegram-канале @cc_consultant.
 Формат файла — спецификация https://llmstxt.org.
@@ -13,7 +13,7 @@
 - [Hooks (8 записей)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/hooks.md): shell-команды на события сессии (формат, безопасность, нотификации)
 - [MCP-серверы (827 записей)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/mcp-servers.md): подключение внешних инструментов по Model Context Protocol
 - [Русскоязычный контент (12 записей)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/ru-content.md): Habr, vc.ru, DTF, YouTube
-- [Экосистема (216 записей)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/ecosystem.md): соседние инструменты, конкуренты, утилиты
+- [Экосистема (217 записей)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/ecosystem.md): соседние инструменты, конкуренты, утилиты
 
 ## Точки входа
 

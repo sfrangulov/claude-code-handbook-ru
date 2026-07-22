@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 **Здесь — широта.** Кураторские рекомендации (то, что я реально применяю в работе) — в [главном README](../README.md).
 
-**Всего записей: 1411.**
+**Всего записей: 1412.**
 
 ## Разделы
 
@@ -21,7 +21,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 | [Плагины](./plugins.md) | упаковка скиллов, субагентов и MCP в один артефакт | 16 |
 | [Hooks](./hooks.md) | связанные проекты и идеи | 8 |
 | [CLAUDE.md шаблоны и opinionated-сетапы](./templates.md) | авторские конфиги | 10 |
-| [Экосистема](./ecosystem.md) | утилиты, фреймворки, CLI-обёртки, статус-лайны | 216 |
+| [Экосистема](./ecosystem.md) | утилиты, фреймворки, CLI-обёртки, статус-лайны | 217 |
 | [Русскоязычный контент](./ru-content.md) | Habr и YouTube | 12 |
 
 ## Чем отличается от главного README

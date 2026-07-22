@@ -2,6 +2,7 @@
   "prompting": [
     { "name": "Anthropic Prompting Guide", "url": "https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview", "desc": "Официальный гайд." },
     { "name": "Anthropic Cookbook", "url": "https://github.com/anthropics/anthropic-cookbook", "desc": "Примеры паттернов с кодом." },
+    { "name": "anthropics/cwc-workshops", "url": "https://github.com/anthropics/cwc-workshops", "desc": "Материалы девяти воркшопов с конференции Code with Claude: workflow «спека → варианты дизайна → верификация», скилл для аудита evals и подбора модели по цене и скорости, eval-driven разработка агентов на Managed Agents. Архив без поддержки, Apache-2.0." },
     { "name": "Claude API Skills best practices", "url": "https://platform.claude.com/docs/ru/agents-and-tools/agent-skills/best-practices", "desc": "Официальный документ на русском." },
     { "name": "dair-ai/Prompt-Engineering-Guide", "url": "https://github.com/dair-ai/Prompt-Engineering-Guide", "desc": "Академический гайд, 50k+⭐." },
     { "name": "f/awesome-chatgpt-prompts", "url": "https://github.com/f/awesome-chatgpt-prompts", "desc": "Готовые промпты, применимы и к Claude." },
