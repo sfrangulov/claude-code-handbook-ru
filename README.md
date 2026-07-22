@@ -280,7 +280,7 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 
 > 📚 Основной EN-репо для всего раздела ниже: [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — 54.8k⭐, ежедневные апдейты под версии Claude Code, hot-features, Boris Cherny tips, cross-model паттерны.
 >
-> 🇷🇺 **Переводы тематических батчей советов** от Boris Cherny (создатель Claude Code) и Thariq (Anthropic): **[docs/tips-ru.md →](./docs/tips-ru.md)** — 8 батчей за январь–апрель 2026 в хронологическом порядке.
+> 🇷🇺 **Переводы тематических батчей советов** от Boris Cherny (создатель Claude Code) и Thariq (Anthropic): **[docs/tips-ru.md →](./docs/tips-ru.md)** — 8 батчей за январь–апрель 2026 плюс разбор трёх фаз воркшопа How We Claude Code (Code with Claude 2026).
 
 ### Spec → Plan → Ship методологии
 
@@ -482,7 +482,7 @@ Hooks дают поток событий сессии; эти проекты с�
 
 ### В этом репо
 
-- **[docs/tips-ru.md](./docs/tips-ru.md)** — переводы тематических батчей советов от Boris Cherny (создатель Claude Code) и Thariq (Anthropic). 8 батчей с января по апрель 2026: Boris × 6 (13/10/12/2/15/6 советов) + Thariq × 2 (Skills, Session Management). Все 75 советов в хронологическом порядке, newest-first.
+- **[docs/tips-ru.md](./docs/tips-ru.md)** — переводы тематических батчей советов от Boris Cherny (создатель Claude Code) и Thariq (Anthropic). 8 батчей с января по апрель 2026: Boris × 6 (13/10/12/2/15/6 советов) + Thariq × 2 (Skills, Session Management). Все 75 советов в хронологическом порядке, newest-first. Плюс разбор трёх фаз воркшопа How We Claude Code с Code with Claude 2026: спека через интервью, четыре HTML-варианта дизайна, верифицируемая архитектура компонентов.
 
 ### Habr — практические гайды
 
