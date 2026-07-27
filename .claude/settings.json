@@ -1,4 +1,8 @@
 {
+  "enabledPlugins": {
+    "design-system@hamidun": true,
+    "web-publish@hamidun": true
+  },
   "hooks": {
     "PreCompact": [
       {
