@@ -20,6 +20,7 @@
       { "name": "Filesystem", "link": { "text": "modelcontextprotocol/servers/filesystem", "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem" }, "desc": "Чтение файлов вне рабочей директории (например, общая база знаний или соседний проект)." },
       { "name": "Playwright", "link": { "text": "microsoft/playwright-mcp", "url": "https://github.com/microsoft/playwright-mcp" }, "desc": "Для тестов UI и скрейпинга. Альтернатива — Browserbase для облачных браузеров." },
       { "name": "Context7", "link": { "text": "upstash/context7", "url": "https://github.com/upstash/context7" }, "desc": "Свежая документация популярных библиотек — Claude перестаёт выдумывать API устаревших версий." },
+      { "name": "Локальный RAG", "link": { "text": "sfrangulov/minirag-mcp", "url": "https://github.com/sfrangulov/minirag-mcp" }, "desc": "Гибридный поиск (семантика + BM25) по своим документам: база знаний проекта без облака, 12 входных форматов через markitdown. Мой сервер — ничего не уходит с машины." },
       { "name": "Linear", "link": { "text": "linear/linear-mcp", "url": "https://github.com/linear/linear-mcp" }, "desc": "Если ведёшь задачи в Linear — агент сам читает спеки и комментирует issues." },
       { "name": "Sequential thinking", "link": { "text": "modelcontextprotocol/servers/sequentialthinking", "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking" }, "desc": "Структурированное пошаговое мышление для сложных задач." }
     ]

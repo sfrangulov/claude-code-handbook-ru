@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 **Совет практика:** не подключай больше 5–7 серверов одновременно — каждый расходует контекст на discovery. Сначала смотри курируемую выборку в [главном README](../README.md#mcp-серверы), потом сюда — за специализированными.
 
-**Записей:** 827.
+**Записей:** 828.
 
 📌 Курируемая подборка — в [главном README](../README.md#mcp-серверы). Здесь — широкая выборка для поиска и SEO.
 
@@ -679,6 +679,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [sergehuber/inoyu-mcp-unomi-server](https://github.com/sergehuber/inoyu-mcp-unomi-server)
 - [serkan-ozal/driflyte-mcp-server](https://github.com/serkan-ozal/driflyte-mcp-server)
 - [servers-archived](https://github.com/modelcontextprotocol/servers-archived)
+- [sfrangulov/minirag-mcp](https://github.com/sfrangulov/minirag-mcp)
 - [sh-patterson/fec-mcp-server](https://github.com/sh-patterson/fec-mcp-server)
 - [shareseer/shareseer-mcp-server](https://github.com/shareseer/shareseer-mcp-server)
 - [shellsage-ai/mcp-server-boilerplate](https://github.com/shellsage-ai/mcp-server-boilerplate)

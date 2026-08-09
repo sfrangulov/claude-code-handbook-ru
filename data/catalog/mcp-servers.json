@@ -2649,6 +2649,10 @@
       "url": "https://github.com/modelcontextprotocol/servers-archived"
     },
     {
+      "name": "sfrangulov/minirag-mcp",
+      "url": "https://github.com/sfrangulov/minirag-mcp"
+    },
+    {
       "name": "sh-patterson/fec-mcp-server",
       "url": "https://github.com/sh-patterson/fec-mcp-server"
     },

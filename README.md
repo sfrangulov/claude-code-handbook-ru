@@ -10,7 +10,7 @@ CI gate: node scripts/build-readme.mjs --check
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
-**Полный сырой каталог (1415 записей по типам)** — в [catalog/](./catalog/README.md). Здесь — курируемая подборка: только то, что я реально применяю в клиентских проектах либо что массово проверено сообществом по install-count.
+**Полный сырой каталог (1416 записей по типам)** — в [catalog/](./catalog/README.md). Здесь — курируемая подборка: только то, что я реально применяю в клиентских проектах либо что массово проверено сообществом по install-count.
 
 > 📄 **[Шпаргалка на 1 страницу A4 →](./cheatsheet/)** Все горячие клавиши, слэш-команды, MCP, память, workflows, skills/agents и CLI-флаги на одном листе. Скачать [готовый PDF](./cheatsheet/cheatsheet.pdf) или открыть [index.html](./cheatsheet/index.html) → `⌘P`.
 
@@ -408,7 +408,7 @@ Hooks дают поток событий сессии; эти проекты с�
 
 [Model Context Protocol](https://modelcontextprotocol.io/) — стандарт подключения внешних инструментов к LLM. Все MCP-серверы работают и в Claude Code, и в Claude Desktop, и в Cursor.
 
-> 📂 Полный каталог: **[827 записей →](./catalog/mcp-servers.md)** — взято из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
+> 📂 Полный каталог: **[828 записей →](./catalog/mcp-servers.md)** — взято из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
 
 > **Правило практика:** пять хорошо подобранных MCP-серверов лучше двадцати. Каждый сервер расходует токены контекста на discovery — будь придирчив. С 19 включёнными серверами 200K-контекст превращается в 70K ещё до старта работы. Какие из подключённых серверов реально вызываются, покажет [`npx mcp-graveyard`](https://github.com/sfrangulov/skill-graveyard/tree/main/packages/mcp-graveyard) — аудит по локальным логам сессий, без сети и телеметрии.
 
@@ -434,6 +434,7 @@ Hooks дают поток событий сессии; эти проекты с�
 - **Filesystem** — [modelcontextprotocol/servers/filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem). Чтение файлов вне рабочей директории (например, общая база знаний или соседний проект).
 - **Playwright** — [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp). Для тестов UI и скрейпинга. Альтернатива — Browserbase для облачных браузеров.
 - **Context7** — [upstash/context7](https://github.com/upstash/context7). Свежая документация популярных библиотек — Claude перестаёт выдумывать API устаревших версий.
+- **Локальный RAG** — [sfrangulov/minirag-mcp](https://github.com/sfrangulov/minirag-mcp). Гибридный поиск (семантика + BM25) по своим документам: база знаний проекта без облака, 12 входных форматов через markitdown. Мой сервер — ничего не уходит с машины.
 - **Linear** — [linear/linear-mcp](https://github.com/linear/linear-mcp). Если ведёшь задачи в Linear — агент сам читает спеки и комментирует issues.
 - **Sequential thinking** — [modelcontextprotocol/servers/sequentialthinking](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking). Структурированное пошаговое мышление для сложных задач.
 
