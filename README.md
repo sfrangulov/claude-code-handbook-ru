@@ -434,7 +434,7 @@ Hooks дают поток событий сессии; эти проекты с�
 - **Filesystem** — [modelcontextprotocol/servers/filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem). Чтение файлов вне рабочей директории (например, общая база знаний или соседний проект).
 - **Playwright** — [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp). Для тестов UI и скрейпинга. Альтернатива — Browserbase для облачных браузеров.
 - **Context7** — [upstash/context7](https://github.com/upstash/context7). Свежая документация популярных библиотек — Claude перестаёт выдумывать API устаревших версий.
-- **Локальный RAG** — [sfrangulov/minirag-mcp](https://github.com/sfrangulov/minirag-mcp). Гибридный поиск (семантика + BM25) по своим документам: база знаний проекта без облака, 12 входных форматов через markitdown. Мой сервер — ничего не уходит с машины.
+- **Локальный RAG** — [sfrangulov/minirag-mcp](https://github.com/sfrangulov/minirag-mcp). Гибридный поиск (семантика + BM25) по своим документам: база знаний проекта, 12 входных форматов через markitdown, ничего не уходит с машины. От мейнтейнера этого handbook.
 - **Linear** — [linear/linear-mcp](https://github.com/linear/linear-mcp). Если ведёшь задачи в Linear — агент сам читает спеки и комментирует issues.
 - **Sequential thinking** — [modelcontextprotocol/servers/sequentialthinking](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking). Структурированное пошаговое мышление для сложных задач.
 
