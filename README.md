@@ -180,6 +180,7 @@ Skills — переиспользуемые наборы инструкций, �
 - [alonw0/web-asset-generator](https://github.com/alonw0/web-asset-generator) — Favicon, app-иконки, OG-картинки.
 - [SawyerHood/dev-browser](https://github.com/SawyerHood/dev-browser) — Даёт агенту браузер: сам открывает страницу и проверяет свою работу глазами. Альтернатива Playwright MCP. 6.4k⭐.
 - [bitjaru/styleseed](https://github.com/bitjaru/styleseed) — Дизайн-движок: учит агента дизайнерскому вкусу — 74 правила в markdown, 7 бренд-скинов и именованная motion-система. Слэш-скиллы `/ss-*`.
+- [PolarSnowflake/skills-from-expertise](https://github.com/PolarSnowflake/skills-from-expertise) — Смысловая сторона написания скиллов: как превратить экспертизу в методологию, а не в список советов. Когда брать: есть чужой материал — лекция, книга, таблица, код — и нужен из него рабочий скилл.
 
 ### Локальные примеры
 
