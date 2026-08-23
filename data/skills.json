@@ -35,7 +35,8 @@
     { "name": "yusufkaraaslan/Skill_Seekers", "url": "https://github.com/yusufkaraaslan/Skill_Seekers", "desc": "Превращает сайт документации в Claude Skill." },
     { "name": "alonw0/web-asset-generator", "url": "https://github.com/alonw0/web-asset-generator", "desc": "Favicon, app-иконки, OG-картинки." },
     { "name": "SawyerHood/dev-browser", "url": "https://github.com/SawyerHood/dev-browser", "desc": "Даёт агенту браузер: сам открывает страницу и проверяет свою работу глазами. Альтернатива Playwright MCP. 6.4k⭐." },
-    { "name": "bitjaru/styleseed", "url": "https://github.com/bitjaru/styleseed", "desc": "Дизайн-движок: учит агента дизайнерскому вкусу — 74 правила в markdown, 7 бренд-скинов и именованная motion-система. Слэш-скиллы `/ss-*`." }
+    { "name": "bitjaru/styleseed", "url": "https://github.com/bitjaru/styleseed", "desc": "Дизайн-движок: учит агента дизайнерскому вкусу — 74 правила в markdown, 7 бренд-скинов и именованная motion-система. Слэш-скиллы `/ss-*`." },
+    { "name": "PolarSnowflake/skills-from-expertise", "url": "https://github.com/PolarSnowflake/skills-from-expertise", "desc": "Смысловая сторона написания скиллов: как превратить экспертизу в методологию, а не в список советов. Когда брать: есть чужой материал — лекция, книга, таблица, код — и нужен из него рабочий скилл." }
   ],
   "local": [
     { "name": "examples/skills/review-staged-changes/", "url": "./examples/skills/review-staged-changes/SKILL.md", "desc": "Проверка staged-изменений перед коммитом." }
