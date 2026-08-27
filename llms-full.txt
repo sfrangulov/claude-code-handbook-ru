@@ -177,7 +177,7 @@ Skills — переиспользуемые наборы инструкций, �
 - [get-convex/agent-skills](https://github.com/get-convex/agent-skills) — Convex — реактивный бэкенд.
 - [expo/skills](https://github.com/expo/skills) — Expo. 25K+ установок.
 - [shadcn/ui skills](https://ui.shadcn.com/docs/skills) — Контекст по компонентам shadcn и принудительное применение паттернов.
-- [sfrangulov/skills](https://github.com/sfrangulov/skills) — Коллекция мейнтейнера этого handbook: consulting-фреймворк на 8 шагов (EN и RU), выбор следующего OSS-продукта, demo-video-pipeline (Playwright + Remotion + ElevenLabs), research-pipeline с верификацией источников.
+- [sfrangulov/skills](https://github.com/sfrangulov/skills) — Моя коллекция: consulting-фреймворк на 8 шагов (EN и RU), выбор следующего OSS-продукта, demo-video-pipeline (Playwright + Remotion + ElevenLabs), research-pipeline с верификацией источников.
 - [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) — 12k⭐, актуальный куратор скиллов.
 - [karanb192/awesome-claude-skills](https://github.com/karanb192/awesome-claude-skills) — 50+ проверенных скиллов с разбивкой по типам.
 
@@ -436,7 +436,7 @@ Hooks дают поток событий сессии; эти проекты с�
 >
 > Оговорка: это **нижняя граница**. Пока набор тулов не дотягивает до порога, определения грузятся на старте целиком, и цена будет заметно выше. Своё число снимаешь двумя прогонами — с пустым `--mcp-config '{"mcpServers":{}}'` и со своим конфигом; разница и есть цена.
 >
-> Ограничивать себя всё равно стоит, но из-за доверия и промахов, а не из-за токенов: каждый сервер — чужой код с доступом к твоему окружению, и чем больше похожих тулов, тем чаще модель берёт не тот. Какие из подключённых реально вызываются, покажет [`npx mcp-graveyard`](https://github.com/sfrangulov/skill-graveyard/tree/main/packages/mcp-graveyard) — аудит по локальным логам сессий, без сети и телеметрии.
+> Ограничивать себя всё равно стоит, но из-за доверия и промахов, а не из-за токенов: каждый сервер — чужой код с доступом к твоему окружению, и чем больше похожих тулов, тем чаще модель берёт не тот. Какие из подключённых реально вызываются, покажет мой [`npx mcp-graveyard`](https://github.com/sfrangulov/skill-graveyard/tree/main/packages/mcp-graveyard) — аудит по локальным логам сессий, без сети и телеметрии.
 
 ### Официальные
 
@@ -460,7 +460,7 @@ Hooks дают поток событий сессии; эти проекты с�
 - **Filesystem** — [modelcontextprotocol/servers/filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem). Чтение файлов вне рабочей директории (например, общая база знаний или соседний проект).
 - **Playwright** — [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp). Для тестов UI и скрейпинга. Альтернатива — Browserbase для облачных браузеров.
 - **Context7** — [upstash/context7](https://github.com/upstash/context7). Свежая документация популярных библиотек — Claude перестаёт выдумывать API устаревших версий.
-- **Локальный RAG** — [sfrangulov/minirag-mcp](https://github.com/sfrangulov/minirag-mcp). Гибридный поиск (семантика + BM25) по своим документам: база знаний проекта, 12 входных форматов через markitdown, ничего не уходит с машины. От мейнтейнера этого handbook.
+- **Локальный RAG** — [sfrangulov/minirag-mcp](https://github.com/sfrangulov/minirag-mcp). Гибридный поиск (семантика + BM25) по своим документам: база знаний проекта, 12 входных форматов через markitdown, ничего не уходит с машины. Мой проект.
 - **Linear** — [linear.app/docs/mcp](https://linear.app/docs/mcp). Если ведёшь задачи в Linear — агент сам читает спеки и комментирует issues. Официальный remote-сервер, ставится через `claude mcp add`.
 - **Sequential thinking** — [modelcontextprotocol/servers/sequentialthinking](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking). Структурированное пошаговое мышление для сложных задач.
 
@@ -674,7 +674,7 @@ Hooks дают поток событий сессии; эти проекты с�
 - [Anthropic Status](https://status.anthropic.com/) — Статус сервисов.
 - [Claude release notes](https://code.claude.com/docs/en/changelog) — Официальный changelog.
 - [Skills.sh](https://www.skills.sh/) — Маркетплейс скиллов с количеством установок.
-- [sfrangulov/skill-graveyard](https://github.com/sfrangulov/skill-graveyard) — Аудит установленных скиллов по локальным логам сессий: active / dead / missing / hallucinated. `npx skill-graveyard`, без сети и телеметрии; в монорепо — mcp-graveyard и memory-graveyard. От мейнтейнера этого handbook.
+- [sfrangulov/skill-graveyard](https://github.com/sfrangulov/skill-graveyard) — Аудит установленных скиллов по локальным логам сессий: active / dead / missing / hallucinated. `npx skill-graveyard`, без сети и телеметрии; в монорепо — mcp-graveyard и memory-graveyard. Мой проект.
 - [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — Эталонный EN-сборник best practices с ежедневными апдейтами под версии Claude Code. Покрывает все hot-features, Boris Cherny tips, cross-model паттерны.
 
 ---
