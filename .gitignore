@@ -7,3 +7,4 @@ node_modules/
 .dolt/
 *.db
 .beads-credential-key
+.beads/.auto-import-issues.jsonl
