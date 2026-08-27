@@ -120,21 +120,21 @@ Skills — переиспользуемые наборы инструкций, �
 
 | Скилл | Зачем и когда юзать | Установок |
 |---|---|---:|
-| [mattpocock/skills@grill-with-docs](https://skills.sh/mattpocock/skills/grill-with-docs) | «Допрашивай» документацию через find/grep — заменяет догадки точными цитатами. Особенно ценно для библиотек, где знание Claude устарело. | **835K** |
-| [anthropics/skills@frontend-design](https://skills.sh/anthropics/skills/frontend-design) | Перестраивает дизайн в пользу bold-решений вместо дефолтных «AI slop»-карточек. Триггерь, когда видишь, что вышло generic. React + Tailwind. | **824K** |
-| [mattpocock/skills@tdd](https://skills.sh/mattpocock/skills/tdd) | TDD-цикл (red-green-refactor) с дисциплиной — не даёт агенту писать код раньше тестов. От Matt Pocock. | **777K** |
-| [vercel-labs/agent-skills@vercel-react-best-practices](https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices) | React/Next.js — производительность по гайду Vercel: правильные границы между клиентом и RSC, кэширование, оптимизация размера бандла. Подключай в любом Next.js-проекте. | **668K** |
-| [vercel-labs/agent-skills@web-design-guidelines](https://skills.sh/vercel-labs/agent-skills/web-design-guidelines) | Чек-лист соответствия Web Interface Guidelines: a11y, hit-targets, focus rings. Запускай как ревью UI до коммита. | **582K** |
-| [microsoft/azure-skills@azure-deploy](https://skills.sh/microsoft/azure-skills/azure-deploy) | Деплой в Azure: ARM/Bicep, App Service, Container Apps. Ставь только если работаешь в Azure-стеке — иначе мёртвый груз в контексте. | **548K** |
-| [mattpocock/skills@codebase-design](https://skills.sh/mattpocock/skills/codebase-design) | Единый словарь для проектирования «глубоких модулей»: много поведения за узким интерфейсом, шов в чистом месте. Берёшь, когда спор идёт о границах, а команда называет одно и то же то компонентом, то сервисом, то API. | **491K** |
-| [mattpocock/skills@code-review](https://skills.sh/mattpocock/skills/code-review) | Ревью диффа от заданной точки сразу по двум осям: соответствие стандартам репозитория и соответствие исходной задаче. Оси гоняются параллельными субагентами, чтобы не засоряли контекст друг другу. | **424K** |
-| [leonxlnx/taste-skill@design-taste-frontend](https://skills.sh/leonxlnx/taste-skill/design-taste-frontend) | Выводит дизайн-направление из брифа и собирает не-шаблонный интерфейс; на редизайне сначала аудитит текущий. Для лендингов и портфолио, когда generic-вид не годится. | **409K** |
-| [obra/superpowers@brainstorming](https://skills.sh/obra/superpowers/brainstorming) | Структурированный брейншторм с гипотезами и матрицей вариантов **до** начала кода. Включай, когда задача расплывчатая («сделай auth»). | **341K** |
-| [leonxlnx/taste-skill@high-end-visual-design](https://skills.sh/leonxlnx/taste-skill/high-end-visual-design) | Конкретные шрифты, отступы, тени и анимации, от которых сайт выглядит дорого; убирает дефолты, по которым виден AI-дизайн. Когда нужен premium-look, а не просто «аккуратно». | **304K** |
-| [leonxlnx/taste-skill@redesign-existing-projects](https://skills.sh/leonxlnx/taste-skill/redesign-existing-projects) | Аудит живого интерфейса: находит generic AI-паттерны и подтягивает до premium, не ломая функциональность. Для редизайна существующего проекта, а не старта с нуля. | **301K** |
-| [mattpocock/skills@git-guardrails-claude-code](https://skills.sh/mattpocock/skills/git-guardrails-claude-code) | Ставит PreToolUse-хук, который блокирует `git push`, `reset --hard`, `clean -f` и `branch -D` до выполнения. Дешёвая страховка, если гоняешь агента в обход подтверждений. | **276K** |
-| [leonxlnx/taste-skill@stitch-design-taste](https://skills.sh/leonxlnx/taste-skill/stitch-design-taste) | Генерирует `DESIGN.md` под Google Stitch: строгая типографика, выверенный цвет, асимметричные сетки. Нужен, только если генеришь экраны в Stitch — вне его бесполезен. | **258K** |
-| [obra/superpowers@systematic-debugging](https://skills.sh/obra/superpowers/systematic-debugging) | Дисциплина отладки: гипотезы → изоляция → root cause. Прерывает цикл бесконечных правок наугад. | **238K** |
+| [mattpocock/skills@grill-with-docs](https://www.skills.sh/mattpocock/skills/grill-with-docs) | «Допрашивай» документацию через find/grep — заменяет догадки точными цитатами. Особенно ценно для библиотек, где знание Claude устарело. | **835K** |
+| [anthropics/skills@frontend-design](https://www.skills.sh/anthropics/skills/frontend-design) | Перестраивает дизайн в пользу bold-решений вместо дефолтных «AI slop»-карточек. Триггерь, когда видишь, что вышло generic. React + Tailwind. | **824K** |
+| [mattpocock/skills@tdd](https://www.skills.sh/mattpocock/skills/tdd) | TDD-цикл (red-green-refactor) с дисциплиной — не даёт агенту писать код раньше тестов. От Matt Pocock. | **777K** |
+| [vercel-labs/agent-skills@vercel-react-best-practices](https://www.skills.sh/vercel-labs/agent-skills/vercel-react-best-practices) | React/Next.js — производительность по гайду Vercel: правильные границы между клиентом и RSC, кэширование, оптимизация размера бандла. Подключай в любом Next.js-проекте. | **668K** |
+| [vercel-labs/agent-skills@web-design-guidelines](https://www.skills.sh/vercel-labs/agent-skills/web-design-guidelines) | Чек-лист соответствия Web Interface Guidelines: a11y, hit-targets, focus rings. Запускай как ревью UI до коммита. | **582K** |
+| [microsoft/azure-skills@azure-deploy](https://www.skills.sh/microsoft/azure-skills/azure-deploy) | Деплой в Azure: ARM/Bicep, App Service, Container Apps. Ставь только если работаешь в Azure-стеке — иначе мёртвый груз в контексте. | **548K** |
+| [mattpocock/skills@codebase-design](https://www.skills.sh/mattpocock/skills/codebase-design) | Единый словарь для проектирования «глубоких модулей»: много поведения за узким интерфейсом, шов в чистом месте. Берёшь, когда спор идёт о границах, а команда называет одно и то же то компонентом, то сервисом, то API. | **491K** |
+| [mattpocock/skills@code-review](https://www.skills.sh/mattpocock/skills/code-review) | Ревью диффа от заданной точки сразу по двум осям: соответствие стандартам репозитория и соответствие исходной задаче. Оси гоняются параллельными субагентами, чтобы не засоряли контекст друг другу. | **424K** |
+| [leonxlnx/taste-skill@design-taste-frontend](https://www.skills.sh/leonxlnx/taste-skill/design-taste-frontend) | Выводит дизайн-направление из брифа и собирает не-шаблонный интерфейс; на редизайне сначала аудитит текущий. Для лендингов и портфолио, когда generic-вид не годится. | **409K** |
+| [obra/superpowers@brainstorming](https://www.skills.sh/obra/superpowers/brainstorming) | Структурированный брейншторм с гипотезами и матрицей вариантов **до** начала кода. Включай, когда задача расплывчатая («сделай auth»). | **341K** |
+| [leonxlnx/taste-skill@high-end-visual-design](https://www.skills.sh/leonxlnx/taste-skill/high-end-visual-design) | Конкретные шрифты, отступы, тени и анимации, от которых сайт выглядит дорого; убирает дефолты, по которым виден AI-дизайн. Когда нужен premium-look, а не просто «аккуратно». | **304K** |
+| [leonxlnx/taste-skill@redesign-existing-projects](https://www.skills.sh/leonxlnx/taste-skill/redesign-existing-projects) | Аудит живого интерфейса: находит generic AI-паттерны и подтягивает до premium, не ломая функциональность. Для редизайна существующего проекта, а не старта с нуля. | **301K** |
+| [mattpocock/skills@git-guardrails-claude-code](https://www.skills.sh/mattpocock/skills/git-guardrails-claude-code) | Ставит PreToolUse-хук, который блокирует `git push`, `reset --hard`, `clean -f` и `branch -D` до выполнения. Дешёвая страховка, если гоняешь агента в обход подтверждений. | **276K** |
+| [leonxlnx/taste-skill@stitch-design-taste](https://www.skills.sh/leonxlnx/taste-skill/stitch-design-taste) | Генерирует `DESIGN.md` под Google Stitch: строгая типографика, выверенный цвет, асимметричные сетки. Нужен, только если генеришь экраны в Stitch — вне его бесполезен. | **258K** |
+| [obra/superpowers@systematic-debugging](https://www.skills.sh/obra/superpowers/systematic-debugging) | Дисциплина отладки: гипотезы → изоляция → root cause. Прерывает цикл бесконечных правок наугад. | **238K** |
 
 **Источник:** [skills.sh leaderboard](https://skills.sh) — числа быстро растут, актуальны на момент последнего обновления. Автообновление: `node scripts/refresh-top-skills.mjs --write && node scripts/build-readme.mjs`.
 
@@ -148,7 +148,7 @@ Skills — переиспользуемые наборы инструкций, �
 - [anthropics/skills/pdf](https://github.com/anthropics/skills/tree/main/skills/pdf) — Извлечение текста и таблиц, merge/split, заполнение форм.
 - [anthropics/skills/pptx](https://github.com/anthropics/skills/tree/main/skills/pptx) — PowerPoint: layouts, шаблоны, графики, авто-генерация слайдов.
 - [anthropics/skills/xlsx](https://github.com/anthropics/skills/tree/main/skills/xlsx) — Excel: формулы, форматирование, анализ.
-- [anthropics/skills/frontend-design](https://github.com/anthropics/skills/blob/main/skills/frontend-design) — Bold-дизайн без «AI slop». React + Tailwind.
+- [anthropics/skills/frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design) — Bold-дизайн без «AI slop». React + Tailwind.
 - [anthropics/skills/web-artifacts-builder](https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder) — HTML-артефакты на React + Tailwind + shadcn/ui.
 - [anthropics/skills/mcp-builder](https://github.com/anthropics/skills/tree/main/skills/mcp-builder) — Пошаговое создание MCP-серверов.
 - [anthropics/skills/webapp-testing](https://github.com/anthropics/skills/tree/main/skills/webapp-testing) — Тестирование веб-приложений через Playwright.
@@ -176,7 +176,7 @@ Skills — переиспользуемые наборы инструкций, �
 - [conorluddy/ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill) — Сборка iOS-приложений, навигация по симулятору, тесты.
 - [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) — Браузерная автоматизация через Playwright.
 - [chrisvoncsefalvay/claude-d3js-skill](https://github.com/chrisvoncsefalvay/claude-d3js-skill) — Визуализации в d3.js.
-- [K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills) — Научные базы данных и библиотеки.
+- [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) — Научные базы данных и библиотеки.
 - [jthack/ffuf_claude_skill](https://github.com/jthack/ffuf_claude_skill) — Fuzzing через `ffuf` при пентесте.
 - [yusufkaraaslan/Skill_Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) — Превращает сайт документации в Claude Skill.
 - [alonw0/web-asset-generator](https://github.com/alonw0/web-asset-generator) — Favicon, app-иконки, OG-картинки.
@@ -324,9 +324,9 @@ Evals — регрессионные тесты для агентного workfl
 
 ### Официальные материалы
 
-- [Define success criteria (Claude Docs)](https://docs.claude.com/en/docs/test-and-evaluate/define-success) — Критерии успеха до написания промпта: измеримые метрики и пороги вместо «работает вроде нормально».
-- [Create strong empirical evaluations (Claude Docs)](https://docs.claude.com/en/docs/test-and-evaluate/develop-tests) — Официальный гайд по построению evals: дизайн задач, типы грейдеров — код, LLM-судья, человек.
-- [Evaluation tool (Anthropic Console)](https://docs.claude.com/en/docs/test-and-evaluate/eval-tool) — Прогон промпта по набору тест-кейсов в Console и сравнение версий бок о бок, без кода.
+- [Define success criteria (Claude Docs)](https://platform.claude.com/docs/en/test-and-evaluate/define-success) — Критерии успеха до написания промпта: измеримые метрики и пороги вместо «работает вроде нормально».
+- [Create strong empirical evaluations (Claude Docs)](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests) — Официальный гайд по построению evals: дизайн задач, типы грейдеров — код, LLM-судья, человек.
+- [Evaluation tool (Anthropic Console)](https://platform.claude.com/docs/en/test-and-evaluate/eval-tool) — Прогон промпта по набору тест-кейсов в Console и сравнение версий бок о бок, без кода.
 - [cwc-workshops/eval-driven-agent-development](https://github.com/anthropics/cwc-workshops/tree/main/eval-driven-agent-development) — Учебный пример от Anthropic: PPTX-агент, шесть версий промпта, набор из 10 задач и двухслойный грейдер — программные метрики по XML плюс LLM-судья по отрендеренным слайдам.
 
 ### Инструменты
@@ -446,12 +446,12 @@ Hooks дают поток событий сессии; эти проекты с�
 ### Топ под Claude Code (мой ежедневный сетап)
 
 - **GitHub** — [github/github-mcp-server](https://github.com/github/github-mcp-server). Без него Claude видит только локальный репозиторий. С ним — читает чужие issues, комментирует PR, открывает черновики PR.
-- **PostgreSQL** — [modelcontextprotocol/servers/postgres](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres). Read-only по умолчанию, для дебага запросов и схемы продакшен-БД.
+- **PostgreSQL** — [crystaldba/postgres-mcp](https://github.com/crystaldba/postgres-mcp). Дебаг запросов и схемы прод-БД: настраиваемый режим read-only или read/write плюс анализ производительности. Референсный сервер из modelcontextprotocol/servers удалён, это живая замена.
 - **Filesystem** — [modelcontextprotocol/servers/filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem). Чтение файлов вне рабочей директории (например, общая база знаний или соседний проект).
 - **Playwright** — [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp). Для тестов UI и скрейпинга. Альтернатива — Browserbase для облачных браузеров.
 - **Context7** — [upstash/context7](https://github.com/upstash/context7). Свежая документация популярных библиотек — Claude перестаёт выдумывать API устаревших версий.
 - **Локальный RAG** — [sfrangulov/minirag-mcp](https://github.com/sfrangulov/minirag-mcp). Гибридный поиск (семантика + BM25) по своим документам: база знаний проекта, 12 входных форматов через markitdown, ничего не уходит с машины. От мейнтейнера этого handbook.
-- **Linear** — [linear/linear-mcp](https://github.com/linear/linear-mcp). Если ведёшь задачи в Linear — агент сам читает спеки и комментирует issues.
+- **Linear** — [linear.app/docs/mcp](https://linear.app/docs/mcp). Если ведёшь задачи в Linear — агент сам читает спеки и комментирует issues. Официальный remote-сервер, ставится через `claude mcp add`.
 - **Sequential thinking** — [modelcontextprotocol/servers/sequentialthinking](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking). Структурированное пошаговое мышление для сложных задач.
 
 Полная разбивка по 30 категориям — базы данных, version control, dev-инструменты, облака, браузеры, поиск, коммуникации, мониторинг, безопасность, базы знаний, агрегаторы, sandbox-окружения, рабочие инструменты, файловые системы, OS, мультимедиа, data science, RAG, маркетинг, продукт, customer data, соцсети, поддержка, e-commerce, fintech, визуализация, путешествия — в **[catalog/mcp-servers.md](./catalog/mcp-servers.md)**.
@@ -488,7 +488,7 @@ Hooks дают поток событий сессии; эти проекты с�
 - [get-convex/agent-skills](https://github.com/get-convex/agent-skills) — Convex — реактивный бэкенд.
 - [microsoft/azure-skills](https://github.com/microsoft/azure-skills) — Деплой в Azure и best-practices от Microsoft.
 - [firebase/agent-skills](https://github.com/firebase/agent-skills) — Firebase и Firestore.
-- [docs.stripe.com](https://docs.stripe.com/agents/claude-code) — Best-practices Stripe для платёжных интеграций.
+- [docs.stripe.com/agents](https://docs.stripe.com/agents) — Гайд Stripe по агентным платежам: MCP-сервер, agent toolkit, правила для платёжных интеграций.
 
 ### Тематические гайды
 
@@ -597,7 +597,7 @@ Hooks дают поток событий сессии; эти проекты с�
 - [anthropics/defending-code-reference-harness](https://github.com/anthropics/defending-code-reference-harness) — Эталонный харнесс Anthropic: скиллы threat-model / vuln-scan / triage / patch + автономный pipeline в песочнице. Сопровождается разбором «Using LLMs to secure source code».
 - [trailofbits/skills](https://github.com/trailofbits/skills) — Security-скиллы Trail of Bits: CodeQL / Semgrep, аудит кода.
 - [anthropics/claude-code-security-review](https://github.com/anthropics/claude-code-security-review) — GitHub Action: Claude-ревьюер безопасности на каждый PR, с фильтрацией ложных срабатываний.
-- [firebase/agent-skills@firestore-security-rules-auditor](https://skills.sh/firebase/agent-skills/firestore-security-rules-auditor) — Аудит security-rules Firestore перед прод-релизом. 20K+ установок.
+- [firebase/agent-skills@firestore-security-rules-auditor](https://www.skills.sh/firebase/agent-skills/firestore-security-rules-auditor) — Аудит security-rules Firestore перед прод-релизом. 20K+ установок.
 - [Anthropic enterprise governance](https://www.anthropic.com/enterprise) — Корпоративный governance.
 
 ### Enterprise-паттерны
@@ -613,12 +613,12 @@ Hooks дают поток событий сессии; эти проекты с�
 
 ### Промптинг
 
-- [Anthropic Prompting Guide](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview) — Официальный гайд.
+- [Anthropic Prompting Guide](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview) — Официальный гайд.
 - [Anthropic Cookbook](https://github.com/anthropics/claude-cookbooks) — Примеры паттернов с кодом.
 - [anthropics/cwc-workshops](https://github.com/anthropics/cwc-workshops) — Материалы девяти воркшопов с конференции Code with Claude: workflow «спека → варианты дизайна → верификация», скилл для аудита evals и подбора модели по цене и скорости, eval-driven разработка агентов на Managed Agents. Архив без поддержки, Apache-2.0.
 - [Claude API Skills best practices](https://platform.claude.com/docs/ru/agents-and-tools/agent-skills/best-practices) — Официальный документ на русском.
 - [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) — Академический гайд, 50k+⭐.
-- [f/awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts) — Готовые промпты, применимы и к Claude.
+- [f/prompts.chat](https://github.com/f/prompts.chat) — Готовые промпты, применимы и к Claude.
 - [PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) — `.cursorrules` для разных стеков, многие подходят и для CLAUDE.md.
 
 ### Каналы и сообщества
@@ -632,7 +632,7 @@ Hooks дают поток событий сессии; эти проекты с�
 
 - [Latent Space (swyx)](https://www.latent.space/) — AI-инженерия, регулярные выпуски про Claude Code и MCP.
 - [The Cognitive Revolution](https://www.cognitiverevolution.ai/) — Nathan Labenz, AI-индустрия и тренды.
-- [Practical AI (Changelog)](https://changelog.com/practicalai) — Практические кейсы AI.
+- [Practical AI (Changelog)](https://practicalai.show/) — Практические кейсы AI.
 - [Anthropic (YouTube)](https://www.youtube.com/@anthropic-ai) — Релизы и техдемки.
 - [Matt Pocock](https://www.youtube.com/@mattpocockuk) — TypeScript и AI-инструменты.
 - [ThePrimeagen](https://www.youtube.com/@ThePrimeagen) — AI-workflow с критическим взглядом.
@@ -655,15 +655,15 @@ Hooks дают поток событий сессии; эти проекты с�
 - [Continue](https://www.continue.dev/) — Open-source автокомплит и чат в IDE.
 - [OpenAI Codex CLI](https://github.com/openai/codex) — Официальный CLI-агент OpenAI.
 - [Google Gemini CLI](https://github.com/google-gemini/gemini-cli) — CLI-агент от Google.
-- [Windsurf (Codeium)](https://codeium.com/windsurf) — IDE-агент от Codeium.
+- [Devin Desktop (бывший Windsurf)](https://devin.ai/desktop) — IDE-агент Codeium: Windsurf перешёл к Cognition и переименован.
 
 ### Утилиты
 
-- [Anthropic Console](https://console.anthropic.com/) — Playground, библиотека промптов, выдача API-ключей.
-- [Anthropic Workbench](https://console.anthropic.com/workbench) — UI для экспериментов с промптами.
+- [Anthropic Console](https://platform.claude.com/) — Playground, библиотека промптов, выдача API-ключей.
+- [Anthropic Workbench](https://platform.claude.com/workbench) — UI для экспериментов с промптами.
 - [Anthropic Status](https://status.anthropic.com/) — Статус сервисов.
 - [Claude release notes](https://code.claude.com/docs/en/changelog) — Официальный changelog.
-- [Skills.sh](https://skills.sh/) — Маркетплейс скиллов с количеством установок.
+- [Skills.sh](https://www.skills.sh/) — Маркетплейс скиллов с количеством установок.
 - [sfrangulov/skill-graveyard](https://github.com/sfrangulov/skill-graveyard) — Аудит установленных скиллов по локальным логам сессий: active / dead / missing / hallucinated. `npx skill-graveyard`, без сети и телеметрии; в монорепо — mcp-graveyard и memory-graveyard. От мейнтейнера этого handbook.
 - [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — Эталонный EN-сборник best practices с ежедневными апдейтами под версии Claude Code. Покрывает все hot-features, Boris Cherny tips, cross-model паттерны.
 

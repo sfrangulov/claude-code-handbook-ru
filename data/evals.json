@@ -1,8 +1,8 @@
 {
   "official": [
-    { "name": "Define success criteria (Claude Docs)", "url": "https://docs.claude.com/en/docs/test-and-evaluate/define-success", "desc": "Критерии успеха до написания промпта: измеримые метрики и пороги вместо «работает вроде нормально»." },
-    { "name": "Create strong empirical evaluations (Claude Docs)", "url": "https://docs.claude.com/en/docs/test-and-evaluate/develop-tests", "desc": "Официальный гайд по построению evals: дизайн задач, типы грейдеров — код, LLM-судья, человек." },
-    { "name": "Evaluation tool (Anthropic Console)", "url": "https://docs.claude.com/en/docs/test-and-evaluate/eval-tool", "desc": "Прогон промпта по набору тест-кейсов в Console и сравнение версий бок о бок, без кода." },
+    { "name": "Define success criteria (Claude Docs)", "url": "https://platform.claude.com/docs/en/test-and-evaluate/define-success", "desc": "Критерии успеха до написания промпта: измеримые метрики и пороги вместо «работает вроде нормально»." },
+    { "name": "Create strong empirical evaluations (Claude Docs)", "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests", "desc": "Официальный гайд по построению evals: дизайн задач, типы грейдеров — код, LLM-судья, человек." },
+    { "name": "Evaluation tool (Anthropic Console)", "url": "https://platform.claude.com/docs/en/test-and-evaluate/eval-tool", "desc": "Прогон промпта по набору тест-кейсов в Console и сравнение версий бок о бок, без кода." },
     { "name": "cwc-workshops/eval-driven-agent-development", "url": "https://github.com/anthropics/cwc-workshops/tree/main/eval-driven-agent-development", "desc": "Учебный пример от Anthropic: PPTX-агент, шесть версий промпта, набор из 10 задач и двухслойный грейдер — программные метрики по XML плюс LLM-судья по отрендеренным слайдам." }
   ],
   "tools": [

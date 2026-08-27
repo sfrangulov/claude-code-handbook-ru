@@ -18,7 +18,7 @@
     { "name": "get-convex/agent-skills", "url": "https://github.com/get-convex/agent-skills", "desc": "Convex — реактивный бэкенд." },
     { "name": "microsoft/azure-skills", "url": "https://github.com/microsoft/azure-skills", "desc": "Деплой в Azure и best-practices от Microsoft." },
     { "name": "firebase/agent-skills", "url": "https://github.com/firebase/agent-skills", "desc": "Firebase и Firestore." },
-    { "name": "docs.stripe.com", "url": "https://docs.stripe.com/agents/claude-code", "desc": "Best-practices Stripe для платёжных интеграций." }
+    { "name": "docs.stripe.com/agents", "url": "https://docs.stripe.com/agents", "desc": "Гайд Stripe по агентным платежам: MCP-сервер, agent toolkit, правила для платёжных интеграций." }
   ],
   "guides": [
     { "name": "Anthropic engineering: Claude Code best practices", "url": "https://www.anthropic.com/engineering/claude-code-best-practices", "desc": "Официальный пост." },

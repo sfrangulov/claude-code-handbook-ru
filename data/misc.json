@@ -1,11 +1,11 @@
 {
   "prompting": [
-    { "name": "Anthropic Prompting Guide", "url": "https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview", "desc": "Официальный гайд." },
+    { "name": "Anthropic Prompting Guide", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview", "desc": "Официальный гайд." },
     { "name": "Anthropic Cookbook", "url": "https://github.com/anthropics/claude-cookbooks", "desc": "Примеры паттернов с кодом." },
     { "name": "anthropics/cwc-workshops", "url": "https://github.com/anthropics/cwc-workshops", "desc": "Материалы девяти воркшопов с конференции Code with Claude: workflow «спека → варианты дизайна → верификация», скилл для аудита evals и подбора модели по цене и скорости, eval-driven разработка агентов на Managed Agents. Архив без поддержки, Apache-2.0." },
     { "name": "Claude API Skills best practices", "url": "https://platform.claude.com/docs/ru/agents-and-tools/agent-skills/best-practices", "desc": "Официальный документ на русском." },
     { "name": "dair-ai/Prompt-Engineering-Guide", "url": "https://github.com/dair-ai/Prompt-Engineering-Guide", "desc": "Академический гайд, 50k+⭐." },
-    { "name": "f/awesome-chatgpt-prompts", "url": "https://github.com/f/awesome-chatgpt-prompts", "desc": "Готовые промпты, применимы и к Claude." },
+    { "name": "f/prompts.chat", "url": "https://github.com/f/prompts.chat", "desc": "Готовые промпты, применимы и к Claude." },
     { "name": "PatrickJS/awesome-cursorrules", "url": "https://github.com/PatrickJS/awesome-cursorrules", "desc": "`.cursorrules` для разных стеков, многие подходят и для CLAUDE.md." }
   ],
   "channels": [
@@ -17,7 +17,7 @@
   "podcasts": [
     { "name": "Latent Space (swyx)", "url": "https://www.latent.space/", "desc": "AI-инженерия, регулярные выпуски про Claude Code и MCP." },
     { "name": "The Cognitive Revolution", "url": "https://www.cognitiverevolution.ai/", "desc": "Nathan Labenz, AI-индустрия и тренды." },
-    { "name": "Practical AI (Changelog)", "url": "https://changelog.com/practicalai", "desc": "Практические кейсы AI." },
+    { "name": "Practical AI (Changelog)", "url": "https://practicalai.show/", "desc": "Практические кейсы AI." },
     { "name": "Anthropic (YouTube)", "url": "https://www.youtube.com/@anthropic-ai", "desc": "Релизы и техдемки." },
     { "name": "Matt Pocock", "url": "https://www.youtube.com/@mattpocockuk", "desc": "TypeScript и AI-инструменты." },
     { "name": "ThePrimeagen", "url": "https://www.youtube.com/@ThePrimeagen", "desc": "AI-workflow с критическим взглядом." }
@@ -38,14 +38,14 @@
     { "name": "Continue", "url": "https://www.continue.dev/", "desc": "Open-source автокомплит и чат в IDE." },
     { "name": "OpenAI Codex CLI", "url": "https://github.com/openai/codex", "desc": "Официальный CLI-агент OpenAI." },
     { "name": "Google Gemini CLI", "url": "https://github.com/google-gemini/gemini-cli", "desc": "CLI-агент от Google." },
-    { "name": "Windsurf (Codeium)", "url": "https://codeium.com/windsurf", "desc": "IDE-агент от Codeium." }
+    { "name": "Devin Desktop (бывший Windsurf)", "url": "https://devin.ai/desktop", "desc": "IDE-агент Codeium: Windsurf перешёл к Cognition и переименован." }
   ],
   "utilities": [
-    { "name": "Anthropic Console", "url": "https://console.anthropic.com/", "desc": "Playground, библиотека промптов, выдача API-ключей." },
-    { "name": "Anthropic Workbench", "url": "https://console.anthropic.com/workbench", "desc": "UI для экспериментов с промптами." },
+    { "name": "Anthropic Console", "url": "https://platform.claude.com/", "desc": "Playground, библиотека промптов, выдача API-ключей." },
+    { "name": "Anthropic Workbench", "url": "https://platform.claude.com/workbench", "desc": "UI для экспериментов с промптами." },
     { "name": "Anthropic Status", "url": "https://status.anthropic.com/", "desc": "Статус сервисов." },
     { "name": "Claude release notes", "url": "https://code.claude.com/docs/en/changelog", "desc": "Официальный changelog." },
-    { "name": "Skills.sh", "url": "https://skills.sh/", "desc": "Маркетплейс скиллов с количеством установок." },
+    { "name": "Skills.sh", "url": "https://www.skills.sh/", "desc": "Маркетплейс скиллов с количеством установок." },
     { "name": "sfrangulov/skill-graveyard", "url": "https://github.com/sfrangulov/skill-graveyard", "desc": "Аудит установленных скиллов по локальным логам сессий: active / dead / missing / hallucinated. `npx skill-graveyard`, без сети и телеметрии; в монорепо — mcp-graveyard и memory-graveyard. От мейнтейнера этого handbook." },
     { "name": "shanraisshan/claude-code-best-practice", "url": "https://github.com/shanraisshan/claude-code-best-practice", "desc": "Эталонный EN-сборник best practices с ежедневными апдейтами под версии Claude Code. Покрывает все hot-features, Boris Cherny tips, cross-model паттерны." }
   ],

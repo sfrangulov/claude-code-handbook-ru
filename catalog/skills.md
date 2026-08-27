@@ -45,7 +45,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [claude-code-voice-skill](https://github.com/abracadabra50/claude-code-voice-skill)
 - [claude-d3js-skill](https://github.com/chrisvoncsefalvay/claude-d3js-skill)
 - [claude-office-skills](https://github.com/tfriedel/claude-office-skills)
-- [claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)
+- [claude-scientific-skills](https://github.com/K-Dense-AI/scientific-agent-skills)
 - [claude-skill-homeassistant](https://github.com/komal-SkyNET/claude-skill-homeassistant)
 - [claude-skills](https://github.com/alirezarezvani/claude-skills)
 - [claude-skills](https://github.com/ckorhonen/claude-skills)

@@ -16,12 +16,12 @@
     "_comment": "Эти пункты в README не bullet-list, а bold-имя + ссылка на проект внутри предложения. Renderer 'bold-list'.",
     "items": [
       { "name": "GitHub", "link": { "text": "github/github-mcp-server", "url": "https://github.com/github/github-mcp-server" }, "desc": "Без него Claude видит только локальный репозиторий. С ним — читает чужие issues, комментирует PR, открывает черновики PR." },
-      { "name": "PostgreSQL", "link": { "text": "modelcontextprotocol/servers/postgres", "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres" }, "desc": "Read-only по умолчанию, для дебага запросов и схемы продакшен-БД." },
+      { "name": "PostgreSQL", "link": { "text": "crystaldba/postgres-mcp", "url": "https://github.com/crystaldba/postgres-mcp" }, "desc": "Дебаг запросов и схемы прод-БД: настраиваемый режим read-only или read/write плюс анализ производительности. Референсный сервер из modelcontextprotocol/servers удалён, это живая замена." },
       { "name": "Filesystem", "link": { "text": "modelcontextprotocol/servers/filesystem", "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem" }, "desc": "Чтение файлов вне рабочей директории (например, общая база знаний или соседний проект)." },
       { "name": "Playwright", "link": { "text": "microsoft/playwright-mcp", "url": "https://github.com/microsoft/playwright-mcp" }, "desc": "Для тестов UI и скрейпинга. Альтернатива — Browserbase для облачных браузеров." },
       { "name": "Context7", "link": { "text": "upstash/context7", "url": "https://github.com/upstash/context7" }, "desc": "Свежая документация популярных библиотек — Claude перестаёт выдумывать API устаревших версий." },
       { "name": "Локальный RAG", "link": { "text": "sfrangulov/minirag-mcp", "url": "https://github.com/sfrangulov/minirag-mcp" }, "desc": "Гибридный поиск (семантика + BM25) по своим документам: база знаний проекта, 12 входных форматов через markitdown, ничего не уходит с машины. От мейнтейнера этого handbook." },
-      { "name": "Linear", "link": { "text": "linear/linear-mcp", "url": "https://github.com/linear/linear-mcp" }, "desc": "Если ведёшь задачи в Linear — агент сам читает спеки и комментирует issues." },
+      { "name": "Linear", "link": { "text": "linear.app/docs/mcp", "url": "https://linear.app/docs/mcp" }, "desc": "Если ведёшь задачи в Linear — агент сам читает спеки и комментирует issues. Официальный remote-сервер, ставится через `claude mcp add`." },
       { "name": "Sequential thinking", "link": { "text": "modelcontextprotocol/servers/sequentialthinking", "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking" }, "desc": "Структурированное пошаговое мышление для сложных задач." }
     ]
   }
