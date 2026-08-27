@@ -284,8 +284,8 @@
     <div class="header">
       <h1>Claude Code — шпаргалка<span class="sub">CLI-агент Anthropic, всё на одну страницу</span></h1>
       <div class="header-meta">
-        <span class="v">соответствует Claude Code 2.1.217</span><br>
-        обновлено: 2026-07-22 · <a href="https://github.com/sfrangulov/claude-code-handbook-ru">handbook-ru</a>
+        <span class="v">соответствует Claude Code 2.1.247</span><br>
+        обновлено: 2026-08-27 · <a href="https://github.com/sfrangulov/claude-code-handbook-ru">handbook-ru</a>
       </div>
     </div>
 
@@ -566,7 +566,7 @@
           <div class="row"><span class="key">Bash</span><span class="desc">терминал в отдельном контексте</span></div>
 
           <div class="sub-header">Frontmatter агента</div>
-          <div class="row"><span class="key">permissionMode</span><span class="desc">default<wbr>/acceptEdits<wbr>/plan<wbr>/dontAsk<wbr>/bypass</span></div>
+          <div class="row"><span class="key">permissionMode</span><span class="desc">manual<wbr>/acceptEdits<wbr>/plan<wbr>/dontAsk<wbr>/bypass</span></div>
           <div class="row"><span class="key">isolation: worktree</span><span class="desc">в своём worktree</span></div>
           <div class="row"><span class="key">memory: user|project</span><span class="desc">персистентная память</span></div>
           <div class="row"><span class="key">background: true</span><span class="desc">фоновая задача</span></div>
@@ -598,14 +598,14 @@
           <div class="row"><span class="key">--json-schema</span><span class="desc">структурированный вывод</span></div>
           <div class="row"><span class="key">--max-turns</span><span class="desc">лимит agentic-ходов</span></div>
           <div class="row"><span class="key">--max-budget-usd</span><span class="desc">кэп по стоимости</span></div>
-          <div class="row"><span class="key">--console</span><span class="desc">auth через Anthropic Console</span></div>
+          <div class="row"><span class="key">auth login --console</span><span class="desc">вход через Anthropic Console</span></div>
           <div class="row"><span class="key">--verbose</span><span class="desc">verbose-вывод</span></div>
           <div class="row"><span class="key">--bare</span><span class="desc">minimal headless (без hooks/LSP)</span></div>
           <div class="row"><span class="key">--safe-mode</span><span class="desc">чистый старт без кастомизаций&nbsp;<span class="badge-new">NEW</span></span></div>
-          <div class="row"><span class="key">--channels</span><span class="desc">permission relay / MCP push</span></div>
+          <div class="row"><span class="key">--channels</span><span class="desc">события извне в сессию</span></div>
           <div class="row"><span class="key">--remote</span><span class="desc">web-сессия через claude.ai</span></div>
           <div class="row"><span class="key">--effort</span><span class="desc">low·medium·high·xhigh·max</span></div>
-          <div class="row"><span class="key">--permission-mode</span><span class="desc">plan/default/…</span></div>
+          <div class="row"><span class="key">--permission-mode</span><span class="desc">plan·auto·acceptEdits·bypass·…</span></div>
           <div class="row"><span class="key">--dangerously-skip-permissions</span><span class="desc">пропустить все промпты ⚠️</span></div>
           <div class="row"><span class="key">--chrome</span><span class="desc">интеграция Chrome</span></div>
         </div>
