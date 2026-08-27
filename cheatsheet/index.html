@@ -383,6 +383,9 @@
           <div class="row"><span class="key">/pr-comments [PR]</span><span class="desc">комментарии PR с GitHub</span></div>
           <div class="row"><span class="key">/stats</span><span class="desc">статистика использования</span></div>
           <div class="row"><span class="key">/insights</span><span class="desc">анализ прошлых сессий</span></div>
+          <div class="row"><span class="key">/rewind</span><span class="desc">откат к чекпоинту&nbsp;<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">/status</span><span class="desc">сессия, авторизация, настройки&nbsp;<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">/tasks</span><span class="desc">фоновые задачи и субагенты&nbsp;<span class="badge-new">NEW</span></span></div>
           <div class="row"><span class="key">/desktop</span><span class="desc">продолжить в Desktop-приложении</span></div>
           <div class="row"><span class="key">/remote-control</span><span class="desc">мост в claude.ai/code (alias /rc)</span></div>
           <div class="row"><span class="key">/usage</span><span class="desc">лимиты плана и rate-status</span></div>
@@ -540,7 +543,6 @@
           <div class="row"><span class="key">/simplify</span><span class="desc">code-review (3 параллельных агента)</span></div>
           <div class="row"><span class="key">/batch</span><span class="desc">массовые правки (5-30 worktrees)</span></div>
           <div class="row"><span class="key">/debug [desc]</span><span class="desc">отладка по debug-логу</span></div>
-          <div class="row"><span class="key">/loop [int]</span><span class="desc">регулярная задача</span></div>
           <div class="row"><span class="key">/claude-api</span><span class="desc">загрузить API + SDK reference</span></div>
           <div class="row"><span class="key">/verify</span><span class="desc">верификация изменений (только вручную)&nbsp;<span class="badge-new">NEW</span></span></div>
           <div class="row"><span class="key">/dataviz</span><span class="desc">дизайн графиков + валидатор палитры&nbsp;<span class="badge-new">NEW</span></span></div>
@@ -581,10 +583,10 @@
         <div class="section-content">
           <div class="sub-header">Команды</div>
           <div class="row"><span class="key">claude</span><span class="desc">интерактивно</span></div>
-          <div class="row"><span class="key">claude "q"</span><span class="desc">с готовым промптом</span></div>
-          <div class="row"><span class="key">claude -p "q"</span><span class="desc">headless</span></div>
+          <div class="row"><span class="key">claude "q" · -p</span><span class="desc">промпт сразу · headless</span></div>
           <div class="row"><span class="key">claude -c</span><span class="desc">продолжить последнюю сессию</span></div>
           <div class="row"><span class="key">claude -r "n"</span><span class="desc">возобновить по имени</span></div>
+          <div class="row"><span class="key">claude ultrareview</span><span class="desc">облачное ревью&nbsp;<span class="badge-new">NEW</span></span></div>
           <div class="row"><span class="key">claude update</span><span class="desc">обновить CLI</span></div>
 
           <div class="sub-header">Ключевые флаги</div>
@@ -608,6 +610,7 @@
           <div class="row"><span class="key">--permission-mode</span><span class="desc">plan·auto·acceptEdits·bypass·…</span></div>
           <div class="row"><span class="key">--dangerously-skip-permissions</span><span class="desc">пропустить все промпты ⚠️</span></div>
           <div class="row"><span class="key">--chrome</span><span class="desc">интеграция Chrome</span></div>
+          <div class="row"><span class="key">--teleport</span><span class="desc">облачную сессию локально&nbsp;<span class="badge-new">NEW</span></span></div>
         </div>
       </div>
 
