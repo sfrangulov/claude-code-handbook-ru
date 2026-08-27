@@ -6,7 +6,7 @@ CI gate: node scripts/build-readme.mjs --check
 
 # Claude Code Handbook на русском [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) — CLI-агент Anthropic для разработки в терминале с поддержкой MCP, hooks и автономных субагентов.
+> [Claude Code](https://code.claude.com/docs/en/overview) — CLI-агент Anthropic для разработки в терминале с поддержкой MCP, hooks и автономных субагентов.
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
@@ -62,7 +62,7 @@ claude mcp add postgres    # @modelcontextprotocol/server-postgres (read-only п
 /plugin install superpowers@superpowers-marketplace
 ```
 
-Это 24 скилла (TDD, brainstorming, debugging, systematic-debugging, code-review, planning, parallel-agents, subagent-driven-development). Пять из них — в [топ-15 на skills.sh](#топ-15-скиллов-skillssh).
+Это 14 скиллов (TDD, brainstorming, systematic-debugging, code-review, planning, parallel-agents, subagent-driven-development и другие). Два из них — в [топ-15 на skills.sh](#топ-15-скиллов-skillssh).
 
 **Куда смотреть в первую очередь:**
 
@@ -108,7 +108,7 @@ Anthropic свёл практику команд в петлю **threat model �
 
 ## Skills
 
-Skills — переиспользуемые наборы инструкций, которые Claude подгружает по триггеру. Один скилл = одна задача (TDD-цикл, code-review, performance-аудит). См. [официальный гайд](https://docs.claude.com/en/docs/claude-code/skills).
+Skills — переиспользуемые наборы инструкций, которые Claude подгружает по триггеру. Один скилл = одна задача (TDD-цикл, code-review, performance-аудит). См. [официальный гайд](https://code.claude.com/docs/en/skills).
 
 > 📂 Полный каталог: **[<!-- @count-ru:catalog/skills.items --> →](./catalog/skills.md)**
 
@@ -120,7 +120,7 @@ Skills — переиспользуемые наборы инструкций, �
 
 **Источник:** [skills.sh leaderboard](https://skills.sh) — числа быстро растут, актуальны на момент последнего обновления. Автообновление: `node scripts/refresh-top-skills.mjs --write && node scripts/build-readme.mjs`.
 
-**Совет практика:** ставь `obra/superpowers` целиком сразу — самая полная коллекция soft-скиллов (TDD, отладка, планирование, брейншторм, код-ревью). Пять из топ-15 — оттуда. Дальше добавь скиллы под свой стек (Vercel React, Convex, Firebase, Supabase, Azure). Не ставь всё подряд — каждый скилл съедает 3–5K токенов на bootstrap.
+**Совет практика:** ставь `obra/superpowers` целиком сразу — самая полная коллекция soft-скиллов (TDD, отладка, планирование, брейншторм, код-ревью). Два скилла оттуда держатся в топ-15, остальные двенадцать в рейтинг не попадают — берут связностью, а не установками. Дальше добавь скиллы под свой стек (Vercel React, Convex, Firebase, Supabase, Azure). Не ставь всё подряд — каждый скилл съедает 3–5K токенов на bootstrap.
 
 ### Официальные от Anthropic
 
@@ -144,7 +144,7 @@ Skills — переиспользуемые наборы инструкций, �
 
 ## Sub-agents
 
-Sub-agent — отдельный экземпляр Claude со своим контекстом, который выполняет подзадачу и возвращает один итоговый ответ. Полезно для read-only исследования и параллельных задач. См. [официальную доку](https://docs.claude.com/en/docs/claude-code/sub-agents).
+Sub-agent — отдельный экземпляр Claude со своим контекстом, который выполняет подзадачу и возвращает один итоговый ответ. Полезно для read-only исследования и параллельных задач. См. [официальную доку](https://code.claude.com/docs/en/sub-agents).
 
 > 📂 Полный каталог: **[<!-- @count-ru:catalog/subagents.items --> →](./catalog/subagents.md)**
 
@@ -174,20 +174,20 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 
 ### Сравнение под соло-разработчика
 
-Звёзды и категории — на 2026-05-25, GitHub API. Сложность — субъективная оценка времени до первого полезного запуска.
+Звёзды и дата последнего пуша — на 2026-08-27, GitHub API. Сложность — субъективная оценка времени до первого полезного запуска. Смотри на пуш раньше, чем на звёзды: половина ниши живёт один сезон.
 
-| Тулза | ⭐ | «Забыл и ушёл» | Сложность | Под кого |
-|---|---:|---|---|---|
-| [steveyegge/gastown](https://github.com/steveyegge/gastown) | 15.6k | ✅ настоящий | Высокая | Overkill для одиночки, под сложные multi-agent сценарии |
-| [chernistry/bernstein](https://github.com/chernistry/bernstein) | 0.5k | ✅ настоящий | Средняя | Соло-разработчик с требованием audit-grade лога |
-| [ruvnet/claude-flow](https://github.com/ruvnet/claude-flow) | 55k | ✅ swarm | Высокая | Команды и enterprise, не для одиночки |
-| [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) | 26.5k | ❌ полу-ручное | Низкая | Простая параллельность через kanban-доску |
-| [smtg-ai/claude-squad](https://github.com/smtg-ai/claude-squad) | 7.6k | ❌ ручное | Низкая | Несколько Claude-сессий в TUI |
-| [stravu/crystal (Nimbalyst)](https://github.com/stravu/crystal) | 3.1k | ❌ полу-ручное | Низкая | Desktop GUI для сравнения подходов |
-| [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | 19.4k | ❌ ручное | Низкая | macOS-юзеру с табами и push-нотификациями |
-| [generalaction/emdash](https://github.com/generalaction/emdash) | 4.6k | ❌ полу-ручное | Низкая | Open-source альтернатива vibe-kanban |
-| [frankbria/ralph-claude-code](https://github.com/frankbria/ralph-claude-code) | 9.2k | ⚠️ примитивный | Низкая | Эксперименты с Ralph-loop |
-| [humanlayer/humanlayer](https://github.com/humanlayer/humanlayer) | 10.9k | ⚠️ approval-gated | Средняя | Сложные кодовые базы с обязательными человеческими чекпоинтами |
+| Тулза | ⭐ | Пуш | «Забыл и ушёл» | Сложность | Под кого |
+|---|---:|---|---|---|---|
+| [gastownhall/gastown](https://github.com/gastownhall/gastown) | 17.8k | 2026-08-19 | ✅ настоящий | Высокая | Overkill для одиночки, под сложные multi-agent сценарии |
+| [sipyourdrink-ltd/bernstein](https://github.com/sipyourdrink-ltd/bernstein) | 1.0k | 2026-08-27 | ✅ настоящий | Средняя | Соло-разработчик с требованием audit-grade лога |
+| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 69.5k | 2026-08-27 | ✅ swarm | Высокая | Команды и enterprise, не для одиночки |
+| [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) | 27.9k | 2026-04-24 | ❌ полу-ручное | Низкая | Простая параллельность через kanban-доску |
+| [smtg-ai/claude-squad](https://github.com/smtg-ai/claude-squad) | 8.4k | 2026-08-20 | ❌ ручное | Низкая | Несколько Claude-сессий в TUI |
+| [stravu/crystal (Nimbalyst)](https://github.com/stravu/crystal) | 3.1k | 2026-02-26 | ❌ полу-ручное | Низкая | Desktop GUI для сравнения подходов |
+| [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | 26.5k | 2026-08-27 | ❌ ручное | Низкая | macOS-юзеру с табами и push-нотификациями |
+| [generalaction/emdash](https://github.com/generalaction/emdash) | 5.5k | 2026-08-25 | ❌ полу-ручное | Низкая | Open-source альтернатива vibe-kanban |
+| [frankbria/ralph-claude-code](https://github.com/frankbria/ralph-claude-code) | 9.6k | 2026-07-18 | ⚠️ примитивный | Низкая | Эксперименты с Ralph-loop |
+| [humanlayer/humanlayer](https://github.com/humanlayer/humanlayer) | 11.3k | 2026-06-19 | ⚠️ approval-gated | Средняя | Сложные кодовые базы с обязательными человеческими чекпоинтами |
 
 ### Background runners — «забыл и ушёл»
 
@@ -250,7 +250,7 @@ Evals — регрессионные тесты для агентного workfl
 
 ## Plugins
 
-Плагин — упаковка скиллов, субагентов, hooks и MCP-серверов в один артефакт. Один плагин = один `/plugin install <name>`. См. [официальный гайд](https://docs.claude.com/en/docs/claude-code/plugins).
+Плагин — упаковка скиллов, субагентов, hooks и MCP-серверов в один артефакт. Один плагин = один `/plugin install <name>`. См. [официальный гайд](https://code.claude.com/docs/en/plugins).
 
 > 📂 Полный каталог: **[<!-- @count-ru:catalog/plugins.items --> →](./catalog/plugins.md)**
 
@@ -266,7 +266,7 @@ Evals — регрессионные тесты для агентного workfl
 
 ## Hooks
 
-Hooks — shell-команды (или HTTP / MCP / prompt-агенты), которые запускаются по событиям сессии. См. [hooks reference](https://docs.claude.com/en/docs/claude-code/hooks).
+Hooks — shell-команды (или HTTP / MCP / prompt-агенты), которые запускаются по событиям сессии. См. [hooks reference](https://code.claude.com/docs/en/hooks).
 
 > 📂 Связанные проекты: **[<!-- @count-ru:catalog/hooks.items --> →](./catalog/hooks.md)**. Большая часть hooks живёт внутри плагинов — см. раздел [Plugins](#plugins) выше.
 
@@ -322,7 +322,7 @@ Hooks дают поток событий сессии; эти проекты с�
 
 ## CLAUDE.md шаблоны
 
-`CLAUDE.md` в корне репозитория автоматически подгружается в контекст. См. [memory docs](https://docs.claude.com/en/docs/claude-code/memory).
+`CLAUDE.md` в корне репозитория автоматически подгружается в контекст. См. [memory docs](https://code.claude.com/docs/en/memory).
 
 > 📂 Полный каталог: **[<!-- @count-ru:catalog/templates.items --> →](./catalog/templates.md)**
 
@@ -348,7 +348,7 @@ Hooks дают поток событий сессии; эти проекты с�
 
 ## Status Lines
 
-Статуслайн — строка под промптом Claude Code, куда выводятся лимиты, окно контекста, модель, git и стоимость сессии. Ниша молодая и репозитории небольшие, но пара строк конфига убирает постоянные `/context` и `/cost`. См. [официальную доку](https://docs.claude.com/en/docs/claude-code/statusline).
+Статуслайн — строка под промптом Claude Code, куда выводятся лимиты, окно контекста, модель, git и стоимость сессии. Пара строк конфига убирает постоянные `/context` и `/cost`. См. [официальную доку](https://code.claude.com/docs/en/statusline).
 
 <!-- @list:statuslines.items -->
 
@@ -356,7 +356,7 @@ Hooks дают поток событий сессии; эти проекты с�
 
 ## Мониторинг расхода и стоимости
 
-Трекеры токенов, квоты и денег: от статуслайна с тратами за день до отдельного дашборда со шкалами rate-limit и прогнозом до сброса. Пригодится на Pro/Max, чтобы не упереться в 5-часовой лимит посреди задачи. См. [про стоимость](https://docs.claude.com/en/docs/claude-code/costs).
+Трекеры токенов, квоты и денег: от статуслайна с тратами за день до отдельного дашборда со шкалами rate-limit и прогнозом до сброса. Пригодится на Pro/Max, чтобы не упереться в 5-часовой лимит посреди задачи. См. [про стоимость](https://code.claude.com/docs/en/costs).
 
 <!-- @list:usage-cost.items -->
 

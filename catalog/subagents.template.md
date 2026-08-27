@@ -5,7 +5,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 # Sub-agents
 
-Каталог субагентов Claude Code. См. [официальную доку](https://docs.claude.com/en/docs/claude-code/sub-agents).
+Каталог субагентов Claude Code. См. [официальную доку](https://code.claude.com/docs/en/sub-agents).
 
 Субагент — отдельный экземпляр Claude со своим контекстом. Удобен для read-only исследования кодовой базы (не засоряет основной контекст) и для параллельных независимых задач.
 

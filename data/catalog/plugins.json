@@ -10,7 +10,7 @@
     },
     {
       "name": "CCPlugins",
-      "url": "https://github.com/brennercruvinel/CCPlugins"
+      "url": "https://github.com/notlikeDev/CCPlugins"
     },
     {
       "name": "claude-code-plugin",
@@ -18,7 +18,7 @@
     },
     {
       "name": "claude-code-plugins-plus-skills",
-      "url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills"
+      "url": "https://github.com/jeremylongshore/tons-of-skills-marketplace"
     },
     {
       "name": "claude-plugins-official",
@@ -57,8 +57,8 @@
       "url": "https://github.com/bjorn-ingmanson/thefroject-plugins"
     },
     {
-      "name": "TT-Wang/cortex-plugin",
-      "url": "https://github.com/TT-Wang/cortex-plugin"
+      "name": "TT-Wang/memem",
+      "url": "https://github.com/TT-Wang/memem"
     },
     {
       "name": "whatsapp-claude-plugin",

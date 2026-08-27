@@ -4,7 +4,7 @@
 
 Hooks вызываются Claude Code на события жизненного цикла. Если хочется реагировать на действия агента — auto-format, security scan, push-уведомления, аудит — это правильный механизм.
 
-Документация: [docs.claude.com/en/docs/claude-code/hooks](https://docs.claude.com/en/docs/claude-code/hooks).
+Документация: [docs.claude.com/en/docs/claude-code/hooks](https://code.claude.com/docs/en/hooks).
 
 ---
 

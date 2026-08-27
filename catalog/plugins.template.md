@@ -5,7 +5,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 # Плагины
 
-Каталог плагинов Claude Code из [маркетплейса](https://docs.claude.com/en/docs/claude-code/plugins).
+Каталог плагинов Claude Code из [маркетплейса](https://code.claude.com/docs/en/plugins).
 
 Плагин — упаковка скиллов, субагентов, hooks и MCP-серверов в один артефакт. Ставится через `/plugin marketplace add <repo>`.
 

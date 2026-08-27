@@ -12,11 +12,9 @@
     }
   ],
   "community": [
-    { "name": "carapace-sh/claude-code-hooks", "url": "https://github.com/carapace-sh/claude-code-hooks", "desc": "TypeScript SDK для написания hooks с типизацией." },
-    { "name": "decoder3000/claude-hooks-toolkit", "url": "https://github.com/decoder3000/claude-hooks-toolkit", "desc": "Готовые hooks: форматирование, линт, security-проверка, аудит." },
-    { "name": "snyk/claude-code-pre-commit", "url": "https://github.com/snyk/claude-code-pre-commit", "desc": "Security-скан Snyk на pre-commit." },
-    { "name": "johnlindquist/ccmgr", "url": "https://github.com/johnlindquist/ccmgr", "desc": "Менеджер для конфигов hooks." },
-    { "name": "Setting up Claude Code hooks (Anthropic blog)", "url": "https://www.anthropic.com/news/claude-code-hooks", "desc": "Официальный анонс с примерами." }
+    { "name": "Hooks guide (Claude Docs)", "url": "https://code.claude.com/docs/en/hooks-guide", "desc": "Официальное руководство с рабочими примерами на каждое событие сессии." },
+    { "name": "disler/claude-code-hooks-mastery", "url": "https://github.com/disler/claude-code-hooks-mastery", "desc": "Разбор всех восьми событий с готовыми обработчиками — самый полный набор примеров в сообществе. 3.9k⭐." },
+    { "name": "GowayLee/cchooks", "url": "https://github.com/GowayLee/cchooks", "desc": "Python-SDK: типизированный разбор входного JSON и коды возврата вместо ручного парсинга stdin." }
   ],
   "observability": [
     { "name": "disler/claude-code-hooks-multi-agent-observability", "url": "https://github.com/disler/claude-code-hooks-multi-agent-observability", "desc": "Real-time дашборд hook-событий сразу по нескольким параллельным агентам. 1.5k⭐." },

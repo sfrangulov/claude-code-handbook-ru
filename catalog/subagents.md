@@ -5,7 +5,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 # Sub-agents
 
-Каталог субагентов Claude Code. См. [официальную доку](https://docs.claude.com/en/docs/claude-code/sub-agents).
+Каталог субагентов Claude Code. См. [официальную доку](https://code.claude.com/docs/en/sub-agents).
 
 Субагент — отдельный экземпляр Claude со своим контекстом. Удобен для read-only исследования кодовой базы (не засоряет основной контекст) и для параллельных независимых задач.
 
@@ -95,7 +95,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [codeburn](https://github.com/AgentSeal/codeburn)
 - [Context Engineering 101](https://newsletter.victordibia.com/p/context-engineering-101-how-agents)
 - [Contributors](https://contrib.rocks/image?repo=voltagent/awesome-claude-code-subagents&max=500&columns=20&anon=1)
-- [davepoon/claude-code-subagents-collection](https://github.com/davepoon/claude-code-subagents-collection)
+- [davepoon/buildwithclaude](https://github.com/davepoon/buildwithclaude)
 - [debian-packaging-agent-skill](https://github.com/cosgroveb/debian-packaging-agent-skill)
 - [demwick/polymarket-agent-mcp](https://github.com/demwick/polymarket-agent-mcp)
 - [DevOps Agent](https://github.com/fullstackcrew-alpha/skill-devops-agent)

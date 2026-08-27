@@ -127,7 +127,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [claude-deep-research](https://www.google.com/search?q=https://github.com/disler/claude-deep-research)
 - [claude-delegator](https://github.com/jarrodwatts/claude-delegator)
 - [claude-design-engineer](https://github.com/Dammyjay93/claude-design-engineer)
-- [Claude-Flow](https://github.com/ruvnet/claude-flow)
+- [Claude-Flow](https://github.com/ruvnet/ruflo)
 - [claude-forge](https://github.com/sangrokjung/claude-forge)
 - [claude-gemini-bridge](https://github.com/tkaufmann/claude-gemini-bridge)
 - [claude-handoff](https://github.com/REMvisual/claude-handoff)

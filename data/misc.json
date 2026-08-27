@@ -1,7 +1,7 @@
 {
   "prompting": [
     { "name": "Anthropic Prompting Guide", "url": "https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview", "desc": "Официальный гайд." },
-    { "name": "Anthropic Cookbook", "url": "https://github.com/anthropics/anthropic-cookbook", "desc": "Примеры паттернов с кодом." },
+    { "name": "Anthropic Cookbook", "url": "https://github.com/anthropics/claude-cookbooks", "desc": "Примеры паттернов с кодом." },
     { "name": "anthropics/cwc-workshops", "url": "https://github.com/anthropics/cwc-workshops", "desc": "Материалы девяти воркшопов с конференции Code with Claude: workflow «спека → варианты дизайна → верификация», скилл для аудита evals и подбора модели по цене и скорости, eval-driven разработка агентов на Managed Agents. Архив без поддержки, Apache-2.0." },
     { "name": "Claude API Skills best practices", "url": "https://platform.claude.com/docs/ru/agents-and-tools/agent-skills/best-practices", "desc": "Официальный документ на русском." },
     { "name": "dair-ai/Prompt-Engineering-Guide", "url": "https://github.com/dair-ai/Prompt-Engineering-Guide", "desc": "Академический гайд, 50k+⭐." },
@@ -44,16 +44,16 @@
     { "name": "Anthropic Console", "url": "https://console.anthropic.com/", "desc": "Playground, библиотека промптов, выдача API-ключей." },
     { "name": "Anthropic Workbench", "url": "https://console.anthropic.com/workbench", "desc": "UI для экспериментов с промптами." },
     { "name": "Anthropic Status", "url": "https://status.anthropic.com/", "desc": "Статус сервисов." },
-    { "name": "Claude release notes", "url": "https://docs.claude.com/en/release-notes/claude-code", "desc": "Официальный changelog." },
+    { "name": "Claude release notes", "url": "https://code.claude.com/docs/en/changelog", "desc": "Официальный changelog." },
     { "name": "Skills.sh", "url": "https://skills.sh/", "desc": "Маркетплейс скиллов с количеством установок." },
     { "name": "sfrangulov/skill-graveyard", "url": "https://github.com/sfrangulov/skill-graveyard", "desc": "Аудит установленных скиллов по локальным логам сессий: active / dead / missing / hallucinated. `npx skill-graveyard`, без сети и телеметрии; в монорепо — mcp-graveyard и memory-graveyard. От мейнтейнера этого handbook." },
     { "name": "shanraisshan/claude-code-best-practice", "url": "https://github.com/shanraisshan/claude-code-best-practice", "desc": "Эталонный EN-сборник best practices с ежедневными апдейтами под версии Claude Code. Покрывает все hot-features, Boris Cherny tips, cross-model паттерны." }
   ],
   "workflowMethodologies": [
     { "name": "github/spec-kit", "url": "https://github.com/github/spec-kit", "desc": "Spec-Driven Development от GitHub. 106k⭐. /speckit.specify → clarify → plan → tasks → analyze → implement." },
-    { "name": "affaan-m/everything-claude-code", "url": "https://github.com/affaan-m/everything-claude-code", "desc": "Крупнейшая коллекция: 48 агентов + 143 команды + 230 скиллов. 192k⭐, harness-performance optimization под Claude." },
+    { "name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "desc": "Крупнейшая коллекция: 48 агентов + 143 команды + 230 скиллов. Оптимизация harness'а под Claude, Codex, Cursor. 243k⭐." },
     { "name": "garrytan/gstack", "url": "https://github.com/garrytan/gstack", "desc": "Сетап Garry Tan (Y Combinator): 23 инструмента в ролях CEO, Designer, Eng Manager, Release Manager, QA. 102k⭐." },
-    { "name": "gsd-build/get-shit-done", "url": "https://github.com/gsd-build/get-shit-done", "desc": "Meta-prompting и context-engineering от TÂCHES. Пять фаз: discuss → plan → execute → verify → ship." },
+    { "name": "open-gsd/gsd-core", "url": "https://github.com/open-gsd/gsd-core", "desc": "Meta-prompting и context-engineering: пять фаз discuss → plan → execute → verify → ship, каждая в свежем контексте субагента. Преемник get-shit-done, тот заархивирован." },
     { "name": "Fission-AI/OpenSpec", "url": "https://github.com/Fission-AI/OpenSpec", "desc": "Spec-driven development под AI coding assistants. /opsx:propose → apply → archive." },
     { "name": "bmad-code-org/BMAD-METHOD", "url": "https://github.com/bmad-code-org/BMAD-METHOD", "desc": "Breakthrough Method for Agile AI-Driven Development. Product brief → PRD → architecture → epics → sprint planning → dev → review." },
     { "name": "EveryInc/compound-engineering-plugin", "url": "https://github.com/EveryInc/compound-engineering-plugin", "desc": "Официальный Compound Engineering plugin от Every Inc. /ce-ideate → brainstorm → plan → work → review → debug → optimize." }
@@ -65,9 +65,9 @@
     { "name": "BeehiveInnovations/pal-mcp-server", "url": "https://github.com/BeehiveInnovations/pal-mcp-server", "desc": "Multi-model MCP-сервер (бывш. zen-mcp): Gemini, OpenAI, Azure, Grok, Ollama, OpenRouter как Claude tools. 50+ моделей." }
   ],
   "orchestrationBackground": [
-    { "name": "steveyegge/gastown", "url": "https://github.com/steveyegge/gastown", "desc": "Multi-agent workspace manager от Steve Yegge. Персистентный трекинг работы, true background, рассчитан на сложные multi-agent сценарии." },
-    { "name": "chernistry/bernstein", "url": "https://github.com/chernistry/bernstein", "desc": "Детерминистский оркестратор с HMAC-chained audit-log. Spawn'ит параллельные агенты, верифицирует тестами, авто-коммитит. Zero LLM tokens на координацию." },
-    { "name": "ruvnet/claude-flow", "url": "https://github.com/ruvnet/claude-flow", "desc": "Multi-agent swarm-платформа с RAG, self-learning intelligence, native Claude Code integration. 55k⭐ — де-факто стандарт под swarms." }
+    { "name": "gastownhall/gastown", "url": "https://github.com/gastownhall/gastown", "desc": "Multi-agent workspace manager от Steve Yegge. Персистентный трекинг работы, true background, рассчитан на сложные multi-agent сценарии. 17.8k⭐." },
+    { "name": "sipyourdrink-ltd/bernstein", "url": "https://github.com/sipyourdrink-ltd/bernstein", "desc": "Детерминистский оркестратор с HMAC-chained audit-log. Spawn'ит параллельные агенты, верифицирует тестами, авто-коммитит. Ноль LLM-токенов на координацию." },
+    { "name": "ruvnet/ruflo", "url": "https://github.com/ruvnet/ruflo", "desc": "Multi-agent swarm-платформа с RAG, self-learning и нативной интеграцией Claude Code. Бывший claude-flow, 69k⭐." }
   ],
   "orchestrationGui": [
     { "name": "BloopAI/vibe-kanban", "url": "https://github.com/BloopAI/vibe-kanban", "desc": "Kanban-доска для управления параллельными coding agents. 26.5k⭐, самый популярный GUI под Claude Code и Codex." },

@@ -5,7 +5,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 # Скиллы
 
-Каталог скиллов для Claude Code из всех известных кураторов. См. [официальный гайд](https://docs.claude.com/en/docs/claude-code/skills).
+Каталог скиллов для Claude Code из всех известных кураторов. См. [официальный гайд](https://code.claude.com/docs/en/skills).
 
 Скилл подгружается автоматически, когда задача попадает под его описание — поэтому имеет смысл накопить несколько узкоспециализированных, а не один универсальный.
 

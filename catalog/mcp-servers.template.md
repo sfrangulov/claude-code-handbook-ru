@@ -5,7 +5,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 # MCP-серверы
 
-Все известные MCP-серверы из публичных awesome-lists. Совместимы с Claude Code, Claude Desktop, Cursor и Windsurf. См. [официальную доку по MCP в Claude Code](https://docs.claude.com/en/docs/claude-code/mcp).
+Все известные MCP-серверы из публичных awesome-lists. Совместимы с Claude Code, Claude Desktop, Cursor и Windsurf. См. [официальную доку по MCP в Claude Code](https://code.claude.com/docs/en/mcp).
 
 **Совет практика:** не подключай больше 5–7 серверов одновременно — каждый расходует контекст на discovery. Сначала смотри курируемую выборку в [главном README](../README.md#mcp-серверы), потом сюда — за специализированными.
 

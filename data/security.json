@@ -1,17 +1,17 @@
 {
   "main": [
-    { "name": "Security best practices", "url": "https://docs.claude.com/en/docs/claude-code/security", "desc": "Официальный гайд." },
-    { "name": "Permissions / IAM", "url": "https://docs.claude.com/en/docs/claude-code/iam", "desc": "Настройка прав, `allowManagedHooksOnly` для enterprise." },
+    { "name": "Security best practices", "url": "https://code.claude.com/docs/en/security", "desc": "Официальный гайд." },
+    { "name": "Permissions / IAM", "url": "https://code.claude.com/docs/en/iam", "desc": "Настройка прав, `allowManagedHooksOnly` для enterprise." },
     { "name": "anthropics/defending-code-reference-harness", "url": "https://github.com/anthropics/defending-code-reference-harness", "desc": "Эталонный харнесс Anthropic: скиллы threat-model / vuln-scan / triage / patch + автономный pipeline в песочнице. Сопровождается разбором «Using LLMs to secure source code»." },
     { "name": "trailofbits/skills", "url": "https://github.com/trailofbits/skills", "desc": "Security-скиллы Trail of Bits: CodeQL / Semgrep, аудит кода." },
+    { "name": "anthropics/claude-code-security-review", "url": "https://github.com/anthropics/claude-code-security-review", "desc": "GitHub Action: Claude-ревьюер безопасности на каждый PR, с фильтрацией ложных срабатываний." },
     { "name": "firebase/agent-skills@firestore-security-rules-auditor", "url": "https://skills.sh/firebase/agent-skills/firestore-security-rules-auditor", "desc": "Аудит security-rules Firestore перед прод-релизом. 20K+ установок." },
-    { "name": "snyk/claude-code-pre-commit", "url": "https://github.com/snyk/claude-code-pre-commit", "desc": "Security-скан Snyk на pre-commit." },
     { "name": "Anthropic enterprise governance", "url": "https://www.anthropic.com/enterprise", "desc": "Корпоративный governance." }
   ],
   "enterprise": [
-    { "name": "Managed plugin marketplaces", "url": "https://docs.claude.com/en/docs/claude-code/plugins#managed", "desc": "Только проверенные скиллы из собственного маркетплейса организации." },
-    { "name": "Permission policies", "url": "https://docs.claude.com/en/docs/claude-code/permissions#policy", "desc": "Список разрешённых Bash-команд на уровне организации." },
-    { "name": "Hooks reference", "url": "https://docs.claude.com/en/docs/claude-code/hooks", "desc": "Схема всех событий — для аудита и блокировки." },
+    { "name": "Managed plugin marketplaces", "url": "https://code.claude.com/docs/en/plugins#managed", "desc": "Только проверенные скиллы из собственного маркетплейса организации." },
+    { "name": "Permission policies", "url": "https://code.claude.com/docs/en/permissions#managed-settings", "desc": "Список разрешённых Bash-команд на уровне организации." },
+    { "name": "Hooks reference", "url": "https://code.claude.com/docs/en/hooks", "desc": "Схема всех событий — для аудита и блокировки." },
     { "name": "examples/hooks/audit.sh", "url": "./examples/hooks/scripts/audit.sh", "desc": "JSONL-аудит каждого PostToolUse для compliance." }
   ]
 }

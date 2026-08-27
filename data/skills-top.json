@@ -2,94 +2,94 @@
   "_comment": "Топ-15 скиллов по install-count с skills.sh. Обновляется через scripts/refresh-top-skills.mjs.",
   "items": [
     {
-      "slug": "anthropics/skills@frontend-design",
-      "url": "https://skills.sh/anthropics/skills/frontend-design",
-      "desc": "Перестраивает дизайн в пользу bold-решений вместо дефолтных «AI slop»-карточек. Триггерь, когда видишь, что вышло generic. React + Tailwind.",
-      "count": 653900
-    },
-    {
-      "slug": "vercel-labs/agent-skills@vercel-react-best-practices",
-      "url": "https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
-      "desc": "React/Next.js — производительность по гайду Vercel: правильные границы между клиентом и RSC, кэширование, оптимизация размера бандла. Подключай в любом Next.js-проекте.",
-      "count": 544900
-    },
-    {
-      "slug": "vercel-labs/agent-skills@web-design-guidelines",
-      "url": "https://skills.sh/vercel-labs/agent-skills/web-design-guidelines",
-      "desc": "Чек-лист соответствия Web Interface Guidelines: a11y, hit-targets, focus rings. Запускай как ревью UI до коммита.",
-      "count": 457200
-    },
-    {
-      "slug": "microsoft/azure-skills@azure-deploy",
-      "url": "https://skills.sh/microsoft/azure-skills/azure-deploy",
-      "desc": "Деплой в Azure: ARM/Bicep, App Service, Container Apps. Ставь только если работаешь в Azure-стеке — иначе мёртвый груз в контексте.",
-      "count": 444300
-    },
-    {
       "slug": "mattpocock/skills@grill-with-docs",
       "url": "https://skills.sh/mattpocock/skills/grill-with-docs",
       "desc": "«Допрашивай» документацию через find/grep — заменяет догадки точными цитатами. Особенно ценно для библиотек, где знание Claude устарело.",
-      "count": 441300
+      "count": 835400
+    },
+    {
+      "slug": "anthropics/skills@frontend-design",
+      "url": "https://skills.sh/anthropics/skills/frontend-design",
+      "desc": "Перестраивает дизайн в пользу bold-решений вместо дефолтных «AI slop»-карточек. Триггерь, когда видишь, что вышло generic. React + Tailwind.",
+      "count": 824200
     },
     {
       "slug": "mattpocock/skills@tdd",
       "url": "https://skills.sh/mattpocock/skills/tdd",
       "desc": "TDD-цикл (red-green-refactor) с дисциплиной — не даёт агенту писать код раньше тестов. От Matt Pocock.",
-      "count": 416200
+      "count": 777400
     },
     {
-      "slug": "obra/superpowers@brainstorming",
-      "url": "https://skills.sh/obra/superpowers/brainstorming",
-      "desc": "Структурированный брейншторм с гипотезами и матрицей вариантов **до** начала кода. Включай, когда задача расплывчатая («сделай auth»).",
-      "count": 273100
+      "slug": "vercel-labs/agent-skills@vercel-react-best-practices",
+      "url": "https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
+      "desc": "React/Next.js — производительность по гайду Vercel: правильные границы между клиентом и RSC, кэширование, оптимизация размера бандла. Подключай в любом Next.js-проекте.",
+      "count": 667700
+    },
+    {
+      "slug": "vercel-labs/agent-skills@web-design-guidelines",
+      "url": "https://skills.sh/vercel-labs/agent-skills/web-design-guidelines",
+      "desc": "Чек-лист соответствия Web Interface Guidelines: a11y, hit-targets, focus rings. Запускай как ревью UI до коммита.",
+      "count": 581600
+    },
+    {
+      "slug": "microsoft/azure-skills@azure-deploy",
+      "url": "https://skills.sh/microsoft/azure-skills/azure-deploy",
+      "desc": "Деплой в Azure: ARM/Bicep, App Service, Container Apps. Ставь только если работаешь в Azure-стеке — иначе мёртвый груз в контексте.",
+      "count": 548000
+    },
+    {
+      "slug": "mattpocock/skills@codebase-design",
+      "url": "https://skills.sh/mattpocock/skills/codebase-design",
+      "desc": "Единый словарь для проектирования «глубоких модулей»: много поведения за узким интерфейсом, шов в чистом месте. Берёшь, когда спор идёт о границах, а команда называет одно и то же то компонентом, то сервисом, то API.",
+      "count": 490700
+    },
+    {
+      "slug": "mattpocock/skills@code-review",
+      "url": "https://skills.sh/mattpocock/skills/code-review",
+      "desc": "Ревью диффа от заданной точки сразу по двум осям: соответствие стандартам репозитория и соответствие исходной задаче. Оси гоняются параллельными субагентами, чтобы не засоряли контекст друг другу.",
+      "count": 423600
     },
     {
       "slug": "leonxlnx/taste-skill@design-taste-frontend",
       "url": "https://skills.sh/leonxlnx/taste-skill/design-taste-frontend",
       "desc": "Выводит дизайн-направление из брифа и собирает не-шаблонный интерфейс; на редизайне сначала аудитит текущий. Для лендингов и портфолио, когда generic-вид не годится.",
-      "count": 247300
+      "count": 408700
+    },
+    {
+      "slug": "obra/superpowers@brainstorming",
+      "url": "https://skills.sh/obra/superpowers/brainstorming",
+      "desc": "Структурированный брейншторм с гипотезами и матрицей вариантов **до** начала кода. Включай, когда задача расплывчатая («сделай auth»).",
+      "count": 340900
     },
     {
       "slug": "leonxlnx/taste-skill@high-end-visual-design",
       "url": "https://skills.sh/leonxlnx/taste-skill/high-end-visual-design",
       "desc": "Конкретные шрифты, отступы, тени и анимации, от которых сайт выглядит дорого; убирает дефолты, по которым виден AI-дизайн. Когда нужен premium-look, а не просто «аккуратно».",
-      "count": 194200
+      "count": 304200
+    },
+    {
+      "slug": "leonxlnx/taste-skill@redesign-existing-projects",
+      "url": "https://skills.sh/leonxlnx/taste-skill/redesign-existing-projects",
+      "desc": "Аудит живого интерфейса: находит generic AI-паттерны и подтягивает до premium, не ломая функциональность. Для редизайна существующего проекта, а не старта с нуля.",
+      "count": 300500
+    },
+    {
+      "slug": "mattpocock/skills@git-guardrails-claude-code",
+      "url": "https://skills.sh/mattpocock/skills/git-guardrails-claude-code",
+      "desc": "Ставит PreToolUse-хук, который блокирует `git push`, `reset --hard`, `clean -f` и `branch -D` до выполнения. Дешёвая страховка, если гоняешь агента в обход подтверждений.",
+      "count": 276400
+    },
+    {
+      "slug": "leonxlnx/taste-skill@stitch-design-taste",
+      "url": "https://skills.sh/leonxlnx/taste-skill/stitch-design-taste",
+      "desc": "Генерирует `DESIGN.md` под Google Stitch: строгая типографика, выверенный цвет, асимметричные сетки. Нужен, только если генеришь экраны в Stitch — вне его бесполезен.",
+      "count": 257900
     },
     {
       "slug": "obra/superpowers@systematic-debugging",
       "url": "https://skills.sh/obra/superpowers/systematic-debugging",
       "desc": "Дисциплина отладки: гипотезы → изоляция → root cause. Прерывает цикл бесконечных правок наугад.",
-      "count": 182800
-    },
-    {
-      "slug": "vercel-labs/agent-skills@vercel-react-native-skills",
-      "url": "https://skills.sh/vercel-labs/agent-skills/vercel-react-native-skills",
-      "desc": "React Native по гайду Vercel: снимает с агента половину типичных багов в RN-проектах.",
-      "count": 163800
-    },
-    {
-      "slug": "obra/superpowers@requesting-code-review",
-      "url": "https://skills.sh/obra/superpowers/requesting-code-review",
-      "desc": "Запросить ревью у субагента **перед** коммитом. Эффективно, когда работаешь автономно без живого ревьюера.",
-      "count": 163700
-    },
-    {
-      "slug": "obra/superpowers@subagent-driven-development",
-      "url": "https://skills.sh/obra/superpowers/subagent-driven-development",
-      "desc": "Делегирование независимых задач субагентам параллельно (feature + tests, frontend + backend).",
-      "count": 142900
-    },
-    {
-      "slug": "obra/superpowers@verification-before-completion",
-      "url": "https://skills.sh/obra/superpowers/verification-before-completion",
-      "desc": "Проверить, что задача реально сделана (запустить тесты, открыть страницу), до отчёта «готово». Защита от false-positive отчётов.",
-      "count": 141000
-    },
-    {
-      "slug": "obra/superpowers@receiving-code-review",
-      "url": "https://skills.sh/obra/superpowers/receiving-code-review",
-      "desc": "Как принимать замечания ревью: проверять технически, а не соглашаться со всем и чинить вслепую. Парная к requesting-code-review выше.",
-      "count": 135200
+      "count": 238400
     }
   ]
 }

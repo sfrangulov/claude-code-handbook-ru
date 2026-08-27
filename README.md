@@ -6,7 +6,7 @@ CI gate: node scripts/build-readme.mjs --check
 
 # Claude Code Handbook на русском [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) — CLI-агент Anthropic для разработки в терминале с поддержкой MCP, hooks и автономных субагентов.
+> [Claude Code](https://code.claude.com/docs/en/overview) — CLI-агент Anthropic для разработки в терминале с поддержкой MCP, hooks и автономных субагентов.
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
@@ -62,7 +62,7 @@ claude mcp add postgres    # @modelcontextprotocol/server-postgres (read-only п
 /plugin install superpowers@superpowers-marketplace
 ```
 
-Это 24 скилла (TDD, brainstorming, debugging, systematic-debugging, code-review, planning, parallel-agents, subagent-driven-development). Пять из них — в [топ-15 на skills.sh](#топ-15-скиллов-skillssh).
+Это 14 скиллов (TDD, brainstorming, systematic-debugging, code-review, planning, parallel-agents, subagent-driven-development и другие). Два из них — в [топ-15 на skills.sh](#топ-15-скиллов-skillssh).
 
 **Куда смотреть в первую очередь:**
 
@@ -108,7 +108,7 @@ Anthropic свёл практику команд в петлю **threat model �
 
 ## Skills
 
-Skills — переиспользуемые наборы инструкций, которые Claude подгружает по триггеру. Один скилл = одна задача (TDD-цикл, code-review, performance-аудит). См. [официальный гайд](https://docs.claude.com/en/docs/claude-code/skills).
+Skills — переиспользуемые наборы инструкций, которые Claude подгружает по триггеру. Один скилл = одна задача (TDD-цикл, code-review, performance-аудит). См. [официальный гайд](https://code.claude.com/docs/en/skills).
 
 > 📂 Полный каталог: **[164 записи →](./catalog/skills.md)**
 
@@ -118,25 +118,25 @@ Skills — переиспользуемые наборы инструкций, �
 
 | Скилл | Зачем и когда юзать | Установок |
 |---|---|---:|
-| [anthropics/skills@frontend-design](https://skills.sh/anthropics/skills/frontend-design) | Перестраивает дизайн в пользу bold-решений вместо дефолтных «AI slop»-карточек. Триггерь, когда видишь, что вышло generic. React + Tailwind. | **654K** |
-| [vercel-labs/agent-skills@vercel-react-best-practices](https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices) | React/Next.js — производительность по гайду Vercel: правильные границы между клиентом и RSC, кэширование, оптимизация размера бандла. Подключай в любом Next.js-проекте. | **545K** |
-| [vercel-labs/agent-skills@web-design-guidelines](https://skills.sh/vercel-labs/agent-skills/web-design-guidelines) | Чек-лист соответствия Web Interface Guidelines: a11y, hit-targets, focus rings. Запускай как ревью UI до коммита. | **457K** |
-| [microsoft/azure-skills@azure-deploy](https://skills.sh/microsoft/azure-skills/azure-deploy) | Деплой в Azure: ARM/Bicep, App Service, Container Apps. Ставь только если работаешь в Azure-стеке — иначе мёртвый груз в контексте. | **444K** |
-| [mattpocock/skills@grill-with-docs](https://skills.sh/mattpocock/skills/grill-with-docs) | «Допрашивай» документацию через find/grep — заменяет догадки точными цитатами. Особенно ценно для библиотек, где знание Claude устарело. | **441K** |
-| [mattpocock/skills@tdd](https://skills.sh/mattpocock/skills/tdd) | TDD-цикл (red-green-refactor) с дисциплиной — не даёт агенту писать код раньше тестов. От Matt Pocock. | **416K** |
-| [obra/superpowers@brainstorming](https://skills.sh/obra/superpowers/brainstorming) | Структурированный брейншторм с гипотезами и матрицей вариантов **до** начала кода. Включай, когда задача расплывчатая («сделай auth»). | **273K** |
-| [leonxlnx/taste-skill@design-taste-frontend](https://skills.sh/leonxlnx/taste-skill/design-taste-frontend) | Выводит дизайн-направление из брифа и собирает не-шаблонный интерфейс; на редизайне сначала аудитит текущий. Для лендингов и портфолио, когда generic-вид не годится. | **247K** |
-| [leonxlnx/taste-skill@high-end-visual-design](https://skills.sh/leonxlnx/taste-skill/high-end-visual-design) | Конкретные шрифты, отступы, тени и анимации, от которых сайт выглядит дорого; убирает дефолты, по которым виден AI-дизайн. Когда нужен premium-look, а не просто «аккуратно». | **194K** |
-| [obra/superpowers@systematic-debugging](https://skills.sh/obra/superpowers/systematic-debugging) | Дисциплина отладки: гипотезы → изоляция → root cause. Прерывает цикл бесконечных правок наугад. | **183K** |
-| [vercel-labs/agent-skills@vercel-react-native-skills](https://skills.sh/vercel-labs/agent-skills/vercel-react-native-skills) | React Native по гайду Vercel: снимает с агента половину типичных багов в RN-проектах. | **164K** |
-| [obra/superpowers@requesting-code-review](https://skills.sh/obra/superpowers/requesting-code-review) | Запросить ревью у субагента **перед** коммитом. Эффективно, когда работаешь автономно без живого ревьюера. | **164K** |
-| [obra/superpowers@subagent-driven-development](https://skills.sh/obra/superpowers/subagent-driven-development) | Делегирование независимых задач субагентам параллельно (feature + tests, frontend + backend). | **143K** |
-| [obra/superpowers@verification-before-completion](https://skills.sh/obra/superpowers/verification-before-completion) | Проверить, что задача реально сделана (запустить тесты, открыть страницу), до отчёта «готово». Защита от false-positive отчётов. | **141K** |
-| [obra/superpowers@receiving-code-review](https://skills.sh/obra/superpowers/receiving-code-review) | Как принимать замечания ревью: проверять технически, а не соглашаться со всем и чинить вслепую. Парная к requesting-code-review выше. | **135K** |
+| [mattpocock/skills@grill-with-docs](https://skills.sh/mattpocock/skills/grill-with-docs) | «Допрашивай» документацию через find/grep — заменяет догадки точными цитатами. Особенно ценно для библиотек, где знание Claude устарело. | **835K** |
+| [anthropics/skills@frontend-design](https://skills.sh/anthropics/skills/frontend-design) | Перестраивает дизайн в пользу bold-решений вместо дефолтных «AI slop»-карточек. Триггерь, когда видишь, что вышло generic. React + Tailwind. | **824K** |
+| [mattpocock/skills@tdd](https://skills.sh/mattpocock/skills/tdd) | TDD-цикл (red-green-refactor) с дисциплиной — не даёт агенту писать код раньше тестов. От Matt Pocock. | **777K** |
+| [vercel-labs/agent-skills@vercel-react-best-practices](https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices) | React/Next.js — производительность по гайду Vercel: правильные границы между клиентом и RSC, кэширование, оптимизация размера бандла. Подключай в любом Next.js-проекте. | **668K** |
+| [vercel-labs/agent-skills@web-design-guidelines](https://skills.sh/vercel-labs/agent-skills/web-design-guidelines) | Чек-лист соответствия Web Interface Guidelines: a11y, hit-targets, focus rings. Запускай как ревью UI до коммита. | **582K** |
+| [microsoft/azure-skills@azure-deploy](https://skills.sh/microsoft/azure-skills/azure-deploy) | Деплой в Azure: ARM/Bicep, App Service, Container Apps. Ставь только если работаешь в Azure-стеке — иначе мёртвый груз в контексте. | **548K** |
+| [mattpocock/skills@codebase-design](https://skills.sh/mattpocock/skills/codebase-design) | Единый словарь для проектирования «глубоких модулей»: много поведения за узким интерфейсом, шов в чистом месте. Берёшь, когда спор идёт о границах, а команда называет одно и то же то компонентом, то сервисом, то API. | **491K** |
+| [mattpocock/skills@code-review](https://skills.sh/mattpocock/skills/code-review) | Ревью диффа от заданной точки сразу по двум осям: соответствие стандартам репозитория и соответствие исходной задаче. Оси гоняются параллельными субагентами, чтобы не засоряли контекст друг другу. | **424K** |
+| [leonxlnx/taste-skill@design-taste-frontend](https://skills.sh/leonxlnx/taste-skill/design-taste-frontend) | Выводит дизайн-направление из брифа и собирает не-шаблонный интерфейс; на редизайне сначала аудитит текущий. Для лендингов и портфолио, когда generic-вид не годится. | **409K** |
+| [obra/superpowers@brainstorming](https://skills.sh/obra/superpowers/brainstorming) | Структурированный брейншторм с гипотезами и матрицей вариантов **до** начала кода. Включай, когда задача расплывчатая («сделай auth»). | **341K** |
+| [leonxlnx/taste-skill@high-end-visual-design](https://skills.sh/leonxlnx/taste-skill/high-end-visual-design) | Конкретные шрифты, отступы, тени и анимации, от которых сайт выглядит дорого; убирает дефолты, по которым виден AI-дизайн. Когда нужен premium-look, а не просто «аккуратно». | **304K** |
+| [leonxlnx/taste-skill@redesign-existing-projects](https://skills.sh/leonxlnx/taste-skill/redesign-existing-projects) | Аудит живого интерфейса: находит generic AI-паттерны и подтягивает до premium, не ломая функциональность. Для редизайна существующего проекта, а не старта с нуля. | **301K** |
+| [mattpocock/skills@git-guardrails-claude-code](https://skills.sh/mattpocock/skills/git-guardrails-claude-code) | Ставит PreToolUse-хук, который блокирует `git push`, `reset --hard`, `clean -f` и `branch -D` до выполнения. Дешёвая страховка, если гоняешь агента в обход подтверждений. | **276K** |
+| [leonxlnx/taste-skill@stitch-design-taste](https://skills.sh/leonxlnx/taste-skill/stitch-design-taste) | Генерирует `DESIGN.md` под Google Stitch: строгая типографика, выверенный цвет, асимметричные сетки. Нужен, только если генеришь экраны в Stitch — вне его бесполезен. | **258K** |
+| [obra/superpowers@systematic-debugging](https://skills.sh/obra/superpowers/systematic-debugging) | Дисциплина отладки: гипотезы → изоляция → root cause. Прерывает цикл бесконечных правок наугад. | **238K** |
 
 **Источник:** [skills.sh leaderboard](https://skills.sh) — числа быстро растут, актуальны на момент последнего обновления. Автообновление: `node scripts/refresh-top-skills.mjs --write && node scripts/build-readme.mjs`.
 
-**Совет практика:** ставь `obra/superpowers` целиком сразу — самая полная коллекция soft-скиллов (TDD, отладка, планирование, брейншторм, код-ревью). Пять из топ-15 — оттуда. Дальше добавь скиллы под свой стек (Vercel React, Convex, Firebase, Supabase, Azure). Не ставь всё подряд — каждый скилл съедает 3–5K токенов на bootstrap.
+**Совет практика:** ставь `obra/superpowers` целиком сразу — самая полная коллекция soft-скиллов (TDD, отладка, планирование, брейншторм, код-ревью). Два скилла оттуда держатся в топ-15, остальные двенадцать в рейтинг не попадают — берут связностью, а не установками. Дальше добавь скиллы под свой стек (Vercel React, Convex, Firebase, Supabase, Azure). Не ставь всё подряд — каждый скилл съедает 3–5K токенов на bootstrap.
 
 ### Официальные от Anthropic
 
@@ -190,7 +190,7 @@ Skills — переиспользуемые наборы инструкций, �
 
 ## Sub-agents
 
-Sub-agent — отдельный экземпляр Claude со своим контекстом, который выполняет подзадачу и возвращает один итоговый ответ. Полезно для read-only исследования и параллельных задач. См. [официальную доку](https://docs.claude.com/en/docs/claude-code/sub-agents).
+Sub-agent — отдельный экземпляр Claude со своим контекстом, который выполняет подзадачу и возвращает один итоговый ответ. Полезно для read-only исследования и параллельных задач. См. [официальную доку](https://code.claude.com/docs/en/sub-agents).
 
 > 📂 Полный каталог: **[160 записей →](./catalog/subagents.md)**
 
@@ -203,7 +203,7 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 | [0xfurai/claude-code-subagents](https://github.com/0xfurai/claude-code-subagents) | 100+ субагентов в едином формате промпта, мультиязычные, MIT. |
 | [wshobson/agents](https://github.com/wshobson/agents) | 48 production-агентов с паттернами оркестрации и продвинутыми workflow. |
 | [vijaythecoder/awesome-claude-agents](https://github.com/vijaythecoder/awesome-claude-agents) | 26 агентов формата AI-команды: Tech Lead, Analyst, доменные специалисты. |
-| [davepoon/claude-code-subagents-collection](https://github.com/davepoon/claude-code-subagents-collection) | 36 субагентов с авто-делегированием и гайдом по best-practices. |
+| [davepoon/buildwithclaude](https://github.com/davepoon/buildwithclaude) | Хаб со скиллами, агентами, командами, хуками и плагинами разом; бывший claude-code-subagents-collection. 3.4k⭐. |
 | [rohitg00/awesome-claude-code-toolkit](https://github.com/rohitg00/awesome-claude-code-toolkit) | 135 агентов, 35 скиллов и 42 команды в одном тулките. |
 | [peterkrueck/Claude-Code-Development-Kit](https://github.com/peterkrueck/Claude-Code-Development-Kit) | Мета-репозиторий: документация, multi-agent шаблоны, hooks, MCP-серверы. |
 
@@ -240,26 +240,26 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 
 ### Сравнение под соло-разработчика
 
-Звёзды и категории — на 2026-05-25, GitHub API. Сложность — субъективная оценка времени до первого полезного запуска.
+Звёзды и дата последнего пуша — на 2026-08-27, GitHub API. Сложность — субъективная оценка времени до первого полезного запуска. Смотри на пуш раньше, чем на звёзды: половина ниши живёт один сезон.
 
-| Тулза | ⭐ | «Забыл и ушёл» | Сложность | Под кого |
-|---|---:|---|---|---|
-| [steveyegge/gastown](https://github.com/steveyegge/gastown) | 15.6k | ✅ настоящий | Высокая | Overkill для одиночки, под сложные multi-agent сценарии |
-| [chernistry/bernstein](https://github.com/chernistry/bernstein) | 0.5k | ✅ настоящий | Средняя | Соло-разработчик с требованием audit-grade лога |
-| [ruvnet/claude-flow](https://github.com/ruvnet/claude-flow) | 55k | ✅ swarm | Высокая | Команды и enterprise, не для одиночки |
-| [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) | 26.5k | ❌ полу-ручное | Низкая | Простая параллельность через kanban-доску |
-| [smtg-ai/claude-squad](https://github.com/smtg-ai/claude-squad) | 7.6k | ❌ ручное | Низкая | Несколько Claude-сессий в TUI |
-| [stravu/crystal (Nimbalyst)](https://github.com/stravu/crystal) | 3.1k | ❌ полу-ручное | Низкая | Desktop GUI для сравнения подходов |
-| [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | 19.4k | ❌ ручное | Низкая | macOS-юзеру с табами и push-нотификациями |
-| [generalaction/emdash](https://github.com/generalaction/emdash) | 4.6k | ❌ полу-ручное | Низкая | Open-source альтернатива vibe-kanban |
-| [frankbria/ralph-claude-code](https://github.com/frankbria/ralph-claude-code) | 9.2k | ⚠️ примитивный | Низкая | Эксперименты с Ralph-loop |
-| [humanlayer/humanlayer](https://github.com/humanlayer/humanlayer) | 10.9k | ⚠️ approval-gated | Средняя | Сложные кодовые базы с обязательными человеческими чекпоинтами |
+| Тулза | ⭐ | Пуш | «Забыл и ушёл» | Сложность | Под кого |
+|---|---:|---|---|---|---|
+| [gastownhall/gastown](https://github.com/gastownhall/gastown) | 17.8k | 2026-08-19 | ✅ настоящий | Высокая | Overkill для одиночки, под сложные multi-agent сценарии |
+| [sipyourdrink-ltd/bernstein](https://github.com/sipyourdrink-ltd/bernstein) | 1.0k | 2026-08-27 | ✅ настоящий | Средняя | Соло-разработчик с требованием audit-grade лога |
+| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 69.5k | 2026-08-27 | ✅ swarm | Высокая | Команды и enterprise, не для одиночки |
+| [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) | 27.9k | 2026-04-24 | ❌ полу-ручное | Низкая | Простая параллельность через kanban-доску |
+| [smtg-ai/claude-squad](https://github.com/smtg-ai/claude-squad) | 8.4k | 2026-08-20 | ❌ ручное | Низкая | Несколько Claude-сессий в TUI |
+| [stravu/crystal (Nimbalyst)](https://github.com/stravu/crystal) | 3.1k | 2026-02-26 | ❌ полу-ручное | Низкая | Desktop GUI для сравнения подходов |
+| [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | 26.5k | 2026-08-27 | ❌ ручное | Низкая | macOS-юзеру с табами и push-нотификациями |
+| [generalaction/emdash](https://github.com/generalaction/emdash) | 5.5k | 2026-08-25 | ❌ полу-ручное | Низкая | Open-source альтернатива vibe-kanban |
+| [frankbria/ralph-claude-code](https://github.com/frankbria/ralph-claude-code) | 9.6k | 2026-07-18 | ⚠️ примитивный | Низкая | Эксперименты с Ralph-loop |
+| [humanlayer/humanlayer](https://github.com/humanlayer/humanlayer) | 11.3k | 2026-06-19 | ⚠️ approval-gated | Средняя | Сложные кодовые базы с обязательными человеческими чекпоинтами |
 
 ### Background runners — «забыл и ушёл»
 
-- [steveyegge/gastown](https://github.com/steveyegge/gastown) — Multi-agent workspace manager от Steve Yegge. Персистентный трекинг работы, true background, рассчитан на сложные multi-agent сценарии.
-- [chernistry/bernstein](https://github.com/chernistry/bernstein) — Детерминистский оркестратор с HMAC-chained audit-log. Spawn'ит параллельные агенты, верифицирует тестами, авто-коммитит. Zero LLM tokens на координацию.
-- [ruvnet/claude-flow](https://github.com/ruvnet/claude-flow) — Multi-agent swarm-платформа с RAG, self-learning intelligence, native Claude Code integration. 55k⭐ — де-факто стандарт под swarms.
+- [gastownhall/gastown](https://github.com/gastownhall/gastown) — Multi-agent workspace manager от Steve Yegge. Персистентный трекинг работы, true background, рассчитан на сложные multi-agent сценарии. 17.8k⭐.
+- [sipyourdrink-ltd/bernstein](https://github.com/sipyourdrink-ltd/bernstein) — Детерминистский оркестратор с HMAC-chained audit-log. Spawn'ит параллельные агенты, верифицирует тестами, авто-коммитит. Ноль LLM-токенов на координацию.
+- [ruvnet/ruflo](https://github.com/ruvnet/ruflo) — Multi-agent swarm-платформа с RAG, self-learning и нативной интеграцией Claude Code. Бывший claude-flow, 69k⭐.
 
 ### Parallel GUI / kanban
 
@@ -289,9 +289,9 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 ### Spec → Plan → Ship методологии
 
 - [github/spec-kit](https://github.com/github/spec-kit) — Spec-Driven Development от GitHub. 106k⭐. /speckit.specify → clarify → plan → tasks → analyze → implement.
-- [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) — Крупнейшая коллекция: 48 агентов + 143 команды + 230 скиллов. 192k⭐, harness-performance optimization под Claude.
+- [affaan-m/ECC](https://github.com/affaan-m/ECC) — Крупнейшая коллекция: 48 агентов + 143 команды + 230 скиллов. Оптимизация harness'а под Claude, Codex, Cursor. 243k⭐.
 - [garrytan/gstack](https://github.com/garrytan/gstack) — Сетап Garry Tan (Y Combinator): 23 инструмента в ролях CEO, Designer, Eng Manager, Release Manager, QA. 102k⭐.
-- [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) — Meta-prompting и context-engineering от TÂCHES. Пять фаз: discuss → plan → execute → verify → ship.
+- [open-gsd/gsd-core](https://github.com/open-gsd/gsd-core) — Meta-prompting и context-engineering: пять фаз discuss → plan → execute → verify → ship, каждая в свежем контексте субагента. Преемник get-shit-done, тот заархивирован.
 - [Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) — Spec-driven development под AI coding assistants. /opsx:propose → apply → archive.
 - [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) — Breakthrough Method for Agile AI-Driven Development. Product brief → PRD → architecture → epics → sprint planning → dev → review.
 - [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) — Официальный Compound Engineering plugin от Every Inc. /ce-ideate → brainstorm → plan → work → review → debug → optimize.
@@ -339,7 +339,7 @@ Evals — регрессионные тесты для агентного workfl
 
 ## Plugins
 
-Плагин — упаковка скиллов, субагентов, hooks и MCP-серверов в один артефакт. Один плагин = один `/plugin install <name>`. См. [официальный гайд](https://docs.claude.com/en/docs/claude-code/plugins).
+Плагин — упаковка скиллов, субагентов, hooks и MCP-серверов в один артефакт. Один плагин = один `/plugin install <name>`. См. [официальный гайд](https://code.claude.com/docs/en/plugins).
 
 > 📂 Полный каталог: **[16 записей →](./catalog/plugins.md)**
 
@@ -352,12 +352,11 @@ Evals — регрессионные тесты для агентного workfl
 
 ### Полезные одиночные плагины
 
-- [brennercruvinel/CCPlugins](https://github.com/brennercruvinel/CCPlugins) — Сборка самых ходовых slash-команд автора.
+- [notlikeDev/CCPlugins](https://github.com/notlikeDev/CCPlugins) — Сборка самых ходовых slash-команд автора.
 - [ApurvBazari/claude-plugins](https://github.com/ApurvBazari/claude-plugins) — Уведомления о событиях через ntfy / Pushover / Telegram.
-- [browserbase/claude-code-plugin](https://github.com/browserbase/claude-code-plugin) — Browserbase: облачные браузеры для тестирования и скрейпинга.
 - [0xdesign/design-plugin](https://github.com/0xdesign/design-plugin) — Дизайн-ориентированная обвязка для UI-задач.
-- [jeremylongshore/claude-code-plugins-plus-skills](https://github.com/jeremylongshore/claude-code-plugins-plus-skills) — Связка плагинов и скиллов в одном репозитории.
-- [TT-Wang/cortex-plugin](https://github.com/TT-Wang/cortex-plugin) — Структурированное мышление и планирование задач.
+- [jeremylongshore/tons-of-skills-marketplace](https://github.com/jeremylongshore/tons-of-skills-marketplace) — Маркетплейс на 471 плагин, 3069 скиллов и 347 агентов со своим пакетным менеджером ccpi.
+- [TT-Wang/memem](https://github.com/TT-Wang/memem) — Постоянная память между сессиями: уроки и решения в markdown внутри Obsidian-хранилища, поиск через SQLite FTS5, разбор прошлых транскриптов. Бывший cortex-plugin.
 - [Rich627/whatsapp-claude-plugin](https://github.com/Rich627/whatsapp-claude-plugin) — Интеграция с WhatsApp.
 - [iurykrieger/claude-bedrock](https://github.com/iurykrieger/claude-bedrock) — Автоматизация «второго мозга» в Obsidian: сущности, загрузка, сжатие и синхронизация vault через скиллы Claude Code.
 
@@ -365,7 +364,7 @@ Evals — регрессионные тесты для агентного workfl
 
 ## Hooks
 
-Hooks — shell-команды (или HTTP / MCP / prompt-агенты), которые запускаются по событиям сессии. См. [hooks reference](https://docs.claude.com/en/docs/claude-code/hooks).
+Hooks — shell-команды (или HTTP / MCP / prompt-агенты), которые запускаются по событиям сессии. См. [hooks reference](https://code.claude.com/docs/en/hooks).
 
 > 📂 Связанные проекты: **[8 записей →](./catalog/hooks.md)**. Большая часть hooks живёт внутри плагинов — см. раздел [Plugins](#plugins) выше.
 
@@ -378,11 +377,9 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 
 ### Community-проекты
 
-- [carapace-sh/claude-code-hooks](https://github.com/carapace-sh/claude-code-hooks) — TypeScript SDK для написания hooks с типизацией.
-- [decoder3000/claude-hooks-toolkit](https://github.com/decoder3000/claude-hooks-toolkit) — Готовые hooks: форматирование, линт, security-проверка, аудит.
-- [snyk/claude-code-pre-commit](https://github.com/snyk/claude-code-pre-commit) — Security-скан Snyk на pre-commit.
-- [johnlindquist/ccmgr](https://github.com/johnlindquist/ccmgr) — Менеджер для конфигов hooks.
-- [Setting up Claude Code hooks (Anthropic blog)](https://www.anthropic.com/news/claude-code-hooks) — Официальный анонс с примерами.
+- [Hooks guide (Claude Docs)](https://code.claude.com/docs/en/hooks-guide) — Официальное руководство с рабочими примерами на каждое событие сессии.
+- [disler/claude-code-hooks-mastery](https://github.com/disler/claude-code-hooks-mastery) — Разбор всех восьми событий с готовыми обработчиками — самый полный набор примеров в сообществе. 3.9k⭐.
+- [GowayLee/cchooks](https://github.com/GowayLee/cchooks) — Python-SDK: типизированный разбор входного JSON и коды возврата вместо ручного парсинга stdin.
 
 ### Observability — дашборды поверх hooks
 
@@ -445,7 +442,7 @@ Hooks дают поток событий сессии; эти проекты с�
 
 ## CLAUDE.md шаблоны
 
-`CLAUDE.md` в корне репозитория автоматически подгружается в контекст. См. [memory docs](https://docs.claude.com/en/docs/claude-code/memory).
+`CLAUDE.md` в корне репозитория автоматически подгружается в контекст. См. [memory docs](https://code.claude.com/docs/en/memory).
 
 > 📂 Полный каталог: **[10 записей →](./catalog/templates.md)**
 
@@ -461,7 +458,7 @@ Hooks дают поток событий сессии; эти проекты с�
 
 - [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) — `CLAUDE.md`, собранный из практик Andrej Karpathy. 128k⭐.
 - [garrytan/gstack](https://github.com/garrytan/gstack) — Сетап Garry Tan: 23 opinionated-инструмента. 95k⭐.
-- [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) — Полная оптимизация harness'а: скиллы, повадки, память. 181k⭐.
+- [affaan-m/ECC](https://github.com/affaan-m/ECC) — Полная оптимизация harness'а: скиллы, повадки, память, research-first разработка. 243k⭐.
 
 ### Под конкретный стек
 
@@ -485,8 +482,9 @@ Hooks дают поток событий сессии; эти проекты с�
 
 ## Status Lines
 
-Статуслайн — строка под промптом Claude Code, куда выводятся лимиты, окно контекста, модель, git и стоимость сессии. Ниша молодая и репозитории небольшие, но пара строк конфига убирает постоянные `/context` и `/cost`. См. [официальную доку](https://docs.claude.com/en/docs/claude-code/statusline).
+Статуслайн — строка под промптом Claude Code, куда выводятся лимиты, окно контекста, модель, git и стоимость сессии. Пара строк конфига убирает постоянные `/context` и `/cost`. См. [официальную доку](https://code.claude.com/docs/en/statusline).
 
+- [sirmalloc/ccstatusline](https://github.com/sirmalloc/ccstatusline) — Powerline-статуслайн с темами и настройкой каждого сегмента: лимиты, окно контекста, модель, git, стоимость. Ставится как npm-пакет. 12.6k⭐.
 - [leeguooooo/claude-code-usage-bar](https://github.com/leeguooooo/claude-code-usage-bar) — Статуслайн с лимитами 5h/7d, обратным отсчётом до сброса, моделью, окном контекста и возрастом prompt-cache. 3 стиля × 9 тем, daemon-режим. 302⭐.
 - [briansmith80/claude-code-status-bar](https://github.com/briansmith80/claude-code-status-bar) — Настраиваемый статуслайн на чистом bash без зависимостей: лимиты с маркерами pacing, окно контекста, git, стоимость сессии, 8 тем.
 - [educlopez/ccvitals](https://github.com/educlopez/ccvitals) — Минималистичный статуслайн на чистом bash — не блокирует ввод: квота, окно контекста, git-статус.
@@ -496,7 +494,7 @@ Hooks дают поток событий сессии; эти проекты с�
 
 ## Мониторинг расхода и стоимости
 
-Трекеры токенов, квоты и денег: от статуслайна с тратами за день до отдельного дашборда со шкалами rate-limit и прогнозом до сброса. Пригодится на Pro/Max, чтобы не упереться в 5-часовой лимит посреди задачи. См. [про стоимость](https://docs.claude.com/en/docs/claude-code/costs).
+Трекеры токенов, квоты и денег: от статуслайна с тратами за день до отдельного дашборда со шкалами rate-limit и прогнозом до сброса. Пригодится на Pro/Max, чтобы не упереться в 5-часовой лимит посреди задачи. См. [про стоимость](https://code.claude.com/docs/en/costs).
 
 - [mag123c/toktrack](https://github.com/mag123c/toktrack) — Быстрый трекер токенов и стоимости для Claude Code и других LLM. 174⭐.
 - [zihenghe04/CCDash](https://github.com/zihenghe04/CCDash) — Единая панель расхода токенов, квоты и стоимости по Claude Code, claude.ai и API в одном окне.
@@ -570,19 +568,19 @@ Hooks дают поток событий сессии; эти проекты с�
 
 ## Безопасность и enterprise
 
-- [Security best practices](https://docs.claude.com/en/docs/claude-code/security) — Официальный гайд.
-- [Permissions / IAM](https://docs.claude.com/en/docs/claude-code/iam) — Настройка прав, `allowManagedHooksOnly` для enterprise.
+- [Security best practices](https://code.claude.com/docs/en/security) — Официальный гайд.
+- [Permissions / IAM](https://code.claude.com/docs/en/iam) — Настройка прав, `allowManagedHooksOnly` для enterprise.
 - [anthropics/defending-code-reference-harness](https://github.com/anthropics/defending-code-reference-harness) — Эталонный харнесс Anthropic: скиллы threat-model / vuln-scan / triage / patch + автономный pipeline в песочнице. Сопровождается разбором «Using LLMs to secure source code».
 - [trailofbits/skills](https://github.com/trailofbits/skills) — Security-скиллы Trail of Bits: CodeQL / Semgrep, аудит кода.
+- [anthropics/claude-code-security-review](https://github.com/anthropics/claude-code-security-review) — GitHub Action: Claude-ревьюер безопасности на каждый PR, с фильтрацией ложных срабатываний.
 - [firebase/agent-skills@firestore-security-rules-auditor](https://skills.sh/firebase/agent-skills/firestore-security-rules-auditor) — Аудит security-rules Firestore перед прод-релизом. 20K+ установок.
-- [snyk/claude-code-pre-commit](https://github.com/snyk/claude-code-pre-commit) — Security-скан Snyk на pre-commit.
 - [Anthropic enterprise governance](https://www.anthropic.com/enterprise) — Корпоративный governance.
 
 ### Enterprise-паттерны
 
-- [Managed plugin marketplaces](https://docs.claude.com/en/docs/claude-code/plugins#managed) — Только проверенные скиллы из собственного маркетплейса организации.
-- [Permission policies](https://docs.claude.com/en/docs/claude-code/permissions#policy) — Список разрешённых Bash-команд на уровне организации.
-- [Hooks reference](https://docs.claude.com/en/docs/claude-code/hooks) — Схема всех событий — для аудита и блокировки.
+- [Managed plugin marketplaces](https://code.claude.com/docs/en/plugins#managed) — Только проверенные скиллы из собственного маркетплейса организации.
+- [Permission policies](https://code.claude.com/docs/en/permissions#managed-settings) — Список разрешённых Bash-команд на уровне организации.
+- [Hooks reference](https://code.claude.com/docs/en/hooks) — Схема всех событий — для аудита и блокировки.
 - [examples/hooks/audit.sh](./examples/hooks/scripts/audit.sh) — JSONL-аудит каждого PostToolUse для compliance.
 
 ---
@@ -592,7 +590,7 @@ Hooks дают поток событий сессии; эти проекты с�
 ### Промптинг
 
 - [Anthropic Prompting Guide](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview) — Официальный гайд.
-- [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook) — Примеры паттернов с кодом.
+- [Anthropic Cookbook](https://github.com/anthropics/claude-cookbooks) — Примеры паттернов с кодом.
 - [anthropics/cwc-workshops](https://github.com/anthropics/cwc-workshops) — Материалы девяти воркшопов с конференции Code with Claude: workflow «спека → варианты дизайна → верификация», скилл для аудита evals и подбора модели по цене и скорости, eval-driven разработка агентов на Managed Agents. Архив без поддержки, Apache-2.0.
 - [Claude API Skills best practices](https://platform.claude.com/docs/ru/agents-and-tools/agent-skills/best-practices) — Официальный документ на русском.
 - [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) — Академический гайд, 50k+⭐.
@@ -640,7 +638,7 @@ Hooks дают поток событий сессии; эти проекты с�
 - [Anthropic Console](https://console.anthropic.com/) — Playground, библиотека промптов, выдача API-ключей.
 - [Anthropic Workbench](https://console.anthropic.com/workbench) — UI для экспериментов с промптами.
 - [Anthropic Status](https://status.anthropic.com/) — Статус сервисов.
-- [Claude release notes](https://docs.claude.com/en/release-notes/claude-code) — Официальный changelog.
+- [Claude release notes](https://code.claude.com/docs/en/changelog) — Официальный changelog.
 - [Skills.sh](https://skills.sh/) — Маркетплейс скиллов с количеством установок.
 - [sfrangulov/skill-graveyard](https://github.com/sfrangulov/skill-graveyard) — Аудит установленных скиллов по локальным логам сессий: active / dead / missing / hallucinated. `npx skill-graveyard`, без сети и телеметрии; в монорепо — mcp-graveyard и memory-graveyard. От мейнтейнера этого handbook.
 - [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — Эталонный EN-сборник best practices с ежедневными апдейтами под версии Claude Code. Покрывает все hot-features, Boris Cherny tips, cross-model паттерны.
