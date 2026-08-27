@@ -17,7 +17,8 @@ xdg-open cheatsheet/index.html     # Linux
 
 **Печать в PDF из CLI** (headless Chrome):
 ```bash
-"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+CHROME=$(ls -d ~/Applications/"Google Chrome.app" /Applications/"Google Chrome.app" 2>/dev/null | head -1)
+"$CHROME/Contents/MacOS/Google Chrome" \
   --headless --disable-gpu \
   --no-pdf-header-footer --print-to-pdf-no-header \
   --virtual-time-budget=15000 \
@@ -71,10 +72,18 @@ hook-события (`TeammateIdle`/`TaskCompleted`) и практическое
 колонкам через `<div class="col">`. Рендерить и считать страницы после каждой правки,
 а не в конце.
 
-**Chrome для рендера.** Если `/Applications/Google Chrome.app` нет, подойдёт любой
-Chromium — например, тот, что ставит Playwright:
-`~/Library/Caches/ms-playwright/chromium-*/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing`.
-Рендерить надо файл с расширением `.html`: `.bak` Chrome печатает как текст, получается 14 страниц.
+**Рендерить только настоящим Chrome.** Он может стоять и в `~/Applications`, а не только
+в `/Applications` — команда выше это учитывает. Chromium от Playwright не подходит:
+у него нет системного emoji-шрифта, и в PDF молча пропадают все иконки секций
+(⌨️ 🔌 📁 🧠 🧩 ⚙️ 🔧 🖥) — страница при этом остаётся одна, на глаз почти незаметно.
+Проверка после рендера:
+
+```bash
+pdftotext cheatsheet/cheatsheet.pdf - | grep -c '[⌨🔌📁🧠🧩⚙🔧🖥]'   # ожидается 8
+```
+
+И рендерить надо файл с расширением `.html`: копию вида `index.html.bak` Chrome
+печатает как обычный текст — получается 14 страниц исходника.
 
 ## Атрибуция
 
