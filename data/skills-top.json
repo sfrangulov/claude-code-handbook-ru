@@ -3,93 +3,93 @@
   "items": [
     {
       "slug": "mattpocock/skills@grill-with-docs",
-      "url": "https://www.skills.sh/mattpocock/skills/grill-with-docs",
+      "url": "https://skills.sh/mattpocock/skills/grill-with-docs",
       "desc": "«Допрашивай» документацию через find/grep — заменяет догадки точными цитатами. Особенно ценно для библиотек, где знание Claude устарело.",
-      "count": 835400
+      "count": 863400
     },
     {
       "slug": "anthropics/skills@frontend-design",
-      "url": "https://www.skills.sh/anthropics/skills/frontend-design",
+      "url": "https://skills.sh/anthropics/skills/frontend-design",
       "desc": "Перестраивает дизайн в пользу bold-решений вместо дефолтных «AI slop»-карточек. Триггерь, когда видишь, что вышло generic. React + Tailwind.",
-      "count": 824200
+      "count": 837300
     },
     {
       "slug": "mattpocock/skills@tdd",
-      "url": "https://www.skills.sh/mattpocock/skills/tdd",
+      "url": "https://skills.sh/mattpocock/skills/tdd",
       "desc": "TDD-цикл (red-green-refactor) с дисциплиной — не даёт агенту писать код раньше тестов. От Matt Pocock.",
-      "count": 777400
+      "count": 802900
     },
     {
       "slug": "vercel-labs/agent-skills@vercel-react-best-practices",
-      "url": "https://www.skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
+      "url": "https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
       "desc": "React/Next.js — производительность по гайду Vercel: правильные границы между клиентом и RSC, кэширование, оптимизация размера бандла. Подключай в любом Next.js-проекте.",
-      "count": 667700
+      "count": 677100
     },
     {
       "slug": "vercel-labs/agent-skills@web-design-guidelines",
-      "url": "https://www.skills.sh/vercel-labs/agent-skills/web-design-guidelines",
+      "url": "https://skills.sh/vercel-labs/agent-skills/web-design-guidelines",
       "desc": "Чек-лист соответствия Web Interface Guidelines: a11y, hit-targets, focus rings. Запускай как ревью UI до коммита.",
-      "count": 581600
+      "count": 593100
     },
     {
       "slug": "microsoft/azure-skills@azure-deploy",
-      "url": "https://www.skills.sh/microsoft/azure-skills/azure-deploy",
+      "url": "https://skills.sh/microsoft/azure-skills/azure-deploy",
       "desc": "Деплой в Azure: ARM/Bicep, App Service, Container Apps. Ставь только если работаешь в Azure-стеке — иначе мёртвый груз в контексте.",
-      "count": 548000
+      "count": 553700
     },
     {
       "slug": "mattpocock/skills@codebase-design",
-      "url": "https://www.skills.sh/mattpocock/skills/codebase-design",
+      "url": "https://skills.sh/mattpocock/skills/codebase-design",
       "desc": "Единый словарь для проектирования «глубоких модулей»: много поведения за узким интерфейсом, шов в чистом месте. Берёшь, когда спор идёт о границах, а команда называет одно и то же то компонентом, то сервисом, то API.",
-      "count": 490700
+      "count": 515400
     },
     {
       "slug": "mattpocock/skills@code-review",
-      "url": "https://www.skills.sh/mattpocock/skills/code-review",
+      "url": "https://skills.sh/mattpocock/skills/code-review",
       "desc": "Ревью диффа от заданной точки сразу по двум осям: соответствие стандартам репозитория и соответствие исходной задаче. Оси гоняются параллельными субагентами, чтобы не засоряли контекст друг другу.",
-      "count": 423600
+      "count": 449300
     },
     {
       "slug": "leonxlnx/taste-skill@design-taste-frontend",
-      "url": "https://www.skills.sh/leonxlnx/taste-skill/design-taste-frontend",
+      "url": "https://skills.sh/leonxlnx/taste-skill/design-taste-frontend",
       "desc": "Выводит дизайн-направление из брифа и собирает не-шаблонный интерфейс; на редизайне сначала аудитит текущий. Для лендингов и портфолио, когда generic-вид не годится.",
-      "count": 408700
+      "count": 424400
     },
     {
       "slug": "obra/superpowers@brainstorming",
-      "url": "https://www.skills.sh/obra/superpowers/brainstorming",
+      "url": "https://skills.sh/obra/superpowers/brainstorming",
       "desc": "Структурированный брейншторм с гипотезами и матрицей вариантов **до** начала кода. Включай, когда задача расплывчатая («сделай auth»).",
-      "count": 340900
+      "count": 345100
     },
     {
       "slug": "leonxlnx/taste-skill@high-end-visual-design",
-      "url": "https://www.skills.sh/leonxlnx/taste-skill/high-end-visual-design",
+      "url": "https://skills.sh/leonxlnx/taste-skill/high-end-visual-design",
       "desc": "Конкретные шрифты, отступы, тени и анимации, от которых сайт выглядит дорого; убирает дефолты, по которым виден AI-дизайн. Когда нужен premium-look, а не просто «аккуратно».",
-      "count": 304200
+      "count": 315200
     },
     {
       "slug": "leonxlnx/taste-skill@redesign-existing-projects",
-      "url": "https://www.skills.sh/leonxlnx/taste-skill/redesign-existing-projects",
+      "url": "https://skills.sh/leonxlnx/taste-skill/redesign-existing-projects",
       "desc": "Аудит живого интерфейса: находит generic AI-паттерны и подтягивает до premium, не ломая функциональность. Для редизайна существующего проекта, а не старта с нуля.",
-      "count": 300500
+      "count": 311500
     },
     {
       "slug": "mattpocock/skills@git-guardrails-claude-code",
-      "url": "https://www.skills.sh/mattpocock/skills/git-guardrails-claude-code",
+      "url": "https://skills.sh/mattpocock/skills/git-guardrails-claude-code",
       "desc": "Ставит PreToolUse-хук, который блокирует `git push`, `reset --hard`, `clean -f` и `branch -D` до выполнения. Дешёвая страховка, если гоняешь агента в обход подтверждений.",
-      "count": 276400
+      "count": 292800
     },
     {
       "slug": "leonxlnx/taste-skill@stitch-design-taste",
-      "url": "https://www.skills.sh/leonxlnx/taste-skill/stitch-design-taste",
+      "url": "https://skills.sh/leonxlnx/taste-skill/stitch-design-taste",
       "desc": "Генерирует `DESIGN.md` под Google Stitch: строгая типографика, выверенный цвет, асимметричные сетки. Нужен, только если генеришь экраны в Stitch — вне его бесполезен.",
-      "count": 257900
+      "count": 267800
     },
     {
       "slug": "obra/superpowers@systematic-debugging",
-      "url": "https://www.skills.sh/obra/superpowers/systematic-debugging",
+      "url": "https://skills.sh/obra/superpowers/systematic-debugging",
       "desc": "Дисциплина отладки: гипотезы → изоляция → root cause. Прерывает цикл бесконечных правок наугад.",
-      "count": 238400
+      "count": 242300
     }
   ]
 }
