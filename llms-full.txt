@@ -147,7 +147,7 @@ Skills — переиспользуемые наборы инструкций, �
 
 **Источник:** [skills.sh leaderboard](https://skills.sh) — числа быстро растут, актуальны на момент последнего обновления. Автообновление: `node scripts/refresh-top-skills.mjs --write && node scripts/build-readme.mjs`.
 
-**Совет практика:** ставь `obra/superpowers` целиком сразу — все 14 скиллов образуют один маршрут (TDD, отладка, планирование, брейншторм, код-ревью). Два скилла оттуда держатся в топ-15, остальные двенадцать в рейтинг не попадают — берут связностью, а не установками; выдирать их по одному смысла мало ([почему](./docs/skill-families-ru.md#obrasuperpowers--методология-которая-владеет-процессом)). Дальше добавь скиллы под свой стек (Vercel React, Convex, Firebase, Supabase, Azure). Не ставь всё подряд — каждый скилл съедает 3–5K токенов на bootstrap.
+**Совет практика:** ставь `obra/superpowers` целиком сразу — все 14 скиллов образуют один маршрут (TDD, отладка, планирование, брейншторм, код-ревью). Два скилла оттуда держатся в топ-15, остальные двенадцать в рейтинг не попадают — берут связностью, а не установками; выдирать их по одному смысла мало ([почему](./docs/skill-families-ru.md#obrasuperpowers--методология-которая-владеет-процессом)). Если свой процесс уже есть и рельсы не нужны — бери вместо этого `mattpocock/skills` и вызывай по одному ([чем они отличаются](./docs/skill-families-ru.md#одна-таблица-чем-отличаются)). Дальше добавь скиллы под свой стек (Vercel React, Convex, Firebase, Supabase, Azure). Не ставь всё подряд — каждый скилл съедает 3–5K токенов на bootstrap.
 
 ### Официальные от Anthropic
 
@@ -168,6 +168,8 @@ Skills — переиспользуемые наборы инструкций, �
 
 - [obra/superpowers](https://github.com/obra/superpowers) — 14 связанных скиллов, образующих методологию: брейншторм → план → TDD → ревью → мерж. Срабатывают автоматически. Теперь в официальном маркетплейсе: `/plugin install superpowers@claude-plugins-official`. [Детальный разбор](./docs/skill-families-ru.md#obrasuperpowers--методология-которая-владеет-процессом).
 - [obra/superpowers-lab](https://github.com/obra/superpowers-lab) — Экспериментальные скиллы из той же серии.
+- [mattpocock/skills](https://github.com/mattpocock/skills) — 37 маленьких скиллов от Matt Pocock, намеренно построенных против того, чтобы забирать процесс себе: ставишь и вызываешь по одному. Пять из них — в топ-15 выше. В официальном маркетплейсе: `/plugin install mattpocock-skills`, либо `npx skills@latest add mattpocock/skills`, если хочешь править под себя. [Детальный разбор](./docs/skill-families-ru.md#mattpocockskills--маленькие-детали-которыми-владеешь-ты).
+- [affaan-m/ECC](https://github.com/affaan-m/ECC) — 286 скиллов и 68 агентов, охватывающих редкие домены, плюс инстинкты (паттерны, выученные из твоих сессий) и память между харнессами. Ставить выборочно: правила всегда в контексте. [Детальный разбор](./docs/skill-families-ru.md#affaan-mecc--операционная-система-харнесса).
 - [trailofbits/skills](https://github.com/trailofbits/skills) — Security-скиллы от Trail of Bits: статический анализ через CodeQL/Semgrep, аудит кода, поиск уязвимостей.
 - [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) — Vercel Engineering: производительность React, web-guidelines, React Native, деплой на Vercel.
 - [supabase/agent-skills](https://github.com/supabase/agent-skills) — Скиллы для Supabase и PostgreSQL.
