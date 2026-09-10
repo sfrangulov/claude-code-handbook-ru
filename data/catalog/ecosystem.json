@@ -625,10 +625,6 @@
       "url": "https://github.com/supermemoryai/claude-supermemory"
     },
     {
-      "name": "claude-swarm",
-      "url": "https://github.com/parruda/claude-swarm"
-    },
-    {
       "name": "claude-tabletop",
       "url": "https://github.com/cjcsecurity/claude-tabletop"
     },
@@ -903,10 +899,6 @@
     {
       "name": "SuperClaude",
       "url": "https://github.com/SuperClaude-Org/SuperClaude_Framework"
-    },
-    {
-      "name": "SuperClaude",
-      "url": "https://github.com/NomenAK/SuperClaude"
     },
     {
       "name": "SuperClaude",

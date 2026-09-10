@@ -57,10 +57,6 @@
       "url": "https://github.com/steipete/agent-rules"
     },
     {
-      "name": "agent-shadow-brain",
-      "url": "https://github.com/theihtisham/agent-shadow-brain"
-    },
-    {
       "name": "agent-skills",
       "url": "https://github.com/vercel-labs/agent-skills"
     },
@@ -345,10 +341,6 @@
       "url": "https://github.com/drhalto/agentmako"
     },
     {
-      "name": "ebbfijsf/agent-reader",
-      "url": "https://github.com/ebbfijsf/agent-reader"
-    },
-    {
       "name": "edge-claw/mood-booster-agent",
       "url": "https://github.com/edge-claw/mood-booster-agent"
     },
@@ -501,10 +493,6 @@
       "url": "https://github.com/Nolas-Shadow/agent1st-ads-mcp"
     },
     {
-      "name": "ntriq-gh/ntriq-agentshop",
-      "url": "https://github.com/ntriq-gh/ntriq-agentshop"
-    },
-    {
       "name": "open an issue",
       "url": "https://github.com/VoltAgent/awesome-claude-code-subagents/issues"
     },
@@ -602,7 +590,7 @@
     },
     {
       "name": "Trade-Agent/trade-agent-mcp",
-      "url": "https://github.com/Trade-Agent/trade-agent-mcp.git"
+      "url": "https://github.com/Trade-Agent/trade-agent-mcp"
     },
     {
       "name": "vijaythecoder/awesome-claude-agents",

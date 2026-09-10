@@ -1,12 +1,12 @@
 {
   "marketplaces": [
     { "name": "obra/superpowers-marketplace", "url": "https://github.com/obra/superpowers-marketplace", "desc": "Ещё девять плагинов от Jesse Vincent сверх ядра superpowers: Chrome DevTools, tmux-автоматизация, драйвер чужих сессий Claude, семантический поиск по прошлым разговорам. Установка: `claude plugin marketplace add obra/superpowers-marketplace`." },
-    { "name": "ccplugins/awesome-claude-code-plugins", "url": "https://github.com/ccplugins/awesome-claude-code-plugins", "desc": "50+ плагинов по 13 категориям (качество кода, git, devops, дизайн, бизнес). 782⭐. Установка: `claude plugin marketplace add ccplugins/awesome-claude-code-plugins`." },
+    { "name": "ccplugins/awesome-claude-code-plugins", "url": "https://github.com/ccplugins/awesome-claude-code-plugins", "desc": "935⭐, 50+ плагинов по 13 категориям (качество кода, git, devops, дизайн, бизнес). 782⭐. Установка: `claude plugin marketplace add ccplugins/awesome-claude-code-plugins`." },
     { "name": "VoltAgent/awesome-claude-code-subagents", "url": "https://github.com/VoltAgent/awesome-claude-code-subagents", "desc": "144 субагента, оформленные как плагин-маркетплейс." },
     { "name": "anthropics/claude-plugins-official", "url": "https://github.com/anthropics/claude-plugins-official", "desc": "Официальные плагины Anthropic." }
   ],
   "singles": [
-    { "name": "notlikeDev/CCPlugins", "url": "https://github.com/notlikeDev/CCPlugins", "desc": "Сборка самых ходовых slash-команд автора." },
+    { "name": "brennercruvinel/CCPlugins", "url": "https://github.com/brennercruvinel/CCPlugins", "desc": "Сборка самых ходовых slash-команд автора. 2.8k⭐, но архив с июня 2026 — развития не будет; переехал из `notlikeDev/CCPlugins`." },
     { "name": "ApurvBazari/claude-plugins", "url": "https://github.com/ApurvBazari/claude-plugins", "desc": "Уведомления о событиях через ntfy / Pushover / Telegram." },
     { "name": "0xdesign/design-plugin", "url": "https://github.com/0xdesign/design-plugin", "desc": "Дизайн-ориентированная обвязка для UI-задач." },
     { "name": "jeremylongshore/tons-of-skills-marketplace", "url": "https://github.com/jeremylongshore/tons-of-skills-marketplace", "desc": "Маркетплейс на 471 плагин, 3069 скиллов и 347 агентов со своим пакетным менеджером ccpi." },

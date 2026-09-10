@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Скилл подгружается автоматически, когда задача попадает под его описание — поэтому имеет смысл накопить несколько узкоспециализированных, а не один универсальный.
 
-**Записей:** 164.
+**Записей:** 158.
 
 📌 Курируемая подборка — в [главном README](../README.md#skills). Здесь — широкая выборка для поиска и SEO.
 
@@ -21,7 +21,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [add-skill](https://github.com/vercel-labs/add-skill)
 - [advertising-skills](https://github.com/realkimbarrett/advertising-skills)
 - [AI-research-SKILLs](https://github.com/Orchestra-Research/AI-research-SKILLs)
-- [AI-research-SKILLs](https://github.com/sanyuan0704/code-review-expert)
 - [andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills)
 - [android-reverse-engineering-skill](https://github.com/SimoneAvogadro/android-reverse-engineering-skill)
 - [antfu's skills](https://github.com/antfu/skills)
@@ -30,7 +29,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [app-onboarding-questionnaire](https://github.com/adamlyttleapps/claude-skill-app-onboarding-questionnaire)
 - [awesome-claude-skills (Composio)](https://github.com/ComposioHQ/awesome-claude-skills)
 - [awesome-dfir-skills](https://github.com/tsale/awesome-dfir-skills)
-- [blader](https://github.com/blader/claude-code-continuous-learning-skill)
 - [BlogBurst](https://github.com/shensi8312/blogburst-claude-skill)
 - [Browserbase Skills](https://github.com/browserbase/skills)
 - [buyer-eval](https://github.com/salespeak-ai/buyer-eval-skill)
@@ -82,7 +80,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [gsap-skills](https://github.com/greensock/gsap-skills)
 - [GUCCI-atlasv/skillssafe-mcp](https://github.com/GUCCI-atlasv/skillssafe-mcp)
 - [guizang-ppt-skill](https://github.com/op7418/guizang-ppt-skill)
-- [happy-claude-skills](https://github.com/iamzhihuix/happy-claude-skills)
 - [hone-skills](https://github.com/ckorhonen/hone-skills)
 - [How to Create Your First Claude Skill](https://skywork.ai/blog/ai-agent/how-to-create-claude-skill-step-by-step-guide)
 - [How to Use Skills in Claude Code](https://skywork.ai/blog/how-to-use-skills-in-claude-code-install-path-project-scoping-testing)
@@ -117,7 +114,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [nothing-design-skill](https://github.com/dominikmartn/nothing-design-skill)
 - [nuxt-skills](https://github.com/onmax/nuxt-skills)
 - [obsidian-skills](https://github.com/kepano/obsidian-skills)
-- [omni-skills-forge](https://github.com/theihtisham/omni-skills-forge)
 - [Overnight Worker](https://github.com/fullstackcrew-alpha/skill-overnight-worker)
 - [paul-graham-skills](https://github.com/WinterDDo/paul-graham-skills)
 - [Pika-Skills](https://github.com/Pika-Labs/Pika-Skills)
@@ -164,7 +160,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [tapestry](https://github.com/michalparkola/tapestry-skills-for-claude-code)
 - [taste-skill](https://github.com/Leonxlnx/taste-skill)
 - [terraform-skill](https://github.com/antonbabenko/terraform-skill)
-- [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill)
 - [threejs-skills](https://github.com/CloudAI-X/threejs-skills)
 - [Trail of Bits Security Skills](https://github.com/trailofbits/skills)
 - [ui-skills](https://github.com/ibelick/ui-skills)
@@ -172,7 +167,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills)
 - [VibeSec-Skill](https://github.com/BehiSecc/VibeSec-Skill)
 - [vue-skills](https://github.com/vuejs-ai/skills)
-- [vue-skills](https://github.com/hyf0/vue-skills)
 - [Weaponizing Claude Code Skills](https://medium.com/@yossifqassim/weaponizing-claude-code-skills-from-5-5-to-remote-shell-a14af2d109c9)
 - [web-quality-skills](https://github.com/addyosmani/web-quality-skills)
 - [webgpu-claude-skill](https://github.com/dgreenheck/webgpu-claude-skill)

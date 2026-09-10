@@ -5,9 +5,10 @@
     { "name": "examples/claude-md-templates/terraform.md", "url": "./examples/claude-md-templates/terraform.md", "desc": "Terraform 1.13+ с упором на безопасность state." }
   ],
   "collections": [
-    { "name": "multica-ai/andrej-karpathy-skills", "url": "https://github.com/multica-ai/andrej-karpathy-skills", "desc": "`CLAUDE.md`, собранный из практик Andrej Karpathy. 128k⭐." },
-    { "name": "garrytan/gstack", "url": "https://github.com/garrytan/gstack", "desc": "Сетап Garry Tan: 23 opinionated-инструмента. 95k⭐." },
-    { "name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "desc": "Полная оптимизация harness'а: скиллы, инстинкты, память, research-first разработка. 255k⭐." }
+    { "name": "multica-ai/andrej-karpathy-skills", "url": "https://github.com/multica-ai/andrej-karpathy-skills", "desc": "`CLAUDE.md`, собранный из практик Andrej Karpathy. 212k⭐." },
+    { "name": "garrytan/gstack", "url": "https://github.com/garrytan/gstack", "desc": "Сетап Garry Tan: 23 opinionated-инструмента. 132k⭐." },
+    { "name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "desc": "Полная оптимизация harness'а: скиллы, инстинкты, память, research-first разработка. 255k⭐." },
+    { "name": "davila7/claude-code-templates", "url": "https://github.com/davila7/claude-code-templates", "desc": "CLI для конфигурации и мониторинга Claude Code, с готовыми наборами настроек под стек. 31k⭐." }
   ],
   "stacks": [
     { "name": "vercel-labs/agent-skills", "url": "https://github.com/vercel-labs/agent-skills", "desc": "Best-practices Next.js, де-факто эталонный шаблон от Vercel." },

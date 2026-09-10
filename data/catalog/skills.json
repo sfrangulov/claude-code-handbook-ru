@@ -17,10 +17,6 @@
       "url": "https://github.com/Orchestra-Research/AI-research-SKILLs"
     },
     {
-      "name": "AI-research-SKILLs",
-      "url": "https://github.com/sanyuan0704/code-review-expert"
-    },
-    {
       "name": "andrej-karpathy-skills",
       "url": "https://github.com/forrestchang/andrej-karpathy-skills"
     },
@@ -51,10 +47,6 @@
     {
       "name": "awesome-dfir-skills",
       "url": "https://github.com/tsale/awesome-dfir-skills"
-    },
-    {
-      "name": "blader",
-      "url": "https://github.com/blader/claude-code-continuous-learning-skill"
     },
     {
       "name": "BlogBurst",
@@ -261,10 +253,6 @@
       "url": "https://github.com/op7418/guizang-ppt-skill"
     },
     {
-      "name": "happy-claude-skills",
-      "url": "https://github.com/iamzhihuix/happy-claude-skills"
-    },
-    {
       "name": "hone-skills",
       "url": "https://github.com/ckorhonen/hone-skills"
     },
@@ -399,10 +387,6 @@
     {
       "name": "obsidian-skills",
       "url": "https://github.com/kepano/obsidian-skills"
-    },
-    {
-      "name": "omni-skills-forge",
-      "url": "https://github.com/theihtisham/omni-skills-forge"
     },
     {
       "name": "Overnight Worker",
@@ -589,10 +573,6 @@
       "url": "https://github.com/antonbabenko/terraform-skill"
     },
     {
-      "name": "threat-hunting-with-sigma-rules",
-      "url": "https://github.com/jthack/threat-hunting-with-sigma-rules-skill"
-    },
-    {
       "name": "threejs-skills",
       "url": "https://github.com/CloudAI-X/threejs-skills"
     },
@@ -619,10 +599,6 @@
     {
       "name": "vue-skills",
       "url": "https://github.com/vuejs-ai/skills"
-    },
-    {
-      "name": "vue-skills",
-      "url": "https://github.com/hyf0/vue-skills"
     },
     {
       "name": "Weaponizing Claude Code Skills",

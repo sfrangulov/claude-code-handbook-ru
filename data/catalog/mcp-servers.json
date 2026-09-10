@@ -21,20 +21,12 @@
       "url": "https://github.com/8enSmith/mcp-open-library"
     },
     {
-      "name": "@asterpay/mcp-server",
-      "url": "https://github.com/timolein74/asterpay-mcp-server"
-    },
-    {
       "name": "@openpulsechain/mcp-server",
       "url": "https://github.com/openpulsechain/public/tree/main/mcp-server"
     },
     {
       "name": "a-25/ios-mcp-code-quality-server",
       "url": "https://github.com/a-25/ios-mcp-code-quality-server"
-    },
-    {
-      "name": "aarsiv-groups/shipi-mcp-server",
-      "url": "https://github.com/aarsiv-groups/shipi-mcp-server"
     },
     {
       "name": "aashari/mcp-server-atlassian-bitbucket",
@@ -1014,7 +1006,7 @@
     },
     {
       "name": "gotoolkits/wecombot",
-      "url": "https://github.com/gotoolkits/mcp-wecombot-server.git"
+      "url": "https://github.com/gotoolkits/mcp-wecombot-server"
     },
     {
       "name": "Govcraft/rust-docs-mcp-server",
@@ -1161,10 +1153,6 @@
       "url": "https://github.com/hmk/box-mcp-server"
     },
     {
-      "name": "HubLensOfficial/mcp-server",
-      "url": "https://github.com/HubLensOfficial/mcp-server"
-    },
-    {
       "name": "Hug0x0/mcp-reunion",
       "url": "https://github.com/Hug0x0/mcp-reunion"
     },
@@ -1289,10 +1277,6 @@
       "url": "https://github.com/inventer-dev/mcp-internet-speed-test"
     },
     {
-      "name": "IO-Aerospace-software-community/mcp-server",
-      "url": "https://github.com/IO-Aerospace-software-engineering/mcp-server"
-    },
-    {
       "name": "ip2location/mcp-ip2location-io",
       "url": "https://github.com/ip2location/mcp-ip2location-io"
     },
@@ -1389,10 +1373,6 @@
       "url": "https://github.com/jaspertvdm/mcp-server-openai-bridge"
     },
     {
-      "name": "jaspertvdm/mcp-server-rabel",
-      "url": "https://github.com/jaspertvdm/mcp-server-rabel"
-    },
-    {
       "name": "Java MCP SDK",
       "url": "https://github.com/modelcontextprotocol/java-sdk"
     },
@@ -1415,10 +1395,6 @@
     {
       "name": "jmrplens/gitlab-mcp-server",
       "url": "https://github.com/jmrplens/gitlab-mcp-server"
-    },
-    {
-      "name": "joepangallo/mcp-server-agentpay",
-      "url": "https://github.com/joepangallo/mcp-server-agentpay"
     },
     {
       "name": "jordandalton/doordash-mcp-server",
@@ -1610,7 +1586,7 @@
     },
     {
       "name": "kshern/mcp-tavily",
-      "url": "https://github.com/kshern/mcp-tavily.git"
+      "url": "https://github.com/kshern/mcp-tavily"
     },
     {
       "name": "ktanaka101/mcp-server-duckdb",
@@ -1973,10 +1949,6 @@
       "url": "https://github.com/montumodi/mongodb-atlas-mcp-server"
     },
     {
-      "name": "moro3k/mcp-altegio",
-      "url": "https://github.com/moro3k/mcp-altegio"
-    },
-    {
       "name": "mpeirone/zabbix-mcp-server",
       "url": "https://github.com/mpeirone/zabbix-mcp-server"
     },
@@ -2014,7 +1986,7 @@
     },
     {
       "name": "NakaokaRei/swift-mcp-gui",
-      "url": "https://github.com/NakaokaRei/swift-mcp-gui.git"
+      "url": "https://github.com/NakaokaRei/swift-mcp-gui"
     },
     {
       "name": "nanana-app/mcp-server-nano-banana",
@@ -2071,10 +2043,6 @@
     {
       "name": "npm",
       "url": "https://www.npmjs.com/package/clirank-mcp-server"
-    },
-    {
-      "name": "nullpath-labs/mcp-client",
-      "url": "https://github.com/nullpath-labs/mcp-client"
     },
     {
       "name": "NyxToolsDev/dicom-hl7-mcp-server",
@@ -2497,10 +2465,6 @@
       "url": "https://github.com/ricocf/mcp-wolframalpha"
     },
     {
-      "name": "RipperMercs/tensorfeed",
-      "url": "https://github.com/RipperMercs/tensorfeed/tree/main/mcp-server"
-    },
-    {
       "name": "rogertheunissenmerge-oss/mcp-server",
       "url": "https://github.com/rogertheunissenmerge-oss/mcp-server"
     },
@@ -2554,15 +2518,15 @@
     },
     {
       "name": "SaintDoresh/Crypto-Trader-MCP-ClaudeDesktop",
-      "url": "https://github.com/SaintDoresh/Crypto-Trader-MCP-ClaudeDesktop.git"
+      "url": "https://github.com/SaintDoresh/Crypto-Trader-MCP-ClaudeDesktop"
     },
     {
       "name": "SaintDoresh/Weather-MCP-ClaudeDesktop",
-      "url": "https://github.com/SaintDoresh/Weather-MCP-ClaudeDesktop.git"
+      "url": "https://github.com/SaintDoresh/Weather-MCP-ClaudeDesktop"
     },
     {
       "name": "SaintDoresh/YFinance-Trader-MCP-ClaudeDesktop",
-      "url": "https://github.com/SaintDoresh/YFinance-Trader-MCP-ClaudeDesktop.git"
+      "url": "https://github.com/SaintDoresh/YFinance-Trader-MCP-ClaudeDesktop"
     },
     {
       "name": "sammcj/mcp-package-version",
@@ -2785,10 +2749,6 @@
       "url": "https://github.com/stefan-xyz/mcp-server-runescape"
     },
     {
-      "name": "StripFeed/mcp-server",
-      "url": "https://github.com/StripFeed/mcp-server"
-    },
-    {
       "name": "strowk/mcp-k8s-go",
       "url": "https://github.com/strowk/mcp-k8s-go"
     },
@@ -2929,10 +2889,6 @@
       "url": "https://github.com/tjclaude88/mcp-bling"
     },
     {
-      "name": "tom28881/mcp-jira-server",
-      "url": "https://github.com/tom28881/mcp-jira-server"
-    },
-    {
       "name": "Tomatio13/mcp-server-tavily",
       "url": "https://github.com/Tomatio13/mcp-server-tavily"
     },
@@ -2970,7 +2926,7 @@
     },
     {
       "name": "traceloop/opentelemetry-mcp-server",
-      "url": "https://github.com/traceloop/opentelemetry-mcp-server.git"
+      "url": "https://github.com/traceloop/opentelemetry-mcp-server"
     },
     {
       "name": "trackerfitness729-jpg/sitelauncher-mcp-server",
@@ -3041,10 +2997,6 @@
       "url": "https://github.com/urlbox/urlbox-mcp-server"
     },
     {
-      "name": "US Business Data MCP",
-      "url": "https://github.com/avabuildsdata/mcp-us-business-data"
-    },
-    {
       "name": "User0856/snaprender-mcp",
       "url": "https://github.com/User0856/snaprender-integrations/tree/main/mcp-server"
     },
@@ -3109,16 +3061,8 @@
       "url": "https://github.com/vivekVells/mcp-pandoc"
     },
     {
-      "name": "vkhanhqui/figma-mcp-go",
-      "url": "https://github.com/vkhanhqui/figma-mcp-go"
-    },
-    {
       "name": "VmLia/books-mcp-server",
       "url": "https://github.com/VmLia/books-mcp-server"
-    },
-    {
-      "name": "voidly-mcp-server",
-      "url": "https://github.com/voidly-ai/mcp-server"
     },
     {
       "name": "W3Ship/w3ledger-mcp-server",

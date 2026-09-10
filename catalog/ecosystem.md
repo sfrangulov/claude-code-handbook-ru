@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Качество смешанное — это широкая выборка, не отбор. Используй для поиска нишевых решений по теме.
 
-**Записей:** 240.
+**Записей:** 238.
 
 📌 Курируемая подборка — в [главном README](../README.md). Здесь — широкая выборка для поиска и SEO.
 
@@ -173,7 +173,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [claude-statusline](https://github.com/luongnv89/claude-statusline)
 - [claude-subconscious](https://github.com/letta-ai/claude-subconscious)
 - [claude-supermemory](https://github.com/supermemoryai/claude-supermemory)
-- [claude-swarm](https://github.com/parruda/claude-swarm)
 - [claude-tabletop](https://github.com/cjcsecurity/claude-tabletop)
 - [claude-task-viewer](https://github.com/L1AD/claude-task-viewer)
 - [claude-time](https://github.com/nexusbuildsai/claude-time)
@@ -243,7 +242,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [spec-based-claude-code](https://github.com/papaoloba/spec-based-claude-code)
 - [spyrae/claude-concilium](https://github.com/spyrae/claude-concilium)
 - [SuperClaude](https://github.com/SuperClaude-Org/SuperClaude_Framework)
-- [SuperClaude](https://github.com/NomenAK/SuperClaude)
 - [SuperClaude](https://github.com/gwendall/superclaude)
 - [thanhdat77/herdr-navigator](https://github.com/thanhdat77/herdr-navigator)
 - [The Claude Protocol](https://github.com/AvivK5498/The-Claude-Protocol)

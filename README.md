@@ -10,7 +10,7 @@ CI gate: node scripts/build-readme.mjs --check
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
-**Полный сырой каталог (1438 записей по типам)** — в [catalog/](./catalog/README.md). Здесь — курируемая подборка: только то, что я реально применяю в клиентских проектах либо что массово проверено сообществом по install-count.
+**Полный сырой каталог (1413 записей по типам)** — в [catalog/](./catalog/README.md). Здесь — курируемая подборка: только то, что я реально применяю в клиентских проектах либо что массово проверено сообществом по install-count.
 
 > 📄 **[Шпаргалка на 1 страницу A4 →](./cheatsheet/)** Все горячие клавиши, слэш-команды, MCP, память, workflows, skills/agents и CLI-флаги на одном листе. Скачать [готовый PDF](./cheatsheet/cheatsheet.pdf) или открыть [index.html](./cheatsheet/index.html) → `⌘P`.
 
@@ -111,7 +111,7 @@ Anthropic свёл практику команд в петлю **threat model �
 
 Skills — переиспользуемые наборы инструкций, которые Claude подгружает по триггеру. Один скилл = одна задача (TDD-цикл, code-review, performance-аудит). См. [официальный гайд](https://code.claude.com/docs/en/skills).
 
-> 📂 Полный каталог: **[164 записи →](./catalog/skills.md)**
+> 📂 Полный каталог: **[158 записей →](./catalog/skills.md)**
 
 ### Топ-15 скиллов (skills.sh)
 
@@ -160,6 +160,8 @@ Skills — переиспользуемые наборы инструкций, �
 - [obra/superpowers-lab](https://github.com/obra/superpowers-lab) — Экспериментальные скиллы из той же серии.
 - [mattpocock/skills](https://github.com/mattpocock/skills) — 37 маленьких скиллов от Matt Pocock, намеренно построенных против того, чтобы забирать процесс себе: ставишь и вызываешь по одному. Пять из них — в топ-15 выше. В официальном маркетплейсе: `/plugin install mattpocock-skills`, либо `npx skills@latest add mattpocock/skills`, если хочешь править под себя. [Детальный разбор](./docs/skill-families-ru.md#mattpocockskills--маленькие-детали-которыми-владеешь-ты).
 - [affaan-m/ECC](https://github.com/affaan-m/ECC) — 286 скиллов и 68 агентов, охватывающих редкие домены, плюс инстинкты (паттерны, выученные из твоих сессий) и память между харнессами. Ставить выборочно: правила всегда в контексте. [Детальный разбор](./docs/skill-families-ru.md#affaan-mecc--операционная-система-харнесса).
+- [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) — Production-grade инженерные скиллы от Addy Osmani (Google Chrome). 93k⭐.
+- [google/skills](https://github.com/google/skills) — Официальные скиллы Google под свои продукты и технологии. 20k⭐.
 - [trailofbits/skills](https://github.com/trailofbits/skills) — Security-скиллы от Trail of Bits: статический анализ через CodeQL/Semgrep, аудит кода, поиск уязвимостей.
 - [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) — Vercel Engineering: производительность React, web-guidelines, React Native, деплой на Vercel.
 - [supabase/agent-skills](https://github.com/supabase/agent-skills) — Скиллы для Supabase и PostgreSQL.
@@ -169,11 +171,14 @@ Skills — переиспользуемые наборы инструкций, �
 - [expo/skills](https://github.com/expo/skills) — Expo. 25K+ установок.
 - [shadcn/ui skills](https://ui.shadcn.com/docs/skills) — Контекст по компонентам shadcn и принудительное применение паттернов.
 - [sfrangulov/skills](https://github.com/sfrangulov/skills) — Моя коллекция: consulting-фреймворк на 8 шагов (EN и RU), выбор следующего OSS-продукта, demo-video-pipeline (Playwright + Remotion + ElevenLabs), research-pipeline с верификацией источников.
-- [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) — 12k⭐, актуальный куратор скиллов.
+- [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) — 15k⭐, актуальный куратор скиллов.
+- [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) — Самый крупный куратор скиллов: 75k⭐.
 - [karanb192/awesome-claude-skills](https://github.com/karanb192/awesome-claude-skills) — 50+ проверенных скиллов с разбивкой по типам.
 
 ### Узкоспециализированные
 
+- [greensock/gsap-skills](https://github.com/greensock/gsap-skills) — Официальные скиллы GSAP: как правильно анимировать, паттерны и плагины — от самих GreenSock. 15k⭐.
+- [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) — Работа с Obsidian: CLI и открытые форматы — Markdown, Bases, JSON Canvas. От CEO Obsidian. 48k⭐.
 - [conorluddy/ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill) — Сборка iOS-приложений, навигация по симулятору, тесты.
 - [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) — Браузерная автоматизация через Playwright.
 - [chrisvoncsefalvay/claude-d3js-skill](https://github.com/chrisvoncsefalvay/claude-d3js-skill) — Визуализации в d3.js.
@@ -195,17 +200,17 @@ Skills — переиспользуемые наборы инструкций, �
 
 Sub-agent — отдельный экземпляр Claude со своим контекстом, который выполняет подзадачу и возвращает один итоговый ответ. Полезно для read-only исследования и параллельных задач. См. [официальную доку](https://code.claude.com/docs/en/sub-agents).
 
-> 📂 Полный каталог: **[160 записей →](./catalog/subagents.md)**
+> 📂 Полный каталог: **[157 записей →](./catalog/subagents.md)**
 
 ### Production-коллекции
 
 | Репозиторий | Что внутри |
 |---|---|
-| [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) | **144 субагента** по 10 категориям, 19k⭐. Установка: `claude plugin marketplace add VoltAgent/awesome-claude-code-subagents`. |
+| [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) | **144 субагента** по 10 категориям, 25k⭐. Установка: `claude plugin marketplace add VoltAgent/awesome-claude-code-subagents`. |
 | [obra/superpowers](https://github.com/obra/superpowers) | 14 скиллов и субагентов: TDD, отладка, планирование, брейншторм, ревью. Самая популярная коллекция. |
-| [0xfurai/claude-code-subagents](https://github.com/0xfurai/claude-code-subagents) | 100+ субагентов в едином формате промпта, мультиязычные, MIT. |
+| [0xfurai/claude-code-subagents](https://github.com/0xfurai/claude-code-subagents) | 100+ субагентов в едином формате промпта, мультиязычные, MIT. Без обновлений с октября 2025. |
 | [wshobson/agents](https://github.com/wshobson/agents) | 48 production-агентов с паттернами оркестрации и продвинутыми workflow. |
-| [vijaythecoder/awesome-claude-agents](https://github.com/vijaythecoder/awesome-claude-agents) | 26 агентов формата AI-команды: Tech Lead, Analyst, доменные специалисты. |
+| [vijaythecoder/awesome-claude-agents](https://github.com/vijaythecoder/awesome-claude-agents) | 26 агентов формата AI-команды: Tech Lead, Analyst, доменные специалисты. 4.4k⭐, но без обновлений с октября 2025. |
 | [davepoon/buildwithclaude](https://github.com/davepoon/buildwithclaude) | Хаб со скиллами, агентами, командами, хуками и плагинами разом; бывший claude-code-subagents-collection. 3.4k⭐. |
 | [rohitg00/awesome-claude-code-toolkit](https://github.com/rohitg00/awesome-claude-code-toolkit) | 135 агентов, 35 скиллов и 42 команды в одном тулките. |
 | [peterkrueck/Claude-Code-Development-Kit](https://github.com/peterkrueck/Claude-Code-Development-Kit) | Мета-репозиторий: документация, multi-agent шаблоны, hooks, MCP-серверы. |
@@ -347,9 +352,10 @@ tmux уже стоит у всех, и половина ниши построе�
 
 ### Spec → Plan → Ship методологии
 
-- [github/spec-kit](https://github.com/github/spec-kit) — Spec-Driven Development от GitHub. 106k⭐. /speckit.specify → clarify → plan → tasks → analyze → implement.
+- [SuperClaude-Org/SuperClaude_Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) — Конфигурационный фреймворк: специализированные команды, когнитивные «персоны» и методологии поверх Claude Code. 24k⭐.
+- [github/spec-kit](https://github.com/github/spec-kit) — Spec-Driven Development от GitHub. 134k⭐. /speckit.specify → clarify → plan → tasks → analyze → implement.
 - [affaan-m/ECC](https://github.com/affaan-m/ECC) — Крупнейшая коллекция: 286 скиллов, 68 агентов, инстинкты и память между харнессами. 255k⭐. [Детальный разбор](./docs/skill-families-ru.md#affaan-mecc--операционная-система-харнесса).
-- [garrytan/gstack](https://github.com/garrytan/gstack) — Сетап Garry Tan (Y Combinator): 23 инструмента в ролях CEO, Designer, Eng Manager, Release Manager, QA. 102k⭐.
+- [garrytan/gstack](https://github.com/garrytan/gstack) — Сетап Garry Tan (Y Combinator): 23 инструмента в ролях CEO, Designer, Eng Manager, Release Manager, QA. 132k⭐.
 - [open-gsd/gsd-core](https://github.com/open-gsd/gsd-core) — Meta-prompting и context-engineering: пять фаз discuss → plan → execute → verify → ship, каждая в свежем контексте субагента. Преемник get-shit-done, тот заархивирован.
 - [Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) — Spec-driven development под AI coding assistants. /opsx:propose → apply → archive.
 - [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) — Breakthrough Method for Agile AI-Driven Development. Product brief → PRD → architecture → epics → sprint planning → dev → review.
@@ -366,7 +372,7 @@ tmux уже стоит у всех, и половина ниши построе�
 - [musistudio/claude-code-router](https://github.com/musistudio/claude-code-router) — Router: подменяет API-endpoint Claude на OpenRouter, DeepSeek, Ollama, Gemini, Kimi, Qwen, Groq. Per-task model selection.
 - [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) — Обёртка для Gemini CLI, Codex, Claude Code, Antigravity как OpenAI/Gemini/Claude/Codex-совместимого API.
 - [openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc) — Официальный OpenAI-plugin: /codex:review, /codex:adversarial-review, /codex:rescue внутри Claude Code. Codex/GPT-5 как QA-партнёр.
-- [BeehiveInnovations/pal-mcp-server](https://github.com/BeehiveInnovations/pal-mcp-server) — Multi-model MCP-сервер (бывш. zen-mcp): Gemini, OpenAI, Azure, Grok, Ollama, OpenRouter как Claude tools. 50+ моделей.
+- [BeehiveInnovations/pal-mcp-server](https://github.com/BeehiveInnovations/pal-mcp-server) — Не обновлялся с декабря 2025. Multi-model MCP-сервер (бывш. zen-mcp): Gemini, OpenAI, Azure, Grok, Ollama, OpenRouter как Claude tools. 50+ моделей.
 
 ---
 
@@ -405,13 +411,13 @@ Evals — регрессионные тесты для агентного workfl
 ### Главные маркетплейсы
 
 - [obra/superpowers-marketplace](https://github.com/obra/superpowers-marketplace) — Ещё девять плагинов от Jesse Vincent сверх ядра superpowers: Chrome DevTools, tmux-автоматизация, драйвер чужих сессий Claude, семантический поиск по прошлым разговорам. Установка: `claude plugin marketplace add obra/superpowers-marketplace`.
-- [ccplugins/awesome-claude-code-plugins](https://github.com/ccplugins/awesome-claude-code-plugins) — 50+ плагинов по 13 категориям (качество кода, git, devops, дизайн, бизнес). 782⭐. Установка: `claude plugin marketplace add ccplugins/awesome-claude-code-plugins`.
+- [ccplugins/awesome-claude-code-plugins](https://github.com/ccplugins/awesome-claude-code-plugins) — 935⭐, 50+ плагинов по 13 категориям (качество кода, git, devops, дизайн, бизнес). 782⭐. Установка: `claude plugin marketplace add ccplugins/awesome-claude-code-plugins`.
 - [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) — 144 субагента, оформленные как плагин-маркетплейс.
 - [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) — Официальные плагины Anthropic.
 
 ### Полезные одиночные плагины
 
-- [notlikeDev/CCPlugins](https://github.com/notlikeDev/CCPlugins) — Сборка самых ходовых slash-команд автора.
+- [brennercruvinel/CCPlugins](https://github.com/brennercruvinel/CCPlugins) — Сборка самых ходовых slash-команд автора. 2.8k⭐, но архив с июня 2026 — развития не будет; переехал из `notlikeDev/CCPlugins`.
 - [ApurvBazari/claude-plugins](https://github.com/ApurvBazari/claude-plugins) — Уведомления о событиях через ntfy / Pushover / Telegram.
 - [0xdesign/design-plugin](https://github.com/0xdesign/design-plugin) — Дизайн-ориентированная обвязка для UI-задач.
 - [jeremylongshore/tons-of-skills-marketplace](https://github.com/jeremylongshore/tons-of-skills-marketplace) — Маркетплейс на 471 плагин, 3069 скиллов и 347 агентов со своим пакетным менеджером ccpi.
@@ -444,10 +450,10 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 
 Hooks дают поток событий сессии; эти проекты собирают его в живую картину: что делает агент, сколько субагентов работает параллельно, куда уходят токены. Годится и на разбор инцидента постфактум, и на наблюдение за автономным прогоном вживую.
 
-- [disler/claude-code-hooks-multi-agent-observability](https://github.com/disler/claude-code-hooks-multi-agent-observability) — Real-time дашборд hook-событий сразу по нескольким параллельным агентам. 1.5k⭐.
+- [disler/claude-code-hooks-multi-agent-observability](https://github.com/disler/claude-code-hooks-multi-agent-observability) — Real-time дашборд hook-событий сразу по нескольким параллельным агентам. 1.5k⭐, последний пуш февраль 2026.
 - [hoangsonww/Claude-Code-Agent-Monitor](https://github.com/hoangsonww/Claude-Code-Agent-Monitor) — Self-hosted дашборд активности агента через hooks: сессии, tool-usage, оркестрация субагентов, kanban-статусы.
 - [simple10/agents-observe](https://github.com/simple10/agents-observe) — Real-time observability сессий Claude Code и мульти-агентов, с фильтрацией и replay.
-- [ColeMurray/claude-code-otel](https://github.com/ColeMurray/claude-code-otel) — Dockerized-стек OpenTelemetry → Grafana для мониторинга расхода, производительности и стоимости.
+- [ColeMurray/claude-code-otel](https://github.com/ColeMurray/claude-code-otel) — Заброшен с июня 2025, но как референсная архитектура всё ещё читаем: OpenTelemetry → Grafana для мониторинга расхода, производительности и стоимости.
 
 ### Сценарии применения
 
@@ -465,7 +471,7 @@ Hooks дают поток событий сессии; эти проекты с�
 
 [Model Context Protocol](https://modelcontextprotocol.io/) — стандарт подключения внешних инструментов к LLM. Все MCP-серверы работают и в Claude Code, и в Claude Desktop, и в Cursor.
 
-> 📂 Полный каталог: **[828 записей →](./catalog/mcp-servers.md)** — взято из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
+> 📂 Полный каталог: **[814 записей →](./catalog/mcp-servers.md)** — взято из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
 
 > **Правило практика:** пять хорошо подобранных MCP-серверов лучше двадцати — но не по той причине, которую обычно называют.
 >
@@ -490,6 +496,7 @@ Hooks дают поток событий сессии; эти проекты с�
 - [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) — Официальный набор от Anthropic: `filesystem`, `git`, `postgres`, `slack`, `memory`, `sequentialthinking`.
 - [github/github-mcp-server](https://github.com/github/github-mcp-server) — Официальный GitHub MCP. Превращает Claude из «генератора кода» в участника процесса issues/PR.
 - [MCP registry](https://github.com/modelcontextprotocol/registry) — Официальный каталог серверов с поиском.
+- [modelcontextprotocol/python-sdk](https://github.com/modelcontextprotocol/python-sdk) — Официальный Python SDK для написания MCP-серверов и клиентов. 24k⭐.
 - [modelcontextprotocol.io](https://modelcontextprotocol.io/) — Документация протокола.
 
 ### Кураторы
@@ -531,9 +538,10 @@ Hooks дают поток событий сессии; эти проекты с�
 
 ### Известные сборники
 
-- [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) — `CLAUDE.md`, собранный из практик Andrej Karpathy. 128k⭐.
-- [garrytan/gstack](https://github.com/garrytan/gstack) — Сетап Garry Tan: 23 opinionated-инструмента. 95k⭐.
+- [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) — `CLAUDE.md`, собранный из практик Andrej Karpathy. 212k⭐.
+- [garrytan/gstack](https://github.com/garrytan/gstack) — Сетап Garry Tan: 23 opinionated-инструмента. 132k⭐.
 - [affaan-m/ECC](https://github.com/affaan-m/ECC) — Полная оптимизация harness'а: скиллы, инстинкты, память, research-first разработка. 255k⭐.
+- [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) — CLI для конфигурации и мониторинга Claude Code, с готовыми наборами настроек под стек. 31k⭐.
 
 ### Под конкретный стек
 
@@ -560,7 +568,7 @@ Hooks дают поток событий сессии; эти проекты с�
 Статуслайн — строка под промптом Claude Code, куда выводятся лимиты, окно контекста, модель, git и стоимость сессии. Пара строк конфига убирает постоянные `/context` и `/cost`. См. [официальную доку](https://code.claude.com/docs/en/statusline).
 
 - [sirmalloc/ccstatusline](https://github.com/sirmalloc/ccstatusline) — Powerline-статуслайн с темами и настройкой каждого сегмента: лимиты, окно контекста, модель, git, стоимость. Ставится как npm-пакет. 12.6k⭐.
-- [leeguooooo/claude-code-usage-bar](https://github.com/leeguooooo/claude-code-usage-bar) — Статуслайн с лимитами 5h/7d, обратным отсчётом до сброса, моделью, окном контекста и возрастом prompt-cache. 3 стиля × 9 тем, daemon-режим. 302⭐.
+- [leeguooooo/claude-code-usage-bar](https://github.com/leeguooooo/claude-code-usage-bar) — Статуслайн с лимитами 5h/7d, обратным отсчётом до сброса, моделью, окном контекста и возрастом prompt-cache. 3 стиля × 9 тем, daemon-режим. 371⭐.
 - [briansmith80/claude-code-status-bar](https://github.com/briansmith80/claude-code-status-bar) — Настраиваемый статуслайн на чистом bash без зависимостей: лимиты с маркерами pacing, окно контекста, git, стоимость сессии, 8 тем.
 - [educlopez/ccvitals](https://github.com/educlopez/ccvitals) — Минималистичный статуслайн на чистом bash — не блокирует ввод: квота, окно контекста, git-статус.
 - [kumamaki/Claude-Code-Personalities](https://github.com/kumamaki/Claude-Code-Personalities) — Kaomoji-лица в статуслайне реагируют в реальном времени на то, чем занят агент, вплоть до эскалации «раздражения».
@@ -732,6 +740,9 @@ Hooks дают поток событий сессии; эти проекты с�
 - [Anthropic Status](https://status.anthropic.com/) — Статус сервисов.
 - [Claude release notes](https://code.claude.com/docs/en/changelog) — Официальный changelog.
 - [Skills.sh](https://www.skills.sh/) — Маркетплейс скиллов с количеством установок.
+- [vercel-labs/skills](https://github.com/vercel-labs/skills) — `npx skills` — установщик скиллов в любой харнесс, файлами прямо в репозиторий. Им ставится половина коллекций из раздела Skills. 31k⭐.
+- [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) — Персистентный контекст между сессиями: записывает работу агента, сжимает и подмешивает релевантное в следующие. Claude Code, Codex, Gemini, Copilot, OpenCode. 94k⭐.
+- [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) — Главный awesome-list экосистемы: скиллы, агенты, статуслайны, тулинг, плагины. 54k⭐.
 - [sfrangulov/skill-graveyard](https://github.com/sfrangulov/skill-graveyard) — Аудит установленных скиллов по локальным логам сессий: active / dead / missing / hallucinated. `npx skill-graveyard`, без сети и телеметрии; в монорепо — mcp-graveyard и memory-graveyard. Мой проект.
 - [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — Эталонный EN-сборник best practices с ежедневными апдейтами под версии Claude Code. Покрывает все hot-features, Boris Cherny tips, cross-model паттерны.
 

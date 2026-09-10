@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Субагент — отдельный экземпляр Claude со своим контекстом. Удобен для read-only исследования кодовой базы (не засоряет основной контекст) и для параллельных независимых задач.
 
-**Записей:** 160.
+**Записей:** 157.
 
 📌 Курируемая подборка — в [главном README](../README.md#sub-agents). Здесь — широкая выборка для поиска и SEO.
 
@@ -31,7 +31,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [agent-hanju/char-index-mcp](https://github.com/agent-hanju/char-index-mcp)
 - [agent-of-empires](https://github.com/njbrake/agent-of-empires)
 - [agent-rules](https://github.com/steipete/agent-rules)
-- [agent-shadow-brain](https://github.com/theihtisham/agent-shadow-brain)
 - [agent-skills](https://github.com/vercel-labs/agent-skills)
 - [agent-skills](https://github.com/addyosmani/agent-skills)
 - [agent-skills](https://github.com/WordPress/agent-skills)
@@ -103,7 +102,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [dodo-agent-plugin](https://github.com/dodopayments/dodo-agent-plugin)
 - [doggychip/agentforge](https://github.com/doggychip/agentforge)
 - [drhalto/agentmako](https://github.com/drhalto/agentmako)
-- [ebbfijsf/agent-reader](https://github.com/ebbfijsf/agent-reader)
 - [edge-claw/mood-booster-agent](https://github.com/edge-claw/mood-booster-agent)
 - [edobusy/agenthold](https://github.com/edobusy/agenthold)
 - [ejcho623/agent-breadcrumbs](https://github.com/ejcho623/agent-breadcrumbs)
@@ -142,7 +140,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [nexus-agents](https://github.com/williamzujkowski/nexus-agents)
 - [nirecom/agents](https://github.com/nirecom/agents)
 - [Nolas-Shadow/agent1st-ads-mcp](https://github.com/Nolas-Shadow/agent1st-ads-mcp)
-- [ntriq-gh/ntriq-agentshop](https://github.com/ntriq-gh/ntriq-agentshop)
 - [open an issue](https://github.com/VoltAgent/awesome-claude-code-subagents/issues)
 - [OpenAgents](https://github.com/OpenAgentsInc/openagents)
 - [operative_sh/web-eval-agent](https://github.com/Operative-Sh/web-eval-agent)
@@ -167,7 +164,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [thinkchainai/agentinterviews_mcp](https://github.com/thinkchainai/agentinterviews_mcp)
 - [Tinybird Multi-Agent Analytics](https://www.tinybird.co/blog-posts/multi-agent-claude-code-tinybird-code)
 - [tinyfish-io/agentql-mcp](https://github.com/tinyfish-io/agentql-mcp)
-- [Trade-Agent/trade-agent-mcp](https://github.com/Trade-Agent/trade-agent-mcp.git)
+- [Trade-Agent/trade-agent-mcp](https://github.com/Trade-Agent/trade-agent-mcp)
 - [vijaythecoder/awesome-claude-agents](https://github.com/vijaythecoder/awesome-claude-agents)
 - [vinaybhosle/agentstamp](https://github.com/vinaybhosle/agentstamp)
 - [Vincentwei1021/agent-toolbox](https://github.com/Vincentwei1021/agent-toolbox)

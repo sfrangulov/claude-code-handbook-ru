@@ -3,6 +3,7 @@
     { "name": "modelcontextprotocol/servers", "url": "https://github.com/modelcontextprotocol/servers", "desc": "Официальный набор от Anthropic: `filesystem`, `git`, `postgres`, `slack`, `memory`, `sequentialthinking`." },
     { "name": "github/github-mcp-server", "url": "https://github.com/github/github-mcp-server", "desc": "Официальный GitHub MCP. Превращает Claude из «генератора кода» в участника процесса issues/PR." },
     { "name": "MCP registry", "url": "https://github.com/modelcontextprotocol/registry", "desc": "Официальный каталог серверов с поиском." },
+    { "name": "modelcontextprotocol/python-sdk", "url": "https://github.com/modelcontextprotocol/python-sdk", "desc": "Официальный Python SDK для написания MCP-серверов и клиентов. 24k⭐." },
     { "name": "modelcontextprotocol.io", "url": "https://modelcontextprotocol.io/", "desc": "Документация протокола." }
   ],
   "curators": [

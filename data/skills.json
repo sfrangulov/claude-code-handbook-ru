@@ -16,6 +16,8 @@
     { "name": "obra/superpowers-lab", "url": "https://github.com/obra/superpowers-lab", "desc": "Экспериментальные скиллы из той же серии." },
     { "name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "desc": "37 маленьких скиллов от Matt Pocock, намеренно построенных против того, чтобы забирать процесс себе: ставишь и вызываешь по одному. Пять из них — в топ-15 выше. В официальном маркетплейсе: `/plugin install mattpocock-skills`, либо `npx skills@latest add mattpocock/skills`, если хочешь править под себя. [Детальный разбор](./docs/skill-families-ru.md#mattpocockskills--маленькие-детали-которыми-владеешь-ты)." },
     { "name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "desc": "286 скиллов и 68 агентов, охватывающих редкие домены, плюс инстинкты (паттерны, выученные из твоих сессий) и память между харнессами. Ставить выборочно: правила всегда в контексте. [Детальный разбор](./docs/skill-families-ru.md#affaan-mecc--операционная-система-харнесса)." },
+    { "name": "addyosmani/agent-skills", "url": "https://github.com/addyosmani/agent-skills", "desc": "Production-grade инженерные скиллы от Addy Osmani (Google Chrome). 93k⭐." },
+    { "name": "google/skills", "url": "https://github.com/google/skills", "desc": "Официальные скиллы Google под свои продукты и технологии. 20k⭐." },
     { "name": "trailofbits/skills", "url": "https://github.com/trailofbits/skills", "desc": "Security-скиллы от Trail of Bits: статический анализ через CodeQL/Semgrep, аудит кода, поиск уязвимостей." },
     { "name": "vercel-labs/agent-skills", "url": "https://github.com/vercel-labs/agent-skills", "desc": "Vercel Engineering: производительность React, web-guidelines, React Native, деплой на Vercel." },
     { "name": "supabase/agent-skills", "url": "https://github.com/supabase/agent-skills", "desc": "Скиллы для Supabase и PostgreSQL." },
@@ -25,10 +27,13 @@
     { "name": "expo/skills", "url": "https://github.com/expo/skills", "desc": "Expo. 25K+ установок." },
     { "name": "shadcn/ui skills", "url": "https://ui.shadcn.com/docs/skills", "desc": "Контекст по компонентам shadcn и принудительное применение паттернов." },
     { "name": "sfrangulov/skills", "url": "https://github.com/sfrangulov/skills", "desc": "Моя коллекция: consulting-фреймворк на 8 шагов (EN и RU), выбор следующего OSS-продукта, demo-video-pipeline (Playwright + Remotion + ElevenLabs), research-pipeline с верификацией источников." },
-    { "name": "travisvn/awesome-claude-skills", "url": "https://github.com/travisvn/awesome-claude-skills", "desc": "12k⭐, актуальный куратор скиллов." },
+    { "name": "travisvn/awesome-claude-skills", "url": "https://github.com/travisvn/awesome-claude-skills", "desc": "15k⭐, актуальный куратор скиллов." },
+    { "name": "ComposioHQ/awesome-claude-skills", "url": "https://github.com/ComposioHQ/awesome-claude-skills", "desc": "Самый крупный куратор скиллов: 75k⭐." },
     { "name": "karanb192/awesome-claude-skills", "url": "https://github.com/karanb192/awesome-claude-skills", "desc": "50+ проверенных скиллов с разбивкой по типам." }
   ],
   "specialized": [
+    { "name": "greensock/gsap-skills", "url": "https://github.com/greensock/gsap-skills", "desc": "Официальные скиллы GSAP: как правильно анимировать, паттерны и плагины — от самих GreenSock. 15k⭐." },
+    { "name": "kepano/obsidian-skills", "url": "https://github.com/kepano/obsidian-skills", "desc": "Работа с Obsidian: CLI и открытые форматы — Markdown, Bases, JSON Canvas. От CEO Obsidian. 48k⭐." },
     { "name": "conorluddy/ios-simulator-skill", "url": "https://github.com/conorluddy/ios-simulator-skill", "desc": "Сборка iOS-приложений, навигация по симулятору, тесты." },
     { "name": "lackeyjb/playwright-skill", "url": "https://github.com/lackeyjb/playwright-skill", "desc": "Браузерная автоматизация через Playwright." },
     { "name": "chrisvoncsefalvay/claude-d3js-skill", "url": "https://github.com/chrisvoncsefalvay/claude-d3js-skill", "desc": "Визуализации в d3.js." },

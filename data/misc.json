@@ -46,13 +46,17 @@
     { "name": "Anthropic Status", "url": "https://status.anthropic.com/", "desc": "Статус сервисов." },
     { "name": "Claude release notes", "url": "https://code.claude.com/docs/en/changelog", "desc": "Официальный changelog." },
     { "name": "Skills.sh", "url": "https://www.skills.sh/", "desc": "Маркетплейс скиллов с количеством установок." },
+    { "name": "vercel-labs/skills", "url": "https://github.com/vercel-labs/skills", "desc": "`npx skills` — установщик скиллов в любой харнесс, файлами прямо в репозиторий. Им ставится половина коллекций из раздела Skills. 31k⭐." },
+    { "name": "thedotmack/claude-mem", "url": "https://github.com/thedotmack/claude-mem", "desc": "Персистентный контекст между сессиями: записывает работу агента, сжимает и подмешивает релевантное в следующие. Claude Code, Codex, Gemini, Copilot, OpenCode. 94k⭐." },
+    { "name": "hesreallyhim/awesome-claude-code", "url": "https://github.com/hesreallyhim/awesome-claude-code", "desc": "Главный awesome-list экосистемы: скиллы, агенты, статуслайны, тулинг, плагины. 54k⭐." },
     { "name": "sfrangulov/skill-graveyard", "url": "https://github.com/sfrangulov/skill-graveyard", "desc": "Аудит установленных скиллов по локальным логам сессий: active / dead / missing / hallucinated. `npx skill-graveyard`, без сети и телеметрии; в монорепо — mcp-graveyard и memory-graveyard. Мой проект." },
     { "name": "shanraisshan/claude-code-best-practice", "url": "https://github.com/shanraisshan/claude-code-best-practice", "desc": "Эталонный EN-сборник best practices с ежедневными апдейтами под версии Claude Code. Покрывает все hot-features, Boris Cherny tips, cross-model паттерны." }
   ],
   "workflowMethodologies": [
-    { "name": "github/spec-kit", "url": "https://github.com/github/spec-kit", "desc": "Spec-Driven Development от GitHub. 106k⭐. /speckit.specify → clarify → plan → tasks → analyze → implement." },
+    { "name": "SuperClaude-Org/SuperClaude_Framework", "url": "https://github.com/SuperClaude-Org/SuperClaude_Framework", "desc": "Конфигурационный фреймворк: специализированные команды, когнитивные «персоны» и методологии поверх Claude Code. 24k⭐." },
+    { "name": "github/spec-kit", "url": "https://github.com/github/spec-kit", "desc": "Spec-Driven Development от GitHub. 134k⭐. /speckit.specify → clarify → plan → tasks → analyze → implement." },
     { "name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "desc": "Крупнейшая коллекция: 286 скиллов, 68 агентов, инстинкты и память между харнессами. 255k⭐. [Детальный разбор](./docs/skill-families-ru.md#affaan-mecc--операционная-система-харнесса)." },
-    { "name": "garrytan/gstack", "url": "https://github.com/garrytan/gstack", "desc": "Сетап Garry Tan (Y Combinator): 23 инструмента в ролях CEO, Designer, Eng Manager, Release Manager, QA. 102k⭐." },
+    { "name": "garrytan/gstack", "url": "https://github.com/garrytan/gstack", "desc": "Сетап Garry Tan (Y Combinator): 23 инструмента в ролях CEO, Designer, Eng Manager, Release Manager, QA. 132k⭐." },
     { "name": "open-gsd/gsd-core", "url": "https://github.com/open-gsd/gsd-core", "desc": "Meta-prompting и context-engineering: пять фаз discuss → plan → execute → verify → ship, каждая в свежем контексте субагента. Преемник get-shit-done, тот заархивирован." },
     { "name": "Fission-AI/OpenSpec", "url": "https://github.com/Fission-AI/OpenSpec", "desc": "Spec-driven development под AI coding assistants. /opsx:propose → apply → archive." },
     { "name": "bmad-code-org/BMAD-METHOD", "url": "https://github.com/bmad-code-org/BMAD-METHOD", "desc": "Breakthrough Method for Agile AI-Driven Development. Product brief → PRD → architecture → epics → sprint planning → dev → review." },
@@ -62,7 +66,7 @@
     { "name": "musistudio/claude-code-router", "url": "https://github.com/musistudio/claude-code-router", "desc": "Router: подменяет API-endpoint Claude на OpenRouter, DeepSeek, Ollama, Gemini, Kimi, Qwen, Groq. Per-task model selection." },
     { "name": "router-for-me/CLIProxyAPI", "url": "https://github.com/router-for-me/CLIProxyAPI", "desc": "Обёртка для Gemini CLI, Codex, Claude Code, Antigravity как OpenAI/Gemini/Claude/Codex-совместимого API." },
     { "name": "openai/codex-plugin-cc", "url": "https://github.com/openai/codex-plugin-cc", "desc": "Официальный OpenAI-plugin: /codex:review, /codex:adversarial-review, /codex:rescue внутри Claude Code. Codex/GPT-5 как QA-партнёр." },
-    { "name": "BeehiveInnovations/pal-mcp-server", "url": "https://github.com/BeehiveInnovations/pal-mcp-server", "desc": "Multi-model MCP-сервер (бывш. zen-mcp): Gemini, OpenAI, Azure, Grok, Ollama, OpenRouter как Claude tools. 50+ моделей." }
+    { "name": "BeehiveInnovations/pal-mcp-server", "url": "https://github.com/BeehiveInnovations/pal-mcp-server", "desc": "Не обновлялся с декабря 2025. Multi-model MCP-сервер (бывш. zen-mcp): Gemini, OpenAI, Azure, Grok, Ollama, OpenRouter как Claude tools. 50+ моделей." }
   ],
   "orchestrationBackground": [
     { "name": "gastownhall/gastown", "url": "https://github.com/gastownhall/gastown", "desc": "Multi-agent workspace manager от Steve Yegge. Персистентный трекинг работы, true background, рассчитан на сложные multi-agent сценарии. 17.8k⭐." },
