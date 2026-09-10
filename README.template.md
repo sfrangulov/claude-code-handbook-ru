@@ -47,11 +47,7 @@ CI gate: node scripts/build-readme.mjs --check
 # 1. Сам Claude Code
 npm install -g @anthropic-ai/claude-code
 
-# 2. Маркетплейс soft-скиллов от obra. `marketplace add` только регистрирует
-#    источник; сам плагин ставится отдельной слэш-командой (шаг 4 ниже).
-claude plugin marketplace add obra/superpowers-marketplace
-
-# 3. MCP-серверы. Контекст перестал быть главным аргументом: с 2.1.7 тяжёлые
+# 2. MCP-серверы. Контекст перестал быть главным аргументом: с 2.1.7 тяжёлые
 #    наборы тулов откладываются и грузятся по требованию (замер — в разделе MCP).
 #    Ограничивай себя из-за другого: каждый сервер — чужой код с доступом к твоему
 #    окружению, плюс лишние похожие тулы, среди которых модель промахивается.
@@ -59,13 +55,15 @@ claude mcp add github      # @modelcontextprotocol/server-github (issues, PR)
 claude mcp add postgres    # @modelcontextprotocol/server-postgres (read-only прод)
 ```
 
-**4.** Запусти `claude` в любом репозитории и поставь плагин слэш-командой:
+**3.** Запусти `claude` в любом репозитории и поставь набор soft-скиллов слэш-командой:
 
 ```
-/plugin install superpowers@superpowers-marketplace
+/plugin install superpowers@claude-plugins-official
 ```
 
-Это 14 скиллов (TDD, brainstorming, systematic-debugging, code-review, planning, parallel-agents, subagent-driven-development и другие). Два из них — в [топ-15 на skills.sh](#топ-15-скиллов-skillssh).
+Это 14 связанных скиллов (TDD, brainstorming, systematic-debugging, code-review, planning, parallel-agents, subagent-driven-development и другие). Два из них — в [топ-15 на skills.sh](#топ-15-скиллов-skillssh). Добавлять сторонний маркетплейс больше не нужно: superpowers теперь в официальном маркетплейсе Anthropic — `claude plugin marketplace add obra/superpowers-marketplace` нужен только ради [девяти дополнительных плагинов](./docs/skill-families-ru.md#установка) автора.
+
+Не уверен, что брать — superpowers, скиллы Matt Pocock или ECC: **[разбор трёх семейств →](./docs/skill-families-ru.md)** (философии, полные списки, кому что подходит).
 
 **Куда смотреть в первую очередь:**
 
@@ -123,7 +121,7 @@ Skills — переиспользуемые наборы инструкций, �
 
 **Источник:** [skills.sh leaderboard](https://skills.sh) — числа быстро растут, актуальны на момент последнего обновления. Автообновление: `node scripts/refresh-top-skills.mjs --write && node scripts/build-readme.mjs`.
 
-**Совет практика:** ставь `obra/superpowers` целиком сразу — самая полная коллекция soft-скиллов (TDD, отладка, планирование, брейншторм, код-ревью). Два скилла оттуда держатся в топ-15, остальные двенадцать в рейтинг не попадают — берут связностью, а не установками. Дальше добавь скиллы под свой стек (Vercel React, Convex, Firebase, Supabase, Azure). Не ставь всё подряд — каждый скилл съедает 3–5K токенов на bootstrap.
+**Совет практика:** ставь `obra/superpowers` целиком сразу — все 14 скиллов образуют один маршрут (TDD, отладка, планирование, брейншторм, код-ревью). Два скилла оттуда держатся в топ-15, остальные двенадцать в рейтинг не попадают — берут связностью, а не установками; выдирать их по одному смысла мало ([почему](./docs/skill-families-ru.md#obrasuperpowers--методология-которая-владеет-процессом)). Дальше добавь скиллы под свой стек (Vercel React, Convex, Firebase, Supabase, Azure). Не ставь всё подряд — каждый скилл съедает 3–5K токенов на bootstrap.
 
 ### Официальные от Anthropic
 
@@ -449,6 +447,7 @@ Hooks дают поток событий сессии; эти проекты с�
 ### В этом репо
 
 - **[docs/tips-ru.md](./docs/tips-ru.md)** — переводы тематических батчей советов от Boris Cherny (создатель Claude Code) и Thariq (Anthropic). 8 батчей с января по апрель 2026: Boris × 6 (13/10/12/2/15/6 советов) + Thariq × 2 (Skills, Session Management). Все 75 советов в хронологическом порядке, newest-first. Плюс разбор трёх фаз воркшопа How We Claude Code с Code with Claude 2026: спека через интервью, четыре HTML-варианта дизайна, верифицируемая архитектура компонентов. И инженерная статья Anthropic от 8 сентября 2026 про три рычага стоимости: prompt cache, анти-паттерны в промптах, калибровка effort.
+- **[docs/skill-families-ru.md](./docs/skill-families-ru.md)** — разбор трёх главных семейств скиллов: `obra/superpowers` (14 скиллов, методология с обязательными автотриггерами), `mattpocock/skills` (37 скиллов, явно построенных против того, чтобы забирать процесс себе) и `affaan-m/ECC` (286 скиллов, 68 агентов, инстинкты и память между харнессами). Полные списки, философии, установка и разбор, кому что подходит и что с чем не сочетается.
 
 ### Habr — практические гайды
 

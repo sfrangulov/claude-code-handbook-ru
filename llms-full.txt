@@ -57,11 +57,7 @@ CI gate: node scripts/build-readme.mjs --check
 # 1. Сам Claude Code
 npm install -g @anthropic-ai/claude-code
 
-# 2. Маркетплейс soft-скиллов от obra. `marketplace add` только регистрирует
-#    источник; сам плагин ставится отдельной слэш-командой (шаг 4 ниже).
-claude plugin marketplace add obra/superpowers-marketplace
-
-# 3. MCP-серверы. Контекст перестал быть главным аргументом: с 2.1.7 тяжёлые
+# 2. MCP-серверы. Контекст перестал быть главным аргументом: с 2.1.7 тяжёлые
 #    наборы тулов откладываются и грузятся по требованию (замер — в разделе MCP).
 #    Ограничивай себя из-за другого: каждый сервер — чужой код с доступом к твоему
 #    окружению, плюс лишние похожие тулы, среди которых модель промахивается.
@@ -69,13 +65,15 @@ claude mcp add github      # @modelcontextprotocol/server-github (issues, PR)
 claude mcp add postgres    # @modelcontextprotocol/server-postgres (read-only прод)
 ```
 
-**4.** Запусти `claude` в любом репозитории и поставь плагин слэш-командой:
+**3.** Запусти `claude` в любом репозитории и поставь набор soft-скиллов слэш-командой:
 
 ```
-/plugin install superpowers@superpowers-marketplace
+/plugin install superpowers@claude-plugins-official
 ```
 
-Это 14 скиллов (TDD, brainstorming, systematic-debugging, code-review, planning, parallel-agents, subagent-driven-development и другие). Два из них — в [топ-15 на skills.sh](#топ-15-скиллов-skillssh).
+Это 14 связанных скиллов (TDD, brainstorming, systematic-debugging, code-review, planning, parallel-agents, subagent-driven-development и другие). Два из них — в [топ-15 на skills.sh](#топ-15-скиллов-skillssh). Добавлять сторонний маркетплейс больше не нужно: superpowers теперь в официальном маркетплейсе Anthropic — `claude plugin marketplace add obra/superpowers-marketplace` нужен только ради [девяти дополнительных плагинов](./docs/skill-families-ru.md#установка) автора.
+
+Не уверен, что брать — superpowers, скиллы Matt Pocock или ECC: **[разбор трёх семейств →](./docs/skill-families-ru.md)** (философии, полные списки, кому что подходит).
 
 **Куда смотреть в первую очередь:**
 
@@ -149,7 +147,7 @@ Skills — переиспользуемые наборы инструкций, �
 
 **Источник:** [skills.sh leaderboard](https://skills.sh) — числа быстро растут, актуальны на момент последнего обновления. Автообновление: `node scripts/refresh-top-skills.mjs --write && node scripts/build-readme.mjs`.
 
-**Совет практика:** ставь `obra/superpowers` целиком сразу — самая полная коллекция soft-скиллов (TDD, отладка, планирование, брейншторм, код-ревью). Два скилла оттуда держатся в топ-15, остальные двенадцать в рейтинг не попадают — берут связностью, а не установками. Дальше добавь скиллы под свой стек (Vercel React, Convex, Firebase, Supabase, Azure). Не ставь всё подряд — каждый скилл съедает 3–5K токенов на bootstrap.
+**Совет практика:** ставь `obra/superpowers` целиком сразу — все 14 скиллов образуют один маршрут (TDD, отладка, планирование, брейншторм, код-ревью). Два скилла оттуда держатся в топ-15, остальные двенадцать в рейтинг не попадают — берут связностью, а не установками; выдирать их по одному смысла мало ([почему](./docs/skill-families-ru.md#obrasuperpowers--методология-которая-владеет-процессом)). Дальше добавь скиллы под свой стек (Vercel React, Convex, Firebase, Supabase, Azure). Не ставь всё подряд — каждый скилл съедает 3–5K токенов на bootstrap.
 
 ### Официальные от Anthropic
 
@@ -168,7 +166,7 @@ Skills — переиспользуемые наборы инструкций, �
 
 ### Большие community-коллекции
 
-- [obra/superpowers](https://github.com/obra/superpowers) — 20+ боевых скиллов: TDD, debugging, brainstorming, написание планов. Самая популярная коллекция. Установка: `claude plugin marketplace add obra/superpowers-marketplace`.
+- [obra/superpowers](https://github.com/obra/superpowers) — 14 связанных скиллов, образующих методологию: брейншторм → план → TDD → ревью → мерж. Срабатывают автоматически. Теперь в официальном маркетплейсе: `/plugin install superpowers@claude-plugins-official`. [Детальный разбор](./docs/skill-families-ru.md#obrasuperpowers--методология-которая-владеет-процессом).
 - [obra/superpowers-lab](https://github.com/obra/superpowers-lab) — Экспериментальные скиллы из той же серии.
 - [trailofbits/skills](https://github.com/trailofbits/skills) — Security-скиллы от Trail of Bits: статический анализ через CodeQL/Semgrep, аудит кода, поиск уязвимостей.
 - [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) — Vercel Engineering: производительность React, web-guidelines, React Native, деплой на Vercel.
@@ -212,7 +210,7 @@ Sub-agent — отдельный экземпляр Claude со своим ко�
 | Репозиторий | Что внутри |
 |---|---|
 | [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) | **144 субагента** по 10 категориям, 19k⭐. Установка: `claude plugin marketplace add VoltAgent/awesome-claude-code-subagents`. |
-| [obra/superpowers](https://github.com/obra/superpowers) | 20+ скиллов и субагентов: TDD, отладка, планирование, брейншторм, ревью. Самая популярная коллекция. |
+| [obra/superpowers](https://github.com/obra/superpowers) | 14 скиллов и субагентов: TDD, отладка, планирование, брейншторм, ревью. Самая популярная коллекция. |
 | [0xfurai/claude-code-subagents](https://github.com/0xfurai/claude-code-subagents) | 100+ субагентов в едином формате промпта, мультиязычные, MIT. |
 | [wshobson/agents](https://github.com/wshobson/agents) | 48 production-агентов с паттернами оркестрации и продвинутыми workflow. |
 | [vijaythecoder/awesome-claude-agents](https://github.com/vijaythecoder/awesome-claude-agents) | 26 агентов формата AI-команды: Tech Lead, Analyst, доменные специалисты. |
@@ -358,7 +356,7 @@ tmux уже стоит у всех, и половина ниши построе�
 ### Spec → Plan → Ship методологии
 
 - [github/spec-kit](https://github.com/github/spec-kit) — Spec-Driven Development от GitHub. 106k⭐. /speckit.specify → clarify → plan → tasks → analyze → implement.
-- [affaan-m/ECC](https://github.com/affaan-m/ECC) — Крупнейшая коллекция: 48 агентов + 143 команды + 230 скиллов. Оптимизация harness'а под Claude, Codex, Cursor. 243k⭐.
+- [affaan-m/ECC](https://github.com/affaan-m/ECC) — Крупнейшая коллекция: 286 скиллов, 68 агентов, инстинкты и память между харнессами. 255k⭐. [Детальный разбор](./docs/skill-families-ru.md#affaan-mecc--операционная-система-харнесса).
 - [garrytan/gstack](https://github.com/garrytan/gstack) — Сетап Garry Tan (Y Combinator): 23 инструмента в ролях CEO, Designer, Eng Manager, Release Manager, QA. 102k⭐.
 - [open-gsd/gsd-core](https://github.com/open-gsd/gsd-core) — Meta-prompting и context-engineering: пять фаз discuss → plan → execute → verify → ship, каждая в свежем контексте субагента. Преемник get-shit-done, тот заархивирован.
 - [Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) — Spec-driven development под AI coding assistants. /opsx:propose → apply → archive.
@@ -414,7 +412,7 @@ Evals — регрессионные тесты для агентного workfl
 
 ### Главные маркетплейсы
 
-- [obra/superpowers-marketplace](https://github.com/obra/superpowers-marketplace) — Маркетплейс с 20+ soft-скиллами и плагинами от Jesse Vincent. Базовая установка: `claude plugin marketplace add obra/superpowers-marketplace`.
+- [obra/superpowers-marketplace](https://github.com/obra/superpowers-marketplace) — Ещё девять плагинов от Jesse Vincent сверх ядра superpowers: Chrome DevTools, tmux-автоматизация, драйвер чужих сессий Claude, семантический поиск по прошлым разговорам. Установка: `claude plugin marketplace add obra/superpowers-marketplace`.
 - [ccplugins/awesome-claude-code-plugins](https://github.com/ccplugins/awesome-claude-code-plugins) — 50+ плагинов по 13 категориям (качество кода, git, devops, дизайн, бизнес). 782⭐. Установка: `claude plugin marketplace add ccplugins/awesome-claude-code-plugins`.
 - [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) — 144 субагента, оформленные как плагин-маркетплейс.
 - [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) — Официальные плагины Anthropic.
@@ -543,7 +541,7 @@ Hooks дают поток событий сессии; эти проекты с�
 
 - [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) — `CLAUDE.md`, собранный из практик Andrej Karpathy. 128k⭐.
 - [garrytan/gstack](https://github.com/garrytan/gstack) — Сетап Garry Tan: 23 opinionated-инструмента. 95k⭐.
-- [affaan-m/ECC](https://github.com/affaan-m/ECC) — Полная оптимизация harness'а: скиллы, повадки, память, research-first разработка. 243k⭐.
+- [affaan-m/ECC](https://github.com/affaan-m/ECC) — Полная оптимизация harness'а: скиллы, инстинкты, память, research-first разработка. 255k⭐.
 
 ### Под конкретный стек
 
@@ -613,6 +611,7 @@ Hooks дают поток событий сессии; эти проекты с�
 ### В этом репо
 
 - **[docs/tips-ru.md](./docs/tips-ru.md)** — переводы тематических батчей советов от Boris Cherny (создатель Claude Code) и Thariq (Anthropic). 8 батчей с января по апрель 2026: Boris × 6 (13/10/12/2/15/6 советов) + Thariq × 2 (Skills, Session Management). Все 75 советов в хронологическом порядке, newest-first. Плюс разбор трёх фаз воркшопа How We Claude Code с Code with Claude 2026: спека через интервью, четыре HTML-варианта дизайна, верифицируемая архитектура компонентов. И инженерная статья Anthropic от 8 сентября 2026 про три рычага стоимости: prompt cache, анти-паттерны в промптах, калибровка effort.
+- **[docs/skill-families-ru.md](./docs/skill-families-ru.md)** — разбор трёх главных семейств скиллов: `obra/superpowers` (14 скиллов, методология с обязательными автотриггерами), `mattpocock/skills` (37 скиллов, явно построенных против того, чтобы забирать процесс себе) и `affaan-m/ECC` (286 скиллов, 68 агентов, инстинкты и память между харнессами). Полные списки, философии, установка и разбор, кому что подходит и что с чем не сочетается.
 
 ### Habr — практические гайды
 

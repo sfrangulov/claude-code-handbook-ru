@@ -51,7 +51,7 @@
   ],
   "workflowMethodologies": [
     { "name": "github/spec-kit", "url": "https://github.com/github/spec-kit", "desc": "Spec-Driven Development от GitHub. 106k⭐. /speckit.specify → clarify → plan → tasks → analyze → implement." },
-    { "name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "desc": "Крупнейшая коллекция: 48 агентов + 143 команды + 230 скиллов. Оптимизация harness'а под Claude, Codex, Cursor. 243k⭐." },
+    { "name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "desc": "Крупнейшая коллекция: 286 скиллов, 68 агентов, инстинкты и память между харнессами. 255k⭐. [Детальный разбор](./docs/skill-families-ru.md#affaan-mecc--операционная-система-харнесса)." },
     { "name": "garrytan/gstack", "url": "https://github.com/garrytan/gstack", "desc": "Сетап Garry Tan (Y Combinator): 23 инструмента в ролях CEO, Designer, Eng Manager, Release Manager, QA. 102k⭐." },
     { "name": "open-gsd/gsd-core", "url": "https://github.com/open-gsd/gsd-core", "desc": "Meta-prompting и context-engineering: пять фаз discuss → plan → execute → verify → ship, каждая в свежем контексте субагента. Преемник get-shit-done, тот заархивирован." },
     { "name": "Fission-AI/OpenSpec", "url": "https://github.com/Fission-AI/OpenSpec", "desc": "Spec-driven development под AI coding assistants. /opsx:propose → apply → archive." },

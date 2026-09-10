@@ -3,7 +3,7 @@
     "_comment": "Таблица в README: Репозиторий / Что внутри",
     "items": [
       { "name": "VoltAgent/awesome-claude-code-subagents", "url": "https://github.com/VoltAgent/awesome-claude-code-subagents", "desc": "**144 субагента** по 10 категориям, 19k⭐. Установка: `claude plugin marketplace add VoltAgent/awesome-claude-code-subagents`." },
-      { "name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "desc": "20+ скиллов и субагентов: TDD, отладка, планирование, брейншторм, ревью. Самая популярная коллекция." },
+      { "name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "desc": "14 скиллов и субагентов: TDD, отладка, планирование, брейншторм, ревью. Самая популярная коллекция." },
       { "name": "0xfurai/claude-code-subagents", "url": "https://github.com/0xfurai/claude-code-subagents", "desc": "100+ субагентов в едином формате промпта, мультиязычные, MIT." },
       { "name": "wshobson/agents", "url": "https://github.com/wshobson/agents", "desc": "48 production-агентов с паттернами оркестрации и продвинутыми workflow." },
       { "name": "vijaythecoder/awesome-claude-agents", "url": "https://github.com/vijaythecoder/awesome-claude-agents", "desc": "26 агентов формата AI-команды: Tech Lead, Analyst, доменные специалисты." },
