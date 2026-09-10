@@ -18,6 +18,7 @@
     { "name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "desc": "286 скиллов и 68 агентов, охватывающих редкие домены, плюс инстинкты (паттерны, выученные из твоих сессий) и память между харнессами. Ставить выборочно: правила всегда в контексте. [Детальный разбор](./docs/skill-families-ru.md#affaan-mecc--операционная-система-харнесса)." },
     { "name": "addyosmani/agent-skills", "url": "https://github.com/addyosmani/agent-skills", "desc": "Production-grade инженерные скиллы от Addy Osmani (Google Chrome). 93k⭐." },
     { "name": "google/skills", "url": "https://github.com/google/skills", "desc": "Официальные скиллы Google под свои продукты и технологии. 20k⭐." },
+    { "name": "pbakaus/impeccable", "url": "https://github.com/pbakaus/impeccable", "desc": "Дизайн-язык для агента: 18 слэш-команд на весь цикл интерфейса (craft, audit, polish, harden) и 7 справочников — цвет, типографика, motion, пространство, интеракции, адаптивность, UX-текст. Читает PRODUCT.md и DESIGN.md до первого пикселя. 67k⭐, 270K установок." },
     { "name": "trailofbits/skills", "url": "https://github.com/trailofbits/skills", "desc": "Security-скиллы от Trail of Bits: статический анализ через CodeQL/Semgrep, аудит кода, поиск уязвимостей." },
     { "name": "vercel-labs/agent-skills", "url": "https://github.com/vercel-labs/agent-skills", "desc": "Vercel Engineering: производительность React, web-guidelines, React Native, деплой на Vercel." },
     { "name": "supabase/agent-skills", "url": "https://github.com/supabase/agent-skills", "desc": "Скиллы для Supabase и PostgreSQL." },
@@ -32,6 +33,7 @@
     { "name": "karanb192/awesome-claude-skills", "url": "https://github.com/karanb192/awesome-claude-skills", "desc": "50+ проверенных скиллов с разбивкой по типам." }
   ],
   "specialized": [
+    { "name": "Agents365-ai/drawio-skill", "url": "https://github.com/Agents365-ai/drawio-skill", "desc": "Диаграммы .drawio из текста и реальных источников: инкрементальная синхронизация с сохранением ручной раскладки, проекции в несколько видов, архитектура-как-тест с CI-экшеном, встроенный MCP-сервер. 9.2k⭐." },
     { "name": "greensock/gsap-skills", "url": "https://github.com/greensock/gsap-skills", "desc": "Официальные скиллы GSAP: как правильно анимировать, паттерны и плагины — от самих GreenSock. 15k⭐." },
     { "name": "kepano/obsidian-skills", "url": "https://github.com/kepano/obsidian-skills", "desc": "Работа с Obsidian: CLI и открытые форматы — Markdown, Bases, JSON Canvas. От CEO Obsidian. 48k⭐." },
     { "name": "conorluddy/ios-simulator-skill", "url": "https://github.com/conorluddy/ios-simulator-skill", "desc": "Сборка iOS-приложений, навигация по симулятору, тесты." },

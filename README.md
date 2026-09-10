@@ -163,6 +163,7 @@ Skills — переиспользуемые наборы инструкций, �
 - [affaan-m/ECC](https://github.com/affaan-m/ECC) — 286 скиллов и 68 агентов, охватывающих редкие домены, плюс инстинкты (паттерны, выученные из твоих сессий) и память между харнессами. Ставить выборочно: правила всегда в контексте. [Детальный разбор](./docs/skill-families-ru.md#affaan-mecc--операционная-система-харнесса).
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) — Production-grade инженерные скиллы от Addy Osmani (Google Chrome). 93k⭐.
 - [google/skills](https://github.com/google/skills) — Официальные скиллы Google под свои продукты и технологии. 20k⭐.
+- [pbakaus/impeccable](https://github.com/pbakaus/impeccable) — Дизайн-язык для агента: 18 слэш-команд на весь цикл интерфейса (craft, audit, polish, harden) и 7 справочников — цвет, типографика, motion, пространство, интеракции, адаптивность, UX-текст. Читает PRODUCT.md и DESIGN.md до первого пикселя. 67k⭐, 270K установок.
 - [trailofbits/skills](https://github.com/trailofbits/skills) — Security-скиллы от Trail of Bits: статический анализ через CodeQL/Semgrep, аудит кода, поиск уязвимостей.
 - [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) — Vercel Engineering: производительность React, web-guidelines, React Native, деплой на Vercel.
 - [supabase/agent-skills](https://github.com/supabase/agent-skills) — Скиллы для Supabase и PostgreSQL.
@@ -178,6 +179,7 @@ Skills — переиспользуемые наборы инструкций, �
 
 ### Узкоспециализированные
 
+- [Agents365-ai/drawio-skill](https://github.com/Agents365-ai/drawio-skill) — Диаграммы .drawio из текста и реальных источников: инкрементальная синхронизация с сохранением ручной раскладки, проекции в несколько видов, архитектура-как-тест с CI-экшеном, встроенный MCP-сервер. 9.2k⭐.
 - [greensock/gsap-skills](https://github.com/greensock/gsap-skills) — Официальные скиллы GSAP: как правильно анимировать, паттерны и плагины — от самих GreenSock. 15k⭐.
 - [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) — Работа с Obsidian: CLI и открытые форматы — Markdown, Bases, JSON Canvas. От CEO Obsidian. 48k⭐.
 - [conorluddy/ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill) — Сборка iOS-приложений, навигация по симулятору, тесты.
@@ -418,6 +420,8 @@ Evals — регрессионные тесты для агентного workfl
 
 ### Полезные одиночные плагины
 
+- [typescript-lsp и pyright-lsp](https://github.com/anthropics/claude-plugins-official) — Языковые серверы TypeScript и Python внутри сессии: агент видит ошибки типов, переходы по символам и ссылки, не запуская сборку и не грепая по файлам. Из официального маркетплейса — `/plugin install typescript-lsp@claude-plugins-official`.
+- [firecrawl](https://github.com/firecrawl/firecrawl) — Скрейпинг и обход сайтов: страница превращается в чистый markdown или структурированный JSON по схеме, есть краулинг раздела и работа со страницами, требующими кликов и логина. Плагин `firecrawl@claude-plugins-official`, движок — 179k⭐.
 - [brennercruvinel/CCPlugins](https://github.com/brennercruvinel/CCPlugins) — Сборка самых ходовых slash-команд автора. 2.8k⭐, но архив с июня 2026 — развития не будет; переехал из `notlikeDev/CCPlugins`.
 - [ApurvBazari/claude-plugins](https://github.com/ApurvBazari/claude-plugins) — Уведомления о событиях через ntfy / Pushover / Telegram.
 - [0xdesign/design-plugin](https://github.com/0xdesign/design-plugin) — Дизайн-ориентированная обвязка для UI-задач.
@@ -741,7 +745,8 @@ Hooks дают поток событий сессии; эти проекты с�
 - [Anthropic Status](https://status.anthropic.com/) — Статус сервисов.
 - [Claude release notes](https://code.claude.com/docs/en/changelog) — Официальный changelog.
 - [Skills.sh](https://www.skills.sh/) — Маркетплейс скиллов с количеством установок.
-- [vercel-labs/skills](https://github.com/vercel-labs/skills) — `npx skills` — установщик скиллов в любой харнесс, файлами прямо в репозиторий. Им ставится половина коллекций из раздела Skills. 31k⭐.
+- [vercel-labs/skills](https://github.com/vercel-labs/skills) — `npx skills` — установщик скиллов в любой харнесс, файлами прямо в репозиторий. Им ставится половина коллекций из раздела Skills. Внутри же лежит скилл `find-skills`: агент сам ищет по skills.sh нужное под задачу и сверяет кандидатов по установкам и репутации источника, прежде чем предложить. 31k⭐.
+- [zenbu-labs/terminal-browser](https://github.com/zenbu-labs/terminal-browser) — Браузер прямо в терминале: делит панель и показывает страницу рядом с сессией, агент водит по ней — снимок, клик, ввод, eval. 2.8k⭐.
 - [gastownhall/beads](https://github.com/gastownhall/beads) — Граф-трекер задач для агентов поверх Dolt: `bd ready` отдаёт работу без блокеров, `bd remember` держит память проекта между сессиями, компакция сжимает старые задачи, чтобы не жечь контекст. Хэш-ID вида `bd-a1b2` не конфликтуют при мердже параллельных веток. `bd setup claude` ставит хуки, `--stealth` — работа без коммита в общий репозиторий. 27k⭐.
 - [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) — Персистентный контекст между сессиями: записывает работу агента, сжимает и подмешивает релевантное в следующие. Claude Code, Codex, Gemini, Copilot, OpenCode. 94k⭐.
 - [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) — Главный awesome-list экосистемы: скиллы, агенты, статуслайны, тулинг, плагины. 54k⭐.

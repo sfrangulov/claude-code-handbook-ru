@@ -6,6 +6,8 @@
     { "name": "anthropics/claude-plugins-official", "url": "https://github.com/anthropics/claude-plugins-official", "desc": "Официальный маркетплейс: добавлять источник не нужно, `/plugin install <имя>@claude-plugins-official` работает из коробки. Внутри — `superpowers`, LSP-плагины `typescript-lsp` и `pyright-lsp` (агент видит ошибки типов и переходы по символам без запуска сборки), `firecrawl` для веб-скрейпинга и `pydantic-ai`." }
   ],
   "singles": [
+    { "name": "typescript-lsp и pyright-lsp", "url": "https://github.com/anthropics/claude-plugins-official", "desc": "Языковые серверы TypeScript и Python внутри сессии: агент видит ошибки типов, переходы по символам и ссылки, не запуская сборку и не грепая по файлам. Из официального маркетплейса — `/plugin install typescript-lsp@claude-plugins-official`." },
+    { "name": "firecrawl", "url": "https://github.com/firecrawl/firecrawl", "desc": "Скрейпинг и обход сайтов: страница превращается в чистый markdown или структурированный JSON по схеме, есть краулинг раздела и работа со страницами, требующими кликов и логина. Плагин `firecrawl@claude-plugins-official`, движок — 179k⭐." },
     { "name": "brennercruvinel/CCPlugins", "url": "https://github.com/brennercruvinel/CCPlugins", "desc": "Сборка самых ходовых slash-команд автора. 2.8k⭐, но архив с июня 2026 — развития не будет; переехал из `notlikeDev/CCPlugins`." },
     { "name": "ApurvBazari/claude-plugins", "url": "https://github.com/ApurvBazari/claude-plugins", "desc": "Уведомления о событиях через ntfy / Pushover / Telegram." },
     { "name": "0xdesign/design-plugin", "url": "https://github.com/0xdesign/design-plugin", "desc": "Дизайн-ориентированная обвязка для UI-задач." },
