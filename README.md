@@ -91,6 +91,7 @@ claude mcp add postgres    # @modelcontextprotocol/server-postgres (read-only п
 - **[MCP-серверы](#mcp-серверы)** — инструменты и доступ к данным. И следи за бюджетом контекста: 5 серверов лучше 20.
 - **[CLAUDE.md шаблоны](#claudemd-шаблоны)** — правила, память и scope: что модель читает до старта (threat model, конвенции, границы доверия).
 - **[Оркестрация](#оркестрация-и-параллельные-агенты)** — запуск pipeline целиком: фоновые runner'ы, parallel-агенты, autonomous-циклы.
+- **Трекер задач вместо markdown-плана** — то, чего в этом списке не хватало дольше всего. План в `PLAN.md` живёт ровно до компакции: агент теряет, что уже сделано и что было заблокировано. [gastownhall/beads](https://github.com/gastownhall/beads) (27k⭐) держит задачи графом с зависимостями, `bd ready` отдаёт только незаблокированное, `bd remember` переживает и компакцию, и `/clear`, а старые закрытые задачи сжимаются, чтобы не занимать контекст. Этот handbook на нём и ведётся.
 
 ### Паттерн автономного pipeline
 
@@ -413,7 +414,7 @@ Evals — регрессионные тесты для агентного workfl
 - [obra/superpowers-marketplace](https://github.com/obra/superpowers-marketplace) — Ещё девять плагинов от Jesse Vincent сверх ядра superpowers: Chrome DevTools, tmux-автоматизация, драйвер чужих сессий Claude, семантический поиск по прошлым разговорам. Установка: `claude plugin marketplace add obra/superpowers-marketplace`.
 - [ccplugins/awesome-claude-code-plugins](https://github.com/ccplugins/awesome-claude-code-plugins) — 935⭐, 50+ плагинов по 13 категориям (качество кода, git, devops, дизайн, бизнес). 782⭐. Установка: `claude plugin marketplace add ccplugins/awesome-claude-code-plugins`.
 - [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) — 144 субагента, оформленные как плагин-маркетплейс.
-- [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) — Официальные плагины Anthropic.
+- [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) — Официальный маркетплейс: добавлять источник не нужно, `/plugin install <имя>@claude-plugins-official` работает из коробки. Внутри — `superpowers`, LSP-плагины `typescript-lsp` и `pyright-lsp` (агент видит ошибки типов и переходы по символам без запуска сборки), `firecrawl` для веб-скрейпинга и `pydantic-ai`.
 
 ### Полезные одиночные плагины
 
@@ -741,6 +742,7 @@ Hooks дают поток событий сессии; эти проекты с�
 - [Claude release notes](https://code.claude.com/docs/en/changelog) — Официальный changelog.
 - [Skills.sh](https://www.skills.sh/) — Маркетплейс скиллов с количеством установок.
 - [vercel-labs/skills](https://github.com/vercel-labs/skills) — `npx skills` — установщик скиллов в любой харнесс, файлами прямо в репозиторий. Им ставится половина коллекций из раздела Skills. 31k⭐.
+- [gastownhall/beads](https://github.com/gastownhall/beads) — Граф-трекер задач для агентов поверх Dolt: `bd ready` отдаёт работу без блокеров, `bd remember` держит память проекта между сессиями, компакция сжимает старые задачи, чтобы не жечь контекст. Хэш-ID вида `bd-a1b2` не конфликтуют при мердже параллельных веток. `bd setup claude` ставит хуки, `--stealth` — работа без коммита в общий репозиторий. 27k⭐.
 - [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) — Персистентный контекст между сессиями: записывает работу агента, сжимает и подмешивает релевантное в следующие. Claude Code, Codex, Gemini, Copilot, OpenCode. 94k⭐.
 - [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) — Главный awesome-list экосистемы: скиллы, агенты, статуслайны, тулинг, плагины. 54k⭐.
 - [sfrangulov/skill-graveyard](https://github.com/sfrangulov/skill-graveyard) — Аудит установленных скиллов по локальным логам сессий: active / dead / missing / hallucinated. `npx skill-graveyard`, без сети и телеметрии; в монорепо — mcp-graveyard и memory-graveyard. Мой проект.

@@ -3,7 +3,7 @@
     { "name": "obra/superpowers-marketplace", "url": "https://github.com/obra/superpowers-marketplace", "desc": "Ещё девять плагинов от Jesse Vincent сверх ядра superpowers: Chrome DevTools, tmux-автоматизация, драйвер чужих сессий Claude, семантический поиск по прошлым разговорам. Установка: `claude plugin marketplace add obra/superpowers-marketplace`." },
     { "name": "ccplugins/awesome-claude-code-plugins", "url": "https://github.com/ccplugins/awesome-claude-code-plugins", "desc": "935⭐, 50+ плагинов по 13 категориям (качество кода, git, devops, дизайн, бизнес). 782⭐. Установка: `claude plugin marketplace add ccplugins/awesome-claude-code-plugins`." },
     { "name": "VoltAgent/awesome-claude-code-subagents", "url": "https://github.com/VoltAgent/awesome-claude-code-subagents", "desc": "144 субагента, оформленные как плагин-маркетплейс." },
-    { "name": "anthropics/claude-plugins-official", "url": "https://github.com/anthropics/claude-plugins-official", "desc": "Официальные плагины Anthropic." }
+    { "name": "anthropics/claude-plugins-official", "url": "https://github.com/anthropics/claude-plugins-official", "desc": "Официальный маркетплейс: добавлять источник не нужно, `/plugin install <имя>@claude-plugins-official` работает из коробки. Внутри — `superpowers`, LSP-плагины `typescript-lsp` и `pyright-lsp` (агент видит ошибки типов и переходы по символам без запуска сборки), `firecrawl` для веб-скрейпинга и `pydantic-ai`." }
   ],
   "singles": [
     { "name": "brennercruvinel/CCPlugins", "url": "https://github.com/brennercruvinel/CCPlugins", "desc": "Сборка самых ходовых slash-команд автора. 2.8k⭐, но архив с июня 2026 — развития не будет; переехал из `notlikeDev/CCPlugins`." },
