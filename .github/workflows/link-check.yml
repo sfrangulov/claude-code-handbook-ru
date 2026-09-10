@@ -63,6 +63,9 @@ jobs:
           node scripts/check-repos.mjs --scope=curated --markdown > /tmp/repos.md 2>/tmp/repos.err
           CODE=$?
           cat /tmp/repos.err
+          # Сводку — в лог шага: иначе по зелёному статусу не понять,
+          # проверил он полторы сотни репозиториев или ноль.
+          head -4 /tmp/repos.md
           # Коды выхода: 0 — чисто, 1 — есть находки, 2 — скрипт упал,
           # 3 — часть репозиториев проверить не удалось.
           echo "repo_exit=${CODE}"
