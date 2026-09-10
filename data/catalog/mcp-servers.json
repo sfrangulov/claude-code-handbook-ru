@@ -854,7 +854,7 @@
     },
     {
       "name": "fernsugi/x402-api-server",
-      "url": "https://github.com/fernsugi/x402-api-server/tree/main/mcp-server"
+      "url": "https://github.com/fernsugi/x402-api-server"
     },
     {
       "name": "ferrants/memvid-mcp-server",
@@ -2270,7 +2270,7 @@
     },
     {
       "name": "PipedreamHQ/pipedream",
-      "url": "https://github.com/PipedreamHQ/pipedream/tree/master/modelcontextprotocol"
+      "url": "https://github.com/PipedreamHQ/pipedream"
     },
     {
       "name": "pkotecha-eng/aria-mcp-server",

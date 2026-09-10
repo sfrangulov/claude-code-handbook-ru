@@ -20,7 +20,7 @@ CI gate: node scripts/build-readme.mjs --check
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
-**Полный сырой каталог (1413 записей по типам)** — в [catalog/](./catalog/README.md). Здесь — курируемая подборка: только то, что я реально применяю в клиентских проектах либо что массово проверено сообществом по install-count.
+**Полный сырой каталог (1411 записей по типам)** — в [catalog/](./catalog/README.md). Здесь — курируемая подборка: только то, что я реально применяю в клиентских проектах либо что массово проверено сообществом по install-count.
 
 > 📄 **[Шпаргалка на 1 страницу A4 →](./cheatsheet/)** Все горячие клавиши, слэш-команды, MCP, память, workflows, skills/agents и CLI-флаги на одном листе. Скачать [готовый PDF](./cheatsheet/cheatsheet.pdf) или открыть [index.html](./cheatsheet/index.html) → `⌘P`.
 
@@ -210,7 +210,7 @@ Skills — переиспользуемые наборы инструкций, �
 
 Sub-agent — отдельный экземпляр Claude со своим контекстом, который выполняет подзадачу и возвращает один итоговый ответ. Полезно для read-only исследования и параллельных задач. См. [официальную доку](https://code.claude.com/docs/en/sub-agents).
 
-> 📂 Полный каталог: **[157 записей →](./catalog/subagents.md)**
+> 📂 Полный каталог: **[155 записей →](./catalog/subagents.md)**
 
 ### Production-коллекции
 
@@ -802,7 +802,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 **Здесь — широта.** Кураторские рекомендации (то, что я реально применяю в работе) — в [главном README](../README.md).
 
-**Всего записей: 1413.**
+**Всего записей: 1411.**
 
 ## Разделы
 
@@ -810,7 +810,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 |---|---|---:|
 | [MCP-серверы](./mcp-servers.md) | все известные серверы из публичных awesome-lists | 814 |
 | [Скиллы](./skills.md) | скиллы под конкретные задачи | 158 |
-| [Sub-agents](./subagents.md) | специализированные субагенты | 157 |
+| [Sub-agents](./subagents.md) | специализированные субагенты | 155 |
 | [Плагины](./plugins.md) | упаковка скиллов, субагентов и MCP в один артефакт | 16 |
 | [Hooks](./hooks.md) | связанные проекты и идеи | 8 |
 | [CLAUDE.md шаблоны и opinionated-сетапы](./templates.md) | авторские конфиги | 10 |
@@ -1377,7 +1377,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [f4ww4z/mcp-mysql-server](https://github.com/f4ww4z/mcp-mysql-server)
 - [FastAlertNow/mcp-server](https://github.com/FastAlertNow/mcp-server)
 - [fasuizu-br/brainiall-mcp-server](https://github.com/fasuizu-br/brainiall-mcp-server)
-- [fernsugi/x402-api-server](https://github.com/fernsugi/x402-api-server/tree/main/mcp-server)
+- [fernsugi/x402-api-server](https://github.com/fernsugi/x402-api-server)
 - [ferrants/memvid-mcp-server](https://github.com/ferrants/memvid-mcp-server)
 - [finmap-org/mcp-server](https://github.com/finmap-org/mcp-server)
 - [fireproof-storage/mcp-database-server](https://github.com/fireproof-storage/mcp-database-server)
@@ -1731,7 +1731,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [pibblokto/cert-manager-mcp-server](https://github.com/pibblokto/cert-manager-mcp-server)
 - [pierrebrunelle/mcp-server-openai](https://github.com/pierrebrunelle/mcp-server-openai)
 - [pilat/mcp-datalink](https://github.com/pilat/mcp-datalink)
-- [PipedreamHQ/pipedream](https://github.com/PipedreamHQ/pipedream/tree/master/modelcontextprotocol)
+- [PipedreamHQ/pipedream](https://github.com/PipedreamHQ/pipedream)
 - [pkotecha-eng/aria-mcp-server](https://github.com/pkotecha-eng/aria-mcp-server)
 - [polygon-io/mcp_polygon)](https://github.com/polygon-io/mcp_polygon)
 - [pomazanbohdan/memory-mcp-1file](https://github.com/pomazanbohdan/memory-mcp-1file)
@@ -2259,7 +2259,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Субагент — отдельный экземпляр Claude со своим контекстом. Удобен для read-only исследования кодовой базы (не засоряет основной контекст) и для параллельных независимых задач.
 
-**Записей:** 157.
+**Записей:** 155.
 
 📌 Курируемая подборка — в [главном README](../README.md#sub-agents). Здесь — широкая выборка для поиска и SEO.
 
@@ -2274,7 +2274,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [@czagents/cnb](https://github.com/martinhavel/cz-agents-mcp)
 - [Agent Interviews](https://agentinterviews.com)
 - [Agent Sessions](https://github.com/jazzyalex/agent-sessions)
-- [Agent Teams Explained](https://www.turingcollege.com/blog/claude-agent-teams-explained)
 - [agent-dotfiles](https://github.com/saqibameen/agent-dotfiles)
 - [agent-flow](https://github.com/patoles/agent-flow)
 - [Agent-Fusion](https://github.com/krokozyab/Agent-Fusion)
@@ -2400,7 +2399,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [robhunter/agentdeals](https://github.com/robhunter/agentdeals)
 - [SciAgent-Skills](https://github.com/jaechang-hits/SciAgent-Skills)
 - [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)
-- [search engine for agent & mcp](http://www.deepnlp.org/search/agent)
 - [sgx-labs/statelessagent](https://github.com/sgx-labs/statelessagent)
 - [skylv-agent-evaluator](https://github.com/SKY-lv/agent-evaluator)
 - [skylv-browser-automation-agent](https://github.com/SKY-lv/browser-automation-agent)

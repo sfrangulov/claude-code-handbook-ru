@@ -29,10 +29,6 @@
       "url": "https://github.com/jazzyalex/agent-sessions"
     },
     {
-      "name": "Agent Teams Explained",
-      "url": "https://www.turingcollege.com/blog/claude-agent-teams-explained"
-    },
-    {
       "name": "agent-dotfiles",
       "url": "https://github.com/saqibameen/agent-dotfiles"
     },
@@ -531,10 +527,6 @@
     {
       "name": "scientific-agent-skills",
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
-    },
-    {
-      "name": "search engine for agent & mcp",
-      "url": "http://www.deepnlp.org/search/agent"
     },
     {
       "name": "sgx-labs/statelessagent",

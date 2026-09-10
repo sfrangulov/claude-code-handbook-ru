@@ -49,20 +49,25 @@ jobs:
         id: collect
         run: |
           DATE=$(date -u +%Y-%m-%d)
+          # markdown-link-check печатает мёртвую ссылку как "  [✖] <url> → Status: <code>".
+          # Считаем только строки со Status, иначе каждая ссылка попадёт в счёт дважды:
+          # один раз в потоковом выводе и второй — в итоговом списке "ERROR: N dead links found!".
+          PATTERN='\[✖\].*→ Status:'
           {
             echo "## Dead links report (${DATE})"
             echo
             echo "### README.md"
             echo '```'
-            grep -E '^\s*✖' /tmp/readme.log || echo '(нет)'
+            grep -E "$PATTERN" /tmp/readme.log || echo '(нет)'
             echo '```'
             echo
             echo "### catalog/"
             echo '```'
-            grep -E '^\s*✖' /tmp/catalog.log || echo '(нет)'
+            grep -E "$PATTERN" /tmp/catalog.log || echo '(нет)'
             echo '```'
           } > /tmp/report.md
-          DEAD_COUNT=$(grep -cE '^\s*✖' /tmp/readme.log /tmp/catalog.log 2>/dev/null | awk -F: '{s+=$2} END {print s+0}')
+          DEAD_COUNT=$(cat /tmp/readme.log /tmp/catalog.log 2>/dev/null | grep -cE "$PATTERN" || true)
+          echo "dead_count=${DEAD_COUNT}"
           echo "dead_count=${DEAD_COUNT}" >> "$GITHUB_OUTPUT"
 
       - name: Open issue if dead links found

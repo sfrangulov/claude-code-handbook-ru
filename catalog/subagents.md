@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Субагент — отдельный экземпляр Claude со своим контекстом. Удобен для read-only исследования кодовой базы (не засоряет основной контекст) и для параллельных независимых задач.
 
-**Записей:** 157.
+**Записей:** 155.
 
 📌 Курируемая подборка — в [главном README](../README.md#sub-agents). Здесь — широкая выборка для поиска и SEO.
 
@@ -24,7 +24,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [@czagents/cnb](https://github.com/martinhavel/cz-agents-mcp)
 - [Agent Interviews](https://agentinterviews.com)
 - [Agent Sessions](https://github.com/jazzyalex/agent-sessions)
-- [Agent Teams Explained](https://www.turingcollege.com/blog/claude-agent-teams-explained)
 - [agent-dotfiles](https://github.com/saqibameen/agent-dotfiles)
 - [agent-flow](https://github.com/patoles/agent-flow)
 - [Agent-Fusion](https://github.com/krokozyab/Agent-Fusion)
@@ -150,7 +149,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [robhunter/agentdeals](https://github.com/robhunter/agentdeals)
 - [SciAgent-Skills](https://github.com/jaechang-hits/SciAgent-Skills)
 - [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)
-- [search engine for agent & mcp](http://www.deepnlp.org/search/agent)
 - [sgx-labs/statelessagent](https://github.com/sgx-labs/statelessagent)
 - [skylv-agent-evaluator](https://github.com/SKY-lv/agent-evaluator)
 - [skylv-browser-automation-agent](https://github.com/SKY-lv/browser-automation-agent)

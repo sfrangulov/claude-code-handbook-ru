@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 **Здесь — широта.** Кураторские рекомендации (то, что я реально применяю в работе) — в [главном README](../README.md).
 
-**Всего записей: 1413.**
+**Всего записей: 1411.**
 
 ## Разделы
 
@@ -17,7 +17,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 |---|---|---:|
 | [MCP-серверы](./mcp-servers.md) | все известные серверы из публичных awesome-lists | 814 |
 | [Скиллы](./skills.md) | скиллы под конкретные задачи | 158 |
-| [Sub-agents](./subagents.md) | специализированные субагенты | 157 |
+| [Sub-agents](./subagents.md) | специализированные субагенты | 155 |
 | [Плагины](./plugins.md) | упаковка скиллов, субагентов и MCP в один артефакт | 16 |
 | [Hooks](./hooks.md) | связанные проекты и идеи | 8 |
 | [CLAUDE.md шаблоны и opinionated-сетапы](./templates.md) | авторские конфиги | 10 |
