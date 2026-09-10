@@ -57,9 +57,26 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set +e
-          node scripts/check-repos.mjs --markdown --warn > /tmp/repos.md 2>/tmp/repos.err
-          echo "exit=$?"
+          # scope=curated: два запроса вместо двух десятков. Полный каталог
+          # ловил вторичный лимит GitHub, а строгие правила и так применяются
+          # только к курируемой подборке.
+          node scripts/check-repos.mjs --scope=curated --markdown > /tmp/repos.md 2>/tmp/repos.err
+          CODE=$?
           cat /tmp/repos.err
+          # Коды выхода: 0 — чисто, 1 — есть находки, 2 — скрипт упал,
+          # 3 — часть репозиториев проверить не удалось.
+          echo "repo_exit=${CODE}"
+          echo "repo_exit=${CODE}" >> "$GITHUB_OUTPUT"
+          if [ "$CODE" = "2" ]; then
+            {
+              echo "### Метаданные репозиториев"
+              echo
+              echo "> ❌ Проверка не отработала — отчёта нет. Ошибка:"
+              echo '```'
+              tail -5 /tmp/repos.err
+              echo '```'
+            } > /tmp/repos.md
+          fi
           # Строки таблицы ошибок: всё, что не заглушка "| — | — | (нет) | — |".
           ERR=$(sed -n '/^\*\*Ошибки\*\*/,/^\*\*Предупреждения\*\*/p' /tmp/repos.md \
                 | grep -cE '^\| `' || true)
@@ -96,7 +113,7 @@ jobs:
           echo "dead_count=${DEAD_COUNT}" >> "$GITHUB_OUTPUT"
 
       - name: Open issue if dead links found
-        if: (steps.collect.outputs.dead_count != '0' || steps.repos.outputs.repo_errors != '0') && github.event_name != 'pull_request'
+        if: (steps.collect.outputs.dead_count != '0' || steps.repos.outputs.repo_exit != '0') && github.event_name != 'pull_request'
         uses: actions/github-script@v7
         env:
           DEAD_COUNT: ${{ steps.collect.outputs.dead_count }}

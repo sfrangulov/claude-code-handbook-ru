@@ -15,6 +15,7 @@
 //   node scripts/check-repos.mjs --max-age=180   # порог заброшенности, дней
 //   node scripts/check-repos.mjs --star-drift=25 # порог расхождения звёзд, %
 //   node scripts/check-repos.mjs --fix           # переписать URL переименованных
+//   node scripts/check-repos.mjs --scope=curated # только data/*.json и README.template.md
 //
 // Осознанные исключения (архив или заброшенность, оставленные намеренно)
 // перечисляются в .github/repo-check-ignore.json как { "owner/repo": "причина" }.
@@ -51,7 +52,11 @@ const FIX = has('--fix');
 const MARKDOWN = has('--markdown');
 const MAX_AGE_DAYS = num('--max-age', 180);
 const STAR_DRIFT = num('--star-drift', 25) / 100;
-const BATCH = 80;
+const BATCH = num('--batch', 60);
+const PAUSE_MS = num('--pause', 700);
+// В CI имеет смысл проверять только курируемую подборку: это 2 запроса вместо
+// двух десятков, а строгие правила всё равно применяются лишь к ней.
+const SCOPE = (argv.find((a) => a.startsWith('--scope=')) || '--scope=all').split('=')[1];
 
 // ----- сбор ссылок ----------------------------------------------------------
 
@@ -120,13 +125,15 @@ async function token() {
   }
 }
 
-async function fetchMeta(slugs, auth) {
-  const meta = new Map();
-  for (let i = 0; i < slugs.length; i += BATCH) {
-    const chunk = slugs.slice(i, i + BATCH);
-    const query = `{${chunk
-      .map(([owner, name], j) => `r${j}: repository(owner:"${owner}",name:"${name}"){nameWithOwner stargazerCount pushedAt isArchived}`)
-      .join(' ')}}`;
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+// Отличаем «репозитория нет» (null) от «не смогли проверить» (UNKNOWN):
+// молча считать второе первым — значит рапортовать о чистоте там, где
+// проверка вообще не отработала.
+const UNKNOWN = Symbol('unknown');
+
+async function graphqlBatch(query, auth) {
+  for (let attempt = 0; attempt < 5; attempt += 1) {
     const res = await fetch('https://api.github.com/graphql', {
       method: 'POST',
       headers: {
@@ -136,16 +143,45 @@ async function fetchMeta(slugs, auth) {
       },
       body: JSON.stringify({ query }),
     });
-    if (!res.ok) throw new Error(`GraphQL HTTP ${res.status}: ${(await res.text()).slice(0, 200)}`);
-    const body = await res.json();
+    if (res.ok) return res.json();
+
+    // 403 без остатка лимита — вторичный лимит GitHub против частых запросов;
+    // он снимается паузой, поэтому это не повод ронять весь прогон.
+    const retryable = res.status === 403 || res.status === 429 || res.status >= 500;
+    if (!retryable) throw new Error(`GraphQL HTTP ${res.status}: ${(await res.text()).slice(0, 200)}`);
+    const retryAfter = Number(res.headers.get('retry-after'));
+    const wait = Number.isFinite(retryAfter) && retryAfter > 0 ? retryAfter * 1000 : 2000 * 2 ** attempt;
+    process.stderr.write(`  HTTP ${res.status}, пауза ${Math.round(wait / 1000)}с (попытка ${attempt + 1}/5)\n`);
+    await sleep(wait);
+  }
+  return null; // исчерпали попытки — батч остаётся непроверенным
+}
+
+async function fetchMeta(slugs, auth) {
+  const meta = new Map();
+  let failedBatches = 0;
+  for (let i = 0; i < slugs.length; i += BATCH) {
+    const chunk = slugs.slice(i, i + BATCH);
+    const query = `{${chunk
+      .map(([owner, name], j) => `r${j}: repository(owner:"${owner}",name:"${name}"){nameWithOwner stargazerCount pushedAt isArchived}`)
+      .join(' ')}}`;
+    const body = await graphqlBatch(query, auth);
+    if (body === null) {
+      failedBatches += 1;
+      chunk.forEach(([owner, name]) => meta.set(`${owner}/${name}`.toLowerCase(), UNKNOWN));
+      continue;
+    }
     // Отсутствующие репозитории приезжают как data.rN === null рядом с errors —
     // это ожидаемо и не повод падать, поэтому errors здесь не фатальны.
     const data = body.data ?? {};
     chunk.forEach(([owner, name], j) => {
       meta.set(`${owner}/${name}`.toLowerCase(), data[`r${j}`] ?? null);
     });
+    // Пауза между батчами: без неё полтора десятка запросов подряд ловят
+    // вторичный лимит, а в GitHub Actions он срабатывает заметно раньше.
+    if (i + BATCH < slugs.length) await sleep(PAUSE_MS);
   }
-  return meta;
+  return { meta, failedBatches };
 }
 
 // ----- проверки -------------------------------------------------------------
@@ -210,7 +246,8 @@ async function applyRenames(renames) {
 }
 
 async function main() {
-  const entries = await collectEntries();
+  const all = await collectEntries();
+  const entries = SCOPE === 'curated' ? all.filter((e) => !e.file.startsWith('data/catalog/')) : all;
   const byRepo = new Map();
   for (const e of entries) {
     const m = e.url.match(REPO_URL);
@@ -224,9 +261,10 @@ async function main() {
   const ignores = await loadIgnores();
   const ignored = new Set(Object.keys(ignores).map((k) => k.toLowerCase()));
   const slugs = [...byRepo.keys()].map((s) => s.split('/'));
-  const meta = await fetchMeta(slugs, await token());
+  const { meta, failedBatches } = await fetchMeta(slugs, await token());
   const now = Date.now();
 
+  const unchecked = [];   // не удалось получить метаданные — не то же самое, что «всё чисто»
   const errors = [];      // курируемая подборка: ломает CI
   const warnings = [];    // курируемая подборка: попадает в отчёт
   const catalogNotes = []; // сырой каталог: только отчёт
@@ -241,6 +279,10 @@ async function main() {
     const curated = files.some(isCurated);
     const sink = curated ? errors : catalogNotes;
 
+    if (v === UNKNOWN) {
+      unchecked.push(slug);
+      continue;
+    }
     if (v === null || v === undefined) {
       sink.push({ slug, kind: 'нет репозитория', detail: 'GitHub отдаёт 404', where });
       continue;
@@ -288,7 +330,10 @@ async function main() {
         ? list.map((r) => `| \`${r.slug}\` | ${r.kind} | ${r.detail} | ${r.where} |`).join('\n')
         : '| — | — | (нет) | — |';
     console.log(`### Метаданные репозиториев\n`);
-    console.log(`Проверено репозиториев: ${checked}.\n`);
+    console.log(`Проверено репозиториев: ${checked - unchecked.length} из ${checked}.\n`);
+    if (unchecked.length) {
+      console.log(`> ⚠️ Не удалось проверить ${unchecked.length} репозиториев (${failedBatches} батчей упёрлись в лимит GitHub). Отчёт ниже неполный.\n`);
+    }
     console.log(`**Ошибки** (ссылка ведёт не туда или проект закрыт):\n`);
     console.log(`| Репозиторий | Что | Детали | Где |\n|---|---|---|---|\n${rows(errors)}\n`);
     console.log(`**Предупреждения** (порог: ${MAX_AGE_DAYS} дней, ${Math.round(STAR_DRIFT * 100)}% по звёздам):\n`);
@@ -297,7 +342,10 @@ async function main() {
     console.log(`| Репозиторий | Что | Детали | Где |\n|---|---|---|---|\n${rows(catalogNotes)}\n</details>`);
   } else {
     const line = (r) => `  ${r.slug.padEnd(48)} ${r.kind.padEnd(14)} ${r.detail}   [${r.where}]`;
-    console.log(`Проверено репозиториев: ${checked}`);
+    console.log(`Проверено репозиториев: ${checked - unchecked.length} из ${checked}`);
+    if (unchecked.length) {
+      console.log(`⚠ не удалось проверить: ${unchecked.length} (батчей с ошибкой: ${failedBatches}) — отчёт неполный`);
+    }
     console.log(`\n✗ ошибок: ${errors.length}`);
     errors.forEach((r) => console.log(line(r)));
     console.log(`\n⚠ предупреждений: ${warnings.length}`);
@@ -306,6 +354,7 @@ async function main() {
     if (!has('--quiet-catalog')) catalogNotes.forEach((r) => console.log(line(r)));
   }
 
+  if (unchecked.length && !WARN_ONLY) process.exit(3);
   if (errors.length && !WARN_ONLY) process.exit(1);
 }
 
