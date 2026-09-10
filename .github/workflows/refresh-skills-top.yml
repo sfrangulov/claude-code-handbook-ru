@@ -1,7 +1,12 @@
 name: Refresh top-15 skills
 
-# Weekly job: pull fresh install counts from skills.sh, regenerate README,
-# open a PR if anything changed. Manual run via workflow_dispatch.
+# Weekly job: pull fresh install counts from skills.sh, regenerate README.
+#
+# Обновление чисел уходит в main напрямую: это механическая сверка с внешним
+# источником, ревьюить там нечего. PR открывается только когда в топ вошёл
+# новый скилл — у него описание приезжает заглушкой, и её должен написать
+# человек. Раньше PR открывался всегда, и они копились: #4 провисел два
+# месяца и протух вместе с данными внутри себя.
 #
 # Security note: no untrusted event input is interpolated into run: commands.
 
@@ -39,23 +44,62 @@ jobs:
           node scripts/validate-data.mjs
           node scripts/lint-data.mjs --warn
 
-      - name: Open PR if anything changed
+      - name: Что изменилось и нужен ли человек
+        id: check
+        run: |
+          if git diff --quiet; then
+            echo "Изменений нет — числа те же."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          # Скрипт вписывает новым скиллам заглушку вместо описания.
+          NEW=$(grep -c 'новый в топе' data/skills-top.json || true)
+          echo "placeholders=${NEW}" >> "$GITHUB_OUTPUT"
+          echo "Скиллов без описания: ${NEW}"
+          if [ "$NEW" != "0" ]; then
+            SLUGS=$(node -e '
+              const d = require("./data/skills-top.json");
+              const rows = d.items.filter((e) => e.desc.includes("новый в топе"));
+              console.log(rows.map((e) => `- \`${e.slug}\` — ${e.count.toLocaleString("ru")} установок`).join("\n"));
+            ')
+            {
+              echo "slugs<<EOF"
+              echo "$SLUGS"
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Обновить числа в main
+        if: steps.check.outputs.changed == 'true' && steps.check.outputs.placeholders == '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore(skills): обновить установки топ-15 со skills.sh"
+          git push
+
+      - name: Открыть PR, если в топ вошёл скилл без описания
+        if: steps.check.outputs.changed == 'true' && steps.check.outputs.placeholders != '0'
         uses: peter-evans/create-pull-request@v8
         with:
           commit-message: 'chore(skills): refresh top-15 from skills.sh'
-          title: 'chore(skills): refresh top-15 from skills.sh'
+          title: 'chore(skills): в топ-15 вошли новые скиллы — нужны описания'
           body: |
-            Automated weekly refresh of `data/skills-top.json` and `README.md`.
+            В топ вошли скиллы, которых там раньше не было. Скрипт вписал им
+            заглушку вместо описания — её нужно заменить перед мержем:
 
-            Pipeline:
-            1. `node scripts/refresh-top-skills.mjs --write`
-            2. `node scripts/build-readme.mjs`
-            3. `node scripts/validate-data.mjs` + `lint-data.mjs --warn`
+            ${{ steps.check.outputs.slugs }}
 
-            If the diff looks wrong (zero entries, slugs renamed unexpectedly,
-            descriptions reset to placeholder), do NOT merge — investigate
-            skills.sh upstream first. New entries land with the placeholder
-            description and need a human review pass before merging.
+            Описание пишется в `data/skills-top.json`, затем
+            `node scripts/build-readme.mjs`.
+
+            Обновление одних лишь чисел в этот PR не попадает — оно уходит
+            в main напрямую.
+
+            Если диф выглядит неправильно (пусто, слаги внезапно переименованы,
+            описания сброшены в заглушку у старых записей) — не мержить,
+            сначала проверить, что происходит на стороне skills.sh.
           branch: chore/refresh-top-skills
           delete-branch: true
           labels: |

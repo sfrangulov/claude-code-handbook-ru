@@ -63,7 +63,7 @@ node scripts/check-repos.mjs --fix            # переписать URL пер�
 
 Строгость зависит от того, куда попала запись: в курируемой подборке (`data/*.json`, `README.template.md`) переименование или архив — ошибка, в сыром каталоге (`data/catalog/*.json`) те же находки идут в отчёт и CI не ломают. Если проект заброшен, но оставлен намеренно — впишите его в [`.github/repo-check-ignore.json`](./.github/repo-check-ignore.json) с причиной, и предупреждение уйдёт.
 
-Топ-15 скиллов обновляется автоматически: cron-workflow [`refresh-skills-top.yml`](./.github/workflows/refresh-skills-top.yml) раз в неделю опрашивает skills.sh и открывает PR при изменениях. Вручную:
+Топ-15 скиллов обновляется автоматически: cron-workflow [`refresh-skills-top.yml`](./.github/workflows/refresh-skills-top.yml) раз в неделю опрашивает skills.sh. Обновление одних лишь чисел уходит в `main` напрямую ботом — это механическая сверка с внешним источником. PR открывается только когда в топ вошёл **новый** скилл: его описание приезжает заглушкой, и написать его должен человек. Вручную:
 
 ```bash
 node scripts/refresh-top-skills.mjs --write   # обновляет data/skills-top.json
