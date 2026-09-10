@@ -314,20 +314,20 @@ tmux уже стоит у всех, и половина ниши построе�
 
 ### Сравнение под соло-разработчика
 
-Звёзды и дата последнего пуша — на 2026-08-27, GitHub API. Сложность — субъективная оценка времени до первого полезного запуска. Смотри на пуш раньше, чем на звёзды: половина ниши живёт один сезон.
+Звёзды и дата последнего пуша — на 2026-09-10, GitHub API. Сложность — субъективная оценка времени до первого полезного запуска. Смотри на пуш раньше, чем на звёзды: половина ниши живёт один сезон. ⚠️ — больше четырёх месяцев без коммитов.
 
 | Тулза | ⭐ | Пуш | «Забыл и ушёл» | Сложность | Под кого |
 |---|---:|---|---|---|---|
-| [gastownhall/gastown](https://github.com/gastownhall/gastown) | 17.8k | 2026-08-19 | ✅ настоящий | Высокая | Overkill для одиночки, под сложные multi-agent сценарии |
-| [sipyourdrink-ltd/bernstein](https://github.com/sipyourdrink-ltd/bernstein) | 1.0k | 2026-08-27 | ✅ настоящий | Средняя | Соло-разработчик с требованием audit-grade лога |
-| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 69.5k | 2026-08-27 | ✅ swarm | Высокая | Команды и enterprise, не для одиночки |
-| [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) | 27.9k | 2026-04-24 | ❌ полу-ручное | Низкая | Простая параллельность через kanban-доску |
+| [gastownhall/gastown](https://github.com/gastownhall/gastown) | 17.9k | 2026-09-10 | ✅ настоящий | Высокая | Overkill для одиночки, под сложные multi-agent сценарии |
+| [sipyourdrink-ltd/bernstein](https://github.com/sipyourdrink-ltd/bernstein) | 1.1k | 2026-09-10 | ✅ настоящий | Средняя | Соло-разработчик с требованием audit-grade лога |
+| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 71.8k | 2026-09-10 | ✅ swarm | Высокая | Команды и enterprise, не для одиночки |
+| [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) | 28.0k | 2026-04-24 ⚠️ | ❌ полу-ручное | Низкая | Простая параллельность через kanban-доску |
 | [smtg-ai/claude-squad](https://github.com/smtg-ai/claude-squad) | 8.4k | 2026-08-20 | ❌ ручное | Низкая | Несколько Claude-сессий в TUI |
-| [stravu/crystal (Nimbalyst)](https://github.com/stravu/crystal) | 3.1k | 2026-02-26 | ❌ полу-ручное | Низкая | Desktop GUI для сравнения подходов |
-| [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | 26.5k | 2026-08-27 | ❌ ручное | Низкая | macOS-юзеру с табами и push-нотификациями |
-| [generalaction/emdash](https://github.com/generalaction/emdash) | 5.5k | 2026-08-25 | ❌ полу-ручное | Низкая | Open-source альтернатива vibe-kanban |
+| [stravu/crystal (Nimbalyst)](https://github.com/stravu/crystal) | 3.1k | 2026-02-26 ⚠️ | ❌ полу-ручное | Низкая | Desktop GUI для сравнения подходов |
+| [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | 26.9k | 2026-09-10 | ❌ ручное | Низкая | macOS-юзеру с табами и push-нотификациями |
+| [generalaction/emdash](https://github.com/generalaction/emdash) | 5.7k | 2026-09-09 | ❌ полу-ручное | Низкая | Open-source альтернатива vibe-kanban |
 | [frankbria/ralph-claude-code](https://github.com/frankbria/ralph-claude-code) | 9.6k | 2026-07-18 | ⚠️ примитивный | Низкая | Эксперименты с Ralph-loop |
-| [humanlayer/humanlayer](https://github.com/humanlayer/humanlayer) | 11.3k | 2026-06-19 | ⚠️ approval-gated | Средняя | Сложные кодовые базы с обязательными человеческими чекпоинтами |
+| [humanlayer/humanlayer](https://github.com/humanlayer/humanlayer) | 11.5k | 2026-06-19 | ⚠️ approval-gated | Средняя | Сложные кодовые базы с обязательными человеческими чекпоинтами |
 
 ### Background runners — «забыл и ушёл»
 
