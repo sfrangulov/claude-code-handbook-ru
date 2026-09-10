@@ -13,6 +13,18 @@
       "url": "https://github.com/zubair-trabzada/ai-marketing-claude"
     },
     {
+      "name": "alexarthurs/herdr-sidebar",
+      "url": "https://github.com/alexarthurs/herdr-sidebar"
+    },
+    {
+      "name": "alexei-led/ccgram",
+      "url": "https://github.com/alexei-led/ccgram"
+    },
+    {
+      "name": "AltanS/collie",
+      "url": "https://github.com/AltanS/collie"
+    },
+    {
       "name": "Anthropic's article",
       "url": "https://www.anthropic.com/engineering/claude-think-tool"
     },
@@ -23,6 +35,10 @@
     {
       "name": "anthropics/cwc-workshops",
       "url": "https://github.com/anthropics/cwc-workshops"
+    },
+    {
+      "name": "Ataraxy-Labs/opensessions",
+      "url": "https://github.com/Ataraxy-Labs/opensessions"
     },
     {
       "name": "Auto Mode Engineering",
@@ -45,8 +61,16 @@
       "url": "https://github.com/rohitg00/awesome-claude-design"
     },
     {
+      "name": "awslabs/cli-agent-orchestrator",
+      "url": "https://github.com/awslabs/cli-agent-orchestrator"
+    },
+    {
       "name": "Bring Your AI",
       "url": "https://bringyour.ai/claude-code-to-codex"
+    },
+    {
+      "name": "ChmaraX/herdr-nvim",
+      "url": "https://github.com/ChmaraX/herdr-nvim"
     },
     {
       "name": "Claude Code AWS Gateway",
@@ -705,6 +729,10 @@
       "url": "https://github.com/siteboon/claudecodeui"
     },
     {
+      "name": "cloudmanic/herdr-plus",
+      "url": "https://github.com/cloudmanic/herdr-plus"
+    },
+    {
       "name": "Common Workflows",
       "url": "https://docs.anthropic.com/en/docs/claude-code/common-workflows"
     },
@@ -729,8 +757,16 @@
       "url": "https://github.com/derjochenmeyer/claude-code-craft-statusline"
     },
     {
+      "name": "dcolinmorgan/herdr-remote",
+      "url": "https://github.com/dcolinmorgan/herdr-remote"
+    },
+    {
       "name": "deepclaude",
       "url": "https://github.com/aattaran/deepclaude"
+    },
+    {
+      "name": "Dicklesworthstone/claude_code_agent_farm",
+      "url": "https://github.com/Dicklesworthstone/claude_code_agent_farm"
     },
     {
       "name": "Dispatch & Remote Control",
@@ -769,6 +805,10 @@
       "url": "https://github.com/mshadmanrahman/claudecode-guide"
     },
     {
+      "name": "herdrdev/herdr",
+      "url": "https://github.com/herdrdev/herdr"
+    },
+    {
       "name": "How I use Claude Code",
       "url": "https://bagerbach.com/blog/how-i-use-claude-code"
     },
@@ -789,6 +829,10 @@
       "url": "https://github.com/LukeLamb/claude-terminal-mcp"
     },
     {
+      "name": "missuo/herdrm",
+      "url": "https://github.com/missuo/herdrm"
+    },
+    {
       "name": "mobile-spine",
       "url": "https://github.com/bentleypark/claude-code-mobile-spine"
     },
@@ -801,12 +845,32 @@
       "url": "https://github.com/holt-web-ai/n8n-nodes-claudecode"
     },
     {
+      "name": "nelsonPires5/herdr-board",
+      "url": "https://github.com/nelsonPires5/herdr-board"
+    },
+    {
+      "name": "ogulcancelik/herdr-browser",
+      "url": "https://github.com/ogulcancelik/herdr-browser"
+    },
+    {
       "name": "oh-my-claudecode",
       "url": "https://github.com/Yeachan-Heo/oh-my-claudecode"
     },
     {
       "name": "optimaquantum/claude-critical-rules-mcp",
       "url": "https://github.com/optimaquantum/claude-critical-rules-mcp"
+    },
+    {
+      "name": "pchalasani/claude-code-tools",
+      "url": "https://github.com/pchalasani/claude-code-tools"
+    },
+    {
+      "name": "persiyanov/herdr-reviewr",
+      "url": "https://github.com/persiyanov/herdr-reviewr"
+    },
+    {
+      "name": "plannotator/herdr-annotate",
+      "url": "https://github.com/plannotator/herdr-annotate"
     },
     {
       "name": "ralph-claude-code",
@@ -823,6 +887,10 @@
     {
       "name": "skill-graveyard",
       "url": "https://github.com/sfrangulov/skill-graveyard"
+    },
+    {
+      "name": "smarzban/herdr-file-viewer",
+      "url": "https://github.com/smarzban/herdr-file-viewer"
     },
     {
       "name": "spec-based-claude-code",
@@ -843,6 +911,10 @@
     {
       "name": "SuperClaude",
       "url": "https://github.com/gwendall/superclaude"
+    },
+    {
+      "name": "thanhdat77/herdr-navigator",
+      "url": "https://github.com/thanhdat77/herdr-navigator"
     },
     {
       "name": "The Claude Protocol",
@@ -871,6 +943,22 @@
     {
       "name": "ybouhjira/claude-code-tts",
       "url": "https://github.com/ybouhjira/claude-code-tts"
+    },
+    {
+      "name": "yigitkonur/awesome-herdr",
+      "url": "https://github.com/yigitkonur/awesome-herdr"
+    },
+    {
+      "name": "yohey-w/multi-agent-shogun",
+      "url": "https://github.com/yohey-w/multi-agent-shogun"
+    },
+    {
+      "name": "yuk1ty/herdr-spreader",
+      "url": "https://github.com/yuk1ty/herdr-spreader"
+    },
+    {
+      "name": "ZingerLittleBee/Heeler",
+      "url": "https://github.com/ZingerLittleBee/Heeler"
     }
   ]
 }

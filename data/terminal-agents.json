@@ -1,0 +1,19 @@
+{
+  "herdrPlugins": [
+    { "name": "missuo/herdrm", "url": "https://github.com/missuo/herdrm", "desc": "Нативная macOS-консоль: все агенты и их живые терминалы, в том числе на других машинах. 668⭐." },
+    { "name": "AltanS/collie", "url": "https://github.com/AltanS/collie", "desc": "PWA для управления с телефона: доступ через tailnet, push-уведомления, быстрые действия. 910⭐." },
+    { "name": "persiyanov/herdr-reviewr", "url": "https://github.com/persiyanov/herdr-reviewr", "desc": "Сайдбар code review: комментируешь дифф — комментарий уходит обратно агенту. Плюс состояние PR и просмотр файлов. 648⭐." },
+    { "name": "smarzban/herdr-file-viewer", "url": "https://github.com/smarzban/herdr-file-viewer", "desc": "Read-only файловый вьювер с git-контекстом: дерево, диффы, рендер markdown, подсветка синтаксиса. 557⭐." },
+    { "name": "plannotator/herdr-annotate", "url": "https://github.com/plannotator/herdr-annotate", "desc": "Аннотирование текста в терминале и ответов агента — фидбек уходит прямо в сессию. 420⭐." },
+    { "name": "ogulcancelik/herdr-browser", "url": "https://github.com/ogulcancelik/herdr-browser", "desc": "Живой Chromium в панели, управляемый по CDP — фронтенд-верификация рядом с агентом. 348⭐." },
+    { "name": "dcolinmorgan/herdr-remote", "url": "https://github.com/dcolinmorgan/herdr-remote", "desc": "Наблюдение и управление из менюбара, с телефона или через Telegram. Локально без конфига, для удалёнки — свой туннель. 337⭐." }
+  ],
+  "tmux": [
+    { "name": "pchalasani/claude-code-tools → tmux-cli", "url": "https://github.com/pchalasani/claude-code-tools", "desc": "Даёт агенту управлять интерактивными программами: `launch`, `send`, `capture`, `wait_idle`, `interrupt`, `kill` по панелям. Ровно тот примитив, на котором строятся скиллы верификации. 2.0k⭐." },
+    { "name": "awslabs/cli-agent-orchestrator", "url": "https://github.com/awslabs/cli-agent-orchestrator", "desc": "Супервайзер делегирует работу агентам-специалистам параллельно или последовательно, каждый — в изолированной tmux-сессии со своей аутентификацией. От AWS Labs. 1.2k⭐." },
+    { "name": "yohey-w/multi-agent-shogun", "url": "https://github.com/yohey-w/multi-agent-shogun", "desc": "Иерархия сёгун → каро → асигару поверх tmux: параллельные задачи с явными уровнями подчинения. 1.4k⭐." },
+    { "name": "Ataraxy-Labs/opensessions", "url": "https://github.com/Ataraxy-Labs/opensessions", "desc": "Tmux-сайдбар с маркерами по тредам, живым состоянием сессий и локальным HTTP API. Поддерживает Amp, Codex и OpenCode наравне с Claude Code. 1.2k⭐." },
+    { "name": "Dicklesworthstone/claude_code_agent_farm", "url": "https://github.com/Dicklesworthstone/claude_code_agent_farm", "desc": "Ферма из 20+ параллельных агентов: координация через локи, прогоны по багам и best practices, мониторинг в tmux. 916⭐." },
+    { "name": "alexei-led/ccgram", "url": "https://github.com/alexei-led/ccgram", "desc": "Мост Telegram ↔ tmux/herdr: читать вывод, отвечать на запросы агента и вести параллельные сессии с телефона. 263⭐." }
+  ]
+}

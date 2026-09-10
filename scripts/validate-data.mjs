@@ -126,6 +126,8 @@ const PATH_SCHEMAS = {
   'hooks.observability': checkPlainEntry,
   'statuslines.items': checkPlainEntry,
   'usage-cost.items': checkPlainEntry,
+  'terminal-agents.herdrPlugins': checkPlainEntry,
+  'terminal-agents.tmux': checkPlainEntry,
   'mcp.official': checkPlainEntry,
   'mcp.curators': checkPlainEntry,
   'mcp.topDaily.items': checkBoldLinkEntry,
