@@ -27,11 +27,19 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO = join(__dirname, '..');
 const TARGET = join(REPO, 'data', 'skills-top.json');
 
+// skills.sh ищет по ИМЕНИ скилла, а не по описанию. Поэтому скилл с
+// неописательным именем невидим для тематического запроса, сколько бы
+// установок у него ни было: pbakaus/impeccable@impeccable (270K) не находится
+// ни по 'design', ни по 'frontend', ни по 'ui' — в имени нет этих слов.
+// Второй блок запросов — имена таких скиллов; пополняй его, когда замечаешь
+// популярный скилл, не попавший в выдачу.
 const SEARCH_QUERIES = [
   'code-review', 'testing', 'debugging', 'security', 'workflow',
   'react', 'git', 'refactor', 'docs', 'deploy', 'tdd', 'brainstorm',
   'performance', 'typescript', 'mcp', 'planning', 'design', 'prompt',
   'verification', 'subagent',
+  // запросы-имена, см. комментарий выше
+  'impeccable', 'taste', 'polish', 'frontend', 'ui', 'audit',
 ];
 
 const MIN_INSTALLS = 20_000;
