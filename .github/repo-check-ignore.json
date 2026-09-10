@@ -1,0 +1,11 @@
+{
+  "brennercruvinel/CCPlugins": "архив с июня 2026, оставлен намеренно — 2.8k⭐ и описание прямо предупреждает",
+  "anthropics/claude-code-security-review": "официальный экшен Anthropic; отсутствие коммитов не означает заброшенности",
+  "dair-ai/Prompt-Engineering-Guide": "учебный гайд, а не инструмент — редкие обновления это норма",
+  "ColeMurray/claude-code-otel": "заброшен, но оставлен как референсная архитектура; в описании указано",
+  "BeehiveInnovations/pal-mcp-server": "в описании проставлена дата последнего пуша",
+  "0xfurai/claude-code-subagents": "в описании проставлена дата последнего пуша",
+  "vijaythecoder/awesome-claude-agents": "в описании проставлена дата последнего пуша",
+  "disler/claude-code-hooks-multi-agent-observability": "в описании проставлена дата последнего пуша",
+  "stravu/crystal": "в таблице оркестраторов помечен ⚠ и датой пуша"
+}

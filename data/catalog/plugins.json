@@ -10,7 +10,7 @@
     },
     {
       "name": "CCPlugins",
-      "url": "https://github.com/notlikeDev/CCPlugins"
+      "url": "https://github.com/brennercruvinel/CCPlugins"
     },
     {
       "name": "claude-code-plugin",
@@ -46,7 +46,7 @@
     },
     {
       "name": "production-grade",
-      "url": "https://github.com/nagisanzenin/claude-code-production-grade-plugin"
+      "url": "https://github.com/nagisanzenin/production-grade"
     },
     {
       "name": "repo-visuals",

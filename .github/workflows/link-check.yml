@@ -45,6 +45,27 @@ jobs:
           find catalog -name '*.md' -print0 | xargs -0 -n1 markdown-link-check -c .github/markdown-link-check.json > /tmp/catalog.log 2>&1
           cat /tmp/catalog.log
 
+      # Метаданные видят то, что markdown-link-check пропускает по устройству:
+      # переименование отдаёт 301, архив и заброшенность — честные 200.
+      # На PR не гоняем: полторы тысячи репозиториев это лишняя минута и шум
+      # в чужом пул-реквесте.
+      - name: Check repo metadata
+        id: repos
+        if: github.event_name != 'pull_request'
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set +e
+          node scripts/check-repos.mjs --markdown --warn > /tmp/repos.md 2>/tmp/repos.err
+          echo "exit=$?"
+          cat /tmp/repos.err
+          # Строки таблицы ошибок: всё, что не заглушка "| — | — | (нет) | — |".
+          ERR=$(sed -n '/^\*\*Ошибки\*\*/,/^\*\*Предупреждения\*\*/p' /tmp/repos.md \
+                | grep -cE '^\| `' || true)
+          echo "repo_errors=${ERR}"
+          echo "repo_errors=${ERR}" >> "$GITHUB_OUTPUT"
+
       - name: Collect dead links
         id: collect
         run: |
@@ -65,24 +86,30 @@ jobs:
             echo '```'
             grep -E "$PATTERN" /tmp/catalog.log || echo '(нет)'
             echo '```'
+            if [ -s /tmp/repos.md ]; then
+              echo
+              cat /tmp/repos.md
+            fi
           } > /tmp/report.md
           DEAD_COUNT=$(cat /tmp/readme.log /tmp/catalog.log 2>/dev/null | grep -cE "$PATTERN" || true)
           echo "dead_count=${DEAD_COUNT}"
           echo "dead_count=${DEAD_COUNT}" >> "$GITHUB_OUTPUT"
 
       - name: Open issue if dead links found
-        if: steps.collect.outputs.dead_count != '0' && github.event_name != 'pull_request'
+        if: (steps.collect.outputs.dead_count != '0' || steps.repos.outputs.repo_errors != '0') && github.event_name != 'pull_request'
         uses: actions/github-script@v7
         env:
           DEAD_COUNT: ${{ steps.collect.outputs.dead_count }}
+          REPO_ERRORS: ${{ steps.repos.outputs.repo_errors }}
         with:
           script: |
             const fs = require('fs');
             const report = fs.readFileSync('/tmp/report.md', 'utf8');
             const dead = process.env.DEAD_COUNT;
+            const repoErrors = process.env.REPO_ERRORS || '0';
             const date = new Date().toISOString().slice(0,10);
             const body = report + '\n\n_Сгенерировано автоматически workflow `link-check.yml`._';
-            const title = `🔗 Dead links report (${date}) — ${dead} broken`;
+            const title = `🔗 Health report (${date}) — ${dead} мёртвых ссылок, ${repoErrors} по метаданным`;
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,

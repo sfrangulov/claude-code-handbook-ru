@@ -19,9 +19,9 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 - [alimo7amed93/webhook-tester-mcp](https://github.com/alimo7amed93/webhook-tester-mcp)
 - [claude-code-hooks](https://github.com/yurukusa/claude-code-hooks)
-- [claude-code-hooks](https://github.com/Payshak/claude-code-hooks)
+- [claude-code-hooks](https://github.com/KashyapV375/claude-hook-kit)
 - [claude-code-hooks](https://github.com/karanb192/claude-code-hooks)
 - [claude-code-typescript-hooks](https://github.com/bartolli/claude-code-typescript-hooks)
 - [claude-hooks-mastery](https://github.com/disler/claude-code-hooks-mastery)
-- [rins_hooks](https://github.com/rinadelph/rins_hooks)
+- [rins_hooks](https://github.com/rinadelph/Rapala)
 - [smart-approve.py](https://github.com/liberzon/claude-hooks)

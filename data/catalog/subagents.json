@@ -46,7 +46,7 @@
     },
     {
       "name": "agent-of-empires",
-      "url": "https://github.com/njbrake/agent-of-empires"
+      "url": "https://github.com/agent-of-empires/agent-of-empires"
     },
     {
       "name": "agent-rules",
@@ -98,7 +98,7 @@
     },
     {
       "name": "agentgraph-co/agentgraph",
-      "url": "https://github.com/agentgraph-co/agentgraph"
+      "url": "https://github.com/AgentAvow/AgentAvow"
     },
     {
       "name": "AgentHotspot",
@@ -114,7 +114,7 @@
     },
     {
       "name": "agentkit-seo",
-      "url": "https://github.com/agentkit-seo/agentkit-seo"
+      "url": "https://github.com/vitaecontext/vitaecontext"
     },
     {
       "name": "AgentLint",
@@ -194,7 +194,7 @@
     },
     {
       "name": "arthurpanhku/Arthor-Agent",
-      "url": "https://github.com/arthurpanhku/Arthor-Agent"
+      "url": "https://github.com/arthurpanhku/DocSentinel"
     },
     {
       "name": "awesome-ai-agents",
@@ -222,7 +222,7 @@
     },
     {
       "name": "benswel/qr-agent-core",
-      "url": "https://github.com/benswel/qr-agent-core"
+      "url": "https://github.com/benswel/qr-for-agent-api"
     },
     {
       "name": "blackwell-systems/agent-lsp",
@@ -294,7 +294,7 @@
     },
     {
       "name": "codeburn",
-      "url": "https://github.com/AgentSeal/codeburn"
+      "url": "https://github.com/getagentseal/codeburn"
     },
     {
       "name": "Context Engineering 101",
@@ -378,7 +378,7 @@
     },
     {
       "name": "Flutter Agent Skills",
-      "url": "https://github.com/flutter/skills"
+      "url": "https://github.com/flutter/agent-plugins"
     },
     {
       "name": "g1itchbot8888-del/agent-memory",
@@ -410,7 +410,7 @@
     },
     {
       "name": "hesreallyhim/awesome-claude-code-agents",
-      "url": "https://github.com/hesreallyhim/awesome-claude-code-agents"
+      "url": "https://github.com/hesreallyhim/a-list-of-claude-code-agents"
     },
     {
       "name": "hifriendbot/agentwallet-mcp",
@@ -442,7 +442,7 @@
     },
     {
       "name": "malamutemayhem/unclick-agent-native-endpoints",
-      "url": "https://github.com/malamutemayhem/unclick-agent-native-endpoints"
+      "url": "https://github.com/malamutemayhem/unclick"
     },
     {
       "name": "Mastering Claude Code: The Sub-agent Pattern",
@@ -478,7 +478,7 @@
     },
     {
       "name": "nexus-agents",
-      "url": "https://github.com/williamzujkowski/nexus-agents"
+      "url": "https://github.com/nexus-substrate/nexus-agents"
     },
     {
       "name": "nirecom/agents",
@@ -498,7 +498,7 @@
     },
     {
       "name": "operative_sh/web-eval-agent",
-      "url": "https://github.com/Operative-Sh/web-eval-agent"
+      "url": "https://github.com/refreshdotdev/web-eval-agent"
     },
     {
       "name": "oxgeneral/agentnet",
@@ -582,7 +582,7 @@
     },
     {
       "name": "Trade-Agent/trade-agent-mcp",
-      "url": "https://github.com/Trade-Agent/trade-agent-mcp"
+      "url": "https://github.com/trade-it-inc/trade-it-mcp"
     },
     {
       "name": "vijaythecoder/awesome-claude-agents",

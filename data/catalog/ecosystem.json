@@ -50,7 +50,7 @@
     },
     {
       "name": "awesome-claude",
-      "url": "https://github.com/alvinunreal/awesome-claude"
+      "url": "https://github.com/webfuse-com/awesome-claude"
     },
     {
       "name": "awesome-claude-code (hesreallyhim)",
@@ -118,7 +118,7 @@
     },
     {
       "name": "claude-balancer",
-      "url": "https://github.com/snipeship/claude-balancer"
+      "url": "https://github.com/snipeship/ccflare"
     },
     {
       "name": "claude-blocker",
@@ -146,7 +146,7 @@
     },
     {
       "name": "claude-code",
-      "url": "https://github.com/laravel/claude-code"
+      "url": "https://github.com/laravel/agent-skills"
     },
     {
       "name": "claude-code",
@@ -230,7 +230,7 @@
     },
     {
       "name": "claude-code-kimi-groq",
-      "url": "https://github.com/fakerybakery/claude-code-kimi-groq"
+      "url": "https://github.com/fakerybakery/openbridge"
     },
     {
       "name": "claude-code-leaderboard",
@@ -306,7 +306,7 @@
     },
     {
       "name": "claude-code-safety-net",
-      "url": "https://github.com/kenryu42/claude-code-safety-net"
+      "url": "https://github.com/kenryu42/cc-safety-net"
     },
     {
       "name": "claude-code-sandbox",
@@ -314,7 +314,7 @@
     },
     {
       "name": "claude-code-sdk-python",
-      "url": "https://github.com/anthropics/claude-code-sdk-python"
+      "url": "https://github.com/anthropics/claude-agent-sdk-python"
     },
     {
       "name": "claude-code-sdk-ts",
@@ -358,7 +358,7 @@
     },
     {
       "name": "claude-code-thinking-patch",
-      "url": "https://github.com/aleks-apostle/claude-code-thinking-patch"
+      "url": "https://github.com/aleks-apostle/claude-code-patches"
     },
     {
       "name": "claude-code-tips",
@@ -434,7 +434,7 @@
     },
     {
       "name": "claude-context-mode",
-      "url": "https://github.com/mksglu/claude-context-mode"
+      "url": "https://github.com/mksglu/context-mode"
     },
     {
       "name": "claude-cost-optimizer",
@@ -462,7 +462,7 @@
     },
     {
       "name": "claude-design-engineer",
-      "url": "https://github.com/Dammyjay93/claude-design-engineer"
+      "url": "https://github.com/Dammyjay93/interface-design"
     },
     {
       "name": "Claude-Flow",
@@ -482,7 +482,7 @@
     },
     {
       "name": "claude-historian",
-      "url": "https://github.com/Vvkmnn/claude-historian"
+      "url": "https://github.com/Vvkmnn/claude-historian-mcp"
     },
     {
       "name": "claude-hub",
@@ -494,11 +494,11 @@
     },
     {
       "name": "claude-island",
-      "url": "https://github.com/farouqaldori/claude-island"
+      "url": "https://github.com/farouqaldori/vibe-notch"
     },
     {
       "name": "claude-kit",
-      "url": "https://github.com/luiseiman/claude-kit"
+      "url": "https://github.com/luiseiman/dotforge"
     },
     {
       "name": "claude-mem",
@@ -522,7 +522,7 @@
     },
     {
       "name": "claude-notifications-go",
-      "url": "https://github.com/777genius/claude-notifications-go"
+      "url": "https://github.com/777genius/agent-notifications"
     },
     {
       "name": "claude-obsidian",
@@ -566,7 +566,7 @@
     },
     {
       "name": "claude-run",
-      "url": "https://github.com/kamranahmedse/claude-run"
+      "url": "https://github.com/nilbuild/claude-run"
     },
     {
       "name": "claude-scaffold",
@@ -574,7 +574,7 @@
     },
     {
       "name": "claude-select",
-      "url": "https://github.com/aeitroc/claude-select"
+      "url": "https://github.com/LLMpsycho/claude-select"
     },
     {
       "name": "claude-self-reflect",
@@ -610,11 +610,11 @@
     },
     {
       "name": "claude-starter-kit",
-      "url": "https://github.com/awrshift/claude-starter-kit"
+      "url": "https://github.com/awrshift/agent-memory-kit"
     },
     {
       "name": "claude-statusline",
-      "url": "https://github.com/luongnv89/claude-statusline"
+      "url": "https://github.com/luongnv89/context-stats"
     },
     {
       "name": "claude-subconscious",
@@ -650,7 +650,7 @@
     },
     {
       "name": "claude-user-memory",
-      "url": "https://github.com/irenicj/claude-user-memory"
+      "url": "https://github.com/VAMFI/claude-user-memory"
     },
     {
       "name": "claude-workflow-v2",
@@ -658,7 +658,7 @@
     },
     {
       "name": "claude-workspace-snapshot",
-      "url": "https://github.com/REMvisual/claude-workspace-snapshot"
+      "url": "https://github.com/REMvisual/terminal-workspace-snapshot"
     },
     {
       "name": "claude_code-gemini-mcp",
@@ -678,7 +678,7 @@
     },
     {
       "name": "ClaudeCode Launchpad CLI",
-      "url": "https://github.com/noambrand/kivun-terminal"
+      "url": "https://github.com/noambrand/Launchpad-CLI"
     },
     {
       "name": "claudecode-best-practices",
@@ -698,7 +698,7 @@
     },
     {
       "name": "ClaudeCodeNavi/claudecodenavi-mcp",
-      "url": "https://github.com/saikiyusuke/claudecodenavi-mcp"
+      "url": "https://github.com/asicojp/claudecodenavi-mcp"
     },
     {
       "name": "ClaudeCodeStatusLine",
@@ -746,7 +746,7 @@
     },
     {
       "name": "Continuous-Claude-v2",
-      "url": "https://github.com/parcadei/Continuous-Claude-v2"
+      "url": "https://github.com/parcadei/Continuous-Claude-v3"
     },
     {
       "name": "craft-statusline",
@@ -818,7 +818,7 @@
     },
     {
       "name": "leesgit/claude-session-continuity-mcp",
-      "url": "https://github.com/leesgit/claude-session-continuity-mcp"
+      "url": "https://github.com/leesgit/passbaton"
     },
     {
       "name": "LukeLamb/claude-terminal-mcp",
@@ -914,7 +914,7 @@
     },
     {
       "name": "vasylenko/claude-desktop-extension-bear-notes",
-      "url": "https://github.com/vasylenko/claude-desktop-extension-bear-notes"
+      "url": "https://github.com/vasylenko/bear-notes-mcp"
     },
     {
       "name": "veelenga/claude-mermaid",
@@ -922,7 +922,7 @@
     },
     {
       "name": "visual-claude",
-      "url": "https://github.com/thetronjohnson/visual-claude"
+      "url": "https://github.com/narnia-sh/layrr"
     },
     {
       "name": "win-claude-code",
