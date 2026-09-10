@@ -130,7 +130,7 @@ Skills — переиспользуемые наборы инструкций, �
 
 | Скилл | Зачем и когда юзать | Установок |
 |---|---|---:|
-| [mattpocock/skills@grill-with-docs](https://skills.sh/mattpocock/skills/grill-with-docs) | «Допрашивай» документацию через find/grep — заменяет догадки точными цитатами. Особенно ценно для библиотек, где знание Claude устарело. | **900K** |
+| [mattpocock/skills@grill-with-docs](https://skills.sh/mattpocock/skills/grill-with-docs) | «Допрашивай» документацию через find/grep — заменяет догадки точными цитатами. Особенно ценно для библиотек, где знание Claude устарело. | **946K** |
 | [mattpocock/skills@tdd](https://skills.sh/mattpocock/skills/tdd) | TDD-цикл (red-green-refactor) с дисциплиной — не даёт агенту писать код раньше тестов. От Matt Pocock. | **877K** |
 | [anthropics/skills@frontend-design](https://skills.sh/anthropics/skills/frontend-design) | Перестраивает дизайн в пользу bold-решений вместо дефолтных «AI slop»-карточек. Триггерь, когда видишь, что вышло generic. React + Tailwind. | **873K** |
 | [vercel-labs/agent-skills@vercel-react-best-practices](https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices) | React/Next.js — производительность по гайду Vercel: правильные границы между клиентом и RSC, кэширование, оптимизация размера бандла. Подключай в любом Next.js-проекте. | **703K** |
