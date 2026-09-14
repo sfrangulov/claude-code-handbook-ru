@@ -10,7 +10,7 @@ CI gate: node scripts/build-readme.mjs --check
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
-**Полный сырой каталог (1411 записей по типам)** — в [catalog/](./catalog/README.md). Здесь — курируемая подборка: только то, что я реально применяю в клиентских проектах либо что массово проверено сообществом по install-count.
+**Полный сырой каталог (1410 записей по типам)** — в [catalog/](./catalog/README.md). Здесь — курируемая подборка: только то, что я реально применяю в клиентских проектах либо что массово проверено сообществом по install-count.
 
 > 📄 **[Шпаргалка на 1 страницу A4 →](./cheatsheet/)** Все горячие клавиши, слэш-команды, MCP, память, workflows, skills/agents и CLI-флаги на одном листе. Скачать [готовый PDF](./cheatsheet/cheatsheet.pdf) или открыть [index.html](./cheatsheet/index.html) → `⌘P`.
 
@@ -112,7 +112,7 @@ Anthropic свёл практику команд в петлю **threat model �
 
 Skills — переиспользуемые наборы инструкций, которые Claude подгружает по триггеру. Один скилл = одна задача (TDD-цикл, code-review, performance-аудит). См. [официальный гайд](https://code.claude.com/docs/en/skills).
 
-> 📂 Полный каталог: **[158 записей →](./catalog/skills.md)**
+> 📂 Полный каталог: **[159 записей →](./catalog/skills.md)**
 
 ### Топ-15 скиллов (skills.sh)
 
@@ -184,11 +184,8 @@ Skills — переиспользуемые наборы инструкций, �
 - [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) — Работа с Obsidian: CLI и открытые форматы — Markdown, Bases, JSON Canvas. От CEO Obsidian. 48k⭐.
 - [conorluddy/ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill) — Сборка iOS-приложений, навигация по симулятору, тесты.
 - [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) — Браузерная автоматизация через Playwright.
-- [chrisvoncsefalvay/claude-d3js-skill](https://github.com/chrisvoncsefalvay/claude-d3js-skill) — Визуализации в d3.js.
 - [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) — Научные базы данных и библиотеки.
-- [jthack/ffuf_claude_skill](https://github.com/jthack/ffuf_claude_skill) — Fuzzing через `ffuf` при пентесте.
 - [yusufkaraaslan/Skill_Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) — Превращает сайт документации в Claude Skill.
-- [alonw0/web-asset-generator](https://github.com/alonw0/web-asset-generator) — Favicon, app-иконки, OG-картинки.
 - [SawyerHood/dev-browser](https://github.com/SawyerHood/dev-browser) — Даёт агенту браузер: сам открывает страницу и проверяет свою работу глазами. Альтернатива Playwright MCP. 6.4k⭐.
 - [bitjaru/styleseed](https://github.com/bitjaru/styleseed) — Дизайн-движок: учит агента дизайнерскому вкусу — 74 правила в markdown, 7 бренд-скинов и именованная motion-система. Слэш-скиллы `/ss-*`.
 - [PolarSnowflake/skills-from-expertise](https://github.com/PolarSnowflake/skills-from-expertise) — Смысловая сторона написания скиллов: как превратить экспертизу в методологию, а не в список советов. Когда брать: есть чужой материал — лекция, книга, таблица, код — и нужен из него рабочий скилл.
@@ -203,7 +200,7 @@ Skills — переиспользуемые наборы инструкций, �
 
 Sub-agent — отдельный экземпляр Claude со своим контекстом, который выполняет подзадачу и возвращает один итоговый ответ. Полезно для read-only исследования и параллельных задач. См. [официальную доку](https://code.claude.com/docs/en/sub-agents).
 
-> 📂 Полный каталог: **[155 записей →](./catalog/subagents.md)**
+> 📂 Полный каталог: **[153 записи →](./catalog/subagents.md)**
 
 ### Production-коллекции
 
@@ -448,7 +445,7 @@ Hooks — shell-команды (или HTTP / MCP / prompt-агенты), кот
 ### Community-проекты
 
 - [Hooks guide (Claude Docs)](https://code.claude.com/docs/en/hooks-guide) — Официальное руководство с рабочими примерами на каждое событие сессии.
-- [disler/claude-code-hooks-mastery](https://github.com/disler/claude-code-hooks-mastery) — Разбор всех восьми событий с готовыми обработчиками — самый полный набор примеров в сообществе. 3.9k⭐.
+- [disler/claude-code-hooks-mastery](https://github.com/disler/claude-code-hooks-mastery) — Разбор восьми базовых событий с готовыми обработчиками — по-прежнему самый подробный набор примеров. 3.9k⭐, но без обновлений с марта 2026: событий агентных команд вроде `TeammateIdle` и `TaskCompleted` там нет.
 - [GowayLee/cchooks](https://github.com/GowayLee/cchooks) — Python-SDK: типизированный разбор входного JSON и коды возврата вместо ручного парсинга stdin.
 
 ### Observability — дашборды поверх hooks

@@ -13,7 +13,7 @@
   ],
   "community": [
     { "name": "Hooks guide (Claude Docs)", "url": "https://code.claude.com/docs/en/hooks-guide", "desc": "Официальное руководство с рабочими примерами на каждое событие сессии." },
-    { "name": "disler/claude-code-hooks-mastery", "url": "https://github.com/disler/claude-code-hooks-mastery", "desc": "Разбор всех восьми событий с готовыми обработчиками — самый полный набор примеров в сообществе. 3.9k⭐." },
+    { "name": "disler/claude-code-hooks-mastery", "url": "https://github.com/disler/claude-code-hooks-mastery", "desc": "Разбор восьми базовых событий с готовыми обработчиками — по-прежнему самый подробный набор примеров. 3.9k⭐, но без обновлений с марта 2026: событий агентных команд вроде `TeammateIdle` и `TaskCompleted` там нет." },
     { "name": "GowayLee/cchooks", "url": "https://github.com/GowayLee/cchooks", "desc": "Python-SDK: типизированный разбор входного JSON и коды возврата вместо ручного парсинга stdin." }
   ],
   "observability": [

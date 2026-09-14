@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Субагент — отдельный экземпляр Claude со своим контекстом. Удобен для read-only исследования кодовой базы (не засоряет основной контекст) и для параллельных независимых задач.
 
-**Записей:** 155.
+**Записей:** 153.
 
 📌 Курируемая подборка — в [главном README](../README.md#sub-agents). Здесь — широкая выборка для поиска и SEO.
 
@@ -22,7 +22,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [49 Subagents Running 2.5 Hours](https://www.reddit.com/r/ClaudeAI/comments/1m8u4cx/wonderful_world_of_claude_code_subagents_running)
 - [7 Best CLI AI Coding Agents (Open Source)](https://www.scriptbyai.com/best-cli-ai-coding-agents)
 - [@czagents/cnb](https://github.com/martinhavel/cz-agents-mcp)
-- [Agent Interviews](https://agentinterviews.com)
 - [Agent Sessions](https://github.com/jazzyalex/agent-sessions)
 - [agent-dotfiles](https://github.com/saqibameen/agent-dotfiles)
 - [agent-flow](https://github.com/patoles/agent-flow)
@@ -159,7 +158,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [SwiftUI-Agent-Skill](https://github.com/twostraws/SwiftUI-Agent-Skill)
 - [The Agent Times](https://theagenttimes.com)
 - [Thezenmonster/agentmem](https://github.com/Thezenmonster/agentmem)
-- [thinkchainai/agentinterviews_mcp](https://github.com/thinkchainai/agentinterviews_mcp)
 - [Tinybird Multi-Agent Analytics](https://www.tinybird.co/blog-posts/multi-agent-claude-code-tinybird-code)
 - [tinyfish-io/agentql-mcp](https://github.com/tinyfish-io/agentql-mcp)
 - [Trade-Agent/trade-agent-mcp](https://github.com/trade-it-inc/trade-it-mcp)

@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Скилл подгружается автоматически, когда задача попадает под его описание — поэтому имеет смысл накопить несколько узкоспециализированных, а не один универсальный.
 
-**Записей:** 158.
+**Записей:** 159.
 
 📌 Курируемая подборка — в [главном README](../README.md#skills). Здесь — широкая выборка для поиска и SEO.
 
@@ -21,6 +21,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [add-skill](https://github.com/vercel-labs/skills)
 - [advertising-skills](https://github.com/realkimbarrett/advertising-skills)
 - [AI-research-SKILLs](https://github.com/Orchestra-Research/AI-research-SKILLs)
+- [alonw0/web-asset-generator](https://github.com/alonw0/web-asset-generator)
 - [andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
 - [android-reverse-engineering-skill](https://github.com/SimoneAvogadro/android-reverse-engineering-skill)
 - [antfu's skills](https://github.com/antfu/skills)

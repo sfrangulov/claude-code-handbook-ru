@@ -21,10 +21,6 @@
       "url": "https://github.com/martinhavel/cz-agents-mcp"
     },
     {
-      "name": "Agent Interviews",
-      "url": "https://agentinterviews.com"
-    },
-    {
       "name": "Agent Sessions",
       "url": "https://github.com/jazzyalex/agent-sessions"
     },
@@ -567,10 +563,6 @@
     {
       "name": "Thezenmonster/agentmem",
       "url": "https://github.com/Thezenmonster/agentmem"
-    },
-    {
-      "name": "thinkchainai/agentinterviews_mcp",
-      "url": "https://github.com/thinkchainai/agentinterviews_mcp"
     },
     {
       "name": "Tinybird Multi-Agent Analytics",
