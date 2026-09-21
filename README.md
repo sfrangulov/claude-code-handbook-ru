@@ -426,6 +426,7 @@ Evals — регрессионные тесты для агентного workfl
 - [TT-Wang/memem](https://github.com/TT-Wang/memem) — Постоянная память между сессиями: уроки и решения в markdown внутри Obsidian-хранилища, поиск через SQLite FTS5, разбор прошлых транскриптов. Бывший cortex-plugin.
 - [Rich627/whatsapp-claude-plugin](https://github.com/Rich627/whatsapp-claude-plugin) — Интеграция с WhatsApp.
 - [iurykrieger/claude-bedrock](https://github.com/iurykrieger/claude-bedrock) — Автоматизация «второго мозга» в Obsidian: сущности, загрузка, сжатие и синхронизация vault через скиллы Claude Code.
+- [mnemoverse/claude-plugin](https://github.com/mnemoverse/claude-plugin) — Долговременная память между сессиями на хостируемом сервере через MCP: вход по OAuth, ключ вставлять не нужно, команды `/mnemoverse:*` (remember, recall, memory-status) и скилл `agent-memory-discipline` (CC0). Когда брать: одна память нужна сразу в Claude Code, Cursor, VS Code и ChatGPT. Установка: `/plugin marketplace add mnemoverse/claude-plugin`, затем `/plugin install mnemoverse@mnemoverse`.
 
 ---
 
