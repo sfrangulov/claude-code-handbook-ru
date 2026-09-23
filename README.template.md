@@ -10,7 +10,7 @@ CI gate: node scripts/build-readme.mjs --check
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
-**Полный сырой каталог (<!-- @sum-count-ru:catalog --> по типам)** — в [catalog/](./catalog/README.md). Здесь — курируемая подборка: только то, что я реально применяю в клиентских проектах либо что массово проверено сообществом по install-count.
+**Полный сырой каталог (<!-- @sum-count-ru:catalog --> по типам)** — в [catalog/](./catalog/README.md). Для этой подборки я отобрал то, чем пользуюсь в клиентских проектах, и популярные инструменты с большим числом установок.
 
 > 📄 **[Шпаргалка на 1 страницу A4 →](./cheatsheet/)** Все горячие клавиши, слэш-команды, MCP, память, workflows, skills/agents и CLI-флаги на одном листе. Скачать [готовый PDF](./cheatsheet/cheatsheet.pdf) или открыть [index.html](./cheatsheet/index.html) → `⌘P`.
 
@@ -55,7 +55,7 @@ claude mcp add github      # @modelcontextprotocol/server-github (issues, PR)
 claude mcp add postgres    # @modelcontextprotocol/server-postgres (read-only прод)
 ```
 
-**3.** Запусти `claude` в любом репозитории и поставь набор soft-скиллов слэш-командой:
+**3.** Запусти `claude` в любом репозитории и установи superpowers командой:
 
 ```
 /plugin install superpowers@claude-plugins-official
@@ -110,13 +110,13 @@ Anthropic свёл практику команд в петлю **threat model �
 
 ## Skills
 
-Skills — переиспользуемые наборы инструкций, которые Claude подгружает по триггеру. Один скилл = одна задача (TDD-цикл, code-review, performance-аудит). См. [официальный гайд](https://code.claude.com/docs/en/skills).
+Skills - это наборы инструкций для повторяющихся задач. Claude подгружает нужный скилл, когда задача соответствует его описанию. Например, для разработки через тесты (TDD), проверки кода или поиска проблем с производительностью. См. [официальный гайд](https://code.claude.com/docs/en/skills).
 
 > 📂 Полный каталог: **[<!-- @count-ru:catalog/skills.items --> →](./catalog/skills.md)**
 
 ### Топ-15 скиллов (skills.sh)
 
-Ранжированы по install-count из [skills.sh](https://skills.sh) — реальной телеметрии маркетплейса, не звёздам. Описания в третьей колонке — мой ответ на «когда это реально нужно», а не пересказ официального README. Установка одной командой: `npx skills add <owner/repo@skill>`.
+Скиллы отсортированы по числу установок на [skills.sh](https://skills.sh). В третьей колонке я объясняю, когда каждый из них пригодится. Установка одной командой: `npx skills add <owner/repo@skill>`.
 
 <!-- @table:skills-top -->
 

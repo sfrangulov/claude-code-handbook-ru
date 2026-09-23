@@ -20,7 +20,7 @@ CI gate: node scripts/build-readme.mjs --check
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
-**Полный сырой каталог (1410 записей по типам)** — в [catalog/](./catalog/README.md). Здесь — курируемая подборка: только то, что я реально применяю в клиентских проектах либо что массово проверено сообществом по install-count.
+**Полный сырой каталог (1410 записей по типам)** — в [catalog/](./catalog/README.md). Для этой подборки я отобрал то, чем пользуюсь в клиентских проектах, и популярные инструменты с большим числом установок.
 
 > 📄 **[Шпаргалка на 1 страницу A4 →](./cheatsheet/)** Все горячие клавиши, слэш-команды, MCP, память, workflows, skills/agents и CLI-флаги на одном листе. Скачать [готовый PDF](./cheatsheet/cheatsheet.pdf) или открыть [index.html](./cheatsheet/index.html) → `⌘P`.
 
@@ -65,7 +65,7 @@ claude mcp add github      # @modelcontextprotocol/server-github (issues, PR)
 claude mcp add postgres    # @modelcontextprotocol/server-postgres (read-only прод)
 ```
 
-**3.** Запусти `claude` в любом репозитории и поставь набор soft-скиллов слэш-командой:
+**3.** Запусти `claude` в любом репозитории и установи superpowers командой:
 
 ```
 /plugin install superpowers@claude-plugins-official
@@ -120,19 +120,19 @@ Anthropic свёл практику команд в петлю **threat model �
 
 ## Skills
 
-Skills — переиспользуемые наборы инструкций, которые Claude подгружает по триггеру. Один скилл = одна задача (TDD-цикл, code-review, performance-аудит). См. [официальный гайд](https://code.claude.com/docs/en/skills).
+Skills - это наборы инструкций для повторяющихся задач. Claude подгружает нужный скилл, когда задача соответствует его описанию. Например, для разработки через тесты (TDD), проверки кода или поиска проблем с производительностью. См. [официальный гайд](https://code.claude.com/docs/en/skills).
 
 > 📂 Полный каталог: **[159 записей →](./catalog/skills.md)**
 
 ### Топ-15 скиллов (skills.sh)
 
-Ранжированы по install-count из [skills.sh](https://skills.sh) — реальной телеметрии маркетплейса, не звёздам. Описания в третьей колонке — мой ответ на «когда это реально нужно», а не пересказ официального README. Установка одной командой: `npx skills add <owner/repo@skill>`.
+Скиллы отсортированы по числу установок на [skills.sh](https://skills.sh). В третьей колонке я объясняю, когда каждый из них пригодится. Установка одной командой: `npx skills add <owner/repo@skill>`.
 
 | Скилл | Зачем и когда юзать | Установок |
 |---|---|---:|
 | [mattpocock/skills@grill-with-docs](https://skills.sh/mattpocock/skills/grill-with-docs) | «Допрашивай» документацию через find/grep — заменяет догадки точными цитатами. Особенно ценно для библиотек, где знание Claude устарело. | **1.0M** |
 | [mattpocock/skills@tdd](https://skills.sh/mattpocock/skills/tdd) | TDD-цикл (red-green-refactor) с дисциплиной — не даёт агенту писать код раньше тестов. От Matt Pocock. | **938K** |
-| [anthropics/skills@frontend-design](https://skills.sh/anthropics/skills/frontend-design) | Перестраивает дизайн в пользу bold-решений вместо дефолтных «AI slop»-карточек. Триггерь, когда видишь, что вышло generic. React + Tailwind. | **906K** |
+| [anthropics/skills@frontend-design](https://skills.sh/anthropics/skills/frontend-design) | Помогает сделать интерфейс выразительнее. Используй, если результат выглядит шаблонно, например когда Claude снова собрал страницу из одинаковых карточек. Для React и Tailwind. | **906K** |
 | [vercel-labs/agent-skills@vercel-react-best-practices](https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices) | React/Next.js — производительность по гайду Vercel: правильные границы между клиентом и RSC, кэширование, оптимизация размера бандла. Подключай в любом Next.js-проекте. | **730K** |
 | [vercel-labs/agent-skills@web-design-guidelines](https://skills.sh/vercel-labs/agent-skills/web-design-guidelines) | Чек-лист соответствия Web Interface Guidelines: a11y, hit-targets, focus rings. Запускай как ревью UI до коммита. | **652K** |
 | [mattpocock/skills@codebase-design](https://skills.sh/mattpocock/skills/codebase-design) | Единый словарь для проектирования «глубоких модулей»: много поведения за узким интерфейсом, шов в чистом месте. Берёшь, когда спор идёт о границах, а команда называет одно и то же то компонентом, то сервисом, то API. | **650K** |

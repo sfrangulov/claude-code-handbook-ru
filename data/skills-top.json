@@ -16,7 +16,7 @@
     {
       "slug": "anthropics/skills@frontend-design",
       "url": "https://skills.sh/anthropics/skills/frontend-design",
-      "desc": "Перестраивает дизайн в пользу bold-решений вместо дефолтных «AI slop»-карточек. Триггерь, когда видишь, что вышло generic. React + Tailwind.",
+      "desc": "Помогает сделать интерфейс выразительнее. Используй, если результат выглядит шаблонно, например когда Claude снова собрал страницу из одинаковых карточек. Для React и Tailwind.",
       "count": 906300
     },
     {
