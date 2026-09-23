@@ -8,3 +8,4 @@ node_modules/
 *.db
 .beads-credential-key
 .beads/.auto-import-issues.jsonl
+.beads.gate.lock
