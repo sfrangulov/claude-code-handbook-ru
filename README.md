@@ -436,6 +436,7 @@ Evals помогают проверить, стал ли агент работа
 - [Rich627/whatsapp-claude-plugin](https://github.com/Rich627/whatsapp-claude-plugin) — Интеграция с WhatsApp.
 - [iurykrieger/claude-bedrock](https://github.com/iurykrieger/claude-bedrock) — Автоматизация «второго мозга» в Obsidian: сущности, загрузка, сжатие и синхронизация vault через скиллы Claude Code.
 - [mnemoverse/claude-plugin](https://github.com/mnemoverse/claude-plugin) — Долговременная память между сессиями на хостируемом сервере через MCP: вход по OAuth, ключ вставлять не нужно, команды `/mnemoverse:*` (remember, recall, memory-status) и скилл `agent-memory-discipline` (CC0). Когда брать: одна память нужна сразу в Claude Code, Cursor, VS Code и ChatGPT. Установка: `/plugin marketplace add mnemoverse/claude-plugin`, затем `/plugin install mnemoverse@mnemoverse`.
+- [amflimited/threadfox-lite](https://github.com/amflimited/threadfox-lite) — Бесплатные read-only инструменты для исследования Reddit и скилл `reddit-rules-first`: правила сабреддита с отмеченными ограничениями на самопиар, поиск сообществ по теме, состояние аккаунта и проверка, не удалён ли пост. Читает через ваш собственный Chrome с входом в Reddit, ничего не публикует, API-ключи не нужны. Когда брать: перед запуском продукта на Reddit. Установка: `/plugin marketplace add amflimited/threadfox-lite`, затем `/plugin install threadfox-lite@threadfox`. MIT.
 
 ---
 
