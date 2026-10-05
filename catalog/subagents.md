@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Субагент — отдельный экземпляр Claude со своим контекстом. Удобен для read-only исследования кодовой базы (не засоряет основной контекст) и для параллельных независимых задач.
 
-**Записей:** 153.
+**Записей:** 152.
 
 📌 Курируемая подборка — в [главном README](../README.md#sub-agents). Здесь — широкая выборка для поиска и SEO.
 
@@ -57,7 +57,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [agentsys](https://github.com/agent-sh/agentsys)
 - [agenttrace](https://github.com/luoyuctl/agenttrace)
 - [agentward-ai/agentward](https://github.com/agentward-ai/agentward)
-- [aitytech/agentkits-memory](https://github.com/aitytech/agentkits-memory)
 - [alexfleetcommander/agent-trust-stack-mcp](https://github.com/alexfleetcommander/agent-trust-stack-mcp)
 - [Anthropic Sub-Agents Docs](https://docs.anthropic.com/en/docs/claude-code/sub-agents)
 - [aparajithn/agent-deploy-dashboard-mcp](https://github.com/aparajithn/agent-deploy-dashboard-mcp)

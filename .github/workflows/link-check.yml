@@ -115,28 +115,50 @@ jobs:
           echo "dead_count=${DEAD_COUNT}"
           echo "dead_count=${DEAD_COUNT}" >> "$GITHUB_OUTPUT"
 
-      - name: Open issue if dead links found
-        if: (steps.collect.outputs.dead_count != '0' || steps.repos.outputs.repo_exit != '0') && github.event_name != 'pull_request'
+      # Шаг идёт и при чистой проверке: раньше каждый понедельник добавлял
+      # открытый issue, прошлые никто не закрывал, и одни и те же ссылки висели
+      # в нескольких отчётах сразу. Теперь открыт максимум один отчёт: свежий
+      # закрывает прошлые, а проверка без находок закрывает то, что осталось.
+      - name: Sync health report issue
+        if: github.event_name != 'pull_request'
         uses: actions/github-script@v7
         env:
           DEAD_COUNT: ${{ steps.collect.outputs.dead_count }}
           REPO_ERRORS: ${{ steps.repos.outputs.repo_errors }}
+          REPO_EXIT: ${{ steps.repos.outputs.repo_exit }}
         with:
           script: |
             const fs = require('fs');
-            const report = fs.readFileSync('/tmp/report.md', 'utf8');
-            const dead = process.env.DEAD_COUNT;
+            const { owner, repo } = context.repo;
+            const dead = process.env.DEAD_COUNT || '0';
             const repoErrors = process.env.REPO_ERRORS || '0';
+            const hasFindings = dead !== '0' || process.env.REPO_EXIT !== '0';
             const date = new Date().toISOString().slice(0,10);
-            const body = report + '\n\n_Сгенерировано автоматически workflow `link-check.yml`._';
-            const title = `🔗 Health report (${date}) — ${dead} мёртвых ссылок, ${repoErrors} по метаданным`;
-            await github.rest.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title,
-              body,
-              labels: ['dead-link', 'maintenance'],
+
+            const open = await github.paginate(github.rest.issues.listForRepo, {
+              owner, repo, state: 'open', labels: 'dead-link,maintenance', per_page: 100,
             });
+            const previous = open.filter((i) => !i.pull_request && i.user.type === 'Bot');
+
+            let note = `Проверка от ${date} находок не дала.`;
+            if (hasFindings) {
+              const report = fs.readFileSync('/tmp/report.md', 'utf8');
+              const body = report + '\n\n_Сгенерировано автоматически workflow `link-check.yml`._';
+              const title = `🔗 Health report (${date}) — ${dead} мёртвых ссылок, ${repoErrors} по метаданным`;
+              const { data: created } = await github.rest.issues.create({
+                owner, repo, title, body,
+                labels: ['dead-link', 'maintenance'],
+              });
+              note = `Заменён свежим отчётом #${created.number}.`;
+            }
+            for (const issue of previous) {
+              await github.rest.issues.createComment({ owner, repo, issue_number: issue.number, body: note });
+              await github.rest.issues.update({
+                owner, repo, issue_number: issue.number,
+                state: 'closed',
+                state_reason: hasFindings ? 'not_planned' : 'completed',
+              });
+            }
 
       - name: Fail PR check if dead links
         if: steps.collect.outputs.dead_count != '0' && github.event_name == 'pull_request'

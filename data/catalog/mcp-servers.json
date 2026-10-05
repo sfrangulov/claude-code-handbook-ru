@@ -1561,10 +1561,6 @@
       "url": "https://github.com/klever-io/mcp-klever-vm"
     },
     {
-      "name": "knowledgepa3/gia-mcp-server",
-      "url": "https://github.com/knowledgepa3/gia-mcp-server"
-    },
-    {
       "name": "korotovsky/slack-mcp-server",
       "url": "https://github.com/korotovsky/slack-mcp-server"
     },
@@ -1811,10 +1807,6 @@
     {
       "name": "MCP Plexus",
       "url": "https://github.com/Super-I-Tech/mcp_plexus"
-    },
-    {
-      "name": "MCP Router",
-      "url": "https://mcp-router.net"
     },
     {
       "name": "MCP Router",
@@ -2553,10 +2545,6 @@
       "url": "https://github.com/sapph1re/mcp-billing-gateway-sdk"
     },
     {
-      "name": "saurav61091/mcp-openapi",
-      "url": "https://github.com/saurav61091/mcp-openapi"
-    },
-    {
       "name": "sbroenne/mcp-server-excel",
       "url": "https://github.com/sbroenne/mcp-server-excel"
     },
@@ -2959,10 +2947,6 @@
     {
       "name": "tumf/mcp-text-editor",
       "url": "https://github.com/tumf/mcp-text-editor"
-    },
-    {
-      "name": "Turbo-Puffin/measure-mcp-server",
-      "url": "https://github.com/Le-Circus/measure-mcp-server"
     },
     {
       "name": "tverney/mcp-agent-memory",

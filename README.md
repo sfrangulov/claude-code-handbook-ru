@@ -12,7 +12,7 @@ CI gate: node scripts/build-readme.mjs --check
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
-**Полный сырой каталог (1410 записей по типам)** — в [catalog/](./catalog/README.md). Для этой подборки я отобрал то, чем пользуюсь в клиентских проектах, и популярные инструменты с большим числом установок.
+**Полный сырой каталог (1405 записей по типам)** — в [catalog/](./catalog/README.md). Для этой подборки я отобрал то, чем пользуюсь в клиентских проектах, и популярные инструменты с большим числом установок.
 
 > 📄 **[Шпаргалка на 1 страницу A4 →](./cheatsheet/)** Все горячие клавиши, слэш-команды, MCP, память, workflows, skills/agents и CLI-флаги на одном листе. Скачать [готовый PDF](./cheatsheet/cheatsheet.pdf) или открыть [index.html](./cheatsheet/index.html) → `⌘P`.
 
@@ -211,7 +211,7 @@ Skills - это наборы инструкций для повторяющих�
 
 Sub-agent — отдельный экземпляр Claude со своим контекстом, который выполняет подзадачу и возвращает один итоговый ответ. Полезно для read-only исследования и параллельных задач. См. [официальную доку](https://code.claude.com/docs/en/sub-agents).
 
-> 📂 Полный каталог: **[153 записи →](./catalog/subagents.md)**
+> 📂 Полный каталог: **[152 записи →](./catalog/subagents.md)**
 
 ### Production-коллекции
 
@@ -280,7 +280,7 @@ herdr                                          # ctrl+b q — detach, herdr — 
 - [AltanS/collie](https://github.com/AltanS/collie) — PWA для управления с телефона: доступ через tailnet, push-уведомления, быстрые действия. 910⭐.
 - [persiyanov/herdr-reviewr](https://github.com/persiyanov/herdr-reviewr) — Сайдбар code review: комментируешь дифф — комментарий уходит обратно агенту. Плюс состояние PR и просмотр файлов. 648⭐.
 - [smarzban/herdr-file-viewer](https://github.com/smarzban/herdr-file-viewer) — Read-only файловый вьювер с git-контекстом: дерево, диффы, рендер markdown, подсветка синтаксиса. 557⭐.
-- [plannotator/herdr-annotate](https://github.com/plannotator/herdr-annotate) — Аннотирование текста в терминале и ответов агента — фидбек уходит прямо в сессию. 420⭐.
+- [plannotator/herdr-annotate](https://github.com/plannotator/herdr-annotate) — Аннотирование текста в терминале и ответов агента — фидбек уходит прямо в сессию. 620⭐.
 - [ogulcancelik/herdr-browser](https://github.com/ogulcancelik/herdr-browser) — Живой Chromium в панели, управляемый по CDP — фронтенд-верификация рядом с агентом. 348⭐.
 - [dcolinmorgan/herdr-remote](https://github.com/dcolinmorgan/herdr-remote) — Наблюдение и управление из менюбара, с телефона или через Telegram. Локально без конфига, для удалёнки — свой туннель. 337⭐.
 
@@ -582,7 +582,7 @@ claude plugin validate claude-code-playground/claude-code/mods/blast-radius
 
 [Model Context Protocol](https://modelcontextprotocol.io/) — стандарт подключения внешних инструментов к LLM. Все MCP-серверы работают и в Claude Code, и в Claude Desktop, и в Cursor.
 
-> 📂 Полный каталог: **[814 записей →](./catalog/mcp-servers.md)** — взято из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
+> 📂 Полный каталог: **[810 записей →](./catalog/mcp-servers.md)** — взято из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
 
 > **Правило практика:** пять хорошо подобранных MCP-серверов лучше двадцати — но не по той причине, которую обычно называют.
 >

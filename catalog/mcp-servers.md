@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 **Совет практика:** не подключай больше 5–7 серверов одновременно — каждый расходует контекст на discovery. Сначала смотри курируемую выборку в [главном README](../README.md#mcp-серверы), потом сюда — за специализированными.
 
-**Записей:** 814.
+**Записей:** 810.
 
 📌 Курируемая подборка — в [главном README](../README.md#mcp-серверы). Здесь — широкая выборка для поиска и SEO.
 
@@ -407,7 +407,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [kj455/mcp-kibela](https://github.com/kj455/mcp-kibela)
 - [Klavis-AI/YouTube](https://github.com/Klavis-AI/klavis/tree/main/mcp_servers/youtube)
 - [klever-io/mcp-klever-vm](https://github.com/klever-io/mcp-klever-vm)
-- [knowledgepa3/gia-mcp-server](https://github.com/knowledgepa3/gia-mcp-server)
 - [korotovsky/slack-mcp-server](https://github.com/korotovsky/slack-mcp-server)
 - [Kotlin MCP SDK](https://github.com/modelcontextprotocol/kotlin-sdk)
 - [KryptosAI/mcp-observatory](https://github.com/KryptosAI/mcp-observatory)
@@ -470,7 +469,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [MCP Linker](https://github.com/milisp/mcp-linker)
 - [MCP Marketplace Web Plugin](https://github.com/AI-Agent-Hub/mcp-marketplace)
 - [MCP Plexus](https://github.com/Super-I-Tech/mcp_plexus)
-- [MCP Router](https://mcp-router.net)
 - [MCP Router](https://github.com/mcp-router/mcp-router)
 - [MCP Servers Hub](https://github.com/apappascs/mcp-servers-hub)
 - [MCP Servers Search](https://github.com/atonomus/mcp-servers-search)
@@ -655,7 +653,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [sanyambassi/thales-cdsp-crdp-mcp-server](https://github.com/sanyambassi/thales-cdsp-crdp-mcp-server)
 - [sapientpants/sonarqube-mcp-server](https://github.com/sapientpants/sonarqube-mcp-server)
 - [sapph1re/mcp-billing-gateway-sdk](https://github.com/sapph1re/mcp-billing-gateway-sdk)
-- [saurav61091/mcp-openapi](https://github.com/saurav61091/mcp-openapi)
 - [sbroenne/mcp-server-excel](https://github.com/sbroenne/mcp-server-excel)
 - [schemacrawler/SchemaCrawler-MCP-Server-Usage](https://github.com/schemacrawler/SchemaCrawler-AI-MCP-Server-Usage)
 - [scrapeless-ai/scrapeless-mcp-server](https://github.com/scrapeless-ai/scrapeless-mcp-server)
@@ -757,7 +754,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [tuannvm/mcp-trino](https://github.com/tuannvm/mcp-trino)
 - [tumf/mcp-shell-server](https://github.com/tumf/mcp-shell-server)
 - [tumf/mcp-text-editor](https://github.com/tumf/mcp-text-editor)
-- [Turbo-Puffin/measure-mcp-server](https://github.com/Le-Circus/measure-mcp-server)
 - [tverney/mcp-agent-memory](https://github.com/tverney/mcp-agent-memory)
 - [twtrubiks/odoo19-mcp-server](https://github.com/twtrubiks/odoo19-mcp-server)
 - [TylerIlunga/procore-mcp-server](https://github.com/TylerIlunga/procore-mcp-server)

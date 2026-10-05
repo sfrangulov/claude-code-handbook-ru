@@ -4,7 +4,7 @@
     { "name": "AltanS/collie", "url": "https://github.com/AltanS/collie", "desc": "PWA для управления с телефона: доступ через tailnet, push-уведомления, быстрые действия. 910⭐." },
     { "name": "persiyanov/herdr-reviewr", "url": "https://github.com/persiyanov/herdr-reviewr", "desc": "Сайдбар code review: комментируешь дифф — комментарий уходит обратно агенту. Плюс состояние PR и просмотр файлов. 648⭐." },
     { "name": "smarzban/herdr-file-viewer", "url": "https://github.com/smarzban/herdr-file-viewer", "desc": "Read-only файловый вьювер с git-контекстом: дерево, диффы, рендер markdown, подсветка синтаксиса. 557⭐." },
-    { "name": "plannotator/herdr-annotate", "url": "https://github.com/plannotator/herdr-annotate", "desc": "Аннотирование текста в терминале и ответов агента — фидбек уходит прямо в сессию. 420⭐." },
+    { "name": "plannotator/herdr-annotate", "url": "https://github.com/plannotator/herdr-annotate", "desc": "Аннотирование текста в терминале и ответов агента — фидбек уходит прямо в сессию. 620⭐." },
     { "name": "ogulcancelik/herdr-browser", "url": "https://github.com/ogulcancelik/herdr-browser", "desc": "Живой Chromium в панели, управляемый по CDP — фронтенд-верификация рядом с агентом. 348⭐." },
     { "name": "dcolinmorgan/herdr-remote", "url": "https://github.com/dcolinmorgan/herdr-remote", "desc": "Наблюдение и управление из менюбара, с телефона или через Telegram. Локально без конфига, для удалёнки — свой туннель. 337⭐." }
   ],
