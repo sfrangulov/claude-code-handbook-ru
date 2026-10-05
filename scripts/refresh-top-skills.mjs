@@ -40,6 +40,9 @@ const SEARCH_QUERIES = [
   'verification', 'subagent',
   // запросы-имена, см. комментарий выше
   'impeccable', 'taste', 'polish', 'frontend', 'ui', 'audit',
+  // без этого запроса domain-modeling (750K+) то попадал в выдачу, то нет,
+  // и пятнадцатая строка топа менялась от прогона к прогону
+  'domain-modeling',
 ];
 
 const MIN_INSTALLS = 20_000;

@@ -71,7 +71,7 @@ claude mcp add postgres    # @modelcontextprotocol/server-postgres (read-only п
 /plugin install superpowers@claude-plugins-official
 ```
 
-В наборе 14 связанных скиллов (TDD, brainstorming, systematic-debugging, code-review, planning, parallel-agents, subagent-driven-development и другие). Два из них входят в [топ-15 на skills.sh](#топ-15-скиллов-skillssh). Добавлять сторонний маркетплейс больше не нужно: superpowers теперь есть в официальном маркетплейсе Anthropic. Команда `claude plugin marketplace add obra/superpowers-marketplace` нужна только для установки [девяти дополнительных плагинов](./docs/skill-families-ru.md#установка) автора.
+В наборе 14 связанных скиллов (TDD, brainstorming, systematic-debugging, code-review, planning, parallel-agents, subagent-driven-development и другие). Добавлять сторонний маркетплейс больше не нужно: superpowers теперь есть в официальном маркетплейсе Anthropic. Команда `claude plugin marketplace add obra/superpowers-marketplace` нужна только для установки [девяти дополнительных плагинов](./docs/skill-families-ru.md#установка) автора.
 
 Если не уверен, что выбрать — superpowers, скиллы Matt Pocock или ECC, — прочитай **[разбор трёх семейств →](./docs/skill-families-ru.md)**: подходы, полные списки и рекомендации, кому что подойдёт.
 
@@ -133,7 +133,7 @@ Anthropic свёл опыт команд к циклу **модель угроз
 
 **Источник:** [рейтинг skills.sh](https://skills.sh) — число установок быстро растёт, данные актуальны на момент последнего обновления. Автообновление: `node scripts/refresh-top-skills.mjs --write && node scripts/build-readme.mjs`.
 
-**Совет практика:** сразу ставь `obra/superpowers` целиком — все 14 скиллов складываются в единый рабочий процесс (TDD, отладка, планирование, мозговой штурм, ревью кода). В топ-15 из них держится только `brainstorming` — остальные тринадцать в рейтинг не попадают. Их сила в том, как они работают вместе, а не в числе установок, поэтому ставить их по одному особого смысла нет ([почему](./docs/skill-families-ru.md#obrasuperpowers--методология-которая-владеет-процессом)). Если у тебя уже есть свой процесс и готовая схема работы не нужна, бери вместо этого `mattpocock/skills` и вызывай скиллы по одному ([чем они отличаются](./docs/skill-families-ru.md#одна-таблица-чем-отличаются)). Затем добавь скиллы под свой стек (Vercel React, Convex, Firebase, Supabase, Azure). Не ставь всё подряд — каждый скилл занимает 3–5K токенов при начальной загрузке.
+**Совет практика:** сразу ставь `obra/superpowers` целиком — все 14 скиллов складываются в единый рабочий процесс (TDD, отладка, планирование, мозговой штурм, ревью кода). В топ-15 скиллы superpowers почти не попадают: их сила в совместной работе, а не в числе установок, поэтому ставить их по одному особого смысла нет ([почему](./docs/skill-families-ru.md#obrasuperpowers--методология-которая-владеет-процессом)). Если у тебя уже есть свой процесс и готовая схема работы не нужна, бери вместо этого `mattpocock/skills` и вызывай скиллы по одному ([чем они отличаются](./docs/skill-families-ru.md#одна-таблица-чем-отличаются)). Затем добавь скиллы под свой стек (Vercel React, Convex, Firebase, Supabase, Azure). Не ставь всё подряд — каждый скилл занимает 3–5K токенов при начальной загрузке.
 
 ### Официальные скиллы Anthropic
 

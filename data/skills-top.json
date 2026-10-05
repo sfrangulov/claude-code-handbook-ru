@@ -2,94 +2,94 @@
   "_comment": "Топ-15 скиллов по install-count с skills.sh. Обновляется через scripts/refresh-top-skills.mjs.",
   "items": [
     {
+      "slug": "mattpocock/skills@grill-me",
+      "url": "https://skills.sh/mattpocock/skills/grill-me",
+      "desc": "Безжалостно разбирает твой план или дизайн: агент задаёт вопрос за вопросом, пока не найдёт слабые места. Вызывается только вручную, прежде чем писать код по ещё сырой идее.",
+      "count": 1300000
+    },
+    {
       "slug": "mattpocock/skills@grill-with-docs",
       "url": "https://skills.sh/mattpocock/skills/grill-with-docs",
       "desc": "«Допрашивай» документацию через find/grep: вместо догадок получай точные цитаты. Особенно полезно для библиотек, о которых у Claude устаревшие сведения.",
+      "count": 1100000
+    },
+    {
+      "slug": "mattpocock/skills@improve-codebase-architecture",
+      "url": "https://skills.sh/mattpocock/skills/improve-codebase-architecture",
+      "desc": "Ищет в кодовой базе мелкие модули, которые стоит «углубить», начиная с участков, где код меняется чаще всего. Показывает находки в HTML-отчёте, а выбранную разбирает, задавая вопросы. Для планового рефакторинга, когда неясно, с чего начать.",
       "count": 1000000
     },
     {
       "slug": "mattpocock/skills@tdd",
       "url": "https://skills.sh/mattpocock/skills/tdd",
       "desc": "Дисциплинированный цикл TDD (red-green-refactor): не даёт агенту писать код раньше тестов. От Matt Pocock.",
-      "count": 937800
+      "count": 1000000
+    },
+    {
+      "slug": "vercel-labs/agent-browser@agent-browser",
+      "url": "https://skills.sh/vercel-labs/agent-browser/agent-browser",
+      "desc": "CLI для управления браузером: агент открывает страницы, заполняет формы, кликает, делает скриншоты и извлекает данные. Бери, когда агенту нужно проверить веб-приложение своими глазами или выполнить задачу на сайте. Умеет управлять и Electron-приложениями.",
+      "count": 957000
     },
     {
       "slug": "anthropics/skills@frontend-design",
       "url": "https://skills.sh/anthropics/skills/frontend-design",
       "desc": "Помогает сделать интерфейс выразительнее. Используй, если результат выглядит шаблонно, например когда Claude снова собрал страницу из одинаковых карточек. Для React и Tailwind.",
-      "count": 906300
+      "count": 954400
+    },
+    {
+      "slug": "mattpocock/skills@setup-matt-pocock-skills",
+      "url": "https://skills.sh/mattpocock/skills/setup-matt-pocock-skills",
+      "desc": "Настраивает репозиторий для работы с инженерными скиллами Matt Pocock: трекер задач, метки для разбора и размещение документов. Запускается один раз, перед первым использованием остальных скиллов набора.",
+      "count": 941200
+    },
+    {
+      "slug": "mattpocock/skills@handoff",
+      "url": "https://skills.sh/mattpocock/skills/handoff",
+      "desc": "Собирает краткое содержание текущего разговора в документ, по которому другой агент или новая сессия сможет продолжить работу. Пригодится, когда контекст на исходе или задачу нужно передать дальше.",
+      "count": 917300
+    },
+    {
+      "slug": "mattpocock/skills@triage",
+      "url": "https://skills.sh/mattpocock/skills/triage",
+      "desc": "Разбирает задачи и внешние PR по ролям: определяет категорию, проверяет, при необходимости задаёт уточняющие вопросы и пишет бриф, по которому агент может сразу приступить к работе. Для репозиториев, куда постоянно поступают новые задачи.",
+      "count": 889100
+    },
+    {
+      "slug": "mattpocock/skills@grilling",
+      "url": "https://skills.sh/mattpocock/skills/grilling",
+      "desc": "Тот же допрос, что в `grill-me`, но включается сам, когда ты просишь проверить план, решение или идею на прочность. `grill-me` — ручная команда для вызова этого скилла.",
+      "count": 833800
     },
     {
       "slug": "vercel-labs/agent-skills@vercel-react-best-practices",
       "url": "https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
       "desc": "Рекомендации Vercel по производительности React/Next.js: правильные границы между клиентом и RSC, кэширование, уменьшение размера бандла. Подключай в любом Next.js-проекте.",
-      "count": 730100
+      "count": 771100
     },
     {
-      "slug": "vercel-labs/agent-skills@web-design-guidelines",
-      "url": "https://skills.sh/vercel-labs/agent-skills/web-design-guidelines",
-      "desc": "Чек-лист для проверки по Web Interface Guidelines: доступность, размеры областей нажатия, рамки фокуса. Используй для ревью интерфейса перед коммитом.",
-      "count": 652300
+      "slug": "mattpocock/skills@domain-modeling",
+      "url": "https://skills.sh/mattpocock/skills/domain-modeling",
+      "desc": "Строит и уточняет модель предметной области проекта: записывает термины в `GLOSSARY.md`, а решения — в ADR. Включай, когда команда и агент называют одно и то же разными словами.",
+      "count": 753800
     },
     {
       "slug": "mattpocock/skills@codebase-design",
       "url": "https://skills.sh/mattpocock/skills/codebase-design",
       "desc": "Единый словарь для проектирования «глубоких модулей»: много возможностей за узким интерфейсом, границы в подходящих местах. Бери, когда спор идёт о границах, а команда называет одно и то же то компонентом, то сервисом, то API.",
-      "count": 649700
+      "count": 731400
     },
     {
-      "slug": "microsoft/azure-skills@azure-deploy",
-      "url": "https://skills.sh/microsoft/azure-skills/azure-deploy",
-      "desc": "Деплой в Azure: ARM/Bicep, App Service, Container Apps. Ставь, только если работаешь со стеком Azure, иначе будет зря занимать контекст.",
-      "count": 591100
+      "slug": "mattpocock/skills@diagnosing-bugs",
+      "url": "https://skills.sh/mattpocock/skills/diagnosing-bugs",
+      "desc": "Помогает диагностировать сложные баги и падение производительности. Сначала требует сделать быструю проверку, которая воспроизводит именно этот баг и даёт результат «прошло или упало», и только потом искать причину. Срабатывает, когда сообщаешь, что что-то сломалось, падает или тормозит.",
+      "count": 715200
     },
     {
-      "slug": "mattpocock/skills@code-review",
-      "url": "https://skills.sh/mattpocock/skills/code-review",
-      "desc": "Ревью диффа от заданной точки: проверяет и соблюдение стандартов репозитория, и соответствие исходной задаче. Две проверки выполняют параллельные субагенты, чтобы не засорять друг другу контекст.",
-      "count": 587900
-    },
-    {
-      "slug": "leonxlnx/taste-skill@design-taste-frontend",
-      "url": "https://skills.sh/leonxlnx/taste-skill/design-taste-frontend",
-      "desc": "По брифу определяет, каким будет дизайн, и собирает нешаблонный интерфейс; при редизайне сначала проверяет текущий. Для лендингов и портфолио, которым не подходит типовой вид.",
-      "count": 500600
-    },
-    {
-      "slug": "lllllllama/rigorpilot-skills@minimal-run-and-audit",
-      "url": "https://skills.sh/lllllllama/rigorpilot-skills/minimal-run-and-audit",
-      "desc": "Воспроизводит результаты ML-репозитория по README и сохраняет данные для проверки: запускает указанную в документации команду инференса или smoke-тест, складывает приведённые к единому формату артефакты в `repro_outputs/` и отмечает, какие файлы репозитория пришлось править. Узкая ниша: воспроизведение исследовательских результатов, а не обычная разработка.",
-      "count": 450100
-    },
-    {
-      "slug": "mattpocock/skills@git-guardrails-claude-code",
-      "url": "https://skills.sh/mattpocock/skills/git-guardrails-claude-code",
-      "desc": "Ставит PreToolUse-хук, который блокирует `git push`, `reset --hard`, `clean -f` и `branch -D` до выполнения. Простая и дешёвая страховка, если запускаешь агента в обход подтверждений.",
-      "count": 380500
-    },
-    {
-      "slug": "obra/superpowers@brainstorming",
-      "url": "https://skills.sh/obra/superpowers/brainstorming",
-      "desc": "Структурированный мозговой штурм с гипотезами и матрицей вариантов **до** написания кода. Включай, когда задача расплывчатая («сделай auth»).",
-      "count": 370100
-    },
-    {
-      "slug": "leonxlnx/taste-skill@high-end-visual-design",
-      "url": "https://skills.sh/leonxlnx/taste-skill/high-end-visual-design",
-      "desc": "Конкретные шрифты, отступы, тени и анимации, благодаря которым сайт выглядит дорого; убирает стандартные решения, выдающие ИИ-дизайн. Когда нужен дорогой вид, а не просто «аккуратно».",
-      "count": 367600
-    },
-    {
-      "slug": "nextlevelbuilder/ui-ux-pro-max-skill@ui-ux-pro-max",
-      "url": "https://skills.sh/nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max",
-      "desc": "Помогает проектировать UI/UX сразу для нескольких платформ: предлагает макеты, компоненты и правила, чтобы интерфейс не выглядел типовым. 127k⭐.",
-      "count": 364400
-    },
-    {
-      "slug": "leonxlnx/taste-skill@redesign-existing-projects",
-      "url": "https://skills.sh/leonxlnx/taste-skill/redesign-existing-projects",
-      "desc": "Проверяет работающий интерфейс: находит шаблонные решения, характерные для ИИ-дизайна, и делает его визуально дороже, сохраняя функциональность. Для редизайна существующего проекта, а не старта с нуля.",
-      "count": 364300
+      "slug": "vercel-labs/agent-skills@web-design-guidelines",
+      "url": "https://skills.sh/vercel-labs/agent-skills/web-design-guidelines",
+      "desc": "Чек-лист для проверки по Web Interface Guidelines: доступность, размеры областей нажатия, рамки фокуса. Используй для ревью интерфейса перед коммитом.",
+      "count": 700300
     }
   ]
 }
