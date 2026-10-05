@@ -2,94 +2,94 @@
   "_comment": "Топ-15 скиллов по install-count с skills.sh. Обновляется через scripts/refresh-top-skills.mjs.",
   "items": [
     {
+      "slug": "mattpocock/skills@grill-me",
+      "url": "https://skills.sh/mattpocock/skills/grill-me",
+      "desc": "_(новый в топе, допиши описание в data/skills-top.json)_",
+      "count": 1300000
+    },
+    {
       "slug": "mattpocock/skills@grill-with-docs",
       "url": "https://skills.sh/mattpocock/skills/grill-with-docs",
       "desc": "«Допрашивай» документацию через find/grep — заменяет догадки точными цитатами. Особенно ценно для библиотек, где знание Claude устарело.",
+      "count": 1100000
+    },
+    {
+      "slug": "mattpocock/skills@improve-codebase-architecture",
+      "url": "https://skills.sh/mattpocock/skills/improve-codebase-architecture",
+      "desc": "_(новый в топе, допиши описание в data/skills-top.json)_",
       "count": 1000000
     },
     {
       "slug": "mattpocock/skills@tdd",
       "url": "https://skills.sh/mattpocock/skills/tdd",
       "desc": "TDD-цикл (red-green-refactor) с дисциплиной — не даёт агенту писать код раньше тестов. От Matt Pocock.",
-      "count": 937800
+      "count": 1000000
     },
     {
       "slug": "anthropics/skills@frontend-design",
       "url": "https://skills.sh/anthropics/skills/frontend-design",
       "desc": "Помогает сделать интерфейс выразительнее. Используй, если результат выглядит шаблонно, например когда Claude снова собрал страницу из одинаковых карточек. Для React и Tailwind.",
-      "count": 906300
+      "count": 954400
+    },
+    {
+      "slug": "vercel-labs/agent-browser@agent-browser",
+      "url": "https://skills.sh/vercel-labs/agent-browser/agent-browser",
+      "desc": "_(новый в топе, допиши описание в data/skills-top.json)_",
+      "count": 953200
+    },
+    {
+      "slug": "mattpocock/skills@setup-matt-pocock-skills",
+      "url": "https://skills.sh/mattpocock/skills/setup-matt-pocock-skills",
+      "desc": "_(новый в топе, допиши описание в data/skills-top.json)_",
+      "count": 938300
+    },
+    {
+      "slug": "mattpocock/skills@handoff",
+      "url": "https://skills.sh/mattpocock/skills/handoff",
+      "desc": "_(новый в топе, допиши описание в data/skills-top.json)_",
+      "count": 917300
+    },
+    {
+      "slug": "mattpocock/skills@triage",
+      "url": "https://skills.sh/mattpocock/skills/triage",
+      "desc": "_(новый в топе, допиши описание в data/skills-top.json)_",
+      "count": 885900
+    },
+    {
+      "slug": "mattpocock/skills@grilling",
+      "url": "https://skills.sh/mattpocock/skills/grilling",
+      "desc": "_(новый в топе, допиши описание в data/skills-top.json)_",
+      "count": 833800
     },
     {
       "slug": "vercel-labs/agent-skills@vercel-react-best-practices",
       "url": "https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
       "desc": "React/Next.js — производительность по гайду Vercel: правильные границы между клиентом и RSC, кэширование, оптимизация размера бандла. Подключай в любом Next.js-проекте.",
-      "count": 730100
+      "count": 770100
     },
     {
-      "slug": "vercel-labs/agent-skills@web-design-guidelines",
-      "url": "https://skills.sh/vercel-labs/agent-skills/web-design-guidelines",
-      "desc": "Чек-лист соответствия Web Interface Guidelines: a11y, hit-targets, focus rings. Запускай как ревью UI до коммита.",
-      "count": 652300
+      "slug": "mattpocock/skills@domain-modeling",
+      "url": "https://skills.sh/mattpocock/skills/domain-modeling",
+      "desc": "_(новый в топе, допиши описание в data/skills-top.json)_",
+      "count": 753800
     },
     {
       "slug": "mattpocock/skills@codebase-design",
       "url": "https://skills.sh/mattpocock/skills/codebase-design",
       "desc": "Единый словарь для проектирования «глубоких модулей»: много поведения за узким интерфейсом, шов в чистом месте. Берёшь, когда спор идёт о границах, а команда называет одно и то же то компонентом, то сервисом, то API.",
-      "count": 649700
+      "count": 728600
     },
     {
-      "slug": "microsoft/azure-skills@azure-deploy",
-      "url": "https://skills.sh/microsoft/azure-skills/azure-deploy",
-      "desc": "Деплой в Azure: ARM/Bicep, App Service, Container Apps. Ставь только если работаешь в Azure-стеке — иначе мёртвый груз в контексте.",
-      "count": 591100
+      "slug": "mattpocock/skills@diagnosing-bugs",
+      "url": "https://skills.sh/mattpocock/skills/diagnosing-bugs",
+      "desc": "_(новый в топе, допиши описание в data/skills-top.json)_",
+      "count": 715200
     },
     {
-      "slug": "mattpocock/skills@code-review",
-      "url": "https://skills.sh/mattpocock/skills/code-review",
-      "desc": "Ревью диффа от заданной точки сразу по двум осям: соответствие стандартам репозитория и соответствие исходной задаче. Оси гоняются параллельными субагентами, чтобы не засоряли контекст друг другу.",
-      "count": 587900
-    },
-    {
-      "slug": "leonxlnx/taste-skill@design-taste-frontend",
-      "url": "https://skills.sh/leonxlnx/taste-skill/design-taste-frontend",
-      "desc": "Выводит дизайн-направление из брифа и собирает не-шаблонный интерфейс; на редизайне сначала аудитит текущий. Для лендингов и портфолио, когда generic-вид не годится.",
-      "count": 500600
-    },
-    {
-      "slug": "lllllllama/rigorpilot-skills@minimal-run-and-audit",
-      "url": "https://skills.sh/lllllllama/rigorpilot-skills/minimal-run-and-audit",
-      "desc": "Воспроизведение ML-репозитория по README с проверяемыми следами: прогоняет документированную команду инференса или smoke-тест и складывает нормализованные артефакты в `repro_outputs/`, отмечая, какие файлы репозитория пришлось править. Узкая ниша — ресёрч-репродукция, а не обычная разработка.",
-      "count": 450100
-    },
-    {
-      "slug": "mattpocock/skills@git-guardrails-claude-code",
-      "url": "https://skills.sh/mattpocock/skills/git-guardrails-claude-code",
-      "desc": "Ставит PreToolUse-хук, который блокирует `git push`, `reset --hard`, `clean -f` и `branch -D` до выполнения. Дешёвая страховка, если гоняешь агента в обход подтверждений.",
-      "count": 380500
-    },
-    {
-      "slug": "obra/superpowers@brainstorming",
-      "url": "https://skills.sh/obra/superpowers/brainstorming",
-      "desc": "Структурированный брейншторм с гипотезами и матрицей вариантов **до** начала кода. Включай, когда задача расплывчатая («сделай auth»).",
-      "count": 370100
-    },
-    {
-      "slug": "leonxlnx/taste-skill@high-end-visual-design",
-      "url": "https://skills.sh/leonxlnx/taste-skill/high-end-visual-design",
-      "desc": "Конкретные шрифты, отступы, тени и анимации, от которых сайт выглядит дорого; убирает дефолты, по которым виден AI-дизайн. Когда нужен premium-look, а не просто «аккуратно».",
-      "count": 367600
-    },
-    {
-      "slug": "nextlevelbuilder/ui-ux-pro-max-skill@ui-ux-pro-max",
-      "url": "https://skills.sh/nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max",
-      "desc": "Дизайн-интеллект для UI/UX сразу под несколько платформ: макеты, компоненты и правила, чтобы интерфейс не выглядел дефолтным. 127k⭐.",
-      "count": 364400
-    },
-    {
-      "slug": "leonxlnx/taste-skill@redesign-existing-projects",
-      "url": "https://skills.sh/leonxlnx/taste-skill/redesign-existing-projects",
-      "desc": "Аудит живого интерфейса: находит generic AI-паттерны и подтягивает до premium, не ломая функциональность. Для редизайна существующего проекта, а не старта с нуля.",
-      "count": 364300
+      "slug": "vercel-labs/agent-skills@web-design-guidelines",
+      "url": "https://skills.sh/vercel-labs/agent-skills/web-design-guidelines",
+      "desc": "Чек-лист соответствия Web Interface Guidelines: a11y, hit-targets, focus rings. Запускай как ревью UI до коммита.",
+      "count": 699200
     }
   ]
 }
