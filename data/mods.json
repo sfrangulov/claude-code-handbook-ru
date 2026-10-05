@@ -1,0 +1,61 @@
+{
+  "official": [
+    {
+      "name": "Обзор модов (Claude Docs)",
+      "url": "https://code.claude.com/docs/ru/plugins/mods/overview",
+      "desc": "Вводный материал на русском: что мод умеет, где он рисует, как его включить и выключить, чему ты доверяешь при установке."
+    },
+    {
+      "name": "Создание мода (Claude Docs)",
+      "url": "https://code.claude.com/docs/ru/plugins/mods/create",
+      "desc": "Оба способа: попросить Claude и написать вручную. Разобраны цикл «правка → hot reload», типы для твоей версии Claude Code и публикация через маркетплейс."
+    },
+    {
+      "name": "Справочник по модам (Claude Docs)",
+      "url": "https://code.claude.com/docs/ru/plugins/mods/reference",
+      "desc": "События, методы `$`, элементы интерфейса и лимиты в одном списке. Открывай, когда уже пишешь мод."
+    },
+    {
+      "name": "Getting started with Claude Code mods",
+      "url": "https://claude.dev/blog/getting-started-with-claude-code-mods/",
+      "desc": "Руководство Эдди Османи в блоге Anthropic: мод Token Weather собирается с нуля примерно в 80 строк, затем идут разборы Blast Radius и Replay Theater. В конце — четыре полезные привычки, например хранить данные в `$.state`, потому что hot reload заново запускает `register`."
+    },
+    {
+      "name": "anthropics/claude-code-playground → mods",
+      "url": "https://github.com/anthropics/claude-code-playground/tree/main/claude-code/mods",
+      "desc": "Три примера от Anthropic: `token-weather` рисует над промптом прогноз заполнения контекста; `blast-radius` приостанавливает `rm -rf` и force push и показывает, что они изменят; `replay-theater` по команде `/replay` воспроизводит правки прошлого хода. Поддержки нет, но в README каждого описано, как он устроен. 113⭐."
+    },
+    {
+      "name": "anthropics/claude-code → mods",
+      "url": "https://github.com/anthropics/claude-code/tree/main/mods",
+      "desc": "Исходники встроенных модов с тестами: панель `/diff`, загрузка `AGENTS.md`, защитный мод `sec-default` и `telemetry`. Образец для собственного мода, который контролирует соблюдение правил."
+    },
+    {
+      "name": "Issue #91870: Mods — make Claude 10x more extensible",
+      "url": "https://github.com/anthropics/claude-code/issues/91870",
+      "desc": "История разработки: предложение function hooks от 3 сентября 2026 с архитектурным документом и минутными видео. По нему видно, почему API устроен как цепочка middleware с `next`."
+    }
+  ],
+  "community": [
+    {
+      "name": "karanb192/awesome-claude-code-mods",
+      "url": "https://github.com/karanb192/awesome-claude-code-mods",
+      "desc": "Каталог публичных модов, который автоматически собирается сканером GitHub: больше 1700 на 4 октября 2026. Для каждого указано, что он, по отчёту валидатора, читает, пишет, запускает и отправляет в сеть. Каталог независимый, не от Anthropic; версия с поиском — на [mods.aidojo.si](https://mods.aidojo.si/). 178⭐."
+    },
+    {
+      "name": "hamzafer/claude-code-mods",
+      "url": "https://github.com/hamzafer/claude-code-mods",
+      "desc": "Двадцать модов в одном маркетплейсе, с CI. Для начала подойдёт `context-bar`: показывает, чем заполнен контекст, и, по данным валидатора, читает только статистику использования сессии. У `where-am-i` и `mission-control` в `calls:` указан `$.model.complete`, то есть они расходуют твой лимит; `mission-control` ещё пишет файлы и запускает процессы. 93⭐."
+    },
+    {
+      "name": "karanb192/cache-tax",
+      "url": "https://github.com/karanb192/cache-tax",
+      "desc": "Обновляет кэш промпта, пока тебя нет, и заранее показывает, во сколько обойдётся запрос после истечения срока действия кэша. Для обновления использует `$.model.fork`: это API-запрос с записью сессии, на него расходуются токены, а выигрыш зависит от длины перерыва и TTL кэша. По данным валидатора, прямых вызовов файлового, процессного и HTTP API нет. 40⭐."
+    },
+    {
+      "name": "artemnovichkov/xcode-mods",
+      "url": "https://github.com/artemnovichkov/xcode-mods",
+      "desc": "Сборка, тесты, консоль и SwiftUI-превью Xcode в панели Claude Code. Нужен Xcode 27+ с MCP-сервером в режиме без интерфейса, а для превью — ещё и терминал с kitty graphics protocol или Desktop. По клавише `x` отправляет Claude промпт вроде «почини тесты» (`$.prompt.submit`). 16⭐."
+    }
+  ]
+}

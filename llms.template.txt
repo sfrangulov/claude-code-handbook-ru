@@ -26,6 +26,7 @@
 - [Оркестрация и параллельные агенты](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#оркестрация-и-параллельные-агенты): внешние тулы для нескольких Claude разом — background runners, parallel GUI/kanban, autonomous loops
 - [Workflow-методологии](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#workflow-методологии): opinionated циклы spec → plan → ship (Spec Kit, BMAD, gstack, OpenSpec, GSD, Compound Engineering) + cross-model связка Claude с Codex/Gemini/GPT
 - [Evals](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#evals): регрессионные тесты для агентных workflow — гайды Anthropic, двухслойный грейдер, promptfoo / inspect_ai / deepeval / phoenix / tau2-bench
+- [Mods](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#mods): плагины на основе function hooks, работающие внутри процесса Claude Code (2.1.287+) — сравнение с settings hooks / skills / MCP, проверка с помощью claude plugin validate, примеры от Anthropic и каталог модов от сообщества
 - [Шаблоны CLAUDE.md](https://github.com/sfrangulov/claude-code-handbook-ru/tree/main/examples): production-конфиги под Next.js, Python/FastAPI, Terraform
 - [Полный каталог: <!-- @sum-count-ru:catalog -->](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/catalog/README.md): сырая выгрузка по всем типам без курирования
 

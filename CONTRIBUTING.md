@@ -21,7 +21,7 @@
 
 `README.md` и `catalog/*.md` — генерируемые артефакты. Источник правды:
 
-- `data/*.json` — кураторские списки и таблицы для главного README (skills, subagents, plugins, hooks, MCP, templates, ru-content, security, misc, skills-top).
+- `data/*.json` — кураторские списки и таблицы для главного README (skills, subagents, plugins, hooks, mods, MCP, templates, ru-content, security, misc, skills-top).
 - `data/catalog/*.json` — широкий каталог (8 файлов, 1400+ записей формата `{name, url}` без описаний).
 - `README.template.md` и `catalog/*.template.md` — статичная проза, заголовки, маркеры вставки данных.
 

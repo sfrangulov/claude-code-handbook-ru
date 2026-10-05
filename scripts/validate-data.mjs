@@ -124,6 +124,8 @@ const PATH_SCHEMAS = {
   'hooks.local': checkPlainEntry,
   'hooks.community': checkPlainEntry,
   'hooks.observability': checkPlainEntry,
+  'mods.official': checkPlainEntry,
+  'mods.community': checkPlainEntry,
   'statuslines.items': checkPlainEntry,
   'usage-cost.items': checkPlainEntry,
   'terminal-agents.herdrPlugins': checkPlainEntry,
