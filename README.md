@@ -12,7 +12,7 @@ CI gate: node scripts/build-readme.mjs --check
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
-**Полный сырой каталог (1405 записей по типам)** — в [catalog/](./catalog/README.md). Для этой подборки я отобрал то, чем пользуюсь в клиентских проектах, и популярные инструменты с большим числом установок.
+**Полный сырой каталог (1404 записи по типам)** — в [catalog/](./catalog/README.md). Для этой подборки я отобрал то, чем пользуюсь в клиентских проектах, и популярные инструменты с большим числом установок.
 
 > 📄 **[Шпаргалка на 1 страницу A4 →](./cheatsheet/)** Все горячие клавиши, слэш-команды, MCP, память, workflows, skills/agents и CLI-флаги на одном листе. Скачать [готовый PDF](./cheatsheet/cheatsheet.pdf) или открыть [index.html](./cheatsheet/index.html) → `⌘P`.
 

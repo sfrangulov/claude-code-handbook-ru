@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Качество смешанное — это широкая выборка, не отбор. Используй для поиска нишевых решений по теме.
 
-**Записей:** 238.
+**Записей:** 237.
 
 📌 Курируемая подборка — в [главном README](../README.md). Здесь — широкая выборка для поиска и SEO.
 
@@ -17,7 +17,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 ---
 
-- [20alexl/claude-engram](https://github.com/20alexl/claude-engram)
 - [aby-claude-watcher](https://github.com/aby-agency/aby-claude-watcher)
 - [ai-marketing-claude](https://github.com/zubair-trabzada/ai-marketing-claude)
 - [alexarthurs/herdr-sidebar](https://github.com/alexarthurs/herdr-sidebar)
