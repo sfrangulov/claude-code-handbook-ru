@@ -284,8 +284,8 @@
     <div class="header">
       <h1>Claude Code — шпаргалка<span class="sub">CLI-агент Anthropic, всё на одну страницу</span></h1>
       <div class="header-meta">
-        <span class="v">соответствует Claude Code 2.1.247</span><br>
-        обновлено: 2026-09-10 · <a href="https://github.com/sfrangulov/claude-code-handbook-ru">handbook-ru</a>
+        <span class="v">соответствует Claude Code 2.1.289</span><br>
+        обновлено: 2026-10-05 · <a href="https://github.com/sfrangulov/claude-code-handbook-ru">handbook-ru</a>
       </div>
     </div>
 
@@ -358,7 +358,6 @@
           <div class="row"><span class="key">/vim</span><span class="desc">vim-режим ввода</span></div>
           <div class="row"><span class="key">/theme</span><span class="desc">сменить цветовую тему</span></div>
           <div class="row"><span class="key">/permissions</span><span class="desc">просмотр/правка permissions</span></div>
-          <div class="row"><span class="key">/effort [level]</span><span class="desc">low·medium·high·xhigh·max</span></div>
           <div class="row"><span class="key">/color [c]</span><span class="desc">цвет промпт-бара</span></div>
           <div class="row"><span class="key">/keybindings</span><span class="desc">переназначить хоткеи</span></div>
           <div class="row"><span class="key">/terminal-setup</span><span class="desc">настроить терминал под CC</span></div>
@@ -369,7 +368,7 @@
           <div class="row"><span class="key">/mcp</span><span class="desc">управление MCP-серверами</span></div>
           <div class="row"><span class="key">/hooks</span><span class="desc">управление hooks</span></div>
           <div class="row"><span class="key">/skills</span><span class="desc">список доступных skills</span></div>
-          <div class="row"><span class="key">/agents</span><span class="desc">управление субагентами</span></div>
+          <div class="row"><span class="key">/plugin</span><span class="desc">плагины и моды: поставить, выключить</span></div>
           <div class="row"><span class="key">/chrome</span><span class="desc">интеграция с Chrome</span></div>
           <div class="row"><span class="key">/reload-plugins</span><span class="desc">hot-reload плагинов</span></div>
           <div class="row"><span class="key">/add-dir &lt;path&gt;</span><span class="desc">добавить рабочий каталог</span></div>
@@ -394,6 +393,11 @@
           <div class="row"><span class="key">/code-review [ultra]</span><span class="desc">ревью диффа; ultra — облачный&nbsp;<span class="badge-new">NEW</span></span></div>
           <div class="row"><span class="key">/help</span><span class="desc">помощь и список команд</span></div>
           <div class="row"><span class="key">/release-notes</span><span class="desc">changelog Claude Code</span></div>
+
+          <div class="sub-header">Моды (плагины из function hooks)</div>
+          <div class="row"><span class="key">/plugin-authoring</span><span class="desc">Claude пишет мод&nbsp;<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">claude plugin validate</span><span class="desc">что умеет мод, без запуска</span></div>
+          <div class="row"><span class="key">--plugin-dir &lt;dir&gt;</span><span class="desc">загрузить мод на одну сессию</span></div>
         </div>
       </div>
 
@@ -489,9 +493,9 @@
           <div class="row"><span class="key">agent teams</span><span class="desc">тиммейт = Agent(name); env …AGENT_TEAMS=1&nbsp;<span class="badge-exp">exp</span></span></div>
 
           <div class="sub-header">Ultracode</div>
-          <div class="row"><span class="key">/effort ultracode</span><span class="desc">xhigh + авто-workflow на каждую задачу</span></div>
+          <div class="row"><span class="key">/effort ultracode</span><span class="desc">авто-workflow на каждую задачу</span></div>
           <div class="row"><span class="key">требует</span><span class="desc">xhigh-модель + workflows в /config; на сессию</span></div>
-          <div class="row"><span class="key">/effort high</span><span class="desc">вернуться к рутине</span></div>
+          <div class="row"><span class="key">/effort ultracode off</span><span class="desc">вернуться к рутине</span></div>
 
           <div class="sub-header">Расписание и cloud</div>
           <div class="row"><span class="key">/loop 5m msg</span><span class="desc">повторяющийся промпт в живой сессии</span></div>
