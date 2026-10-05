@@ -287,7 +287,7 @@ herdr                                          # ctrl+b q — detach, herdr — 
 Вокруг herdr выросла экосистема: доступ с телефона, ревью диффов, браузер в панели. Ниже — по одному на сценарий; полный список в [маркетплейсе](https://herdr.dev/plugins/) и в кураторском [yigitkonur/awesome-herdr](https://github.com/yigitkonur/awesome-herdr) (тулы, конфиги, клиенты, скиллы, интеграции).
 
 - [missuo/herdrm](https://github.com/missuo/herdrm) — Нативная macOS-консоль: все агенты и их живые терминалы, в том числе на других машинах. 668⭐.
-- [AltanS/collie](https://github.com/AltanS/collie) — PWA для управления с телефона: доступ через tailnet, push-уведомления, быстрые действия. 910⭐.
+- [AltanS/collie](https://github.com/AltanS/collie) — PWA для управления с телефона: доступ через tailnet, push-уведомления, быстрые действия. 1.2k⭐.
 - [persiyanov/herdr-reviewr](https://github.com/persiyanov/herdr-reviewr) — Сайдбар code review: комментируешь дифф — комментарий уходит обратно агенту. Плюс состояние PR и просмотр файлов. 648⭐.
 - [smarzban/herdr-file-viewer](https://github.com/smarzban/herdr-file-viewer) — Read-only файловый вьювер с git-контекстом: дерево, диффы, рендер markdown, подсветка синтаксиса. 557⭐.
 - [plannotator/herdr-annotate](https://github.com/plannotator/herdr-annotate) — Аннотирование текста в терминале и ответов агента — фидбек уходит прямо в сессию. 620⭐.
