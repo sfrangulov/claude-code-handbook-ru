@@ -1,50 +1,50 @@
 {
   "official": [
-    { "name": "anthropics/skills/docx", "url": "https://github.com/anthropics/skills/tree/main/skills/docx", "desc": "Word-документы с tracked changes и комментариями." },
-    { "name": "anthropics/skills/pdf", "url": "https://github.com/anthropics/skills/tree/main/skills/pdf", "desc": "Извлечение текста и таблиц, merge/split, заполнение форм." },
-    { "name": "anthropics/skills/pptx", "url": "https://github.com/anthropics/skills/tree/main/skills/pptx", "desc": "PowerPoint: layouts, шаблоны, графики, авто-генерация слайдов." },
+    { "name": "anthropics/skills/docx", "url": "https://github.com/anthropics/skills/tree/main/skills/docx", "desc": "Word-документы с отслеживанием изменений и комментариями." },
+    { "name": "anthropics/skills/pdf", "url": "https://github.com/anthropics/skills/tree/main/skills/pdf", "desc": "Извлечение текста и таблиц, объединение и разделение PDF, заполнение форм." },
+    { "name": "anthropics/skills/pptx", "url": "https://github.com/anthropics/skills/tree/main/skills/pptx", "desc": "PowerPoint: макеты, шаблоны, графики, автоматическое создание слайдов." },
     { "name": "anthropics/skills/xlsx", "url": "https://github.com/anthropics/skills/tree/main/skills/xlsx", "desc": "Excel: формулы, форматирование, анализ." },
-    { "name": "anthropics/skills/frontend-design", "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design", "desc": "Bold-дизайн без «AI slop». React + Tailwind." },
+    { "name": "anthropics/skills/frontend-design", "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design", "desc": "Смелый дизайн без «AI slop». React + Tailwind." },
     { "name": "anthropics/skills/web-artifacts-builder", "url": "https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder", "desc": "HTML-артефакты на React + Tailwind + shadcn/ui." },
     { "name": "anthropics/skills/mcp-builder", "url": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder", "desc": "Пошаговое создание MCP-серверов." },
     { "name": "anthropics/skills/webapp-testing", "url": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing", "desc": "Тестирование веб-приложений через Playwright." },
-    { "name": "anthropics/skills/skill-creator", "url": "https://github.com/anthropics/skills/tree/main/skills/skill-creator", "desc": "Интерактивное создание собственных скиллов через Q&A." },
-    { "name": "anthropics/cwc-workshops/eval-audit-and-sweep", "url": "https://github.com/anthropics/cwc-workshops/tree/main/rightmodel/.claude/skills/eval-audit-and-sweep", "desc": "Двухфазный playbook из воркшопа Picking the Right Model: аудит evals по чеклисту надёжности (дизайн задач, harness, метрики, LLM-судья), затем sweep по сетке модель × thinking × effort с ценой и скоростью на ячейку. Подходит для любого eval-фреймворка." }
+    { "name": "anthropics/skills/skill-creator", "url": "https://github.com/anthropics/skills/tree/main/skills/skill-creator", "desc": "Интерактивное создание собственных скиллов через вопросы и ответы." },
+    { "name": "anthropics/cwc-workshops/eval-audit-and-sweep", "url": "https://github.com/anthropics/cwc-workshops/tree/main/rightmodel/.claude/skills/eval-audit-and-sweep", "desc": "Двухэтапная методика из воркшопа Picking the Right Model: сначала аудит evals по чек-листу надёжности (устройство задач, обвязка, метрики, LLM-судья), затем перебор сочетаний модели, thinking и effort с замером цены и скорости для каждого сочетания. Подходит для любого eval-фреймворка." }
   ],
   "communityCollections": [
-    { "name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "desc": "14 связанных скиллов, образующих методологию: брейншторм → план → TDD → ревью → мерж. Срабатывают автоматически. Теперь в официальном маркетплейсе: `/plugin install superpowers@claude-plugins-official`. [Детальный разбор](./docs/skill-families-ru.md#obrasuperpowers--методология-которая-владеет-процессом)." },
+    { "name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "desc": "14 связанных скиллов, складывающихся в методологию: мозговой штурм → план → TDD → ревью → мерж. Срабатывают автоматически. Теперь в официальном маркетплейсе: `/plugin install superpowers@claude-plugins-official`. [Подробный разбор](./docs/skill-families-ru.md#obrasuperpowers--методология-которая-владеет-процессом)." },
     { "name": "obra/superpowers-lab", "url": "https://github.com/obra/superpowers-lab", "desc": "Экспериментальные скиллы из той же серии." },
-    { "name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "desc": "37 маленьких скиллов от Matt Pocock, намеренно построенных против того, чтобы забирать процесс себе: ставишь и вызываешь по одному. Пять из них — в топ-15 выше. В официальном маркетплейсе: `/plugin install mattpocock-skills`, либо `npx skills@latest add mattpocock/skills`, если хочешь править под себя. [Детальный разбор](./docs/skill-families-ru.md#mattpocockskills--маленькие-детали-которыми-владеешь-ты)." },
-    { "name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "desc": "286 скиллов и 68 агентов, охватывающих редкие домены, плюс инстинкты (паттерны, выученные из твоих сессий) и память между харнессами. Ставить выборочно: правила всегда в контексте. [Детальный разбор](./docs/skill-families-ru.md#affaan-mecc--операционная-система-харнесса)." },
-    { "name": "addyosmani/agent-skills", "url": "https://github.com/addyosmani/agent-skills", "desc": "Production-grade инженерные скиллы от Addy Osmani (Google Chrome). 93k⭐." },
-    { "name": "google/skills", "url": "https://github.com/google/skills", "desc": "Официальные скиллы Google под свои продукты и технологии. 20k⭐." },
-    { "name": "pbakaus/impeccable", "url": "https://github.com/pbakaus/impeccable", "desc": "Дизайн-язык для агента: 18 слэш-команд на весь цикл интерфейса (craft, audit, polish, harden) и 7 справочников — цвет, типографика, motion, пространство, интеракции, адаптивность, UX-текст. Читает PRODUCT.md и DESIGN.md до первого пикселя. 67k⭐, 270K установок." },
-    { "name": "trailofbits/skills", "url": "https://github.com/trailofbits/skills", "desc": "Security-скиллы от Trail of Bits: статический анализ через CodeQL/Semgrep, аудит кода, поиск уязвимостей." },
-    { "name": "vercel-labs/agent-skills", "url": "https://github.com/vercel-labs/agent-skills", "desc": "Vercel Engineering: производительность React, web-guidelines, React Native, деплой на Vercel." },
+    { "name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "desc": "37 небольших скиллов от Matt Pocock, специально устроенных так, чтобы управление процессом оставалось у тебя: ставишь и вызываешь по одному. Пять из них — в топ-15 выше. В официальном маркетплейсе: `/plugin install mattpocock-skills`, либо `npx skills@latest add mattpocock/skills`, если хочешь править под себя. [Подробный разбор](./docs/skill-families-ru.md#mattpocockskills--маленькие-детали-которыми-владеешь-ты)." },
+    { "name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "desc": "286 скиллов и 68 агентов для работы в том числе с редкими предметными областями, плюс инстинкты (паттерны, усвоенные из твоих сессий) и память, общая для разных сред запуска агентов. Ставить выборочно: правила всегда в контексте. [Подробный разбор](./docs/skill-families-ru.md#affaan-mecc--операционная-система-харнесса)." },
+    { "name": "addyosmani/agent-skills", "url": "https://github.com/addyosmani/agent-skills", "desc": "Инженерные скиллы для работы в продакшене от Addy Osmani (Google Chrome). 93k⭐." },
+    { "name": "google/skills", "url": "https://github.com/google/skills", "desc": "Официальные скиллы Google для своих продуктов и технологий. 20k⭐." },
+    { "name": "pbakaus/impeccable", "url": "https://github.com/pbakaus/impeccable", "desc": "Язык дизайна для агента: 18 слэш-команд для всех этапов работы над интерфейсом (craft, audit, polish, harden) и 7 справочников — цвет, типографика, анимация, пространство, взаимодействия, адаптивность, UX-текст. Читает PRODUCT.md и DESIGN.md ещё до начала работы над дизайном. 67k⭐, 270K установок." },
+    { "name": "trailofbits/skills", "url": "https://github.com/trailofbits/skills", "desc": "Скиллы по безопасности от Trail of Bits: статический анализ через CodeQL/Semgrep, аудит кода, поиск уязвимостей." },
+    { "name": "vercel-labs/agent-skills", "url": "https://github.com/vercel-labs/agent-skills", "desc": "Vercel Engineering: производительность React, рекомендации по веб-интерфейсам, React Native, деплой на Vercel." },
     { "name": "supabase/agent-skills", "url": "https://github.com/supabase/agent-skills", "desc": "Скиллы для Supabase и PostgreSQL." },
-    { "name": "firebase/agent-skills", "url": "https://github.com/firebase/agent-skills", "desc": "Firebase и Firestore, аудит security-rules." },
-    { "name": "microsoft/azure-skills", "url": "https://github.com/microsoft/azure-skills", "desc": "Деплой в Azure и best-practices от Microsoft." },
+    { "name": "firebase/agent-skills", "url": "https://github.com/firebase/agent-skills", "desc": "Firebase и Firestore, аудит правил безопасности." },
+    { "name": "microsoft/azure-skills", "url": "https://github.com/microsoft/azure-skills", "desc": "Деплой в Azure и рекомендации Microsoft." },
     { "name": "get-convex/agent-skills", "url": "https://github.com/get-convex/agent-skills", "desc": "Convex — реактивный бэкенд." },
     { "name": "expo/skills", "url": "https://github.com/expo/skills", "desc": "Expo. 25K+ установок." },
-    { "name": "shadcn/ui skills", "url": "https://ui.shadcn.com/docs/skills", "desc": "Контекст по компонентам shadcn и принудительное применение паттернов." },
-    { "name": "sfrangulov/skills", "url": "https://github.com/sfrangulov/skills", "desc": "Моя коллекция: consulting-фреймворк на 8 шагов (EN и RU), выбор следующего OSS-продукта, demo-video-pipeline (Playwright + Remotion + ElevenLabs), research-pipeline с верификацией источников." },
-    { "name": "travisvn/awesome-claude-skills", "url": "https://github.com/travisvn/awesome-claude-skills", "desc": "15k⭐, актуальный куратор скиллов." },
-    { "name": "ComposioHQ/awesome-claude-skills", "url": "https://github.com/ComposioHQ/awesome-claude-skills", "desc": "Самый крупный куратор скиллов: 75k⭐." },
-    { "name": "karanb192/awesome-claude-skills", "url": "https://github.com/karanb192/awesome-claude-skills", "desc": "50+ проверенных скиллов с разбивкой по типам." }
+    { "name": "shadcn/ui skills", "url": "https://ui.shadcn.com/docs/skills", "desc": "Сведения о компонентах shadcn и обязательное применение паттернов." },
+    { "name": "sfrangulov/skills", "url": "https://github.com/sfrangulov/skills", "desc": "Моя коллекция: методика консалтинга из 8 шагов (EN и RU), выбор следующего OSS-продукта, demo-video-pipeline (Playwright + Remotion + ElevenLabs), research-pipeline с проверкой источников." },
+    { "name": "travisvn/awesome-claude-skills", "url": "https://github.com/travisvn/awesome-claude-skills", "desc": "15k⭐, регулярно обновляемая подборка скиллов." },
+    { "name": "ComposioHQ/awesome-claude-skills", "url": "https://github.com/ComposioHQ/awesome-claude-skills", "desc": "Самая крупная подборка скиллов: 75k⭐." },
+    { "name": "karanb192/awesome-claude-skills", "url": "https://github.com/karanb192/awesome-claude-skills", "desc": "50+ проверенных скиллов, сгруппированных по типам." }
   ],
   "specialized": [
-    { "name": "Agents365-ai/drawio-skill", "url": "https://github.com/Agents365-ai/drawio-skill", "desc": "Диаграммы .drawio из текста и реальных источников: инкрементальная синхронизация с сохранением ручной раскладки, проекции в несколько видов, архитектура-как-тест с CI-экшеном, встроенный MCP-сервер. 9.2k⭐." },
-    { "name": "greensock/gsap-skills", "url": "https://github.com/greensock/gsap-skills", "desc": "Официальные скиллы GSAP: как правильно анимировать, паттерны и плагины — от самих GreenSock. 15k⭐." },
+    { "name": "Agents365-ai/drawio-skill", "url": "https://github.com/Agents365-ai/drawio-skill", "desc": "Диаграммы .drawio по тексту и реальным источникам: синхронизация изменений с сохранением ручной раскладки, несколько представлений одной схемы, проверка архитектуры тестами через CI-экшен, встроенный MCP-сервер. 9.2k⭐." },
+    { "name": "greensock/gsap-skills", "url": "https://github.com/greensock/gsap-skills", "desc": "Официальные скиллы GSAP: как правильно делать анимацию, какие паттерны и плагины использовать — от самих GreenSock. 15k⭐." },
     { "name": "kepano/obsidian-skills", "url": "https://github.com/kepano/obsidian-skills", "desc": "Работа с Obsidian: CLI и открытые форматы — Markdown, Bases, JSON Canvas. От CEO Obsidian. 48k⭐." },
     { "name": "conorluddy/ios-simulator-skill", "url": "https://github.com/conorluddy/ios-simulator-skill", "desc": "Сборка iOS-приложений, навигация по симулятору, тесты." },
     { "name": "lackeyjb/playwright-skill", "url": "https://github.com/lackeyjb/playwright-skill", "desc": "Браузерная автоматизация через Playwright." },
     { "name": "K-Dense-AI/scientific-agent-skills", "url": "https://github.com/K-Dense-AI/scientific-agent-skills", "desc": "Научные базы данных и библиотеки." },
-    { "name": "yusufkaraaslan/Skill_Seekers", "url": "https://github.com/yusufkaraaslan/Skill_Seekers", "desc": "Превращает сайт документации в Claude Skill." },
-    { "name": "SawyerHood/dev-browser", "url": "https://github.com/SawyerHood/dev-browser", "desc": "Даёт агенту браузер: сам открывает страницу и проверяет свою работу глазами. Альтернатива Playwright MCP. 6.4k⭐." },
-    { "name": "bitjaru/styleseed", "url": "https://github.com/bitjaru/styleseed", "desc": "Дизайн-движок: учит агента дизайнерскому вкусу — 74 правила в markdown, 7 бренд-скинов и именованная motion-система. Слэш-скиллы `/ss-*`." },
-    { "name": "PolarSnowflake/skills-from-expertise", "url": "https://github.com/PolarSnowflake/skills-from-expertise", "desc": "Смысловая сторона написания скиллов: как превратить экспертизу в методологию, а не в список советов. Когда брать: есть чужой материал — лекция, книга, таблица, код — и нужен из него рабочий скилл." }
+    { "name": "yusufkaraaslan/Skill_Seekers", "url": "https://github.com/yusufkaraaslan/Skill_Seekers", "desc": "Превращает сайт с документацией в скилл для Claude." },
+    { "name": "SawyerHood/dev-browser", "url": "https://github.com/SawyerHood/dev-browser", "desc": "Даёт агенту браузер: тот сам открывает страницу и проверяет свою работу глазами. Альтернатива Playwright MCP. 6.4k⭐." },
+    { "name": "bitjaru/styleseed", "url": "https://github.com/bitjaru/styleseed", "desc": "Движок для дизайна: учит агента дизайнерскому вкусу — 74 правила в Markdown, 7 тем оформления под разные бренды и система анимации с именами для её элементов. Слэш-скиллы `/ss-*`." },
+    { "name": "PolarSnowflake/skills-from-expertise", "url": "https://github.com/PolarSnowflake/skills-from-expertise", "desc": "Содержательная сторона создания скиллов: как превратить экспертные знания в методологию, а не в список советов. Когда брать: есть чужой материал — лекция, книга, таблица, код — и нужно сделать из него рабочий скилл." }
   ],
   "local": [
-    { "name": "examples/skills/review-staged-changes/", "url": "./examples/skills/review-staged-changes/SKILL.md", "desc": "Проверка staged-изменений перед коммитом." }
+    { "name": "examples/skills/review-staged-changes/", "url": "./examples/skills/review-staged-changes/SKILL.md", "desc": "Проверка изменений, подготовленных к коммиту." }
   ]
 }

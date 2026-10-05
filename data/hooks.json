@@ -3,23 +3,23 @@
     {
       "name": "examples/hooks/",
       "url": "./examples/hooks/README.md",
-      "desc": "Три рабочих hook'а с bash-скриптами и инструкциями, куда положить:",
+      "desc": "Три рабочих хука с bash-скриптами и инструкциями по размещению:",
       "children": [
-        { "name": "pre-commit-secrets.sh", "bold": true, "desc": "детектор секретов в staged-diff. Спасает от утечки API-ключей, когда агент коммитит без проверки." },
+        { "name": "pre-commit-secrets.sh", "bold": true, "desc": "поиск секретов в изменениях, подготовленных к коммиту. Защищает от утечки API-ключей, когда агент коммитит без проверки." },
         { "name": "ntfy.sh", "bold": true, "desc": "push-уведомления через ntfy.sh по событиям `Notification` и `Stop`." },
-        { "name": "audit.sh", "bold": true, "desc": "JSONL-аудит каждого PostToolUse для разбора инцидентов." }
+        { "name": "audit.sh", "bold": true, "desc": "Запись каждого события PostToolUse в журнал JSONL для разбора инцидентов." }
       ]
     }
   ],
   "community": [
-    { "name": "Hooks guide (Claude Docs)", "url": "https://code.claude.com/docs/en/hooks-guide", "desc": "Официальное руководство с рабочими примерами на каждое событие сессии." },
-    { "name": "disler/claude-code-hooks-mastery", "url": "https://github.com/disler/claude-code-hooks-mastery", "desc": "Разбор восьми базовых событий с готовыми обработчиками — по-прежнему самый подробный набор примеров. 3.9k⭐, но без обновлений с марта 2026: событий агентных команд вроде `TeammateIdle` и `TaskCompleted` там нет." },
-    { "name": "GowayLee/cchooks", "url": "https://github.com/GowayLee/cchooks", "desc": "Python-SDK: типизированный разбор входного JSON и коды возврата вместо ручного парсинга stdin." }
+    { "name": "Hooks guide (Claude Docs)", "url": "https://code.claude.com/docs/en/hooks-guide", "desc": "Официальное руководство с рабочими примерами для каждого события сессии." },
+    { "name": "disler/claude-code-hooks-mastery", "url": "https://github.com/disler/claude-code-hooks-mastery", "desc": "Разбор восьми базовых событий с готовыми обработчиками. По-прежнему самый подробный набор примеров. 3.9k⭐, но обновлений нет с марта 2026 года: события команд агентов вроде `TeammateIdle` и `TaskCompleted` не описаны." },
+    { "name": "GowayLee/cchooks", "url": "https://github.com/GowayLee/cchooks", "desc": "Python-SDK: разбор входного JSON с типизацией и коды возврата вместо ручного разбора stdin." }
   ],
   "observability": [
-    { "name": "disler/claude-code-hooks-multi-agent-observability", "url": "https://github.com/disler/claude-code-hooks-multi-agent-observability", "desc": "Real-time дашборд hook-событий сразу по нескольким параллельным агентам. 1.5k⭐, последний пуш февраль 2026." },
-    { "name": "hoangsonww/Claude-Code-Agent-Monitor", "url": "https://github.com/hoangsonww/Claude-Code-Agent-Monitor", "desc": "Self-hosted дашборд активности агента через hooks: сессии, tool-usage, оркестрация субагентов, kanban-статусы." },
-    { "name": "simple10/agents-observe", "url": "https://github.com/simple10/agents-observe", "desc": "Real-time observability сессий Claude Code и мульти-агентов, с фильтрацией и replay." },
-    { "name": "ColeMurray/claude-code-otel", "url": "https://github.com/ColeMurray/claude-code-otel", "desc": "Заброшен с июня 2025, но как референсная архитектура всё ещё читаем: OpenTelemetry → Grafana для мониторинга расхода, производительности и стоимости." }
+    { "name": "disler/claude-code-hooks-multi-agent-observability", "url": "https://github.com/disler/claude-code-hooks-multi-agent-observability", "desc": "Дашборд событий хуков, который в реальном времени показывает данные сразу по нескольким параллельным агентам. 1.5k⭐, последний пуш — в феврале 2026 года." },
+    { "name": "hoangsonww/Claude-Code-Agent-Monitor", "url": "https://github.com/hoangsonww/Claude-Code-Agent-Monitor", "desc": "Дашборд активности агента на хуках, разворачивается на своём сервере: сессии, использование инструментов, оркестрация субагентов, статусы на канбан-доске." },
+    { "name": "simple10/agents-observe", "url": "https://github.com/simple10/agents-observe", "desc": "Наблюдение в реальном времени за сессиями Claude Code и работой нескольких агентов, с фильтрацией и воспроизведением записей." },
+    { "name": "ColeMurray/claude-code-otel", "url": "https://github.com/ColeMurray/claude-code-otel", "desc": "Заброшен с июня 2025 года, но всё ещё полезен как пример архитектуры: OpenTelemetry → Grafana для мониторинга расхода, производительности и стоимости." }
   ]
 }

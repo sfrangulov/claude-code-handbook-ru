@@ -1,15 +1,15 @@
 {
   "official": [
-    { "name": "Define success criteria (Claude Docs)", "url": "https://platform.claude.com/docs/en/test-and-evaluate/define-success", "desc": "Критерии успеха до написания промпта: измеримые метрики и пороги вместо «работает вроде нормально»." },
-    { "name": "Create strong empirical evaluations (Claude Docs)", "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests", "desc": "Официальный гайд по построению evals: дизайн задач, типы грейдеров — код, LLM-судья, человек." },
-    { "name": "Evaluation tool (Anthropic Console)", "url": "https://platform.claude.com/docs/en/test-and-evaluate/eval-tool", "desc": "Прогон промпта по набору тест-кейсов в Console и сравнение версий бок о бок, без кода." },
-    { "name": "cwc-workshops/eval-driven-agent-development", "url": "https://github.com/anthropics/cwc-workshops/tree/main/eval-driven-agent-development", "desc": "Учебный пример от Anthropic: PPTX-агент, шесть версий промпта, набор из 10 задач и двухслойный грейдер — программные метрики по XML плюс LLM-судья по отрендеренным слайдам." }
+    { "name": "Define success criteria (Claude Docs)", "url": "https://platform.claude.com/docs/en/test-and-evaluate/define-success", "desc": "Как задать критерии успеха до написания промпта: измеримые метрики и пороги вместо «работает вроде нормально»." },
+    { "name": "Create strong empirical evaluations (Claude Docs)", "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests", "desc": "Официальное руководство по созданию evals: как составлять задания и выбирать способ оценки — код, LLM-судья или человек." },
+    { "name": "Evaluation tool (Anthropic Console)", "url": "https://platform.claude.com/docs/en/test-and-evaluate/eval-tool", "desc": "Проверка промпта на наборе тестовых примеров в Console и наглядное сравнение версий без кода." },
+    { "name": "cwc-workshops/eval-driven-agent-development", "url": "https://github.com/anthropics/cwc-workshops/tree/main/eval-driven-agent-development", "desc": "Учебный пример от Anthropic: PPTX-агент, шесть версий промпта, набор из 10 задач и оценка в два этапа — программные метрики по XML и LLM-судья, который оценивает слайды после рендеринга." }
   ],
   "tools": [
-    { "name": "promptfoo/promptfoo", "url": "https://github.com/promptfoo/promptfoo", "desc": "Декларативные конфиги для тестов промптов, агентов и RAG: сравнение моделей, red teaming, CI/CD. 23k⭐." },
-    { "name": "UKGovernmentBEIS/inspect_ai", "url": "https://github.com/UKGovernmentBEIS/inspect_ai", "desc": "Фреймворк evals от британского AISI: композиция из solvers и scorers, sandbox для агентных задач, просмотр логов." },
-    { "name": "confident-ai/deepeval", "url": "https://github.com/confident-ai/deepeval", "desc": "Тесты для LLM-приложений в стиле pytest: готовые метрики (G-Eval, hallucination, RAG), CI-интеграция. 17k⭐." },
-    { "name": "Arize-ai/phoenix", "url": "https://github.com/Arize-ai/phoenix", "desc": "Observability и evals: трейсинг на OpenTelemetry, датасеты, эксперименты, LLM-судьи. Self-hosted." },
-    { "name": "sierra-research/tau2-bench", "url": "https://github.com/sierra-research/tau2-bench", "desc": "Бенчмарк tool-агентов от Sierra: диалог с симулятором пользователя в доменах airline, retail, telecom. Учебный полигон воркшопа Picking the Right Model." }
+    { "name": "promptfoo/promptfoo", "url": "https://github.com/promptfoo/promptfoo", "desc": "Декларативные конфиги для тестирования промптов, агентов и RAG: сравнение моделей, состязательное тестирование, CI/CD. 23k⭐." },
+    { "name": "UKGovernmentBEIS/inspect_ai", "url": "https://github.com/UKGovernmentBEIS/inspect_ai", "desc": "Фреймворк для evals от британского AISI: сочетание модулей решения задач (solvers) и оценки результатов (scorers), песочница для агентных задач, просмотр логов." },
+    { "name": "confident-ai/deepeval", "url": "https://github.com/confident-ai/deepeval", "desc": "Тесты для LLM-приложений в стиле pytest: готовые метрики (G-Eval, галлюцинации, RAG), интеграция с CI. 17k⭐." },
+    { "name": "Arize-ai/phoenix", "url": "https://github.com/Arize-ai/phoenix", "desc": "Наблюдение за работой приложений и evals: трассировка на OpenTelemetry, наборы данных, эксперименты, LLM-судьи. Развёртывается на собственном сервере." },
+    { "name": "sierra-research/tau2-bench", "url": "https://github.com/sierra-research/tau2-bench", "desc": "Бенчмарк агентов, использующих инструменты, от Sierra: диалог с симулятором пользователя в сферах авиаперевозок, розничной торговли и телекоммуникаций. Учебный полигон для воркшопа Picking the Right Model." }
   ]
 }

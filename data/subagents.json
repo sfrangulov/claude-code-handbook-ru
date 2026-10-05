@@ -2,14 +2,14 @@
   "productionCollections": {
     "_comment": "Таблица в README: Репозиторий / Что внутри",
     "items": [
-      { "name": "VoltAgent/awesome-claude-code-subagents", "url": "https://github.com/VoltAgent/awesome-claude-code-subagents", "desc": "**144 субагента** по 10 категориям, 25k⭐. Установка: `claude plugin marketplace add VoltAgent/awesome-claude-code-subagents`." },
-      { "name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "desc": "14 скиллов и субагентов: TDD, отладка, планирование, брейншторм, ревью. Самая популярная коллекция." },
-      { "name": "0xfurai/claude-code-subagents", "url": "https://github.com/0xfurai/claude-code-subagents", "desc": "100+ субагентов в едином формате промпта, мультиязычные, MIT. Без обновлений с октября 2025." },
-      { "name": "wshobson/agents", "url": "https://github.com/wshobson/agents", "desc": "48 production-агентов с паттернами оркестрации и продвинутыми workflow." },
-      { "name": "vijaythecoder/awesome-claude-agents", "url": "https://github.com/vijaythecoder/awesome-claude-agents", "desc": "26 агентов формата AI-команды: Tech Lead, Analyst, доменные специалисты. 4.4k⭐, но без обновлений с октября 2025." },
-      { "name": "davepoon/buildwithclaude", "url": "https://github.com/davepoon/buildwithclaude", "desc": "Хаб со скиллами, агентами, командами, хуками и плагинами разом; бывший claude-code-subagents-collection. 3.4k⭐." },
-      { "name": "rohitg00/awesome-claude-code-toolkit", "url": "https://github.com/rohitg00/awesome-claude-code-toolkit", "desc": "135 агентов, 35 скиллов и 42 команды в одном тулките." },
-      { "name": "peterkrueck/Claude-Code-Development-Kit", "url": "https://github.com/peterkrueck/Claude-Code-Development-Kit", "desc": "Мета-репозиторий: документация, multi-agent шаблоны, hooks, MCP-серверы." }
+      { "name": "VoltAgent/awesome-claude-code-subagents", "url": "https://github.com/VoltAgent/awesome-claude-code-subagents", "desc": "**144 субагента** в 10 категориях, 25k⭐. Установка: `claude plugin marketplace add VoltAgent/awesome-claude-code-subagents`." },
+      { "name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "desc": "14 скиллов и субагентов: TDD, отладка, планирование, мозговой штурм, ревью. Самая популярная коллекция." },
+      { "name": "0xfurai/claude-code-subagents", "url": "https://github.com/0xfurai/claude-code-subagents", "desc": "100+ субагентов с единым форматом промптов и поддержкой нескольких языков, лицензия MIT. Не обновлялись с октября 2025." },
+      { "name": "wshobson/agents", "url": "https://github.com/wshobson/agents", "desc": "48 агентов для работы в продакшене со схемами оркестрации и продвинутыми рабочими процессами." },
+      { "name": "vijaythecoder/awesome-claude-agents", "url": "https://github.com/vijaythecoder/awesome-claude-agents", "desc": "26 агентов, организованных в ИИ-команду: Tech Lead, Analyst, специалисты по отдельным областям. 4.4k⭐, но без обновлений с октября 2025." },
+      { "name": "davepoon/buildwithclaude", "url": "https://github.com/davepoon/buildwithclaude", "desc": "Скиллы, агенты, команды, хуки и плагины в одном месте; раньше назывался claude-code-subagents-collection. 3.4k⭐." },
+      { "name": "rohitg00/awesome-claude-code-toolkit", "url": "https://github.com/rohitg00/awesome-claude-code-toolkit", "desc": "135 агентов, 35 скиллов и 42 команды в одном наборе инструментов." },
+      { "name": "peterkrueck/Claude-Code-Development-Kit", "url": "https://github.com/peterkrueck/Claude-Code-Development-Kit", "desc": "Мета-репозиторий: документация, шаблоны для работы с несколькими агентами, хуки, MCP-серверы." }
     ]
   },
   "voltagentCategories": {
@@ -20,7 +20,7 @@
         "category": "Core development",
         "count": 11,
         "categoryUrl": "https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/01-core-development",
-        "inside": "API-дизайнер, frontend/backend/fullstack, mobile, GraphQL-архитектор, WebSocket-инженер",
+        "inside": "Проектировщик API, специалисты по фронтенду, бэкенду, фулстеку и мобильной разработке, GraphQL-архитектор, WebSocket-инженер",
         "when": "Когда делегируешь узкие задачи («спроектируй GraphQL-схему»)"
       },
       {
@@ -29,7 +29,7 @@
         "count": 30,
         "categoryUrl": "https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/02-language-specialists",
         "inside": "python-pro, java-architect, rust-engineer, golang-pro, php-pro, typescript-pro и ещё 24",
-        "when": "Изолируют контекст, когда основной агент уходит в read-heavy работу по одному языку"
+        "when": "Изолируют контекст, когда основной агент много читает код и материалы по одному языку"
       },
       {
         "emoji": "☁️",
@@ -37,7 +37,7 @@
         "count": 16,
         "categoryUrl": "https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/03-infrastructure",
         "inside": "cloud-architect, devops, kubernetes, terraform, SRE, security-engineer",
-        "when": "Для DevOps-задач, особенно если есть Terraform или K8s"
+        "when": "Для DevOps-задач, особенно если используешь Terraform или K8s"
       },
       {
         "emoji": "✅",
@@ -45,7 +45,7 @@
         "count": 16,
         "categoryUrl": "https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/04-quality-security",
         "inside": "code-reviewer, debugger, penetration-tester, performance-engineer, a11y-tester",
-        "when": "Перед PR — `code-reviewer` как блокирующий шаг"
+        "when": "Перед PR: обязательная проверка через `code-reviewer`"
       },
       {
         "emoji": "🧠",
@@ -53,7 +53,7 @@
         "count": 13,
         "categoryUrl": "https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/05-data-ai",
         "inside": "ML/MLOps, data-scientist, llm-architect, prompt-engineer, NLP, postgres-pro",
-        "when": "Для data-инфры или ML-pipelines"
+        "when": "Для инфраструктуры данных или ML-конвейеров"
       },
       {
         "emoji": "⚡",
@@ -61,7 +61,7 @@
         "count": 14,
         "categoryUrl": "https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/06-developer-experience",
         "inside": "cli-developer, mcp-developer, refactoring-specialist, build-engineer, documentation-engineer",
-        "when": "Внутренние инструменты и DX-задачи"
+        "when": "Внутренние инструменты и задачи по улучшению удобства разработки"
       },
       {
         "emoji": "🎯",
@@ -69,7 +69,7 @@
         "count": 13,
         "categoryUrl": "https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/07-specialized-domains",
         "inside": "blockchain, fintech, gamedev, IoT, embedded, mobile-app-builder",
-        "when": "Когда работаешь в нишевой области"
+        "when": "Когда работаешь в узкоспециализированной области"
       },
       {
         "emoji": "💼",
@@ -77,7 +77,7 @@
         "count": 12,
         "categoryUrl": "https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/08-business-product",
         "inside": "PM, scrum-master, technical-writer, UX-researcher, sales-engineer",
-        "when": "Не-кодовые задачи: PRD, roadmap, работа с клиентами"
+        "when": "Задачи без написания кода: PRD, дорожная карта, работа с клиентами"
       },
       {
         "emoji": "🎭",
@@ -85,7 +85,7 @@
         "count": 11,
         "categoryUrl": "https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/09-meta-orchestration",
         "inside": "agent-organizer, context-manager, multi-agent-coordinator, workflow-orchestrator",
-        "when": "Координация нескольких субагентов параллельно"
+        "when": "Координация нескольких субагентов, работающих параллельно"
       },
       {
         "emoji": "🔬",
@@ -93,7 +93,7 @@
         "count": 8,
         "categoryUrl": "https://github.com/VoltAgent/awesome-claude-code-subagents/tree/main/categories/10-research-analysis",
         "inside": "competitive-analyst, market-researcher, search-specialist, trend-analyst",
-        "when": "Discovery-фаза продукта или анализ конкурентов"
+        "when": "Исследование на раннем этапе разработки продукта или анализ конкурентов"
       }
     ]
   }

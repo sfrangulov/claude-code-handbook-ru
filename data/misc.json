@@ -1,91 +1,91 @@
 {
   "prompting": [
-    { "name": "Anthropic Prompting Guide", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview", "desc": "Официальный гайд." },
-    { "name": "Anthropic Cookbook", "url": "https://github.com/anthropics/claude-cookbooks", "desc": "Примеры паттернов с кодом." },
-    { "name": "anthropics/cwc-workshops", "url": "https://github.com/anthropics/cwc-workshops", "desc": "Материалы девяти воркшопов с конференции Code with Claude: workflow «спека → варианты дизайна → верификация», скилл для аудита evals и подбора модели по цене и скорости, eval-driven разработка агентов на Managed Agents. Архив без поддержки, Apache-2.0." },
+    { "name": "Anthropic Prompting Guide", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview", "desc": "Официальное руководство." },
+    { "name": "Anthropic Cookbook", "url": "https://github.com/anthropics/claude-cookbooks", "desc": "Примеры приёмов с кодом." },
+    { "name": "anthropics/cwc-workshops", "url": "https://github.com/anthropics/cwc-workshops", "desc": "Материалы девяти воркшопов с конференции Code with Claude: процесс «спека → варианты дизайна → верификация», скилл для аудита evals и подбора модели по цене и скорости, разработка агентов на Managed Agents с опорой на evals. Архив без поддержки, Apache-2.0." },
     { "name": "Claude API Skills best practices", "url": "https://platform.claude.com/docs/ru/agents-and-tools/agent-skills/best-practices", "desc": "Официальный документ на русском." },
-    { "name": "dair-ai/Prompt-Engineering-Guide", "url": "https://github.com/dair-ai/Prompt-Engineering-Guide", "desc": "Академический гайд, 50k+⭐." },
-    { "name": "f/prompts.chat", "url": "https://github.com/f/prompts.chat", "desc": "Готовые промпты, применимы и к Claude." },
+    { "name": "dair-ai/Prompt-Engineering-Guide", "url": "https://github.com/dair-ai/Prompt-Engineering-Guide", "desc": "Академическое руководство, 50k+⭐." },
+    { "name": "f/prompts.chat", "url": "https://github.com/f/prompts.chat", "desc": "Готовые промпты, подходят и для Claude." },
     { "name": "PatrickJS/awesome-cursorrules", "url": "https://github.com/PatrickJS/awesome-cursorrules", "desc": "`.cursorrules` для разных стеков, многие подходят и для CLAUDE.md." }
   ],
   "channels": [
-    { "name": "@cc_consultant (Telegram, RU)", "url": "https://t.me/cc_consultant", "desc": "Этот handbook и ежедневные разборы." },
+    { "name": "@cc_consultant (Telegram, RU)", "url": "https://t.me/cc_consultant", "desc": "Это руководство и ежедневные разборы." },
     { "name": "Anthropic Discord", "url": "https://www.anthropic.com/discord", "desc": "Каналы `#claude-code`, `#skills-and-tools`, `#show-and-tell`." },
-    { "name": "r/ClaudeAI", "url": "https://www.reddit.com/r/ClaudeAI/", "desc": "Reddit-сообщество." },
+    { "name": "r/ClaudeAI", "url": "https://www.reddit.com/r/ClaudeAI/", "desc": "Сообщество на Reddit." },
     { "name": "r/Anthropic", "url": "https://www.reddit.com/r/Anthropic/", "desc": "Официальный сабреддит." }
   ],
   "podcasts": [
-    { "name": "Latent Space (swyx)", "url": "https://www.latent.space/", "desc": "AI-инженерия, регулярные выпуски про Claude Code и MCP." },
-    { "name": "The Cognitive Revolution", "url": "https://www.cognitiverevolution.ai/", "desc": "Nathan Labenz, AI-индустрия и тренды." },
-    { "name": "Practical AI (Changelog)", "url": "https://practicalai.show/", "desc": "Практические кейсы AI." },
-    { "name": "Anthropic (YouTube)", "url": "https://www.youtube.com/@anthropic-ai", "desc": "Релизы и техдемки." },
-    { "name": "Matt Pocock", "url": "https://www.youtube.com/@mattpocockuk", "desc": "TypeScript и AI-инструменты." },
-    { "name": "ThePrimeagen", "url": "https://www.youtube.com/@ThePrimeagen", "desc": "AI-workflow с критическим взглядом." }
+    { "name": "Latent Space (swyx)", "url": "https://www.latent.space/", "desc": "Инженерия ИИ, регулярные выпуски про Claude Code и MCP." },
+    { "name": "The Cognitive Revolution", "url": "https://www.cognitiverevolution.ai/", "desc": "Nathan Labenz, индустрия ИИ и тренды." },
+    { "name": "Practical AI (Changelog)", "url": "https://practicalai.show/", "desc": "Практические примеры использования ИИ." },
+    { "name": "Anthropic (YouTube)", "url": "https://www.youtube.com/@anthropic-ai", "desc": "Релизы и технические демо." },
+    { "name": "Matt Pocock", "url": "https://www.youtube.com/@mattpocockuk", "desc": "TypeScript и инструменты ИИ." },
+    { "name": "ThePrimeagen", "url": "https://www.youtube.com/@ThePrimeagen", "desc": "Критический взгляд на работу с ИИ." }
   ],
   "twitter": [
     { "name": "@AnthropicAI", "url": "https://twitter.com/AnthropicAI", "desc": "Официальный аккаунт." },
     { "name": "@alexalbert__", "url": "https://twitter.com/alexalbert__", "desc": "Alex Albert, DevRel в Anthropic." },
-    { "name": "@swyx", "url": "https://twitter.com/swyx", "desc": "AI-инженерия, Latent Space." },
+    { "name": "@swyx", "url": "https://twitter.com/swyx", "desc": "Инженерия ИИ, Latent Space." },
     { "name": "@simonw", "url": "https://twitter.com/simonw", "desc": "Simon Willison, разборы LLM-инструментов." },
-    { "name": "@mattpocockuk", "url": "https://twitter.com/mattpocockuk", "desc": "Matt Pocock, TDD-скиллы." },
+    { "name": "@mattpocockuk", "url": "https://twitter.com/mattpocockuk", "desc": "Matt Pocock, скиллы для TDD." },
     { "name": "@obra", "url": "https://twitter.com/obra", "desc": "Jesse Vincent, автор `obra/superpowers`." }
   ],
   "competitors": [
-    { "name": "Cursor", "url": "https://cursor.com/", "desc": "IDE-first, отдельный редактор на базе VS Code, сильный автокомплит." },
-    { "name": "GitHub Copilot", "url": "https://github.com/features/copilot", "desc": "Встроен в IDE, фокус на автокомплите и чате." },
-    { "name": "Aider", "url": "https://aider.chat/", "desc": "CLI-first, open-source, мульти-модельный." },
+    { "name": "Cursor", "url": "https://cursor.com/", "desc": "Отдельный редактор на базе VS Code с упором на работу в IDE и сильным автокомплитом." },
+    { "name": "GitHub Copilot", "url": "https://github.com/features/copilot", "desc": "Встроен в IDE, основной упор на автокомплит и чат." },
+    { "name": "Aider", "url": "https://aider.chat/", "desc": "Работает прежде всего через CLI, имеет открытый исходный код и поддерживает разные модели." },
     { "name": "Cline", "url": "https://github.com/cline/cline", "desc": "Расширение для VS Code с агентным режимом." },
-    { "name": "Continue", "url": "https://www.continue.dev/", "desc": "Open-source автокомплит и чат в IDE." },
+    { "name": "Continue", "url": "https://www.continue.dev/", "desc": "Автокомплит и чат в IDE с открытым исходным кодом." },
     { "name": "OpenAI Codex CLI", "url": "https://github.com/openai/codex", "desc": "Официальный CLI-агент OpenAI." },
     { "name": "Google Gemini CLI", "url": "https://github.com/google-gemini/gemini-cli", "desc": "CLI-агент от Google." },
-    { "name": "Devin Desktop (бывший Windsurf)", "url": "https://devin.ai/desktop", "desc": "IDE-агент Codeium: Windsurf перешёл к Cognition и переименован." }
+    { "name": "Devin Desktop (бывший Windsurf)", "url": "https://devin.ai/desktop", "desc": "Агент для IDE от Codeium: Windsurf перешёл к Cognition и был переименован." }
   ],
   "utilities": [
-    { "name": "Anthropic Console", "url": "https://platform.claude.com/", "desc": "Playground, библиотека промптов, выдача API-ключей." },
-    { "name": "Anthropic Workbench", "url": "https://platform.claude.com/workbench", "desc": "UI для экспериментов с промптами." },
+    { "name": "Anthropic Console", "url": "https://platform.claude.com/", "desc": "Площадка для экспериментов, библиотека промптов, выдача API-ключей." },
+    { "name": "Anthropic Workbench", "url": "https://platform.claude.com/workbench", "desc": "Интерфейс для экспериментов с промптами." },
     { "name": "Anthropic Status", "url": "https://status.anthropic.com/", "desc": "Статус сервисов." },
-    { "name": "Claude release notes", "url": "https://code.claude.com/docs/en/changelog", "desc": "Официальный changelog." },
-    { "name": "Skills.sh", "url": "https://www.skills.sh/", "desc": "Маркетплейс скиллов с количеством установок." },
-    { "name": "vercel-labs/skills", "url": "https://github.com/vercel-labs/skills", "desc": "`npx skills` — установщик скиллов в любой харнесс, файлами прямо в репозиторий. Им ставится половина коллекций из раздела Skills. Внутри же лежит скилл `find-skills`: агент сам ищет по skills.sh нужное под задачу и сверяет кандидатов по установкам и репутации источника, прежде чем предложить. 31k⭐." },
-    { "name": "zenbu-labs/terminal-browser", "url": "https://github.com/zenbu-labs/terminal-browser", "desc": "Браузер прямо в терминале: делит панель и показывает страницу рядом с сессией, агент водит по ней — снимок, клик, ввод, eval. 2.8k⭐." },
-    { "name": "jackwener/OpenCLI", "url": "https://github.com/jackwener/OpenCLI", "desc": "Агент работает с сайтами через твой залогиненный Chrome: расширение-мост и команды `opencli browser` — открыть, кликнуть, заполнить форму, вытащить данные, посмотреть сеть. Для частых задач — детерминированные адаптеры вида `opencli hackernews top`, свои пишутся по скиллу `opencli-adapter-author`, скиллы ставятся через `npx skills add jackwener/opencli`. Сайт — [opencli.info](https://opencli.info/). 29k⭐." },
-    { "name": "Panniantong/Agent-Reach", "url": "https://github.com/Panniantong/Agent-Reach", "desc": "Чтение и поиск по вебу одним инструментом: страницы, субтитры YouTube, RSS, GitHub, X, Reddit, LinkedIn. Для каждой площадки держит основной и запасной способ доступа, для сайтов с логином берёт OpenCLI; `agent-reach doctor` показывает, что работает. Когда брать: агенту надо читать и искать, а не кликать. Ставится агентом по ссылке на `install.md` — прочитай файл до того, как отдать ссылку. 82k⭐." },
-    { "name": "gastownhall/beads", "url": "https://github.com/gastownhall/beads", "desc": "Граф-трекер задач для агентов поверх Dolt: `bd ready` отдаёт работу без блокеров, `bd remember` держит память проекта между сессиями, компакция сжимает старые задачи, чтобы не жечь контекст. Хэш-ID вида `bd-a1b2` не конфликтуют при мердже параллельных веток. `bd setup claude` ставит хуки, `--stealth` — работа без коммита в общий репозиторий. 27k⭐." },
-    { "name": "thedotmack/claude-mem", "url": "https://github.com/thedotmack/claude-mem", "desc": "Персистентный контекст между сессиями: записывает работу агента, сжимает и подмешивает релевантное в следующие. Claude Code, Codex, Gemini, Copilot, OpenCode. 94k⭐." },
-    { "name": "hesreallyhim/awesome-claude-code", "url": "https://github.com/hesreallyhim/awesome-claude-code", "desc": "Главный awesome-list экосистемы: скиллы, агенты, статуслайны, тулинг, плагины. 54k⭐." },
-    { "name": "sfrangulov/skill-graveyard", "url": "https://github.com/sfrangulov/skill-graveyard", "desc": "Аудит установленных скиллов по локальным логам сессий: active / dead / missing / hallucinated. `npx skill-graveyard`, без сети и телеметрии; в монорепо — mcp-graveyard и memory-graveyard. Мой проект." },
-    { "name": "shanraisshan/claude-code-best-practice", "url": "https://github.com/shanraisshan/claude-code-best-practice", "desc": "Эталонный EN-сборник best practices с ежедневными апдейтами под версии Claude Code. Покрывает все hot-features, Boris Cherny tips, cross-model паттерны." }
+    { "name": "Claude release notes", "url": "https://code.claude.com/docs/en/changelog", "desc": "Официальный список изменений." },
+    { "name": "Skills.sh", "url": "https://www.skills.sh/", "desc": "Маркетплейс скиллов с числом установок." },
+    { "name": "vercel-labs/skills", "url": "https://github.com/vercel-labs/skills", "desc": "`npx skills` — установщик скиллов для любой среды работы агента: добавляет файлы прямо в репозиторий. Через него устанавливается половина коллекций из раздела Skills. Там же лежит скилл `find-skills`: агент сам ищет на skills.sh скиллы под задачу и, прежде чем предложить их, проверяет число установок и репутацию источника. 31k⭐." },
+    { "name": "zenbu-labs/terminal-browser", "url": "https://github.com/zenbu-labs/terminal-browser", "desc": "Браузер прямо в терминале: делит панель и показывает страницу рядом с сессией. Агент управляет страницей: делает снимки, кликает, вводит текст, выполняет eval. 2.8k⭐." },
+    { "name": "jackwener/OpenCLI", "url": "https://github.com/jackwener/OpenCLI", "desc": "Агент работает с сайтами через твой Chrome, в котором ты уже вошёл в аккаунты: расширение связывает браузер с агентом, а команды `opencli browser` позволяют открыть страницу, кликнуть, заполнить форму, извлечь данные и посмотреть сетевые запросы. Для частых задач есть детерминированные адаптеры вроде `opencli hackernews top`. Свои адаптеры можно писать по скиллу `opencli-adapter-author`, скиллы устанавливаются через `npx skills add jackwener/opencli`. Сайт — [opencli.info](https://opencli.info/). 29k⭐." },
+    { "name": "Panniantong/Agent-Reach", "url": "https://github.com/Panniantong/Agent-Reach", "desc": "Один инструмент для чтения и поиска в интернете: страницы, субтитры YouTube, RSS, GitHub, X, Reddit, LinkedIn. Для каждой площадки предусмотрены основной и запасной способы доступа, для сайтов со входом в аккаунт используется OpenCLI; `agent-reach doctor` показывает, что работает. Подходит, когда агенту нужно читать и искать, а не кликать. Агент устанавливает его по ссылке на `install.md` — прочитай файл, прежде чем передать ссылку. 82k⭐." },
+    { "name": "gastownhall/beads", "url": "https://github.com/gastownhall/beads", "desc": "Трекер задач для агентов на базе Dolt, который хранит связи между задачами в виде графа: `bd ready` выдаёт задачи, которым ничего не мешает, `bd remember` сохраняет память проекта между сессиями, а сжатие старых задач экономит контекст. Хэш-ID вида `bd-a1b2` не конфликтуют при слиянии параллельных веток. `bd setup claude` устанавливает хуки, `--stealth` позволяет работать без коммита в общий репозиторий. 27k⭐." },
+    { "name": "thedotmack/claude-mem", "url": "https://github.com/thedotmack/claude-mem", "desc": "Сохраняет контекст между сессиями: записывает работу агента, сжимает записи и добавляет нужное в следующие сессии. Claude Code, Codex, Gemini, Copilot, OpenCode. 94k⭐." },
+    { "name": "hesreallyhim/awesome-claude-code", "url": "https://github.com/hesreallyhim/awesome-claude-code", "desc": "Главный список ресурсов экосистемы: скиллы, агенты, строки состояния, инструменты, плагины. 54k⭐." },
+    { "name": "sfrangulov/skill-graveyard", "url": "https://github.com/sfrangulov/skill-graveyard", "desc": "Аудит установленных скиллов по локальным логам сессий: активные, неиспользуемые, отсутствующие и выдуманные. `npx skill-graveyard`, без сети и телеметрии; в монорепозитории — mcp-graveyard и memory-graveyard. Мой проект." },
+    { "name": "shanraisshan/claude-code-best-practice", "url": "https://github.com/shanraisshan/claude-code-best-practice", "desc": "Образцовый сборник рекомендаций на английском с ежедневными обновлениями под версии Claude Code. Охватывает все актуальные функции, советы Boris Cherny и приёмы работы с разными моделями." }
   ],
   "workflowMethodologies": [
-    { "name": "SuperClaude-Org/SuperClaude_Framework", "url": "https://github.com/SuperClaude-Org/SuperClaude_Framework", "desc": "Конфигурационный фреймворк: специализированные команды, когнитивные «персоны» и методологии поверх Claude Code. 24k⭐." },
-    { "name": "github/spec-kit", "url": "https://github.com/github/spec-kit", "desc": "Spec-Driven Development от GitHub. 134k⭐. /speckit.specify → clarify → plan → tasks → analyze → implement." },
-    { "name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "desc": "Крупнейшая коллекция: 286 скиллов, 68 агентов, инстинкты и память между харнессами. 255k⭐. [Детальный разбор](./docs/skill-families-ru.md#affaan-mecc--операционная-система-харнесса)." },
-    { "name": "garrytan/gstack", "url": "https://github.com/garrytan/gstack", "desc": "Сетап Garry Tan (Y Combinator): 23 инструмента в ролях CEO, Designer, Eng Manager, Release Manager, QA. 132k⭐." },
-    { "name": "open-gsd/gsd-core", "url": "https://github.com/open-gsd/gsd-core", "desc": "Meta-prompting и context-engineering: пять фаз discuss → plan → execute → verify → ship, каждая в свежем контексте субагента. Преемник get-shit-done, тот заархивирован." },
-    { "name": "Fission-AI/OpenSpec", "url": "https://github.com/Fission-AI/OpenSpec", "desc": "Spec-driven development под AI coding assistants. /opsx:propose → apply → archive." },
-    { "name": "bmad-code-org/BMAD-METHOD", "url": "https://github.com/bmad-code-org/BMAD-METHOD", "desc": "Breakthrough Method for Agile AI-Driven Development. Product brief → PRD → architecture → epics → sprint planning → dev → review." },
-    { "name": "EveryInc/compound-engineering-plugin", "url": "https://github.com/EveryInc/compound-engineering-plugin", "desc": "Официальный Compound Engineering plugin от Every Inc. /ce-ideate → brainstorm → plan → work → review → debug → optimize." }
+    { "name": "SuperClaude-Org/SuperClaude_Framework", "url": "https://github.com/SuperClaude-Org/SuperClaude_Framework", "desc": "Фреймворк для настройки Claude Code: специализированные команды, когнитивные «персоны» и методологии. 24k⭐." },
+    { "name": "github/spec-kit", "url": "https://github.com/github/spec-kit", "desc": "Разработка по спецификациям от GitHub. 134k⭐. /speckit.specify → clarify → plan → tasks → analyze → implement." },
+    { "name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "desc": "Крупнейшая коллекция: 286 скиллов, 68 агентов, инстинкты и память, которые сохраняются между средами работы агентов. 255k⭐. [Подробный разбор](./docs/skill-families-ru.md#affaan-mecc--операционная-система-харнесса)." },
+    { "name": "garrytan/gstack", "url": "https://github.com/garrytan/gstack", "desc": "Набор инструментов Garry Tan (Y Combinator): 23 инструмента в ролях CEO, дизайнера, руководителя разработки, релиз-менеджера и QA. 132k⭐." },
+    { "name": "open-gsd/gsd-core", "url": "https://github.com/open-gsd/gsd-core", "desc": "Метапромптинг и работа с контекстом: пять фаз discuss → plan → execute → verify → ship, каждая в свежем контексте субагента. Преемник get-shit-done, который теперь в архиве." },
+    { "name": "Fission-AI/OpenSpec", "url": "https://github.com/Fission-AI/OpenSpec", "desc": "Разработка по спецификациям с ИИ-ассистентами для программирования. /opsx:propose → apply → archive." },
+    { "name": "bmad-code-org/BMAD-METHOD", "url": "https://github.com/bmad-code-org/BMAD-METHOD", "desc": "Breakthrough Method for Agile AI-Driven Development. Краткое описание продукта → PRD → архитектура → эпики → планирование спринта → разработка → ревью." },
+    { "name": "EveryInc/compound-engineering-plugin", "url": "https://github.com/EveryInc/compound-engineering-plugin", "desc": "Официальный плагин Compound Engineering от Every Inc. /ce-ideate → brainstorm → plan → work → review → debug → optimize." }
   ],
   "crossModel": [
-    { "name": "musistudio/claude-code-router", "url": "https://github.com/musistudio/claude-code-router", "desc": "Router: подменяет API-endpoint Claude на OpenRouter, DeepSeek, Ollama, Gemini, Kimi, Qwen, Groq. Per-task model selection." },
-    { "name": "router-for-me/CLIProxyAPI", "url": "https://github.com/router-for-me/CLIProxyAPI", "desc": "Обёртка для Gemini CLI, Codex, Claude Code, Antigravity как OpenAI/Gemini/Claude/Codex-совместимого API." },
-    { "name": "openai/codex-plugin-cc", "url": "https://github.com/openai/codex-plugin-cc", "desc": "Официальный OpenAI-plugin: /codex:review, /codex:adversarial-review, /codex:rescue внутри Claude Code. Codex/GPT-5 как QA-партнёр." },
-    { "name": "BeehiveInnovations/pal-mcp-server", "url": "https://github.com/BeehiveInnovations/pal-mcp-server", "desc": "Не обновлялся с декабря 2025. Multi-model MCP-сервер (бывш. zen-mcp): Gemini, OpenAI, Azure, Grok, Ollama, OpenRouter как Claude tools. 50+ моделей." }
+    { "name": "musistudio/claude-code-router", "url": "https://github.com/musistudio/claude-code-router", "desc": "Маршрутизатор: заменяет API-адрес Claude на OpenRouter, DeepSeek, Ollama, Gemini, Kimi, Qwen, Groq. Позволяет выбирать модель под каждую задачу." },
+    { "name": "router-for-me/CLIProxyAPI", "url": "https://github.com/router-for-me/CLIProxyAPI", "desc": "Обёртка, которая предоставляет доступ к Gemini CLI, Codex, Claude Code и Antigravity через API, совместимый с OpenAI/Gemini/Claude/Codex." },
+    { "name": "openai/codex-plugin-cc", "url": "https://github.com/openai/codex-plugin-cc", "desc": "Официальный плагин OpenAI: /codex:review, /codex:adversarial-review, /codex:rescue внутри Claude Code. Codex/GPT-5 помогает с QA." },
+    { "name": "BeehiveInnovations/pal-mcp-server", "url": "https://github.com/BeehiveInnovations/pal-mcp-server", "desc": "Не обновлялся с декабря 2025. MCP-сервер для работы с разными моделями (бывший zen-mcp): Gemini, OpenAI, Azure, Grok, Ollama, OpenRouter доступны как инструменты Claude. 50+ моделей." }
   ],
   "orchestrationBackground": [
-    { "name": "gastownhall/gastown", "url": "https://github.com/gastownhall/gastown", "desc": "Multi-agent workspace manager от Steve Yegge. Персистентный трекинг работы, true background, рассчитан на сложные multi-agent сценарии. 17.8k⭐." },
-    { "name": "sipyourdrink-ltd/bernstein", "url": "https://github.com/sipyourdrink-ltd/bernstein", "desc": "Детерминистский оркестратор с HMAC-chained audit-log. Spawn'ит параллельные агенты, верифицирует тестами, авто-коммитит. Ноль LLM-токенов на координацию." },
-    { "name": "ruvnet/ruflo", "url": "https://github.com/ruvnet/ruflo", "desc": "Multi-agent swarm-платформа с RAG, self-learning и нативной интеграцией Claude Code. Бывший claude-flow, 69k⭐." }
+    { "name": "gastownhall/gastown", "url": "https://github.com/gastownhall/gastown", "desc": "Менеджер рабочей среды для нескольких агентов от Steve Yegge. Сохраняет сведения о ходе работы, полноценно работает в фоне, рассчитан на сложные сценарии с несколькими агентами. 17.8k⭐." },
+    { "name": "sipyourdrink-ltd/bernstein", "url": "https://github.com/sipyourdrink-ltd/bernstein", "desc": "Детерминированный оркестратор с журналом аудита, в котором записи связаны цепочкой HMAC. Запускает агентов параллельно, проверяет результаты тестами, автоматически делает коммиты. Ноль LLM-токенов на координацию." },
+    { "name": "ruvnet/ruflo", "url": "https://github.com/ruvnet/ruflo", "desc": "Платформа для совместной работы множества агентов с RAG, самообучением и встроенной интеграцией с Claude Code. Бывший claude-flow, 69k⭐." }
   ],
   "orchestrationGui": [
-    { "name": "BloopAI/vibe-kanban", "url": "https://github.com/BloopAI/vibe-kanban", "desc": "Kanban-доска для управления параллельными coding agents. 26.5k⭐, самый популярный GUI под Claude Code и Codex." },
-    { "name": "smtg-ai/claude-squad", "url": "https://github.com/smtg-ai/claude-squad", "desc": "TUI-менеджер параллельных терминальных Claude/Codex/Amp/OpenCode-сессий. Каждая в своём worktree." },
-    { "name": "stravu/crystal (теперь Nimbalyst)", "url": "https://github.com/stravu/crystal", "desc": "Desktop-приложение для параллельных Claude и Codex сессий в worktrees. Diff-viewer, сравнение подходов в одном окне." },
-    { "name": "manaflow-ai/cmux", "url": "https://github.com/manaflow-ai/cmux", "desc": "Ghostty-based macOS-терминал с вертикальными табами и push-нотификациями для coding agents." },
-    { "name": "generalaction/emdash", "url": "https://github.com/generalaction/emdash", "desc": "Open-source agentic IDE (YC W26) для параллельных coding agents любого провайдера." }
+    { "name": "BloopAI/vibe-kanban", "url": "https://github.com/BloopAI/vibe-kanban", "desc": "Канбан-доска для управления агентами, которые параллельно пишут код. 26.5k⭐, самый популярный графический интерфейс для Claude Code и Codex." },
+    { "name": "smtg-ai/claude-squad", "url": "https://github.com/smtg-ai/claude-squad", "desc": "Менеджер параллельных терминальных сессий Claude/Codex/Amp/OpenCode с текстовым интерфейсом. Каждая сессия работает в своём worktree." },
+    { "name": "stravu/crystal (теперь Nimbalyst)", "url": "https://github.com/stravu/crystal", "desc": "Настольное приложение для параллельных сессий Claude и Codex в отдельных worktree. Просмотр изменений и сравнение подходов в одном окне." },
+    { "name": "manaflow-ai/cmux", "url": "https://github.com/manaflow-ai/cmux", "desc": "Терминал для macOS на базе Ghostty с вертикальными вкладками и push-уведомлениями для агентов, которые пишут код." },
+    { "name": "generalaction/emdash", "url": "https://github.com/generalaction/emdash", "desc": "IDE с открытым исходным кодом (YC W26) для параллельной работы агентов любого провайдера." }
   ],
   "orchestrationLoop": [
-    { "name": "frankbria/ralph-claude-code", "url": "https://github.com/frankbria/ralph-claude-code", "desc": "Autonomous-цикл «работай пока не готово» с intelligent exit detection. Эталонный Ralph-pattern (Geoffrey Huntley) под Claude Code." },
-    { "name": "humanlayer/humanlayer", "url": "https://github.com/humanlayer/humanlayer", "desc": "Фреймворк для сложных задач в больших кодовых базах: human-in-loop approval-чекпоинты на критичных шагах." }
+    { "name": "frankbria/ralph-claude-code", "url": "https://github.com/frankbria/ralph-claude-code", "desc": "Автономный цикл «работай пока не готово», который определяет, когда пора завершить работу. Образцовая реализация подхода Ralph (Geoffrey Huntley) для Claude Code." },
+    { "name": "humanlayer/humanlayer", "url": "https://github.com/humanlayer/humanlayer", "desc": "Фреймворк для сложных задач в больших кодовых базах: на критичных шагах запрашивает подтверждение человека." }
   ]
 }

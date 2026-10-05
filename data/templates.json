@@ -2,28 +2,28 @@
   "local": [
     { "name": "examples/claude-md-templates/nextjs.md", "url": "./examples/claude-md-templates/nextjs.md", "desc": "Next.js 16 + React 19 + TypeScript + Tailwind 4." },
     { "name": "examples/claude-md-templates/python-fastapi.md", "url": "./examples/claude-md-templates/python-fastapi.md", "desc": "Python 3.13+ + FastAPI + SQLAlchemy 2.0 + Pydantic v2." },
-    { "name": "examples/claude-md-templates/terraform.md", "url": "./examples/claude-md-templates/terraform.md", "desc": "Terraform 1.13+ с упором на безопасность state." }
+    { "name": "examples/claude-md-templates/terraform.md", "url": "./examples/claude-md-templates/terraform.md", "desc": "Terraform 1.13+ с акцентом на безопасность состояния." }
   ],
   "collections": [
-    { "name": "multica-ai/andrej-karpathy-skills", "url": "https://github.com/multica-ai/andrej-karpathy-skills", "desc": "`CLAUDE.md`, собранный из практик Andrej Karpathy. 212k⭐." },
-    { "name": "garrytan/gstack", "url": "https://github.com/garrytan/gstack", "desc": "Сетап Garry Tan: 23 opinionated-инструмента. 132k⭐." },
-    { "name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "desc": "Полная оптимизация harness'а: скиллы, инстинкты, память, research-first разработка. 255k⭐." },
-    { "name": "davila7/claude-code-templates", "url": "https://github.com/davila7/claude-code-templates", "desc": "CLI для конфигурации и мониторинга Claude Code, с готовыми наборами настроек под стек. 31k⭐." }
+    { "name": "multica-ai/andrej-karpathy-skills", "url": "https://github.com/multica-ai/andrej-karpathy-skills", "desc": "`CLAUDE.md`, составленный на основе практик Andrej Karpathy. 212k⭐." },
+    { "name": "garrytan/gstack", "url": "https://github.com/garrytan/gstack", "desc": "Настройка среды от Garry Tan: 23 инструмента с заданными подходами к работе. 132k⭐." },
+    { "name": "affaan-m/ECC", "url": "https://github.com/affaan-m/ECC", "desc": "Полная оптимизация обвязки: скиллы, инстинкты, память, разработка с предварительным исследованием. 255k⭐." },
+    { "name": "davila7/claude-code-templates", "url": "https://github.com/davila7/claude-code-templates", "desc": "CLI для настройки и мониторинга Claude Code с готовыми наборами настроек под стек. 31k⭐." }
   ],
   "stacks": [
-    { "name": "vercel-labs/agent-skills", "url": "https://github.com/vercel-labs/agent-skills", "desc": "Best-practices Next.js, де-факто эталонный шаблон от Vercel." },
+    { "name": "vercel-labs/agent-skills", "url": "https://github.com/vercel-labs/agent-skills", "desc": "Рекомендуемые практики Next.js, фактически эталонный шаблон от Vercel." },
     { "name": "supabase/agent-skills", "url": "https://github.com/supabase/agent-skills", "desc": "Supabase и PostgreSQL." },
     { "name": "callstackincubator/agent-skills", "url": "https://github.com/callstackincubator/agent-skills", "desc": "Шаблоны React Native." },
-    { "name": "shadcn/ui skills", "url": "https://ui.shadcn.com/docs/skills", "desc": "Компоненты shadcn с принудительным применением паттернов." },
+    { "name": "shadcn/ui skills", "url": "https://ui.shadcn.com/docs/skills", "desc": "Компоненты shadcn с обязательным применением заданных паттернов." },
     { "name": "expo/skills", "url": "https://github.com/expo/skills", "desc": "Expo. 25K+ установок." },
     { "name": "get-convex/agent-skills", "url": "https://github.com/get-convex/agent-skills", "desc": "Convex — реактивный бэкенд." },
-    { "name": "microsoft/azure-skills", "url": "https://github.com/microsoft/azure-skills", "desc": "Деплой в Azure и best-practices от Microsoft." },
+    { "name": "microsoft/azure-skills", "url": "https://github.com/microsoft/azure-skills", "desc": "Развёртывание в Azure и рекомендуемые практики от Microsoft." },
     { "name": "firebase/agent-skills", "url": "https://github.com/firebase/agent-skills", "desc": "Firebase и Firestore." },
-    { "name": "docs.stripe.com/agents", "url": "https://docs.stripe.com/agents", "desc": "Гайд Stripe по агентным платежам: MCP-сервер, agent toolkit, правила для платёжных интеграций." }
+    { "name": "docs.stripe.com/agents", "url": "https://docs.stripe.com/agents", "desc": "Руководство Stripe по платежам через агентов: MCP-сервер, набор инструментов для агентов, правила интеграции платёжных систем." }
   ],
   "guides": [
     { "name": "Anthropic engineering: Claude Code best practices", "url": "https://www.anthropic.com/engineering/claude-code-best-practices", "desc": "Официальный пост." },
-    { "name": "Год с Claude Code (alpinadigital, Habr)", "url": "https://habr.com/ru/companies/alpinadigital/articles/1032134/", "desc": "Год опыта в конфигурации." },
-    { "name": "Claude Code: практический гайд (Habr)", "url": "https://habr.com/ru/articles/987094/", "desc": "Сетап на русском." }
+    { "name": "Год с Claude Code (alpinadigital, Habr)", "url": "https://habr.com/ru/companies/alpinadigital/articles/1032134/", "desc": "Опыт настройки за год." },
+    { "name": "Claude Code: практический гайд (Habr)", "url": "https://habr.com/ru/articles/987094/", "desc": "Настройка на русском." }
   ]
 }

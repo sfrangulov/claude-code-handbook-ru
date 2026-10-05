@@ -108,7 +108,7 @@ function fmtInstalls(n) {
 const TABLES = {
   'skills-top': (items) => {
     const out = [
-      '| Скилл | Зачем и когда юзать | Установок |',
+      '| Скилл | Зачем и когда использовать | Установок |',
       '|---|---|---:|',
     ];
     for (const it of items) {
