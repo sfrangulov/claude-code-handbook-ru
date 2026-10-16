@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 **Совет практика:** не подключай больше 5–7 серверов одновременно — каждый расходует контекст на discovery. Сначала смотри курируемую выборку в [главном README](../README.md#mcp-серверы), потом сюда — за специализированными.
 
-**Записей:** 809.
+**Записей:** 810.
 
 📌 Курируемая подборка — в [главном README](../README.md#mcp-серверы). Здесь — широкая выборка для поиска и SEO.
 
@@ -664,6 +664,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [SecretiveShell/MCP-wolfram-alpha](https://github.com/SecretiveShell/MCP-wolfram-alpha)
 - [seekrays/mcp-monitor](https://github.com/seekrays/mcp-monitor)
 - [sergehuber/inoyu-mcp-unomi-server](https://github.com/inoyu-dev/inoyu-mcp-unomi-server)
+- [SergiuPogor/curlshot-mcp](https://github.com/SergiuPogor/curlshot-mcp)
 - [serkan-ozal/driflyte-mcp-server](https://github.com/serkan-ozal/driflyte-mcp-server)
 - [servers-archived](https://github.com/modelcontextprotocol/servers-archived)
 - [sfrangulov/minirag-mcp](https://github.com/sfrangulov/minirag-mcp)

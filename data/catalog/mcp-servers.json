@@ -2589,6 +2589,10 @@
       "url": "https://github.com/inoyu-dev/inoyu-mcp-unomi-server"
     },
     {
+      "name": "SergiuPogor/curlshot-mcp",
+      "url": "https://github.com/SergiuPogor/curlshot-mcp"
+    },
+    {
       "name": "serkan-ozal/driflyte-mcp-server",
       "url": "https://github.com/serkan-ozal/driflyte-mcp-server"
     },
