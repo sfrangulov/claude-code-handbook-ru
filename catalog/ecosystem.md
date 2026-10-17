@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Качество смешанное — это широкая выборка, не отбор. Используй для поиска нишевых решений по теме.
 
-**Записей:** 237.
+**Записей:** 238.
 
 📌 Курируемая подборка — в [главном README](../README.md). Здесь — широкая выборка для поиска и SEO.
 
@@ -253,4 +253,5 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [yigitkonur/awesome-herdr](https://github.com/yigitkonur/awesome-herdr)
 - [yohey-w/multi-agent-shogun](https://github.com/yohey-w/multi-agent-shogun)
 - [yuk1ty/herdr-spreader](https://github.com/yuk1ty/herdr-spreader)
+- [yylo-dev/yylo](https://github.com/yylo-dev/yylo)
 - [ZingerLittleBee/Heeler](https://github.com/ZingerLittleBee/Heeler)
