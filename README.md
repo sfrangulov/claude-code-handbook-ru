@@ -12,7 +12,7 @@ CI gate: node scripts/build-readme.mjs --check
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
-**Полный каталог без отбора (1407 записей по типам)** — в [catalog/](./catalog/README.md). В эту подборку вошли инструменты, которыми я пользуюсь в клиентских проектах, и популярные инструменты с большим числом установок.
+**Полный каталог без отбора (1408 записей по типам)** — в [catalog/](./catalog/README.md). В эту подборку вошли инструменты, которыми я пользуюсь в клиентских проектах, и популярные инструменты с большим числом установок.
 
 > 📄 **[Шпаргалка на 1 страницу A4 →](https://sfrangulov.github.io/claude-code-handbook-ru/)** Все горячие клавиши, слэш-команды, MCP, память, рабочие процессы, скиллы, агенты и CLI-флаги на одном листе. Скачай [готовый PDF](./cheatsheet/cheatsheet.pdf) или распечатай страницу сам через `⌘P`.
 
@@ -626,7 +626,7 @@ claude plugin validate claude-code-playground/claude-code/mods/blast-radius
 
 [Model Context Protocol](https://modelcontextprotocol.io/) — стандарт для подключения внешних инструментов к LLM. Все MCP-серверы работают в Claude Code, Claude Desktop и Cursor.
 
-> 📂 Полный каталог: **[811 записей →](./catalog/mcp-servers.md)** — собран из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
+> 📂 Полный каталог: **[812 записей →](./catalog/mcp-servers.md)** — собран из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
 
 > **Правило из практики:** пять хорошо подобранных MCP-серверов лучше двадцати, но причина не та, которую обычно называют.
 >
