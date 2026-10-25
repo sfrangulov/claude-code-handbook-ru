@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 **Совет практика:** не подключай больше 5–7 серверов одновременно — каждый расходует контекст на discovery. Сначала смотри курируемую выборку в [главном README](../README.md#mcp-серверы), потом сюда — за специализированными.
 
-**Записей:** 811.
+**Записей:** 812.
 
 📌 Курируемая подборка — в [главном README](../README.md#mcp-серверы). Здесь — широкая выборка для поиска и SEO.
 
@@ -525,6 +525,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [niledatabase/nile-mcp-server](https://github.com/niledatabase/nile-mcp-server)
 - [nkapila6/mcp-local-rag](https://github.com/nkapila6/mcp-local-rag)
 - [npm](https://www.npmjs.com/package/clirank-mcp-server)
+- [npmscan](https://npmscan.com/docs/mcp)
 - [NyxToolsDev/dicom-hl7-mcp-server](https://github.com/NyxToolsDev/dicom-hl7-mcp-server)
 - [OctagonAI/octagon-mcp-server](https://github.com/OctagonAI/octagon-mcp-server)
 - [ofershap/mcp-server-cloudflare](https://github.com/ofershap/mcp-server-cloudflare)

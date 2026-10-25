@@ -2033,6 +2033,10 @@
       "url": "https://www.npmjs.com/package/clirank-mcp-server"
     },
     {
+      "name": "npmscan",
+      "url": "https://npmscan.com/docs/mcp"
+    },
+    {
       "name": "NyxToolsDev/dicom-hl7-mcp-server",
       "url": "https://github.com/NyxToolsDev/dicom-hl7-mcp-server"
     },
