@@ -2401,6 +2401,10 @@
       "url": "https://github.com/rad-security/mcp-server"
     },
     {
+      "name": "radres/call-me",
+      "url": "https://github.com/radres/call-me"
+    },
+    {
       "name": "rafapra3008/cervellaswarm",
       "url": "https://github.com/rafapra3008/cervellaswarm/tree/main/packages/mcp-server"
     },
