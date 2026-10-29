@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Скилл подгружается автоматически, когда задача попадает под его описание — поэтому имеет смысл накопить несколько узкоспециализированных, а не один универсальный.
 
-**Записей:** 159.
+**Записей:** 162.
 
 📌 Курируемая подборка — в [главном README](../README.md#skills). Здесь — широкая выборка для поиска и SEO.
 
@@ -95,6 +95,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [Karpathy Guidelines](https://github.com/swarmclawai/andrej-karpathy-skills)
 - [Landing](https://sky-lv.github.io/awesome-openclaw-skills)
 - [last30days-skill](https://github.com/mvanhorn/last30days-skill)
+- [Leonxlnx/earshot](https://github.com/Leonxlnx/earshot)
 - [linkedin-skills](https://github.com/sergebulaev/linkedin-skills)
 - [logo-generator-skill](https://github.com/op7418/logo-generator-skill)
 - [loki-mode](https://github.com/asklokesh/loki-mode)
@@ -126,9 +127,11 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [pskill9/hn-server](https://github.com/pskill9/hn-server)
 - [pskill9/web-search](https://github.com/pskill9/web-search)
 - [pskill9/website-downloader](https://github.com/pskill9/website-downloader)
+- [QingYunA/answer-me-with-html](https://github.com/QingYunA/answer-me-with-html)
 - [qmd-skill](https://github.com/levineam/qmd-skill)
 - [qovery-deploy](https://github.com/Qovery/qovery-skills)
 - [Reepl - LinkedIn Content Creation](https://github.com/reepl-io/skills)
+- [rehan-remade/universal-modder](https://github.com/rehan-remade/universal-modder)
 - [remotion-dev/skills](https://www.remotion.dev/docs/ai/skills)
 - [rust-skills](https://github.com/actionbook/rust-skills)
 - [sanyuan-skills](https://github.com/sanyuan0704/sanyuan-skills)

@@ -22,7 +22,7 @@ CI gate: node scripts/build-readme.mjs --check
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
-**Полный каталог без отбора (1409 записей по типам)** — в [catalog/](./catalog/README.md). В эту подборку вошли инструменты, которыми я пользуюсь в клиентских проектах, и популярные инструменты с большим числом установок.
+**Полный каталог без отбора (1413 записей по типам)** — в [catalog/](./catalog/README.md). В эту подборку вошли инструменты, которыми я пользуюсь в клиентских проектах, и популярные инструменты с большим числом установок.
 
 > 📄 **[Шпаргалка на 1 страницу A4 →](https://sfrangulov.github.io/claude-code-handbook-ru/)** Все горячие клавиши, слэш-команды, MCP, память, рабочие процессы, скиллы, агенты и CLI-флаги на одном листе. Скачай [готовый PDF](./cheatsheet/cheatsheet.pdf) или распечатай страницу сам через `⌘P`.
 
@@ -134,6 +134,9 @@ Anthropic свёл опыт команд к циклу **модель угроз
 - [Redesigning source control at Anthropic](https://www.anthropic.com/research/redesigning-source-control) — Почему Anthropic отказалась от git. С мая по сентябрь 2026 года число изменений, слитых в монорепозиторий за день, выросло с 2 500 до 30 000 с лишним, и git перестал справляться. Компания создала свою систему контроля версий Scion и перевела на неё монорепозиторий за пять месяцев: клиенты всегда подключены к сети, коммиты, слияния и ребейзы выполняются на сервере, рабочая копия необязательна. Хороший пример того, где ломается инфраструктура, когда код пишут агенты.
 - [HarnessTax](https://harnesstax.github.io/) — Исследование UC Berkeley: 21 сочетание из 7 моделей и 3 обвязок (Claude Code, Codex CLI, Pi) на SWE-bench Lite и Terminal-Bench 2.0. На этих бенчмарках выбор обвязки почти не влияет на долю решённых задач, но разница в стоимости достигает пяти раз. При этом минималистичная Pi не уступает остальным.
 - [Claude Mods: Flipping the Harness Inside Out](https://www.latent.space/p/claude-mods) — Эссе Дэна Макатира в Latent Space: моды смещают фокус обвязки с машины на человека и помогают управлять вниманием пользователя. Разобраны встроенный мод You Should Know (агент-наблюдатель показывает над промптом то, что ты мог пропустить), самописный Next Steps Supervisor и то, чего модам пока не хватает.
+- [Building agents: When to fold subagents into your main agent loop](https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop) — Статья Дайан Саркис из Anthropic о том, когда стоит перенести работу субагентов в основной цикл агента. По опыту команды Applied AI в нескольких корпоративных внедрениях, один агент со скиллами и поиском инструментов чаще давал более высокое качество, чем оркестратор с субагентами, а нередко обходился дешевле и отвечал быстрее. У одного клиента такой цикл работал примерно вдвое быстрее. Субагентов советуют оставлять в трёх случаях: контекст разрастается настолько, что качество работы заметно и измеримо падает; задачи нужно решать параллельно в отдельных контекстах; агент путается в инструментах и противоречивых инструкциях. Дальше — пошаговый переход: сквозные проверки качества (для начала хватит 10 эталонных примеров), объединение специалистов со связанными задачами, перенос промптов субагентов в скиллы, а их API — в MCP-инструменты. Для этого опубликован набор `anthropics/single-agent-loop-kit`.
+- [SlopCodeBench update 10/2026](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-new-models-on-slop-code-bench.md) — Декс Хорти (HumanLayer) прогнал модели на полном SlopCodeBench: 36 задач и 196 контрольных точек, в которых требования меняются по ходу работы, а старые тесты должны по-прежнему проходить. По строгому критерию ведущие модели набрали 12–16%: впереди GPT-6 Astra на xhigh с 16,3%, но отрыв от второго места — всего две контрольные точки. Opus 5.5 на medium набрал 14,3%, а по основным тестам вышел на первое место с 74%. Режим xhigh обходился в 2–4 раза дороже medium, а результат по строгому критерию вырос только у Astra. У Opus 5.5 он упал с 28 до 25 контрольных точек при стоимости в 4,2 раза выше. Автор оговаривается, что каждую настройку проверяли один раз, поэтому эти замеры не доказывают, что разница связана с уровнем рассуждений.
+- [Your Game Is A Harness](https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code) — Кайл Кукштел превратил свой доклад на Indie Rodeo в статью: LLM плохо справляются с играми, потому что большая часть игры находится за пределами кода и недоступна модели. Он предлагает сделать саму игру обвязкой для работы модели: использовать один генератор случайных чисел с сидом, с первого дня предусмотреть сохранение и загрузку, заменить иерархию классов единым типом объекта, применять паттерн Command для воспроизведения действий, хранить данные вне кода, а симуляцию вынести в отдельную библиотеку, которую можно тестировать без движка. Результат проверяют сравнением скриншотов через odiff с числовой оценкой сходства и текстовыми дампами профилировщика. Автор признаёт, что в своём текущем небольшом проекте всего этого не применял: подход рассчитан на крупные игры.
 
 ---
 
@@ -141,7 +144,7 @@ Anthropic свёл опыт команд к циклу **модель угроз
 
 Скиллы — это наборы инструкций для повторяющихся задач. Claude подгружает нужный скилл, когда задача подходит под его описание. Например, для разработки через тесты (TDD), проверки кода или поиска проблем с производительностью. См. [официальное руководство](https://code.claude.com/docs/en/skills).
 
-> 📂 Полный каталог: **[159 записей →](./catalog/skills.md)**
+> 📂 Полный каталог: **[162 записи →](./catalog/skills.md)**
 
 ### Топ-15 скиллов (skills.sh)
 
@@ -192,7 +195,7 @@ Anthropic свёл опыт команд к циклу **модель угроз
 - [affaan-m/ECC](https://github.com/affaan-m/ECC) — 286 скиллов и 68 агентов для работы в том числе с редкими предметными областями, плюс инстинкты (паттерны, усвоенные из твоих сессий) и память, общая для разных сред запуска агентов. Ставить выборочно: правила всегда в контексте. [Подробный разбор](./docs/skill-families-ru.md#affaan-mecc--операционная-система-харнесса).
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) — Инженерные скиллы для работы в продакшене от Addy Osmani (Google Chrome). 93k⭐.
 - [google/skills](https://github.com/google/skills) — Официальные скиллы Google для своих продуктов и технологий. 20k⭐.
-- [pbakaus/impeccable](https://github.com/pbakaus/impeccable) — Язык дизайна для агента: 18 слэш-команд для всех этапов работы над интерфейсом (craft, audit, polish, harden) и 7 справочников — цвет, типографика, анимация, пространство, взаимодействия, адаптивность, UX-текст. Читает PRODUCT.md и DESIGN.md ещё до начала работы над дизайном. 67k⭐, 270K установок.
+- [pbakaus/impeccable](https://github.com/pbakaus/impeccable) — Язык дизайна для агента: 18 слэш-команд для всех этапов работы над интерфейсом (craft, audit, polish, harden) и 7 справочников — цвет, типографика, анимация, пространство, взаимодействия, адаптивность, UX-текст. Читает PRODUCT.md и DESIGN.md ещё до начала работы над дизайном. 93k⭐, 270K установок.
 - [trailofbits/skills](https://github.com/trailofbits/skills) — Скиллы по безопасности от Trail of Bits: статический анализ через CodeQL/Semgrep, аудит кода, поиск уязвимостей.
 - [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) — Vercel Engineering: производительность React, рекомендации по веб-интерфейсам, React Native, деплой на Vercel.
 - [supabase/agent-skills](https://github.com/supabase/agent-skills) — Скиллы для Supabase и PostgreSQL.
@@ -206,9 +209,10 @@ Anthropic свёл опыт команд к циклу **модель угроз
 - [NVIDIA/skills](https://github.com/NVIDIA/skills) — Проверенные NVIDIA скиллы для работы с её ПО: библиотеками CUDA-X, cuOpt, средствами симуляции и робототехники, RAG и AI Blueprints. Ставятся по одному: `npx skills add nvidia/skills --skill <имя>`. Нужен skills CLI 1.5.16 или новее, иначе скилл может не появиться в Claude Code. 3.7k⭐.
 - [shadcn/ui skills](https://ui.shadcn.com/docs/skills) — Сведения о компонентах shadcn и обязательное применение паттернов.
 - [sfrangulov/skills](https://github.com/sfrangulov/skills) — Моя коллекция: методика консалтинга из 8 шагов (EN и RU), выбор следующего OSS-продукта, demo-video-pipeline (Playwright + Remotion + ElevenLabs), research-pipeline с проверкой источников.
-- [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) — 15k⭐, регулярно обновляемая подборка скиллов.
+- [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) — Подборка скиллов, которая не обновляется с апреля 2026 года. 16k⭐.
 - [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) — Самая крупная подборка скиллов: 75k⭐.
 - [karanb192/awesome-claude-skills](https://github.com/karanb192/awesome-claude-skills) — 50+ проверенных скиллов, сгруппированных по типам.
+- [t3dotgg/tstack](https://github.com/t3dotgg/tstack) — Скиллы, которыми Тео (t3dotgg) пользуется каждый день, в основном для работы с PR в Claude Code и Codex: `full-send` доводит изменение до слияния PR без участия человека, `babysit-pr` следит за CI и ботами-ревьюерами, `file-pr` пишет описание PR, `takeover` дорабатывает чужую ветку с сохранением авторства. `council` собирает ревью от трёх моделей разных провайдеров, а `sol-loop` проводит ревью через GPT Sol. За пределами T3 Code для них нужен субагент с доступом к этим моделям, иначе скилл останавливается. Это касается и `full-send`, который вызывает `sol-loop`. Установка копированием: `git clone https://github.com/t3dotgg/tstack`, затем `cp -R tstack/skills/* ~/.claude/skills/`; нужен авторизованный `gh`. 2.3k⭐.
 
 ### Узкоспециализированные
 
@@ -230,6 +234,9 @@ Anthropic свёл опыт команд к циклу **модель угроз
 - [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) — Видео из HTML, CSS и анимаций: агент планирует ролик, пишет HTML, проверяет его и рендерит MP4 с воспроизводимым результатом. Семь скиллов, главный — `/hyperframes`; в октябре в него вошли прежде отдельные hyperframes-animation и hyperframes-creative. Установка: `claude plugin marketplace add heygen-com/hyperframes`, затем `claude plugin install hyperframes@hyperframes`. 70k⭐.
 - [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) — CAD для агента: 3D-модели в STEP, GLB, STL и 3MF, проверка возможности изготовления, чертежи и отправка в сервисы 3D-печати, обработки листового металла и обработки на станках с ЧПУ. Работает локально через uv. По умолчанию отправляет анонимную статистику; её сбор отключается командой `uvx cadgen telemetry off`. 23k⭐.
 - [morluto/rea](https://github.com/morluto/rea) — MCP-сервер и скилл для реверс-инжиниринга: агент без исходников разбирает нативные бинарники, JS- и Electron-приложения, сборки .NET и сайты, объясняет, как устроена функция, и прикладывает доказательства. Для нативного кода нужен Hopper, Ghidra или IDA. Оговорка: в [треде на r/ClaudeCode](https://www.reddit.com/r/ClaudeCode/comments/1xbtl8w/) пишут, что на таких задачах у Claude срабатывают защитные ограничения и он обрывает работу. Установка: `npx rea-agents setup`. 371k⭐.
+- [Nutlope/hallmark](https://github.com/Nutlope/hallmark) — Дизайн-скилл от Together AI для борьбы с шаблонной «нейросетевой» вёрсткой: агент выбирает одну из 50 тем, строит страницу вокруг действия, которое должен совершить посетитель, проверяет её линтером `sloplint` в браузере на восьми ширинах экрана и отдаёт на ревью субагенту с чистым контекстом. Линтер ловит типичные признаки: надзаголовок над каждым блоком, подписи капслоком, одно цветное слово в заголовке. Для готовых страниц есть `/hallmark redesign <path>` с сохранением контента и обработчиков и `/hallmark audit <path>`, который только выдаёт отчёт. Установка: `npx skills add nutlope/hallmark -g` или плагином: `/plugin marketplace add nutlope/hallmark`, затем `/plugin install hallmark@hallmark`. Нужен Node 18+, для браузерных проверок — Chrome и `puppeteer-core`; генерация картинок необязательна и работает через платный API Together. 41k⭐.
+- [jakubkrehel/skills](https://github.com/jakubkrehel/skills) — 14 скиллов для работы с интерфейсами от дизайн-инженера Якуба Крехела (журнал Interfaces): `better-typography`, `better-colors`, `better-layout`, `better-accessibility` по WCAG 2.2, `better-writing` для текстов и общий `better-interface`, который выдаёт единый отчёт с замечаниями по приоритету. Часть скиллов вызывается вручную: `interface-review` ищет UI-регрессии в ветке или PR, `break` и `state-machine` показывают компонент во всех состояниях, `variant` делает несколько вариантов на выбор. Для `build-design` нужен подключённый Figma MCP, для разбора работающего сайта — браузерный MCP вроде chrome-devtools-mcp. Установка: `npx skills add jakubkrehel/skills` или `/plugin marketplace add jakubkrehel/skills`, затем `/plugin install interfaces@interfaces`. 9.0k⭐.
+- [DenisSergeevitch/ex-ussr-kinship-research](https://github.com/DenisSergeevitch/ex-ussr-kinship-research) — Генеалогический скилл для поиска предков в архивах бывшего СССР и Российской империи: метрические книги, записи ЗАГС, военные дела, дела о депортациях и репрессиях по всем 15 республикам. SKILL.md написан по-русски. Агент учитывает административное деление на дату события, перебирает варианты имён и написания, ведёт реестр находок и журнал поиска, для каждого утверждения указывает степень доказанности и выдаёт HTML-отчёт с деревом, а по запросу — GEDCOM. Среди источников — ОБД «Мемориал», «Память народа», Главархив Москвы, «Открытый список» и FamilySearch. Нужен только Python 3, но в FamilySearch и ряд архивов входишь сам, а в некоторых архивах удалённый просмотр сканов платный; CAPTCHA и пейволлы скилл не обходит, контакты живых людей не ищет. Установка: `npx skills add https://github.com/DenisSergeevitch/ex-ussr-kinship-research`. 1.2k⭐.
 
 ### Локальные примеры
 
@@ -351,24 +358,28 @@ tmux уже стоит у всех, и половина инструментов
 
 ### Сравнение для разработчика, который работает один
 
-Число звёзд и дата последнего пуша — по данным GitHub API на 2026-10-23. Сложность — субъективная оценка того, сколько времени потребуется до первого полезного запуска. Сначала смотри на дату пуша, потом на звёзды: половина проектов в этой нише живёт один сезон. ⚠️ — больше четырёх месяцев без коммитов.
+Число звёзд и дата последнего пуша — по данным GitHub API на 2026-10-29. Сложность — субъективная оценка того, сколько времени потребуется до первого полезного запуска. Сначала смотри на дату пуша, потом на звёзды: половина проектов в этой нише живёт один сезон. ⚠️ — больше четырёх месяцев без коммитов.
 
 | Инструмент | ⭐ | Последний пуш | «Забыл и ушёл» | Сложность | Для кого |
 |---|---:|---|---|---|---|
-| [gastownhall/gastown](https://github.com/gastownhall/gastown) | 18.5k | 2026-10-21 | ✅ полноценный режим | Высокая | Избыточен для одиночки, рассчитан на сложные сценарии с несколькими агентами |
-| [sipyourdrink-ltd/bernstein](https://github.com/sipyourdrink-ltd/bernstein) | 1.4k | 2026-10-23 | ✅ полноценный режим | Средняя | Разработчик-одиночка, которому нужен журнал, пригодный для аудита |
-| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 78.7k | 2026-10-23 | ✅ рой агентов | Высокая | Команды и крупные компании, не для одиночки |
-| [paperclipai/paperclip](https://github.com/paperclipai/paperclip) | 106.5k | 2026-10-23 | ✅ работают круглосуточно | Средняя | Избыточен для одиночки: «компания» агентов с бюджетами и согласованиями, а не отдельные PR |
-| [omnara-ai/omnara](https://github.com/omnara-ai/omnara) | 3.2k | 2026-10-23 | ✅ запуск через API | Средняя | Замена Claude Managed Agents с запуском агентов на своих машинах или в Omnara Cloud |
-| [github/gh-aw](https://github.com/github/gh-aw) | 5.4k | 2026-10-23 | ✅ по событиям в репозитории | Средняя | Разбор issues, ревью PR и анализ упавшего CI прямо в GitHub Actions |
-| [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) | 28.4k | 2026-09-19 | ❌ частично вручную | Низкая | Простой параллельный запуск через канбан-доску |
+| [gastownhall/gastown](https://github.com/gastownhall/gastown) | 18.6k | 2026-10-28 | ✅ полноценный режим | Высокая | Избыточен для одиночки, рассчитан на сложные сценарии с несколькими агентами |
+| [sipyourdrink-ltd/bernstein](https://github.com/sipyourdrink-ltd/bernstein) | 1.3k | 2026-10-29 | ✅ полноценный режим | Средняя | Разработчик-одиночка, которому нужен журнал, пригодный для аудита |
+| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 80.0k | 2026-10-28 | ✅ рой агентов | Высокая | Команды и крупные компании, не для одиночки |
+| [paperclipai/paperclip](https://github.com/paperclipai/paperclip) | 108.4k | 2026-10-29 | ✅ работают круглосуточно | Средняя | Избыточен для одиночки: «компания» агентов с бюджетами и согласованиями, а не отдельные PR |
+| [omnara-ai/omnara](https://github.com/omnara-ai/omnara) | 3.3k | 2026-10-29 | ✅ запуск через API | Средняя | Замена Claude Managed Agents с запуском агентов на своих машинах или в Omnara Cloud |
+| [github/gh-aw](https://github.com/github/gh-aw) | 5.5k | 2026-10-29 | ✅ по событиям в репозитории | Средняя | Разбор issues, ревью PR и анализ упавшего CI прямо в GitHub Actions |
+| [multica-ai/multica](https://github.com/multica-ai/multica) | 54.2k | 2026-10-29 | ✅ агенты сами берут задачи с доски, автопилоты запускаются по cron | Средняя | Раздавать задачи агентам через доску issues и проверять результат на ревью |
+| [mvschwarz/openrig](https://github.com/mvschwarz/openrig) | 8.3k | 2026-10-29 | ⚠️ ведущий агент распределяет работу, задачу ставишь сам | Высокая | Постоянная команда Claude Code и Codex с распределёнными ролями для опытного пользователя tmux |
+| [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) | 28.5k | 2026-10-28 | ❌ частично вручную | Низкая | Простой параллельный запуск через канбан-доску |
 | [smtg-ai/claude-squad](https://github.com/smtg-ai/claude-squad) | 8.7k | 2026-08-20 | ❌ вручную | Низкая | Несколько сессий Claude в интерфейсе терминала |
 | [stravu/crystal (Nimbalyst)](https://github.com/stravu/crystal) | 3.1k | 2026-02-26 ⚠️ | ❌ частично вручную | Низкая | Настольный графический интерфейс для сравнения подходов |
-| [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | 28.4k | 2026-10-23 | ❌ вручную | Низкая | Пользователь macOS, которому нужны вкладки и push-уведомления |
-| [generalaction/emdash](https://github.com/generalaction/emdash) | 6.1k | 2026-10-23 | ❌ частично вручную | Низкая | Альтернатива vibe-kanban с открытым исходным кодом |
-| [stablyai/orca](https://github.com/stablyai/orca) | 103.5k | 2026-10-23 | ❌ частично вручную | Низкая | Агенты от разных компаний в одном окне, доступ с телефона и работа на удалённой машине по SSH |
-| [frankbria/ralph-claude-code](https://github.com/frankbria/ralph-claude-code) | 9.7k | 2026-10-17 | ⚠️ примитивный режим | Низкая | Эксперименты с Ralph-циклом |
-| [humanlayer/humanlayer](https://github.com/humanlayer/humanlayer) | 11.7k | 2026-10-23 | ⚠️ требует подтверждений | Средняя | Сложные кодовые базы, где на контрольных этапах обязательно участие человека |
+| [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | 28.6k | 2026-10-29 | ❌ вручную | Низкая | Пользователь macOS, которому нужны вкладки и push-уведомления |
+| [generalaction/emdash](https://github.com/generalaction/emdash) | 6.1k | 2026-10-26 | ❌ частично вручную | Низкая | Альтернатива vibe-kanban с открытым исходным кодом |
+| [stablyai/orca](https://github.com/stablyai/orca) | 109.3k | 2026-10-29 | ❌ частично вручную | Низкая | Агенты от разных компаний в одном окне, доступ с телефона и работа на удалённой машине по SSH |
+| [ParadevAI/Paradev](https://github.com/ParadevAI/Paradev) | 15.7k | 2026-10-29 | ⚠️ запуск по расписанию только в платном Pro | Низкая | Пользователь macOS, которому нужна IDE для параллельной работы агентов с просмотром диффа и браузером |
+| [tals/corgi](https://github.com/tals/corgi) | 184 | 2026-10-28 | ❌ вручную | Низкая | Замена tmux со статусами агентов, расходом токенов и списком worktree |
+| [frankbria/ralph-claude-code](https://github.com/frankbria/ralph-claude-code) | 9.7k | 2026-10-25 | ⚠️ примитивный режим | Низкая | Эксперименты с Ralph-циклом |
+| [humanlayer/humanlayer](https://github.com/humanlayer/humanlayer) | 12.7k | 2026-10-29 | ⚠️ требует подтверждений | Средняя | Сложные кодовые базы, где на контрольных этапах обязательно участие человека |
 
 ### Фоновые процессы — «забыл и ушёл»
 
@@ -378,6 +389,8 @@ tmux уже стоит у всех, и половина инструментов
 - [paperclipai/paperclip](https://github.com/paperclipai/paperclip) — Оркестратор «компании» из агентов: цели, оргструктура, бюджеты и этапы согласования. Агенты запускаются по расписанию или при назначении задачи и работают круглосуточно; среди поддерживаемых — Claude Code, Codex, Cursor и OpenCode. Рассчитан на случаи, когда агенты ведут целый проект или бизнес-процесс, а не отдельные PR. 106k⭐.
 - [omnara-ai/omnara](https://github.com/omnara-ai/omnara) — Открытая замена Claude Managed Agents и Agents API от OpenAI: API для запуска агентов на любой модели и любой машине, с инструментами, секретами, правами доступа и потоковой передачей данных. Можно бесплатно развернуть у себя (Apache-2.0) или воспользоваться Omnara Cloud. 3.2k⭐.
 - [github/gh-aw](https://github.com/github/gh-aw) — GitHub Agentic Workflows: сценарии автоматизации репозитория на Markdown с YAML-заголовком, которые выполняются в GitHub Actions. Среди движков — Claude Code, Codex, Copilot и Gemini. По умолчанию агент работает в песочнице и имеет доступ к GitHub только на чтение, а запись проходит через отдельные проверенные задания `safe-outputs`. Подходит для разбора issues, ревью PR и анализа упавшего CI. 5.4k⭐.
+- [multica-ai/multica](https://github.com/multica-ai/multica) — Доска задач, где агенты входят в команду наравне с людьми: назначаешь задачу Claude Code, Codex, Cursor или другому агенту из двух десятков CLI, а он берёт её в работу, выполняет на твоей машине через локальный демон, отчитывается в комментариях и отправляет на ревью. Есть автопилоты по cron, журнал запусков с указанием стоимости и возможность отправлять сообщения в текущую сессию. Облако multica.ai доступно с пробным периодом, цены не опубликованы; развёртывание через Docker на своём сервере бесплатно для использования внутри организации. Лицензия source-available: Apache 2.0 с дополнительными условиями. Без коммерческой лицензии нельзя предлагать Multica как сервис другим. Сервер, развёрнутый у себя, раз в день отправляет анонимную статистику; её отправку можно отключить через `DO_NOT_TRACK=1`. 54k⭐.
+- [mvschwarz/openrig](https://github.com/mvschwarz/openrig) — Постоянная команда из Claude Code и Codex с распределёнными ролями: состав описывается в YAML, `rig up` запускает агентов в сессиях tmux, а ты общаешься с ведущим агентом, который распределяет работу между исполнителем, QA и ревьюерами. Есть готовые составы — от `starter` (Claude Code пишет, Codex проверяет) до `factory` на семь агентов, восстановление после перезагрузки, обмен сообщениями между агентами и MCP-сервер. Установка: `npm install -g @openrig/cli`, затем `rig setup`; для Claude Code есть скилл `/rigs`. Нужны Node.js 22 или 24 и tmux, поддерживаются только macOS и Linux. При установке в настройки Claude Code и Codex добавляются хуки и доверенные рабочие папки, а служебный агент по умолчанию работает с широкими правами (в Codex — без подтверждений). 8.3k⭐.
 
 ### Параллельные сессии в GUI / канбан
 
@@ -387,6 +400,8 @@ tmux уже стоит у всех, и половина инструментов
 - [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) — Терминал для macOS на базе Ghostty с вертикальными вкладками и push-уведомлениями для агентов, которые пишут код.
 - [generalaction/emdash](https://github.com/generalaction/emdash) — IDE с открытым исходным кодом (YC W26) для параллельной работы агентов любого провайдера.
 - [stablyai/orca](https://github.com/stablyai/orca) — Настольное приложение для macOS, Windows и Linux: Claude Code, Codex, OpenCode, Pi и любой другой CLI-агент работают параллельно, каждый в своём worktree, в том числе на удалённой машине по SSH. Использует твою подписку. Комментарии к строкам диффа отправляются обратно агенту, приложение для телефона присылает уведомления и позволяет отвечать агентам, а в самом Orca видны расход лимитов Claude и Codex и время их сброса. 103k⭐.
+- [ParadevAI/Paradev](https://github.com/ParadevAI/Paradev) — Настольная IDE для параллельной работы агентов, бывший Superset: у каждой задачи свой worktree с веткой и терминалами, в боковой панели видно, какой агент работает, а какой ждёт тебя. Есть просмотр диффа с возможностью отправить агенту комментарии к строкам, браузерная панель для правок интерфейса, а также CLI, SDK и MCP-сервер, через которые агенты сами создают рабочие пространства. Работает с Claude Code, Codex, OpenCode и любым другим CLI-агентом по твоей подписке. Основная платформа — macOS, сборка для Linux экспериментальная, версии для Windows нет. Локальная работа бесплатна; запуск по расписанию и событиям, удалённый доступ и мобильное приложение доступны в Pro от $16 в месяц. Лицензия Elastic License 2.0: исходный код открыт, но использование ограничено её условиями. 16k⭐.
+- [tals/corgi](https://github.com/tals/corgi) — Терминальный мультиплексор в духе tmux и herdr на движке Ghostty: в боковой панели видно, кто из Claude Code, Codex, Pi или OpenCode работает, а кто ждёт ответа; `F1` переключает на того, кто ждёт. Показывает расход токенов, контекст и лимиты по каждому аккаунту, изменённые файлы, список worktree, загрузку CPU и использование памяти; сессии сохраняются после отключения, сбоя и перезагрузки. Установка: `curl -fsSL https://corgi.computer/install.sh | bash`, поддерживаются macOS на Apple Silicon и Linux. Сам прописывает хуки в настройки агентов, а сводки активности и названия сессий генерирует через запросы к модели с твоего аккаунта, то есть тратит токены. 184⭐.
 
 ### Автономные циклы и работа с обязательными подтверждениями
 
@@ -428,6 +443,8 @@ tmux уже стоит у всех, и половина инструментов
 - [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) — Обёртка, которая предоставляет доступ к Gemini CLI, Codex, Claude Code и Antigravity через API, совместимый с OpenAI/Gemini/Claude/Codex.
 - [openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc) — Официальный плагин OpenAI: /codex:review, /codex:adversarial-review, /codex:rescue внутри Claude Code. Codex/GPT-5 помогает с QA.
 - [BeehiveInnovations/pal-mcp-server](https://github.com/BeehiveInnovations/pal-mcp-server) — Не обновлялся с декабря 2025. MCP-сервер для работы с разными моделями (бывший zen-mcp): Gemini, OpenAI, Azure, Grok, Ollama, OpenRouter доступны как инструменты Claude. 50+ моделей.
+- [nyldn/claude-octopus](https://github.com/nyldn/claude-octopus) — Плагин, который отправляет одну задачу — исследование, проектирование, написание кода или ревью — нескольким моделям и показывает, где их ответы расходятся. К Claude можно подключить до 12 внешних провайдеров, среди них Codex, Copilot, Cursor CLI, OpenCode, Ollama и OpenRouter. `/octo:debate` устраивает дебаты моделей, `/octo:council` собирает «совет» из 3–7 ролей; пока не вызвана команда `/octo:*`, плагин ничего не делает. Установка: `claude plugin marketplace add https://github.com/nyldn/plugins.git`, затем `claude plugin install octo@nyldn-plugins` и `/octo:setup`. Код и промпты отправляются внешним провайдерам, без подписки их услуги оплачиваются отдельно; `/octo:costs` показывает прогноз расходов. На Windows работает только через WSL. 4.3k⭐.
+- [Alishahryar1/free-claude-code](https://github.com/Alishahryar1/free-claude-code) — Локальный прокси, через который Claude Code, Codex, OpenCode, Cline, Aider и ещё семь агентов работают с моделями других провайдеров: в каталоге 61 провайдер, от NVIDIA NIM, OpenRouter и Groq с бесплатными лимитами до DeepSeek, Kimi и локальных Ollama и llama.cpp. Модели выбираются в веб-интерфейсе, есть список резервных моделей на случай сбоев. После установки скриптом из README запускаются `fcc-server` и `fcc-claude`; модели Anthropic доступны только по отдельно оплачиваемому API-ключу, так что бесплатным здесь бывает Claude Code без Claude. Пометка «ToS-friendly» и «1,3 млрд бесплатных токенов в месяц» — заявления авторов, а среди провайдеров есть перепродавцы доступа к моделям непонятного происхождения. Лицензия AGPL-3.0. 65k⭐.
 
 ---
 
@@ -486,6 +503,7 @@ Evals помогают проверить, стал ли агент работа
 - [iurykrieger/claude-bedrock](https://github.com/iurykrieger/claude-bedrock) — Автоматизация «второго мозга» в Obsidian: работа с сущностями, загрузка, сжатие и синхронизация хранилища через скиллы Claude Code.
 - [mnemoverse/claude-plugin](https://github.com/mnemoverse/claude-plugin) — Долговременная память между сессиями на удалённом сервере через MCP: вход по OAuth, ключ вставлять не нужно. Есть команды `/mnemoverse:*` (remember, recall, memory-status) и скилл `agent-memory-discipline` (CC0). Подойдёт, когда общая память нужна сразу в Claude Code, Cursor, VS Code и ChatGPT. Установка: `/plugin marketplace add mnemoverse/claude-plugin`, затем `/plugin install mnemoverse@mnemoverse`.
 - [ITW-Creative-Works/workkit](https://github.com/ITW-Creative-Works/workkit) — Ведёт работу через GitHub Issues: каждая задача по меткам проходит спецификацию, сборку, ревью, QA и релиз; код и тесты пишут сабагенты, отдельный verifier проверяет diff вслепую, а hooks не дают закоммитить, пока полный набор тестов не прошёл на том, что коммитится. Когда брать: нужен harness, где Claude Code работает по принятой спецификации и не коммитит без зелёных тестов. Установка: `claude plugin marketplace add ITW-Creative-Works/workkit`, затем `claude plugin install workkit@workkit`.
+- [EpicGames/unreal-engine-skills-for-claude-code-plugin](https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin) — Официальный плагин Epic Games: Claude Code управляет запущенным Unreal Editor через MCP. В нём больше 30 наборов инструментов для работы с акторами, блюпринтами, материалами, Niagara, Sequencer, UMG, Gameplay Ability System и автотестами. Установка из официального маркетплейса: `/plugin install unreal-engine-skills-for-claude-code@claude-plugins-official`. В редакторе нужны плагины ModelContextProtocol и AllToolsets (появились в UE 5.8), а также сервер, запущенный командой `ModelContextProtocol.StartServer`. Сервер на localhost доступен любому процессу текущего пользователя, а инструмент `execute_tool_script` выполняет произвольный Python-код в редакторе. Поэтому авторы советуют не отключать подтверждения и коммитить проект перед долгими сессиями. 1.7k⭐.
 
 ---
 
@@ -517,6 +535,7 @@ Evals помогают проверить, стал ли агент работа
 - [hoangsonww/Claude-Code-Agent-Monitor](https://github.com/hoangsonww/Claude-Code-Agent-Monitor) — Дашборд активности агента на хуках, разворачивается на своём сервере: сессии, использование инструментов, оркестрация субагентов, статусы на канбан-доске.
 - [simple10/agents-observe](https://github.com/simple10/agents-observe) — Наблюдение в реальном времени за сессиями Claude Code и работой нескольких агентов, с фильтрацией и воспроизведением записей.
 - [ColeMurray/claude-code-otel](https://github.com/ColeMurray/claude-code-otel) — Заброшен с июня 2025 года, но всё ещё полезен как пример архитектуры: OpenTelemetry → Grafana для мониторинга расхода, производительности и стоимости.
+- [Louis-CFM/coucou](https://github.com/Louis-CFM/coucou) — Приложение-компаньон в «чёлке» MacBook (на Windows и Linux — у верхнего края экрана). Показывает сессии Claude Code, Codex, Cursor, Gemini CLI, OpenCode и других агентов: что они читают, правят и запускают, а также диффы. Запросы разрешений Claude Code можно подтверждать кнопками прямо в чёлке или с экрана блокировки через приложение для iPhone (пока в TestFlight). Работает через хуки: перед записью в `~/.claude/settings.json` делает резервную копию и показывает дифф. Если приложение не запущено, хук сразу завершается, не блокируя Claude Code. Установка на Mac: `brew tap louis-cfm/coucou https://github.com/Louis-CFM/coucou`, затем `brew install --cask coucou`. Помимо работы с агентами, в приложении много посторонних функций: диктовка, запись звонков, криптопортфель, плееры и экспериментальный WhatsApp через неофициальный шлюз. 6.7k⭐.
 
 ### Сценарии применения
 
@@ -628,7 +647,7 @@ claude plugin validate claude-code-playground/claude-code/mods/blast-radius
 - [sfrangulov/claude-session-line](https://github.com/sfrangulov/claude-session-line) — Строка состояния и счётчик кэша промпта в одном моде: две строки под промптом, полоса над ним, когда кэш вот-вот истечёт или уже истёк при большом объёме контекста, предупреждения и таблица `/cache` с данными по ходам. В отличие от cache-tax, мод сам не продлевает кэш, а только показывает, сколько времени осталось до его истечения, и советует `/compact`. Сетевых запросов нет, из процессов запускается только `git diff`, один раз за ход. Установка: `/plugin install session-line --marketplace sfrangulov/claude-session-line`.
 - [whyashthakker/awesome-claude-code-mods](https://github.com/whyashthakker/awesome-claude-code-mods) — 70 модов одного автора в одном маркетплейсе, все под MIT: 50 общего назначения (просмотр git, диагностика сессии, заметки, управление работой) и 20 для вкладки Code в Claude Desktop. В отличие от каталога karanb192, здесь собраны собственные реализации, а не чужие моды. Нужен Claude Code 2.1.287+. 92⭐.
 - [pro-vi/cc-stretch](https://github.com/pro-vi/cc-stretch) — Идея stretchtext Теда Нельсона (1967) в ответах Claude: сначала приходит короткий ответ, по клику фраза разворачивается прямо в тексте, по `«` сворачивается обратно, а Claude узнаёт, какие части ты открыл. По замеру автора на 69 ответах до клика видно 17% слов. В терминале нужен полноэкранный режим `/tui fullscreen`, в приложении Claude настраивать ничего не нужно. Установка: `/plugin install cc-stretch --marketplace pro-vi/cc-stretch`. 415⭐.
-- [rbartoli/agent-usage-guard](https://github.com/rbartoli/agent-usage-guard) — Не даёт израсходовать пятичасовой лимит за десять минут. Следит за долей потраченного лимита и перед запуском агента, отправкой промпта или вызовом инструмента просит подтверждение, если одновременно запущено слишком много субагентов, контекст разросся или одна и та же ошибка повторяется. Пороги перечислены в README: например, не больше 4 агентов одновременно и подтверждение, когда пятичасовое или недельное окно израсходовано на 80%. В сеть не ходит, процессы не запускает. Установка: `/plugin marketplace add rbartoli/agent-usage-guard`, затем `/plugin install agent-usage-guard@agent-usage-guard`. 57⭐.
+- [rbartoli/agent-usage-guard](https://github.com/rbartoli/agent-usage-guard) — Не даёт израсходовать пятичасовой лимит за десять минут. Следит за долей потраченного лимита и перед запуском агента, отправкой промпта или вызовом инструмента просит подтверждение, если одновременно запущено слишком много субагентов, контекст разросся или одна и та же ошибка повторяется. Пороги перечислены в README: например, не больше 4 агентов одновременно и подтверждение, когда пятичасовое или недельное окно израсходовано на 80%. В сеть не ходит, процессы не запускает. Установка: `/plugin marketplace add rbartoli/agent-usage-guard`, затем `/plugin install agent-usage-guard@agent-usage-guard`. 83⭐.
 
 ---
 
@@ -663,6 +682,7 @@ claude plugin validate claude-code-playground/claude-code/mods/blast-radius
 - [MCP registry](https://github.com/modelcontextprotocol/registry) — Официальный каталог серверов с поиском.
 - [modelcontextprotocol/python-sdk](https://github.com/modelcontextprotocol/python-sdk) — Официальный SDK для написания MCP-серверов и клиентов на Python. 24k⭐.
 - [modelcontextprotocol.io](https://modelcontextprotocol.io/) — Документация протокола.
+- [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) — Официальный MCP-сервер команды Chrome DevTools: агент управляет запущенным Chrome через Puppeteer, записывает трейсы производительности, разбирает сетевые запросы и сообщения консоли, делает скриншоты. Подключение: `claude mcp add chrome-devtools --scope user npx chrome-devtools-mcp@latest`; вариант со скиллами для проверки доступности, работы с cookies, LCP и утечками памяти устанавливается как плагин через `/plugin marketplace add ChromeDevTools/chrome-devtools-mcp`. Есть и CLI `chrome-devtools` для работы без MCP. Нужны Node.js LTS и Chrome. По умолчанию Google собирает статистику использования (отключается флагом `--no-usage-statistics`), а инструменты анализа производительности отправляют URL трейсов в CrUX API (отключается флагом `--no-performance-crux`). 54k⭐.
 
 ### Кураторы
 
@@ -719,12 +739,16 @@ claude plugin validate claude-code-playground/claude-code/mods/blast-radius
 - [microsoft/azure-skills](https://github.com/microsoft/azure-skills) — Развёртывание в Azure и рекомендуемые практики от Microsoft.
 - [firebase/agent-skills](https://github.com/firebase/agent-skills) — Firebase и Firestore.
 - [docs.stripe.com/agents](https://docs.stripe.com/agents) — Руководство Stripe по платежам через агентов: MCP-сервер, набор инструментов для агентов, правила интеграции платёжных систем.
+- [samber/cc-skills-golang](https://github.com/samber/cc-skills-golang) — 46 скиллов по Go от Самуэля Берта, автора `samber/lo`: стиль и именование, обработка ошибок, конкурентность, тесты, безопасность, производительность, `golang-modernize` для перехода на новые возможности языка, а также скиллы для работы с gRPC, GraphQL, cobra и viper, uber-fx, testify. Скиллы ссылаются друг на друга, поэтому автор советует устанавливать весь набор. По замерам автора, со скиллами модель проходит 97% проверок, без них — 57%. Установка: `/plugin marketplace add samber/cc`, затем `/plugin install cc-skills-golang@samber`. 3.7k⭐.
+- [morganlinton/BeautifulRust](https://github.com/morganlinton/BeautifulRust) — Три скилла для идиоматичного Rust: `rust-best-practices` срабатывает при любом изменении Rust-кода, `rust-review` составляет отчёт по файлу, крейту или диффу со ссылкой на нарушенное правило, а `rust-port` переносит код с C, C++, Python, Go или JavaScript, начиная с тестов. Правила собраны из Google Rust Style Guide, Rust API Guidelines, Effective Rust и Microsoft Pragmatic Rust Guidelines. В комплекте есть конфиг clippy для CI. По замерам автора (один прогон, оценку проводила модель Claude), Claude Code на Opus 5.5 проходит 94% проверок со скиллами и 85% без них. Установка: `/plugin marketplace add morganlinton/BeautifulRust`, затем `/plugin install beautiful-rust@beautiful-rust`. 1.4k⭐.
+- [aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws) — Официальный набор AWS для агентов: плагины со скиллами и настройками управляемого AWS MCP Server. Сервер даёт доступ к API более 300 сервисов, позволяет выполнять Python-скрипты в песочнице и искать по документации. В Claude Code базовый плагин устанавливается из официального маркетплейса: `/plugin install aws-core@claude-plugins-official`. Отдельно есть плагины для агентов на Bedrock и AgentCore, аналитики данных и DevSecOps. В IAM действия агента можно отличить от действий человека по отдельным ключам условий (condition keys); все действия записываются в CloudTrail. Это позволяет, например, дать агенту доступ только на чтение. Нужны uv и учётные данные AWS. Набор пришёл на смену MCP-серверам AWS Labs. 3.3k⭐.
 
 ### Тематические руководства
 
 - [Anthropic engineering: Claude Code best practices](https://www.anthropic.com/engineering/claude-code-best-practices) — Официальный пост.
 - [Год с Claude Code (alpinadigital, Habr)](https://habr.com/ru/companies/alpinadigital/articles/1032134/) — Опыт настройки за год.
 - [Claude Code: практический гайд (Habr)](https://habr.com/ru/articles/987094/) — Настройка на русском.
+- [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) — Наглядный учебник по Claude Code на английском из 10 модулей: слэш-команды, память, скиллы, субагенты, MCP, хуки, плагины, чекпоинты, продвинутые функции и CLI. Модули написаны в Markdown, со схемами Mermaid и шаблонами, которые можно сразу копировать в проект. Есть план обучения на 11–13 часов, проверка уровня `/self-assessment`, тесты `/lesson-quiz` прямо в Claude Code и сборка в EPUB. Есть переводы на вьетнамский, китайский, украинский и японский, русского нет. 46k⭐.
 
 ---
 
@@ -845,6 +869,9 @@ claude plugin validate claude-code-playground/claude-code/mods/blast-radius
 - [microsoft/mxc](https://github.com/microsoft/mxc) — SDK от Microsoft для запуска недоверенного кода, в том числе сгенерированного моделью: единые политики доступа к файлам, сети, буферу обмена и экрану для разных бэкендов, от Seatbelt и Bubblewrap до microVM. Пригодится, если собираешь свою обвязку и инструментам агента нужна песочница. 3k⭐.
 - [Breaking Claude Code Opus 5 Auto Mode](https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/) — Разбор промпт-инъекции в блоге Embrace The Red. Просьба пересказать сайт приводит к выполнению чужого кода в Auto Mode в 60–80% попыток на небольшой выборке, хотя внешняя оценка по заказу Anthropic показала 0%. Вывод автора: Auto Mode не заменяет изолированную среду и наблюдение за агентом.
 - [Anthropic enterprise governance](https://www.anthropic.com/enterprise) — Корпоративное управление.
+- [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) — Сканер безопасности скиллов от NVIDIA: перед установкой проверяет папку, отдельный SKILL.md, Git-репозиторий или zip-архив и оценивает риск по шкале от 0 до 100. Ищет 71 шаблон угроз в 17 категориях, среди них — промпт-инъекции, утечки данных, подавление отказов, отравление инструментов MCP и зависимости с известными CVE через OSV.dev. Помимо статического анализа, по умолчанию включена проверка через LLM: содержимое скилла отправляется выбранному провайдеру. Флаг `--no-llm` позволяет оставить его на машине. Установка: `uv tool install git+https://github.com/NVIDIA/skillspector.git`, запуск: `skillspector scan ./my-skill/`. Отчёты доступны в JSON, Markdown и SARIF; для Claude Code есть MCP-сервер. По данным авторов, уязвимости нашлись в 26,1% из 31 тысячи проверенных скиллов. 23k⭐.
+- [SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red) — 79 скиллов по наступательной безопасности в 23 категориях: веб-уязвимости, Active Directory, беспроводные сети, облака, обход EDR, разработка эксплойтов, фаззинг, постэксплуатация и C2. Каждый скилл — файл SKILL.md с методикой, командами и примерами полезных нагрузок. Скиллы разложены по категориям в `Skills/<категория>/<скилл>/`, а Claude Code ищет их в `~/.claude/skills/<скилл>/`, поэтому клон целиком и `install.sh` с путём по умолчанию дают лишний уровень вложенности; надёжнее после `git clone https://github.com/SnailSploit/Claude-Red` скопировать папки плоско: `cp -R Claude-Red/Skills/*/* ~/.claude/skills/`. Материал двойного назначения: в SECURITY.md сказано, что скиллы предназначены только для авторизованных пентестов, баг-баунти с письменным разрешением, CTF и исследований. 9.7k⭐.
+- [Using Claude to reduce the attack surface of code](https://www.anthropic.com/research/attack-surface-reduction) — Исследование Криса Ролфа из Anthropic: Claude ищет код, который без необходимости доступен при настройках по умолчанию, до аутентификации или при неудачном сочетании настроек. В 25 открытых проектах (больше 5 млн строк на C, C++, Java, PHP и Python) нашлось 493 проблемы, в том числе 162 недокументированных сочетания настроек, из которых 94 отключали защиту без предупреждения. В OpenSSH 10.4 клиенту без аутентификации были доступны около 4 500 строк экспериментального кода ML-DSA-44, даже когда алгоритм был запрещён. Исправление вошло в версию 10.6 и убрало примерно пятую часть кода, доступного до входа. Методику оформили в виде скилла с тремя проходами. Его встраивают в OSS-Scanner, но отдельно пока не опубликовали.
 
 ### Типовые решения для компаний
 
@@ -902,6 +929,7 @@ claude plugin validate claude-code-playground/claude-code/mods/blast-radius
 - [OpenAI Codex CLI](https://github.com/openai/codex) — Официальный CLI-агент OpenAI.
 - [Google Gemini CLI](https://github.com/google-gemini/gemini-cli) — CLI-агент от Google.
 - [Devin Desktop (бывший Windsurf)](https://devin.ai/desktop) — Агент для IDE от Codeium: Windsurf перешёл к Cognition и был переименован.
+- [OpenCode](https://github.com/anomalyco/opencode) — Агент для программирования с открытым исходным кодом, терминальным интерфейсом, настольным приложением (бета) и веб-интерфейсом. Раньше репозиторий назывался sst/opencode. Работает с моделями десятков провайдеров из каталога models.dev: Anthropic по API-ключу, OpenRouter, Bedrock, Vertex, GitHub Copilot, локальные модели. К ChatGPT Plus/Pro подключается по подписке. Встроены два агента: build с полным доступом и plan с доступом только для чтения. Поддерживаются плагины, MCP-серверы и собственные команды. Установка: `curl -fsSL https://opencode.ai/v2/install | bash` или `npm i -g @opencode/cli`. 223k⭐.
 
 ### Утилиты
 
@@ -922,6 +950,11 @@ claude plugin validate claude-code-playground/claude-code/mods/blast-radius
 - [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) — Главный список ресурсов экосистемы: скиллы, агенты, строки состояния, инструменты, плагины. 54k⭐.
 - [sfrangulov/skill-graveyard](https://github.com/sfrangulov/skill-graveyard) — Аудит установленных скиллов по локальным логам сессий: активные, неиспользуемые, отсутствующие и выдуманные. `npx skill-graveyard`, без сети и телеметрии; в монорепозитории — mcp-graveyard и memory-graveyard. Мой проект.
 - [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — Образцовый сборник рекомендаций на английском с ежедневными обновлениями под версии Claude Code. Охватывает все актуальные функции, советы Boris Cherny и приёмы работы с разными моделями.
+- [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) — CLI на Rust для автоматизации браузера: агент получает снимок дерева доступности со ссылками вида `@e1`, а затем кликает, заполняет формы и делает скриншоты обычными командами в терминале. К Claude Code подключается через скилл: `npx skills add vercel-labs/agent-browser` (он есть в топе skills.sh). Короткая заглушка подгружает инструкции из установленной версии CLI. Есть и MCP-сервер `agent-browser mcp`. Сам CLI устанавливается командой `npm install -g agent-browser`, Chrome скачивается командой `agent-browser install`. Работает на macOS, Linux и Windows; поддерживает Safari в симуляторе iOS и облачные браузеры Browserbase, Kernel и Browser Use по их ключам. 45k⭐.
+- [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) — Плагин лаборатории HKUDS из Гонконгского университета: по исходникам программы создаёт для неё CLI с JSON-выводом, REPL, тестами и SKILL.md, чтобы агент мог управлять GIMP, Blender, LibreOffice и другими приложениями с помощью команд, а не через интерфейс. Установка: `/plugin marketplace add HKUDS/CLI-Anything`, затем `/plugin install cli-anything` и, например, `/cli-anything ./gimp`. Готовые CLI из каталога CLI-Hub устанавливаются командой `pip install cli-anything-hub`. Нужен Python 3.10+, саму программу нужно установить отдельно, а на Windows понадобится Git Bash или WSL. 58k⭐.
+- [dzhng/jevgrep](https://github.com/dzhng/jevgrep) — Поиск по коду на естественном языке: `jg` принимает вопрос вроде «где проверяется авторизация» и возвращает список файлов, фрагменты исходников с номерами строк и места объявлений. Насколько найденное соответствует запросу, оценивает платная модель Jev от TypeSafe AI. Поэтому нужен ключ Vercel AI Gateway, OpenRouter, OpenCode Zen или TypeSafe, а подходящие файлы отправляются выбранному провайдеру (`.env` и файлы, похожие на секреты, отсеиваются по эвристическим признакам). Установка: `npm install -g @dzhng/jevgrep`, затем `jg auth` и `jg skill`; нужен Node.js 22+. По замерам автора на десяти задачах SWE-bench агент решил столько же задач, а расходы с учётом самого Jev снизились на 26%. 3.1k⭐.
+- [Asymptote-Labs/agent-beacon](https://github.com/Asymptote-Labs/agent-beacon) — Память для агентов: в фоне записывает историю сессий Claude Code, Cursor, Codex, OpenCode и ещё двух десятков сред в локальный файл JSONL. Скиллы Beacon извлекают из прошлых сессий выводы и после одобрения сохраняют их в памяти и скиллах проекта. На macOS устанавливается из тапа `asymptote-labs/tap` (`brew install beacon`, затем `beacon endpoint install`), есть пакеты для Linux и Windows. Скиллы для Claude Code устанавливаются плагином из `/plugin marketplace add asymptote-labs/agent-beacon`. Мастер установки по умолчанию выбирает Beacon Cloud и пересылает историю на серверы Asymptote Labs. Чтобы всё оставалось на машине, нужно выбрать Local. Локальная версия бесплатна, для извлечения выводов нужен свой ключ LLM, облачный тариф Cloud Pro стоит $20 в месяц. 2.9k⭐.
+- [xingkongliang/skills-manager](https://github.com/xingkongliang/skills-manager) — Настольное приложение для управления скиллами в 56 агентах, включая Claude Code, Codex, Cursor и Gemini CLI. Хранит общую библиотеку в `~/.skills-manager`, устанавливает скиллы из Git, архивов и с skills.sh, добавляет их в агенты через симлинки или копирование. Есть готовые наборы скиллов, проверка обновлений в исходных репозиториях, рабочие пространства для проектов и синхронизация между машинами через приватный репозиторий на GitHub. Встроенный CLI и скилл `manage-skills` (`npx skills add xingkongliang/skills-manager`) позволяют агенту устанавливать скиллы через приложение. Работает на macOS (`brew install --cask skills-manager`), Windows и Linux. 7.0k⭐.
 
 ---
 
@@ -967,19 +1000,19 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Здесь собраны ссылки из нескольких публичных подборок. Если ищешь инструмент для редкой задачи, загляни в каталог. Качество проектов разное; мои рекомендации собраны в [главном README](../README.md).
 
-**Всего записей: 1409.**
+**Всего записей: 1413.**
 
 ## Разделы
 
 | Раздел | Описание | Записей |
 |---|---|---:|
 | [MCP-серверы](./mcp-servers.md) | все известные серверы из публичных awesome-lists | 813 |
-| [Скиллы](./skills.md) | скиллы под конкретные задачи | 159 |
+| [Скиллы](./skills.md) | скиллы под конкретные задачи | 162 |
 | [Sub-agents](./subagents.md) | специализированные субагенты | 152 |
 | [Плагины](./plugins.md) | упаковка скиллов, субагентов и MCP в один артефакт | 16 |
 | [Hooks](./hooks.md) | связанные проекты и идеи | 8 |
 | [CLAUDE.md шаблоны и opinionated-сетапы](./templates.md) | авторские конфиги | 10 |
-| [Экосистема](./ecosystem.md) | утилиты, фреймворки, CLI-обёртки, статус-лайны | 238 |
+| [Экосистема](./ecosystem.md) | утилиты, фреймворки, CLI-обёртки, статус-лайны | 239 |
 | [Русскоязычный контент](./ru-content.md) | Habr, YouTube и сайты | 13 |
 
 ## Чем отличается от главного README
@@ -1025,7 +1058,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Качество смешанное — это широкая выборка, не отбор. Используй для поиска нишевых решений по теме.
 
-**Записей:** 238.
+**Записей:** 239.
 
 📌 Курируемая подборка — в [главном README](../README.md). Здесь — широкая выборка для поиска и SEO.
 
@@ -1226,6 +1259,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [Dispatch & Remote Control](https://claude.com/blog/dispatch-and-computer-use)
 - [dna-claude-analysis](https://github.com/shmlkv/dna-claude-analysis)
 - [docker-claude-code](https://github.com/gw0/docker-claude-code)
+- [dominikmartn/harp](https://github.com/dominikmartn/harp)
 - [dotclaude](https://github.com/FradSer/dotclaude)
 - [eyaltoledano/claude-task-master](https://github.com/eyaltoledano/claude-task-master)
 - [gemini-claude-bridge](https://github.com/weijiafu14/gemini-claude-bridge)
@@ -2244,7 +2278,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Скилл подгружается автоматически, когда задача попадает под его описание — поэтому имеет смысл накопить несколько узкоспециализированных, а не один универсальный.
 
-**Записей:** 159.
+**Записей:** 162.
 
 📌 Курируемая подборка — в [главном README](../README.md#skills). Здесь — широкая выборка для поиска и SEO.
 
@@ -2330,6 +2364,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [Karpathy Guidelines](https://github.com/swarmclawai/andrej-karpathy-skills)
 - [Landing](https://sky-lv.github.io/awesome-openclaw-skills)
 - [last30days-skill](https://github.com/mvanhorn/last30days-skill)
+- [Leonxlnx/earshot](https://github.com/Leonxlnx/earshot)
 - [linkedin-skills](https://github.com/sergebulaev/linkedin-skills)
 - [logo-generator-skill](https://github.com/op7418/logo-generator-skill)
 - [loki-mode](https://github.com/asklokesh/loki-mode)
@@ -2361,9 +2396,11 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [pskill9/hn-server](https://github.com/pskill9/hn-server)
 - [pskill9/web-search](https://github.com/pskill9/web-search)
 - [pskill9/website-downloader](https://github.com/pskill9/website-downloader)
+- [QingYunA/answer-me-with-html](https://github.com/QingYunA/answer-me-with-html)
 - [qmd-skill](https://github.com/levineam/qmd-skill)
 - [qovery-deploy](https://github.com/Qovery/qovery-skills)
 - [Reepl - LinkedIn Content Creation](https://github.com/reepl-io/skills)
+- [rehan-remade/universal-modder](https://github.com/rehan-remade/universal-modder)
 - [remotion-dev/skills](https://www.remotion.dev/docs/ai/skills)
 - [rust-skills](https://github.com/actionbook/rust-skills)
 - [sanyuan-skills](https://github.com/sanyuan0704/sanyuan-skills)
