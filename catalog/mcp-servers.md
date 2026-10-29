@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 **Совет практика:** не подключай больше 5–7 серверов одновременно — каждый расходует контекст на discovery. Сначала смотри курируемую выборку в [главном README](../README.md#mcp-серверы), потом сюда — за специализированными.
 
-**Записей:** 813.
+**Записей:** 812.
 
 📌 Курируемая подборка — в [главном README](../README.md#mcp-серверы). Здесь — широкая выборка для поиска и SEO.
 
@@ -465,7 +465,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [MCP CLI Client](https://github.com/vincent-pli/mcp-cli-host)
 - [MCP Declarative Java SDK](https://github.com/thought2code/mcp-annotated-java-sdk)
 - [MCP Hunt](https://mcp-hunt.com)
-- [MCP Linker](https://github.com/milisp/mcp-linker)
 - [MCP Marketplace Web Plugin](https://github.com/AI-Agent-Hub/mcp-marketplace)
 - [MCP Plexus](https://github.com/Super-I-Tech/mcp_plexus)
 - [MCP Router](https://github.com/mcp-router/mcp-router)
