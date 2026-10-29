@@ -4,7 +4,8 @@
     { "name": "github/github-mcp-server", "url": "https://github.com/github/github-mcp-server", "desc": "Официальный MCP-сервер GitHub. Превращает Claude из «генератора кода» в участника работы с задачами и PR." },
     { "name": "MCP registry", "url": "https://github.com/modelcontextprotocol/registry", "desc": "Официальный каталог серверов с поиском." },
     { "name": "modelcontextprotocol/python-sdk", "url": "https://github.com/modelcontextprotocol/python-sdk", "desc": "Официальный SDK для написания MCP-серверов и клиентов на Python. 24k⭐." },
-    { "name": "modelcontextprotocol.io", "url": "https://modelcontextprotocol.io/", "desc": "Документация протокола." }
+    { "name": "modelcontextprotocol.io", "url": "https://modelcontextprotocol.io/", "desc": "Документация протокола." },
+    { "name": "ChromeDevTools/chrome-devtools-mcp", "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp", "desc": "Официальный MCP-сервер команды Chrome DevTools: агент управляет запущенным Chrome через Puppeteer, записывает трейсы производительности, разбирает сетевые запросы и сообщения консоли, делает скриншоты. Подключение: `claude mcp add chrome-devtools --scope user npx chrome-devtools-mcp@latest`; вариант со скиллами для проверки доступности, работы с cookies, LCP и утечками памяти устанавливается как плагин через `/plugin marketplace add ChromeDevTools/chrome-devtools-mcp`. Есть и CLI `chrome-devtools` для работы без MCP. Нужны Node.js LTS и Chrome. По умолчанию Google собирает статистику использования (отключается флагом `--no-usage-statistics`), а инструменты анализа производительности отправляют URL трейсов в CrUX API (отключается флагом `--no-performance-crux`). 54k⭐." }
   ],
   "curators": [
     { "name": "punkpeye/awesome-mcp-servers", "url": "https://github.com/punkpeye/awesome-mcp-servers", "desc": "Самый большой каталог MCP-серверов, разбитый на категории." },
