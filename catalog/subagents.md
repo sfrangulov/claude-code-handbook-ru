@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Субагент — отдельный экземпляр Claude со своим контекстом. Удобен для read-only исследования кодовой базы (не засоряет основной контекст) и для параллельных независимых задач.
 
-**Записей:** 152.
+**Записей:** 151.
 
 📌 Курируемая подборка — в [главном README](../README.md#sub-agents). Здесь — широкая выборка для поиска и SEO.
 
@@ -112,7 +112,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [Flutter Agent Skills](https://github.com/flutter/agent-plugins)
 - [g1itchbot8888-del/agent-memory](https://github.com/g1itchbot8888-del/agent-memory)
 - [gabrielmaialva33/winx-code-agent](https://github.com/gabrielmaialva33/winx-code-agent)
-- [gate4agent](https://github.com/ZENG3LD/gate4agent)
 - [gemy411/multi-research-agents](https://github.com/gemy411/multi-agents-research)
 - [Google Agent Skills](https://github.com/google/skills)
 - [gregm711/agent-domain-service-mcp](https://github.com/gregm711/agent-domain-service-mcp)

@@ -12,7 +12,7 @@ CI gate: node scripts/build-readme.mjs --check
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
-**Полный каталог без отбора (1413 записей по типам)** — в [catalog/](./catalog/README.md). В эту подборку вошли инструменты, которыми я пользуюсь в клиентских проектах, и популярные инструменты с большим числом установок.
+**Полный каталог без отбора (1411 записей по типам)** — в [catalog/](./catalog/README.md). В эту подборку вошли инструменты, которыми я пользуюсь в клиентских проектах, и популярные инструменты с большим числом установок.
 
 > 📄 **[Шпаргалка на 1 страницу A4 →](https://sfrangulov.github.io/claude-code-handbook-ru/)** Все горячие клавиши, слэш-команды, MCP, память, рабочие процессы, скиллы, агенты и CLI-флаги на одном листе. Скачай [готовый PDF](./cheatsheet/cheatsheet.pdf) или распечатай страницу сам через `⌘P`.
 
@@ -238,7 +238,7 @@ Anthropic свёл опыт команд к циклу **модель угроз
 
 Субагент — отдельный экземпляр Claude со своим контекстом, который выполняет подзадачу и возвращает один итоговый ответ. Субагенты полезны для изучения материалов без внесения изменений и для параллельных задач. См. [официальную документацию](https://code.claude.com/docs/en/sub-agents).
 
-> 📂 Полный каталог: **[152 записи →](./catalog/subagents.md)**
+> 📂 Полный каталог: **[151 запись →](./catalog/subagents.md)**
 
 ### Коллекции для рабочих проектов
 
@@ -645,7 +645,7 @@ claude plugin validate claude-code-playground/claude-code/mods/blast-radius
 
 [Model Context Protocol](https://modelcontextprotocol.io/) — стандарт для подключения внешних инструментов к LLM. Все MCP-серверы работают в Claude Code, Claude Desktop и Cursor.
 
-> 📂 Полный каталог: **[813 записей →](./catalog/mcp-servers.md)** — собран из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
+> 📂 Полный каталог: **[812 записей →](./catalog/mcp-servers.md)** — собран из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
 
 > **Правило из практики:** пять хорошо подобранных MCP-серверов лучше двадцати, но причина не та, которую обычно называют.
 >
