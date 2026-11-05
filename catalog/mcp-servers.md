@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 **Совет практика:** не подключай больше 5–7 серверов одновременно — каждый расходует контекст на discovery. Сначала смотри курируемую выборку в [главном README](../README.md#mcp-серверы), потом сюда — за специализированными.
 
-**Записей:** 812.
+**Записей:** 813.
 
 📌 Курируемая подборка — в [главном README](../README.md#mcp-серверы). Здесь — широкая выборка для поиска и SEO.
 
@@ -64,6 +64,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [amineelkouhen/mcp-cockroachdb](https://github.com/amineelkouhen/mcp-cockroachdb)
 - [anaisbetts/mcp-installer](https://github.com/anaisbetts/mcp-installer)
 - [anaisbetts/mcp-youtube](https://github.com/anaisbetts/mcp-youtube)
+- [AndreiFinogeev/weft-mcp](https://github.com/AndreiFinogeev/weft-mcp)
 - [andybrandt/mcp-simple-arxiv](https://github.com/andybrandt/mcp-simple-arxiv)
 - [andybrandt/mcp-simple-openai-assistant](https://github.com/andybrandt/mcp-simple-openai-assistant)
 - [andybrandt/mcp-simple-pubmed](https://github.com/andybrandt/mcp-simple-pubmed)
