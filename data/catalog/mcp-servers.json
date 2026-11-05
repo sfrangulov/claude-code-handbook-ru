@@ -1493,6 +1493,10 @@
       "url": "https://github.com/KashiwaByte/vikingdb-mcp-server"
     },
     {
+      "name": "kasovy/neverapply-mcp",
+      "url": "https://github.com/kasovy/neverapply-mcp"
+    },
+    {
       "name": "keboola/keboola-mcp-server",
       "url": "https://github.com/keboola/mcp-server"
     },
