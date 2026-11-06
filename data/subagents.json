@@ -11,7 +11,7 @@
       { "name": "rohitg00/awesome-claude-code-toolkit", "url": "https://github.com/rohitg00/awesome-claude-code-toolkit", "desc": "135 агентов, 35 скиллов и 42 команды в одном наборе инструментов." },
       { "name": "peterkrueck/Claude-Code-Development-Kit", "url": "https://github.com/peterkrueck/Claude-Code-Development-Kit", "desc": "Мета-репозиторий: документация, шаблоны для работы с несколькими агентами, хуки, MCP-серверы." },
       { "name": "msitarzewski/agency-agents", "url": "https://github.com/msitarzewski/agency-agents", "desc": "**230+ агентов** с проработанными ролями по 20 направлениям: разработка, дизайн, маркетинг, продажи, финансы, тестирование, геймдев и другие. Для Claude Code: `./scripts/install.sh --tool claude-code`. Есть и настольное приложение, которое ставит агентов в один клик. 163k⭐." },
-      { "name": "Donchitos/Claude-Code-Game-Studios", "url": "https://github.com/Donchitos/Claude-Code-Game-Studios", "desc": "Студия разработки игр в одной сессии: **49 агентов** на трёх уровнях (директора, руководители отделов, специалисты), 74 скилла-команды от `/start` до `/story-done`, 15 хуков и 62 шаблона документов. Решения остаются за тобой. 27k⭐." }
+      { "name": "Donchitos/Claude-Code-Game-Studios", "url": "https://github.com/Donchitos/Claude-Code-Game-Studios", "desc": "Студия разработки игр в одной сессии: **49 агентов** на трёх уровнях (директора, руководители отделов, специалисты), 74 скилла-команды от `/start` до `/story-done`, 15 хуков и 62 шаблона документов. Решения остаются за тобой. 36k⭐." }
     ]
   },
   "voltagentCategories": {
