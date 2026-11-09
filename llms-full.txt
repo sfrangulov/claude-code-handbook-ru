@@ -22,7 +22,7 @@ CI gate: node scripts/build-readme.mjs --check
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
-**Полный каталог без отбора (1411 записей по типам)** — в [catalog/](./catalog/README.md). В эту подборку вошли инструменты, которыми я пользуюсь в клиентских проектах, и популярные инструменты с большим числом установок.
+**Полный каталог без отбора (1409 записей по типам)** — в [catalog/](./catalog/README.md). В эту подборку вошли инструменты, которыми я пользуюсь в клиентских проектах, и популярные инструменты с большим числом установок.
 
 > 📄 **[Шпаргалка на 1 страницу A4 →](https://sfrangulov.github.io/claude-code-handbook-ru/)** Все горячие клавиши, слэш-команды, MCP, память, рабочие процессы, скиллы, агенты и CLI-флаги на одном листе. Скачай [готовый PDF](./cheatsheet/cheatsheet.pdf) или распечатай страницу сам через `⌘P`.
 
@@ -248,7 +248,7 @@ Anthropic свёл опыт команд к циклу **модель угроз
 
 Субагент — отдельный экземпляр Claude со своим контекстом, который выполняет подзадачу и возвращает один итоговый ответ. Субагенты полезны для изучения материалов без внесения изменений и для параллельных задач. См. [официальную документацию](https://code.claude.com/docs/en/sub-agents).
 
-> 📂 Полный каталог: **[151 запись →](./catalog/subagents.md)**
+> 📂 Полный каталог: **[149 записей →](./catalog/subagents.md)**
 
 ### Коллекции для рабочих проектов
 
@@ -316,7 +316,7 @@ herdr                                          # ctrl+b q — detach, herdr — 
 Вокруг herdr выросла экосистема: доступ с телефона, ревью диффов, браузер в панели. Ниже — по одному инструменту для каждого сценария. Полный список есть в [маркетплейсе](https://herdr.dev/plugins/) и в подборке [yigitkonur/awesome-herdr](https://github.com/yigitkonur/awesome-herdr) (инструменты, конфиги, клиенты, скиллы, интеграции).
 
 - [missuo/herdrm](https://github.com/missuo/herdrm) — Консоль для macOS: все агенты и их работающие терминалы, в том числе на других машинах. 668⭐.
-- [AltanS/collie](https://github.com/AltanS/collie) — PWA для управления с телефона: доступ через tailnet, push-уведомления, быстрые действия. 1.2k⭐.
+- [AltanS/collie](https://github.com/AltanS/collie) — PWA для управления с телефона: доступ через tailnet, push-уведомления, быстрые действия. 1.6k⭐.
 - [persiyanov/herdr-reviewr](https://github.com/persiyanov/herdr-reviewr) — Боковая панель для ревью кода: комментируешь дифф — комментарий уходит обратно агенту. Есть также статус PR и просмотр файлов. 932⭐.
 - [smarzban/herdr-file-viewer](https://github.com/smarzban/herdr-file-viewer) — Просмотр файлов без возможности редактирования, с данными из git: дерево файлов, диффы, отображение Markdown, подсветка синтаксиса. 557⭐.
 - [plannotator/herdr-annotate](https://github.com/plannotator/herdr-annotate) — Пометки к тексту в терминале и ответам агента: обратная связь уходит прямо в сессию. 620⭐.
@@ -1000,7 +1000,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Здесь собраны ссылки из нескольких публичных подборок. Если ищешь инструмент для редкой задачи, загляни в каталог. Качество проектов разное; мои рекомендации собраны в [главном README](../README.md).
 
-**Всего записей: 1411.**
+**Всего записей: 1409.**
 
 ## Разделы
 
@@ -1008,7 +1008,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 |---|---|---:|
 | [MCP-серверы](./mcp-servers.md) | все известные серверы из публичных awesome-lists | 812 |
 | [Скиллы](./skills.md) | скиллы под конкретные задачи | 162 |
-| [Sub-agents](./subagents.md) | специализированные субагенты | 151 |
+| [Sub-agents](./subagents.md) | специализированные субагенты | 149 |
 | [Плагины](./plugins.md) | упаковка скиллов, субагентов и MCP в один артефакт | 16 |
 | [Hooks](./hooks.md) | связанные проекты и идеи | 8 |
 | [CLAUDE.md шаблоны и opinionated-сетапы](./templates.md) | авторские конфиги | 10 |
@@ -2464,7 +2464,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Субагент — отдельный экземпляр Claude со своим контекстом. Удобен для read-only исследования кодовой базы (не засоряет основной контекст) и для параллельных независимых задач.
 
-**Записей:** 151.
+**Записей:** 149.
 
 📌 Курируемая подборка — в [главном README](../README.md#sub-agents). Здесь — широкая выборка для поиска и SEO.
 
@@ -2494,7 +2494,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [agentapi](https://github.com/coder/agentapi)
 - [AgentCheck](https://github.com/devlyai/AgentCheck)
 - [agentdeals.dev](https://agentdeals.dev)
-- [agentfetch.dev](https://www.agentfetch.dev)
 - [agentgraph-co/agentgraph](https://github.com/AgentAvow/AgentAvow)
 - [AgentHotspot](https://github.com/AgentHotspot/agenthotspot-mcp)
 - [agenticdecks/deckrun-mcp](https://github.com/agenticdecks/deckrun-mcp)
@@ -2524,7 +2523,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [bababoi-bibilabu/agent-mq](https://github.com/bababoi-bibilabu/agent-mq)
 - [back1ply/agent-skill-loader](https://github.com/back1ply/agent-skill-loader)
 - [baryhuang/claude-code-by-agents](https://github.com/baryhuang/claude-code-by-agents)
-- [bch1212/agentfetch-mcp](https://github.com/bch1212/agentfetch-mcp)
 - [benswel/qr-agent-core](https://github.com/benswel/qr-for-agent-api)
 - [blackwell-systems/agent-lsp](https://github.com/blackwell-systems/agent-lsp)
 - [building-multiagent-systems](https://github.com/2389-research/building-multiagent-systems)

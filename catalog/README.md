@@ -7,7 +7,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Здесь собраны ссылки из нескольких публичных подборок. Если ищешь инструмент для редкой задачи, загляни в каталог. Качество проектов разное; мои рекомендации собраны в [главном README](../README.md).
 
-**Всего записей: 1411.**
+**Всего записей: 1409.**
 
 ## Разделы
 
@@ -15,7 +15,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 |---|---|---:|
 | [MCP-серверы](./mcp-servers.md) | все известные серверы из публичных awesome-lists | 812 |
 | [Скиллы](./skills.md) | скиллы под конкретные задачи | 162 |
-| [Sub-agents](./subagents.md) | специализированные субагенты | 151 |
+| [Sub-agents](./subagents.md) | специализированные субагенты | 149 |
 | [Плагины](./plugins.md) | упаковка скиллов, субагентов и MCP в один артефакт | 16 |
 | [Hooks](./hooks.md) | связанные проекты и идеи | 8 |
 | [CLAUDE.md шаблоны и opinionated-сетапы](./templates.md) | авторские конфиги | 10 |

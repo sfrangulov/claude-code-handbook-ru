@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Субагент — отдельный экземпляр Claude со своим контекстом. Удобен для read-only исследования кодовой базы (не засоряет основной контекст) и для параллельных независимых задач.
 
-**Записей:** 151.
+**Записей:** 149.
 
 📌 Курируемая подборка — в [главном README](../README.md#sub-agents). Здесь — широкая выборка для поиска и SEO.
 
@@ -39,7 +39,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [agentapi](https://github.com/coder/agentapi)
 - [AgentCheck](https://github.com/devlyai/AgentCheck)
 - [agentdeals.dev](https://agentdeals.dev)
-- [agentfetch.dev](https://www.agentfetch.dev)
 - [agentgraph-co/agentgraph](https://github.com/AgentAvow/AgentAvow)
 - [AgentHotspot](https://github.com/AgentHotspot/agenthotspot-mcp)
 - [agenticdecks/deckrun-mcp](https://github.com/agenticdecks/deckrun-mcp)
@@ -69,7 +68,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [bababoi-bibilabu/agent-mq](https://github.com/bababoi-bibilabu/agent-mq)
 - [back1ply/agent-skill-loader](https://github.com/back1ply/agent-skill-loader)
 - [baryhuang/claude-code-by-agents](https://github.com/baryhuang/claude-code-by-agents)
-- [bch1212/agentfetch-mcp](https://github.com/bch1212/agentfetch-mcp)
 - [benswel/qr-agent-core](https://github.com/benswel/qr-for-agent-api)
 - [blackwell-systems/agent-lsp](https://github.com/blackwell-systems/agent-lsp)
 - [building-multiagent-systems](https://github.com/2389-research/building-multiagent-systems)

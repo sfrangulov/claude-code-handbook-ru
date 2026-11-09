@@ -89,10 +89,6 @@
       "url": "https://agentdeals.dev"
     },
     {
-      "name": "agentfetch.dev",
-      "url": "https://www.agentfetch.dev"
-    },
-    {
       "name": "agentgraph-co/agentgraph",
       "url": "https://github.com/AgentAvow/AgentAvow"
     },
@@ -207,10 +203,6 @@
     {
       "name": "baryhuang/claude-code-by-agents",
       "url": "https://github.com/baryhuang/claude-code-by-agents"
-    },
-    {
-      "name": "bch1212/agentfetch-mcp",
-      "url": "https://github.com/bch1212/agentfetch-mcp"
     },
     {
       "name": "benswel/qr-agent-core",

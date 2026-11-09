@@ -1,7 +1,7 @@
 {
   "herdrPlugins": [
     { "name": "missuo/herdrm", "url": "https://github.com/missuo/herdrm", "desc": "Консоль для macOS: все агенты и их работающие терминалы, в том числе на других машинах. 668⭐." },
-    { "name": "AltanS/collie", "url": "https://github.com/AltanS/collie", "desc": "PWA для управления с телефона: доступ через tailnet, push-уведомления, быстрые действия. 1.2k⭐." },
+    { "name": "AltanS/collie", "url": "https://github.com/AltanS/collie", "desc": "PWA для управления с телефона: доступ через tailnet, push-уведомления, быстрые действия. 1.6k⭐." },
     { "name": "persiyanov/herdr-reviewr", "url": "https://github.com/persiyanov/herdr-reviewr", "desc": "Боковая панель для ревью кода: комментируешь дифф — комментарий уходит обратно агенту. Есть также статус PR и просмотр файлов. 932⭐." },
     { "name": "smarzban/herdr-file-viewer", "url": "https://github.com/smarzban/herdr-file-viewer", "desc": "Просмотр файлов без возможности редактирования, с данными из git: дерево файлов, диффы, отображение Markdown, подсветка синтаксиса. 557⭐." },
     { "name": "plannotator/herdr-annotate", "url": "https://github.com/plannotator/herdr-annotate", "desc": "Пометки к тексту в терминале и ответам агента: обратная связь уходит прямо в сессию. 620⭐." },
