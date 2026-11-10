@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 **Совет практика:** не подключай больше 5–7 серверов одновременно — каждый расходует контекст на discovery. Сначала смотри курируемую выборку в [главном README](../README.md#mcp-серверы), потом сюда — за специализированными.
 
-**Записей:** 811.
+**Записей:** 812.
 
 📌 Курируемая подборка — в [главном README](../README.md#mcp-серверы). Здесь — широкая выборка для поиска и SEO.
 
@@ -50,6 +50,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [aktsmm/skill-ninja-mcp-server](https://github.com/aktsmm/skill-ninja-mcp-server)
 - [alchemy/alchemy-mcp-server](https://github.com/alchemyplatform/alchemy-mcp-server)
 - [alex-gon/thegamecrafter-mcp-server](https://github.com/alex-gon/thegamecrafter-mcp-server)
+- [alexadams6ix/imagera-skills](https://github.com/alexadams6ix/imagera-skills)
 - [alexanderzuev/supabase-mcp-server](https://github.com/alexander-zuev/supabase-mcp-server)
 - [alexbakers/mcp-ipfs](https://github.com/alexbakers/mcp-ipfs)
 - [alexei-led/aws-mcp-server](https://github.com/alexei-led/cloud-mcp-server)
