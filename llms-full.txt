@@ -22,7 +22,7 @@ CI gate: node scripts/build-readme.mjs --check
 
 Ежедневные разборы и обзоры релизов — в Telegram [@cc_consultant](https://t.me/cc_consultant). Связь и консультации: [@sfrangulov](https://t.me/sfrangulov).
 
-**Полный каталог без отбора (1412 записей по типам)** — в [catalog/](./catalog/README.md). В эту подборку вошли инструменты, которыми я пользуюсь в клиентских проектах, и популярные инструменты с большим числом установок.
+**Полный каталог без отбора (1408 записей по типам)** — в [catalog/](./catalog/README.md). В эту подборку вошли инструменты, которыми я пользуюсь в клиентских проектах, и популярные инструменты с большим числом установок.
 
 > 📄 **[Шпаргалка на 1 страницу A4 →](https://sfrangulov.github.io/claude-code-handbook-ru/)** Все горячие клавиши, слэш-команды, MCP, память, рабочие процессы, скиллы, агенты и CLI-флаги на одном листе. Скачай [готовый PDF](./cheatsheet/cheatsheet.pdf) или распечатай страницу сам через `⌘P`.
 
@@ -212,7 +212,7 @@ Anthropic свёл опыт команд к циклу **модель угроз
 - [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) — Подборка скиллов, которая не обновляется с апреля 2026 года. 16k⭐.
 - [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) — Самая крупная подборка скиллов: 75k⭐.
 - [karanb192/awesome-claude-skills](https://github.com/karanb192/awesome-claude-skills) — 50+ проверенных скиллов, сгруппированных по типам.
-- [t3dotgg/tstack](https://github.com/t3dotgg/tstack) — Скиллы, которыми Тео (t3dotgg) пользуется каждый день, в основном для работы с PR в Claude Code и Codex: `full-send` доводит изменение до слияния PR без участия человека, `babysit-pr` следит за CI и ботами-ревьюерами, `file-pr` пишет описание PR, `takeover` дорабатывает чужую ветку с сохранением авторства. `council` собирает ревью от трёх моделей разных провайдеров, а `sol-loop` проводит ревью через GPT Sol. За пределами T3 Code для них нужен субагент с доступом к этим моделям, иначе скилл останавливается. Это касается и `full-send`, который вызывает `sol-loop`. Установка копированием: `git clone https://github.com/t3dotgg/tstack`, затем `cp -R tstack/skills/* ~/.claude/skills/`; нужен авторизованный `gh`. 2.3k⭐.
+- [t3dotgg/tstack](https://github.com/t3dotgg/tstack) — Скиллы, которыми Тео (t3dotgg) пользуется каждый день, в основном для работы с PR в Claude Code и Codex: `full-send` доводит изменение до слияния PR без участия человека, `babysit-pr` следит за CI и ботами-ревьюерами, `file-pr` пишет описание PR, `takeover` дорабатывает чужую ветку с сохранением авторства. `council` собирает ревью от трёх моделей разных провайдеров, а `sol-loop` проводит ревью через GPT Sol. За пределами T3 Code для них нужен субагент с доступом к этим моделям, иначе скилл останавливается. Это касается и `full-send`, который вызывает `sol-loop`. Установка копированием: `git clone https://github.com/t3dotgg/tstack`, затем `cp -R tstack/skills/* ~/.claude/skills/`; нужен авторизованный `gh`. 3.2k⭐.
 
 ### Узкоспециализированные
 
@@ -236,7 +236,7 @@ Anthropic свёл опыт команд к циклу **модель угроз
 - [morluto/rea](https://github.com/morluto/rea) — MCP-сервер и скилл для реверс-инжиниринга: агент без исходников разбирает нативные бинарники, JS- и Electron-приложения, сборки .NET и сайты, объясняет, как устроена функция, и прикладывает доказательства. Для нативного кода нужен Hopper, Ghidra или IDA. Оговорка: в [треде на r/ClaudeCode](https://www.reddit.com/r/ClaudeCode/comments/1xbtl8w/) пишут, что на таких задачах у Claude срабатывают защитные ограничения и он обрывает работу. Установка: `npx rea-agents setup`. 371k⭐.
 - [Nutlope/hallmark](https://github.com/Nutlope/hallmark) — Дизайн-скилл от Together AI для борьбы с шаблонной «нейросетевой» вёрсткой: агент выбирает одну из 50 тем, строит страницу вокруг действия, которое должен совершить посетитель, проверяет её линтером `sloplint` в браузере на восьми ширинах экрана и отдаёт на ревью субагенту с чистым контекстом. Линтер ловит типичные признаки: надзаголовок над каждым блоком, подписи капслоком, одно цветное слово в заголовке. Для готовых страниц есть `/hallmark redesign <path>` с сохранением контента и обработчиков и `/hallmark audit <path>`, который только выдаёт отчёт. Установка: `npx skills add nutlope/hallmark -g` или плагином: `/plugin marketplace add nutlope/hallmark`, затем `/plugin install hallmark@hallmark`. Нужен Node 18+, для браузерных проверок — Chrome и `puppeteer-core`; генерация картинок необязательна и работает через платный API Together. 41k⭐.
 - [jakubkrehel/skills](https://github.com/jakubkrehel/skills) — 14 скиллов для работы с интерфейсами от дизайн-инженера Якуба Крехела (журнал Interfaces): `better-typography`, `better-colors`, `better-layout`, `better-accessibility` по WCAG 2.2, `better-writing` для текстов и общий `better-interface`, который выдаёт единый отчёт с замечаниями по приоритету. Часть скиллов вызывается вручную: `interface-review` ищет UI-регрессии в ветке или PR, `break` и `state-machine` показывают компонент во всех состояниях, `variant` делает несколько вариантов на выбор. Для `build-design` нужен подключённый Figma MCP, для разбора работающего сайта — браузерный MCP вроде chrome-devtools-mcp. Установка: `npx skills add jakubkrehel/skills` или `/plugin marketplace add jakubkrehel/skills`, затем `/plugin install interfaces@interfaces`. 9.0k⭐.
-- [DenisSergeevitch/ex-ussr-kinship-research](https://github.com/DenisSergeevitch/ex-ussr-kinship-research) — Генеалогический скилл для поиска предков в архивах бывшего СССР и Российской империи: метрические книги, записи ЗАГС, военные дела, дела о депортациях и репрессиях по всем 15 республикам. SKILL.md написан по-русски. Агент учитывает административное деление на дату события, перебирает варианты имён и написания, ведёт реестр находок и журнал поиска, для каждого утверждения указывает степень доказанности и выдаёт HTML-отчёт с деревом, а по запросу — GEDCOM. Среди источников — ОБД «Мемориал», «Память народа», Главархив Москвы, «Открытый список» и FamilySearch. Нужен только Python 3, но в FamilySearch и ряд архивов входишь сам, а в некоторых архивах удалённый просмотр сканов платный; CAPTCHA и пейволлы скилл не обходит, контакты живых людей не ищет. Установка: `npx skills add https://github.com/DenisSergeevitch/ex-ussr-kinship-research`. 1.2k⭐.
+- [DenisSergeevitch/ex-ussr-kinship-research](https://github.com/DenisSergeevitch/ex-ussr-kinship-research) — Генеалогический скилл для поиска предков в архивах бывшего СССР и Российской империи: метрические книги, записи ЗАГС, военные дела, дела о депортациях и репрессиях по всем 15 республикам. SKILL.md написан по-русски. Агент учитывает административное деление на дату события, перебирает варианты имён и написания, ведёт реестр находок и журнал поиска, для каждого утверждения указывает степень доказанности и выдаёт HTML-отчёт с деревом, а по запросу — GEDCOM. Среди источников — ОБД «Мемориал», «Память народа», Главархив Москвы, «Открытый список» и FamilySearch. Нужен только Python 3, но в FamilySearch и ряд архивов входишь сам, а в некоторых архивах удалённый просмотр сканов платный; CAPTCHA и пейволлы скилл не обходит, контакты живых людей не ищет. Установка: `npx skills add https://github.com/DenisSergeevitch/ex-ussr-kinship-research`. 2k⭐.
 
 ### Локальные примеры
 
@@ -248,7 +248,7 @@ Anthropic свёл опыт команд к циклу **модель угроз
 
 Субагент — отдельный экземпляр Claude со своим контекстом, который выполняет подзадачу и возвращает один итоговый ответ. Субагенты полезны для изучения материалов без внесения изменений и для параллельных задач. См. [официальную документацию](https://code.claude.com/docs/en/sub-agents).
 
-> 📂 Полный каталог: **[151 запись →](./catalog/subagents.md)**
+> 📂 Полный каталог: **[149 записей →](./catalog/subagents.md)**
 
 ### Коллекции для рабочих проектов
 
@@ -263,7 +263,7 @@ Anthropic свёл опыт команд к циклу **модель угроз
 | [rohitg00/awesome-claude-code-toolkit](https://github.com/rohitg00/awesome-claude-code-toolkit) | 135 агентов, 35 скиллов и 42 команды в одном наборе инструментов. |
 | [peterkrueck/Claude-Code-Development-Kit](https://github.com/peterkrueck/Claude-Code-Development-Kit) | Мета-репозиторий: документация, шаблоны для работы с несколькими агентами, хуки, MCP-серверы. |
 | [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) | **230+ агентов** с проработанными ролями по 20 направлениям: разработка, дизайн, маркетинг, продажи, финансы, тестирование, геймдев и другие. Для Claude Code: `./scripts/install.sh --tool claude-code`. Есть и настольное приложение, которое ставит агентов в один клик. 163k⭐. |
-| [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) | Студия разработки игр в одной сессии: **49 агентов** на трёх уровнях (директора, руководители отделов, специалисты), 74 скилла-команды от `/start` до `/story-done`, 15 хуков и 62 шаблона документов. Решения остаются за тобой. 27k⭐. |
+| [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) | Студия разработки игр в одной сессии: **49 агентов** на трёх уровнях (директора, руководители отделов, специалисты), 74 скилла-команды от `/start` до `/story-done`, 15 хуков и 62 шаблона документов. Решения остаются за тобой. 36k⭐. |
 
 ### 144 субагента VoltAgent — оглавление коллекции
 
@@ -316,7 +316,7 @@ herdr                                          # ctrl+b q — detach, herdr — 
 Вокруг herdr выросла экосистема: доступ с телефона, ревью диффов, браузер в панели. Ниже — по одному инструменту для каждого сценария. Полный список есть в [маркетплейсе](https://herdr.dev/plugins/) и в подборке [yigitkonur/awesome-herdr](https://github.com/yigitkonur/awesome-herdr) (инструменты, конфиги, клиенты, скиллы, интеграции).
 
 - [missuo/herdrm](https://github.com/missuo/herdrm) — Консоль для macOS: все агенты и их работающие терминалы, в том числе на других машинах. 668⭐.
-- [AltanS/collie](https://github.com/AltanS/collie) — PWA для управления с телефона: доступ через tailnet, push-уведомления, быстрые действия. 1.2k⭐.
+- [AltanS/collie](https://github.com/AltanS/collie) — PWA для управления с телефона: доступ через tailnet, push-уведомления, быстрые действия. 1.6k⭐.
 - [persiyanov/herdr-reviewr](https://github.com/persiyanov/herdr-reviewr) — Боковая панель для ревью кода: комментируешь дифф — комментарий уходит обратно агенту. Есть также статус PR и просмотр файлов. 932⭐.
 - [smarzban/herdr-file-viewer](https://github.com/smarzban/herdr-file-viewer) — Просмотр файлов без возможности редактирования, с данными из git: дерево файлов, диффы, отображение Markdown, подсветка синтаксиса. 557⭐.
 - [plannotator/herdr-annotate](https://github.com/plannotator/herdr-annotate) — Пометки к тексту в терминале и ответам агента: обратная связь уходит прямо в сессию. 620⭐.
@@ -500,7 +500,7 @@ Evals помогают проверить, стал ли агент работа
 - [jeremylongshore/tons-of-skills-marketplace](https://github.com/jeremylongshore/tons-of-skills-marketplace) — Маркетплейс с 471 плагином, 3069 скиллами и 347 агентами, со своим пакетным менеджером ccpi.
 - [TT-Wang/memem](https://github.com/TT-Wang/memem) — Постоянная память между сессиями: сохраняет выводы и решения в Markdown в хранилище Obsidian, ищет через SQLite FTS5, разбирает записи прошлых разговоров. Раньше назывался cortex-plugin.
 - [Rich627/whatsapp-claude-plugin](https://github.com/Rich627/whatsapp-claude-plugin) — Интеграция с WhatsApp.
-- [iurykrieger/claude-bedrock](https://github.com/iurykrieger/claude-bedrock) — Автоматизация «второго мозга» в Obsidian: работа с сущностями, загрузка, сжатие и синхронизация хранилища через скиллы Claude Code.
+- [iurykrieger/claude-bedrock](https://github.com/iurykrieger/claude-bedrock) — Автоматизация «второго мозга» в Obsidian: работа с сущностями, загрузка, сжатие и синхронизация хранилища через скиллы Claude Code. Не обновляется с мая 2026 года.
 - [mnemoverse/claude-plugin](https://github.com/mnemoverse/claude-plugin) — Долговременная память между сессиями на удалённом сервере через MCP: вход по OAuth, ключ вставлять не нужно. Есть команды `/mnemoverse:*` (remember, recall, memory-status) и скилл `agent-memory-discipline` (CC0). Подойдёт, когда общая память нужна сразу в Claude Code, Cursor, VS Code и ChatGPT. Установка: `/plugin marketplace add mnemoverse/claude-plugin`, затем `/plugin install mnemoverse@mnemoverse`.
 - [ITW-Creative-Works/workkit](https://github.com/ITW-Creative-Works/workkit) — Ведёт работу через GitHub Issues: каждая задача по меткам проходит спецификацию, сборку, ревью, QA и релиз; код и тесты пишут сабагенты, отдельный verifier проверяет diff вслепую, а hooks не дают закоммитить, пока полный набор тестов не прошёл на том, что коммитится. Когда брать: нужен harness, где Claude Code работает по принятой спецификации и не коммитит без зелёных тестов. Установка: `claude plugin marketplace add ITW-Creative-Works/workkit`, затем `claude plugin install workkit@workkit`.
 - [EpicGames/unreal-engine-skills-for-claude-code-plugin](https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin) — Официальный плагин Epic Games: Claude Code управляет запущенным Unreal Editor через MCP. В нём больше 30 наборов инструментов для работы с акторами, блюпринтами, материалами, Niagara, Sequencer, UMG, Gameplay Ability System и автотестами. Установка из официального маркетплейса: `/plugin install unreal-engine-skills-for-claude-code@claude-plugins-official`. В редакторе нужны плагины ModelContextProtocol и AllToolsets (появились в UE 5.8), а также сервер, запущенный командой `ModelContextProtocol.StartServer`. Сервер на localhost доступен любому процессу текущего пользователя, а инструмент `execute_tool_script` выполняет произвольный Python-код в редакторе. Поэтому авторы советуют не отключать подтверждения и коммитить проект перед долгими сессиями. 1.7k⭐.
@@ -525,7 +525,7 @@ Evals помогают проверить, стал ли агент работа
 - [Hooks guide (Claude Docs)](https://code.claude.com/docs/en/hooks-guide) — Официальное руководство с рабочими примерами для каждого события сессии.
 - [disler/claude-code-hooks-mastery](https://github.com/disler/claude-code-hooks-mastery) — Разбор восьми базовых событий с готовыми обработчиками. По-прежнему самый подробный набор примеров. 3.9k⭐, но обновлений нет с марта 2026 года: события команд агентов вроде `TeammateIdle` и `TaskCompleted` не описаны.
 - [GowayLee/cchooks](https://github.com/GowayLee/cchooks) — Python-SDK: разбор входного JSON с типизацией и коды возврата вместо ручного разбора stdin. Не обновляется с апреля 2026 года.
-- [parthh01/sphinx](https://github.com/parthh01/sphinx) — Проверка понимания перед push: Git ждёт, пока ты ответишь на вопросы о том, как работают твои изменения и какие сбои в них возможны. Вопросы задаёт отдельная модель, которая видит коммит, но не диалог, в котором писался код. Ставится глобально через `core.hooksPath` и сразу проверяет push в `main` и `master` во всех репозиториях; изменённый код отправляется провайдеру этой модели. Автор прямо пишет, что это тренировка, а не защита. 363⭐.
+- [parthh01/sphinx](https://github.com/parthh01/sphinx) — Проверка понимания перед push: Git ждёт, пока ты ответишь на вопросы о том, как работают твои изменения и какие сбои в них возможны. Вопросы задаёт отдельная модель, которая видит коммит, но не диалог, в котором писался код. Ставится глобально через `core.hooksPath` и сразу проверяет push в `main` и `master` во всех репозиториях; изменённый код отправляется провайдеру этой модели. Автор прямо пишет, что это тренировка, а не защита. 487⭐.
 
 ### Наблюдение за работой агента — дашборды на основе хуков
 
@@ -641,7 +641,7 @@ claude plugin validate claude-code-playground/claude-code/mods/blast-radius
 
 - [karanb192/awesome-claude-code-mods](https://github.com/karanb192/awesome-claude-code-mods) — Каталог публичных модов, который автоматически собирается сканером GitHub: больше 1700 на 4 октября 2026. Для каждого указано, что он, по отчёту валидатора, читает, пишет, запускает и отправляет в сеть. Каталог независимый, не от Anthropic; версия с поиском — на [mods.aidojo.si](https://mods.aidojo.si/). 722⭐.
 - [hamzafer/claude-code-mods](https://github.com/hamzafer/claude-code-mods) — Двадцать модов в одном маркетплейсе, с CI. Для начала подойдёт `context-bar`: показывает, чем заполнен контекст, и, по данным валидатора, читает только статистику использования сессии. У `where-am-i` и `mission-control` в `calls:` указан `$.model.complete`, то есть они расходуют твой лимит; `mission-control` ещё пишет файлы и запускает процессы. 367⭐.
-- [karanb192/cache-tax](https://github.com/karanb192/cache-tax) — Обновляет кэш промпта, пока тебя нет, и заранее показывает, во сколько обойдётся запрос после истечения срока действия кэша. Для обновления использует `$.model.fork`: это API-запрос с записью сессии, на него расходуются токены, а выигрыш зависит от длины перерыва и TTL кэша. По данным валидатора, прямых вызовов файлового, процессного и HTTP API нет. 245⭐.
+- [karanb192/cache-tax](https://github.com/karanb192/cache-tax) — Обновляет кэш промпта, пока тебя нет, и заранее показывает, во сколько обойдётся запрос после истечения срока действия кэша. Для обновления использует `$.model.fork`: это API-запрос с записью сессии, на него расходуются токены, а выигрыш зависит от длины перерыва и TTL кэша. По данным валидатора, прямых вызовов файлового, процессного и HTTP API нет. 358⭐.
 - [artemnovichkov/xcode-mods](https://github.com/artemnovichkov/xcode-mods) — Сборка, тесты, консоль и SwiftUI-превью Xcode в панели Claude Code. Нужен Xcode 27+ с MCP-сервером в режиме без интерфейса, а для превью — ещё и терминал с kitty graphics protocol или Desktop. По клавише `x` отправляет Claude промпт вроде «почини тесты» (`$.prompt.submit`). 33⭐.
 - [Kruhlikau/subagent-tuner](https://github.com/Kruhlikau/subagent-tuner) — Выбирает модель и уровень рассуждения для каждого субагента: спрашивает перед запуском в панели рядом с диалогом, подсказывает по типу задачи (ревью на Opus, поиск на Haiku) или применяет сохранённое значение по умолчанию поверх того, что указал агент. Запуски `claude -p`, SDK и форки не трогает. По данным валидатора, сетевых вызовов нет, процессы — только `sh` или `powershell.exe` для ожидания ответа, запись — в папку `.waits/` плагина. Установка: `/plugin install subagent-tuner --marketplace Kruhlikau/subagent-tuner`.
 - [sfrangulov/claude-session-line](https://github.com/sfrangulov/claude-session-line) — Строка состояния и счётчик кэша промпта в одном моде: две строки под промптом, полоса над ним, когда кэш вот-вот истечёт или уже истёк при большом объёме контекста, предупреждения и таблица `/cache` с данными по ходам. В отличие от cache-tax, мод сам не продлевает кэш, а только показывает, сколько времени осталось до его истечения, и советует `/compact`. Сетевых запросов нет, из процессов запускается только `git diff`, один раз за ход. Установка: `/plugin install session-line --marketplace sfrangulov/claude-session-line`.
@@ -655,7 +655,7 @@ claude plugin validate claude-code-playground/claude-code/mods/blast-radius
 
 [Model Context Protocol](https://modelcontextprotocol.io/) — стандарт для подключения внешних инструментов к LLM. Все MCP-серверы работают в Claude Code, Claude Desktop и Cursor.
 
-> 📂 Полный каталог: **[813 записей →](./catalog/mcp-servers.md)** — собран из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
+> 📂 Полный каталог: **[811 записей →](./catalog/mcp-servers.md)** — собран из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
 
 > **Правило из практики:** пять хорошо подобранных MCP-серверов лучше двадцати, но причина не та, которую обычно называют.
 >
@@ -860,7 +860,7 @@ claude plugin validate claude-code-playground/claude-code/mods/blast-radius
 - [Security best practices](https://code.claude.com/docs/en/security) — Официальное руководство.
 - [Permissions / IAM](https://code.claude.com/docs/en/iam) — Настройка прав, `allowManagedHooksOnly` для корпоративного использования.
 - [anthropics/defending-code-reference-harness](https://github.com/anthropics/defending-code-reference-harness) — Эталонная обвязка Anthropic: скиллы threat-model / vuln-scan / triage / patch и автономный конвейер в песочнице. Сопровождается разбором «Using LLMs to secure source code».
-- [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) — Аудит безопасности в шесть этапов. Сначала разведка и карта границ доверия, потом поиск силами изолированных агентов с учётом уже проверенных участков в журнале. Каждую находку проверяет новый агент, который пытается её опровергнуть. В отчёте каждой находке присваивается один из трёх вердиктов: `confirmed`, `needs_validation` или `rejected`. С этого скилла начиналась обвязка Cloudflare для поиска уязвимостей. Повторные прогоны закрывают пробелы предыдущих. 41k⭐.
+- [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) — Аудит безопасности в шесть этапов. Сначала разведка и карта границ доверия, потом поиск силами изолированных агентов с учётом уже проверенных участков в журнале. Каждую находку проверяет новый агент, который пытается её опровергнуть. В отчёте каждой находке присваивается один из трёх вердиктов: `confirmed`, `needs_validation` или `rejected`. С этого скилла начиналась обвязка Cloudflare для поиска уязвимостей. Повторные прогоны закрывают пробелы предыдущих. 63k⭐.
 - [trailofbits/skills](https://github.com/trailofbits/skills) — Скиллы Trail of Bits для проверки безопасности: CodeQL / Semgrep, аудит кода.
 - [anthropics/claude-code-security-review](https://github.com/anthropics/claude-code-security-review) — GitHub Action: Claude проверяет безопасность кода в каждом PR и отфильтровывает ложные срабатывания.
 - [firebase/agent-skills@firestore-security-rules-auditor](https://www.skills.sh/firebase/agent-skills/firestore-security-rules-auditor) — Аудит правил безопасности Firestore перед релизом в продакшен. Более 20 тысяч установок.
@@ -941,7 +941,7 @@ claude plugin validate claude-code-playground/claude-code/mods/blast-radius
 - [vercel-labs/skills](https://github.com/vercel-labs/skills) — `npx skills` — установщик скиллов для любой среды работы агента: добавляет файлы прямо в репозиторий. Через него устанавливается половина коллекций из раздела Skills. Там же лежит скилл `find-skills`: агент сам ищет на skills.sh скиллы под задачу и, прежде чем предложить их, проверяет число установок и репутацию источника. 31k⭐.
 - [zenbu-labs/terminal-browser](https://github.com/zenbu-labs/terminal-browser) — Браузер прямо в терминале: делит панель и показывает страницу рядом с сессией. Агент управляет страницей: делает снимки, кликает, вводит текст, выполняет eval. 4.2k⭐.
 - [jackwener/OpenCLI](https://github.com/jackwener/OpenCLI) — Агент работает с сайтами через твой Chrome, в котором ты уже вошёл в аккаунты: расширение связывает браузер с агентом, а команды `opencli browser` позволяют открыть страницу, кликнуть, заполнить форму, извлечь данные и посмотреть сетевые запросы. Для частых задач есть детерминированные адаптеры вроде `opencli hackernews top`. Свои адаптеры можно писать по скиллу `opencli-adapter-author`, скиллы устанавливаются через `npx skills add jackwener/opencli`. Сайт — [opencli.info](https://opencli.info/). 29k⭐.
-- [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) — Один инструмент для чтения и поиска в интернете: страницы, субтитры YouTube, RSS, GitHub, X, Reddit, LinkedIn. Для каждой площадки предусмотрены основной и запасной способы доступа, для сайтов со входом в аккаунт используется OpenCLI; `agent-reach doctor` показывает, что работает. Подходит, когда агенту нужно читать и искать, а не кликать. Агент устанавливает его по ссылке на `install.md` — прочитай файл, прежде чем передать ссылку. 82k⭐.
+- [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) — Один инструмент для чтения и поиска в интернете: страницы, субтитры YouTube, RSS, GitHub, X, Reddit, LinkedIn. Для каждой площадки предусмотрены основной и запасной способы доступа, для сайтов со входом в аккаунт используется OpenCLI; `agent-reach doctor` показывает, что работает. Подходит, когда агенту нужно читать и искать, а не кликать. Агент устанавливает его по ссылке на `install.md` — прочитай файл, прежде чем передать ссылку. 110k⭐.
 - [gastownhall/beads](https://github.com/gastownhall/beads) — Трекер задач для агентов на базе Dolt, который хранит связи между задачами в виде графа: `bd ready` выдаёт задачи, которым ничего не мешает, `bd remember` сохраняет память проекта между сессиями, а сжатие старых задач экономит контекст. Хэш-ID вида `bd-a1b2` не конфликтуют при слиянии параллельных веток. `bd setup claude` устанавливает хуки, `--stealth` позволяет работать без коммита в общий репозиторий. 27k⭐.
 - [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) — Сохраняет контекст между сессиями: записывает работу агента, сжимает записи и добавляет нужное в следующие сессии. Claude Code, Codex, Gemini, Copilot, OpenCode. 94k⭐.
 - [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) — Память агента, которая хранит и обобщает историю: операции retain, recall и reflect, наблюдения и страницы знаний. Для CLI-агентов есть пакет, который сам собирает память о репозитории из истории git и прошлых сессий: `npx @vectorize-io/hindsight-coding-agents install claude-code`. Сервер запускается в Docker и требует ключ LLM-провайдера, есть MCP. 53k⭐.
@@ -1000,15 +1000,15 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Здесь собраны ссылки из нескольких публичных подборок. Если ищешь инструмент для редкой задачи, загляни в каталог. Качество проектов разное; мои рекомендации собраны в [главном README](../README.md).
 
-**Всего записей: 1412.**
+**Всего записей: 1408.**
 
 ## Разделы
 
 | Раздел | Описание | Записей |
 |---|---|---:|
-| [MCP-серверы](./mcp-servers.md) | все известные серверы из публичных awesome-lists | 813 |
+| [MCP-серверы](./mcp-servers.md) | все известные серверы из публичных awesome-lists | 811 |
 | [Скиллы](./skills.md) | скиллы под конкретные задачи | 162 |
-| [Sub-agents](./subagents.md) | специализированные субагенты | 151 |
+| [Sub-agents](./subagents.md) | специализированные субагенты | 149 |
 | [Плагины](./plugins.md) | упаковка скиллов, субагентов и MCP в один артефакт | 16 |
 | [Hooks](./hooks.md) | связанные проекты и идеи | 8 |
 | [CLAUDE.md шаблоны и opinionated-сетапы](./templates.md) | авторские конфиги | 10 |
@@ -1355,7 +1355,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 **Совет практика:** не подключай больше 5–7 серверов одновременно — каждый расходует контекст на discovery. Сначала смотри курируемую выборку в [главном README](../README.md#mcp-серверы), потом сюда — за специализированными.
 
-**Записей:** 813.
+**Записей:** 811.
 
 📌 Курируемая подборка — в [главном README](../README.md#mcp-серверы). Здесь — широкая выборка для поиска и SEO.
 
@@ -1493,7 +1493,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [chopmob-cloud/AlgoVoi-Platform-Adapters](https://github.com/chopmob-cloud/AlgoVoi-Platform-Adapters/tree/master/mcp-server)
 - [chrbailey/promptspeak-mcp-server](https://github.com/chrbailey/promptspeak-mcp-server)
 - [chrisbusbin-pixel/propfirmdealfinder-mcp-server](https://github.com/chrisbusbin-pixel/propfirmdealfinder-mcp-server)
-- [chrishayuk/mcp-cli](https://github.com/IBM/mcp-cli)
 - [christulino/todoist-v1-mcp-server](https://github.com/christulino/todoist-v1-mcp-server)
 - [Cifero74/mcp-apple-music](https://github.com/Cifero74/mcp-apple-music)
 - [CircleCI/mcp-server-circleci](https://github.com/CircleCI-Public/mcp-server-circleci)
@@ -2012,7 +2011,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [SecretiveShell/MCP-wolfram-alpha](https://github.com/SecretiveShell/MCP-wolfram-alpha)
 - [seekrays/mcp-monitor](https://github.com/seekrays/mcp-monitor)
 - [sergehuber/inoyu-mcp-unomi-server](https://github.com/inoyu-dev/inoyu-mcp-unomi-server)
-- [SergiuPogor/curlshot-mcp](https://github.com/SergiuPogor/curlshot-mcp)
 - [serkan-ozal/driflyte-mcp-server](https://github.com/serkan-ozal/driflyte-mcp-server)
 - [servers-archived](https://github.com/modelcontextprotocol/servers-archived)
 - [sfrangulov/minirag-mcp](https://github.com/sfrangulov/minirag-mcp)
@@ -2465,7 +2463,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Субагент — отдельный экземпляр Claude со своим контекстом. Удобен для read-only исследования кодовой базы (не засоряет основной контекст) и для параллельных независимых задач.
 
-**Записей:** 151.
+**Записей:** 149.
 
 📌 Курируемая подборка — в [главном README](../README.md#sub-agents). Здесь — широкая выборка для поиска и SEO.
 
@@ -2495,7 +2493,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [agentapi](https://github.com/coder/agentapi)
 - [AgentCheck](https://github.com/devlyai/AgentCheck)
 - [agentdeals.dev](https://agentdeals.dev)
-- [agentfetch.dev](https://www.agentfetch.dev)
 - [agentgraph-co/agentgraph](https://github.com/AgentAvow/AgentAvow)
 - [AgentHotspot](https://github.com/AgentHotspot/agenthotspot-mcp)
 - [agenticdecks/deckrun-mcp](https://github.com/agenticdecks/deckrun-mcp)
@@ -2525,7 +2522,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [bababoi-bibilabu/agent-mq](https://github.com/bababoi-bibilabu/agent-mq)
 - [back1ply/agent-skill-loader](https://github.com/back1ply/agent-skill-loader)
 - [baryhuang/claude-code-by-agents](https://github.com/baryhuang/claude-code-by-agents)
-- [bch1212/agentfetch-mcp](https://github.com/bch1212/agentfetch-mcp)
 - [benswel/qr-agent-core](https://github.com/benswel/qr-for-agent-api)
 - [blackwell-systems/agent-lsp](https://github.com/blackwell-systems/agent-lsp)
 - [building-multiagent-systems](https://github.com/2389-research/building-multiagent-systems)

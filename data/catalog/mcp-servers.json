@@ -521,10 +521,6 @@
       "url": "https://github.com/chrisbusbin-pixel/propfirmdealfinder-mcp-server"
     },
     {
-      "name": "chrishayuk/mcp-cli",
-      "url": "https://github.com/IBM/mcp-cli"
-    },
-    {
       "name": "christulino/todoist-v1-mcp-server",
       "url": "https://github.com/christulino/todoist-v1-mcp-server"
     },
@@ -2595,10 +2591,6 @@
     {
       "name": "sergehuber/inoyu-mcp-unomi-server",
       "url": "https://github.com/inoyu-dev/inoyu-mcp-unomi-server"
-    },
-    {
-      "name": "SergiuPogor/curlshot-mcp",
-      "url": "https://github.com/SergiuPogor/curlshot-mcp"
     },
     {
       "name": "serkan-ozal/driflyte-mcp-server",
