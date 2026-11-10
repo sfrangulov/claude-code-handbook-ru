@@ -645,7 +645,7 @@ claude plugin validate claude-code-playground/claude-code/mods/blast-radius
 
 [Model Context Protocol](https://modelcontextprotocol.io/) — стандарт для подключения внешних инструментов к LLM. Все MCP-серверы работают в Claude Code, Claude Desktop и Cursor.
 
-> 📂 Полный каталог: **[811 записей →](./catalog/mcp-servers.md)** — собран из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
+> 📂 Полный каталог: **[812 записей →](./catalog/mcp-servers.md)** — собран из [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) и официального реестра.
 
 > **Правило из практики:** пять хорошо подобранных MCP-серверов лучше двадцати, но причина не та, которую обычно называют.
 >
