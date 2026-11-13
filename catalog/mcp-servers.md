@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 **Совет практика:** не подключай больше 5–7 серверов одновременно — каждый расходует контекст на discovery. Сначала смотри курируемую выборку в [главном README](../README.md#mcp-серверы), потом сюда — за специализированными.
 
-**Записей:** 811.
+**Записей:** 810.
 
 📌 Курируемая подборка — в [главном README](../README.md#mcp-серверы). Здесь — широкая выборка для поиска и SEO.
 
@@ -230,7 +230,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [f-o-x11/deed-page-skill](https://github.com/f-o-x11/deed-page-skill)
 - [f4ww4z/mcp-mysql-server](https://github.com/f4ww4z/mcp-mysql-server)
 - [FastAlertNow/mcp-server](https://github.com/FastAlertNow/mcp-server)
-- [fasuizu-br/brainiall-mcp-server](https://github.com/fasuizu-br/brainiall-mcp-server)
 - [fernsugi/x402-api-server](https://github.com/fernsugi/x402-api-server)
 - [ferrants/memvid-mcp-server](https://github.com/ferrants/memvid-mcp-server)
 - [finmap-org/mcp-server](https://github.com/finmap-org/mcp-server)
