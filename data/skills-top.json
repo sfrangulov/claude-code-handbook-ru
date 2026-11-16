@@ -5,13 +5,13 @@
       "slug": "mattpocock/skills@grill-me",
       "url": "https://skills.sh/mattpocock/skills/grill-me",
       "desc": "Безжалостно разбирает твой план или дизайн: агент задаёт вопрос за вопросом, пока не найдёт слабые места. Вызывается только вручную, прежде чем писать код по ещё сырой идее.",
-      "count": 1500000
+      "count": 1600000
     },
     {
       "slug": "vercel-labs/agent-browser@agent-browser",
       "url": "https://skills.sh/vercel-labs/agent-browser/agent-browser",
       "desc": "CLI для управления браузером: агент открывает страницы, заполняет формы, кликает, делает скриншоты и извлекает данные. Бери, когда агенту нужно проверить веб-приложение своими глазами или выполнить задачу на сайте. Умеет управлять и Electron-приложениями.",
-      "count": 1400000
+      "count": 1500000
     },
     {
       "slug": "mattpocock/skills@grill-with-docs",
@@ -41,55 +41,55 @@
       "slug": "mattpocock/skills@domain-modeling",
       "url": "https://skills.sh/mattpocock/skills/domain-modeling",
       "desc": "Строит и уточняет модель предметной области проекта: записывает термины в `GLOSSARY.md`, а решения — в ADR. Включай, когда команда и агент называют одно и то же разными словами.",
-      "count": 955900
+      "count": 985700
     },
     {
       "slug": "mattpocock/skills@codebase-design",
       "url": "https://skills.sh/mattpocock/skills/codebase-design",
       "desc": "Единый словарь для проектирования «глубоких модулей»: много возможностей за узким интерфейсом, границы в подходящих местах. Бери, когда спор идёт о границах, а команда называет одно и то же то компонентом, то сервисом, то API.",
-      "count": 932300
+      "count": 959700
     },
     {
       "slug": "mattpocock/skills@diagnosing-bugs",
       "url": "https://skills.sh/mattpocock/skills/diagnosing-bugs",
       "desc": "Помогает диагностировать сложные баги и падение производительности. Сначала требует сделать быструю проверку, которая воспроизводит именно этот баг и даёт результат «прошло или упало», и только потом искать причину. Срабатывает, когда сообщаешь, что что-то сломалось, падает или тормозит.",
-      "count": 910800
+      "count": 937500
     },
     {
       "slug": "vercel-labs/agent-skills@vercel-react-best-practices",
       "url": "https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
       "desc": "Рекомендации Vercel по производительности React/Next.js: правильные границы между клиентом и RSC, кэширование, уменьшение размера бандла. Подключай в любом Next.js-проекте.",
-      "count": 882500
+      "count": 902800
     },
     {
       "slug": "mattpocock/skills@code-review",
       "url": "https://skills.sh/mattpocock/skills/code-review",
       "desc": "Проверяет изменения от заданной точки (коммит, ветка, тег) по двум осям: соблюдены ли стандарты репозитория и сделано ли то, что просили в задаче или спецификации. Обе проверки идут в параллельных субагентах, и отчёты выводятся рядом, не смешиваясь. Если стандарты в репозитории не описаны, ищет в диффе запахи кода по Фаулеру. Бери перед мержем ветки или PR, когда есть задача, с которой можно сверить код.",
-      "count": 870900
+      "count": 898200
     },
     {
       "slug": "vercel-labs/agent-skills@web-design-guidelines",
       "url": "https://skills.sh/vercel-labs/agent-skills/web-design-guidelines",
       "desc": "Чек-лист для проверки по Web Interface Guidelines: доступность, размеры областей нажатия, рамки фокуса. Используй для ревью интерфейса перед коммитом.",
-      "count": 840400
+      "count": 866900
     },
     {
       "slug": "mattpocock/skills@research",
       "url": "https://skills.sh/mattpocock/skills/research",
       "desc": "Отдаёт исследование вопроса фоновому агенту, а ты продолжаешь работать. Агент опирается только на первоисточники (официальную документацию, исходный код, спецификации) и сохраняет выводы со ссылками в Markdown-файл в репозитории. Бери, когда нужно собрать факты об API или библиотеке, не тратя на чтение основной контекст.",
-      "count": 783300
+      "count": 809100
     },
     {
       "slug": "leonxlnx/taste-skill@design-taste-frontend",
       "url": "https://skills.sh/leonxlnx/taste-skill/design-taste-frontend",
       "desc": "Задаёт арт-дирекцию лендингам, сайтам и экранам приложений, чтобы страница не выглядела типовой сгенерированной. Скрипт предлагает три направления из библиотеки, собранной по 247 сайтам из галерей вроде Awwwards, затем проверяет вёрстку в настоящем браузере и по скриншотам на трёх ширинах. Нужны Node 22+ и Chrome, картинки скилл берёт из открытых коллекций музеев и NASA.",
-      "count": 752200
+      "count": 784800
     },
     {
       "slug": "microsoft/azure-skills@microsoft-foundry",
       "url": "https://skills.sh/microsoft/azure-skills/microsoft-foundry",
       "desc": "Официальный скилл Microsoft для работы с Microsoft Foundry: создаёт проект и ресурсы, разворачивает модели и агентов, запускает оценки и fine-tuning, разбирается с квотами и правами доступа. Нужен Azure Developer CLI (`azd`), расширение `microsoft.foundry` скилл при первом запуске ставит сам. Бери, только если строишь агентов или разворачиваешь модели в Azure: для обычного деплоя в Azure у Microsoft есть отдельные скиллы.",
-      "count": 665200
+      "count": 719100
     }
   ]
 }
