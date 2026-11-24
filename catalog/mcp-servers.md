@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 **Совет практика:** не подключай больше 5–7 серверов одновременно — каждый расходует контекст на discovery. Сначала смотри курируемую выборку в [главном README](../README.md#mcp-серверы), потом сюда — за специализированными.
 
-**Записей:** 810.
+**Записей:** 809.
 
 📌 Курируемая подборка — в [главном README](../README.md#mcp-серверы). Здесь — широкая выборка для поиска и SEO.
 
@@ -40,7 +40,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [agentic-mcp-tools/memora](https://github.com/agentic-box/memora)
 - [agentic-mcp-tools/owlex](https://github.com/agentic-box/owlex)
 - [Agentled/mcp-server](https://github.com/Agentled/mcp-server)
-- [Agnuxo1/benchclaw-integrations](https://github.com/Agnuxo1/benchclaw-integrations/tree/main/mcp-server)
 - [AiAgentKarl/solana-mcp-server](https://github.com/AiAgentKarl/solana-mcp-server)
 - [airis-mcp-gateway](https://github.com/agiletec-inc/airis-mcp-gateway)
 - [Aiven projects](https://go.aiven.io/mcp-server)
