@@ -115,7 +115,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [notebooklm-skill](https://github.com/PleasePrompto/notebooklm-skill)
 - [nothing-design-skill](https://github.com/dominikmartn/nothing-design-skill)
 - [nuxt-skills](https://github.com/onmax/nuxt-skills)
-- [obsidian-skills](https://github.com/kepano/obsidian-skills)
+- [obsidian-skills](https://github.com/obsidianmd/obsidian-skills)
 - [Overnight Worker](https://github.com/fullstackcrew-alpha/skill-overnight-worker)
 - [paul-graham-skills](https://github.com/WinterDDo/paul-graham-skills)
 - [Pika-Skills](https://github.com/Pika-Labs/Pika-Skills)
