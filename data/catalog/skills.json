@@ -293,6 +293,14 @@
       "url": "https://github.com/j4rk0r/claude-skills"
     },
     {
+      "name": "janestreet/agent_skills",
+      "url": "https://github.com/janestreet/agent_skills"
+    },
+    {
+      "name": "jmanico/grim-prompter",
+      "url": "https://github.com/jmanico/grim-prompter"
+    },
+    {
       "name": "K-Dense-AI/claude-skills-mcp",
       "url": "https://github.com/K-Dense-AI/claude-skills-mcp"
     },

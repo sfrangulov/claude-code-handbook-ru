@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Скилл подгружается автоматически, когда задача попадает под его описание — поэтому имеет смысл накопить несколько узкоспециализированных, а не один универсальный.
 
-**Записей:** 162.
+**Записей:** 164.
 
 📌 Курируемая подборка — в [главном README](../README.md#skills). Здесь — широкая выборка для поиска и SEO.
 
@@ -90,6 +90,8 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill)
 - [iterationlayer/skills](https://github.com/iterationlayer/skills)
 - [j4rk0r/claude-skills](https://github.com/j4rk0r/claude-skills)
+- [janestreet/agent_skills](https://github.com/janestreet/agent_skills)
+- [jmanico/grim-prompter](https://github.com/jmanico/grim-prompter)
 - [K-Dense-AI/claude-skills-mcp](https://github.com/K-Dense-AI/claude-skills-mcp)
 - [Kami](https://github.com/ericosiu/ai-marketing-skills)
 - [Karpathy Guidelines](https://github.com/swarmclawai/andrej-karpathy-skills)
