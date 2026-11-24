@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 Качество смешанное — это широкая выборка, не отбор. Используй для поиска нишевых решений по теме.
 
-**Записей:** 239.
+**Записей:** 240.
 
 📌 Курируемая подборка — в [главном README](../README.md). Здесь — широкая выборка для поиска и SEO.
 
@@ -206,6 +206,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [craft-statusline](https://github.com/derjochenmeyer/claude-code-craft-statusline)
 - [dcolinmorgan/herdr-remote](https://github.com/dcolinmorgan/herdr-remote)
 - [deepclaude](https://github.com/aattaran/deepclaude)
+- [devvmhq/devvm](https://github.com/devvmhq/devvm)
 - [Dicklesworthstone/claude_code_agent_farm](https://github.com/Dicklesworthstone/claude_code_agent_farm)
 - [Dispatch & Remote Control](https://claude.com/blog/dispatch-and-computer-use)
 - [dna-claude-analysis](https://github.com/shmlkv/dna-claude-analysis)
