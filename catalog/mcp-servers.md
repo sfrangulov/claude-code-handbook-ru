@@ -9,7 +9,7 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 
 **Совет практика:** не подключай больше 5–7 серверов одновременно — каждый расходует контекст на discovery. Сначала смотри курируемую выборку в [главном README](../README.md#mcp-серверы), потом сюда — за специализированными.
 
-**Записей:** 810.
+**Записей:** 809.
 
 📌 Курируемая подборка — в [главном README](../README.md#mcp-серверы). Здесь — широкая выборка для поиска и SEO.
 
@@ -401,7 +401,6 @@ Edit the template or the JSON data, then run: node scripts/build-readme.mjs
 - [kimtaeyoon83/mcp-server-youtube-transcript](https://github.com/kimtaeyoon83/mcp-server-youtube-transcript)
 - [kimtth/mcp-aoai-web-browsing](https://github.com/kimtth/mcp-aoai-web-browsing)
 - [kimtth/mcp-remote-call-ping-pong](https://github.com/kimtth/mcp-remote-call-ping-pong)
-- [kindrat86/mcp-deal-flow-signal](https://github.com/kindrat86/mcp-deal-flow-signal)
 - [kitedotnew/kite-agent-plugins](https://github.com/kitedotnew/kite-agent-plugins)
 - [kiwamizamurai/mcp-kibela-server](https://github.com/kiwamizamurai/mcp-kibela-server)
 - [kj455/mcp-kibela](https://github.com/kj455/mcp-kibela)
