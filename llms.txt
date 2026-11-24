@@ -20,6 +20,7 @@
 - [README](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md): курируемый верхний слой с разделами Skills / Sub-agents / Plugins / Hooks / MCP / Templates
 - [Шпаргалка на одну страницу (HTML + PDF)](https://sfrangulov.github.io/claude-code-handbook-ru/): печатная reference-карточка A4 portrait — горячие клавиши, слэш-команды, MCP, память, workflows, CLI-флаги
 - [Quickstart за 10 минут](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#quickstart-за-10-минут): минимальный setup (claude + superpowers + 2 MCP)
+- [Встроенные возможности Claude Code](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#встроенные-возможности-claude-code): карта встроенных функций (auto mode, /goal, /ship и Claude Ship, Code Mode, сжатие при простое, onFailure у хуков, Projects, channels) со ссылками на русскую документацию, сверено с 2.1.331
 - [Harness (обвязка)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#harness-обвязка): концепт «обвязка важнее модели» + автономный pipeline recon → verify → triage → patch на базе anthropics/defending-code-reference-harness
 - [Топ-15 скиллов по install-count (skills.sh)](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#топ-15-скиллов-skillssh): то, что 100K+ людей реально установили
 - [Топ MCP под Claude Code](https://github.com/sfrangulov/claude-code-handbook-ru/blob/main/README.md#mcp-серверы): ежедневный сетап на 5-7 серверов
