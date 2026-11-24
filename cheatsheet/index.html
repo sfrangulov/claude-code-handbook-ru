@@ -297,8 +297,8 @@
     <div class="header">
       <h1>Claude Code — шпаргалка<span class="sub">CLI-агент Anthropic, всё на одну страницу</span></h1>
       <div class="header-meta">
-        <span class="v">соответствует Claude Code 2.1.289</span><br>
-        обновлено: 2026-10-05 · <a href="https://github.com/sfrangulov/claude-code-handbook-ru">handbook-ru</a>
+        <span class="v">соответствует Claude Code 2.1.331</span><br>
+        обновлено: 2026-11-24 ·<a href="https://github.com/sfrangulov/claude-code-handbook-ru">handbook-ru</a>
       </div>
     </div>
 
@@ -315,20 +315,20 @@
           <div class="sub-header">Общее управление</div>
           <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">C</span></span><span class="desc">отменить ввод/генерацию</span></div>
           <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">D</span></span><span class="desc">выйти из сессии</span></div>
-          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">L</span></span><span class="desc">очистить экран</span></div>
-          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">O</span></span><span class="desc">verbose-вывод (вкл/выкл)</span></div>
+          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">L</span></span><span class="desc">перерисовать экран (история цела)</span></div>
+          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">O</span></span><span class="desc">transcript: все вызовы инструментов</span></div>
           <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">R</span></span><span class="desc">обратный поиск по истории</span></div>
           <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">G</span></span><span class="desc">открыть промпт в редакторе</span></div>
           <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">B</span></span><span class="desc">отправить задачу в фон</span></div>
-          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">T</span></span><span class="desc">список фоновых задач</span></div>
+          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">T</span></span><span class="desc">чек-лист задач Claude (фон — /tasks)</span></div>
           <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">V</span></span><span class="desc">вставить изображение</span></div>
-          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">F</span> ×2</span><span class="desc">убить фоновых агентов</span></div>
+          <div class="row"><span class="key"><span class="keycap">Ctrl</span><span class="keycap">X</span> <span class="keycap">Ctrl</span><span class="keycap">K</span></span><span class="desc">остановить фоновых агентов</span></div>
           <div class="row"><span class="key"><span class="keycap">Esc</span><span class="keycap">Esc</span></span><span class="desc">откат последнего шага (rewind)</span></div>
 
           <div class="sub-header">Переключение режима</div>
           <div class="row"><span class="key"><span class="keycap">⇧</span><span class="keycap">Tab</span></span><span class="desc">цикл permission mode</span></div>
           <div class="row"><span class="key"><span class="keycap">⌥</span><span class="keycap">P</span></span><span class="desc">сменить модель</span></div>
-          <div class="row"><span class="key"><span class="keycap">⌥</span><span class="keycap">T</span></span><span class="desc">thinking on/off</span></div>
+          <div class="row"><span class="key"><span class="keycap">⌥</span><span class="keycap">O</span></span><span class="desc">fast mode вкл/выкл</span></div>
 
           <div class="sub-header">Ввод</div>
           <div class="row"><span class="key">\<span class="keycap">Enter</span></span><span class="desc">новая строка (быстро)</span></div>
@@ -358,7 +358,6 @@
           <div class="row"><span class="key">/branch [name]</span><span class="desc">ответвить разговор в сессии</span></div>
           <div class="row"><span class="key">/fork</span><span class="desc">фон-сессия; in-session — /subtask&nbsp;<span class="badge-new">NEW</span></span></div>
           <div class="row"><span class="key">/cd &lt;path&gt;</span><span class="desc">сменить каталог сессии (кэш цел)&nbsp;<span class="badge-new">NEW</span></span></div>
-          <div class="row"><span class="key">/cost</span><span class="desc">расход токенов</span></div>
           <div class="row"><span class="key">/context</span><span class="desc">визуализация контекста (grid)</span></div>
           <div class="row"><span class="key">/diff</span><span class="desc">интерактивный diff-viewer</span></div>
           <div class="row"><span class="key">/copy</span><span class="desc">копировать последний ответ</span></div>
@@ -367,8 +366,7 @@
           <div class="sub-header">Конфиг</div>
           <div class="row"><span class="key">/config</span><span class="desc">открыть settings</span></div>
           <div class="row"><span class="key">/model [name]</span><span class="desc">сменить модель (←→ effort)</span></div>
-          <div class="row"><span class="key">/fast [on|off]</span><span class="desc">fast-mode для Opus</span></div>
-          <div class="row"><span class="key">/vim</span><span class="desc">vim-режим ввода</span></div>
+          <div class="row"><span class="key">/fast [on|off]</span><span class="desc">fast mode: Fable 5.2, Opus 5.5</span></div>
           <div class="row"><span class="key">/theme</span><span class="desc">сменить цветовую тему</span></div>
           <div class="row"><span class="key">/permissions</span><span class="desc">просмотр/правка permissions</span></div>
           <div class="row"><span class="key">/color [c]</span><span class="desc">цвет промпт-бара</span></div>
@@ -390,20 +388,18 @@
           <div class="row"><span class="key">/btw &lt;q&gt;</span><span class="desc">побочный вопрос без расхода контекста</span></div>
           <div class="row"><span class="key">/plan [desc]</span><span class="desc">plan mode (с авто-стартом)</span></div>
           <div class="row"><span class="key">/loop [int]</span><span class="desc">регулярная задача (cron-like)</span></div>
-          <div class="row"><span class="key">/voice</span><span class="desc">push-to-talk голос (20 языков)</span></div>
+          <div class="row"><span class="key">/voice [hold|tap]</span><span class="desc">голосовой ввод: удерживать или тап</span></div>
           <div class="row"><span class="key">/doctor</span><span class="desc">чекап и авто-починка (alias /checkup)</span></div>
-          <div class="row"><span class="key">/pr-comments [PR]</span><span class="desc">комментарии PR с GitHub</span></div>
-          <div class="row"><span class="key">/stats</span><span class="desc">статистика использования</span></div>
           <div class="row"><span class="key">/insights</span><span class="desc">анализ прошлых сессий</span></div>
           <div class="row"><span class="key">/rewind</span><span class="desc">откат к чекпоинту&nbsp;<span class="badge-new">NEW</span></span></div>
           <div class="row"><span class="key">/status</span><span class="desc">сессия, авторизация, настройки&nbsp;<span class="badge-new">NEW</span></span></div>
           <div class="row"><span class="key">/tasks</span><span class="desc">фоновые задачи и субагенты&nbsp;<span class="badge-new">NEW</span></span></div>
           <div class="row"><span class="key">/desktop</span><span class="desc">продолжить в Desktop-приложении</span></div>
           <div class="row"><span class="key">/remote-control</span><span class="desc">мост в claude.ai/code (alias /rc)</span></div>
-          <div class="row"><span class="key">/usage</span><span class="desc">лимиты плана и rate-status</span></div>
-          <div class="row"><span class="key">/schedule</span><span class="desc">cloud scheduled tasks</span></div>
+          <div class="row"><span class="key">/usage · /cost · /stats</span><span class="desc">расход, лимиты плана, статистика</span></div>
+          <div class="row"><span class="key">/schedule</span><span class="desc">облачные задачи по расписанию</span></div>
           <div class="row"><span class="key">/security-review</span><span class="desc">security-аудит изменений</span></div>
-          <div class="row"><span class="key">/code-review [ultra]</span><span class="desc">ревью диффа; ultra — облачный&nbsp;<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">/code-review [ultra]</span><span class="desc">баги в ветке или PR; ultra — облачный</span></div>
           <div class="row"><span class="key">/help</span><span class="desc">помощь и список команд</span></div>
           <div class="row"><span class="key">/release-notes</span><span class="desc">changelog Claude Code</span></div>
 
@@ -466,14 +462,14 @@
         <div class="section-header">🧠 Приёмы и режимы</div>
         <div class="section-content">
           <div class="sub-header">Plan mode</div>
-          <div class="row"><span class="key"><span class="keycap">⇧</span><span class="keycap">Tab</span></span><span class="desc">default → acceptEdits → plan</span></div>
+          <div class="row"><span class="key"><span class="keycap">⇧</span><span class="keycap">Tab</span></span><span class="desc">manual → acceptEdits → plan → auto</span></div>
           <div class="row"><span class="key">--permission-mode plan</span><span class="desc">сразу в plan</span></div>
-          <div class="row"><span class="key">auto mode</span><span class="desc">permissions решает классификатор-модель&nbsp;<span class="badge-new">NEW</span></span></div>
+          <div class="row"><span class="key">auto mode</span><span class="desc">по умолчанию: решает классификатор</span></div>
 
           <div class="sub-header">Thinking и effort</div>
-          <div class="row"><span class="key"><span class="keycap">⌥</span><span class="keycap">T</span></span><span class="desc">thinking on/off</span></div>
-          <div class="row"><span class="key">"ultrathink"</span><span class="desc">max effort на ход</span></div>
-          <div class="row"><span class="key">/effort</span><span class="desc">low·medium·high·xhigh·max (⌃→ в /model)</span></div>
+          <div class="row"><span class="key"><span class="keycap">⌥</span><span class="keycap">T</span></span><span class="desc">thinking on/off; у 5.5 и Fable всегда вкл</span></div>
+          <div class="row"><span class="key">"ultrathink"</span><span class="desc">xhigh effort на ход</span></div>
+          <div class="row"><span class="key">/effort</span><span class="desc">low…xhigh·max·auto (⌃→ в /model)</span></div>
 
           <div class="sub-header">Стоимость — скилл <code>claude-api</code></div>
           <div class="row"><span class="key">prompt-audit</span><span class="desc">чистка анти-паттернов в промптах&nbsp;<span class="badge-new">NEW</span></span></div>
@@ -489,8 +485,8 @@
           <div class="sub-header">Контекст</div>
           <div class="row"><span class="key">/context</span><span class="desc">расход + советы по оптимизации</span></div>
           <div class="row"><span class="key">/compact [focus]</span><span class="desc">сжать с акцентом</span></div>
-          <div class="row"><span class="key">auto-compact</span><span class="desc">срабатывает ~95% от лимита</span></div>
-          <div class="row"><span class="key">1M context</span><span class="desc">Opus 4.6+ (Max/Team/Enterprise)</span></div>
+          <div class="row"><span class="key">/autocompact 500k</span><span class="desc">свой порог авто-сжатия</span></div>
+          <div class="row"><span class="key">1M context</span><span class="desc">у всех текущих моделей сразу</span></div>
           <div class="row"><span class="key">CLAUDE.md</span><span class="desc">переживает compact!</span></div>
         </div>
       </div>
@@ -502,7 +498,7 @@
           <div class="sub-header">Примитивы</div>
           <div class="row"><span class="key">/workflows</span><span class="desc">JS-скрипт оркеструет 10–100s агентов в фоне</span></div>
           <div class="row"><span class="key">claude agents</span><span class="desc">экран всех фоновых сессий&nbsp;<span class="badge-prev">preview</span></span></div>
-          <div class="row"><span class="key">Agent / subagent</span><span class="desc">read-only, свой контекст, без вложенности</span></div>
+          <div class="row"><span class="key">Agent / subagent</span><span class="desc">свой контекст; вложенность до 3 уровней</span></div>
           <div class="row"><span class="key">agent teams</span><span class="desc">тиммейт = Agent(name); env …AGENT_TEAMS=1&nbsp;<span class="badge-exp">exp</span></span></div>
 
           <div class="sub-header">Ultracode</div>
@@ -512,8 +508,8 @@
 
           <div class="sub-header">Расписание и cloud</div>
           <div class="row"><span class="key">/loop 5m msg</span><span class="desc">повторяющийся промпт в живой сессии</span></div>
-          <div class="row"><span class="key">/schedule</span><span class="desc">routines: cloud-cron / API / GitHub-события&nbsp;<span class="badge-prev">preview</span></span></div>
-          <div class="row"><span class="key">--remote · /rc</span><span class="desc">сессия через claude.ai</span></div>
+          <div class="row"><span class="key">/schedule</span><span class="desc">задачи в облаке: cron / API / события GitHub</span></div>
+          <div class="row"><span class="key">--cloud · /rc</span><span class="desc">сессия через claude.ai</span></div>
 
           <div class="sub-header">Hooks-события оркестрации</div>
           <div class="row"><span class="key">TeammateIdle</span><span class="desc">тиммейт простаивает</span></div>
@@ -551,9 +547,9 @@
 
           <div class="sub-header">Ключевые env-vars</div>
           <div class="row"><span class="key">ANTHROPIC_API_KEY</span><span class="desc">API-ключ</span></div>
-          <div class="row"><span class="key">ANTHROPIC_MODEL</span><span class="desc">модель по умолчанию (fable-5 · opus-4-8)</span></div>
+          <div class="row"><span class="key">ANTHROPIC_MODEL</span><span class="desc">модель по умолчанию (fable · opus · sonnet)</span></div>
           <div class="row"><span class="key">CLAUDE_CODE_EFFORT_LEVEL</span><span class="desc">low…xhigh/max (CLAUDE_EFFORT — текущий)</span></div>
-          <div class="row"><span class="key">MAX_THINKING_TOKENS</span><span class="desc">0 = выкл</span></div>
+          <div class="row"><span class="key">MAX_THINKING_TOKENS</span><span class="desc">0 = выкл (не у 5.5 и Fable)</span></div>
         </div>
       </div>
 
@@ -562,7 +558,7 @@
         <div class="section-header">🔧 Skills и agents</div>
         <div class="section-content">
           <div class="sub-header">Встроенные skills</div>
-          <div class="row"><span class="key">/simplify</span><span class="desc">code-review (3 параллельных агента)</span></div>
+          <div class="row"><span class="key">/simplify</span><span class="desc">чистка кода (4 агента), не баги</span></div>
           <div class="row"><span class="key">/batch</span><span class="desc">массовые правки (5-30 worktrees)</span></div>
           <div class="row"><span class="key">/debug [desc]</span><span class="desc">отладка по debug-логу</span></div>
           <div class="row"><span class="key">/claude-api</span><span class="desc">загрузить API + SDK reference</span></div>
@@ -584,10 +580,10 @@
           <div class="row"><span class="key">!`cmd`</span><span class="desc">динамическая инъекция в контекст</span></div>
 
           <div class="sub-header">Встроенные agents</div>
-          <div class="row"><span class="key">Explore</span><span class="desc">быстрый read-only (Haiku)</span></div>
+          <div class="row"><span class="key">Explore</span><span class="desc">read-only поиск по коду</span></div>
           <div class="row"><span class="key">Plan</span><span class="desc">research для plan mode</span></div>
-          <div class="row"><span class="key">General</span><span class="desc">все инструменты, сложные задачи</span></div>
-          <div class="row"><span class="key">Bash</span><span class="desc">терминал в отдельном контексте</span></div>
+          <div class="row"><span class="key">general-purpose</span><span class="desc">все инструменты, сложные задачи</span></div>
+          <div class="row"><span class="key">claude</span><span class="desc">на всё прочее; агент фоновых сессий</span></div>
 
           <div class="sub-header">Frontmatter агента</div>
           <div class="row"><span class="key">permissionMode</span><span class="desc">manual<wbr>/acceptEdits<wbr>/plan<wbr>/dontAsk<wbr>/bypass</span></div>
@@ -627,7 +623,7 @@
           <div class="row"><span class="key">--bare</span><span class="desc">minimal headless (без hooks/LSP)</span></div>
           <div class="row"><span class="key">--safe-mode</span><span class="desc">чистый старт без кастомизаций&nbsp;<span class="badge-new">NEW</span></span></div>
           <div class="row"><span class="key">--channels</span><span class="desc">события извне в сессию</span></div>
-          <div class="row"><span class="key">--remote</span><span class="desc">web-сессия через claude.ai</span></div>
+          <div class="row"><span class="key">--cloud</span><span class="desc">облачная сессия (бывш. --remote)</span></div>
           <div class="row"><span class="key">--effort</span><span class="desc">low·medium·high·xhigh·max</span></div>
           <div class="row"><span class="key">--permission-mode</span><span class="desc">plan·auto·acceptEdits·bypass·…</span></div>
           <div class="row"><span class="key">--dangerously-skip-permissions</span><span class="desc">пропустить все промпты ⚠️</span></div>
